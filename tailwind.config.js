@@ -9,7 +9,11 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
     ],
   },
-  darkMode: "class",
+  variants: {
+    extend: {
+      margin: ['first', 'last'],
+    }
+  },
   theme: {
     colors: {
       transparent: "transparent",

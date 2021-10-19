@@ -4,14 +4,18 @@ blocks:
       src: >-
         http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
       alt: Asia Hackathon Season 2021
-    label: ''
+    label: Label
     headline: 'August - October, 2021'
-    subhead: ''
+    subhead: Subhead
     body: >-
       Join us on a journey across the universe of Filecoin and IPFS across four
       distinct hackathon events.
     buttons:
-      - label: Join our mailing list
+      - label: Button Label
+        type: button
+        icon: false
+        link: /
+      - label: Button Label
         type: button
         icon: false
         link: /
@@ -19,11 +23,10 @@ blocks:
       textColor: grayLight
       backgroundColor: black
       flipLayout: true
+      contentOrder: labelContentHeadings
       imageStyle: fitHalf
-      imageAlignment: center
-      contentAlignment: top
-      textAlignment: left
-      contentOrder: contentHeadingsLabel
+      contentAlignment: center
+      textAlignment: center
     _template: feature
   - label: ''
     headline: Join us on a journey across the universe

@@ -41,8 +41,8 @@ const contentCss = (data) => {
     right: "text-right",
   };
   const imageStyle = {
-    natural: "w-full",
-    fitHalf: "w-full",
+    natural: "w-full py-24",
+    fitHalf: "w-full py-24",
     fillHalf: data.style?.flipLayout
       ? "w-1/2 ml-1/2 pl-8 py-24"
       : "w-full pr-8 py-24",
@@ -82,6 +82,42 @@ const imageCss = (data) => {
   return `${imageStyle[data.style?.imageStyle]}`;
 };
 
+const labelOrder = (data) => {
+  const labelOrder = {
+    labelHeadingsContent: "order-1",
+    labelContentHeadings: "order-1",
+    headingsLabelContent: "order-2",
+    headingsContentLabel: "order-3",
+    contentLabelHeadings: "order-2",
+    contentHeadingsLabel: "order-3",
+  };
+  return `${labelOrder[data.style?.contentOrder]}`;
+}
+
+const headingOrder = (data) => {
+  const headingOrder = {
+    labelHeadingsContent: "order-2",
+    labelContentHeadings: "order-3",
+    headingsLabelContent: "order-1",
+    headingsContentLabel: "order-1",
+    contentLabelHeadings: "order-3",
+    contentHeadingsLabel: "order-2",
+  };
+  return `${headingOrder[data.style?.contentOrder]}`;
+}
+
+const bodyOrder = (data) => {
+  const bodyOrder = {
+    labelHeadingsContent: "order-3",
+    labelContentHeadings: "order-2",
+    headingsLabelContent: "order-3",
+    headingsContentLabel: "order-2",
+    contentLabelHeadings: "order-1",
+    contentHeadingsLabel: "order-1",
+  };
+  return `${bodyOrder[data.style?.contentOrder]}`;
+}
+
 export const Feature = ({ data }) => {
   return (
     <Section
@@ -89,12 +125,12 @@ export const Feature = ({ data }) => {
       image={data.style?.backgroundImage?.src}
     >
       <Container size="none" className={containerCss(data)}>
-        <div className={contentCss(data)}>
-          {data.label && <h4 className="text-lg">{data.label}</h4>}
-          {data.headline && <h2 className="text-4xl">{data.headline}</h2>}
-          {data.subhead && <h3 className="text-2xl">{data.subhead}</h3>}
+        <div className={`flex flex-col ${contentCss(data)}`}>
+          {data.label && <h4 className={`text-lg ${labelOrder(data)}`}>{data.label}</h4>}
+          {data.headline && <h2 className={`text-4xl ${headingOrder(data)}`}>{data.headline}</h2>}
+          {data.subhead && <h3 className={`text-2xl ${headingOrder(data)}`}>{data.subhead}</h3>}
           {data.body && (
-            <div className="text-base">
+            <div className={`text-base mt-8 items-center ${bodyOrder(data)}`}>
               <Markdown>{data.body}</Markdown>
             </div>
           )}
@@ -102,7 +138,7 @@ export const Feature = ({ data }) => {
             <Buttons
               parentColor={data.style?.textColor}
               buttons={data.buttons}
-              className="mt-8"
+              className="mt-8 order-4"
             />
           )}
         </div>

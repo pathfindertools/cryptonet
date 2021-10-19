@@ -2,3 +2,4 @@
 .env.local
 notes.md
 node_modules/
+.next
