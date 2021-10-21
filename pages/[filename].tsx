@@ -26,14 +26,6 @@ export const getStaticProps = async ({ params }) => {
                 headline
                 subhead
                 body
-                style {
-                  textColor
-                  backgroundColor
-                  backgroundImage {
-                    src
-                    alt
-                  }
-                }
                 buttons {
                   label
                   type
@@ -49,10 +41,14 @@ export const getStaticProps = async ({ params }) => {
                   title
                   text
                 }
-              }
-              ... on PagesBlocksContent {
-                body
-                color
+                style {
+                  textColor
+                  backgroundColor
+                  backgroundImage {
+                    src
+                    alt
+                  }
+                }
               }
               ... on PagesBlocksFeature {
                 label
@@ -91,18 +87,14 @@ export const getStaticProps = async ({ params }) => {
                   icon
                   link
                 }
-                image {
-                  src
-                  alt
+                style {
+                  textColor
+                  backgroundColor
+                  backgroundImage {
+                    src
+                    alt
+                  }
                 }
-                textColor
-                backgroundColor
-                backgroundImage {
-                  src
-                  alt
-                }
-                flipLayout
-                imageStyle
               }
             }
             primary

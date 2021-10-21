@@ -1,5 +1,16 @@
 ---
 blocks:
+  - label: Here's some text above the other text
+    headline: This Big Text is Totally Awesome
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      textColor: grayLight
+      backgroundColor: grayDark
+      textAlignment: left
+    _template: banner
   - image:
       src: >-
         http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
@@ -21,17 +32,17 @@ blocks:
         link: /
     style:
       textColor: grayLight
-      backgroundColor: black
+      backgroundColor: grayDark
       flipLayout: true
       contentOrder: labelContentHeadings
-      imageStyle: fitHalf
+      imageStyle: natural
       contentAlignment: center
       textAlignment: center
     _template: feature
-  - label: ''
+  - label: I am a label
     headline: Join us on a journey across the universe
-    subhead: ''
-    body: ''
+    subhead: Subhead here
+    body: Here is some body copy.
     items:
       - icon:
           color: ''

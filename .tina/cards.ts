@@ -171,6 +171,35 @@ export const cardsBlockSchema: TinaTemplate = {
             },
           ],
         },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Label Headings Content", value: "labelHeadingsContent" },
+            { label: "Label Content Headings", value: "labelContentHeadings" },
+            { label: "Headings Label Content", value: "headingsLabelContent" },
+            { label: "Headings Content Label", value: "headingsContentLabel" },
+            { label: "Content Label Headings", value: "contentLabelHeadings" },
+            { label: "Content Headings Label", value: "contentHeadingsLabel" },
+          ],
+        },
+        {
+          label: "Text Alignment",
+          name: "textAlignment",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Left", value: "left" },
+            { label: "Center", value: "center" },
+            { label: "Right", value: "right" },
+          ],
+        },
       ],
     },
   ],

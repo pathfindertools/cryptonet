@@ -1,6 +1,5 @@
 import { defineSchema } from "@tinacms/cli";
-import type { TinaCollection, TinaTemplate, TinaField } from "@tinacms/cli";
-import { group } from "console";
+import type { TinaTemplate } from "@tinacms/cli";
 
 import { iconSchema } from "./icon";
 import { featureBlockSchema } from "./feature";
@@ -309,7 +308,6 @@ export default defineSchema({
             featureBlockSchema,
             cardsBlockSchema,
             bannerBlockSchema,
-            contentBlockSchema,
           ],
         },
         {

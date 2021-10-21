@@ -103,7 +103,7 @@ module.exports = {
         15: ".15",
       },
       maxWidth: {
-        "8xl": "86rem",
+        "screen-lg-half": "600px",
       },
       spacing: {
         128: "32rem",

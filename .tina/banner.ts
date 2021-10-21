@@ -76,91 +76,77 @@ export const bannerBlockSchema: TinaTemplate = {
       ],
     },
     {
-      label: "Image",
-      name: "image",
       type: "object",
+      label: "Style",
+      name: "style",
+      ui: {
+        component: "group",
+      },
       fields: [
         {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-        },
-        {
-          name: "alt",
-          label: "Alt Text",
+          label: "Text Color",
+          name: "textColor",
+          ui: {
+            component: "select",
+          },
           type: "string",
-        },
-      ],
-    },
-    {
-      label: "Text Color",
-      name: "textColor",
-      ui: {
-        component: "select",
-      },
-      type: "string",
-      options: [
-        { label: "White", value: "white" },
-        { label: "Gray Light", value: "grayLight" },
-        { label: "Gray", value: "gray" },
-        { label: "Gray Dark", value: "grayDark" },
-        { label: "Black", value: "black" },
-      ],
-    },
-    {
-      label: "Background Color",
-      name: "backgroundColor",
-      description: "Background Color",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: [
-        { label: "Primary", value: "primary" },
-        { label: "Accent 1", value: "accent1" },
-        { label: "Accent 2", value: "accent2" },
-        { label: "Accent 3", value: "accent3" },
-        { label: "White", value: "white" },
-        { label: "Gray Light", value: "grayLight" },
-        { label: "Gray", value: "gray" },
-        { label: "Gray Dark", value: "grayDark" },
-        { label: "Black", value: "black" },
-      ],
-    },
-    {
-      label: "Background Image",
-      name: "backgroundImage",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
+          options: [
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
         },
         {
-          name: "alt",
-          label: "Alt Text",
+          label: "Background Color",
+          name: "backgroundColor",
           type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
         },
-      ],
-    },
-    {
-      label: "Flip Layout",
-      name: "flipLayout",
-      type: "boolean",
-    },
-    {
-      label: "Image Style",
-      name: "imageStyle",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: [
-        { label: "Natural Size", value: "natural" },
-        { label: "Fit in Half", value: "fitHalf" },
-        { label: "Fill Half", value: "fillHalf" },
-        { label: "Fill Overlap", value: "overlap" },
+        {
+          label: "Background Image",
+          name: "backgroundImage",
+          type: "object",
+          fields: [
+            {
+              label: "Image Source",
+              name: "src",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
+        {
+          label: "Text Alignment",
+          name: "textAlignment",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Left", value: "left" },
+            { label: "Center", value: "center" },
+            { label: "Right", value: "right" },
+          ],
+        },
       ],
     },
   ],

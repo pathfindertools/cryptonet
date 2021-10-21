@@ -1,19 +1,6 @@
-import Markdown from "react-markdown";
 import { Buttons } from "../buttons";
-import { Container } from "../container";
-import { Icon } from "../icon";
 import { Section } from "../section";
-
-const contentCss = (data) => {
-  const textColor = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-  };
-  return `${textColor[data.style.textColor]}`;
-};
+import { Content } from "../content";
 
 export const Card = ({ cardsColor, data }) => {
   return (
@@ -43,31 +30,24 @@ export const Cards = ({ data }) => {
       color={data.style?.backgroundColor}
       image={data.style?.backgroundImage?.src}
     >
-      <Container className={``} size="large">
-        <div className={contentCss(data)}>
-          {data.label && <h4 className="text-lg">{data.label}</h4>}
-          {data.headline && <h2 className="text-4xl mb-8">{data.headline}</h2>}
-          {data.subhead && <h3 className="text-2xl">{data.subhead}</h3>}
-          {data.body && (
-            <div className="text-base">
-              <Markdown>{data.body}</Markdown>
-            </div>
-          )}
-          {data.buttons && (
-            <Buttons
-              parentColor={data.textColor}
-              buttons={data.buttons}
-              className="mt-8"
-            />
-          )}
-        </div>
-        <div className={`flex gap-x-10 gap-y-8 text-left`}>
+      <div className="max-w-screen-lg p-12 mx-auto">
+        <Content
+          label = {data.label}
+          headline = {data.headline}
+          subhead = {data.subhead}
+          body = {data.body}
+          buttons = {data.buttons}
+          color = {data.style?.textColor}
+          alignment = {data.style?.textAlignment}
+          order = {data.style?.contentOrder}
+        />
+        <div className={`flex gap-x-10 gap-y-8 mt-12 text-left`}>
           {data.items &&
             data.items.map(function (block, i) {
               return <Card cardsColor={data.color} key={i} data={block} />;
             })}
         </div>
-      </Container>
+      </div>
     </Section>
   );
 };

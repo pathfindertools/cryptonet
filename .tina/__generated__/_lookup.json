@@ -17,6 +17,10 @@
     "type": "DocumentNode",
     "resolveType": "multiCollectionDocument"
   },
+  "PostsAuthorDocument": {
+    "type": "PostsAuthorDocument",
+    "resolveType": "multiCollectionDocument"
+  },
   "PostsDocument": {
     "type": "PostsDocument",
     "resolveType": "collectionDocument",
@@ -26,10 +30,6 @@
     "type": "PostsConnection",
     "resolveType": "collectionDocumentList",
     "collection": "posts"
-  },
-  "PostsAuthorDocument": {
-    "type": "PostsAuthorDocument",
-    "resolveType": "multiCollectionDocument"
   },
   "GlobalDocument": {
     "type": "GlobalDocument",
@@ -57,8 +57,7 @@
     "typeMap": {
       "feature": "PagesBlocksFeature",
       "cards": "PagesBlocksCards",
-      "banner": "PagesBlocksBanner",
-      "content": "PagesBlocksContent"
+      "banner": "PagesBlocksBanner"
     }
   },
   "PagesDocument": {

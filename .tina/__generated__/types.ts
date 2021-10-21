@@ -398,6 +398,8 @@ export type PagesBlocksCardsStyle = {
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksCardsStyleBackgroundImage>;
+  contentOrder?: Maybe<Scalars['String']>;
+  textAlignment?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksCards = {
@@ -419,16 +421,18 @@ export type PagesBlocksBannerButtons = {
   link?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerImage = {
-  __typename?: 'PagesBlocksBannerImage';
+export type PagesBlocksBannerStyleBackgroundImage = {
+  __typename?: 'PagesBlocksBannerStyleBackgroundImage';
   src?: Maybe<Scalars['String']>;
   alt?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerBackgroundImage = {
-  __typename?: 'PagesBlocksBannerBackgroundImage';
-  src?: Maybe<Scalars['String']>;
-  alt?: Maybe<Scalars['String']>;
+export type PagesBlocksBannerStyle = {
+  __typename?: 'PagesBlocksBannerStyle';
+  textColor?: Maybe<Scalars['String']>;
+  backgroundColor?: Maybe<Scalars['String']>;
+  backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImage>;
+  textAlignment?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksBanner = {
@@ -438,21 +442,10 @@ export type PagesBlocksBanner = {
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
   buttons?: Maybe<Array<Maybe<PagesBlocksBannerButtons>>>;
-  image?: Maybe<PagesBlocksBannerImage>;
-  textColor?: Maybe<Scalars['String']>;
-  backgroundColor?: Maybe<Scalars['String']>;
-  backgroundImage?: Maybe<PagesBlocksBannerBackgroundImage>;
-  flipLayout?: Maybe<Scalars['Boolean']>;
-  imageStyle?: Maybe<Scalars['String']>;
+  style?: Maybe<PagesBlocksBannerStyle>;
 };
 
-export type PagesBlocksContent = {
-  __typename?: 'PagesBlocksContent';
-  body?: Maybe<Scalars['String']>;
-  color?: Maybe<Scalars['String']>;
-};
-
-export type PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksBanner | PagesBlocksContent;
+export type PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksBanner;
 
 export type Pages = {
   __typename?: 'Pages';
@@ -664,6 +657,8 @@ export type PagesBlocksCardsStyleMutation = {
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksCardsStyleBackgroundImageMutation>;
+  contentOrder?: Maybe<Scalars['String']>;
+  textAlignment?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksCardsMutation = {
@@ -683,14 +678,16 @@ export type PagesBlocksBannerButtonsMutation = {
   link?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerImageMutation = {
+export type PagesBlocksBannerStyleBackgroundImageMutation = {
   src?: Maybe<Scalars['String']>;
   alt?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerBackgroundImageMutation = {
-  src?: Maybe<Scalars['String']>;
-  alt?: Maybe<Scalars['String']>;
+export type PagesBlocksBannerStyleMutation = {
+  textColor?: Maybe<Scalars['String']>;
+  backgroundColor?: Maybe<Scalars['String']>;
+  backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImageMutation>;
+  textAlignment?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksBannerMutation = {
@@ -699,24 +696,13 @@ export type PagesBlocksBannerMutation = {
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
   buttons?: Maybe<Array<Maybe<PagesBlocksBannerButtonsMutation>>>;
-  image?: Maybe<PagesBlocksBannerImageMutation>;
-  textColor?: Maybe<Scalars['String']>;
-  backgroundColor?: Maybe<Scalars['String']>;
-  backgroundImage?: Maybe<PagesBlocksBannerBackgroundImageMutation>;
-  flipLayout?: Maybe<Scalars['Boolean']>;
-  imageStyle?: Maybe<Scalars['String']>;
-};
-
-export type PagesBlocksContentMutation = {
-  body?: Maybe<Scalars['String']>;
-  color?: Maybe<Scalars['String']>;
+  style?: Maybe<PagesBlocksBannerStyleMutation>;
 };
 
 export type PagesBlocksMutation = {
   feature?: Maybe<PagesBlocksFeatureMutation>;
   cards?: Maybe<PagesBlocksCardsMutation>;
   banner?: Maybe<PagesBlocksBannerMutation>;
-  content?: Maybe<PagesBlocksContentMutation>;
 };
 
 export type PagesMutation = {

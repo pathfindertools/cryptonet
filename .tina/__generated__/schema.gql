@@ -265,6 +265,8 @@ type PagesBlocksCardsStyle {
   textColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksCardsStyleBackgroundImage
+  contentOrder: String
+  textAlignment: String
 }
 
 type PagesBlocksCards {
@@ -284,14 +286,16 @@ type PagesBlocksBannerButtons {
   link: String
 }
 
-type PagesBlocksBannerImage {
+type PagesBlocksBannerStyleBackgroundImage {
   src: String
   alt: String
 }
 
-type PagesBlocksBannerBackgroundImage {
-  src: String
-  alt: String
+type PagesBlocksBannerStyle {
+  textColor: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksBannerStyleBackgroundImage
+  textAlignment: String
 }
 
 type PagesBlocksBanner {
@@ -300,20 +304,10 @@ type PagesBlocksBanner {
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtons]
-  image: PagesBlocksBannerImage
-  textColor: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksBannerBackgroundImage
-  flipLayout: Boolean
-  imageStyle: String
+  style: PagesBlocksBannerStyle
 }
 
-type PagesBlocksContent {
-  body: String
-  color: String
-}
-
-union PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksBanner | PagesBlocksContent
+union PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksBanner
 
 type Pages {
   blocks: [PagesBlocks]
@@ -482,6 +476,8 @@ input PagesBlocksCardsStyleMutation {
   textColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksCardsStyleBackgroundImageMutation
+  contentOrder: String
+  textAlignment: String
 }
 
 input PagesBlocksCardsMutation {
@@ -501,14 +497,16 @@ input PagesBlocksBannerButtonsMutation {
   link: String
 }
 
-input PagesBlocksBannerImageMutation {
+input PagesBlocksBannerStyleBackgroundImageMutation {
   src: String
   alt: String
 }
 
-input PagesBlocksBannerBackgroundImageMutation {
-  src: String
-  alt: String
+input PagesBlocksBannerStyleMutation {
+  textColor: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
+  textAlignment: String
 }
 
 input PagesBlocksBannerMutation {
@@ -517,24 +515,13 @@ input PagesBlocksBannerMutation {
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
-  image: PagesBlocksBannerImageMutation
-  textColor: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksBannerBackgroundImageMutation
-  flipLayout: Boolean
-  imageStyle: String
-}
-
-input PagesBlocksContentMutation {
-  body: String
-  color: String
+  style: PagesBlocksBannerStyleMutation
 }
 
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   cards: PagesBlocksCardsMutation
   banner: PagesBlocksBannerMutation
-  content: PagesBlocksContentMutation
 }
 
 input PagesMutation {

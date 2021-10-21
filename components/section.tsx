@@ -23,12 +23,12 @@ export const Section = ({
 
   return (
     <section
-      className={`relative body-font overflow-hidden ${sectionColorCss[color]} ${className}`}
+      className={`relative`}
     >
-      <div className={`background absolute inset-0`}>
+      <div className={`background absolute inset-0 -z-1 ${sectionColorCss[color]}`}>
         {image && <img className="w-full h-full object-cover" src={image} />}
       </div>
-      <div className={`relative z-10`}>{children}</div>
+      {children}
     </section>
   );
 };
