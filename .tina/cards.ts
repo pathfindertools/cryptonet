@@ -58,7 +58,7 @@ export const cardsBlockSchema: TinaTemplate = {
         {
           type: "string",
           label: "Title",
-          name: "title",
+          name: "headline",
         },
         {
           label: "Subhead",

@@ -3202,7 +3202,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "title"
+            "value": "headline"
           },
           "arguments": [],
           "type": {
@@ -5578,7 +5578,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "title"
+            "value": "headline"
           },
           "type": {
             "kind": "NamedType",

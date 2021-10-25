@@ -374,7 +374,7 @@ export type PagesBlocksCardsItemsIcon = {
 export type PagesBlocksCardsItems = {
   __typename?: 'PagesBlocksCardsItems';
   icon?: Maybe<PagesBlocksCardsItemsIcon>;
-  title?: Maybe<Scalars['String']>;
+  headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   text?: Maybe<Scalars['String']>;
 };
@@ -636,7 +636,7 @@ export type PagesBlocksCardsItemsIconMutation = {
 
 export type PagesBlocksCardsItemsMutation = {
   icon?: Maybe<PagesBlocksCardsItemsIconMutation>;
-  title?: Maybe<Scalars['String']>;
+  headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   text?: Maybe<Scalars['String']>;
 };

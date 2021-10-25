@@ -984,7 +984,7 @@
                     {
                       "type": "string",
                       "label": "Title",
-                      "name": "title"
+                      "name": "headline"
                     },
                     {
                       "label": "Subhead",

@@ -48,7 +48,7 @@ blocks:
           color: ''
           style: float
           name: ''
-        title: Saturn
+        headline: Saturn
         subhead: Hackathon
         text: >-
           Filecoin and IPFS are proud to host the Saturn track at the Wanxiang
@@ -57,7 +57,7 @@ blocks:
           color: ''
           style: float
           name: ''
-        title: Mars
+        headline: Mars
         subhead: Hackathon
         text: >-
           Build on the new Polygon-Filecoin bridge in this virtual multi-week
@@ -66,7 +66,7 @@ blocks:
           color: ''
           style: float
           name: ''
-        title: Jupiter
+        headline: Jupiter
         subhead: Hackathon
         text: >-
           Show us your best hacks in this IPFS-exclusive multi-week hackathon
@@ -75,7 +75,7 @@ blocks:
           color: ''
           style: float
           name: ''
-        title: Mercury
+        headline: Mercury
         subhead: Hackathon
         text: >-
           Hack away at this multi-track multi-week event (late September to late

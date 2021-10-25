@@ -38,7 +38,7 @@ export const getStaticProps = async ({ params }) => {
                     color
                     style
                   }
-                  title
+                  headline
                   text
                 }
                 style {
