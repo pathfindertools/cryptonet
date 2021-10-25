@@ -16,6 +16,7 @@ export const Layout = ({
       <Head>
         <title>Microgen</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         {data.theme.font === "nunito" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
