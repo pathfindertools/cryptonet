@@ -29,15 +29,9 @@ export const getStaticProps = async ({ params }) => {
                 buttons {
                   label
                   type
-                  icon
                   link
                 }
                 items {
-                  icon {
-                    name
-                    color
-                    style
-                  }
                   headline
                   text
                 }
@@ -58,7 +52,6 @@ export const getStaticProps = async ({ params }) => {
                 buttons {
                   label
                   type
-                  icon
                   link
                 }
                 image {
@@ -84,7 +77,6 @@ export const getStaticProps = async ({ params }) => {
                 buttons {
                   label
                   type
-                  icon
                   link
                 }
                 style {

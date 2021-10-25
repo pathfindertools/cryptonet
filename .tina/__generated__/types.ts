@@ -331,7 +331,6 @@ export type PagesBlocksFeatureButtons = {
   __typename?: 'PagesBlocksFeatureButtons';
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -383,7 +382,6 @@ export type PagesBlocksCardsButtons = {
   __typename?: 'PagesBlocksCardsButtons';
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -417,7 +415,6 @@ export type PagesBlocksBannerButtons = {
   __typename?: 'PagesBlocksBannerButtons';
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -598,7 +595,6 @@ export type PagesBlocksFeatureImageMutation = {
 export type PagesBlocksFeatureButtonsMutation = {
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -644,7 +640,6 @@ export type PagesBlocksCardsItemsMutation = {
 export type PagesBlocksCardsButtonsMutation = {
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -674,7 +669,6 @@ export type PagesBlocksCardsMutation = {
 export type PagesBlocksBannerButtonsMutation = {
   label?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
-  icon?: Maybe<Scalars['Boolean']>;
   link?: Maybe<Scalars['String']>;
 };
 

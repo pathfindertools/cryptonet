@@ -81,11 +81,6 @@ export const featureBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Icon",
-          name: "icon",
-          type: "boolean",
-        },
-        {
           label: "Link",
           name: "link",
           type: "string",

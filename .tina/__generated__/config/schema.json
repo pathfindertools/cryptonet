@@ -523,11 +523,6 @@
                       ]
                     },
                     {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean"
-                    },
-                    {
                       "label": "Link",
                       "name": "link",
                       "type": "string"
@@ -1033,11 +1028,6 @@
                       ]
                     },
                     {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean"
-                    },
-                    {
                       "label": "Link",
                       "name": "link",
                       "type": "string"
@@ -1273,11 +1263,6 @@
                           "value": "link"
                         }
                       ]
-                    },
-                    {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean"
                     },
                     {
                       "label": "Link",

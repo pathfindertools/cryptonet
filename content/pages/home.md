@@ -24,11 +24,9 @@ blocks:
     buttons:
       - label: Button Label
         type: button
-        icon: false
         link: /
       - label: Button Label
         type: button
-        icon: false
         link: /
     style:
       textColor: grayLight
@@ -44,38 +42,22 @@ blocks:
     subhead: Subhead here
     body: Here is some body copy.
     items:
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        headline: Saturn
+      - headline: Saturn
         subhead: Hackathon
         text: >-
           Filecoin and IPFS are proud to host the Saturn track at the Wanxiang
           Blockchain Week 2021. Submissions close on September 30.
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        headline: Mars
+      - headline: Mars
         subhead: Hackathon
         text: >-
           Build on the new Polygon-Filecoin bridge in this virtual multi-week
           hackathon (late August to late October) co-hosted with Polygon.
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        headline: Jupiter
+      - headline: Jupiter
         subhead: Hackathon
         text: >-
           Show us your best hacks in this IPFS-exclusive multi-week hackathon
           (August to September) with technical support from Alibaba Cloud.
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        headline: Mercury
+      - headline: Mercury
         subhead: Hackathon
         text: >-
           Hack away at this multi-track multi-week event (late September to late

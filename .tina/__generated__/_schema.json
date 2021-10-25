@@ -733,18 +733,6 @@
                       ]
                     },
                     {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "buttons",
-                        "icon"
-                      ]
-                    },
-                    {
                       "label": "Link",
                       "name": "link",
                       "type": "string",
@@ -1442,18 +1430,6 @@
                       ]
                     },
                     {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "cards",
-                        "buttons",
-                        "icon"
-                      ]
-                    },
-                    {
                       "label": "Link",
                       "name": "link",
                       "type": "string",
@@ -1801,18 +1777,6 @@
                         "banner",
                         "buttons",
                         "type"
-                      ]
-                    },
-                    {
-                      "label": "Icon",
-                      "name": "icon",
-                      "type": "boolean",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "buttons",
-                        "icon"
                       ]
                     },
                     {
