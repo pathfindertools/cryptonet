@@ -8,7 +8,12 @@ import { Theme } from "./theme";
 export const Layout = ({
   rawData = "",
   data = layoutData,
-  themeData,
+  themeData = {
+    primary: "", 
+    accent1: "", 
+    accent2: "", 
+    accent3: "", 
+  },
   children,
 }) => {
   return (
