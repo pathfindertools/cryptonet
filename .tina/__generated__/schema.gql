@@ -205,8 +205,10 @@ type PagesBlocksFeatureImage {
 
 type PagesBlocksFeatureButtons {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 type PagesBlocksFeatureStyleBackgroundImage {
@@ -250,8 +252,10 @@ type PagesBlocksCardsItems {
 
 type PagesBlocksCardsButtons {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 type PagesBlocksCardsStyleBackgroundImage {
@@ -279,8 +283,10 @@ type PagesBlocksCards {
 
 type PagesBlocksBannerButtons {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 type PagesBlocksBannerStyleBackgroundImage {
@@ -413,8 +419,10 @@ input PagesBlocksFeatureImageMutation {
 
 input PagesBlocksFeatureButtonsMutation {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 input PagesBlocksFeatureStyleBackgroundImageMutation {
@@ -458,8 +466,10 @@ input PagesBlocksCardsItemsMutation {
 
 input PagesBlocksCardsButtonsMutation {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 input PagesBlocksCardsStyleBackgroundImageMutation {
@@ -487,8 +497,10 @@ input PagesBlocksCardsMutation {
 
 input PagesBlocksBannerButtonsMutation {
   label: String
-  type: String
   link: String
+  type: String
+  textColor: String
+  backgroundColor: String
 }
 
 input PagesBlocksBannerStyleBackgroundImageMutation {

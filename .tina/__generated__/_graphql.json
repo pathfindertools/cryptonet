@@ -2784,6 +2784,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "arguments": [],
@@ -2799,7 +2814,22 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "arguments": [],
           "type": {
@@ -3258,6 +3288,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "arguments": [],
@@ -3273,7 +3318,22 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "arguments": [],
           "type": {
@@ -3563,6 +3623,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "arguments": [],
@@ -3578,7 +3653,22 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "arguments": [],
           "type": {
@@ -5149,6 +5239,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "type": {
@@ -5163,7 +5267,21 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "type": {
             "kind": "NamedType",
@@ -5584,6 +5702,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "type": {
@@ -5598,7 +5730,21 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "type": {
             "kind": "NamedType",
@@ -5864,6 +6010,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "link"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "type"
           },
           "type": {
@@ -5878,7 +6038,21 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "link"
+            "value": "textColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
           },
           "type": {
             "kind": "NamedType",

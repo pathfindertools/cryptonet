@@ -23,11 +23,15 @@ blocks:
       distinct hackathon events.
     buttons:
       - label: Button Label
-        type: button
         link: /
+        type: solid
+        textColor: white
+        backgroundColor: accent1
       - label: Button Label
-        type: button
         link: /
+        type: outline
+        textColor: white
+        backgroundColor: accent1
     style:
       textColor: grayLight
       backgroundColor: grayDark

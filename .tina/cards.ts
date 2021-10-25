@@ -1,5 +1,6 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { iconSchema } from "./icon";
+import { buttonsSchema } from "./buttons";
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -72,41 +73,7 @@ export const cardsBlockSchema: TinaTemplate = {
         },
       ],
     },
-    {
-      label: "Buttons",
-      name: "buttons",
-      type: "object",
-      list: true,
-      ui: {
-        defaultItem: {
-          label: "Button Label",
-          type: "button",
-          icon: true,
-          link: "/",
-        },
-      },
-      fields: [
-        {
-          label: "Label",
-          name: "label",
-          type: "string",
-        },
-        {
-          label: "Type",
-          name: "type",
-          type: "string",
-          options: [
-            { label: "Button", value: "button" },
-            { label: "Link", value: "link" },
-          ],
-        },
-        {
-          label: "Link",
-          name: "link",
-          type: "string",
-        },
-      ],
-    },
+    buttonsSchema,
     {
       type: "object",
       label: "Style",

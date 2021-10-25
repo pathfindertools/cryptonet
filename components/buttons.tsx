@@ -1,59 +1,58 @@
-import Link from "next/link";
 import * as React from "react";
-import { BiRightArrowAlt } from "react-icons/bi";
-import { ThemeContext } from "./theme";
 
 export const Buttons = ({
-  parentColor = "default",
   className = "",
   buttons,
 }) => {
-  const theme = React.useContext(ThemeContext);
+  const classes = (button) => {
+    const textColor = {
+      primary: 'text-primary',
+      accent1: 'text-accent1',
+      accent2: 'text-accent2',
+      accent3: 'text-accent3',
+      white: 'text-white',
+      grayLight: 'text-gray-100',
+      gray: 'text-gray-400',
+      grayDark: 'text-gray-800',
+      black: 'text-black',
+    };
+    const backgroundColor = {
+      primary: 'bg-primary',
+      accent1: 'bg-accent1',
+      accent2: 'bg-accent2',
+      accent3: 'bg-accent3',
+      white: 'bg-white',
+      grayLight: 'bg-gray-100',
+      gray: 'bg-gray-400',
+      grayDark: 'bg-gray-800',
+      black: 'bg-black',
+    }
+    const borderColor = {
+      primary: 'border-primary',
+      accent1: 'border-accent1',
+      accent2: 'border-accent2',
+      accent3: 'border-accent3',
+      white: 'border-white',
+      grayLight: 'border-gray-100',
+      gray: 'border-gray-400',
+      grayDark: 'border-gray-800',
+      black: 'border-black',
+    }
+    const styles = {
+      solid: `px-4 h-10 rounded leading-10 ${backgroundColor[button.backgroundColor]} ${textColor[button.textColor]}`,
+      outline: `px-4 h-10 rounded leading-9 border bg-transparent ${borderColor[button.backgroundColor]} ${textColor[button.textColor]}`,
+      link: `px-4 h-10 leading-10 ${textColor[button.textColor]}`,
+    };
+    return button.type ? styles[button.type] : styles.solid
+  }
 
   return (
-    <div className={`flex-inline flex-wrap gap-2 ${className}`}>
+    <div className={`inline-flex flex-wrap gap-4 ${className}`}>
       {buttons &&
         buttons.map(function (button, index) {
-          let element = null;
-          if (button.type === "button") {
-            element = (
-              <Link key={index} href={button.link ? button.link : "/"}>
-                <button
-                  className={`relative bg-primary text-black px-7 py-3 font-semibold text-lg rounded whitespace-nowrap mx-3 first:ml-0 last:mr-0`}
-                >
-                  {button.label}
-                  {button.icon && (
-                    <BiRightArrowAlt
-                      className={`ml-1 -mr-1 w-6 h-6 opacity-80`}
-                    />
-                  )}
-                </button>
-              </Link>
+          const element = (
+              <a className={classes(button)} href={button.link} key={index}>{ button.label }</a>
             );
-          }
-          if (button.type === "link" || button.type === "linkExternal") {
-            element = (
-              <Link key={index} href={button.link ? button.link : "/"} passHref>
-                <a
-                  className={`group inline-flex items-center font-semibold text-lg transition duration-150 ease-out ${
-                    parentColor === "primary"
-                      ? `text-white  hover:text-gray-50`
-                      : linkButtonColorClasses[theme.color]
-                  }`}
-                  style={{
-                    textShadow: `0 3px 7px rgba(var(--color-rgb-blue-400),0.2)`,
-                  }}
-                >
-                  {button.label}
-                  {button.icon && (
-                    <BiRightArrowAlt
-                      className={`ml-0 mr-0 w-6 h-6 opacity-80`}
-                    />
-                  )}
-                </a>
-              </Link>
-            );
-          }
           return element;
         })}
     </div>

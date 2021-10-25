@@ -1,4 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
+import { buttonsSchema } from "./buttons";
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -35,41 +36,7 @@ export const bannerBlockSchema: TinaTemplate = {
         component: "markdown",
       },
     },
-    {
-      label: "Buttons",
-      name: "buttons",
-      type: "object",
-      list: true,
-      ui: {
-        defaultItem: {
-          label: "Button Label",
-          type: "button",
-          icon: true,
-          link: "/",
-        },
-      },
-      fields: [
-        {
-          label: "Label",
-          name: "label",
-          type: "string",
-        },
-        {
-          label: "Type",
-          name: "type",
-          type: "string",
-          options: [
-            { label: "Button", value: "button" },
-            { label: "Link", value: "link" },
-          ],
-        },
-        {
-          label: "Link",
-          name: "link",
-          type: "string",
-        },
-      ],
-    },
+    buttonsSchema,
     {
       type: "object",
       label: "Style",
