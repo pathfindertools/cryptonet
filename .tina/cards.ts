@@ -2,7 +2,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { iconSchema } from "./icon";
 
 const defaultCard = {
-  title: "Here's Another Card",
+  headline: "Here's Another Card",
   text: "This is where you might talk about the card, if this wasn't just filler text.",
   icon: {
     color: "",

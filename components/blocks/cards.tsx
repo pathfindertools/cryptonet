@@ -8,9 +8,9 @@ export const Card = ({ cardsColor, data }) => {
       className="flex-1 flex flex-col text-left mx-auto bg-black p-8 w-1/4"
       style={{ flexBasis: "16rem" }}
     >
-      {data.title && (
+      {data.headline && (
         <h3 className="text-2xl uppercase font-semibold text-white m-0">
-          {data.title}
+          {data.headline}
         </h3>
       )}
       {data.subhead && (
