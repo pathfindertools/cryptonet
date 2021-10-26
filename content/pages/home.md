@@ -53,11 +53,12 @@ blocks:
     style:
       columns: '4'
       textColor: white
-      backgroundColor: grayDark
+      backgroundColor: black
       backgroundImage:
         src: >-
           http://res.cloudinary.com/tombustout/image/upload/v1634052877/space_bg_i9grrg.png
-    _template: cards
+      textAlignment: left
+    _template: textCards
   - image:
       src: >-
         http://res.cloudinary.com/tombustout/image/upload/v1634051702/astronaut_adbtov.png
