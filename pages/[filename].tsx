@@ -30,6 +30,8 @@ export const getStaticProps = async ({ params }) => {
                   label
                   type
                   link
+                  textColor
+                  backgroundColor
                 }
                 items {
                   headline
@@ -55,6 +57,8 @@ export const getStaticProps = async ({ params }) => {
                   label
                   type
                   link
+                  textColor
+                  backgroundColor
                 }
                 image {
                   src
@@ -69,6 +73,8 @@ export const getStaticProps = async ({ params }) => {
                   }
                   flipLayout
                   imageStyle
+                  contentAlignment
+                  textAlignment
                 }
               }
               ... on PagesBlocksBanner {
@@ -80,6 +86,8 @@ export const getStaticProps = async ({ params }) => {
                   label
                   type
                   link
+                  textColor
+                  backgroundColor
                 }
                 style {
                   textColor
