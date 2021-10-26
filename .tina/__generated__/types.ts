@@ -365,13 +365,6 @@ export type PagesBlocksFeature = {
   style?: Maybe<PagesBlocksFeatureStyle>;
 };
 
-export type PagesBlocksCardsItems = {
-  __typename?: 'PagesBlocksCardsItems';
-  headline?: Maybe<Scalars['String']>;
-  subhead?: Maybe<Scalars['String']>;
-  text?: Maybe<Scalars['String']>;
-};
-
 export type PagesBlocksCardsButtons = {
   __typename?: 'PagesBlocksCardsButtons';
   label?: Maybe<Scalars['String']>;
@@ -379,6 +372,13 @@ export type PagesBlocksCardsButtons = {
   type?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksCardsItems = {
+  __typename?: 'PagesBlocksCardsItems';
+  headline?: Maybe<Scalars['String']>;
+  subhead?: Maybe<Scalars['String']>;
+  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksCardsStyleBackgroundImage = {
@@ -403,16 +403,9 @@ export type PagesBlocksCards = {
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<PagesBlocksCardsItems>>>;
   buttons?: Maybe<Array<Maybe<PagesBlocksCardsButtons>>>;
+  items?: Maybe<Array<Maybe<PagesBlocksCardsItems>>>;
   style?: Maybe<PagesBlocksCardsStyle>;
-};
-
-export type PagesBlocksTextCardsItems = {
-  __typename?: 'PagesBlocksTextCardsItems';
-  headline?: Maybe<Scalars['String']>;
-  subhead?: Maybe<Scalars['String']>;
-  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsButtons = {
@@ -422,6 +415,13 @@ export type PagesBlocksTextCardsButtons = {
   type?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksTextCardsItems = {
+  __typename?: 'PagesBlocksTextCardsItems';
+  headline?: Maybe<Scalars['String']>;
+  subhead?: Maybe<Scalars['String']>;
+  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsStyleBackgroundImage = {
@@ -446,8 +446,8 @@ export type PagesBlocksTextCards = {
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<PagesBlocksTextCardsItems>>>;
   buttons?: Maybe<Array<Maybe<PagesBlocksTextCardsButtons>>>;
+  items?: Maybe<Array<Maybe<PagesBlocksTextCardsItems>>>;
   style?: Maybe<PagesBlocksTextCardsStyle>;
 };
 
@@ -668,18 +668,18 @@ export type PagesBlocksFeatureMutation = {
   style?: Maybe<PagesBlocksFeatureStyleMutation>;
 };
 
-export type PagesBlocksCardsItemsMutation = {
-  headline?: Maybe<Scalars['String']>;
-  subhead?: Maybe<Scalars['String']>;
-  text?: Maybe<Scalars['String']>;
-};
-
 export type PagesBlocksCardsButtonsMutation = {
   label?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksCardsItemsMutation = {
+  headline?: Maybe<Scalars['String']>;
+  subhead?: Maybe<Scalars['String']>;
+  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksCardsStyleBackgroundImageMutation = {
@@ -701,15 +701,9 @@ export type PagesBlocksCardsMutation = {
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<PagesBlocksCardsItemsMutation>>>;
   buttons?: Maybe<Array<Maybe<PagesBlocksCardsButtonsMutation>>>;
+  items?: Maybe<Array<Maybe<PagesBlocksCardsItemsMutation>>>;
   style?: Maybe<PagesBlocksCardsStyleMutation>;
-};
-
-export type PagesBlocksTextCardsItemsMutation = {
-  headline?: Maybe<Scalars['String']>;
-  subhead?: Maybe<Scalars['String']>;
-  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsButtonsMutation = {
@@ -718,6 +712,12 @@ export type PagesBlocksTextCardsButtonsMutation = {
   type?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksTextCardsItemsMutation = {
+  headline?: Maybe<Scalars['String']>;
+  subhead?: Maybe<Scalars['String']>;
+  text?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsStyleBackgroundImageMutation = {
@@ -739,8 +739,8 @@ export type PagesBlocksTextCardsMutation = {
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   body?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<PagesBlocksTextCardsItemsMutation>>>;
   buttons?: Maybe<Array<Maybe<PagesBlocksTextCardsButtonsMutation>>>;
+  items?: Maybe<Array<Maybe<PagesBlocksTextCardsItemsMutation>>>;
   style?: Maybe<PagesBlocksTextCardsStyleMutation>;
 };
 

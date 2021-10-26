@@ -890,35 +890,6 @@
                 },
                 {
                   "type": "object",
-                  "label": "Cards",
-                  "name": "items",
-                  "list": true,
-                  "ui": {
-                    "defaultItem": {
-                      "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text."
-                    }
-                  },
-                  "fields": [
-                    {
-                      "type": "string",
-                      "label": "Title",
-                      "name": "headline"
-                    },
-                    {
-                      "label": "Subhead",
-                      "name": "subhead",
-                      "type": "string"
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text",
-                      "name": "text"
-                    }
-                  ]
-                },
-                {
-                  "type": "object",
                   "label": "Buttons",
                   "name": "buttons",
                   "list": true,
@@ -1055,6 +1026,35 @@
                           "value": "black"
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Cards",
+                  "name": "items",
+                  "list": true,
+                  "ui": {
+                    "defaultItem": {
+                      "headline": "Here's Another Card",
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
+                    }
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Title",
+                      "name": "headline"
+                    },
+                    {
+                      "label": "Subhead",
+                      "name": "subhead",
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "text"
                     }
                   ]
                 },
@@ -1300,35 +1300,6 @@
                 },
                 {
                   "type": "object",
-                  "label": "Cards",
-                  "name": "items",
-                  "list": true,
-                  "ui": {
-                    "defaultItem": {
-                      "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text."
-                    }
-                  },
-                  "fields": [
-                    {
-                      "type": "string",
-                      "label": "Title",
-                      "name": "headline"
-                    },
-                    {
-                      "label": "Subhead",
-                      "name": "subhead",
-                      "type": "string"
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text",
-                      "name": "text"
-                    }
-                  ]
-                },
-                {
-                  "type": "object",
                   "label": "Buttons",
                   "name": "buttons",
                   "list": true,
@@ -1470,6 +1441,35 @@
                 },
                 {
                   "type": "object",
+                  "label": "Cards",
+                  "name": "items",
+                  "list": true,
+                  "ui": {
+                    "defaultItem": {
+                      "headline": "Here's Another Card",
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
+                    }
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Title",
+                      "name": "headline"
+                    },
+                    {
+                      "label": "Subhead",
+                      "name": "subhead",
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "object",
                   "label": "Style",
                   "name": "style",
                   "ui": {
@@ -1499,14 +1499,6 @@
                         {
                           "label": "4",
                           "value": "4"
-                        },
-                        {
-                          "label": "5",
-                          "value": "5"
-                        },
-                        {
-                          "label": "6",
-                          "value": "6"
                         }
                       ]
                     },

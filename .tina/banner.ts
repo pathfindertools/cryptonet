@@ -1,5 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
-import { buttonsSchema } from "./buttons";
+import { buttonsSchema } from "./shared/buttons";
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",

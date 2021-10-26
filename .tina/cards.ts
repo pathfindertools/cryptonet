@@ -1,5 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
-import { buttonsSchema } from "./buttons";
+import { buttonsSchema } from "./shared/buttons";
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -38,6 +38,7 @@ export const cardsBlockSchema: TinaTemplate = {
         component: "markdown",
       },
     },
+    buttonsSchema,
     {
       type: "object",
       label: "Cards",
@@ -66,7 +67,6 @@ export const cardsBlockSchema: TinaTemplate = {
         },
       ],
     },
-    buttonsSchema,
     {
       type: "object",
       label: "Style",
