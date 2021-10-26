@@ -77,6 +77,38 @@ blocks:
       flipLayout: false
       imageStyle: fitHalf
     _template: feature
+  - headline: Getting started with IPFS & Filecoin
+    items:
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635258307/why-ipfs_lwt8cv.png
+        headline: ''
+        subhead: Why IPFS
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635258314/how-ipfs-works_mnha4d.png
+        headline: How IPFS Works
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635258338/filecoin-ecosystem-overview_e98fbi.png
+        headline: An Overview of the Filecoin Ecosystem
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635258344/filecoin-opportunities_velarn.png
+        headline: Filecoin Opportunities
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635258274/filecoin-learn-more_xn4wfx.png
+        headline: Want to Learn More about Filecoin? Start here.
+        text: ''
+    style:
+      columns: '3'
+      textColor: black
+    _template: photoCards
   - label: ''
     headline: Stay in the know about future events
     subhead: ''

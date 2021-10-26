@@ -1168,7 +1168,9 @@
               "label": "Photo Cards",
               "ui": {
                 "defaultItem": {
-                  "columns": "3",
+                  "style": {
+                    "columns": "3"
+                  },
                   "items": [
                     {
                       "headline": "Here's Another Card",
@@ -1427,6 +1429,46 @@
                     }
                   },
                   "fields": [
+                    {
+                      "label": "Image",
+                      "name": "image",
+                      "type": "object",
+                      "fields": [
+                        {
+                          "label": "Image Source",
+                          "name": "src",
+                          "type": "image",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "items",
+                            "image",
+                            "src"
+                          ]
+                        },
+                        {
+                          "name": "alt",
+                          "label": "Alt Text",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "items",
+                            "image",
+                            "alt"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "items",
+                        "image"
+                      ]
+                    },
                     {
                       "type": "string",
                       "label": "Title",
@@ -1732,6 +1774,9 @@
               "label": "Text Cards",
               "ui": {
                 "defaultItem": {
+                  "style": {
+                    "columns": "3"
+                  },
                   "items": [
                     {
                       "headline": "Here's Another Card",

@@ -374,8 +374,15 @@ export type PagesBlocksPhotoCardsButtons = {
   backgroundColor?: Maybe<Scalars['String']>;
 };
 
+export type PagesBlocksPhotoCardsItemsImage = {
+  __typename?: 'PagesBlocksPhotoCardsItemsImage';
+  src?: Maybe<Scalars['String']>;
+  alt?: Maybe<Scalars['String']>;
+};
+
 export type PagesBlocksPhotoCardsItems = {
   __typename?: 'PagesBlocksPhotoCardsItems';
+  image?: Maybe<PagesBlocksPhotoCardsItemsImage>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   text?: Maybe<Scalars['String']>;
@@ -676,7 +683,13 @@ export type PagesBlocksPhotoCardsButtonsMutation = {
   backgroundColor?: Maybe<Scalars['String']>;
 };
 
+export type PagesBlocksPhotoCardsItemsImageMutation = {
+  src?: Maybe<Scalars['String']>;
+  alt?: Maybe<Scalars['String']>;
+};
+
 export type PagesBlocksPhotoCardsItemsMutation = {
+  image?: Maybe<PagesBlocksPhotoCardsItemsImageMutation>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
   text?: Maybe<Scalars['String']>;

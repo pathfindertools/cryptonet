@@ -12,7 +12,9 @@ export const photoCardsBlockSchema: TinaTemplate = {
   label: "Photo Cards",
   ui: {
     defaultItem: {
-      columns: "3",
+      style: {
+        columns: "3"
+      },
       items: [defaultCard, defaultCard, defaultCard],
     },
   },
@@ -52,6 +54,23 @@ export const photoCardsBlockSchema: TinaTemplate = {
         },
       },
       fields: [
+        {
+          label: "Image",
+          name: "image",
+          type: "object",
+          fields: [
+            {
+              label: "Image Source",
+              name: "src",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
         {
           type: "string",
           label: "Title",

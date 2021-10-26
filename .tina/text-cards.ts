@@ -12,6 +12,9 @@ export const textCardsBlockSchema: TinaTemplate = {
   label: "Text Cards",
   ui: {
     defaultItem: {
+      style: {
+        columns: "3"
+      },
       items: [defaultCard, defaultCard, defaultCard],
     },
   },

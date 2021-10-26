@@ -245,7 +245,13 @@ type PagesBlocksPhotoCardsButtons {
   backgroundColor: String
 }
 
+type PagesBlocksPhotoCardsItemsImage {
+  src: String
+  alt: String
+}
+
 type PagesBlocksPhotoCardsItems {
+  image: PagesBlocksPhotoCardsItemsImage
   headline: String
   subhead: String
   text: String
@@ -491,7 +497,13 @@ input PagesBlocksPhotoCardsButtonsMutation {
   backgroundColor: String
 }
 
+input PagesBlocksPhotoCardsItemsImageMutation {
+  src: String
+  alt: String
+}
+
 input PagesBlocksPhotoCardsItemsMutation {
+  image: PagesBlocksPhotoCardsItemsImageMutation
   headline: String
   subhead: String
   text: String
