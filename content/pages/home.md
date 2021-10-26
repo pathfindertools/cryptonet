@@ -1,45 +1,29 @@
 ---
 blocks:
-  - label: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
-    style:
-      textColor: grayLight
-      backgroundColor: grayDark
-      textAlignment: left
-    _template: banner
   - image:
       src: >-
         http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
       alt: Asia Hackathon Season 2021
-    label: Label
+    label: ''
     headline: 'August - October, 2021'
-    subhead: Subhead
+    subhead: ''
     body: >-
       Join us on a journey across the universe of Filecoin and IPFS across four
       distinct hackathon events.
     buttons:
-      - label: Button Label
-        link: /
+      - label: Join our mailing list
+        link: 'https://filecoin-community.typeform.com/to/scRusMWz'
         type: solid
-        textColor: white
-        backgroundColor: accent1
-      - label: Button Label
-        link: /
-        type: outline
-        textColor: white
-        backgroundColor: accent1
+        textColor: black
+        backgroundColor: primary
     style:
       textColor: grayLight
-      backgroundColor: grayDark
+      backgroundColor: black
       flipLayout: true
       contentOrder: labelContentHeadings
-      imageStyle: natural
+      imageStyle: fitHalf
       contentAlignment: center
-      textAlignment: center
+      textAlignment: left
     _template: feature
   - label: I am a label
     headline: Join us on a journey across the universe
@@ -91,9 +75,20 @@ blocks:
       flipLayout: false
       imageStyle: fitHalf
     _template: feature
-primary: '#50E3C2'
-accent1: '#B43838'
-accent2: '#BD10E0'
-accent3: '#7ED321'
+  - label: Here's some text above the other text
+    headline: This Big Text is Totally Awesome
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      textColor: grayLight
+      backgroundColor: grayDark
+      textAlignment: left
+    _template: banner
+primary: '#FFDE30'
+accent1: '#FF388B'
+accent2: '#2DDB87'
+accent3: '#2DD0DB'
 ---
 
