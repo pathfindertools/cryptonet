@@ -237,14 +237,7 @@ type PagesBlocksFeature {
   style: PagesBlocksFeatureStyle
 }
 
-type PagesBlocksCardsItemsIcon {
-  color: String
-  style: String
-  name: String
-}
-
 type PagesBlocksCardsItems {
-  icon: PagesBlocksCardsItemsIcon
   headline: String
   subhead: String
   text: String
@@ -264,6 +257,7 @@ type PagesBlocksCardsStyleBackgroundImage {
 }
 
 type PagesBlocksCardsStyle {
+  columns: String
   textColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksCardsStyleBackgroundImage
@@ -451,14 +445,7 @@ input PagesBlocksFeatureMutation {
   style: PagesBlocksFeatureStyleMutation
 }
 
-input PagesBlocksCardsItemsIconMutation {
-  color: String
-  style: String
-  name: String
-}
-
 input PagesBlocksCardsItemsMutation {
-  icon: PagesBlocksCardsItemsIconMutation
   headline: String
   subhead: String
   text: String
@@ -478,6 +465,7 @@ input PagesBlocksCardsStyleBackgroundImageMutation {
 }
 
 input PagesBlocksCardsStyleMutation {
+  columns: String
   textColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksCardsStyleBackgroundImageMutation

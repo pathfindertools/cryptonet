@@ -2,11 +2,10 @@ import { Buttons } from "../buttons";
 import { Section } from "../section";
 import { Content } from "../content";
 
-export const Card = ({ cardsColor, data }) => {
+export const Card = ({ color, data }) => {
   return (
     <div
-      className="flex-1 flex flex-col text-left mx-auto bg-black p-8 w-1/4"
-      style={{ flexBasis: "16rem" }}
+      className={`text-left p-8 border-box bg-black`}
     >
       {data.headline && (
         <h3 className="text-2xl uppercase font-semibold text-white m-0">
@@ -25,6 +24,14 @@ export const Card = ({ cardsColor, data }) => {
 };
 
 export const Cards = ({ data }) => {
+  const gridCols = {
+    "1": "grid gap-10 grid-cols-1",
+    "2": "grid gap-10 grid-cols-2",
+    "3": "grid gap-10 grid-cols-3",
+    "4": "grid gap-10 grid-cols-4",
+    "5": "grid gap-10 grid-cols-5",
+    "6": "grid gap-10 grid-cols-5",
+  }
   return (
     <Section
       color={data.style?.backgroundColor}
@@ -41,10 +48,10 @@ export const Cards = ({ data }) => {
           alignment = {data.style?.textAlignment}
           order = {data.style?.contentOrder}
         />
-        <div className={`flex gap-x-10 gap-y-8 mt-12 text-left`}>
+        <div className={`mt-12 ${gridCols[data.style?.columns]}`}>
           {data.items &&
             data.items.map(function (block, i) {
-              return <Card cardsColor={data.color} key={i} data={block} />;
+              return <Card color={data.color} key={i} data={block} />;
             })}
         </div>
       </div>

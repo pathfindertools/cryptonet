@@ -51,6 +51,7 @@ blocks:
           Hack away at this multi-track multi-week event (late September to late
           October) co-hosted with Flow.
     style:
+      columns: '4'
       textColor: white
       backgroundColor: grayDark
       backgroundImage:

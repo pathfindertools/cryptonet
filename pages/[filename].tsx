@@ -33,9 +33,11 @@ export const getStaticProps = async ({ params }) => {
                 }
                 items {
                   headline
+                  subhead
                   text
                 }
                 style {
+                  columns
                   textColor
                   backgroundColor
                   backgroundImage {
