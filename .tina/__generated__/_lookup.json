@@ -56,7 +56,7 @@
     "resolveType": "unionData",
     "typeMap": {
       "feature": "PagesBlocksFeature",
-      "cards": "PagesBlocksCards",
+      "photoCards": "PagesBlocksPhotoCards",
       "textCards": "PagesBlocksTextCards",
       "banner": "PagesBlocksBanner"
     }

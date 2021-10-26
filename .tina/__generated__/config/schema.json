@@ -844,10 +844,11 @@
               ]
             },
             {
-              "name": "cards",
-              "label": "Cards",
+              "name": "photoCards",
+              "label": "Photo Cards",
               "ui": {
                 "defaultItem": {
+                  "columns": "3",
                   "items": [
                     {
                       "headline": "Here's Another Card",
@@ -1089,14 +1090,6 @@
                         {
                           "label": "4",
                           "value": "4"
-                        },
-                        {
-                          "label": "5",
-                          "value": "5"
-                        },
-                        {
-                          "label": "6",
-                          "value": "6"
                         }
                       ]
                     },

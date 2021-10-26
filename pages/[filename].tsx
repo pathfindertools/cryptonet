@@ -21,7 +21,7 @@ export const getStaticProps = async ({ params }) => {
             __typename
             blocks {
               __typename
-              ... on PagesBlocksCards {
+              ... on PagesBlocksTextCards {
                 label
                 headline
                 subhead

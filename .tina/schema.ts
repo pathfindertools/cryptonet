@@ -3,7 +3,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 
 import { iconSchema } from "./icon";
 import { featureBlockSchema } from "./feature";
-import { cardsBlockSchema } from "./cards";
+import { photoCardsBlockSchema } from "./photo-cards";
 import { textCardsBlockSchema } from "./text-cards";
 import { bannerBlockSchema } from "./banner";
 
@@ -307,7 +307,7 @@ export default defineSchema({
           label: "Sections",
           templates: [
             featureBlockSchema,
-            cardsBlockSchema,
+            photoCardsBlockSchema,
             textCardsBlockSchema,
             bannerBlockSchema,
           ],

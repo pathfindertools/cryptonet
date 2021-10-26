@@ -3139,7 +3139,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsButtons"
+        "value": "PagesBlocksPhotoCardsButtons"
       },
       "fields": [
         {
@@ -3225,7 +3225,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsItems"
+        "value": "PagesBlocksPhotoCardsItems"
       },
       "fields": [
         {
@@ -3281,7 +3281,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsStyleBackgroundImage"
+        "value": "PagesBlocksPhotoCardsStyleBackgroundImage"
       },
       "fields": [
         {
@@ -3322,7 +3322,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsStyle"
+        "value": "PagesBlocksPhotoCardsStyle"
       },
       "fields": [
         {
@@ -3381,7 +3381,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksCardsStyleBackgroundImage"
+              "value": "PagesBlocksPhotoCardsStyleBackgroundImage"
             }
           }
         },
@@ -3423,7 +3423,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCards"
+        "value": "PagesBlocksPhotoCards"
       },
       "fields": [
         {
@@ -3499,7 +3499,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksCardsButtons"
+                "value": "PagesBlocksPhotoCardsButtons"
               }
             }
           }
@@ -3517,7 +3517,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksCardsItems"
+                "value": "PagesBlocksPhotoCardsItems"
               }
             }
           }
@@ -3533,7 +3533,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksCardsStyle"
+              "value": "PagesBlocksPhotoCardsStyle"
             }
           }
         }
@@ -4266,7 +4266,7 @@
           "kind": "NamedType",
           "name": {
             "kind": "Name",
-            "value": "PagesBlocksCards"
+            "value": "PagesBlocksPhotoCards"
           }
         },
         {
@@ -5922,7 +5922,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsButtonsMutation"
+        "value": "PagesBlocksPhotoCardsButtonsMutation"
       },
       "fields": [
         {
@@ -6001,7 +6001,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsItemsMutation"
+        "value": "PagesBlocksPhotoCardsItemsMutation"
       },
       "fields": [
         {
@@ -6052,7 +6052,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsStyleBackgroundImageMutation"
+        "value": "PagesBlocksPhotoCardsStyleBackgroundImageMutation"
       },
       "fields": [
         {
@@ -6089,7 +6089,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsStyleMutation"
+        "value": "PagesBlocksPhotoCardsStyleMutation"
       },
       "fields": [
         {
@@ -6144,7 +6144,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksCardsStyleBackgroundImageMutation"
+              "value": "PagesBlocksPhotoCardsStyleBackgroundImageMutation"
             }
           }
         },
@@ -6182,7 +6182,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksCardsMutation"
+        "value": "PagesBlocksPhotoCardsMutation"
       },
       "fields": [
         {
@@ -6253,7 +6253,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksCardsButtonsMutation"
+                "value": "PagesBlocksPhotoCardsButtonsMutation"
               }
             }
           }
@@ -6270,7 +6270,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksCardsItemsMutation"
+                "value": "PagesBlocksPhotoCardsItemsMutation"
               }
             }
           }
@@ -6285,7 +6285,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksCardsStyleMutation"
+              "value": "PagesBlocksPhotoCardsStyleMutation"
             }
           }
         }
@@ -6966,13 +6966,13 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "cards"
+            "value": "photoCards"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksCardsMutation"
+              "value": "PagesBlocksPhotoCardsMutation"
             }
           }
         },

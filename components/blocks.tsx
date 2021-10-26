@@ -1,6 +1,6 @@
 import React from "react";
 import type { Pages } from "../.tina/__generated__/types";
-import { Cards } from "./blocks/cards";
+import { PhotoCards } from "./blocks/photo-cards";
 import { TextCards } from "./blocks/text-cards";
 import { Feature } from "./blocks/feature";
 import { Banner } from "./blocks/banner";
@@ -23,10 +23,10 @@ export const Blocks = (props: Pages) => {
                     <Banner data={block} />
                   </React.Fragment>
                 );
-              case "PagesBlocksCards":
+              case "PagesBlocksPhotoCards":
                 return (
                   <React.Fragment key={i + block.__typename}>
-                    <Cards data={block} />
+                    <PhotoCards data={block} />
                   </React.Fragment>
                 );
               case "PagesBlocksTextCards":
