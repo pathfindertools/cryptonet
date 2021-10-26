@@ -37,6 +37,7 @@ blocks:
           Blockchain Week 2021. Submissions close on September 30.
         link: /
         buttonLabel: Register Now
+        accentColor: primary
       - headline: Mars
         subhead: Hackathon
         text: >-
@@ -44,6 +45,7 @@ blocks:
           hackathon (late August to late October) co-hosted with Polygon.
         link: /
         buttonLabel: Register Now
+        accentColor: accent1
       - headline: Jupiter
         subhead: Hackathon
         text: >-
@@ -51,6 +53,7 @@ blocks:
           (August to September) with technical support from Alibaba Cloud.
         link: /
         buttonLabel: Register Now
+        accentColor: accent2
       - headline: Mercury
         subhead: Hackathon
         text: >-
@@ -58,6 +61,7 @@ blocks:
           October) co-hosted with Flow.
         link: /
         buttonLabel: Register Now
+        accentColor: accent3
     style:
       columns: '4'
       textColor: white
@@ -66,6 +70,11 @@ blocks:
         src: >-
           http://res.cloudinary.com/tombustout/image/upload/v1634052877/space_bg_i9grrg.png
       textAlignment: left
+    cardStyle:
+      textColor: white
+      backgroundColor: black
+      accentColor: primary
+      type: default
     _template: textCards
   - image:
       src: >-

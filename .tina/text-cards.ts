@@ -15,6 +15,12 @@ export const textCardsBlockSchema: TinaTemplate = {
       style: {
         columns: "3"
       },
+      cardStyle: {
+        textColor: "white",
+        backgroundColor: "black",
+        accentColor: "primary",
+        type: 'default'
+      },
       items: [defaultCard, defaultCard, defaultCard],
     },
   },
@@ -80,8 +86,107 @@ export const textCardsBlockSchema: TinaTemplate = {
           name: "buttonLabel",
           description: "A button will be included if you have a link and button label, with only a link the entire card is linked"
         },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Default", value: "default" },
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
       ],
     },
-    cardsSchema
+    cardsSchema,
+    {
+      type: "object",
+      label: "Card Style",
+      name: "cardStyle",
+      ui: {
+        component: "group",
+      },
+      fields: [
+        {
+          label: "Text Color",
+          name: "textColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Background Color",
+          name: "backgroundColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Type",
+          name: "type",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Default", value: "default" },
+            { label: "Transparent Background", value: "transparent" },
+          ],
+        },
+      ],
+    }
   ],
 };

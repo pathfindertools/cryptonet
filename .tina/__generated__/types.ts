@@ -433,6 +433,7 @@ export type PagesBlocksTextCardsItems = {
   text?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
   buttonLabel?: Maybe<Scalars['String']>;
+  accentColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsStyleBackgroundImage = {
@@ -451,6 +452,14 @@ export type PagesBlocksTextCardsStyle = {
   textAlignment?: Maybe<Scalars['String']>;
 };
 
+export type PagesBlocksTextCardsCardStyle = {
+  __typename?: 'PagesBlocksTextCardsCardStyle';
+  textColor?: Maybe<Scalars['String']>;
+  backgroundColor?: Maybe<Scalars['String']>;
+  accentColor?: Maybe<Scalars['String']>;
+  type?: Maybe<Scalars['String']>;
+};
+
 export type PagesBlocksTextCards = {
   __typename?: 'PagesBlocksTextCards';
   label?: Maybe<Scalars['String']>;
@@ -460,6 +469,7 @@ export type PagesBlocksTextCards = {
   buttons?: Maybe<Array<Maybe<PagesBlocksTextCardsButtons>>>;
   items?: Maybe<Array<Maybe<PagesBlocksTextCardsItems>>>;
   style?: Maybe<PagesBlocksTextCardsStyle>;
+  cardStyle?: Maybe<PagesBlocksTextCardsCardStyle>;
 };
 
 export type PagesBlocksBannerButtons = {
@@ -739,6 +749,7 @@ export type PagesBlocksTextCardsItemsMutation = {
   text?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
   buttonLabel?: Maybe<Scalars['String']>;
+  accentColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsStyleBackgroundImageMutation = {
@@ -755,6 +766,13 @@ export type PagesBlocksTextCardsStyleMutation = {
   textAlignment?: Maybe<Scalars['String']>;
 };
 
+export type PagesBlocksTextCardsCardStyleMutation = {
+  textColor?: Maybe<Scalars['String']>;
+  backgroundColor?: Maybe<Scalars['String']>;
+  accentColor?: Maybe<Scalars['String']>;
+  type?: Maybe<Scalars['String']>;
+};
+
 export type PagesBlocksTextCardsMutation = {
   label?: Maybe<Scalars['String']>;
   headline?: Maybe<Scalars['String']>;
@@ -763,6 +781,7 @@ export type PagesBlocksTextCardsMutation = {
   buttons?: Maybe<Array<Maybe<PagesBlocksTextCardsButtonsMutation>>>;
   items?: Maybe<Array<Maybe<PagesBlocksTextCardsItemsMutation>>>;
   style?: Maybe<PagesBlocksTextCardsStyleMutation>;
+  cardStyle?: Maybe<PagesBlocksTextCardsCardStyleMutation>;
 };
 
 export type PagesBlocksBannerButtonsMutation = {

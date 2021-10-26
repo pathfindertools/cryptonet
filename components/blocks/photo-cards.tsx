@@ -1,4 +1,3 @@
-import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
 const PhotoCard = ({ data }) => {
@@ -13,20 +12,19 @@ const PhotoCard = ({ data }) => {
         )}
       </div>
       <div
-        className={`flex-1 text-left p-4 border-box bg-gray-400`}
+        className={`flex-1 text-left p-4 border-box text-black`}
       >
         {data.headline && (
-          <h3 className="text-2xl uppercase font-semibold text-white m-0">
+          <h3 className="text-2xl uppercase font-semibold  m-0">
             {data.headline}
           </h3>
         )}
         {data.subhead && (
-          <h3 className="text-base font-semibold text-white">
+          <h3 className="text-base font-semibold ">
             {data.subhead}
           </h3>
         )}
-        {data.text && <p className="text-white ">{data.text}</p>}
-        {data.buttons && <Buttons buttons={data.buttons} />}
+        {data.text && <p>{data.text}</p>}
       </div>
     </div>
   );
