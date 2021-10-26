@@ -21,7 +21,7 @@ blocks:
       backgroundColor: black
       flipLayout: true
       contentOrder: contentHeadingsLabel
-      imageStyle: fitHalf
+      imageStyle: natural
       contentAlignment: center
       textAlignment: left
     _template: feature
