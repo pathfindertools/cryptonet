@@ -72,6 +72,7 @@ export const getStaticProps = async ({ params }) => {
                   text
                   link
                   buttonLabel
+                  accentColor
                 }
                 style {
                   columns
