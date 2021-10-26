@@ -42,16 +42,22 @@ blocks:
         text: >-
           Build on the new Polygon-Filecoin bridge in this virtual multi-week
           hackathon (late August to late October) co-hosted with Polygon.
+        link: /
+        buttonLabel: Register Now
       - headline: Jupiter
         subhead: Hackathon
         text: >-
           Show us your best hacks in this IPFS-exclusive multi-week hackathon
           (August to September) with technical support from Alibaba Cloud.
+        link: /
+        buttonLabel: Register Now
       - headline: Mercury
         subhead: Hackathon
         text: >-
           Hack away at this multi-track multi-week event (late September to late
           October) co-hosted with Flow.
+        link: /
+        buttonLabel: Register Now
     style:
       columns: '4'
       textColor: white
