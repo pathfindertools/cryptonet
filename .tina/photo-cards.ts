@@ -86,6 +86,17 @@ export const photoCardsBlockSchema: TinaTemplate = {
           label: "Text",
           name: "text",
         },
+        {
+          type: "string",
+          label: "Link",
+          name: "link",
+        },
+        {
+          type: "string",
+          label: "Button Label",
+          name: "buttonLabel",
+          description: "A button will be included if you have a link and button label, with only a link the entire card is linked"
+        },
       ],
     },
     cardsSchema

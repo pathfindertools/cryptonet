@@ -1504,6 +1504,31 @@
                         "items",
                         "text"
                       ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Link",
+                      "name": "link",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "items",
+                        "link"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Button Label",
+                      "name": "buttonLabel",
+                      "description": "A button will be included if you have a link and button label, with only a link the entire card is linked",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "items",
+                        "buttonLabel"
+                      ]
                     }
                   ],
                   "namespace": [
@@ -2069,6 +2094,31 @@
                         "textCards",
                         "items",
                         "text"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Link",
+                      "name": "link",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "link"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Button Label",
+                      "name": "buttonLabel",
+                      "description": "A button will be included if you have a link and button label, with only a link the entire card is linked",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "buttonLabel"
                       ]
                     }
                   ],

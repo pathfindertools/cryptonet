@@ -41,6 +41,8 @@ export const getStaticProps = async ({ params }) => {
                   headline
                   subhead
                   text
+                  link
+                  buttonLabel
                 }
                 style {
                   columns
@@ -68,6 +70,8 @@ export const getStaticProps = async ({ params }) => {
                   headline
                   subhead
                   text
+                  link
+                  buttonLabel
                 }
                 style {
                   columns

@@ -255,6 +255,8 @@ type PagesBlocksPhotoCardsItems {
   headline: String
   subhead: String
   text: String
+  link: String
+  buttonLabel: String
 }
 
 type PagesBlocksPhotoCardsStyleBackgroundImage {
@@ -293,6 +295,8 @@ type PagesBlocksTextCardsItems {
   headline: String
   subhead: String
   text: String
+  link: String
+  buttonLabel: String
 }
 
 type PagesBlocksTextCardsStyleBackgroundImage {
@@ -507,6 +511,8 @@ input PagesBlocksPhotoCardsItemsMutation {
   headline: String
   subhead: String
   text: String
+  link: String
+  buttonLabel: String
 }
 
 input PagesBlocksPhotoCardsStyleBackgroundImageMutation {
@@ -545,6 +551,8 @@ input PagesBlocksTextCardsItemsMutation {
   headline: String
   subhead: String
   text: String
+  link: String
+  buttonLabel: String
 }
 
 input PagesBlocksTextCardsStyleBackgroundImageMutation {

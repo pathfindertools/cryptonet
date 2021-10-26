@@ -35,6 +35,8 @@ blocks:
         text: >-
           Filecoin and IPFS are proud to host the Saturn track at the Wanxiang
           Blockchain Week 2021. Submissions close on September 30.
+        link: /
+        buttonLabel: Register Now
       - headline: Mars
         subhead: Hackathon
         text: >-
@@ -88,25 +90,29 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258314/how-ipfs-works_mnha4d.png
-        headline: How IPFS Works
+        headline: ''
+        subhead: How IPFS Works
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258338/filecoin-ecosystem-overview_e98fbi.png
-        headline: An Overview of the Filecoin Ecosystem
+        headline: ''
+        subhead: An Overview of the Filecoin Ecosystem
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258344/filecoin-opportunities_velarn.png
-        headline: Filecoin Opportunities
+        headline: ''
+        subhead: Filecoin Opportunities
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258274/filecoin-learn-more_xn4wfx.png
-        headline: Want to Learn More about Filecoin? Start here.
+        headline: ''
+        subhead: Want to Learn More about Filecoin? Start here.
         text: ''
     style:
-      columns: '3'
+      columns: '2'
       textColor: black
     _template: photoCards
   - label: ''
