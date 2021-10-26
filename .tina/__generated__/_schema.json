@@ -692,9 +692,10 @@
                   "ui": {
                     "defaultItem": {
                       "label": "Button Label",
-                      "type": "button",
-                      "icon": true,
-                      "link": "/"
+                      "link": "/",
+                      "type": "solid",
+                      "textColor": "black",
+                      "backgroundColor": "primary"
                     }
                   },
                   "fields": [
@@ -1170,30 +1171,15 @@
                   "items": [
                     {
                       "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text.",
-                      "icon": {
-                        "color": "",
-                        "style": "float",
-                        "name": ""
-                      }
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text.",
-                      "icon": {
-                        "color": "",
-                        "style": "float",
-                        "name": ""
-                      }
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text.",
-                      "icon": {
-                        "color": "",
-                        "style": "float",
-                        "name": ""
-                      }
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   ]
                 }
@@ -1254,12 +1240,7 @@
                   "ui": {
                     "defaultItem": {
                       "headline": "Here's Another Card",
-                      "text": "This is where you might talk about the card, if this wasn't just filler text.",
-                      "icon": {
-                        "color": "",
-                        "style": "float",
-                        "name": ""
-                      }
+                      "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   },
                   "fields": [
@@ -1502,9 +1483,10 @@
                   "ui": {
                     "defaultItem": {
                       "label": "Button Label",
-                      "type": "button",
-                      "icon": true,
-                      "link": "/"
+                      "link": "/",
+                      "type": "solid",
+                      "textColor": "black",
+                      "backgroundColor": "primary"
                     }
                   },
                   "fields": [
@@ -1965,9 +1947,10 @@
                   "ui": {
                     "defaultItem": {
                       "label": "Button Label",
-                      "type": "button",
-                      "icon": true,
-                      "link": "/"
+                      "link": "/",
+                      "type": "solid",
+                      "textColor": "black",
+                      "backgroundColor": "primary"
                     }
                   },
                   "fields": [

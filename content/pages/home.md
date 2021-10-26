@@ -20,15 +20,15 @@ blocks:
       textColor: grayLight
       backgroundColor: black
       flipLayout: true
-      contentOrder: labelContentHeadings
+      contentOrder: contentHeadingsLabel
       imageStyle: fitHalf
       contentAlignment: center
       textAlignment: left
     _template: feature
-  - label: I am a label
+  - label: ''
     headline: Join us on a journey across the universe
-    subhead: Subhead here
-    body: Here is some body copy.
+    subhead: ''
+    body: ''
     items:
       - headline: Saturn
         subhead: Hackathon
@@ -75,15 +75,29 @@ blocks:
       flipLayout: false
       imageStyle: fitHalf
     _template: feature
-  - label: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+  - label: ''
+    headline: Stay in the know about future events
+    subhead: ''
+    body: ''
+    buttons:
+      - label: Join Filecoin on Slack
+        link: /
+        type: outline
+        textColor: white
+        backgroundColor: accent3
+      - label: Subscriber to the IPFS Newsletter
+        link: /
+        type: outline
+        textColor: white
+        backgroundColor: accent3
+      - label: Subscribe to the Filecoin Newsletter
+        link: /
+        type: outline
+        textColor: white
+        backgroundColor: accent3
     style:
-      textColor: grayLight
-      backgroundColor: grayDark
+      textColor: white
+      backgroundColor: black
       textAlignment: left
     _template: banner
 primary: '#FFDE30'

@@ -5,11 +5,6 @@ import { buttonsSchema } from "./buttons";
 const defaultCard = {
   headline: "Here's Another Card",
   text: "This is where you might talk about the card, if this wasn't just filler text.",
-  icon: {
-    color: "",
-    style: "float",
-    name: "",
-  },
 };
 
 export const cardsBlockSchema: TinaTemplate = {

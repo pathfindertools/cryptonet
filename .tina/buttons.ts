@@ -9,9 +9,10 @@ export const buttonsSchema: TinaField = {
   ui: {
     defaultItem: {
       label: "Button Label",
-      type: "button",
-      icon: true,
       link: "/",
+      type: "solid",
+      textColor: "black",
+      backgroundColor: "primary",
     },
   },
   fields: [
