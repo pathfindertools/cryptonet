@@ -39,9 +39,9 @@ export const Buttons = ({
       black: 'border-black',
     }
     const styles = {
-      solid: `px-4 h-10 rounded leading-10 ${backgroundColor[button.backgroundColor]} ${textColor[button.textColor]}`,
-      outline: `px-4 h-10 rounded leading-9 border bg-transparent ${borderColor[button.backgroundColor]} ${textColor[button.textColor]}`,
-      link: `px-4 h-10 leading-10 ${textColor[button.textColor]}`,
+      solid: `px-4 h-10 leading-10 font-bold text-sm ${backgroundColor[button.backgroundColor]} ${textColor[button.textColor]}`,
+      outline: `px-4 h-10 leading-9 font-bold text-sm border bg-transparent ${borderColor[button.backgroundColor]} ${textColor[button.textColor]}`,
+      link: `px-4 h-10 leading-10 font-bold text-sm ${textColor[button.textColor]}`,
     };
     return button.type ? styles[button.type] : styles.solid
   }
