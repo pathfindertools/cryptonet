@@ -83,7 +83,7 @@ export const Content = ({
       {headline && <h2 className={`text-4xl ${headingOrder(order)}`}>{headline}</h2>}
       {subhead && <h3 className={`text-2xl ${subheadOrder(order)}`}>{subhead}</h3>}
       {body && (
-        <div className={`text-base mt-8 items-center ${bodyOrder(order)}`}>
+        <div className={`text-lg leading-10 mt-8 items-center ${bodyOrder(order)}`}>
           <Markdown>{body}</Markdown>
         </div>
       )}
