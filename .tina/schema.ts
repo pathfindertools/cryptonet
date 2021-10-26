@@ -4,6 +4,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { iconSchema } from "./icon";
 import { featureBlockSchema } from "./feature";
 import { cardsBlockSchema } from "./cards";
+import { textCardsBlockSchema } from "./text-cards";
 import { bannerBlockSchema } from "./banner";
 
 const contentBlockSchema: TinaTemplate = {
@@ -307,6 +308,7 @@ export default defineSchema({
           templates: [
             featureBlockSchema,
             cardsBlockSchema,
+            textCardsBlockSchema,
             bannerBlockSchema,
           ],
         },

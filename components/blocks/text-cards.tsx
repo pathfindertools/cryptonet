@@ -23,7 +23,7 @@ const Card = ({ color, data }) => {
   );
 };
 
-export const Cards = ({ data }) => {
+export const TextCards = ({ data }) => {
   const gridCols = {
     "1": "grid gap-10 grid-cols-1",
     "2": "grid gap-10 grid-cols-2",

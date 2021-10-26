@@ -275,6 +275,44 @@ type PagesBlocksCards {
   style: PagesBlocksCardsStyle
 }
 
+type PagesBlocksTextCardsItems {
+  headline: String
+  subhead: String
+  text: String
+}
+
+type PagesBlocksTextCardsButtons {
+  label: String
+  link: String
+  type: String
+  textColor: String
+  backgroundColor: String
+}
+
+type PagesBlocksTextCardsStyleBackgroundImage {
+  src: String
+  alt: String
+}
+
+type PagesBlocksTextCardsStyle {
+  columns: String
+  textColor: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
+  contentOrder: String
+  textAlignment: String
+}
+
+type PagesBlocksTextCards {
+  label: String
+  headline: String
+  subhead: String
+  body: String
+  items: [PagesBlocksTextCardsItems]
+  buttons: [PagesBlocksTextCardsButtons]
+  style: PagesBlocksTextCardsStyle
+}
+
 type PagesBlocksBannerButtons {
   label: String
   link: String
@@ -304,7 +342,7 @@ type PagesBlocksBanner {
   style: PagesBlocksBannerStyle
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksBanner
+union PagesBlocks = PagesBlocksFeature | PagesBlocksCards | PagesBlocksTextCards | PagesBlocksBanner
 
 type Pages {
   blocks: [PagesBlocks]
@@ -483,6 +521,44 @@ input PagesBlocksCardsMutation {
   style: PagesBlocksCardsStyleMutation
 }
 
+input PagesBlocksTextCardsItemsMutation {
+  headline: String
+  subhead: String
+  text: String
+}
+
+input PagesBlocksTextCardsButtonsMutation {
+  label: String
+  link: String
+  type: String
+  textColor: String
+  backgroundColor: String
+}
+
+input PagesBlocksTextCardsStyleBackgroundImageMutation {
+  src: String
+  alt: String
+}
+
+input PagesBlocksTextCardsStyleMutation {
+  columns: String
+  textColor: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
+  contentOrder: String
+  textAlignment: String
+}
+
+input PagesBlocksTextCardsMutation {
+  label: String
+  headline: String
+  subhead: String
+  body: String
+  items: [PagesBlocksTextCardsItemsMutation]
+  buttons: [PagesBlocksTextCardsButtonsMutation]
+  style: PagesBlocksTextCardsStyleMutation
+}
+
 input PagesBlocksBannerButtonsMutation {
   label: String
   link: String
@@ -515,6 +591,7 @@ input PagesBlocksBannerMutation {
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   cards: PagesBlocksCardsMutation
+  textCards: PagesBlocksTextCardsMutation
   banner: PagesBlocksBannerMutation
 }
 

@@ -48,6 +48,33 @@ export const getStaticProps = async ({ params }) => {
                   }
                 }
               }
+              ... on PagesBlocksTextCards {
+                label
+                headline
+                subhead
+                body
+                buttons {
+                  label
+                  type
+                  link
+                  textColor
+                  backgroundColor
+                }
+                items {
+                  headline
+                  subhead
+                  text
+                }
+                style {
+                  columns
+                  textColor
+                  backgroundColor
+                  backgroundImage {
+                    src
+                    alt
+                  }
+                }
+              }
               ... on PagesBlocksFeature {
                 label
                 headline

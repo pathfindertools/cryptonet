@@ -57,6 +57,7 @@
     "typeMap": {
       "feature": "PagesBlocksFeature",
       "cards": "PagesBlocksCards",
+      "textCards": "PagesBlocksTextCards",
       "banner": "PagesBlocksBanner"
     }
   },
