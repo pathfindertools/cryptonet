@@ -15,8 +15,8 @@ function getMaybeRedirect(redirects) {
   const currentPath = window.location.href.replace(window.location.origin, "");
 
   return redirects.find((redirect) => {
-    redirect.from === currentPath;
-  })?.to;
+    return redirect.from === currentPath;
+  });
 }
 
 const App = ({ Component, pageProps }) => {
@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }) => {
       pageProps.data?.getGlobalDocument?.data?.redirects
     );
     if (maybeRedirect) {
-      window.location.href = maybeRedirect;
+      window.location.href = maybeRedirect.to;
     }
   }, []);
   return (
