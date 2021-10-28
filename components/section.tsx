@@ -1,9 +1,11 @@
 import React from "react";
 import { ThemeContext } from "./theme";
+import { lowerDash } from "../helpers/utilities"
 
 export const Section = ({
   children,
   color = "",
+  navigationLabel = "",
   className = "",
   image = "",
 }) => {
@@ -21,9 +23,12 @@ export const Section = ({
     accent3: "bg-accent3",
   };
 
+  const sectionId = navigationLabel ? { id: lowerDash(navigationLabel) } : {}
+
   return (
     <section
-      className={`relative`}
+      { ...sectionId }
+      className="relative"
     >
       <div className={`background absolute inset-0 -z-1 ${sectionColorCss[color]}`}>
         {image && <img className="w-full h-full object-cover" src={image} />}

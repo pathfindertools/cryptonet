@@ -64,7 +64,6 @@ export const Layout = ({
             data.theme.font === "sans" && "font-sans"
           }`}
         >
-          <Header data={data?.header} />
           <div className="flex flex-col flex-1">{children}</div>
           <Footer
             rawData={rawData}

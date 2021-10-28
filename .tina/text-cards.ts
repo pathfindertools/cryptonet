@@ -1,6 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
+import { navigationLabelSchema } from "./shared/navigation-label";
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -187,6 +188,7 @@ export const textCardsBlockSchema: TinaTemplate = {
           ],
         },
       ],
-    }
+    },
+    navigationLabelSchema
   ],
 };

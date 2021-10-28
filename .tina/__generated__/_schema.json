@@ -1155,6 +1155,18 @@
                     "feature",
                     "style"
                   ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "feature",
+                    "navigationLabel"
+                  ]
                 }
               ],
               "namespace": [
@@ -1785,6 +1797,18 @@
                     "blocks",
                     "photoCards",
                     "style"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "photoCards",
+                    "navigationLabel"
                   ]
                 }
               ],
@@ -2640,6 +2664,18 @@
                     "textCards",
                     "cardStyle"
                   ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "textCards",
+                    "navigationLabel"
+                  ]
                 }
               ],
               "namespace": [
@@ -3062,6 +3098,18 @@
                     "blocks",
                     "banner",
                     "style"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "banner",
+                    "navigationLabel"
                   ]
                 }
               ],

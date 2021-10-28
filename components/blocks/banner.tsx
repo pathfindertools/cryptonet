@@ -7,6 +7,7 @@ export const Banner = ({ data }) => {
     <Section
       color={data.style?.backgroundColor}
       image={data.style?.backgroundImage?.src}
+      navigationLabel={data.navigationLabel}
     >
       <div className="max-w-screen-lg p-12 mx-auto">
         <Content

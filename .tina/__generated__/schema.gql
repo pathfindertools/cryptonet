@@ -235,6 +235,7 @@ type PagesBlocksFeature {
   body: String
   buttons: [PagesBlocksFeatureButtons]
   style: PagesBlocksFeatureStyle
+  navigationLabel: String
 }
 
 type PagesBlocksPhotoCardsButtons {
@@ -281,6 +282,7 @@ type PagesBlocksPhotoCards {
   buttons: [PagesBlocksPhotoCardsButtons]
   items: [PagesBlocksPhotoCardsItems]
   style: PagesBlocksPhotoCardsStyle
+  navigationLabel: String
 }
 
 type PagesBlocksTextCardsButtons {
@@ -330,6 +332,7 @@ type PagesBlocksTextCards {
   items: [PagesBlocksTextCardsItems]
   style: PagesBlocksTextCardsStyle
   cardStyle: PagesBlocksTextCardsCardStyle
+  navigationLabel: String
 }
 
 type PagesBlocksBannerButtons {
@@ -359,6 +362,7 @@ type PagesBlocksBanner {
   body: String
   buttons: [PagesBlocksBannerButtons]
   style: PagesBlocksBannerStyle
+  navigationLabel: String
 }
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
@@ -500,6 +504,7 @@ input PagesBlocksFeatureMutation {
   body: String
   buttons: [PagesBlocksFeatureButtonsMutation]
   style: PagesBlocksFeatureStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksPhotoCardsButtonsMutation {
@@ -546,6 +551,7 @@ input PagesBlocksPhotoCardsMutation {
   buttons: [PagesBlocksPhotoCardsButtonsMutation]
   items: [PagesBlocksPhotoCardsItemsMutation]
   style: PagesBlocksPhotoCardsStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksTextCardsButtonsMutation {
@@ -595,6 +601,7 @@ input PagesBlocksTextCardsMutation {
   items: [PagesBlocksTextCardsItemsMutation]
   style: PagesBlocksTextCardsStyleMutation
   cardStyle: PagesBlocksTextCardsCardStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksBannerButtonsMutation {
@@ -624,6 +631,7 @@ input PagesBlocksBannerMutation {
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
   style: PagesBlocksBannerStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksMutation {

@@ -24,6 +24,7 @@ blocks:
       imageStyle: natural
       contentAlignment: center
       textAlignment: left
+    navigationLabel: Prizes
     _template: feature
   - label: ''
     headline: Join us on a journey across the universe
@@ -75,6 +76,7 @@ blocks:
       backgroundColor: black
       accentColor: primary
       type: default
+    navigationLabel: Series
     _template: textCards
   - image:
       src: >-
@@ -93,6 +95,7 @@ blocks:
       backgroundColor: black
       flipLayout: false
       imageStyle: fitHalf
+    navigationLabel: About
     _template: feature
   - headline: Getting started with IPFS & Filecoin
     items:
@@ -129,6 +132,7 @@ blocks:
     style:
       columns: '2'
       textColor: black
+    navigationLabel: Get Started
     _template: photoCards
   - label: ''
     headline: Stay in the know about future events
