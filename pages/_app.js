@@ -1,4 +1,5 @@
 import "../styles.css";
+import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { TinaEditProvider } from "tinacms/dist/edit-state";
 import { Layout } from "../components/layout";
@@ -9,7 +10,24 @@ const NEXT_PUBLIC_TINA_CLIENT_ID = process.env.NEXT_PUBLIC_TINA_CLIENT_ID;
 const NEXT_PUBLIC_USE_LOCAL_CLIENT =
   process.env.NEXT_PUBLIC_USE_LOCAL_CLIENT || 0;
 
+function getMaybeRedirect(redirects) {
+  if (!redirects) return;
+  const currentPath = window.location.href.replace(window.location.origin, "");
+
+  return redirects.find((redirect) => {
+    redirect.from === currentPath;
+  })?.to;
+}
+
 const App = ({ Component, pageProps }) => {
+  useEffect(() => {
+    const maybeRedirect = getMaybeRedirect(
+      pageProps.data?.getGlobalDocument?.data?.redirects
+    );
+    if (maybeRedirect) {
+      window.location.href = maybeRedirect;
+    }
+  }, []);
   return (
     <>
       <TinaEditProvider

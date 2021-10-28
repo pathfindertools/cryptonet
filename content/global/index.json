@@ -34,5 +34,19 @@
     "font": "sans",
     "icon": "boxicon",
     "darkMode": "system"
-  }
+  },
+  "redirects": [
+    {
+      "from": "/ahs",
+      "to": "/asia-hackathon-season"
+    },
+    {
+      "from": "/asia-hackathon-site",
+      "to": "/asia-hackathon-season"
+    },
+    {
+      "from": "/dora-hacks",
+      "to": "/dora-hacks-site"
+    }
+  ]
 }
