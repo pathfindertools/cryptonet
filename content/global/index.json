@@ -37,16 +37,16 @@
   },
   "redirects": [
     {
-      "from": "/#community",
-      "to": "/build/#community"
+      "from": "/ahs",
+      "to": "/asia-hackathon-season"
     },
     {
-      "from": "/grants",
-      "to": "https://vintage.filecoin.io/grants/"
+      "from": "/asia-hackathon-site",
+      "to": "/asia-hackathon-season"
     },
     {
-      "from": "/blog/*",
-      "to": "https://vintage.filecoin.io/blog/*"
+      "from": "/dora-hacks",
+      "to": "/dora-hacks-site"
     }
   ]
 }

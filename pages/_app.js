@@ -1,4 +1,5 @@
 import "../styles.css";
+import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { TinaEditProvider } from "tinacms/dist/edit-state";
 import { Layout } from "../components/layout";
@@ -9,31 +10,23 @@ const NEXT_PUBLIC_TINA_CLIENT_ID = process.env.NEXT_PUBLIC_TINA_CLIENT_ID;
 const NEXT_PUBLIC_USE_LOCAL_CLIENT =
   process.env.NEXT_PUBLIC_USE_LOCAL_CLIENT || 0;
 
-function checkRedirects(redirects) {
+function getMaybeRedirect(redirects) {
   if (!redirects) return;
-  const path = window.location.href.replace(window.location.origin, "");
+  const currentPath = window.location.href.replace(window.location.origin, "");
 
-  redirects.forEach((r) => {
-    const fromSplit = r.from.split("*");
-    const pathSplit = path.split("/");
-    if (fromSplit.length > 1 && path.search(fromSplit[0]) > -1) {
-      // wildcard found
-      if (pathSplit.length === 3) {
-        // base
-        window.location.href = r.to.split("*")[0];
-      } else {
-        // detail
-        window.location.href = r.to.split("*")[0] + pathSplit[2];
-      }
-    } else if (path === r.from) {
-      window.location.href = r.to;
-    }
-  });
+  return redirects.find((redirect) => {
+    redirect.from === currentPath;
+  })?.to;
 }
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
-    checkRedirects(livePageProps.data?.getGlobalDocument?.data);
+    const maybeRedirect = getMaybeRedirect(
+      pageProps.data?.getGlobalDocument?.data?.redirects
+    );
+    if (maybeRedirect) {
+      window.location.href = maybeRedirect;
+    }
   }, []);
   return (
     <>
