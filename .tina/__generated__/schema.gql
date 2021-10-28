@@ -140,6 +140,11 @@ type GlobalFooter {
   social: GlobalFooterSocial
 }
 
+type GlobalRedirects {
+  from: String
+  to: String
+}
+
 type GlobalTheme {
   color: String
   font: String
@@ -150,6 +155,7 @@ type GlobalTheme {
 type Global {
   header: GlobalHeader
   footer: GlobalFooter
+  redirects: [GlobalRedirects]
   theme: GlobalTheme
 }
 
@@ -445,6 +451,11 @@ input GlobalFooterMutation {
   social: GlobalFooterSocialMutation
 }
 
+input GlobalRedirectsMutation {
+  from: String
+  to: String
+}
+
 input GlobalThemeMutation {
   color: String
   font: String
@@ -455,6 +466,7 @@ input GlobalThemeMutation {
 input GlobalMutation {
   header: GlobalHeaderMutation
   footer: GlobalFooterMutation
+  redirects: [GlobalRedirectsMutation]
   theme: GlobalThemeMutation
 }
 

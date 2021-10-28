@@ -107,6 +107,10 @@ export const layoutQueryFragment = `
         font
         darkMode
       }
+      redirects {
+        from
+        to
+      }
     }
   }
 `;

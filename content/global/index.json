@@ -34,5 +34,19 @@
     "font": "sans",
     "icon": "boxicon",
     "darkMode": "system"
-  }
+  },
+  "redirects": [
+    {
+      "from": "/#community",
+      "to": "/build/#community"
+    },
+    {
+      "from": "/grants",
+      "to": "https://vintage.filecoin.io/grants/"
+    },
+    {
+      "from": "/blog/*",
+      "to": "https://vintage.filecoin.io/blog/*"
+    }
+  ]
 }
