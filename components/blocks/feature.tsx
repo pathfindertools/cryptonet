@@ -44,6 +44,7 @@ export const Feature = ({ data }) => {
     <Section
       color={data.style?.backgroundColor}
       image={data.style?.backgroundImage?.src}
+      navigationLabel={data.navigationLabel}
     >
       <div className={splitCss(data)}>
         <div className="flex-1 relative self-stretch">

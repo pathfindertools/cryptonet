@@ -615,6 +615,16 @@
       "path": "content/pages",
       "fields": [
         {
+          "type": "boolean",
+          "label": "Draft",
+          "description": "Draft posts are only visible on staging.",
+          "name": "draft",
+          "namespace": [
+            "pages",
+            "draft"
+          ]
+        },
+        {
           "type": "object",
           "list": true,
           "name": "blocks",
@@ -1186,6 +1196,18 @@
                     "blocks",
                     "feature",
                     "style"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "feature",
+                    "navigationLabel"
                   ]
                 }
               ],
@@ -1817,6 +1839,18 @@
                     "blocks",
                     "photoCards",
                     "style"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "photoCards",
+                    "navigationLabel"
                   ]
                 }
               ],
@@ -2672,6 +2706,18 @@
                     "textCards",
                     "cardStyle"
                   ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "textCards",
+                    "navigationLabel"
+                  ]
                 }
               ],
               "namespace": [
@@ -3095,6 +3141,18 @@
                     "banner",
                     "style"
                   ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "banner",
+                    "navigationLabel"
+                  ]
                 }
               ],
               "namespace": [
@@ -3155,6 +3213,133 @@
           "namespace": [
             "pages",
             "accent3"
+          ]
+        },
+        {
+          "label": "Navigation Text Color",
+          "name": "navTextColor",
+          "ui": {
+            "component": "select"
+          },
+          "type": "string",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Accent 1",
+              "value": "accent1"
+            },
+            {
+              "label": "Accent 2",
+              "value": "accent2"
+            },
+            {
+              "label": "Accent 3",
+              "value": "accent3"
+            },
+            {
+              "label": "White",
+              "value": "white"
+            },
+            {
+              "label": "Gray Light",
+              "value": "grayLight"
+            },
+            {
+              "label": "Gray",
+              "value": "gray"
+            },
+            {
+              "label": "Gray Dark",
+              "value": "grayDark"
+            },
+            {
+              "label": "Black",
+              "value": "black"
+            }
+          ],
+          "namespace": [
+            "pages",
+            "navTextColor"
+          ]
+        },
+        {
+          "label": "Navigation Background Color",
+          "name": "navBackgroundColor",
+          "type": "string",
+          "ui": {
+            "component": "select"
+          },
+          "options": [
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Accent 1",
+              "value": "accent1"
+            },
+            {
+              "label": "Accent 2",
+              "value": "accent2"
+            },
+            {
+              "label": "Accent 3",
+              "value": "accent3"
+            },
+            {
+              "label": "White",
+              "value": "white"
+            },
+            {
+              "label": "Gray Light",
+              "value": "grayLight"
+            },
+            {
+              "label": "Gray",
+              "value": "gray"
+            },
+            {
+              "label": "Gray Dark",
+              "value": "grayDark"
+            },
+            {
+              "label": "Black",
+              "value": "black"
+            }
+          ],
+          "namespace": [
+            "pages",
+            "navBackgroundColor"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Site Title",
+          "name": "siteTitle",
+          "namespace": [
+            "pages",
+            "siteTitle"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Site Description",
+          "name": "siteDescription",
+          "namespace": [
+            "pages",
+            "siteDescription"
+          ]
+        },
+        {
+          "type": "image",
+          "label": "Site Image",
+          "name": "siteImageSrc",
+          "namespace": [
+            "pages",
+            "siteImageSrc"
           ]
         }
       ],

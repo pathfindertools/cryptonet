@@ -1,4 +1,5 @@
 ---
+draft: true
 blocks:
   - image:
       src: >-
@@ -24,6 +25,7 @@ blocks:
       imageStyle: natural
       contentAlignment: center
       textAlignment: left
+    navigationLabel: Prizes
     _template: feature
   - label: ''
     headline: Join us on a journey across the universe
@@ -75,6 +77,7 @@ blocks:
       backgroundColor: black
       accentColor: primary
       type: default
+    navigationLabel: Series
     _template: textCards
   - image:
       src: >-
@@ -93,6 +96,7 @@ blocks:
       backgroundColor: black
       flipLayout: false
       imageStyle: fitHalf
+    navigationLabel: About
     _template: feature
   - headline: Getting started with IPFS & Filecoin
     items:
@@ -129,6 +133,7 @@ blocks:
     style:
       columns: '2'
       textColor: black
+    navigationLabel: Get Started
     _template: photoCards
   - label: ''
     headline: Stay in the know about future events
@@ -159,5 +164,13 @@ primary: '#FFDE30'
 accent1: '#FF388B'
 accent2: '#2DDB87'
 accent3: '#2DD0DB'
+navTextColor: accent1
+navBackgroundColor: accent3
+siteTitle: Asia Hackathon Season
+siteDescription: >-
+  Join us on a journey across the universe of Filecoin and IPFS across four
+  distinct hackathon events.
+siteImageSrc: >-
+  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 ---
 

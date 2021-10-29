@@ -1,5 +1,6 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
+import { navigationLabelSchema } from "./shared/navigation-label";
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -111,5 +112,6 @@ export const bannerBlockSchema: TinaTemplate = {
         },
       ],
     },
+    navigationLabelSchema
   ],
 };

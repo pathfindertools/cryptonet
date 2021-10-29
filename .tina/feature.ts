@@ -1,5 +1,6 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
+import { navigationLabelSchema } from "./shared/navigation-label";
 
 export const featureBlockSchema: TinaTemplate = {
   name: "feature",
@@ -176,5 +177,6 @@ export const featureBlockSchema: TinaTemplate = {
         },
       ],
     },
+    navigationLabelSchema
   ],
 };

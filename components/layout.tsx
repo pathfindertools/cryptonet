@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { Header } from "./header";
 import { Footer } from "./footer";
 import layoutData from "../content/global/index.json";
 import { Theme } from "./theme";
@@ -9,43 +8,34 @@ export const Layout = ({
   rawData = "",
   data = layoutData,
   themeData = {
-    primary: "", 
-    accent1: "", 
-    accent2: "", 
-    accent3: "", 
+    primary: "",
+    accent1: "",
+    accent2: "",
+    accent3: "",
+    siteTitle: "Filecoin Hackathon",
+    siteDescription: "Filecoin Hackathon Event",
+    siteImageSrc: ""
   },
   children,
 }) => {
   return (
     <>
       <Head>
-        <title>Microgen</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>{themeData.siteTitle}</title>
+        <meta name="author" content="Protocol Labs"></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
-        {data.theme.font === "nunito" && (
-          <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
-              rel="stylesheet"
-            />
-          </>
-        )}
-        {data.theme.font === "lato" && (
-          <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
-              rel="stylesheet"
-            />
-          </>
-        )}
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:site_name" content="hackathons.filecoin.io" />
+        <meta property="og:title" content={themeData.siteTitle} />
+        <meta property="og:description" content={themeData.siteDescription} />
+        <meta property="og:image" content={themeData.siteImageSrc} />        
         <style
           id="customProperties"
           dangerouslySetInnerHTML={{
             __html: `
+            html {
+              scroll-behavior: smooth;
+            }
             :root {
               --primary-color: ${themeData?.primary};
               --accent1-color: ${themeData?.accent1};
@@ -64,7 +54,6 @@ export const Layout = ({
             data.theme.font === "sans" && "font-sans"
           }`}
         >
-          <Header data={data?.header} />
           <div className="flex flex-col flex-1">{children}</div>
           <Footer
             rawData={rawData}

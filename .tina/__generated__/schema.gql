@@ -241,6 +241,7 @@ type PagesBlocksFeature {
   body: String
   buttons: [PagesBlocksFeatureButtons]
   style: PagesBlocksFeatureStyle
+  navigationLabel: String
 }
 
 type PagesBlocksPhotoCardsButtons {
@@ -287,6 +288,7 @@ type PagesBlocksPhotoCards {
   buttons: [PagesBlocksPhotoCardsButtons]
   items: [PagesBlocksPhotoCardsItems]
   style: PagesBlocksPhotoCardsStyle
+  navigationLabel: String
 }
 
 type PagesBlocksTextCardsButtons {
@@ -336,6 +338,7 @@ type PagesBlocksTextCards {
   items: [PagesBlocksTextCardsItems]
   style: PagesBlocksTextCardsStyle
   cardStyle: PagesBlocksTextCardsCardStyle
+  navigationLabel: String
 }
 
 type PagesBlocksBannerButtons {
@@ -365,16 +368,23 @@ type PagesBlocksBanner {
   body: String
   buttons: [PagesBlocksBannerButtons]
   style: PagesBlocksBannerStyle
+  navigationLabel: String
 }
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
 
 type Pages {
+  draft: Boolean
   blocks: [PagesBlocks]
   primary: String
   accent1: String
   accent2: String
   accent3: String
+  navTextColor: String
+  navBackgroundColor: String
+  siteTitle: String
+  siteDescription: String
+  siteImageSrc: String
 }
 
 type PagesDocument implements Node & Document {
@@ -512,6 +522,7 @@ input PagesBlocksFeatureMutation {
   body: String
   buttons: [PagesBlocksFeatureButtonsMutation]
   style: PagesBlocksFeatureStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksPhotoCardsButtonsMutation {
@@ -558,6 +569,7 @@ input PagesBlocksPhotoCardsMutation {
   buttons: [PagesBlocksPhotoCardsButtonsMutation]
   items: [PagesBlocksPhotoCardsItemsMutation]
   style: PagesBlocksPhotoCardsStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksTextCardsButtonsMutation {
@@ -607,6 +619,7 @@ input PagesBlocksTextCardsMutation {
   items: [PagesBlocksTextCardsItemsMutation]
   style: PagesBlocksTextCardsStyleMutation
   cardStyle: PagesBlocksTextCardsCardStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksBannerButtonsMutation {
@@ -636,6 +649,7 @@ input PagesBlocksBannerMutation {
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
   style: PagesBlocksBannerStyleMutation
+  navigationLabel: String
 }
 
 input PagesBlocksMutation {
@@ -646,11 +660,17 @@ input PagesBlocksMutation {
 }
 
 input PagesMutation {
+  draft: Boolean
   blocks: [PagesBlocksMutation]
   primary: String
   accent1: String
   accent2: String
   accent3: String
+  navTextColor: String
+  navBackgroundColor: String
+  siteTitle: String
+  siteDescription: String
+  siteImageSrc: String
 }
 
 schema {

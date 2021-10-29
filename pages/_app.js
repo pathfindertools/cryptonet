@@ -5,10 +5,12 @@ import { TinaEditProvider } from "tinacms/dist/edit-state";
 import { Layout } from "../components/layout";
 const TinaCMS = dynamic(() => import("tinacms"), { ssr: false });
 import { TinaCloudCloudinaryMediaStore } from "next-tinacms-cloudinary";
+import FourOhFour from "./404";
 
 const NEXT_PUBLIC_TINA_CLIENT_ID = process.env.NEXT_PUBLIC_TINA_CLIENT_ID;
 const NEXT_PUBLIC_USE_LOCAL_CLIENT =
   process.env.NEXT_PUBLIC_USE_LOCAL_CLIENT || 0;
+const SERVER_ENV = process.env.SERVER_ENV || "staging";
 
 function getMaybeRedirect(redirects) {
   if (!redirects) return;
@@ -28,6 +30,11 @@ const App = ({ Component, pageProps }) => {
       window.location.href = maybeRedirect.to;
     }
   }, []);
+  const maybePage = pageProps.data?.getPagesDocument?.data;
+  if (SERVER_ENV === "prod" && maybePage?.draft) {
+    // On production, any page in draft mode should be a 404
+    return <FourOhFour />;
+  }
   return (
     <>
       <TinaEditProvider

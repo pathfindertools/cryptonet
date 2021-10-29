@@ -1,12 +1,18 @@
 import { getStaticPropsForTina, staticRequest } from "tinacms";
 import { Blocks } from "../components/blocks";
+import { Header } from "../components/header";
 import { layoutQueryFragment } from "../components/layout";
 import type { PagesDocument } from "../.tina/__generated__/types";
 
 export default function HomePage(
   props: AsyncReturnType<typeof getStaticProps>["props"]
 ) {
-  return <Blocks {...props.data.getPagesDocument.data} />;
+  return (
+    <>
+      <Header {...props.data.getPagesDocument.data} />
+      <Blocks {...props.data.getPagesDocument.data} />
+    </>
+  );
 }
 
 export const getStaticProps = async ({ params }) => {
@@ -19,6 +25,7 @@ export const getStaticProps = async ({ params }) => {
         getPagesDocument(relativePath: $relativePath) {
           data {
             __typename
+            draft
             blocks {
               __typename
               ... on PagesBlocksPhotoCards {
@@ -53,6 +60,7 @@ export const getStaticProps = async ({ params }) => {
                     alt
                   }
                 }
+                navigationLabel
               }
               ... on PagesBlocksTextCards {
                 label
@@ -88,7 +96,8 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                   accentColor
                   type
-                },
+                }
+                navigationLabel
               }
               ... on PagesBlocksFeature {
                 label
@@ -118,6 +127,7 @@ export const getStaticProps = async ({ params }) => {
                   contentAlignment
                   textAlignment
                 }
+                navigationLabel
               }
               ... on PagesBlocksBanner {
                 label
@@ -139,12 +149,18 @@ export const getStaticProps = async ({ params }) => {
                     alt
                   }
                 }
+                navigationLabel
               }
             }
             primary
             accent1
             accent2
             accent3
+            navTextColor
+            navBackgroundColor
+            siteTitle
+            siteDescription
+            siteImageSrc
           }
         }
       }
