@@ -178,6 +178,11 @@ export default defineSchema({
           ],
         },
         {
+          type: "string",
+          label: "Google Tag Manager ID",
+          name: "gtmId",
+        },
+        {
           type: "object",
           label: "Redirects",
           name: "redirects",

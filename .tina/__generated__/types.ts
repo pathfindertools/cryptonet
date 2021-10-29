@@ -272,6 +272,7 @@ export type Global = {
   __typename?: 'Global';
   header?: Maybe<GlobalHeader>;
   footer?: Maybe<GlobalFooter>;
+  gtmId?: Maybe<Scalars['String']>;
   redirects?: Maybe<Array<Maybe<GlobalRedirects>>>;
   theme?: Maybe<GlobalTheme>;
 };
@@ -664,6 +665,7 @@ export type GlobalThemeMutation = {
 export type GlobalMutation = {
   header?: Maybe<GlobalHeaderMutation>;
   footer?: Maybe<GlobalFooterMutation>;
+  gtmId?: Maybe<Scalars['String']>;
   redirects?: Maybe<Array<Maybe<GlobalRedirectsMutation>>>;
   theme?: Maybe<GlobalThemeMutation>;
 };

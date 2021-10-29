@@ -96,6 +96,7 @@ export const layoutQueryFragment = `
         font
         darkMode
       }
+      gtmId
       redirects {
         from
         to
