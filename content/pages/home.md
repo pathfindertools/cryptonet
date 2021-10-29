@@ -164,8 +164,8 @@ primary: '#FFDE30'
 accent1: '#FF388B'
 accent2: '#2DDB87'
 accent3: '#2DD0DB'
-navTextColor: accent1
-navBackgroundColor: accent3
+navTextColor: white
+navBackgroundColor: black
 siteTitle: Asia Hackathon Season
 siteDescription: >-
   Join us on a journey across the universe of Filecoin and IPFS across four

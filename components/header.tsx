@@ -59,9 +59,9 @@ export const Header = (props: Pages) => {
             <Burger color="white" isOpen={navOpen}  />
           </div>
           <ul style={navStyles} className={`${navClasses} ${textColors[props.navTextColor]} block list-none mt-6 md:mt-2 md:text-right md:opacity-100`}>
-            {navList(props.blocks)?.map(function (item) {
+            {navList(props.blocks)?.map(function (item, index) {
               return (
-                <li className="md:inline-block md:ml-10">
+                <li className="md:inline-block md:ml-10" key={index}>
                   <div className={`${backgroundColors[props.navTextColor]} h-px opacity-25 md:hidden`} />
                   <a style={linkStyles} className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={() => setNavOpen(!navOpen)}>{item}</a>
                 </li>

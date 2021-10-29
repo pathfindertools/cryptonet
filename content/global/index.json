@@ -29,12 +29,7 @@
       "instagram": "/"
     }
   },
-  "theme": {
-    "color": "blue",
-    "font": "sans",
-    "icon": "boxicon",
-    "darkMode": "system"
-  },
+  "gtmId": "GTM-MS25MX2",
   "redirects": [
     {
       "from": "/ahs",
@@ -48,5 +43,11 @@
       "from": "/dora-hacks",
       "to": "/dora-hacks-site"
     }
-  ]
+  ],
+  "theme": {
+    "color": "blue",
+    "font": "sans",
+    "icon": "boxicon",
+    "darkMode": "system"
+  }
 }

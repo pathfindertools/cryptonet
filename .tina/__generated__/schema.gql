@@ -155,6 +155,7 @@ type GlobalTheme {
 type Global {
   header: GlobalHeader
   footer: GlobalFooter
+  gtmId: String
   redirects: [GlobalRedirects]
   theme: GlobalTheme
 }
@@ -476,6 +477,7 @@ input GlobalThemeMutation {
 input GlobalMutation {
   header: GlobalHeaderMutation
   footer: GlobalFooterMutation
+  gtmId: String
   redirects: [GlobalRedirectsMutation]
   theme: GlobalThemeMutation
 }

@@ -2212,6 +2212,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "gtmId"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "redirects"
           },
           "arguments": [],
@@ -5941,6 +5956,20 @@
             "name": {
               "kind": "Name",
               "value": "GlobalFooterMutation"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "gtmId"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
             }
           }
         },

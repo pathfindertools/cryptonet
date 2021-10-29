@@ -422,6 +422,15 @@
           ]
         },
         {
+          "type": "string",
+          "label": "Google Tag Manager ID",
+          "name": "gtmId",
+          "namespace": [
+            "global",
+            "gtmId"
+          ]
+        },
+        {
           "type": "object",
           "label": "Redirects",
           "name": "redirects",
