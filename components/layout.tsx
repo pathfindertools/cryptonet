@@ -46,6 +46,9 @@ export const Layout = ({
           id="customProperties"
           dangerouslySetInnerHTML={{
             __html: `
+            html {
+              scroll-behavior: smooth;
+            }
             :root {
               --primary-color: ${themeData?.primary};
               --accent1-color: ${themeData?.accent1};
