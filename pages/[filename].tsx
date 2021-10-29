@@ -157,6 +157,9 @@ export const getStaticProps = async ({ params }) => {
             accent3
             navTextColor
             navBackgroundColor
+            siteTitle
+            siteDescription
+            siteImageSrc
           }
         }
       }

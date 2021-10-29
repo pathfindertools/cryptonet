@@ -520,6 +520,9 @@ export type Pages = {
   accent3?: Maybe<Scalars['String']>;
   navTextColor?: Maybe<Scalars['String']>;
   navBackgroundColor?: Maybe<Scalars['String']>;
+  siteTitle?: Maybe<Scalars['String']>;
+  siteDescription?: Maybe<Scalars['String']>;
+  siteImageSrc?: Maybe<Scalars['String']>;
 };
 
 export type PagesDocument = Node & Document & {
@@ -838,5 +841,8 @@ export type PagesMutation = {
   accent3?: Maybe<Scalars['String']>;
   navTextColor?: Maybe<Scalars['String']>;
   navBackgroundColor?: Maybe<Scalars['String']>;
+  siteTitle?: Maybe<Scalars['String']>;
+  siteDescription?: Maybe<Scalars['String']>;
+  siteImageSrc?: Maybe<Scalars['String']>;
 };
 

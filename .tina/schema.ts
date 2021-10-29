@@ -382,6 +382,21 @@ export default defineSchema({
             { label: "Black", value: "black" },
           ],
         },
+        {
+          type: "string",
+          label: "Site Title",
+          name: "siteTitle",
+        },
+        {
+          type: "string",
+          label: "Site Description",
+          name: "siteDescription",
+        },
+        {
+          type: "image",
+          label: "Site Image",
+          name: "siteImageSrc",
+        },
       ],
     },
   ],

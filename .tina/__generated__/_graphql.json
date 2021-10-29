@@ -4678,6 +4678,51 @@
               "value": "String"
             }
           }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteTitle"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteDescription"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteImageSrc"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
         }
       ]
     },
@@ -7668,6 +7713,48 @@
           "name": {
             "kind": "Name",
             "value": "navBackgroundColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteTitle"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteDescription"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "siteImageSrc"
           },
           "type": {
             "kind": "NamedType",

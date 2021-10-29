@@ -3272,6 +3272,33 @@
             "pages",
             "navBackgroundColor"
           ]
+        },
+        {
+          "type": "string",
+          "label": "Site Title",
+          "name": "siteTitle",
+          "namespace": [
+            "pages",
+            "siteTitle"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Site Description",
+          "name": "siteDescription",
+          "namespace": [
+            "pages",
+            "siteDescription"
+          ]
+        },
+        {
+          "type": "image",
+          "label": "Site Image",
+          "name": "siteImageSrc",
+          "namespace": [
+            "pages",
+            "siteImageSrc"
+          ]
         }
       ],
       "namespace": [
