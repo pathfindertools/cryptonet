@@ -10,6 +10,13 @@ export const Banner = ({ data }) => {
       navigationLabel={data.navigationLabel}
     >
       <div className="max-w-screen-lg p-12 mx-auto">
+        {data.image && (
+          <img
+            className=""
+            alt={data.image.alt}
+            src={data.image.src}
+          />
+        )}
         <Content
           label = {data.label}
           headline = {data.headline}

@@ -15,6 +15,23 @@ export const bannerBlockSchema: TinaTemplate = {
   },
   fields: [
     {
+      label: "Image",
+      name: "image",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string",
+        },
+      ],
+    },
+    {
       label: "Label",
       name: "label",
       type: "string",

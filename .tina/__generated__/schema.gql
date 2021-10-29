@@ -342,6 +342,11 @@ type PagesBlocksTextCards {
   navigationLabel: String
 }
 
+type PagesBlocksBannerImage {
+  src: String
+  alt: String
+}
+
 type PagesBlocksBannerButtons {
   label: String
   link: String
@@ -363,6 +368,7 @@ type PagesBlocksBannerStyle {
 }
 
 type PagesBlocksBanner {
+  image: PagesBlocksBannerImage
   label: String
   headline: String
   subhead: String
@@ -624,6 +630,11 @@ input PagesBlocksTextCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksBannerImageMutation {
+  src: String
+  alt: String
+}
+
 input PagesBlocksBannerButtonsMutation {
   label: String
   link: String
@@ -645,6 +656,7 @@ input PagesBlocksBannerStyleMutation {
 }
 
 input PagesBlocksBannerMutation {
+  image: PagesBlocksBannerImageMutation
   label: String
   headline: String
   subhead: String

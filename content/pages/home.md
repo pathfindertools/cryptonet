@@ -1,7 +1,10 @@
 ---
 draft: true
 blocks:
-  - label: ''
+  - image:
+      src: >-
+        http://res.cloudinary.com/tombustout/image/upload/v1635546504/hackathons-hero_vre1pg.svg
+    label: ''
     headline: Connect. Build. Grow.
     subhead: ''
     body: >-
