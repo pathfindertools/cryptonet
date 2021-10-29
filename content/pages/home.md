@@ -95,10 +95,11 @@ accent2: '#2DDB87'
 accent3: '#2DD0DB'
 navTextColor: white
 navBackgroundColor: black
-siteTitle: Asia Hackathon Season
+siteTitle: Hackathons
 siteDescription: >-
-  Join us on a journey across the universe of Filecoin and IPFS across four
-  distinct hackathon events.
+  With Filecoin and IPFS, we empower developers and entrepreneurs to solve
+  significant problems and ship innovative applications. Join our hackathons and
+  shape the future of the web to make it more decentralized, robust, and secure!
 siteImageSrc: >-
   http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 ---
