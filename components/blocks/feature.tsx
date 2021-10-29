@@ -14,14 +14,14 @@ const splitCss = (data) => {
 }
 
 const contentContainerCss = (data) => {
-  const margin = data.style?.flipLayout ? "mr-auto pr-12 pl-4" : "ml-auto pl-12 pr-4"
+  const margin = data.style?.flipLayout ? "mr-auto pr-12 pl-10" : "ml-auto pl-12 pr-10"
   return `max-w-screen-lg-half py-12 ${margin}`
 }
 
 const imageContainerCss = (data) => {
   const styles = {
-    natural: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-4 py-12" : "max-w-screen-lg-half mr-auto pr-12 pl-4 py-12",
-    fitHalf: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-4 " : "max-w-screen-lg-half mr-auto pr-12 pl-4",
+    natural: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-10 py-12" : "max-w-screen-lg-half mr-auto pr-12 pl-10 py-12",
+    fitHalf: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-10 " : "max-w-screen-lg-half mr-auto pr-12 pl-10",
     fillHalf: data.style?.flipLayout ? "absolute inset-0 right-4" : "absolute inset-0 left-4",
     overlap: data.style?.flipLayout ? "absolute inset-0 -right-24" : "absolute inset-0 -left-24",
   };
