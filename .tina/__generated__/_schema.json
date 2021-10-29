@@ -423,6 +423,38 @@
         },
         {
           "type": "object",
+          "label": "Redirects",
+          "name": "redirects",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "label": "From",
+              "name": "from",
+              "namespace": [
+                "global",
+                "redirects",
+                "from"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "To",
+              "name": "to",
+              "namespace": [
+                "global",
+                "redirects",
+                "to"
+              ]
+            }
+          ],
+          "namespace": [
+            "global",
+            "redirects"
+          ]
+        },
+        {
+          "type": "object",
           "label": "Theme",
           "name": "theme",
           "fields": [

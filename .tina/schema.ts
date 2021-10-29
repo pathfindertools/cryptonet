@@ -179,6 +179,24 @@ export default defineSchema({
         },
         {
           type: "object",
+          label: "Redirects",
+          name: "redirects",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              label: "From",
+              name: "from",
+            },
+            {
+              type: "string",
+              label: "To",
+              name: "to",
+            },
+          ]
+        },
+        {
+          type: "object",
           label: "Theme",
           name: "theme",
           fields: [

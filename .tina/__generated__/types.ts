@@ -254,6 +254,12 @@ export type GlobalFooter = {
   social?: Maybe<GlobalFooterSocial>;
 };
 
+export type GlobalRedirects = {
+  __typename?: 'GlobalRedirects';
+  from?: Maybe<Scalars['String']>;
+  to?: Maybe<Scalars['String']>;
+};
+
 export type GlobalTheme = {
   __typename?: 'GlobalTheme';
   color?: Maybe<Scalars['String']>;
@@ -266,6 +272,7 @@ export type Global = {
   __typename?: 'Global';
   header?: Maybe<GlobalHeader>;
   footer?: Maybe<GlobalFooter>;
+  redirects?: Maybe<Array<Maybe<GlobalRedirects>>>;
   theme?: Maybe<GlobalTheme>;
 };
 
@@ -641,6 +648,11 @@ export type GlobalFooterMutation = {
   social?: Maybe<GlobalFooterSocialMutation>;
 };
 
+export type GlobalRedirectsMutation = {
+  from?: Maybe<Scalars['String']>;
+  to?: Maybe<Scalars['String']>;
+};
+
 export type GlobalThemeMutation = {
   color?: Maybe<Scalars['String']>;
   font?: Maybe<Scalars['String']>;
@@ -651,6 +663,7 @@ export type GlobalThemeMutation = {
 export type GlobalMutation = {
   header?: Maybe<GlobalHeaderMutation>;
   footer?: Maybe<GlobalFooterMutation>;
+  redirects?: Maybe<Array<Maybe<GlobalRedirectsMutation>>>;
   theme?: Maybe<GlobalThemeMutation>;
 };
 
