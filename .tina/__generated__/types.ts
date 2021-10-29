@@ -520,6 +520,7 @@ export type PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBloc
 
 export type Pages = {
   __typename?: 'Pages';
+  draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocks>>>;
   primary?: Maybe<Scalars['String']>;
   accent1?: Maybe<Scalars['String']>;
@@ -847,6 +848,7 @@ export type PagesBlocksMutation = {
 };
 
 export type PagesMutation = {
+  draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocksMutation>>>;
   primary?: Maybe<Scalars['String']>;
   accent1?: Maybe<Scalars['String']>;

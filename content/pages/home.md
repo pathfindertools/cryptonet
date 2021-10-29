@@ -1,4 +1,5 @@
 ---
+draft: true
 blocks:
   - image:
       src: >-
@@ -170,6 +171,6 @@ siteDescription: >-
   Join us on a journey across the universe of Filecoin and IPFS across four
   distinct hackathon events.
 siteImageSrc: >-
-    http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 ---
 

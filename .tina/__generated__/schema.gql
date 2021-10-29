@@ -374,6 +374,7 @@ type PagesBlocksBanner {
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
 
 type Pages {
+  draft: Boolean
   blocks: [PagesBlocks]
   primary: String
   accent1: String
@@ -659,6 +660,7 @@ input PagesBlocksMutation {
 }
 
 input PagesMutation {
+  draft: Boolean
   blocks: [PagesBlocksMutation]
   primary: String
   accent1: String

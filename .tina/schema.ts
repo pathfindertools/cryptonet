@@ -319,6 +319,12 @@ export default defineSchema({
       path: "content/pages",
       fields: [
         {
+          type: "boolean",
+          label: "Draft",
+          description: "Draft posts are only visible on staging.",
+          name: "draft",
+        },
+        {
           type: "object",
           list: true,
           name: "blocks",

@@ -44,10 +44,10 @@ export const Header = (props: Pages) => {
     transition: "opacity .4s ease-out",
   }
   const linkStyles = navOpen ? { 
-    "line-height": "4rem",
+    lineHeight: "4rem",
     transition: "line-height .4s"
   } : {
-    "line-height": "6rem",
+    lineHeight: "6rem",
     transition: "line-height .4s"
   }
 

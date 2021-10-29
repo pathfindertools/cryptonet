@@ -25,6 +25,7 @@ export const getStaticProps = async ({ params }) => {
         getPagesDocument(relativePath: $relativePath) {
           data {
             __typename
+            draft
             blocks {
               __typename
               ... on PagesBlocksPhotoCards {
