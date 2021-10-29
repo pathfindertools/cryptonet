@@ -373,6 +373,8 @@ type Pages {
   accent1: String
   accent2: String
   accent3: String
+  navTextColor: String
+  navBackgroundColor: String
 }
 
 type PagesDocument implements Node & Document {
@@ -647,6 +649,8 @@ input PagesMutation {
   accent1: String
   accent2: String
   accent3: String
+  navTextColor: String
+  navBackgroundColor: String
 }
 
 schema {
