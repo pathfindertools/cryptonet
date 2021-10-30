@@ -50,6 +50,11 @@ blocks:
       textColor: white
       backgroundColor: grayDark
       textAlignment: left
+    cardStyle:
+      textColor: white
+      backgroundColor: accent1
+      accentColor: primary
+      type: fadeH
     _template: photoCards
   - image:
       src: >-
@@ -96,7 +101,7 @@ blocks:
       textAlignment: right
     _template: banner
 primary: '#FF007A'
-accent1: '#FFDE30'
+accent1: '#0E4465'
 accent2: '#2DDB87'
 accent3: '#2DD0DB'
 navTextColor: white

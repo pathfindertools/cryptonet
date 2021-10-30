@@ -101,6 +101,85 @@ export const photoCardsBlockSchema: TinaTemplate = {
       ],
     },
     cardsSchema,
+    {
+      type: "object",
+      label: "Card Style",
+      name: "cardStyle",
+      ui: {
+        component: "group",
+      },
+      fields: [
+        {
+          label: "Text Color",
+          name: "textColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Background Color",
+          name: "backgroundColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Primary", value: "primary" },
+            { label: "Accent 1", value: "accent1" },
+            { label: "Accent 2", value: "accent2" },
+            { label: "Accent 3", value: "accent3" },
+            { label: "White", value: "white" },
+            { label: "Gray Light", value: "grayLight" },
+            { label: "Gray", value: "gray" },
+            { label: "Gray Dark", value: "grayDark" },
+            { label: "Black", value: "black" },
+          ],
+        },
+        {
+          label: "Type",
+          name: "type",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid Background", value: "solid" },
+            { label: "Horizontal Fade", value: "fadeH" },
+          ],
+        },
+      ],
+    },
     navigationLabelSchema
   ],
 };

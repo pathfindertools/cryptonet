@@ -281,6 +281,13 @@ type PagesBlocksPhotoCardsStyle {
   textAlignment: String
 }
 
+type PagesBlocksPhotoCardsCardStyle {
+  textColor: String
+  backgroundColor: String
+  accentColor: String
+  type: String
+}
+
 type PagesBlocksPhotoCards {
   label: String
   headline: String
@@ -289,6 +296,7 @@ type PagesBlocksPhotoCards {
   buttons: [PagesBlocksPhotoCardsButtons]
   items: [PagesBlocksPhotoCardsItems]
   style: PagesBlocksPhotoCardsStyle
+  cardStyle: PagesBlocksPhotoCardsCardStyle
   navigationLabel: String
 }
 
@@ -571,6 +579,13 @@ input PagesBlocksPhotoCardsStyleMutation {
   textAlignment: String
 }
 
+input PagesBlocksPhotoCardsCardStyleMutation {
+  textColor: String
+  backgroundColor: String
+  accentColor: String
+  type: String
+}
+
 input PagesBlocksPhotoCardsMutation {
   label: String
   headline: String
@@ -579,6 +594,7 @@ input PagesBlocksPhotoCardsMutation {
   buttons: [PagesBlocksPhotoCardsButtonsMutation]
   items: [PagesBlocksPhotoCardsItemsMutation]
   style: PagesBlocksPhotoCardsStyleMutation
+  cardStyle: PagesBlocksPhotoCardsCardStyleMutation
   navigationLabel: String
 }
 

@@ -60,6 +60,12 @@ export const getStaticProps = async ({ params }) => {
                     alt
                   }
                 }
+                cardStyle {
+                  textColor
+                  backgroundColor
+                  accentColor
+                  type
+                }
                 navigationLabel
               }
               ... on PagesBlocksTextCards {
