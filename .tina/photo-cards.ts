@@ -175,6 +175,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
           },
           options: [
             { label: "Solid Background", value: "solid" },
+            { label: "Semi Transparent", value: "transparent" },
             { label: "Horizontal Fade", value: "fadeH" },
           ],
         },

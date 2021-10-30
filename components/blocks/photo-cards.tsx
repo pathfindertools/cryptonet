@@ -35,13 +35,11 @@ const PhotoCard = ({ data, cardstyle }) => {
     accent3: "text-accent3",
   };
 
-  const contentClasses = (cardStyle) => {
-    const typeClasses = {
+  const backgroundClasses = {
       solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
+      transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
       fadeH: `${backgroundGradient[cardstyle?.backgroundColor]}`,
     }
-    return `${typeClasses[cardStyle?.type]} ${textColors[cardstyle?.textColor]}`
-  }
 
   return (
     <div className="flex flex-col">
@@ -54,8 +52,9 @@ const PhotoCard = ({ data, cardstyle }) => {
         )}
       </div>
       <div
-        className={`${contentClasses(cardstyle)} flex-1 text-left p-4 border-box`}
+        className={`${textColors[cardstyle?.textColor]} relative flex-1 text-left p-4 border-box`}
       >
+        <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
           <h3 className="text-2xl uppercase font-semibold  m-0">
             {data.headline}

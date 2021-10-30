@@ -2030,6 +2030,10 @@
                           "value": "solid"
                         },
                         {
+                          "label": "Semi Transparent",
+                          "value": "transparent"
+                        },
+                        {
                           "label": "Horizontal Fade",
                           "value": "fadeH"
                         }

@@ -49,12 +49,14 @@ blocks:
       columns: '3'
       textColor: white
       backgroundColor: grayDark
+      backgroundImage:
+        src:
       textAlignment: left
     cardStyle:
       textColor: white
       backgroundColor: accent1
       accentColor: primary
-      type: fadeH
+      type: solid
     _template: photoCards
   - image:
       src: >-
