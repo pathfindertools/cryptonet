@@ -68,14 +68,18 @@ const TextCard = ({ data, cardstyle }) => {
         </h3>
       )}
       {data.text && <p>{data.text}</p>}
-      {data.link && data.buttonLabel &&
+      {data.link && data.buttonLabel && (
         <Buttons buttons={[{
           link: data.link,
           label: data.buttonLabel,
           textColor: 'black',
           backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
           type: 'solid'
-        }]} className="absolute bottom-8" />}
+        }]} className="absolute bottom-8" />
+      )}
+      {data.link && !data.buttonLabel && (
+        <a href={data.link} className="absolute inset-0 z-20" />
+      )}
     </div>
   );
 };

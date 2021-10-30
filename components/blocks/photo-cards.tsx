@@ -1,6 +1,9 @@
+import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
 const PhotoCard = ({ data, cardstyle }) => {
+  const wrapClasses =  data.link && data.buttonLabel ? 'pb-24' : '';
+
   const backgroundColors = {
     white: "bg-white",
     grayLight: "bg-gray-200",
@@ -36,13 +39,13 @@ const PhotoCard = ({ data, cardstyle }) => {
   };
 
   const backgroundClasses = {
-      solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
-      transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
-      fadeH: `${backgroundGradient[cardstyle?.backgroundColor]}`,
-    }
+    solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
+    transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
+    fadeH: `${backgroundGradient[cardstyle?.backgroundColor]}`,
+  }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <div>
         {data.image && (
           <img
@@ -52,7 +55,7 @@ const PhotoCard = ({ data, cardstyle }) => {
         )}
       </div>
       <div
-        className={`${textColors[cardstyle?.textColor]} relative flex-1 text-left p-4 border-box`}
+        className={` ${wrapClasses} ${textColors[cardstyle?.textColor]} relative flex-1 text-left p-4 border-box`}
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
@@ -66,7 +69,19 @@ const PhotoCard = ({ data, cardstyle }) => {
           </h3>
         )}
         {data.text && <p>{data.text}</p>}
+        {data.link && data.buttonLabel && (
+          <Buttons buttons={[{
+            link: data.link,
+            label: data.buttonLabel,
+            textColor: 'black',
+            backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
+            type: 'solid'
+          }]} className="absolute bottom-8" />
+        )}
       </div>
+      {data.link && !data.buttonLabel && (
+        <a href={data.link} className="absolute inset-0 z-20" />
+      )}
     </div>
   );
 };
