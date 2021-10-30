@@ -153,6 +153,8 @@ export const getStaticProps = async ({ params }) => {
                     alt
                   }
                   textAlignment
+                  contentOrder
+                  width
                 }
                 navigationLabel
               }

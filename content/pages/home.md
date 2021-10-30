@@ -28,6 +28,8 @@ blocks:
       textColor: white
       backgroundColor: black
       textAlignment: center
+      contentOrder: labelHeadingsContent
+      width: narrow
     _template: banner
   - headline: Current and Upcoming Events
     items:
@@ -42,6 +44,7 @@ blocks:
           developers, creators, and artists from across the blockchain
           ecosystem.
         link: 'https://chain.link/hackathon'
+        buttonLabel: Learn More and Register
     style:
       columns: '3'
       textColor: white

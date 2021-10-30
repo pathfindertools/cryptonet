@@ -127,6 +127,34 @@ export const bannerBlockSchema: TinaTemplate = {
             { label: "Right", value: "right" },
           ],
         },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Label Headings Content", value: "labelHeadingsContent" },
+            { label: "Label Content Headings", value: "labelContentHeadings" },
+            { label: "Headings Label Content", value: "headingsLabelContent" },
+            { label: "Headings Content Label", value: "headingsContentLabel" },
+            { label: "Content Label Headings", value: "contentLabelHeadings" },
+            { label: "Content Headings Label", value: "contentHeadingsLabel" },
+          ],
+        },
+        {
+          label: "Width",
+          name: "width",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Default", value: "" },
+            { label: "Narrow", value: "narrow" },
+          ],
+        },
       ],
     },
     navigationLabelSchema

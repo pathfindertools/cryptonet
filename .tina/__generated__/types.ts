@@ -510,6 +510,8 @@ export type PagesBlocksBannerStyle = {
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImage>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksBanner = {
@@ -842,6 +844,8 @@ export type PagesBlocksBannerStyleMutation = {
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImageMutation>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksBannerMutation = {
