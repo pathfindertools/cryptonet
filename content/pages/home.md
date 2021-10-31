@@ -31,32 +31,245 @@ blocks:
       contentOrder: labelHeadingsContent
       width: narrow
     _template: banner
-  - headline: Current and Upcoming Events
+  - headline: Current Events
     items:
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-          alt: Chainlink Hackathon
         headline: Chainlink Hackathon
         subhead: 'Oct 22 - Nov 28, 2021'
         text: >-
-          Build the next generation of hybrid smart contracts alongside
+          "<p>Build the next generation of hybrid smart contracts alongside
           developers, creators, and artists from across the blockchain
-          ecosystem.
+          ecosystem.</p>"
         link: 'https://chain.link/hackathon'
-        buttonLabel: Learn More and Register
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: 'Filecoin @Polygon BUIDL IT '
+        subhead: 'Nov 19 - Dec 12, 2021'
+        text: >-
+          "<p>BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed
+          to promote web3 development and talent in India. Join the Filecoin
+          track!</p>"
+        link: 'https://buidlit.polygon.technology/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Cal Hacks 8.0
+        subhead: 'Oct 22-24, 2021'
+        text: >-
+          "<p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
+          is open to all college students over the age of 18.</p>"
+        link: 'https://calhacks.io/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Babylon 2.0
+        subhead: 'Oct 29 - Nov 20, 2021'
+        text: >-
+          "<p>The Babylon Project is a virtual Blockchain hackathon<strong>
+          </strong>where thousands of global participants meet in a metaverse.
+          Join the Filecoin/IPFS tracks!</p>"
+        link: 'https://worldblockchainhackathon.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Holon Innovate '21
+        subhead: 'Nov 9-25, 2021'
+        text: >-
+          "<p>Join this hackathon for Web3.0 innovators building on IPFS and/or
+          Filecoin in Oceania. This event is only open for participants in the
+          AEDT timezone.</p>"
+        link: 'https://taikai.network/en/holon/challenges/holon-innovate'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: NFT Hack with Filecoin
+        subhead: 'Oct 5 - Nov 28, 2021'
+        text: >-
+          "<p>8-week hackathon focused on NFTs - Build projects on Filecoin/IPFS
+          and compete for the $50k prize pool</p>"
+        link: 'https://www.encode.club/nft-hack'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Asia Hackathon Season
+        subhead: August - November 2021
+        text: >-
+          "<p>Join us on a journey across the universe of Filecoin and IPFS
+          across four distinct hackathon events.</p>"
+        link: asia-hackathon-season
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Mercury Hackathon
+        subhead: 'Sept 20 – Nov 8, 2021'
+        text: >-
+          <p>6-week online hackathon supported by <a
+          href="https://www.onflow.org/">Flow</a> that brings together the most
+          talented creators around the world to innovate and redefine
+          boundaries.</p>
+        link: 'https://mercuryhackathon2021.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Mars Hackathon
+        subhead: Sept 7 - Nov 6
+        text: >-
+          "<p>Filecoin along with Polygon have partnered to launch the Mars
+          Hackathon focused on decentralizing storage!</p>"
+        link: 'https://www.marshackathon2021.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Polygon Grants Hackathon
+        subhead: 'Aug 30 - Oct 29, 2021'
+        text: >-
+          "<p>First Polygon-centric hackathon and quadratic funding grant
+          dedicated to the growth of the Polygon ecosystem.</p>"
+        link: 'https://www.polygongrantshackathon.com/'
+        buttonLabel: Learn more and register
     style:
       columns: '3'
       textColor: white
-      backgroundColor: grayDark
-      backgroundImage:
-        src:
+      backgroundColor: black
+      contentOrder: labelHeadingsContent
       textAlignment: left
     cardStyle:
       textColor: white
       backgroundColor: accent1
       accentColor: primary
-      type: solid
+      type: fadeH
+    _template: photoCards
+  - headline: Past Events
+    items:
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Chainlink Hackathon
+        subhead: 'Oct 22 - Nov 28, 2021'
+        text: >-
+          "<p>Build the next generation of hybrid smart contracts alongside
+          developers, creators, and artists from across the blockchain
+          ecosystem.</p>"
+        link: 'https://chain.link/hackathon'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: 'Filecoin @Polygon BUIDL IT '
+        subhead: 'Nov 19 - Dec 12, 2021'
+        text: >-
+          "<p>BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed
+          to promote web3 development and talent in India. Join the Filecoin
+          track!</p>"
+        link: 'https://buidlit.polygon.technology/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Cal Hacks 8.0
+        subhead: 'Oct 22-24, 2021'
+        text: >-
+          "<p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
+          is open to all college students over the age of 18.</p>"
+        link: 'https://calhacks.io/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Babylon 2.0
+        subhead: 'Oct 29 - Nov 20, 2021'
+        text: >-
+          "<p>The Babylon Project is a virtual Blockchain hackathon<strong>
+          </strong>where thousands of global participants meet in a metaverse.
+          Join the Filecoin/IPFS tracks!</p>"
+        link: 'https://worldblockchainhackathon.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Holon Innovate '21
+        subhead: 'Nov 9-25, 2021'
+        text: >-
+          "<p>Join this hackathon for Web3.0 innovators building on IPFS and/or
+          Filecoin in Oceania. This event is only open for participants in the
+          AEDT timezone.</p>"
+        link: 'https://taikai.network/en/holon/challenges/holon-innovate'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: NFT Hack with Filecoin
+        subhead: 'Oct 5 - Nov 28, 2021'
+        text: >-
+          "<p>8-week hackathon focused on NFTs - Build projects on Filecoin/IPFS
+          and compete for the $50k prize pool</p>"
+        link: 'https://www.encode.club/nft-hack'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Asia Hackathon Season
+        subhead: August - November 2021
+        text: >-
+          "<p>Join us on a journey across the universe of Filecoin and IPFS
+          across four distinct hackathon events.</p>"
+        link: asia-hackathon-season
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Mercury Hackathon
+        subhead: 'Sept 20 – Nov 8, 2021'
+        text: >-
+          <p>6-week online hackathon supported by <a
+          href="https://www.onflow.org/">Flow</a> that brings together the most
+          talented creators around the world to innovate and redefine
+          boundaries.</p>
+        link: 'https://mercuryhackathon2021.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Mars Hackathon
+        subhead: Sept 7 - Nov 6
+        text: >-
+          "<p>Filecoin along with Polygon have partnered to launch the Mars
+          Hackathon focused on decentralizing storage!</p>"
+        link: 'https://www.marshackathon2021.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+        headline: Polygon Grants Hackathon
+        subhead: 'Aug 30 - Oct 29, 2021'
+        text: >-
+          "<p>First Polygon-centric hackathon and quadratic funding grant
+          dedicated to the growth of the Polygon ecosystem.</p>"
+        link: 'https://www.polygongrantshackathon.com/'
+        buttonLabel: Learn more and register
+    style:
+      columns: '3'
+      textColor: white
+      backgroundColor: black
+      contentOrder: labelHeadingsContent
+      textAlignment: left
+    cardStyle:
+      textColor: white
+      backgroundColor: accent1
+      accentColor: primary
+      type: fadeH
     _template: photoCards
   - image:
       src: >-
