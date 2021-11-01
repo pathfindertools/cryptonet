@@ -52,17 +52,17 @@ export const Header = (props: Pages) => {
   }
 
   return (
-    <section className={`${sectionClasses} absolute z-10 top-0 left-0 right-0`}>
-      <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 md:hidden`}></div>
+    <section className={`${sectionClasses} absolute z-40 top-0 left-0 right-0`}>
+      <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.style.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 md:hidden`}></div>
       <div className="max-w-screen-lg p-12 md:py-0 mx-auto">
           <div className="absolute top-0 p-4 right-0 md:hidden" onClick={() => setNavOpen(!navOpen)}>
             <Burger color="white" isOpen={navOpen}  />
           </div>
-          <ul style={navStyles} className={`${navClasses} ${textColors[props.navTextColor]} block list-none mt-6 md:mt-2 md:text-right md:opacity-100`}>
+          <ul style={navStyles} className={`${navClasses} ${textColors[props.style.navTextColor]} block list-none mt-6 md:mt-2 md:text-right md:opacity-100`}>
             {navList(props.blocks)?.map(function (item, index) {
               return (
                 <li className="md:inline-block md:ml-10" key={index}>
-                  <div className={`${backgroundColors[props.navTextColor]} h-px opacity-25 md:hidden`} />
+                  <div className={`${backgroundColors[props.style.navTextColor]} h-px opacity-25 md:hidden`} />
                   <a style={linkStyles} className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={() => setNavOpen(!navOpen)}>{item}</a>
                 </li>
               )
