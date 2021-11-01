@@ -1,4 +1,5 @@
 import * as React from "react";
+import { isString } from "../helpers/utilities";
 
 export const Buttons = ({
   className = "",
@@ -46,12 +47,17 @@ export const Buttons = ({
     return button.type ? styles[button.type] : styles.solid
   }
 
+  const linkTarget = (link) => {
+    const isExternalLink = isString(link) && link.charAt(0) !== '#'
+    return isExternalLink ? '_blank' : ''
+  }
+
   return (
     <div className={`inline-flex flex-wrap gap-4 ${className}`}>
       {buttons &&
         buttons.map(function (button, index) {
           const element = (
-              <a className={classes(button)} href={button.link} key={index}>{ button.label }</a>
+              <a className={classes(button)} href={button.link} target={linkTarget(button.link)} key={index}>{ button.label }</a>
             );
           return element;
         })}

@@ -33,7 +33,7 @@ export const Header = (props: Pages) => {
     black: 'bg-black',
   }
 
-  const sectionClasses = navOpen ? "h-screen overflow-scroll md:h-auto" : "overflow-hidden";
+  const sectionClasses = navOpen ? "h-screen md:h-auto" : "overflow-hidden";
   const navClasses = navOpen ? "opacity-100 m-0" : "opacity-0 mt-4";
   const backgroundClasses = navOpen ? "opacity-100" : "opacity-0";
   
