@@ -342,74 +342,84 @@ export default defineSchema({
           ],
         },
         {
-          type: "string",
-          label: "Primary",
-          name: "primary",
+          type: "object",
+          label: "Style",
+          name: "style",
           ui: {
-            component: "color",
+            component: "group",
           },
-        },
-        {
-          type: "string",
-          label: "Accent 1",
-          name: "accent1",
-          ui: {
-            component: "color",
-          },
-        },
-        {
-          type: "string",
-          label: "Accent 2",
-          name: "accent2",
-          ui: {
-            component: "color",
-          },
-        },
-        {
-          type: "string",
-          label: "Accent 3",
-          name: "accent3",
-          ui: {
-            component: "color",
-          },
-        },
-        {
-          label: "Navigation Text Color",
-          name: "navTextColor",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: [
-            { label: "Primary", value: "primary" },
-            { label: "Accent 1", value: "accent1" },
-            { label: "Accent 2", value: "accent2" },
-            { label: "Accent 3", value: "accent3" },
-            { label: "White", value: "white" },
-            { label: "Gray Light", value: "grayLight" },
-            { label: "Gray", value: "gray" },
-            { label: "Gray Dark", value: "grayDark" },
-            { label: "Black", value: "black" },
-          ],
-        },
-        {
-          label: "Navigation Background Color",
-          name: "navBackgroundColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Primary", value: "primary" },
-            { label: "Accent 1", value: "accent1" },
-            { label: "Accent 2", value: "accent2" },
-            { label: "Accent 3", value: "accent3" },
-            { label: "White", value: "white" },
-            { label: "Gray Light", value: "grayLight" },
-            { label: "Gray", value: "gray" },
-            { label: "Gray Dark", value: "grayDark" },
-            { label: "Black", value: "black" },
-          ],
+          fields: [
+            {
+              type: "string",
+              label: "Primary",
+              name: "primary",
+              ui: {
+                component: "color",
+              },
+            },
+            {
+              type: "string",
+              label: "Accent 1",
+              name: "accent1",
+              ui: {
+                component: "color",
+              },
+            },
+            {
+              type: "string",
+              label: "Accent 2",
+              name: "accent2",
+              ui: {
+                component: "color",
+              },
+            },
+            {
+              type: "string",
+              label: "Accent 3",
+              name: "accent3",
+              ui: {
+                component: "color",
+              },
+            },
+            {
+              label: "Navigation Text Color",
+              name: "navTextColor",
+              ui: {
+                component: "select",
+              },
+              type: "string",
+              options: [
+                { label: "Primary", value: "primary" },
+                { label: "Accent 1", value: "accent1" },
+                { label: "Accent 2", value: "accent2" },
+                { label: "Accent 3", value: "accent3" },
+                { label: "White", value: "white" },
+                { label: "Gray Light", value: "grayLight" },
+                { label: "Gray", value: "gray" },
+                { label: "Gray Dark", value: "grayDark" },
+                { label: "Black", value: "black" },
+              ],
+            },
+            {
+              label: "Navigation Background Color",
+              name: "navBackgroundColor",
+              type: "string",
+              ui: {
+                component: "select",
+              },
+              options: [
+                { label: "Primary", value: "primary" },
+                { label: "Accent 1", value: "accent1" },
+                { label: "Accent 2", value: "accent2" },
+                { label: "Accent 3", value: "accent3" },
+                { label: "White", value: "white" },
+                { label: "Gray Light", value: "grayLight" },
+                { label: "Gray", value: "gray" },
+                { label: "Gray Dark", value: "grayDark" },
+                { label: "Black", value: "black" },
+              ],
+            },
+          ]
         },
         {
           type: "string",

@@ -60,6 +60,12 @@ export const getStaticProps = async ({ params }) => {
                     alt
                   }
                 }
+                cardStyle {
+                  textColor
+                  backgroundColor
+                  accentColor
+                  type
+                }
                 navigationLabel
               }
               ... on PagesBlocksTextCards {
@@ -100,6 +106,10 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksFeature {
+                image {
+                  src
+                  alt
+                }
                 label
                 headline
                 subhead
@@ -110,10 +120,6 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
-                }
-                image {
-                  src
-                  alt
                 }
                 style {
                   textColor
@@ -130,6 +136,10 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksBanner {
+                image {
+                  src
+                  alt
+                }
                 label
                 headline
                 subhead
@@ -148,16 +158,21 @@ export const getStaticProps = async ({ params }) => {
                     src
                     alt
                   }
+                  textAlignment
+                  contentOrder
+                  width
                 }
                 navigationLabel
               }
             }
-            primary
-            accent1
-            accent2
-            accent3
-            navTextColor
-            navBackgroundColor
+            style {
+              primary
+              accent1
+              accent2
+              accent3
+              navTextColor
+              navBackgroundColor
+            } 
             siteTitle
             siteDescription
             siteImageSrc

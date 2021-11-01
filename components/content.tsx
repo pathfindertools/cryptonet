@@ -2,7 +2,17 @@ import React from "react";
 import Markdown from "react-markdown";
 import { Buttons } from "./buttons";
 
-const contentCss = (color, alignment) => {
+const contentAlignment = (alignment) => {
+  const textAlignments = {
+    left: "",
+    center: "text-center",
+    right: "text-right",
+  };
+
+  return textAlignments[alignment];
+};
+
+const contentColor = (color) => {
   const textColors = {
     white: "text-white",
     grayLight: "text-gray-200",
@@ -10,13 +20,17 @@ const contentCss = (color, alignment) => {
     grayDark: "text-gray-800",
     black: "text-black",
   };
+  return textColors[color];
+};
+
+const buttonAlignment = (alignment) => {
   const textAlignments = {
     left: "",
-    center: "text-center",
-    right: "text-right",
+    center: "mx-auto",
+    right: "ml-auto",
   };
 
-  return `${textColors[color]} ${textAlignments[alignment]}`;
+  return textAlignments[alignment];
 };
 
 const labelOrder = (order) => {
@@ -78,7 +92,7 @@ export const Content = ({
   order = "labelHeadingsContent",
 }) => {
   return (
-    <div className={`flex flex-col mb-12 ${contentCss(color, alignment)}`}>
+    <div className={`flex flex-col ${contentAlignment(alignment)} ${contentColor(color)}`}>
       {label && <h4 className={`text-lg ${labelOrder(order)}`}>{label}</h4>}
       {headline && <h2 className={`text-4xl ${headingOrder(order)}`}>{headline}</h2>}
       {subhead && <h3 className={`text-2xl ${subheadOrder(order)}`}>{subhead}</h3>}
@@ -90,7 +104,7 @@ export const Content = ({
       {buttons && (
         <Buttons
           buttons={buttons}
-          className="mt-8 order-4"
+          className={`${buttonAlignment(alignment)} mt-8 order-4`}
         />
       )}
     </div>

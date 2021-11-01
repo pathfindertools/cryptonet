@@ -281,6 +281,13 @@ type PagesBlocksPhotoCardsStyle {
   textAlignment: String
 }
 
+type PagesBlocksPhotoCardsCardStyle {
+  textColor: String
+  backgroundColor: String
+  accentColor: String
+  type: String
+}
+
 type PagesBlocksPhotoCards {
   label: String
   headline: String
@@ -289,6 +296,7 @@ type PagesBlocksPhotoCards {
   buttons: [PagesBlocksPhotoCardsButtons]
   items: [PagesBlocksPhotoCardsItems]
   style: PagesBlocksPhotoCardsStyle
+  cardStyle: PagesBlocksPhotoCardsCardStyle
   navigationLabel: String
 }
 
@@ -342,6 +350,11 @@ type PagesBlocksTextCards {
   navigationLabel: String
 }
 
+type PagesBlocksBannerImage {
+  src: String
+  alt: String
+}
+
 type PagesBlocksBannerButtons {
   label: String
   link: String
@@ -360,29 +373,36 @@ type PagesBlocksBannerStyle {
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
   textAlignment: String
+  contentOrder: String
+  width: String
 }
 
 type PagesBlocksBanner {
+  image: PagesBlocksBannerImage
   label: String
   headline: String
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtons]
-  style: PagesBlocksBannerStyle
   navigationLabel: String
+  style: PagesBlocksBannerStyle
 }
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
 
-type Pages {
-  draft: Boolean
-  blocks: [PagesBlocks]
+type PagesStyle {
   primary: String
   accent1: String
   accent2: String
   accent3: String
   navTextColor: String
   navBackgroundColor: String
+}
+
+type Pages {
+  draft: Boolean
+  blocks: [PagesBlocks]
+  style: PagesStyle
   siteTitle: String
   siteDescription: String
   siteImageSrc: String
@@ -563,6 +583,13 @@ input PagesBlocksPhotoCardsStyleMutation {
   textAlignment: String
 }
 
+input PagesBlocksPhotoCardsCardStyleMutation {
+  textColor: String
+  backgroundColor: String
+  accentColor: String
+  type: String
+}
+
 input PagesBlocksPhotoCardsMutation {
   label: String
   headline: String
@@ -571,6 +598,7 @@ input PagesBlocksPhotoCardsMutation {
   buttons: [PagesBlocksPhotoCardsButtonsMutation]
   items: [PagesBlocksPhotoCardsItemsMutation]
   style: PagesBlocksPhotoCardsStyleMutation
+  cardStyle: PagesBlocksPhotoCardsCardStyleMutation
   navigationLabel: String
 }
 
@@ -624,6 +652,11 @@ input PagesBlocksTextCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksBannerImageMutation {
+  src: String
+  alt: String
+}
+
 input PagesBlocksBannerButtonsMutation {
   label: String
   link: String
@@ -642,16 +675,19 @@ input PagesBlocksBannerStyleMutation {
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
   textAlignment: String
+  contentOrder: String
+  width: String
 }
 
 input PagesBlocksBannerMutation {
+  image: PagesBlocksBannerImageMutation
   label: String
   headline: String
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
-  style: PagesBlocksBannerStyleMutation
   navigationLabel: String
+  style: PagesBlocksBannerStyleMutation
 }
 
 input PagesBlocksMutation {
@@ -661,15 +697,19 @@ input PagesBlocksMutation {
   banner: PagesBlocksBannerMutation
 }
 
-input PagesMutation {
-  draft: Boolean
-  blocks: [PagesBlocksMutation]
+input PagesStyleMutation {
   primary: String
   accent1: String
   accent2: String
   accent3: String
   navTextColor: String
   navBackgroundColor: String
+}
+
+input PagesMutation {
+  draft: Boolean
+  blocks: [PagesBlocksMutation]
+  style: PagesStyleMutation
   siteTitle: String
   siteDescription: String
   siteImageSrc: String

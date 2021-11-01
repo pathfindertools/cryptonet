@@ -18,7 +18,7 @@ export const CardGrid = ({ data, children }) => {
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
     >
-      <div className="max-w-screen-lg p-12 mx-auto">
+      <div className="max-w-screen-lg md:p-12 p-6 mx-auto">
         <Content
           label = {data.label}
           headline = {data.headline}
@@ -29,7 +29,7 @@ export const CardGrid = ({ data, children }) => {
           alignment = {data.style?.textAlignment}
           order = {data.style?.contentOrder}
         />
-        <div className={`grid gap-10 ${gridCols[data.style?.columns]}`}>
+        <div className={`md:grid gap-10 md:pt-10 pt-5 ${gridCols[data.style?.columns]}`}>
           {children}
         </div>
       </div>

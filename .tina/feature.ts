@@ -7,10 +7,19 @@ export const featureBlockSchema: TinaTemplate = {
   label: "Feature",
   ui: {
     defaultItem: {
-      label: "Here's some text above the other text",
-      headline: "This Big Text is Totally Awesome",
+      label: "",
+      headline: "This is the main headline",
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      style: {
+        textColor: "white",
+        backgroundColor: "black",
+        flipLayout: false,
+        contentOrder: "labelHeadingsContent",
+        imageStyle: "natural",
+        contentAlignment: "center",
+        textAlignment: "left",
+      },
     },
   },
   fields: [

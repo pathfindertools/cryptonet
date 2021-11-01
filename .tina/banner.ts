@@ -7,13 +7,37 @@ export const bannerBlockSchema: TinaTemplate = {
   label: "Banner",
   ui: {
     defaultItem: {
-      label: "Here's some text above the other text",
-      headline: "This Big Text is Totally Awesome",
+      label: "",
+      headline: "This is the main headline",
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      style: {
+        textColor: "white",
+        backgroundColor: "black",
+        textAlignment: "left",
+        contentOrder: "labelHeadingsContent",
+        width: "normal"
+      },
     },
   },
   fields: [
+    {
+      label: "Image",
+      name: "image",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string",
+        },
+      ],
+    },
     {
       label: "Label",
       name: "label",
@@ -38,6 +62,7 @@ export const bannerBlockSchema: TinaTemplate = {
       },
     },
     buttonsSchema,
+    navigationLabelSchema,
     {
       type: "object",
       label: "Style",
@@ -110,8 +135,35 @@ export const bannerBlockSchema: TinaTemplate = {
             { label: "Right", value: "right" },
           ],
         },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Label Headings Content", value: "labelHeadingsContent" },
+            { label: "Label Content Headings", value: "labelContentHeadings" },
+            { label: "Headings Label Content", value: "headingsLabelContent" },
+            { label: "Headings Content Label", value: "headingsContentLabel" },
+            { label: "Content Label Headings", value: "contentLabelHeadings" },
+            { label: "Content Headings Label", value: "contentHeadingsLabel" },
+          ],
+        },
+        {
+          label: "Width",
+          name: "width",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Normal", value: "normal" },
+            { label: "Narrow", value: "narrow" },
+          ],
+        },
       ],
     },
-    navigationLabelSchema
   ],
 };

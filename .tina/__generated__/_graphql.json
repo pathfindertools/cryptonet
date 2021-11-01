@@ -3598,6 +3598,77 @@
       "directives": [],
       "name": {
         "kind": "Name",
+        "value": "PagesBlocksPhotoCardsCardStyle"
+      },
+      "fields": [
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "textColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "accentColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "type"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "ObjectTypeDefinition",
+      "interfaces": [],
+      "directives": [],
+      "name": {
+        "kind": "Name",
         "value": "PagesBlocksPhotoCards"
       },
       "fields": [
@@ -3709,6 +3780,21 @@
             "name": {
               "kind": "Name",
               "value": "PagesBlocksPhotoCardsStyle"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "cardStyle"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksPhotoCardsCardStyle"
             }
           }
         },
@@ -4287,6 +4373,47 @@
       "directives": [],
       "name": {
         "kind": "Name",
+        "value": "PagesBlocksBannerImage"
+      },
+      "fields": [
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "src"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "alt"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "ObjectTypeDefinition",
+      "interfaces": [],
+      "directives": [],
+      "name": {
+        "kind": "Name",
         "value": "PagesBlocksBannerButtons"
       },
       "fields": [
@@ -4476,6 +4603,36 @@
               "value": "String"
             }
           }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "width"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
         }
       ]
     },
@@ -4488,6 +4645,21 @@
         "value": "PagesBlocksBanner"
       },
       "fields": [
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "image"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksBannerImage"
+            }
+          }
+        },
         {
           "kind": "FieldDefinition",
           "name": {
@@ -4570,21 +4742,6 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "style"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "PagesBlocksBannerStyle"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
             "value": "navigationLabel"
           },
           "arguments": [],
@@ -4593,6 +4750,21 @@
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "style"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksBannerStyle"
             }
           }
         }
@@ -4642,42 +4814,9 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "Pages"
+        "value": "PagesStyle"
       },
       "fields": [
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "draft"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "Boolean"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "blocks"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "ListType",
-            "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "PagesBlocks"
-              }
-            }
-          }
-        },
         {
           "kind": "FieldDefinition",
           "name": {
@@ -4765,6 +4904,65 @@
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "ObjectTypeDefinition",
+      "interfaces": [],
+      "directives": [],
+      "name": {
+        "kind": "Name",
+        "value": "Pages"
+      },
+      "fields": [
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "draft"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "Boolean"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "blocks"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "ListType",
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "PagesBlocks"
+              }
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "style"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesStyle"
             }
           }
         },
@@ -6784,6 +6982,71 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
+        "value": "PagesBlocksPhotoCardsCardStyleMutation"
+      },
+      "fields": [
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "textColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "backgroundColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "accentColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "type"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "InputObjectTypeDefinition",
+      "name": {
+        "kind": "Name",
         "value": "PagesBlocksPhotoCardsMutation"
       },
       "fields": [
@@ -6888,6 +7151,20 @@
             "name": {
               "kind": "Name",
               "value": "PagesBlocksPhotoCardsStyleMutation"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "cardStyle"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksPhotoCardsCardStyleMutation"
             }
           }
         },
@@ -7419,6 +7696,43 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
+        "value": "PagesBlocksBannerImageMutation"
+      },
+      "fields": [
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "src"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "alt"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "InputObjectTypeDefinition",
+      "name": {
+        "kind": "Name",
         "value": "PagesBlocksBannerButtonsMutation"
       },
       "fields": [
@@ -7593,6 +7907,34 @@
               "value": "String"
             }
           }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "width"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
         }
       ]
     },
@@ -7603,6 +7945,20 @@
         "value": "PagesBlocksBannerMutation"
       },
       "fields": [
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "image"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksBannerImageMutation"
+            }
+          }
+        },
         {
           "kind": "InputValueDefinition",
           "name": {
@@ -7680,20 +8036,6 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "style"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "PagesBlocksBannerStyleMutation"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
             "value": "navigationLabel"
           },
           "type": {
@@ -7701,6 +8043,20 @@
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "style"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesBlocksBannerStyleMutation"
             }
           }
         }
@@ -7775,40 +8131,9 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesMutation"
+        "value": "PagesStyleMutation"
       },
       "fields": [
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "draft"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "Boolean"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "blocks"
-          },
-          "type": {
-            "kind": "ListType",
-            "type": {
-              "kind": "NamedType",
-              "name": {
-                "kind": "Name",
-                "value": "PagesBlocksMutation"
-              }
-            }
-          }
-        },
         {
           "kind": "InputValueDefinition",
           "name": {
@@ -7890,6 +8215,60 @@
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "InputObjectTypeDefinition",
+      "name": {
+        "kind": "Name",
+        "value": "PagesMutation"
+      },
+      "fields": [
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "draft"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "Boolean"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "blocks"
+          },
+          "type": {
+            "kind": "ListType",
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "PagesBlocksMutation"
+              }
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "style"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "PagesStyleMutation"
             }
           }
         },
