@@ -37,7 +37,7 @@ const TextCard = ({ data, cardstyle }) => {
   }
 
   return (
-    <div className={`relative text-left p-8 mb-10 md:mb-0 border-box ${wrapClasses()} ${textColor[cardstyle?.textColor]}`}>
+    <div className={`relative text-left p-8 mb-6 md:mb-0 border-box ${wrapClasses()} ${textColor[cardstyle?.textColor]}`}>
       <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`}></div>
       {data.headline && (
         <h3 className={`${headlineClasses()}`}>

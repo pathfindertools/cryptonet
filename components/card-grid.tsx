@@ -18,7 +18,7 @@ export const CardGrid = ({ data, children }) => {
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
     >
-      <div className="max-w-screen-lg p-12 mx-auto">
+      <div className="max-w-screen-lg md:p-12 p-6 mx-auto">
         <Content
           label = {data.label}
           headline = {data.headline}

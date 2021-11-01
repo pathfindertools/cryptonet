@@ -9,8 +9,8 @@ export const Banner = ({ data }) => {
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
     >
-      <div className="max-w-screen-lg p-12 mx-auto">
-        <div className={`mx-auto ${data.style?.width === "narrow" ? "w-2/3" : "w-full"}`}>
+      <div className="max-w-screen-lg md:p-12 p-6 mx-auto">
+        <div className={`mx-auto ${data.style?.width === "narrow" ? "md:w-2/3" : "w-full"}`}>
           {data.image && (
             <img
               className=""

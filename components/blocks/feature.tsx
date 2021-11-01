@@ -14,16 +14,16 @@ const splitCss = (data) => {
 }
 
 const contentContainerCss = (data) => {
-  const margin = data.style?.flipLayout ? "mr-auto pr-12 pl-10" : "ml-auto pl-12 pr-10"
-  return `max-w-screen-lg-half py-12 ${margin}`
+  const margin = data.style?.flipLayout ? "md:mr-auto md:pr-12 md:pl-10 px-6" : "md:ml-auto md:pl-12 md:pr-10 px-6"
+  return `md:max-w-screen-lg-half md:py-12 py-0 ${margin}`
 }
 
 const imageContainerCss = (data) => {
   const styles = {
-    natural: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-10 py-12" : "max-w-screen-lg-half mr-auto pr-12 pl-10 py-12",
-    fitHalf: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto pl-12 pr-10 " : "max-w-screen-lg-half mr-auto pr-12 pl-10",
-    fillHalf: data.style?.flipLayout ? "absolute inset-0 right-4" : "absolute inset-0 left-4",
-    overlap: data.style?.flipLayout ? "absolute inset-0 -right-24" : "absolute inset-0 -left-24",
+    natural: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6 py-12" : "max-w-screen-lg-half mr-auto pr-12 pl-10 py-12",
+    fitHalf: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6" : "max-w-screen-lg-half mr-auto pr-12 pl-10",
+    fillHalf: data.style?.flipLayout ? "md:absolute md:inset-0 md:right-4" : "md:absolute md:inset-0 md:left-4",
+    overlap: data.style?.flipLayout ? "md:absolute md:inset-0 md:-right-24" : "md:absolute md:inset-0 md:-left-24",
   };
   return styles[data.style?.imageStyle]
 }
