@@ -5,7 +5,7 @@ const TextCard = ({ data, cardstyle }) => {
   const wrapClasses = () => {
     return data.link && data.buttonLabel ? 'pb-24' : ''
   };
-  const backgroundColor = {
+  const backgroundColors = {
     white: "bg-white",
     grayLight: "bg-gray-200",
     gray: "bg-gray-500",
@@ -27,36 +27,18 @@ const TextCard = ({ data, cardstyle }) => {
     accent2: "text-accent2",
     accent3: "text-accent3",
   };
-  const accentTextColor = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-    primary: "text-primary",
-    accent1: "text-accent1",
-    accent2: "text-accent2",
-    accent3: "text-accent3",
-  };
-  const accentBackgroundColor = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-    primary: "text-primary",
-    accent1: "text-accent1",
-    accent2: "text-accent2",
-    accent3: "text-accent3",
-  };
   const headlineClasses = () => {
     const color = data.accentColor ? data.accentColor : cardstyle?.accentColor
-    return `text-2xl uppercase font-semibold m-0 ${textColor[color]}`
+    return `text-2xl font-semibold m-0 ${textColor[color]}`
   };
+  const backgroundClasses = {
+    solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
+    transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
+  }
 
   return (
     <div className={`relative text-left p-8 border-box ${wrapClasses()} ${textColor[cardstyle?.textColor]}`}>
-      <div className={`absolute inset-0 -z-1 opacity-70 ${backgroundColor[cardstyle?.backgroundColor]}`}></div>
+      <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`}></div>
       {data.headline && (
         <h3 className={`${headlineClasses()}`}>
           {data.headline}
