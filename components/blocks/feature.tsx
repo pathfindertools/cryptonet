@@ -10,7 +10,7 @@ const splitCss = (data) => {
   };
   const contentAlignment = contentAlignments[data.style?.contentAlignment]
   const direction = data.style?.flipLayout ? "flex-row" : "flex-row-reverse"
-  return `flex ${direction} ${contentAlignment}`
+  return `sm:flex ${direction} ${contentAlignment}`
 }
 
 const contentContainerCss = (data) => {

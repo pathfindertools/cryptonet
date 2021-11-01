@@ -45,7 +45,7 @@ const PhotoCard = ({ data, cardstyle }) => {
   }
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative mb-10 md:mb-0">
       <div>
         {data.image && (
           <img
