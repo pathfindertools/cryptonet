@@ -13,7 +13,7 @@ export const Banner = ({ data }) => {
         <div className={`mx-auto ${data.style?.width === "narrow" ? "md:w-2/3" : "w-full"}`}>
           {data.image && (
             <img
-              className=""
+              className=" md:mt-12 mt-6"
               alt={data.image.alt}
               src={data.image.src}
             />

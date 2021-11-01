@@ -92,7 +92,7 @@ export const Content = ({
   order = "labelHeadingsContent",
 }) => {
   return (
-    <div className={`flex flex-col mb-12 ${contentAlignment(alignment)} ${contentColor(color)}`}>
+    <div className={`flex flex-col ${contentAlignment(alignment)} ${contentColor(color)}`}>
       {label && <h4 className={`text-lg ${labelOrder(order)}`}>{label}</h4>}
       {headline && <h2 className={`text-4xl ${headingOrder(order)}`}>{headline}</h2>}
       {subhead && <h3 className={`text-2xl ${subheadOrder(order)}`}>{subhead}</h3>}
