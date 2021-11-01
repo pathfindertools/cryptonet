@@ -399,10 +399,16 @@ type PagesStyle {
   navBackgroundColor: String
 }
 
+type PagesNavItems {
+  label: String
+  link: String
+}
+
 type Pages {
   draft: Boolean
   blocks: [PagesBlocks]
   style: PagesStyle
+  navItems: [PagesNavItems]
   siteTitle: String
   siteDescription: String
   siteImageSrc: String
@@ -706,10 +712,16 @@ input PagesStyleMutation {
   navBackgroundColor: String
 }
 
+input PagesNavItemsMutation {
+  label: String
+  link: String
+}
+
 input PagesMutation {
   draft: Boolean
   blocks: [PagesBlocksMutation]
   style: PagesStyleMutation
+  navItems: [PagesNavItemsMutation]
   siteTitle: String
   siteDescription: String
   siteImageSrc: String

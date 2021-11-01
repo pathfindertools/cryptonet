@@ -3698,6 +3698,39 @@
           ]
         },
         {
+          "label": "Navigation",
+          "description": "Additional links in the header",
+          "name": "navItems",
+          "list": true,
+          "type": "object",
+          "fields": [
+            {
+              "label": "Label",
+              "name": "label",
+              "type": "string",
+              "namespace": [
+                "pages",
+                "navItems",
+                "label"
+              ]
+            },
+            {
+              "label": "Link",
+              "name": "link",
+              "type": "string",
+              "namespace": [
+                "pages",
+                "navItems",
+                "link"
+              ]
+            }
+          ],
+          "namespace": [
+            "pages",
+            "navItems"
+          ]
+        },
+        {
           "type": "string",
           "label": "Site Title",
           "name": "siteTitle",

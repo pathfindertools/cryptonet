@@ -422,6 +422,22 @@ export default defineSchema({
           ]
         },
         {
+          label: "Navigation",
+          description: "Additional links in the header",
+          name: "navItems",
+          list: true,
+          type: "object",
+          fields: [{
+            label: "Label",
+            name: "label",
+            type: "string"
+          }, {
+            label: "Link",
+            name: "link",
+            type: "string",
+          }]
+        },
+        {
           type: "string",
           label: "Site Title",
           name: "siteTitle",

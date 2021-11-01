@@ -547,11 +547,18 @@ export type PagesStyle = {
   navBackgroundColor?: Maybe<Scalars['String']>;
 };
 
+export type PagesNavItems = {
+  __typename?: 'PagesNavItems';
+  label?: Maybe<Scalars['String']>;
+  link?: Maybe<Scalars['String']>;
+};
+
 export type Pages = {
   __typename?: 'Pages';
   draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocks>>>;
   style?: Maybe<PagesStyle>;
+  navItems?: Maybe<Array<Maybe<PagesNavItems>>>;
   siteTitle?: Maybe<Scalars['String']>;
   siteDescription?: Maybe<Scalars['String']>;
   siteImageSrc?: Maybe<Scalars['String']>;
@@ -897,10 +904,16 @@ export type PagesStyleMutation = {
   navBackgroundColor?: Maybe<Scalars['String']>;
 };
 
+export type PagesNavItemsMutation = {
+  label?: Maybe<Scalars['String']>;
+  link?: Maybe<Scalars['String']>;
+};
+
 export type PagesMutation = {
   draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocksMutation>>>;
   style?: Maybe<PagesStyleMutation>;
+  navItems?: Maybe<Array<Maybe<PagesNavItemsMutation>>>;
   siteTitle?: Maybe<Scalars['String']>;
   siteDescription?: Maybe<Scalars['String']>;
   siteImageSrc?: Maybe<Scalars['String']>;

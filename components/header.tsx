@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import type { Pages } from "../.tina/__generated__/types";
-import { lowerDash } from "../helpers/utilities";
+import { isString, lowerDash } from "../helpers/utilities";
 import { Burger } from "./burger"
 
 const navList = (blocks) => {
-  return blocks?.filter(block => block.navigationLabel).map(block => block.navigationLabel)
+  const anchorLinks: [] = blocks?.filter(block => block.navigationLabel).map(block => block.navigationLabel);
+  return anchorLinks;
+}
+
+const linkTarget = (link) => {
+  const isExternalLink = isString(link) && link.charAt(0) !== '#'
+  return isExternalLink ? '_blank' : ''
 }
 
 export const Header = (props: Pages) => {
@@ -64,6 +70,14 @@ export const Header = (props: Pages) => {
                 <li className="md:inline-block md:ml-10" key={index}>
                   <div className={`${backgroundColors[props.style.navTextColor]} h-px opacity-25 md:hidden`} />
                   <a style={linkStyles} className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={() => setNavOpen(!navOpen)}>{item}</a>
+                </li>
+              )
+            })}
+            {props?.navItems && props.navItems.map(function (item, index) {
+              return (
+                <li className="md:inline-block md:ml-10" key={index}>
+                  <div className={`${backgroundColors[props.style.navTextColor]} h-px opacity-25 md:hidden`} />
+                  <a style={linkStyles} className={"block no-underline"} href={item.link} target={linkTarget(item.link)} onClick={() => setNavOpen(!navOpen)}>{item.label}</a>
                 </li>
               )
             })}
