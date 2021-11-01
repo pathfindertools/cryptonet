@@ -5,6 +5,7 @@ import { navigationLabelSchema } from "./shared/navigation-label";
 
 const defaultCard = {
   headline: "Here's Another Card",
+  subhead: "",
   text: "This is where you might talk about the card, if this wasn't just filler text.",
 };
 
@@ -13,8 +14,22 @@ export const photoCardsBlockSchema: TinaTemplate = {
   label: "Photo Cards",
   ui: {
     defaultItem: {
+      label: "",
+      headline: "This is a headline",
+      subhead: "Here is a subhead",
+      body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
-        columns: "3"
+        columns: "3",
+        textColor: "white",
+        backgroundColor: "black",
+        contentOrder: "labelHeadingsContent",
+        textAlignment: "left",
+      },
+      cardStyle: {
+        textColor: "black",
+        backgroundColor: "gray",
+        accentColor: "primary",
+        type: "solid",
       },
       items: [defaultCard, defaultCard, defaultCard],
     },

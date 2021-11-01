@@ -384,8 +384,8 @@ type PagesBlocksBanner {
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtons]
-  style: PagesBlocksBannerStyle
   navigationLabel: String
+  style: PagesBlocksBannerStyle
 }
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
@@ -686,8 +686,8 @@ input PagesBlocksBannerMutation {
   subhead: String
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
-  style: PagesBlocksBannerStyleMutation
   navigationLabel: String
+  style: PagesBlocksBannerStyleMutation
 }
 
 input PagesBlocksMutation {

@@ -76,7 +76,7 @@ blocks:
       textColor: white
       backgroundColor: black
       accentColor: primary
-      type: default
+      type: solid
     navigationLabel: Series
     _template: textCards
   - image:

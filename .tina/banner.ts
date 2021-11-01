@@ -7,10 +7,17 @@ export const bannerBlockSchema: TinaTemplate = {
   label: "Banner",
   ui: {
     defaultItem: {
-      label: "Here's some text above the other text",
-      headline: "This Big Text is Totally Awesome",
+      label: "",
+      headline: "This is the main headline",
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      style: {
+        textColor: "white",
+        backgroundColor: "black",
+        textAlignment: "left",
+        contentOrder: "labelHeadingsContent",
+        width: "normal"
+      },
     },
   },
   fields: [
@@ -55,6 +62,7 @@ export const bannerBlockSchema: TinaTemplate = {
       },
     },
     buttonsSchema,
+    navigationLabelSchema,
     {
       type: "object",
       label: "Style",
@@ -151,12 +159,11 @@ export const bannerBlockSchema: TinaTemplate = {
             component: "select",
           },
           options: [
-            { label: "Default", value: "" },
+            { label: "Normal", value: "normal" },
             { label: "Narrow", value: "narrow" },
           ],
         },
       ],
     },
-    navigationLabelSchema
   ],
 };

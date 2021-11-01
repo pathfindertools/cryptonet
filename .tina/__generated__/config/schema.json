@@ -470,10 +470,19 @@
               "label": "Feature",
               "ui": {
                 "defaultItem": {
-                  "label": "Here's some text above the other text",
-                  "headline": "This Big Text is Totally Awesome",
+                  "label": "",
+                  "headline": "This is the main headline",
                   "subhead": "Here is a subhead",
-                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo."
+                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+                  "style": {
+                    "textColor": "white",
+                    "backgroundColor": "black",
+                    "flipLayout": false,
+                    "contentOrder": "labelHeadingsContent",
+                    "imageStyle": "natural",
+                    "contentAlignment": "center",
+                    "textAlignment": "left"
+                  }
                 }
               },
               "fields": [
@@ -883,20 +892,37 @@
               "label": "Photo Cards",
               "ui": {
                 "defaultItem": {
+                  "label": "",
+                  "headline": "This is a headline",
+                  "subhead": "Here is a subhead",
+                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
-                    "columns": "3"
+                    "columns": "3",
+                    "textColor": "white",
+                    "backgroundColor": "black",
+                    "contentOrder": "labelHeadingsContent",
+                    "textAlignment": "left"
+                  },
+                  "cardStyle": {
+                    "textColor": "black",
+                    "backgroundColor": "gray",
+                    "accentColor": "primary",
+                    "type": "solid"
                   },
                   "items": [
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   ]
@@ -1075,6 +1101,7 @@
                   "ui": {
                     "defaultItem": {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   },
@@ -1492,26 +1519,37 @@
               "label": "Text Cards",
               "ui": {
                 "defaultItem": {
+                  "label": "",
+                  "headline": "This is a headline",
+                  "subhead": "Here is a subhead",
+                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
-                    "columns": "3"
-                  },
-                  "cardStyle": {
+                    "columns": "3",
                     "textColor": "white",
                     "backgroundColor": "black",
+                    "contentOrder": "labelHeadingsContent",
+                    "textAlignment": "left"
+                  },
+                  "cardStyle": {
+                    "textColor": "black",
+                    "backgroundColor": "gray",
                     "accentColor": "primary",
-                    "type": "default"
+                    "type": "solid"
                   },
                   "items": [
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     },
                     {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   ]
@@ -1690,6 +1728,7 @@
                   "ui": {
                     "defaultItem": {
                       "headline": "Here's Another Card",
+                      "subhead": "",
                       "text": "This is where you might talk about the card, if this wasn't just filler text."
                     }
                   },
@@ -2112,8 +2151,8 @@
                       },
                       "options": [
                         {
-                          "label": "Default",
-                          "value": "default"
+                          "label": "Solid",
+                          "value": "solid"
                         },
                         {
                           "label": "Transparent Background",
@@ -2136,10 +2175,17 @@
               "label": "Banner",
               "ui": {
                 "defaultItem": {
-                  "label": "Here's some text above the other text",
-                  "headline": "This Big Text is Totally Awesome",
+                  "label": "",
+                  "headline": "This is the main headline",
                   "subhead": "Here is a subhead",
-                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo."
+                  "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+                  "style": {
+                    "textColor": "white",
+                    "backgroundColor": "black",
+                    "textAlignment": "left",
+                    "contentOrder": "labelHeadingsContent",
+                    "width": "normal"
+                  }
                 }
               },
               "fields": [
@@ -2325,6 +2371,12 @@
                   ]
                 },
                 {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string"
+                },
+                {
                   "type": "object",
                   "label": "Style",
                   "name": "style",
@@ -2490,8 +2542,8 @@
                       },
                       "options": [
                         {
-                          "label": "Default",
-                          "value": ""
+                          "label": "Normal",
+                          "value": "normal"
                         },
                         {
                           "label": "Narrow",
@@ -2500,12 +2552,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "label": "Navigation Label",
-                  "name": "navigationLabel",
-                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
-                  "type": "string"
                 }
               ]
             }
