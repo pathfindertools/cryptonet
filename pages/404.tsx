@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "../components/container";
 import { Feature } from "../components/blocks/feature";
 import { layoutQueryFragment } from "../components/layout";
+import { AsyncReturnType } from "./[filename]";
 
 export default function FourOhFour(
   props: AsyncReturnType<typeof getStaticProps>["props"]
