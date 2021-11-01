@@ -1,7 +1,7 @@
 {
   "build": {
-    "image": "node:alpine",
-    "command": "yarn install --ignore-engines && yarn export",
+    "image": "node:16",
+    "command": "yarn install && yarn export",
     "publicDir": "out",
     "environment": {
       "CI": "true"
