@@ -59,12 +59,12 @@ const PhotoCard = ({ data, cardstyle }) => {
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
-          <h3 className="text-2xl uppercase font-semibold  m-0">
+          <h3 className="text-xl font-semibold m-0">
             {data.headline}
           </h3>
         )}
         {data.subhead && (
-          <h3 className="text-base font-semibold ">
+          <h3 className="text-base text-gray-300">
             {data.subhead}
           </h3>
         )}
