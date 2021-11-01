@@ -390,15 +390,19 @@ type PagesBlocksBanner {
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
 
-type Pages {
-  draft: Boolean
-  blocks: [PagesBlocks]
+type PagesStyle {
   primary: String
   accent1: String
   accent2: String
   accent3: String
   navTextColor: String
   navBackgroundColor: String
+}
+
+type Pages {
+  draft: Boolean
+  blocks: [PagesBlocks]
+  style: PagesStyle
   siteTitle: String
   siteDescription: String
   siteImageSrc: String
@@ -693,15 +697,19 @@ input PagesBlocksMutation {
   banner: PagesBlocksBannerMutation
 }
 
-input PagesMutation {
-  draft: Boolean
-  blocks: [PagesBlocksMutation]
+input PagesStyleMutation {
   primary: String
   accent1: String
   accent2: String
   accent3: String
   navTextColor: String
   navBackgroundColor: String
+}
+
+input PagesMutation {
+  draft: Boolean
+  blocks: [PagesBlocksMutation]
+  style: PagesStyleMutation
   siteTitle: String
   siteDescription: String
   siteImageSrc: String

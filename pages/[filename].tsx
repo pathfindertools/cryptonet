@@ -165,12 +165,14 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
             }
-            primary
-            accent1
-            accent2
-            accent3
-            navTextColor
-            navBackgroundColor
+            style {
+              primary
+              accent1
+              accent2
+              accent3
+              navTextColor
+              navBackgroundColor
+            } 
             siteTitle
             siteDescription
             siteImageSrc

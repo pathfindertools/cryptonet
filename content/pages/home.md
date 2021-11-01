@@ -310,12 +310,13 @@ blocks:
       backgroundColor: white
       textAlignment: right
     _template: banner
-primary: '#FF007A'
-accent1: '#0E4465'
-accent2: '#2DDB87'
-accent3: '#2DD0DB'
-navTextColor: white
-navBackgroundColor: black
+style:
+  primary: '#FF007A'
+  accent1: '#0E4465'
+  accent2: '#2DDB87'
+  accent3: '#2DD0DB'
+  navTextColor: white
+  navBackgroundColor: black
 siteTitle: Hackathons
 siteDescription: >-
   With Filecoin and IPFS, we empower developers and entrepreneurs to solve

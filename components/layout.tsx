@@ -8,10 +8,12 @@ export const Layout = ({
   rawData = "",
   data = layoutData,
   themeData = {
-    primary: "",
-    accent1: "",
-    accent2: "",
-    accent3: "",
+    style: {
+      primary: "",
+      accent1: "",
+      accent2: "",
+      accent3: "",
+    },
     siteTitle: "Filecoin Hackathon",
     siteDescription: "Filecoin Hackathon Event",
     siteImageSrc: ""
@@ -37,10 +39,10 @@ export const Layout = ({
               scroll-behavior: smooth;
             }
             :root {
-              --primary-color: ${themeData?.primary};
-              --accent1-color: ${themeData?.accent1};
-              --accent2-color: ${themeData?.accent2};
-              --accent3-color: ${themeData?.accent3};
+              --primary-color: ${themeData?.style.primary};
+              --accent1-color: ${themeData?.style.accent1};
+              --accent2-color: ${themeData?.style.accent2};
+              --accent3-color: ${themeData?.style.accent3};
             }
           `,
           }}
