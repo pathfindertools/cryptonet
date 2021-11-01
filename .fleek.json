@@ -1,7 +1,7 @@
 {
   "build": {
-    "image": "node:16",
-    "command": "yarn install && yarn export",
+    "image": "fleek/next-js",
+    "command": "yarn && yarn build && yarn export",
     "publicDir": "out",
     "environment": {
       "CI": "true"
