@@ -26,7 +26,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
         textAlignment: "left",
       },
       cardStyle: {
-        textColor: "black",
+        textColor: "white",
         backgroundColor: "gray",
         accentColor: "primary",
         type: "solid",

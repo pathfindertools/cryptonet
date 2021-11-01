@@ -904,7 +904,7 @@
                     "textAlignment": "left"
                   },
                   "cardStyle": {
-                    "textColor": "black",
+                    "textColor": "white",
                     "backgroundColor": "gray",
                     "accentColor": "primary",
                     "type": "solid"
@@ -1531,7 +1531,7 @@
                     "textAlignment": "left"
                   },
                   "cardStyle": {
-                    "textColor": "black",
+                    "textColor": "white",
                     "backgroundColor": "gray",
                     "accentColor": "primary",
                     "type": "solid"
