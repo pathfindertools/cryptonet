@@ -35,7 +35,18 @@ blocks:
     items:
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/web3-jam_uhwlcl.png
+        headline: Web3 Jam
+        subhead: 'Nov 12 - 24, 2021'
+        text: >-
+          Bringing together a virtual collective of passionate creatives,
+          engineers, builders and more for a two-week long hackathon focused on
+          decentralized media, Web3, and NFTs.
+        link: 'https://jam.ethglobal.com/'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/fall-hackathon_tmjffc.png
         headline: Chainlink Hackathon
         subhead: 'Oct 22 - Nov 28, 2021'
         text: >-
@@ -46,7 +57,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873559/Home/buidl-it_dlaop4.png
         headline: 'Filecoin @Polygon BUIDL IT '
         subhead: 'Nov 19 - Dec 12, 2021'
         text: >-
@@ -57,17 +68,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Cal Hacks 8.0
-        subhead: 'Oct 22-24, 2021'
-        text: >-
-          "<p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
-          is open to all college students over the age of 18.</p>"
-        link: 'https://calhacks.io/'
-        buttonLabel: Learn more and register
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/babylon_zxlho5.png
         headline: Babylon 2.0
         subhead: 'Oct 29 - Nov 20, 2021'
         text: >-
@@ -78,7 +79,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/holon_gdu7up.png
         headline: Holon Innovate '21
         subhead: 'Nov 9-25, 2021'
         text: >-
@@ -89,7 +90,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/nft-hack_hgtmay.png
         headline: NFT Hack with Filecoin
         subhead: 'Oct 5 - Nov 28, 2021'
         text: >-
@@ -99,7 +100,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/asia-season_l26qti.png
         headline: Asia Hackathon Season
         subhead: August - November 2021
         text: >-
@@ -109,7 +110,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873559/Home/mercury_s1rufj.png
         headline: Mercury Hackathon
         subhead: 'Sept 20 – Nov 8, 2021'
         text: >-
@@ -121,7 +122,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873559/Home/mars_q1nng1.png
         headline: Mars Hackathon
         subhead: Sept 7 - Nov 6
         text: >-
@@ -131,7 +132,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/polygon_a6vyg3.png
         headline: Polygon Grants Hackathon
         subhead: 'Aug 30 - Oct 29, 2021'
         text: >-
@@ -139,121 +140,6 @@ blocks:
           dedicated to the growth of the Polygon ecosystem.</p>"
         link: 'https://www.polygongrantshackathon.com/'
         buttonLabel: Learn more and register
-    style:
-      columns: '3'
-      textColor: white
-      backgroundColor: black
-      contentOrder: labelHeadingsContent
-      textAlignment: left
-    cardStyle:
-      textColor: white
-      backgroundColor: accent1
-      accentColor: primary
-      type: fadeH
-    _template: photoCards
-  - headline: Past Events
-    items:
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Cal Hacks 8.0
-        subhead: 'Oct 22-24, 2021'
-        text: >-
-          <p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
-          is open to all college students over the age of 18.</p>
-        link: 'https://calhacks.io/'
-        buttonLabel: ''
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Saturn Hackathon
-        subhead: 'Aug 4 - Oct 24, 2021 '
-        text: >-
-          <p>Filecoin and IPFS are proud to host the Saturn track at the <a
-          href="https://www.blockchainlabs.org/week2021/hackathon"
-          title="">Wanxiang Blockchain Week 2021</a>. </p>
-        link: 'https://www.blockchainlabs.org/week2021/hackathon'
-        buttonLabel: Learn more and register
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Jupiter Hackathon
-        subhead: 'Aug 25 - Oct 23, 2021'
-        text: >-
-          <p>Show us your best hacks in this IPFS-exclusive multi-week hackathon
-          with technical support from Alibaba Cloud.</p>
-        link: 'https://tianchi.aliyun.com/specials/promotion/ipfs-hackathon'
-        buttonLabel: Learn more and register
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: ETHOnline
-        subhead: 17 September - 15 October
-        text: >-
-          <p>ETHOnline is a global hackathon and summit series devoted to
-          celebrating what's possible on Ethereum.</p>
-        link: 'https://online.ethglobal.com/'
-        buttonLabel: ''
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: PennApps
-        subhead: September 2021
-        text: >-
-          <p>PennApps is a student-run college hackathon hosted yearly since
-          2009. The theme in 2021: Cloud.</p>
-        link: 'https://2021f.pennapps.com/'
-        buttonLabel: View event
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: 'Encode Filecoin Club: Educate'
-        subhead: July-Sept 2021
-        text: >-
-          <p>Educating the next generation of students about Filecoin’s
-          technology in a 12-week pre-hackathon series.</p>
-        link: 'https://www.encode.club/filecoin-educate'
-        buttonLabel: View event
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: HackFS
-        subhead: July-August 2021
-        text: >-
-          <p>Build the foundation for the decentralized web. A virtual Hackathon
-          by ETHGlobal and Protocol Labs.</p>
-        link: 'https://hackfs.com/'
-        buttonLabel: View event
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: NFT Vision Hack
-        subhead: July-Aug 2021
-        text: >-
-          <p>This global online hackathon brought together some of the most
-          talented creatives </p>
-        link: 'https://www.nftvisionhack.com/'
-        buttonLabel: View event
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Browsers 3000
-        subhead: July-August 2021
-        text: >-
-          <p>A six week virtual event to accelerate the development of Web3 in
-          the browser.</p>
-        link: 'https://events.protocol.ai/2021/browsers3000/'
-        buttonLabel: View event
-      - image:
-          src: >-
-            http://res.cloudinary.com/tombustout/image/upload/v1635542647/b3c17d_xpncbb.png
-        headline: Dora Hacks
-        subhead: May-July 2021
-        text: >-
-          <p>Protocal Labs partnership with DoraHacks to innovate and push the
-          internet forward.</p>
-        link: 'https://events.protocol.ai/2021/dorahacks/'
-        buttonLabel: View event
     style:
       columns: '3'
       textColor: white
@@ -295,6 +181,151 @@ blocks:
       contentAlignment: center
       textAlignment: left
     _template: feature
+  - headline: Past Events
+    items:
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/cal-hacks_yjemlx.png
+        headline: Cal Hacks 8.0
+        subhead: 'Oct 22-24, 2021'
+        text: >-
+          <p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
+          is open to all college students over the age of 18.</p>
+        link: 'https://calhacks.io/'
+        buttonLabel: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/saturn_yqmuc2.png
+        headline: Saturn Hackathon
+        subhead: 'Aug 4 - Oct 24, 2021 '
+        text: >-
+          <p>Filecoin and IPFS are proud to host the Saturn track at the <a
+          href="https://www.blockchainlabs.org/week2021/hackathon"
+          title="">Wanxiang Blockchain Week 2021</a>. </p>
+        link: 'https://www.blockchainlabs.org/week2021/hackathon'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/jupiter_jaufi9.png
+        headline: Jupiter Hackathon
+        subhead: 'Aug 25 - Oct 23, 2021'
+        text: >-
+          <p>Show us your best hacks in this IPFS-exclusive multi-week hackathon
+          with technical support from Alibaba Cloud.</p>
+        link: 'https://tianchi.aliyun.com/specials/promotion/ipfs-hackathon'
+        buttonLabel: Learn more and register
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/eth-online_kyyrez.png
+        headline: ETHOnline
+        subhead: 17 September - 15 October
+        text: >-
+          <p>ETHOnline is a global hackathon and summit series devoted to
+          celebrating what's possible on Ethereum.</p>
+        link: 'https://online.ethglobal.com/'
+        buttonLabel: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/pennapps_ezsubz.png
+        headline: PennApps
+        subhead: September 2021
+        text: >-
+          <p>PennApps is a student-run college hackathon hosted yearly since
+          2009. The theme in 2021: Cloud.</p>
+        link: 'https://2021f.pennapps.com/'
+        buttonLabel: View event
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/filecoin-educate_dbkggj.png
+        headline: 'Encode Filecoin Club: Educate'
+        subhead: July-Sept 2021
+        text: >-
+          <p>Educating the next generation of students about Filecoin’s
+          technology in a 12-week pre-hackathon series.</p>
+        link: 'https://www.encode.club/filecoin-educate'
+        buttonLabel: View event
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873562/Home/filecoin-flag_glbetk.png
+        headline: HackFS
+        subhead: July-August 2021
+        text: >-
+          <p>Build the foundation for the decentralized web. A virtual Hackathon
+          by ETHGlobal and Protocol Labs.</p>
+        link: 'https://hackfs.com/'
+        buttonLabel: View event
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873559/Home/nft-vision_brbnuv.png
+        headline: NFT Vision Hack
+        subhead: July-Aug 2021
+        text: >-
+          <p>This global online hackathon brought together some of the most
+          talented creatives </p>
+        link: 'https://www.nftvisionhack.com/'
+        buttonLabel: View event
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/browsers3000_s3w9ps.png
+        headline: Browsers 3000
+        subhead: July-August 2021
+        text: >-
+          <p>A six week virtual event to accelerate the development of Web3 in
+          the browser.</p>
+        link: 'https://events.protocol.ai/2021/browsers3000/'
+        buttonLabel: View event
+      - image:
+          src: >-
+            http://res.cloudinary.com/tombustout/image/upload/v1635873562/Home/dora-hacks_tnfawd.png
+        headline: Dora Hacks
+        subhead: May-July 2021
+        text: >-
+          <p>Protocal Labs partnership with DoraHacks to innovate and push the
+          internet forward.</p>
+        link: 'https://events.protocol.ai/2021/dorahacks/'
+        buttonLabel: View event
+    style:
+      columns: '3'
+      textColor: white
+      backgroundColor: black
+      contentOrder: labelHeadingsContent
+      textAlignment: left
+    cardStyle:
+      textColor: white
+      backgroundColor: accent1
+      accentColor: primary
+      type: fadeH
+    _template: photoCards
+  - label: ''
+    headline: Post-hackathon opportunities
+    subhead: ''
+    body: >-
+      We encourage builders who want to their hackathon submissions to the next
+      level to apply to our grants' and accelerator programs. Check out
+      follow-on opportunities available to you.
+    items:
+      - headline: Grants
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Accelerators
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    style:
+      columns: '2'
+      textColor: white
+      backgroundColor: black
+      contentOrder: labelHeadingsContent
+      textAlignment: left
+    cardStyle:
+      textColor: white
+      backgroundColor: gray
+      accentColor: primary
+      type: solid
+    _template: photoCards
   - label: ''
     headline: ''
     subhead: ''
@@ -306,8 +337,8 @@ blocks:
         textColor: primary
         backgroundColor: primary
     style:
-      textColor: black
-      backgroundColor: white
+      textColor: white
+      backgroundColor: black
       textAlignment: right
     _template: banner
 style:
