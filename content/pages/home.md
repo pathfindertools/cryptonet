@@ -3,7 +3,7 @@ draft: true
 blocks:
   - image:
       src: >-
-        http://res.cloudinary.com/tombustout/image/upload/v1635546504/hackathons-hero_vre1pg.svg
+        http://res.cloudinary.com/tombustout/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
     headline: Connect. Build. Grow.
     subhead: ''
@@ -50,9 +50,9 @@ blocks:
         headline: Chainlink Hackathon
         subhead: 'Oct 22 - Nov 28, 2021'
         text: >-
-          "<p>Build the next generation of hybrid smart contracts alongside
+          Build the next generation of hybrid smart contracts alongside
           developers, creators, and artists from across the blockchain
-          ecosystem.</p>"
+          ecosystem.
         link: 'https://chain.link/hackathon'
         buttonLabel: Learn more and register
       - image:
@@ -61,9 +61,8 @@ blocks:
         headline: 'Filecoin @Polygon BUIDL IT '
         subhead: 'Nov 19 - Dec 12, 2021'
         text: >-
-          "<p>BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed
-          to promote web3 development and talent in India. Join the Filecoin
-          track!</p>"
+          BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed to
+          promote web3 development and talent in India. Join the Filecoin track!
         link: 'https://buidlit.polygon.technology/'
         buttonLabel: Learn more and register
       - image:
@@ -72,9 +71,9 @@ blocks:
         headline: Babylon 2.0
         subhead: 'Oct 29 - Nov 20, 2021'
         text: >-
-          "<p>The Babylon Project is a virtual Blockchain hackathon<strong>
+          The Babylon Project is a virtual Blockchain hackathon<strong>
           </strong>where thousands of global participants meet in a metaverse.
-          Join the Filecoin/IPFS tracks!</p>"
+          Join the Filecoin/IPFS tracks!
         link: 'https://worldblockchainhackathon.com/'
         buttonLabel: Learn more and register
       - image:
@@ -83,9 +82,9 @@ blocks:
         headline: Holon Innovate '21
         subhead: 'Nov 9-25, 2021'
         text: >-
-          "<p>Join this hackathon for Web3.0 innovators building on IPFS and/or
+          Join this hackathon for Web3.0 innovators building on IPFS and/or
           Filecoin in Oceania. This event is only open for participants in the
-          AEDT timezone.</p>"
+          AEDT timezone.
         link: 'https://taikai.network/en/holon/challenges/holon-innovate'
         buttonLabel: Learn more and register
       - image:
@@ -94,8 +93,8 @@ blocks:
         headline: NFT Hack with Filecoin
         subhead: 'Oct 5 - Nov 28, 2021'
         text: >-
-          "<p>8-week hackathon focused on NFTs - Build projects on Filecoin/IPFS
-          and compete for the $50k prize pool</p>"
+          8-week hackathon focused on NFTs - Build projects on Filecoin/IPFS and
+          compete for the $50k prize pool
         link: 'https://www.encode.club/nft-hack'
         buttonLabel: Learn more and register
       - image:
@@ -104,8 +103,8 @@ blocks:
         headline: Asia Hackathon Season
         subhead: August - November 2021
         text: >-
-          "<p>Join us on a journey across the universe of Filecoin and IPFS
-          across four distinct hackathon events.</p>"
+          Join us on a journey across the universe of Filecoin and IPFS across
+          four distinct hackathon events.
         link: asia-hackathon-season
         buttonLabel: Learn more and register
       - image:
@@ -114,10 +113,9 @@ blocks:
         headline: Mercury Hackathon
         subhead: 'Sept 20 – Nov 8, 2021'
         text: >-
-          <p>6-week online hackathon supported by <a
-          href="https://www.onflow.org/">Flow</a> that brings together the most
-          talented creators around the world to innovate and redefine
-          boundaries.</p>
+          6-week online hackathon supported by [Flow]() that brings together the
+          most talented creators around the world to innovate and redefine
+          boundaries.
         link: 'https://mercuryhackathon2021.com/'
         buttonLabel: Learn more and register
       - image:
@@ -126,8 +124,8 @@ blocks:
         headline: Mars Hackathon
         subhead: Sept 7 - Nov 6
         text: >-
-          "<p>Filecoin along with Polygon have partnered to launch the Mars
-          Hackathon focused on decentralizing storage!</p>"
+          Filecoin along with Polygon have partnered to launch the Mars
+          Hackathon focused on decentralizing storage!
         link: 'https://www.marshackathon2021.com/'
         buttonLabel: Learn more and register
       - image:
@@ -136,8 +134,8 @@ blocks:
         headline: Polygon Grants Hackathon
         subhead: 'Aug 30 - Oct 29, 2021'
         text: >-
-          "<p>First Polygon-centric hackathon and quadratic funding grant
-          dedicated to the growth of the Polygon ecosystem.</p>"
+          First Polygon-centric hackathon and quadratic funding grant dedicated
+          to the growth of the Polygon ecosystem.
         link: 'https://www.polygongrantshackathon.com/'
         buttonLabel: Learn more and register
     style:
@@ -154,7 +152,7 @@ blocks:
     _template: photoCards
   - image:
       src: >-
-        http://res.cloudinary.com/tombustout/image/upload/v1635542016/hackathon-hex_gmb1ze.svg
+        http://res.cloudinary.com/tombustout/image/upload/v1635876018/Home/hackathon-hex_rmmejj.svg
     label: ''
     headline: Start Building
     subhead: ''
@@ -174,7 +172,7 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: >-
-          http://res.cloudinary.com/tombustout/image/upload/v1635542163/hackathon-slant-bg_ofvckc.svg
+          http://res.cloudinary.com/tombustout/image/upload/v1635876087/Home/hackathon-slant_udwu14.svg
       flipLayout: true
       contentOrder: labelHeadingsContent
       imageStyle: natural
@@ -189,8 +187,8 @@ blocks:
         headline: Cal Hacks 8.0
         subhead: 'Oct 22-24, 2021'
         text: >-
-          <p>Join us at the world's largest collegiate hackathon. Cal Hacks 8.0
-          is open to all college students over the age of 18.</p>
+          Join us at the world's largest collegiate hackathon. Cal Hacks 8.0 is
+          open to all college students over the age of 18.
         link: 'https://calhacks.io/'
         buttonLabel: ''
       - image:
@@ -199,9 +197,8 @@ blocks:
         headline: Saturn Hackathon
         subhead: 'Aug 4 - Oct 24, 2021 '
         text: >-
-          <p>Filecoin and IPFS are proud to host the Saturn track at the <a
-          href="https://www.blockchainlabs.org/week2021/hackathon"
-          title="">Wanxiang Blockchain Week 2021</a>. </p>
+          Filecoin and IPFS are proud to host the Saturn track at the [Wanxiang
+          Blockchain Week 2021]().
         link: 'https://www.blockchainlabs.org/week2021/hackathon'
         buttonLabel: Learn more and register
       - image:
@@ -210,8 +207,8 @@ blocks:
         headline: Jupiter Hackathon
         subhead: 'Aug 25 - Oct 23, 2021'
         text: >-
-          <p>Show us your best hacks in this IPFS-exclusive multi-week hackathon
-          with technical support from Alibaba Cloud.</p>
+          Show us your best hacks in this IPFS-exclusive multi-week hackathon
+          with technical support from Alibaba Cloud.
         link: 'https://tianchi.aliyun.com/specials/promotion/ipfs-hackathon'
         buttonLabel: Learn more and register
       - image:
@@ -220,8 +217,8 @@ blocks:
         headline: ETHOnline
         subhead: 17 September - 15 October
         text: >-
-          <p>ETHOnline is a global hackathon and summit series devoted to
-          celebrating what's possible on Ethereum.</p>
+          ETHOnline is a global hackathon and summit series devoted to
+          celebrating what's possible on Ethereum.
         link: 'https://online.ethglobal.com/'
         buttonLabel: ''
       - image:
@@ -230,8 +227,8 @@ blocks:
         headline: PennApps
         subhead: September 2021
         text: >-
-          <p>PennApps is a student-run college hackathon hosted yearly since
-          2009. The theme in 2021: Cloud.</p>
+          PennApps is a student-run college hackathon hosted yearly since 2009.
+          The theme in 2021: Cloud.
         link: 'https://2021f.pennapps.com/'
         buttonLabel: View event
       - image:
@@ -240,8 +237,8 @@ blocks:
         headline: 'Encode Filecoin Club: Educate'
         subhead: July-Sept 2021
         text: >-
-          <p>Educating the next generation of students about Filecoin’s
-          technology in a 12-week pre-hackathon series.</p>
+          Educating the next generation of students about Filecoin’s technology
+          in a 12-week pre-hackathon series.
         link: 'https://www.encode.club/filecoin-educate'
         buttonLabel: View event
       - image:
@@ -250,8 +247,8 @@ blocks:
         headline: HackFS
         subhead: July-August 2021
         text: >-
-          <p>Build the foundation for the decentralized web. A virtual Hackathon
-          by ETHGlobal and Protocol Labs.</p>
+          Build the foundation for the decentralized web. A virtual Hackathon by
+          ETHGlobal and Protocol Labs.
         link: 'https://hackfs.com/'
         buttonLabel: View event
       - image:
@@ -260,8 +257,8 @@ blocks:
         headline: NFT Vision Hack
         subhead: July-Aug 2021
         text: >-
-          <p>This global online hackathon brought together some of the most
-          talented creatives </p>
+          This global online hackathon brought together some of the most
+          talented creatives 
         link: 'https://www.nftvisionhack.com/'
         buttonLabel: View event
       - image:
@@ -270,8 +267,8 @@ blocks:
         headline: Browsers 3000
         subhead: July-August 2021
         text: >-
-          <p>A six week virtual event to accelerate the development of Web3 in
-          the browser.</p>
+          A six week virtual event to accelerate the development of Web3 in the
+          browser.
         link: 'https://events.protocol.ai/2021/browsers3000/'
         buttonLabel: View event
       - image:
@@ -280,8 +277,8 @@ blocks:
         headline: Dora Hacks
         subhead: May-July 2021
         text: >-
-          <p>Protocal Labs partnership with DoraHacks to innovate and push the
-          internet forward.</p>
+          Protocal Labs partnership with DoraHacks to innovate and push the
+          internet forward.
         link: 'https://events.protocol.ai/2021/dorahacks/'
         buttonLabel: View event
     style:
@@ -305,15 +302,30 @@ blocks:
       follow-on opportunities available to you.
     items:
       - headline: Grants
-        subhead: ''
+        subhead: >-
+          Apply to our grants program and unlock additional funding to keep
+          working on your project.
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+
+          * $5,000 [Next Step
+          Microgrants](https://github.com/filecoin-project/devgrants#next-step-microgrants)
+
+          * $5,000-$50,000 [Open
+          Grants](https://github.com/filecoin-project/devgrants#open-grant)
       - headline: Accelerators
-        subhead: ''
+        subhead: >-
+          Apply to an accelerator and turn your project into a pitch-ready
+          concept
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+
+          * [Tachyon web3 Accelerator](http://tachyon.xyz/) (Continuous
+          enrollment)
+
+          * [Filecoin Techstars
+          Accelerator](https://hackathons.filecoin.io/Filecoin%20Techstars%20Accelerator)
+
+          * [Outlier Ventures Filecoin Base
+          Camp](https://outlierventures.io/base-camp/filecoin-base-camp/)
     style:
       columns: '2'
       textColor: white
@@ -322,7 +334,7 @@ blocks:
       textAlignment: left
     cardStyle:
       textColor: white
-      backgroundColor: gray
+      backgroundColor: accent1
       accentColor: primary
       type: solid
     _template: photoCards
