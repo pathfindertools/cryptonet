@@ -1,5 +1,6 @@
 
 import type { TinaField } from "@tinacms/cli";
+import { colorOptions, contentOrderOptions, hAlignOptions } from "./options"
 
 export const cardsSchema: TinaField = {
   type: "object",
@@ -30,13 +31,7 @@ export const cardsSchema: TinaField = {
         component: "select",
       },
       type: "string",
-      options: [
-        { label: "White", value: "white" },
-        { label: "Gray Light", value: "grayLight" },
-        { label: "Gray", value: "gray" },
-        { label: "Gray Dark", value: "grayDark" },
-        { label: "Black", value: "black" },
-      ],
+      options: colorOptions,
     },
     {
       label: "Background Color",
@@ -45,17 +40,7 @@ export const cardsSchema: TinaField = {
       ui: {
         component: "select",
       },
-      options: [
-        { label: "Primary", value: "primary" },
-        { label: "Accent 1", value: "accent1" },
-        { label: "Accent 2", value: "accent2" },
-        { label: "Accent 3", value: "accent3" },
-        { label: "White", value: "white" },
-        { label: "Gray Light", value: "grayLight" },
-        { label: "Gray", value: "gray" },
-        { label: "Gray Dark", value: "grayDark" },
-        { label: "Black", value: "black" },
-      ],
+      options: colorOptions,
     },
     {
       label: "Background Image",
@@ -81,14 +66,7 @@ export const cardsSchema: TinaField = {
       ui: {
         component: "select",
       },
-      options: [
-        { label: "Label Headings Content", value: "labelHeadingsContent" },
-        { label: "Label Content Headings", value: "labelContentHeadings" },
-        { label: "Headings Label Content", value: "headingsLabelContent" },
-        { label: "Headings Content Label", value: "headingsContentLabel" },
-        { label: "Content Label Headings", value: "contentLabelHeadings" },
-        { label: "Content Headings Label", value: "contentHeadingsLabel" },
-      ],
+      options: contentOrderOptions,
     },
     {
       label: "Text Alignment",
@@ -97,11 +75,7 @@ export const cardsSchema: TinaField = {
       ui: {
         component: "select",
       },
-      options: [
-        { label: "Left", value: "left" },
-        { label: "Center", value: "center" },
-        { label: "Right", value: "right" },
-      ],
+      options: hAlignOptions,
     },
   ],
 };

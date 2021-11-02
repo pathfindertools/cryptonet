@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions } from "./shared/options"
+import { colorOptions, contentOrderOptions, hAlignOptions } from "./shared/options"
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -114,11 +114,7 @@ export const bannerBlockSchema: TinaTemplate = {
           ui: {
             component: "select",
           },
-          options: [
-            { label: "Left", value: "left" },
-            { label: "Center", value: "center" },
-            { label: "Right", value: "right" },
-          ],
+          options: hAlignOptions,
         },
         {
           label: "Content Order",
@@ -127,14 +123,7 @@ export const bannerBlockSchema: TinaTemplate = {
           ui: {
             component: "select",
           },
-          options: [
-            { label: "Label Headings Content", value: "labelHeadingsContent" },
-            { label: "Label Content Headings", value: "labelContentHeadings" },
-            { label: "Headings Label Content", value: "headingsLabelContent" },
-            { label: "Headings Content Label", value: "headingsContentLabel" },
-            { label: "Content Label Headings", value: "contentLabelHeadings" },
-            { label: "Content Headings Label", value: "contentHeadingsLabel" },
-          ],
+          options: contentOrderOptions,
         },
         {
           label: "Width",

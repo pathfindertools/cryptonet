@@ -6,6 +6,7 @@ import { featureBlockSchema } from "./feature";
 import { photoCardsBlockSchema } from "./photo-cards";
 import { textCardsBlockSchema } from "./text-cards";
 import { bannerBlockSchema } from "./banner";
+import { colorOptions } from "./shared/options"
 
 const contentBlockSchema: TinaTemplate = {
   name: "content",
@@ -388,17 +389,7 @@ export default defineSchema({
                 component: "select",
               },
               type: "string",
-              options: [
-                { label: "Primary", value: "primary" },
-                { label: "Accent 1", value: "accent1" },
-                { label: "Accent 2", value: "accent2" },
-                { label: "Accent 3", value: "accent3" },
-                { label: "White", value: "white" },
-                { label: "Gray Light", value: "grayLight" },
-                { label: "Gray", value: "gray" },
-                { label: "Gray Dark", value: "grayDark" },
-                { label: "Black", value: "black" },
-              ],
+              options: colorOptions,
             },
             {
               label: "Navigation Background Color",
@@ -407,17 +398,7 @@ export default defineSchema({
               ui: {
                 component: "select",
               },
-              options: [
-                { label: "Primary", value: "primary" },
-                { label: "Accent 1", value: "accent1" },
-                { label: "Accent 2", value: "accent2" },
-                { label: "Accent 3", value: "accent3" },
-                { label: "White", value: "white" },
-                { label: "Gray Light", value: "grayLight" },
-                { label: "Gray", value: "gray" },
-                { label: "Gray Dark", value: "grayDark" },
-                { label: "Black", value: "black" },
-              ],
+              options: colorOptions,
             },
           ]
         },

@@ -9,3 +9,24 @@ export const colorOptions: {label: string, value: string}[] = [
   { label: "Gray Dark", value: "grayDark" },
   { label: "Black", value: "black" },
 ];
+
+export const contentOrderOptions: {label: string, value: string}[] = [
+  { label: "Label Headings Content", value: "labelHeadingsContent" },
+  { label: "Label Content Headings", value: "labelContentHeadings" },
+  { label: "Headings Label Content", value: "headingsLabelContent" },
+  { label: "Headings Content Label", value: "headingsContentLabel" },
+  { label: "Content Label Headings", value: "contentLabelHeadings" },
+  { label: "Content Headings Label", value: "contentHeadingsLabel" },
+];
+
+export const hAlignOptions: {label: string, value: string}[] = [
+  { label: "Left", value: "left" },
+  { label: "Center", value: "center" },
+  { label: "Right", value: "right" },
+];
+
+export const vAlignOptions: {label: string, value: string}[] = [
+  { label: "Top", value: "top" },
+  { label: "Center", value: "center" },
+  { label: "Bottom", value: "bottom" },
+];

@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions } from "./shared/options"
+import { colorOptions, contentOrderOptions, hAlignOptions, vAlignOptions } from "./shared/options"
 
 export const featureBlockSchema: TinaTemplate = {
   name: "feature",
@@ -13,9 +13,9 @@ export const featureBlockSchema: TinaTemplate = {
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
+        flipLayout: false,
         textColor: "white",
         backgroundColor: "black",
-        flipLayout: false,
         contentOrder: "labelHeadingsContent",
         imageStyle: "natural",
         contentAlignment: "center",
@@ -120,14 +120,7 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "select",
           },
-          options: [
-            { label: "Label Headings Content", value: "labelHeadingsContent" },
-            { label: "Label Content Headings", value: "labelContentHeadings" },
-            { label: "Headings Label Content", value: "headingsLabelContent" },
-            { label: "Headings Content Label", value: "headingsContentLabel" },
-            { label: "Content Label Headings", value: "contentLabelHeadings" },
-            { label: "Content Headings Label", value: "contentHeadingsLabel" },
-          ],
+          options: contentOrderOptions
         },
         {
           label: "Image Style",
@@ -150,11 +143,7 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "select",
           },
-          options: [
-            { label: "Top", value: "top" },
-            { label: "Center", value: "center" },
-            { label: "Bottom", value: "bottom" },
-          ],
+          options: vAlignOptions,
         },
         {
           label: "Text Alignment",
@@ -163,11 +152,7 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "select",
           },
-          options: [
-            { label: "Left", value: "left" },
-            { label: "Center", value: "center" },
-            { label: "Right", value: "right" },
-          ],
+          options: hAlignOptions,
         },
       ],
     },

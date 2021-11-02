@@ -475,9 +475,9 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
+                    "flipLayout": false,
                     "textColor": "white",
                     "backgroundColor": "black",
-                    "flipLayout": false,
                     "contentOrder": "labelHeadingsContent",
                     "imageStyle": "natural",
                     "contentAlignment": "center",
@@ -1213,6 +1213,22 @@
                       "type": "string",
                       "options": [
                         {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -1871,6 +1887,22 @@
                       },
                       "type": "string",
                       "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
                         {
                           "label": "White",
                           "value": "white"
