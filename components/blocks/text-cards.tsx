@@ -1,3 +1,4 @@
+import Markdown from "react-markdown";
 import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
@@ -49,7 +50,11 @@ const TextCard = ({ data, cardstyle }) => {
           {data.subhead}
         </h3>
       )}
-      {data.text && <p>{data.text}</p>}
+      {data.text && (
+        <div className={``}>
+          <Markdown>{data.text}</Markdown>
+        </div>
+      )}
       {data.link && data.buttonLabel && (
         <Buttons buttons={[{
           link: data.link,

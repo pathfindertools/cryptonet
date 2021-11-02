@@ -1587,6 +1587,9 @@
                       "type": "string",
                       "label": "Text",
                       "name": "text",
+                      "ui": {
+                        "component": "markdown"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
@@ -2412,6 +2415,9 @@
                       "type": "string",
                       "label": "Text",
                       "name": "text",
+                      "ui": {
+                        "component": "markdown"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",

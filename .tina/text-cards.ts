@@ -84,6 +84,9 @@ export const textCardsBlockSchema: TinaTemplate = {
           type: "string",
           label: "Text",
           name: "text",
+          ui: {
+            component: "markdown",
+          },
         },
         {
           type: "string",
