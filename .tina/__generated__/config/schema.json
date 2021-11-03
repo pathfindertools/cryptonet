@@ -807,10 +807,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },
@@ -915,10 +911,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },
@@ -1023,10 +1015,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },
@@ -1529,6 +1517,272 @@
                       ]
                     },
                     {
+                      "label": "Text Size",
+                      "name": "textSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Color",
+                      "name": "headlineColor",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Size",
+                      "name": "headlineSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Color",
+                      "name": "subheadColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Size",
+                      "name": "subheadSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Background Color",
                       "name": "backgroundColor",
                       "type": "string",
@@ -1592,6 +1846,28 @@
                       ]
                     },
                     {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "right"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Content Order",
                       "name": "contentOrder",
                       "type": "string",
@@ -1622,28 +1898,6 @@
                         {
                           "label": "Content Headings Label",
                           "value": "contentHeadingsLabel"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
                         }
                       ]
                     }
@@ -2204,6 +2458,272 @@
                       ]
                     },
                     {
+                      "label": "Text Size",
+                      "name": "textSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Color",
+                      "name": "headlineColor",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Size",
+                      "name": "headlineSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Color",
+                      "name": "subheadColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Size",
+                      "name": "subheadSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Background Color",
                       "name": "backgroundColor",
                       "type": "string",
@@ -2267,6 +2787,28 @@
                       ]
                     },
                     {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "right"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Content Order",
                       "name": "contentOrder",
                       "type": "string",
@@ -2297,28 +2839,6 @@
                         {
                           "label": "Content Headings Label",
                           "value": "contentHeadingsLabel"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
                         }
                       ]
                     }
@@ -2973,10 +3493,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },
@@ -3035,10 +3551,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },
@@ -3097,10 +3609,6 @@
                         {
                           "label": "8XL",
                           "value": "8xl"
-                        },
-                        {
-                          "label": "9XL",
-                          "value": "9xl"
                         }
                       ]
                     },

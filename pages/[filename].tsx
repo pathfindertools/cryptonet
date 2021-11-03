@@ -54,6 +54,11 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   columns
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   backgroundImage {
                     src
@@ -91,6 +96,11 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   columns
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   backgroundImage {
                     src

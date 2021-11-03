@@ -1,6 +1,6 @@
 
 import type { TinaField } from "@tinacms/cli";
-import { colorOptions, contentOrderOptions, hAlignOptions } from "./options"
+import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } from "./options"
 
 export const cardsSchema: TinaField = {
   type: "object",
@@ -34,6 +34,51 @@ export const cardsSchema: TinaField = {
       options: colorOptions,
     },
     {
+      label: "Text Size",
+      name: "textSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
+    },
+    {
+      label: "Headline Color",
+      name: "headlineColor",
+      ui: {
+        component: "select",
+      },
+      type: "string",
+      options: colorOptions,
+    },
+    {
+      label: "Headline Size",
+      name: "headlineSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
+    },
+    {
+      label: "Subhead Color",
+      name: "subheadColor",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: colorOptions,
+    },
+    {
+      label: "Subhead Size",
+      name: "subheadSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
+    },
+    {
       label: "Background Color",
       name: "backgroundColor",
       type: "string",
@@ -60,15 +105,6 @@ export const cardsSchema: TinaField = {
       ],
     },
     {
-      label: "Content Order",
-      name: "contentOrder",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: contentOrderOptions,
-    },
-    {
       label: "Text Alignment",
       name: "textAlignment",
       type: "string",
@@ -76,6 +112,15 @@ export const cardsSchema: TinaField = {
         component: "select",
       },
       options: hAlignOptions,
+    },
+    {
+      label: "Content Order",
+      name: "contentOrder",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: contentOrderOptions,
     },
   ],
 };

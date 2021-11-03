@@ -414,10 +414,15 @@ export type PagesBlocksPhotoCardsStyle = {
   __typename?: 'PagesBlocksPhotoCardsStyle';
   columns?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksPhotoCardsStyleBackgroundImage>;
-  contentOrder?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksPhotoCardsCardStyle = {
@@ -470,10 +475,15 @@ export type PagesBlocksTextCardsStyle = {
   __typename?: 'PagesBlocksTextCardsStyle';
   columns?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksTextCardsStyleBackgroundImage>;
-  contentOrder?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsCardStyle = {
@@ -790,10 +800,15 @@ export type PagesBlocksPhotoCardsStyleBackgroundImageMutation = {
 export type PagesBlocksPhotoCardsStyleMutation = {
   columns?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksPhotoCardsStyleBackgroundImageMutation>;
-  contentOrder?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksPhotoCardsCardStyleMutation = {
@@ -840,10 +855,15 @@ export type PagesBlocksTextCardsStyleBackgroundImageMutation = {
 export type PagesBlocksTextCardsStyleMutation = {
   columns?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksTextCardsStyleBackgroundImageMutation>;
-  contentOrder?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsCardStyleMutation = {

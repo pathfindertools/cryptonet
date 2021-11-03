@@ -18,13 +18,14 @@ blocks:
         textColor: black
         backgroundColor: primary
     style:
-      textColor: grayLight
-      backgroundColor: black
       flipLayout: true
-      contentOrder: contentHeadingsLabel
       imageStyle: natural
-      contentAlignment: center
+      textColor: grayLight
+      textSize: xl
+      backgroundColor: black
       textAlignment: left
+      contentAlignment: center
+      contentOrder: contentHeadingsLabel
     navigationLabel: Prizes
     _template: feature
   - label: ''
@@ -67,16 +68,22 @@ blocks:
     style:
       columns: '4'
       textColor: white
+      textSize: xl
+      headlineColor: white
+      headlineSize: 4xl
+      subheadColor: white
+      subheadSize: 2xl
       backgroundColor: black
       backgroundImage:
         src: >-
           http://res.cloudinary.com/tombustout/image/upload/v1634052877/space_bg_i9grrg.png
       textAlignment: left
+      contentOrder: labelHeadingsContent
     cardStyle:
       textColor: white
       backgroundColor: black
       accentColor: primary
-      type: solid
+      type: transparent
     navigationLabel: Series
     _template: textCards
   - image:
@@ -92,10 +99,18 @@ blocks:
       and grants are available to the teams, startups, projects, and
       entrepreneurs taking part!
     style:
-      textColor: white
-      backgroundColor: black
       flipLayout: false
       imageStyle: fitHalf
+      textColor: white
+      textSize: lg
+      headlineColor: primary
+      headlineSize: 4xl
+      subheadColor: primary
+      subheadSize: 2xl
+      backgroundColor: black
+      textAlignment: left
+      contentAlignment: top
+      contentOrder: labelHeadingsContent
     navigationLabel: About
     _template: feature
   - headline: Getting started with IPFS & Filecoin
@@ -103,36 +118,39 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258307/why-ipfs_lwt8cv.png
-        headline: ''
-        subhead: Why IPFS
+        headline: Why IPFS
+        subhead: ''
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258314/how-ipfs-works_mnha4d.png
-        headline: ''
-        subhead: How IPFS Works
+        headline: How IPFS Works
+        subhead: ''
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258338/filecoin-ecosystem-overview_e98fbi.png
-        headline: ''
-        subhead: An Overview of the Filecoin Ecosystem
+        headline: An Overview of the Filecoin Ecosystem
+        subhead: ''
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258344/filecoin-opportunities_velarn.png
-        headline: ''
-        subhead: Filecoin Opportunities
+        headline: Filecoin Opportunities
+        subhead: ''
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635258274/filecoin-learn-more_xn4wfx.png
-        headline: ''
-        subhead: Want to Learn More about Filecoin? Start here.
+        headline: Want to Learn More about Filecoin? Start here.
+        subhead: ''
         text: ''
     style:
       columns: '2'
       textColor: black
+      textSize: lg
+      headlineColor: black
+      headlineSize: 4xl
     navigationLabel: Get Started
     _template: photoCards
   - label: ''
@@ -160,6 +178,12 @@ blocks:
       backgroundColor: black
       textAlignment: left
     _template: banner
+siteTitle: Asia Hackathon Season
+siteDescription: >-
+  Join us on a journey across the universe of Filecoin and IPFS across four
+  distinct hackathon events.
+siteImageSrc: >-
+  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 style:
   primary: '#FFDE30'
   accent1: '#FF388B'
@@ -167,11 +191,5 @@ style:
   accent3: '#2DD0DB'
   navTextColor: white
   navBackgroundColor: black
-siteTitle: Asia Hackathon Season
-siteDescription: >-
-  Join us on a journey across the universe of Filecoin and IPFS across four
-  distinct hackathon events.
-siteImageSrc: >-
-  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 ---
 

@@ -44,5 +44,4 @@ export const textSizeOptions: {label: string, value: string}[] = [
   { label: "6XL", value: "6xl" },
   { label: "7XL", value: "7xl" },
   { label: "8XL", value: "8xl" },
-  { label: "9XL", value: "9xl" },
 ];

@@ -280,10 +280,15 @@ type PagesBlocksPhotoCardsStyleBackgroundImage {
 type PagesBlocksPhotoCardsStyle {
   columns: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
-  contentOrder: String
   textAlignment: String
+  contentOrder: String
 }
 
 type PagesBlocksPhotoCardsCardStyle {
@@ -330,10 +335,15 @@ type PagesBlocksTextCardsStyleBackgroundImage {
 type PagesBlocksTextCardsStyle {
   columns: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
-  contentOrder: String
   textAlignment: String
+  contentOrder: String
 }
 
 type PagesBlocksTextCardsCardStyle {
@@ -598,10 +608,15 @@ input PagesBlocksPhotoCardsStyleBackgroundImageMutation {
 input PagesBlocksPhotoCardsStyleMutation {
   columns: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
-  contentOrder: String
   textAlignment: String
+  contentOrder: String
 }
 
 input PagesBlocksPhotoCardsCardStyleMutation {
@@ -648,10 +663,15 @@ input PagesBlocksTextCardsStyleBackgroundImageMutation {
 input PagesBlocksTextCardsStyleMutation {
   columns: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
-  contentOrder: String
   textAlignment: String
+  contentOrder: String
 }
 
 input PagesBlocksTextCardsCardStyleMutation {
