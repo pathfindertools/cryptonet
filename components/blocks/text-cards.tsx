@@ -65,7 +65,7 @@ const TextCard = ({ data, cardstyle }) => {
         </h4>
       )}
       {data.text && (
-        <div className={`${textColors[cardstyle?.textColor]} ${textSizes[cardstyle?.textSize]}`}>
+        <div className={`${textColors[cardstyle?.textColor]} ${textSizes[cardstyle?.textSize]} mt-4 first:mt-0`}>
           <Markdown>{data.text}</Markdown>
         </div>
       )}
