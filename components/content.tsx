@@ -118,7 +118,7 @@ export const Content = ({
       {headline && <h2 className={`${headingOrder(order)} ${textColors[headlineColor]} ${textSizes[headlineSize]}`}>{headline}</h2>}
       {subhead && <h3 className={`${subheadOrder(order)} ${textColors[subheadColor]} ${textSizes[subheadSize]}`}>{subhead}</h3>}
       {body && (
-        <div className={`leading-10 mt-8 items-center ${bodyOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>
+        <div className={`markdown leading-10 mt-8 items-center ${bodyOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>
           <Markdown>{body}</Markdown>
         </div>
       )}

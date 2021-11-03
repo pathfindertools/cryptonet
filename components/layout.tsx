@@ -44,6 +44,16 @@ export const Layout = ({
               --accent2-color: ${themeData?.style.accent2};
               --accent3-color: ${themeData?.style.accent3};
             }
+            .markdown ul {
+              list-style: disc inside;
+              margin-left: 1.5rem;
+            }
+            .markdown ul li {
+              margin-bottom: .5rem;
+            }
+            .markdown a {
+              text-decoration: underline;
+            }
           `,
           }}
         />
