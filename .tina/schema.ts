@@ -343,6 +343,37 @@ export default defineSchema({
           ],
         },
         {
+          type: "string",
+          label: "Site Title",
+          name: "siteTitle",
+        },
+        {
+          type: "string",
+          label: "Site Description",
+          name: "siteDescription",
+        },
+        {
+          type: "image",
+          label: "Site Image",
+          name: "siteImageSrc",
+        },
+        {
+          label: "Navigation",
+          description: "Additional links in the header",
+          name: "navItems",
+          list: true,
+          type: "object",
+          fields: [{
+            label: "Label",
+            name: "label",
+            type: "string"
+          }, {
+            label: "Link",
+            name: "link",
+            type: "string",
+          }]
+        },
+        {
           type: "object",
           label: "Style",
           name: "style",
@@ -401,37 +432,6 @@ export default defineSchema({
               options: colorOptions,
             },
           ]
-        },
-        {
-          label: "Navigation",
-          description: "Additional links in the header",
-          name: "navItems",
-          list: true,
-          type: "object",
-          fields: [{
-            label: "Label",
-            name: "label",
-            type: "string"
-          }, {
-            label: "Link",
-            name: "link",
-            type: "string",
-          }]
-        },
-        {
-          type: "string",
-          label: "Site Title",
-          name: "siteTitle",
-        },
-        {
-          type: "string",
-          label: "Site Description",
-          name: "siteDescription",
-        },
-        {
-          type: "image",
-          label: "Site Image",
-          name: "siteImageSrc",
         },
       ],
     },

@@ -26,7 +26,12 @@ blocks:
         backgroundColor: primary
     style:
       textColor: white
+      headlineColor: primary
+      subheadColor: grayLight
       backgroundColor: black
+      textSize: lg
+      headlineSize: 4xl
+      subheadSize: 2xl
       textAlignment: center
       contentOrder: labelHeadingsContent
       width: narrow
@@ -170,9 +175,14 @@ blocks:
     style:
       textColor: white
       backgroundColor: black
+      headlineColor: primary
+      subheadColor: grayLight
       backgroundImage:
         src: >-
           http://res.cloudinary.com/tombustout/image/upload/v1635876087/Home/hackathon-slant_udwu14.svg
+      textSize: lg
+      headlineSize: 4xl
+      subheadSize: 2xl
       flipLayout: true
       contentOrder: labelHeadingsContent
       imageStyle: natural
@@ -346,20 +356,20 @@ blocks:
       - label: You have a hackathon proposal? Contact us!
         link: 'https://protocollabs.typeform.com/to/vnvr6oOi'
         type: outline
-        textColor: primary
+        textColor: white
         backgroundColor: primary
     style:
       textColor: white
+      headlineColor: primary
+      subheadColor: primary
       backgroundColor: black
+      textSize: lg
+      headlineSize: 4xl
+      subheadSize: 2xl
       textAlignment: right
+      contentOrder: labelHeadingsContent
+      width: normal
     _template: banner
-style:
-  primary: '#FF007A'
-  accent1: '#0E4465'
-  accent2: '#2DDB87'
-  accent3: '#2DD0DB'
-  navTextColor: white
-  navBackgroundColor: black
 siteTitle: Hackathons
 siteDescription: >-
   With Filecoin and IPFS, we empower developers and entrepreneurs to solve
@@ -367,5 +377,12 @@ siteDescription: >-
   shape the future of the web to make it more decentralized, robust, and secure!
 siteImageSrc: >-
   http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+style:
+  primary: '#FF007A'
+  accent1: '#0E4465'
+  accent2: '#2DDB87'
+  accent3: '#2DD0DB'
+  navTextColor: white
+  navBackgroundColor: black
 ---
 

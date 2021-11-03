@@ -224,14 +224,19 @@ type PagesBlocksFeatureStyleBackgroundImage {
 }
 
 type PagesBlocksFeatureStyle {
+  flipLayout: Boolean
+  imageStyle: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImage
-  flipLayout: Boolean
-  contentOrder: String
-  imageStyle: String
-  contentAlignment: String
   textAlignment: String
+  contentAlignment: String
+  contentOrder: String
 }
 
 type PagesBlocksFeature {
@@ -370,8 +375,13 @@ type PagesBlocksBannerStyleBackgroundImage {
 
 type PagesBlocksBannerStyle {
   textColor: String
+  headlineColor: String
+  subheadColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
+  textSize: String
+  headlineSize: String
+  subheadSize: String
   textAlignment: String
   contentOrder: String
   width: String
@@ -390,6 +400,11 @@ type PagesBlocksBanner {
 
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
 
+type PagesNavItems {
+  label: String
+  link: String
+}
+
 type PagesStyle {
   primary: String
   accent1: String
@@ -399,19 +414,14 @@ type PagesStyle {
   navBackgroundColor: String
 }
 
-type PagesNavItems {
-  label: String
-  link: String
-}
-
 type Pages {
   draft: Boolean
   blocks: [PagesBlocks]
-  style: PagesStyle
-  navItems: [PagesNavItems]
   siteTitle: String
   siteDescription: String
   siteImageSrc: String
+  navItems: [PagesNavItems]
+  style: PagesStyle
 }
 
 type PagesDocument implements Node & Document {
@@ -532,14 +542,19 @@ input PagesBlocksFeatureStyleBackgroundImageMutation {
 }
 
 input PagesBlocksFeatureStyleMutation {
+  flipLayout: Boolean
+  imageStyle: String
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
-  flipLayout: Boolean
-  contentOrder: String
-  imageStyle: String
-  contentAlignment: String
   textAlignment: String
+  contentAlignment: String
+  contentOrder: String
 }
 
 input PagesBlocksFeatureMutation {
@@ -678,8 +693,13 @@ input PagesBlocksBannerStyleBackgroundImageMutation {
 
 input PagesBlocksBannerStyleMutation {
   textColor: String
+  headlineColor: String
+  subheadColor: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
+  textSize: String
+  headlineSize: String
+  subheadSize: String
   textAlignment: String
   contentOrder: String
   width: String
@@ -703,6 +723,11 @@ input PagesBlocksMutation {
   banner: PagesBlocksBannerMutation
 }
 
+input PagesNavItemsMutation {
+  label: String
+  link: String
+}
+
 input PagesStyleMutation {
   primary: String
   accent1: String
@@ -712,19 +737,14 @@ input PagesStyleMutation {
   navBackgroundColor: String
 }
 
-input PagesNavItemsMutation {
-  label: String
-  link: String
-}
-
 input PagesMutation {
   draft: Boolean
   blocks: [PagesBlocksMutation]
-  style: PagesStyleMutation
-  navItems: [PagesNavItemsMutation]
   siteTitle: String
   siteDescription: String
   siteImageSrc: String
+  navItems: [PagesNavItemsMutation]
+  style: PagesStyleMutation
 }
 
 schema {

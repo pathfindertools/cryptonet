@@ -30,3 +30,19 @@ export const vAlignOptions: {label: string, value: string}[] = [
   { label: "Center", value: "center" },
   { label: "Bottom", value: "bottom" },
 ];
+
+export const textSizeOptions: {label: string, value: string}[] = [
+  { label: "XS", value: "xs" },
+  { label: "Small", value: "sm" },
+  { label: "Regular", value: "base" },
+  { label: "Large", value: "lg" },
+  { label: "XL", value: "xl" },
+  { label: "2XL", value: "2xl" },
+  { label: "3XL", value: "3xl" },
+  { label: "4XL", value: "4xl" },
+  { label: "5XL", value: "5xl" },
+  { label: "6XL", value: "6xl" },
+  { label: "7XL", value: "7xl" },
+  { label: "8XL", value: "8xl" },
+  { label: "9XL", value: "9xl" },
+];

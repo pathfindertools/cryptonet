@@ -2,6 +2,34 @@ import React from "react";
 import Markdown from "react-markdown";
 import { Buttons } from "./buttons";
 
+const textColors = {
+  white: "text-white",
+  grayLight: "text-gray-200",
+  gray: "text-gray-500",
+  grayDark: "text-gray-800",
+  black: "text-black",
+  primary: "text-primary",
+  accent1: "text-accent1",
+  accent2: "text-accent2",
+  accent3: "text-accent3",
+};
+
+const textSizes = {
+  xs: "text-xs",
+  sm: "text-sm",
+  base: "text-base",
+  lg: "text-lg",
+  xl: "text-xl",
+  "2xl": "text-2xl",
+  "3xl": "text-3xl",
+  "4xl": "text-4xl",
+  "5xl": "text-5xl",
+  "6xl": "text-6xl",
+  "7xl": "text-7xl",
+  "8xl": "text-8xl",
+  "9xl": "text-9xl",
+};
+
 const contentAlignment = (alignment) => {
   const textAlignments = {
     left: "",
@@ -10,17 +38,6 @@ const contentAlignment = (alignment) => {
   };
 
   return textAlignments[alignment];
-};
-
-const contentColor = (color) => {
-  const textColors = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-  };
-  return textColors[color];
 };
 
 const buttonAlignment = (alignment) => {
@@ -87,17 +104,22 @@ export const Content = ({
   subhead,
   body,
   buttons,
-  color = "white",
+  textColor,
+  headlineColor,
+  subheadColor,
+  textSize,
+  headlineSize,
+  subheadSize,
   alignment = "left",
   order = "labelHeadingsContent",
 }) => {
   return (
-    <div className={`flex flex-col ${contentAlignment(alignment)} ${contentColor(color)}`}>
-      {label && <h4 className={`text-lg ${labelOrder(order)}`}>{label}</h4>}
-      {headline && <h2 className={`text-4xl ${headingOrder(order)}`}>{headline}</h2>}
-      {subhead && <h3 className={`text-2xl ${subheadOrder(order)}`}>{subhead}</h3>}
+    <div className={`flex flex-col ${contentAlignment(alignment)}`}>
+      {label && <h4 className={`${labelOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>{label}</h4>}
+      {headline && <h2 className={`${headingOrder(order)} ${textColors[headlineColor]} ${textSizes[headlineSize]}`}>{headline}</h2>}
+      {subhead && <h3 className={`${subheadOrder(order)} ${textColors[subheadColor]} ${textSizes[subheadSize]}`}>{subhead}</h3>}
       {body && (
-        <div className={`text-lg leading-10 mt-8 items-center ${bodyOrder(order)}`}>
+        <div className={`leading-10 mt-8 items-center ${bodyOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>
           <Markdown>{body}</Markdown>
         </div>
       )}

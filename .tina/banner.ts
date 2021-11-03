@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, contentOrderOptions, hAlignOptions } from "./shared/options"
+import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } from "./shared/options"
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -14,7 +14,12 @@ export const bannerBlockSchema: TinaTemplate = {
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
         textColor: "white",
+        headlineColor: "white",
+        subheadColor: "white",
         backgroundColor: "black",
+        textSize: 'base',
+        headlineSize: '3xl',
+        subheadSize: 'lg',
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
         width: "normal"
@@ -82,6 +87,24 @@ export const bannerBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
+          label: "Headline Color",
+          name: "headlineColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: colorOptions,
+        },
+        {
+          label: "Subhead Color",
+          name: "subheadColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
           label: "Background Color",
           name: "backgroundColor",
           type: "string",
@@ -106,6 +129,33 @@ export const bannerBlockSchema: TinaTemplate = {
               type: "string",
             },
           ],
+        },
+        {
+          label: "Text Size",
+          name: "textSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Headline Size",
+          name: "headlineSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Subhead Size",
+          name: "subheadSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
         },
         {
           label: "Text Alignment",

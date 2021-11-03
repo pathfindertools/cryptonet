@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, contentOrderOptions, hAlignOptions, vAlignOptions } from "./shared/options"
+import { colorOptions, contentOrderOptions, hAlignOptions, vAlignOptions, textSizeOptions } from "./shared/options"
 
 export const featureBlockSchema: TinaTemplate = {
   name: "feature",
@@ -74,6 +74,25 @@ export const featureBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          label: "Flip Layout",
+          name: "flipLayout",
+          type: "boolean",
+        },
+        {
+          label: "Image Style",
+          name: "imageStyle",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Natural Size", value: "natural" },
+            { label: "Fit in Half", value: "fitHalf" },
+            { label: "Fill Half", value: "fillHalf" },
+            { label: "Fill Overlap", value: "overlap" },
+          ],
+        },
+        {
           label: "Text Color",
           name: "textColor",
           ui: {
@@ -81,6 +100,51 @@ export const featureBlockSchema: TinaTemplate = {
           },
           type: "string",
           options: colorOptions,
+        },
+        {
+          label: "Text Size",
+          name: "textSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Headline Color",
+          name: "headlineColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: colorOptions,
+        },
+        {
+          label: "Headline Size",
+          name: "headlineSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Subhead Color",
+          name: "subheadColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Subhead Size",
+          name: "subheadSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
         },
         {
           label: "Background Color",
@@ -109,32 +173,13 @@ export const featureBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Flip Layout",
-          name: "flipLayout",
-          type: "boolean",
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
+          label: "Text Alignment",
+          name: "textAlignment",
           type: "string",
           ui: {
             component: "select",
           },
-          options: contentOrderOptions
-        },
-        {
-          label: "Image Style",
-          name: "imageStyle",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Natural Size", value: "natural" },
-            { label: "Fit in Half", value: "fitHalf" },
-            { label: "Fill Half", value: "fillHalf" },
-            { label: "Fill Overlap", value: "overlap" },
-          ],
+          options: hAlignOptions,
         },
         {
           label: "Content Alignment",
@@ -146,13 +191,13 @@ export const featureBlockSchema: TinaTemplate = {
           options: vAlignOptions,
         },
         {
-          label: "Text Alignment",
-          name: "textAlignment",
+          label: "Content Order",
+          name: "contentOrder",
           type: "string",
           ui: {
             component: "select",
           },
-          options: hAlignOptions,
+          options: contentOrderOptions
         },
       ],
     },

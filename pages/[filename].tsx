@@ -122,16 +122,22 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  flipLayout
+                  imageStyle
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   backgroundImage {
                     src
                     alt
                   }
-                  flipLayout
-                  imageStyle
-                  contentAlignment
                   textAlignment
+                  contentAlignment
+                  contentOrder
                 }
                 navigationLabel
               }
@@ -152,7 +158,13 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  width
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   backgroundImage {
                     src
@@ -160,7 +172,6 @@ export const getStaticProps = async ({ params }) => {
                   }
                   textAlignment
                   contentOrder
-                  width
                 }
                 navigationLabel
               }

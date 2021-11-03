@@ -352,14 +352,19 @@ export type PagesBlocksFeatureStyleBackgroundImage = {
 
 export type PagesBlocksFeatureStyle = {
   __typename?: 'PagesBlocksFeatureStyle';
+  flipLayout?: Maybe<Scalars['Boolean']>;
+  imageStyle?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksFeatureStyleBackgroundImage>;
-  flipLayout?: Maybe<Scalars['Boolean']>;
-  contentOrder?: Maybe<Scalars['String']>;
-  imageStyle?: Maybe<Scalars['String']>;
-  contentAlignment?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksFeature = {
@@ -516,8 +521,13 @@ export type PagesBlocksBannerStyleBackgroundImage = {
 export type PagesBlocksBannerStyle = {
   __typename?: 'PagesBlocksBannerStyle';
   textColor?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImage>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
   contentOrder?: Maybe<Scalars['String']>;
   width?: Maybe<Scalars['String']>;
@@ -537,6 +547,12 @@ export type PagesBlocksBanner = {
 
 export type PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner;
 
+export type PagesNavItems = {
+  __typename?: 'PagesNavItems';
+  label?: Maybe<Scalars['String']>;
+  link?: Maybe<Scalars['String']>;
+};
+
 export type PagesStyle = {
   __typename?: 'PagesStyle';
   primary?: Maybe<Scalars['String']>;
@@ -547,21 +563,15 @@ export type PagesStyle = {
   navBackgroundColor?: Maybe<Scalars['String']>;
 };
 
-export type PagesNavItems = {
-  __typename?: 'PagesNavItems';
-  label?: Maybe<Scalars['String']>;
-  link?: Maybe<Scalars['String']>;
-};
-
 export type Pages = {
   __typename?: 'Pages';
   draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocks>>>;
-  style?: Maybe<PagesStyle>;
-  navItems?: Maybe<Array<Maybe<PagesNavItems>>>;
   siteTitle?: Maybe<Scalars['String']>;
   siteDescription?: Maybe<Scalars['String']>;
   siteImageSrc?: Maybe<Scalars['String']>;
+  navItems?: Maybe<Array<Maybe<PagesNavItems>>>;
+  style?: Maybe<PagesStyle>;
 };
 
 export type PagesDocument = Node & Document & {
@@ -724,14 +734,19 @@ export type PagesBlocksFeatureStyleBackgroundImageMutation = {
 };
 
 export type PagesBlocksFeatureStyleMutation = {
+  flipLayout?: Maybe<Scalars['Boolean']>;
+  imageStyle?: Maybe<Scalars['String']>;
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksFeatureStyleBackgroundImageMutation>;
-  flipLayout?: Maybe<Scalars['Boolean']>;
-  contentOrder?: Maybe<Scalars['String']>;
-  imageStyle?: Maybe<Scalars['String']>;
-  contentAlignment?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
+  contentAlignment?: Maybe<Scalars['String']>;
+  contentOrder?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksFeatureMutation = {
@@ -870,8 +885,13 @@ export type PagesBlocksBannerStyleBackgroundImageMutation = {
 
 export type PagesBlocksBannerStyleMutation = {
   textColor?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImageMutation>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
   contentOrder?: Maybe<Scalars['String']>;
   width?: Maybe<Scalars['String']>;
@@ -895,6 +915,11 @@ export type PagesBlocksMutation = {
   banner?: Maybe<PagesBlocksBannerMutation>;
 };
 
+export type PagesNavItemsMutation = {
+  label?: Maybe<Scalars['String']>;
+  link?: Maybe<Scalars['String']>;
+};
+
 export type PagesStyleMutation = {
   primary?: Maybe<Scalars['String']>;
   accent1?: Maybe<Scalars['String']>;
@@ -904,18 +929,13 @@ export type PagesStyleMutation = {
   navBackgroundColor?: Maybe<Scalars['String']>;
 };
 
-export type PagesNavItemsMutation = {
-  label?: Maybe<Scalars['String']>;
-  link?: Maybe<Scalars['String']>;
-};
-
 export type PagesMutation = {
   draft?: Maybe<Scalars['Boolean']>;
   blocks?: Maybe<Array<Maybe<PagesBlocksMutation>>>;
-  style?: Maybe<PagesStyleMutation>;
-  navItems?: Maybe<Array<Maybe<PagesNavItemsMutation>>>;
   siteTitle?: Maybe<Scalars['String']>;
   siteDescription?: Maybe<Scalars['String']>;
   siteImageSrc?: Maybe<Scalars['String']>;
+  navItems?: Maybe<Array<Maybe<PagesNavItemsMutation>>>;
+  style?: Maybe<PagesStyleMutation>;
 };
 
