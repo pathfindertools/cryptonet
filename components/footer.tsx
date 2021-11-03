@@ -4,14 +4,13 @@ import { Container } from "./container";
 
 export const Footer = ({ data, icon, rawData }) => {
   return (
-    <footer className={`bg-white`}>
-      <Container className="flex relative" size="small">
-        <p className="text-black text-xs flex-1">
-          Asia Hackathon Series 2021 expects all speakers and participants to
-          follow the IPFS Community Code of Conduct and Terms of Service
+    <footer className={`bg-black text-white`}>
+      <div className="max-w-screen-lg md:px-12 p-6 mx-auto flex">
+        <p className="text-xs flex-1 mt-4">
+          Made with love by Protocol Labs
         </p>
-        {/* <img src="/img/filecoin_ipfs_logos.png" /> */}
-      </Container>
+        <img src="/filecoin_ipfs_logos.png" className="h-12" />
+      </div>
     </footer>
   );
 };
