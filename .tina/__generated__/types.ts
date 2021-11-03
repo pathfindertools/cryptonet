@@ -428,6 +428,11 @@ export type PagesBlocksPhotoCardsStyle = {
 export type PagesBlocksPhotoCardsCardStyle = {
   __typename?: 'PagesBlocksPhotoCardsCardStyle';
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
@@ -813,6 +818,11 @@ export type PagesBlocksPhotoCardsStyleMutation = {
 
 export type PagesBlocksPhotoCardsCardStyleMutation = {
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
+  headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
+  subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;

@@ -293,6 +293,11 @@ type PagesBlocksPhotoCardsStyle {
 
 type PagesBlocksPhotoCardsCardStyle {
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   accentColor: String
   type: String
@@ -621,6 +626,11 @@ input PagesBlocksPhotoCardsStyleMutation {
 
 input PagesBlocksPhotoCardsCardStyleMutation {
   textColor: String
+  textSize: String
+  headlineColor: String
+  headlineSize: String
+  subheadColor: String
+  subheadSize: String
   backgroundColor: String
   accentColor: String
   type: String

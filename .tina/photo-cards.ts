@@ -2,7 +2,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions } from "./shared/options"
+import { colorOptions, textSizeOptions } from "./shared/options"
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -136,6 +136,51 @@ export const photoCardsBlockSchema: TinaTemplate = {
           },
           type: "string",
           options: colorOptions,
+        },
+        {
+          label: "Text Size",
+          name: "textSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Headline Color",
+          name: "headlineColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: colorOptions,
+        },
+        {
+          label: "Headline Size",
+          name: "headlineSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Subhead Color",
+          name: "subheadColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Subhead Size",
+          name: "subheadSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
         },
         {
           label: "Background Color",
