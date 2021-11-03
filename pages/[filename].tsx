@@ -66,10 +66,16 @@ export const getStaticProps = async ({ params }) => {
                   }
                 }
                 cardStyle {
+                  type
+                  buttonType
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   accentColor
-                  type
                 }
                 navigationLabel
               }
@@ -108,10 +114,16 @@ export const getStaticProps = async ({ params }) => {
                   }
                 }
                 cardStyle {
+                  type
+                  buttonType
                   textColor
+                  textSize
+                  headlineColor
+                  headlineSize
+                  subheadColor
+                  subheadSize
                   backgroundColor
                   accentColor
-                  type
                 }
                 navigationLabel
               }

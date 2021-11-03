@@ -3,8 +3,32 @@ import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
 const PhotoCard = ({ data, cardstyle }) => {
-  const wrapClasses =  data.link && data.buttonLabel ? 'pb-24' : '';
-
+  const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
+  const textColors = {
+    white: "text-white",
+    grayLight: "text-gray-200",
+    gray: "text-gray-500",
+    grayDark: "text-gray-800",
+    black: "text-black",
+    primary: "text-primary",
+    accent1: "text-accent1",
+    accent2: "text-accent2",
+    accent3: "text-accent3",
+  };
+  const textSizes = {
+    xs: "text-xs",
+    sm: "text-sm",
+    base: "text-base",
+    lg: "text-lg",
+    xl: "text-xl",
+    "2xl": "text-2xl",
+    "3xl": "text-3xl",
+    "4xl": "text-4xl",
+    "5xl": "text-5xl",
+    "6xl": "text-6xl",
+    "7xl": "text-7xl",
+    "8xl": "text-8xl",
+  };
   const backgroundColors = {
     white: "bg-white",
     grayLight: "bg-gray-200",
@@ -27,18 +51,6 @@ const PhotoCard = ({ data, cardstyle }) => {
     accent2: "bg-gradient-to-r from-accent2 to-black",
     accent3: "bg-gradient-to-r from-accent3 to-black",
   };
-  const textColors = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-    primary: "text-primary",
-    accent1: "text-accent1",
-    accent2: "text-accent2",
-    accent3: "text-accent3",
-  };
-
   const backgroundClasses = {
     solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
     transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
@@ -56,21 +68,21 @@ const PhotoCard = ({ data, cardstyle }) => {
         )}
       </div>
       <div
-        className={` ${wrapClasses} ${textColors[cardstyle?.textColor]} relative flex-1 text-left p-4 border-box`}
+        className={` ${wrapClasses} relative flex-1 text-left p-4 border-box`}
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
-          <h3 className="text-xl font-semibold m-0">
+          <h3 className={`${textColors[cardstyle?.headlineColor]} ${textSizes[cardstyle?.headlineSize]} font-semibold m-0`}>
             {data.headline}
           </h3>
         )}
         {data.subhead && (
-          <h3 className="text-base text-gray-300">
+          <h4 className={`${textColors[cardstyle?.subheadColor]} ${textSizes[cardstyle?.subheadSize]}`}>
             {data.subhead}
-          </h3>
+          </h4>
         )}
         {data.text && (
-          <div className={``}>
+          <div className={`${textColors[cardstyle?.textColor]} ${textSizes[cardstyle?.textSize]} mt-4 first:mt-0`}>
             <Markdown>{data.text}</Markdown>
           </div>
         )}
@@ -78,11 +90,12 @@ const PhotoCard = ({ data, cardstyle }) => {
           <Buttons buttons={[{
             link: data.link,
             label: data.buttonLabel,
-            textColor: 'black',
+            textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.textColor,
             backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
-            type: 'solid'
-          }]} className="absolute bottom-8" />
+            type: cardstyle?.buttonType
+          }]} className="absolute bottom-4" />
         )}
+
       </div>
       {data.link && !data.buttonLabel && (
         <a href={data.link} className="absolute inset-0 z-20" />

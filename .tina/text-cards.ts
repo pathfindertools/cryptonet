@@ -2,7 +2,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions } from "./shared/options"
+import { colorOptions, textSizeOptions } from "./shared/options"
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -27,10 +27,16 @@ export const textCardsBlockSchema: TinaTemplate = {
         textAlignment: "left",
       },
       cardStyle: {
-        textColor: "white",
-        backgroundColor: "gray",
-        accentColor: "primary",
         type: "solid",
+        buttonType: "solid",
+        textColor: "white",
+        textSize: "base",
+        headlineColor: "white",
+        headlineSize: "2xl",
+        subheadColor: "white",
+        subheadSize: "lg",
+        accentColor: "primary",
+        backgroundColor: "gray",
       },
       items: [defaultCard, defaultCard, defaultCard],
     },
@@ -111,6 +117,7 @@ export const textCardsBlockSchema: TinaTemplate = {
         },
       ],
     },
+    navigationLabelSchema,
     cardsSchema,
     {
       type: "object",
@@ -121,6 +128,31 @@ export const textCardsBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          label: "Type",
+          name: "type",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid", value: "solid" },
+            { label: "Transparent Background", value: "transparent" },
+          ],
+        },
+        {
+          label: "Button Type",
+          name: "buttonType",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid", value: "solid" },
+            { label: "Outline", value: "outline" },
+            { label: "Link", value: "link" },
+          ],
+        },
+        {
           label: "Text Color",
           name: "textColor",
           ui: {
@@ -128,6 +160,51 @@ export const textCardsBlockSchema: TinaTemplate = {
           },
           type: "string",
           options: colorOptions,
+        },
+        {
+          label: "Text Size",
+          name: "textSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Headline Color",
+          name: "headlineColor",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: colorOptions,
+        },
+        {
+          label: "Headline Size",
+          name: "headlineSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
+          label: "Subhead Color",
+          name: "subheadColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Subhead Size",
+          name: "subheadSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
         },
         {
           label: "Background Color",
@@ -147,20 +224,7 @@ export const textCardsBlockSchema: TinaTemplate = {
           },
           options: colorOptions,
         },
-        {
-          label: "Type",
-          name: "type",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Solid", value: "solid" },
-            { label: "Transparent Background", value: "transparent" },
-          ],
-        },
       ],
     },
-    navigationLabelSchema
   ],
 };

@@ -1186,10 +1186,16 @@
                     "textAlignment": "left"
                   },
                   "cardStyle": {
+                    "type": "solid",
+                    "buttonType": "solid",
                     "textColor": "white",
-                    "backgroundColor": "gray",
+                    "textSize": "base",
+                    "headlineColor": "white",
+                    "headlineSize": "2xl",
+                    "subheadColor": "white",
+                    "subheadSize": "lg",
                     "accentColor": "primary",
-                    "type": "solid"
+                    "backgroundColor": "gray"
                   },
                   "items": [
                     {
@@ -1437,6 +1443,12 @@
                   ]
                 },
                 {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string"
+                },
+                {
                   "type": "object",
                   "label": "Style",
                   "name": "style",
@@ -1912,6 +1924,50 @@
                   },
                   "fields": [
                     {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid Background",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Semi Transparent",
+                          "value": "transparent"
+                        },
+                        {
+                          "label": "Horizontal Fade",
+                          "value": "fadeH"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Button Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Outline",
+                          "value": "outline"
+                        },
+                        {
+                          "label": "Link",
+                          "value": "link"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "ui": {
@@ -2270,7 +2326,7 @@
                       ]
                     },
                     {
-                      "label": "Accent Color",
+                      "label": "Button Color",
                       "name": "accentColor",
                       "type": "string",
                       "ui": {
@@ -2314,36 +2370,8 @@
                           "value": "black"
                         }
                       ]
-                    },
-                    {
-                      "label": "Type",
-                      "name": "type",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid Background",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Semi Transparent",
-                          "value": "transparent"
-                        },
-                        {
-                          "label": "Horizontal Fade",
-                          "value": "fadeH"
-                        }
-                      ]
                     }
                   ]
-                },
-                {
-                  "label": "Navigation Label",
-                  "name": "navigationLabel",
-                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
-                  "type": "string"
                 }
               ]
             },
@@ -2364,10 +2392,16 @@
                     "textAlignment": "left"
                   },
                   "cardStyle": {
+                    "type": "solid",
+                    "buttonType": "solid",
                     "textColor": "white",
-                    "backgroundColor": "gray",
+                    "textSize": "base",
+                    "headlineColor": "white",
+                    "headlineSize": "2xl",
+                    "subheadColor": "white",
+                    "subheadSize": "lg",
                     "accentColor": "primary",
-                    "type": "solid"
+                    "backgroundColor": "gray"
                   },
                   "items": [
                     {
@@ -2644,6 +2678,12 @@
                   ]
                 },
                 {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string"
+                },
+                {
                   "type": "object",
                   "label": "Style",
                   "name": "style",
@@ -3119,6 +3159,46 @@
                   },
                   "fields": [
                     {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Transparent Background",
+                          "value": "transparent"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Button Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Outline",
+                          "value": "outline"
+                        },
+                        {
+                          "label": "Link",
+                          "value": "link"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "ui": {
@@ -3161,6 +3241,272 @@
                         {
                           "label": "Black",
                           "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Text Size",
+                      "name": "textSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Color",
+                      "name": "headlineColor",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Headline Size",
+                      "name": "headlineSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Color",
+                      "name": "subheadColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Size",
+                      "name": "subheadSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
                         }
                       ]
                     },
@@ -3255,32 +3601,8 @@
                           "value": "black"
                         }
                       ]
-                    },
-                    {
-                      "label": "Type",
-                      "name": "type",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Transparent Background",
-                          "value": "transparent"
-                        }
-                      ]
                     }
                   ]
-                },
-                {
-                  "label": "Navigation Label",
-                  "name": "navigationLabel",
-                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
-                  "type": "string"
                 }
               ]
             },

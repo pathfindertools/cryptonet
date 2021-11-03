@@ -146,14 +146,25 @@ blocks:
     style:
       columns: '3'
       textColor: white
+      textSize: base
+      headlineColor: white
+      headlineSize: 4xl
+      subheadColor: grayLight
+      subheadSize: 2xl
       backgroundColor: black
-      contentOrder: labelHeadingsContent
       textAlignment: left
+      contentOrder: labelHeadingsContent
     cardStyle:
+      type: fadeH
+      buttonType: outline
       textColor: white
+      textSize: sm
+      headlineColor: white
+      headlineSize: xl
+      subheadColor: grayLight
+      subheadSize: sm
       backgroundColor: accent1
       accentColor: primary
-      type: fadeH
     _template: photoCards
   - image:
       src: >-
@@ -173,21 +184,21 @@ blocks:
         textColor: white
         backgroundColor: primary
     style:
+      flipLayout: true
+      imageStyle: natural
       textColor: white
-      backgroundColor: black
+      textSize: lg
       headlineColor: primary
+      headlineSize: 4xl
       subheadColor: grayLight
+      subheadSize: 2xl
+      backgroundColor: black
       backgroundImage:
         src: >-
           http://res.cloudinary.com/tombustout/image/upload/v1635876087/Home/hackathon-slant_udwu14.svg
-      textSize: lg
-      headlineSize: 4xl
-      subheadSize: 2xl
-      flipLayout: true
-      contentOrder: labelHeadingsContent
-      imageStyle: natural
-      contentAlignment: center
       textAlignment: left
+      contentAlignment: center
+      contentOrder: labelHeadingsContent
     _template: feature
   - headline: Past Events
     items:
@@ -294,14 +305,25 @@ blocks:
     style:
       columns: '3'
       textColor: white
+      textSize: base
+      headlineColor: white
+      headlineSize: 4xl
+      subheadColor: grayLight
+      subheadSize: 2xl
       backgroundColor: black
-      contentOrder: labelHeadingsContent
       textAlignment: left
+      contentOrder: labelHeadingsContent
     cardStyle:
+      type: fadeH
+      buttonType: outline
       textColor: white
+      textSize: sm
+      headlineColor: white
+      headlineSize: xl
+      subheadColor: grayLight
+      subheadSize: base
       backgroundColor: accent1
       accentColor: primary
-      type: fadeH
     _template: photoCards
   - label: ''
     headline: Post-hackathon opportunities
@@ -339,14 +361,23 @@ blocks:
     style:
       columns: '2'
       textColor: white
+      textSize: lg
+      headlineColor: primary
+      headlineSize: 4xl
+      subheadColor: white
+      subheadSize: lg
       backgroundColor: black
-      contentOrder: labelHeadingsContent
       textAlignment: left
+      contentOrder: labelHeadingsContent
     cardStyle:
+      type: solid
+      buttonType: link
       textColor: white
+      headlineColor: white
+      headlineSize: 2xl
+      subheadColor: grayLight
       backgroundColor: accent1
       accentColor: primary
-      type: solid
     _template: photoCards
   - label: ''
     headline: ''

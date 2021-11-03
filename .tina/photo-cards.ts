@@ -27,10 +27,16 @@ export const photoCardsBlockSchema: TinaTemplate = {
         textAlignment: "left",
       },
       cardStyle: {
-        textColor: "white",
-        backgroundColor: "gray",
-        accentColor: "primary",
         type: "solid",
+        buttonType: "solid",
+        textColor: "white",
+        textSize: "base",
+        headlineColor: "white",
+        headlineSize: "2xl",
+        subheadColor: "white",
+        subheadSize: "lg",
+        accentColor: "primary",
+        backgroundColor: "gray",
       },
       items: [defaultCard, defaultCard, defaultCard],
     },
@@ -119,6 +125,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
         },
       ],
     },
+    navigationLabelSchema,
     cardsSchema,
     {
       type: "object",
@@ -128,6 +135,32 @@ export const photoCardsBlockSchema: TinaTemplate = {
         component: "group",
       },
       fields: [
+        {
+          label: "Type",
+          name: "type",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid Background", value: "solid" },
+            { label: "Semi Transparent", value: "transparent" },
+            { label: "Horizontal Fade", value: "fadeH" },
+          ],
+        },
+        {
+          label: "Button Type",
+          name: "buttonType",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid", value: "solid" },
+            { label: "Outline", value: "outline" },
+            { label: "Link", value: "link" },
+          ],
+        },
         {
           label: "Text Color",
           name: "textColor",
@@ -192,7 +225,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
-          label: "Accent Color",
+          label: "Button Color",
           name: "accentColor",
           type: "string",
           ui: {
@@ -200,21 +233,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
           },
           options: colorOptions,
         },
-        {
-          label: "Type",
-          name: "type",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Solid Background", value: "solid" },
-            { label: "Semi Transparent", value: "transparent" },
-            { label: "Horizontal Fade", value: "fadeH" },
-          ],
-        },
       ],
     },
-    navigationLabelSchema
   ],
 };

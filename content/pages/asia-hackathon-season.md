@@ -65,6 +65,7 @@ blocks:
         link: /
         buttonLabel: Register Now
         accentColor: accent3
+    navigationLabel: Series
     style:
       columns: '4'
       textColor: white
@@ -80,11 +81,16 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
     cardStyle:
+      type: transparent
+      buttonType: solid
       textColor: white
+      textSize: sm
+      headlineColor: accent1
+      headlineSize: 2xl
+      subheadColor: white
+      subheadSize: 3xl
       backgroundColor: black
       accentColor: primary
-      type: transparent
-    navigationLabel: Series
     _template: textCards
   - image:
       src: >-
@@ -145,13 +151,13 @@ blocks:
         headline: Want to Learn More about Filecoin? Start here.
         subhead: ''
         text: ''
+    navigationLabel: Get Started
     style:
       columns: '2'
       textColor: black
       textSize: lg
       headlineColor: black
       headlineSize: 4xl
-    navigationLabel: Get Started
     _template: photoCards
   - label: ''
     headline: Stay in the know about future events
@@ -175,8 +181,15 @@ blocks:
         backgroundColor: accent3
     style:
       textColor: white
+      headlineColor: white
+      subheadColor: white
       backgroundColor: black
+      textSize: lg
+      headlineSize: 2xl
+      subheadSize: 2xl
       textAlignment: left
+      contentOrder: labelHeadingsContent
+      width: normal
     _template: banner
 siteTitle: Asia Hackathon Season
 siteDescription: >-
