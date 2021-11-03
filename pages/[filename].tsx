@@ -76,6 +76,7 @@ export const getStaticProps = async ({ params }) => {
                   subheadSize
                   backgroundColor
                   accentColor
+                  buttonTextColor
                 }
                 navigationLabel
               }
@@ -124,6 +125,7 @@ export const getStaticProps = async ({ params }) => {
                   subheadSize
                   backgroundColor
                   accentColor
+                  buttonTextColor
                 }
                 navigationLabel
               }

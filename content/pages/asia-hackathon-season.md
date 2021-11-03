@@ -91,6 +91,7 @@ blocks:
       subheadSize: 3xl
       backgroundColor: black
       accentColor: primary
+      buttonTextColor: black
     _template: textCards
   - image:
       src: >-

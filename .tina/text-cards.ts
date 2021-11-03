@@ -224,6 +224,15 @@ export const textCardsBlockSchema: TinaTemplate = {
           },
           options: colorOptions,
         },
+        {
+          label: "Button Text Color",
+          name: "buttonTextColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
       ],
     },
   ],

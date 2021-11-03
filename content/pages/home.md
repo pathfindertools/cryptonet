@@ -165,6 +165,7 @@ blocks:
       subheadSize: sm
       backgroundColor: accent1
       accentColor: primary
+      buttonTextColor: white
     _template: photoCards
   - image:
       src: >-
@@ -211,7 +212,7 @@ blocks:
           Join us at the world's largest collegiate hackathon. Cal Hacks 8.0 is
           open to all college students over the age of 18.
         link: 'https://calhacks.io/'
-        buttonLabel: ''
+        buttonLabel: View event
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/saturn_yqmuc2.png
@@ -221,7 +222,7 @@ blocks:
           Filecoin and IPFS are proud to host the Saturn track at the [Wanxiang
           Blockchain Week 2021]().
         link: 'https://www.blockchainlabs.org/week2021/hackathon'
-        buttonLabel: Learn more and register
+        buttonLabel: View event
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/jupiter_jaufi9.png
@@ -231,7 +232,7 @@ blocks:
           Show us your best hacks in this IPFS-exclusive multi-week hackathon
           with technical support from Alibaba Cloud.
         link: 'https://tianchi.aliyun.com/specials/promotion/ipfs-hackathon'
-        buttonLabel: Learn more and register
+        buttonLabel: View event
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635873561/Home/eth-online_kyyrez.png
@@ -241,7 +242,7 @@ blocks:
           ETHOnline is a global hackathon and summit series devoted to
           celebrating what's possible on Ethereum.
         link: 'https://online.ethglobal.com/'
-        buttonLabel: ''
+        buttonLabel: View event
       - image:
           src: >-
             http://res.cloudinary.com/tombustout/image/upload/v1635873560/Home/pennapps_ezsubz.png
@@ -324,6 +325,7 @@ blocks:
       subheadSize: base
       backgroundColor: accent1
       accentColor: primary
+      buttonTextColor: white
     _template: photoCards
   - label: ''
     headline: Post-hackathon opportunities

@@ -302,6 +302,7 @@ type PagesBlocksPhotoCardsCardStyle {
   subheadSize: String
   backgroundColor: String
   accentColor: String
+  buttonTextColor: String
 }
 
 type PagesBlocksPhotoCards {
@@ -363,6 +364,7 @@ type PagesBlocksTextCardsCardStyle {
   subheadSize: String
   backgroundColor: String
   accentColor: String
+  buttonTextColor: String
 }
 
 type PagesBlocksTextCards {
@@ -642,6 +644,7 @@ input PagesBlocksPhotoCardsCardStyleMutation {
   subheadSize: String
   backgroundColor: String
   accentColor: String
+  buttonTextColor: String
 }
 
 input PagesBlocksPhotoCardsMutation {
@@ -703,6 +706,7 @@ input PagesBlocksTextCardsCardStyleMutation {
   subheadSize: String
   backgroundColor: String
   accentColor: String
+  buttonTextColor: String
 }
 
 input PagesBlocksTextCardsMutation {

@@ -437,6 +437,7 @@ export type PagesBlocksPhotoCardsCardStyle = {
   subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
+  buttonTextColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksPhotoCards = {
@@ -504,6 +505,7 @@ export type PagesBlocksTextCardsCardStyle = {
   subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
+  buttonTextColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCards = {
@@ -834,6 +836,7 @@ export type PagesBlocksPhotoCardsCardStyleMutation = {
   subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
+  buttonTextColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksPhotoCardsMutation = {
@@ -895,6 +898,7 @@ export type PagesBlocksTextCardsCardStyleMutation = {
   subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   accentColor?: Maybe<Scalars['String']>;
+  buttonTextColor?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksTextCardsMutation = {

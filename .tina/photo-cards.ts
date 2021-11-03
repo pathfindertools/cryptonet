@@ -225,8 +225,17 @@ export const photoCardsBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
-          label: "Button Color",
+          label: "Accent Color",
           name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Button Text Color",
+          name: "buttonTextColor",
           type: "string",
           ui: {
             component: "select",

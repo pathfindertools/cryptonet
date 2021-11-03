@@ -90,7 +90,7 @@ const PhotoCard = ({ data, cardstyle }) => {
           <Buttons buttons={[{
             link: data.link,
             label: data.buttonLabel,
-            textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.textColor,
+            textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.buttonTextColor,
             backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
             type: cardstyle?.buttonType
           }]} className="absolute bottom-4" />

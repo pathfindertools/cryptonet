@@ -73,7 +73,7 @@ const TextCard = ({ data, cardstyle }) => {
         <Buttons buttons={[{
           link: data.link,
           label: data.buttonLabel,
-          textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.textColor,
+          textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.buttonTextColor,
           backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
           type: 'solid'
         }]} className="absolute bottom-8" />
