@@ -1,12 +1,11 @@
-const withSvgr = require("next-svgr");
-
-module.exports = withSvgr({
+module.exports = {
+  trailingSlash: true,
   async rewrites() {
     return [
       {
-        source: "/",
-        destination: "/home",
+        source: '/index/',
+        destination: '/',
       },
-    ];
+    ]
   },
-});
+}

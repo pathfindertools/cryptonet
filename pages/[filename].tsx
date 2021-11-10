@@ -245,8 +245,9 @@ export const getStaticPaths = async () => {
       }
     `,
   })) as any;
+  const pagesNoIndex = pagesListData.getPagesList.edges.filter(page => page.node.sys.filename !== 'index')
   return {
-    paths: pagesListData.getPagesList.edges.map((page) => ({
+    paths: pagesNoIndex.map((page) => ({
       params: { filename: page.node.sys.filename },
     })),
     fallback: false,
