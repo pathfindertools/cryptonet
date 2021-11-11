@@ -59,15 +59,15 @@ const App = ({ Component, pageProps }) => {
                * After a new document is created, redirect to its location
                */
               onNewDocument: ({ collection: { slug }, breadcrumbs }) => {
-                const relativeUrl = `/${slug}/${breadcrumbs.join("/")}`;
+                const relativeUrl = `/${breadcrumbs.join("/")}`;
                 return (window.location.href = relativeUrl);
               },
               /**
-               * Only allows documents to be created to the `Blog Posts` Collection
+               * Only allows documents to be created to the `Pages` Collection
                */
               filterCollections: (options) => {
                 return options.filter(
-                  (option) => option.label === "Blog Posts"
+                  (option) => option.label === "Pages"
                 );
               },
             }}

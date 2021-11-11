@@ -39,10 +39,10 @@ export const Layout = ({
               scroll-behavior: smooth;
             }
             :root {
-              --primary-color: ${themeData?.style.primary};
-              --accent1-color: ${themeData?.style.accent1};
-              --accent2-color: ${themeData?.style.accent2};
-              --accent3-color: ${themeData?.style.accent3};
+              --primary-color: ${themeData?.style?.primary};
+              --accent1-color: ${themeData?.style?.accent1};
+              --accent2-color: ${themeData?.style?.accent2};
+              --accent3-color: ${themeData?.style?.accent3};
             }
             .markdown ul {
               list-style: disc inside;
