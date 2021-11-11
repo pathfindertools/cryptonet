@@ -21,10 +21,15 @@ export const photoCardsBlockSchema: TinaTemplate = {
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
         columns: "3",
-        textColor: "white",
-        backgroundColor: "black",
-        contentOrder: "labelHeadingsContent",
+        textColor: "black",
+        textSize: "base",
+        headlineColor: "black",
+        headlineSize: "3xl",
+        subheadColor: "black",
+        subheadSize: "3xl",
+        backgroundColor: "white",
         textAlignment: "left",
+        contentOrder: "labelHeadingsContent",
       },
       cardStyle: {
         type: "solid",

@@ -13,13 +13,13 @@ export const bannerBlockSchema: TinaTemplate = {
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
-        textColor: "white",
-        headlineColor: "white",
-        subheadColor: "white",
-        backgroundColor: "black",
-        textSize: 'base',
-        headlineSize: '3xl',
-        subheadSize: 'lg',
+        textColor: "black",
+        textSize: "base",
+        headlineColor: "black",
+        headlineSize: "3xl",
+        subheadColor: "black",
+        subheadSize: "3xl",
+        backgroundColor: "white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
         width: "normal"
@@ -87,6 +87,15 @@ export const bannerBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
+          label: "Text Size",
+          name: "textSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
           label: "Headline Color",
           name: "headlineColor",
           ui: {
@@ -96,6 +105,15 @@ export const bannerBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
+          label: "Headline Size",
+          name: "headlineSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
+        },
+        {
           label: "Subhead Color",
           name: "subheadColor",
           type: "string",
@@ -103,6 +121,15 @@ export const bannerBlockSchema: TinaTemplate = {
             component: "select",
           },
           options: colorOptions,
+        },
+        {
+          label: "Subhead Size",
+          name: "subheadSize",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: textSizeOptions,
         },
         {
           label: "Background Color",
@@ -129,33 +156,6 @@ export const bannerBlockSchema: TinaTemplate = {
               type: "string",
             },
           ],
-        },
-        {
-          label: "Text Size",
-          name: "textSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
-        },
-        {
-          label: "Headline Size",
-          name: "headlineSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
-        },
-        {
-          label: "Subhead Size",
-          name: "subheadSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
         },
         {
           label: "Text Alignment",
