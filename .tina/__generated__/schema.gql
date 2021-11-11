@@ -76,53 +76,14 @@ type Collection {
 
 union DocumentNode = GlobalDocument | PagesDocument
 
-type GlobalHeaderIcon {
-  color: String
-  style: String
-  name: String
-}
-
-type GlobalHeaderNav {
-  href: String
-  label: String
-}
-
-type GlobalHeader {
-  icon: GlobalHeaderIcon
-  color: String
-  nav: [GlobalHeaderNav]
-}
-
-type GlobalFooterSocial {
-  facebook: String
-  twitter: String
-  instagram: String
-  github: String
-}
-
-type GlobalFooter {
-  color: String
-  social: GlobalFooterSocial
-}
-
 type GlobalRedirects {
   from: String
   to: String
 }
 
-type GlobalTheme {
-  color: String
-  font: String
-  icon: String
-  darkMode: String
-}
-
 type Global {
-  header: GlobalHeader
-  footer: GlobalFooter
   gtmId: String
   redirects: [GlobalRedirects]
-  theme: GlobalTheme
 }
 
 type GlobalDocument implements Node & Document {
@@ -420,53 +381,14 @@ input DocumentMutation {
   pages: PagesMutation
 }
 
-input GlobalHeaderIconMutation {
-  color: String
-  style: String
-  name: String
-}
-
-input GlobalHeaderNavMutation {
-  href: String
-  label: String
-}
-
-input GlobalHeaderMutation {
-  icon: GlobalHeaderIconMutation
-  color: String
-  nav: [GlobalHeaderNavMutation]
-}
-
-input GlobalFooterSocialMutation {
-  facebook: String
-  twitter: String
-  instagram: String
-  github: String
-}
-
-input GlobalFooterMutation {
-  color: String
-  social: GlobalFooterSocialMutation
-}
-
 input GlobalRedirectsMutation {
   from: String
   to: String
 }
 
-input GlobalThemeMutation {
-  color: String
-  font: String
-  icon: String
-  darkMode: String
-}
-
 input GlobalMutation {
-  header: GlobalHeaderMutation
-  footer: GlobalFooterMutation
   gtmId: String
   redirects: [GlobalRedirectsMutation]
-  theme: GlobalThemeMutation
 }
 
 input PagesBlocksFeatureImageMutation {

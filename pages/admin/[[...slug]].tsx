@@ -1,19 +1,14 @@
 import { useRouter } from "next/router";
-import { Button } from "tinacms";
-import { Container } from "../../components/container";
 import { Section } from "../../components/section";
 import { useEditState } from "tinacms/dist/edit-state";
-import { ThemeContext } from "../../components/theme";
 import React from "react";
 import { BiLogOut, BiArrowBack, BiHomeAlt, BiLogIn } from "react-icons/bi";
 
 const GoToEditPage: React.FC = () => {
   const { edit, setEdit } = useEditState();
   const router = useRouter();
-  const theme = React.useContext(ThemeContext);
   return (
     <Section className="flex-1 bg-white dark:bg-gray-900 dark:from-gray-900 from-white to-white dark:to-gray-900">
-      <Container size="large">
         <h1 className="w-full relative	mb-10 text-4xl font-extrabold tracking-normal leading-tight title-font">
           Welcome to the Admin page
         </h1>
@@ -98,7 +93,6 @@ const GoToEditPage: React.FC = () => {
             </>
           )}
         </div>
-      </Container>
     </Section>
   );
 };

@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { Container } from "./container";
 
-export const Footer = ({ data, icon, rawData }) => {
+export const Footer = () => {
   return (
     <footer className={`bg-black text-white`}>
       <div className="max-w-screen-lg md:px-12 p-6 mx-auto flex">

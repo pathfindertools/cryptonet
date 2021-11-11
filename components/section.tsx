@@ -1,5 +1,4 @@
 import React from "react";
-import { ThemeContext } from "./theme";
 import { lowerDash } from "../helpers/utilities"
 
 export const Section = ({
@@ -9,7 +8,6 @@ export const Section = ({
   className = "",
   image = "",
 }) => {
-  const theme = React.useContext(ThemeContext);
 
   const sectionColorCss = {
     white: "bg-white",

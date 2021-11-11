@@ -2,10 +2,8 @@ import React from "react";
 import Head from "next/head";
 import { Footer } from "./footer";
 import layoutData from "../content/global/index.json";
-import { Theme } from "./theme";
 
 export const Layout = ({
-  rawData = "",
   data = layoutData,
   themeData = {
     style: {
@@ -58,22 +56,10 @@ export const Layout = ({
           }}
         />
       </Head>
-      <Theme data={data?.theme}>
-        <div
-          className={`min-h-screen flex flex-col ${
-            data.theme.font === "nunito" && "font-nunito"
-          } ${data.theme.font === "lato" && "font-lato"} ${
-            data.theme.font === "sans" && "font-sans"
-          }`}
-        >
-          <div className="flex flex-col flex-1">{children}</div>
-          <Footer
-            rawData={rawData}
-            data={data?.footer}
-            icon={data?.header.icon}
-          />
-        </div>
-      </Theme>
+      <div className={`min-h-screen flex flex-col`}>
+        <div className="flex flex-col flex-1">{children}</div>
+        <Footer />
+      </div>
     </>
   );
 };
@@ -81,33 +67,6 @@ export const Layout = ({
 export const layoutQueryFragment = `
   getGlobalDocument(relativePath: "index.json") {
     data {
-      header {
-        icon {
-          name
-          color
-          style
-        }
-        color
-        nav {
-          href
-          label
-        }
-      }
-      footer {
-        color
-        social {
-          facebook
-          twitter
-          instagram
-          github
-        }
-      }  
-      theme {
-        color
-        icon
-        font
-        darkMode
-      }
       gtmId
       redirects {
         from
