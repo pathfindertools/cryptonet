@@ -1,57 +1,6 @@
 {
   "collections": [
     {
-      "label": "Blog Posts",
-      "name": "posts",
-      "path": "content/posts",
-      "fields": [
-        {
-          "type": "string",
-          "label": "Title",
-          "name": "title"
-        },
-        {
-          "type": "reference",
-          "label": "Author",
-          "name": "author",
-          "collections": [
-            "authors"
-          ]
-        },
-        {
-          "type": "datetime",
-          "label": "Posted Date",
-          "name": "date",
-          "ui": {
-            "dateFormat": "MMMM DD YYYY",
-            "timeFormat": "hh:mm A"
-          }
-        },
-        {
-          "type": "image",
-          "name": "featureImg",
-          "label": "Feature Image"
-        },
-        {
-          "type": "string",
-          "label": "Excerpt",
-          "ui": {
-            "component": "textarea"
-          },
-          "name": "excerpt"
-        },
-        {
-          "type": "string",
-          "label": "Body",
-          "ui": {
-            "component": "markdown"
-          },
-          "name": "body",
-          "isBody": true
-        }
-      ]
-    },
-    {
       "label": "Global",
       "name": "global",
       "path": "content/global",
@@ -428,23 +377,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "label": "Authors",
-      "name": "authors",
-      "path": "content/authors",
-      "fields": [
-        {
-          "type": "string",
-          "label": "Name",
-          "name": "name"
-        },
-        {
-          "type": "string",
-          "label": "Avatar",
-          "name": "avatar"
         }
       ]
     },

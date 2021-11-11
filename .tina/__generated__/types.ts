@@ -63,12 +63,8 @@ export type Query = {
   node: Node;
   getDocument: DocumentNode;
   getDocumentList: DocumentConnection;
-  getPostsDocument: PostsDocument;
-  getPostsList: PostsConnection;
   getGlobalDocument: GlobalDocument;
   getGlobalList: GlobalConnection;
-  getAuthorsDocument: AuthorsDocument;
-  getAuthorsList: AuthorsConnection;
   getPagesDocument: PagesDocument;
   getPagesList: PagesConnection;
 };
@@ -98,38 +94,12 @@ export type QueryGetDocumentListArgs = {
 };
 
 
-export type QueryGetPostsDocumentArgs = {
-  relativePath?: Maybe<Scalars['String']>;
-};
-
-
-export type QueryGetPostsListArgs = {
-  before?: Maybe<Scalars['String']>;
-  after?: Maybe<Scalars['String']>;
-  first?: Maybe<Scalars['Int']>;
-  last?: Maybe<Scalars['Int']>;
-};
-
-
 export type QueryGetGlobalDocumentArgs = {
   relativePath?: Maybe<Scalars['String']>;
 };
 
 
 export type QueryGetGlobalListArgs = {
-  before?: Maybe<Scalars['String']>;
-  after?: Maybe<Scalars['String']>;
-  first?: Maybe<Scalars['Int']>;
-  last?: Maybe<Scalars['Int']>;
-};
-
-
-export type QueryGetAuthorsDocumentArgs = {
-  relativePath?: Maybe<Scalars['String']>;
-};
-
-
-export type QueryGetAuthorsListArgs = {
   before?: Maybe<Scalars['String']>;
   after?: Maybe<Scalars['String']>;
   first?: Maybe<Scalars['Int']>;
@@ -183,42 +153,7 @@ export type CollectionDocumentsArgs = {
   last?: Maybe<Scalars['Int']>;
 };
 
-export type DocumentNode = PostsDocument | GlobalDocument | AuthorsDocument | PagesDocument;
-
-export type PostsAuthorDocument = AuthorsDocument;
-
-export type Posts = {
-  __typename?: 'Posts';
-  title?: Maybe<Scalars['String']>;
-  author?: Maybe<PostsAuthorDocument>;
-  date?: Maybe<Scalars['String']>;
-  featureImg?: Maybe<Scalars['String']>;
-  excerpt?: Maybe<Scalars['String']>;
-  body?: Maybe<Scalars['String']>;
-};
-
-export type PostsDocument = Node & Document & {
-  __typename?: 'PostsDocument';
-  id: Scalars['ID'];
-  sys: SystemInfo;
-  data: Posts;
-  form: Scalars['JSON'];
-  values: Scalars['JSON'];
-  dataJSON: Scalars['JSON'];
-};
-
-export type PostsConnectionEdges = {
-  __typename?: 'PostsConnectionEdges';
-  cursor?: Maybe<Scalars['String']>;
-  node?: Maybe<PostsDocument>;
-};
-
-export type PostsConnection = Connection & {
-  __typename?: 'PostsConnection';
-  pageInfo?: Maybe<PageInfo>;
-  totalCount: Scalars['Int'];
-  edges?: Maybe<Array<Maybe<PostsConnectionEdges>>>;
-};
+export type DocumentNode = GlobalDocument | PagesDocument;
 
 export type GlobalHeaderIcon = {
   __typename?: 'GlobalHeaderIcon';
@@ -298,35 +233,6 @@ export type GlobalConnection = Connection & {
   pageInfo?: Maybe<PageInfo>;
   totalCount: Scalars['Int'];
   edges?: Maybe<Array<Maybe<GlobalConnectionEdges>>>;
-};
-
-export type Authors = {
-  __typename?: 'Authors';
-  name?: Maybe<Scalars['String']>;
-  avatar?: Maybe<Scalars['String']>;
-};
-
-export type AuthorsDocument = Node & Document & {
-  __typename?: 'AuthorsDocument';
-  id: Scalars['ID'];
-  sys: SystemInfo;
-  data: Authors;
-  form: Scalars['JSON'];
-  values: Scalars['JSON'];
-  dataJSON: Scalars['JSON'];
-};
-
-export type AuthorsConnectionEdges = {
-  __typename?: 'AuthorsConnectionEdges';
-  cursor?: Maybe<Scalars['String']>;
-  node?: Maybe<AuthorsDocument>;
-};
-
-export type AuthorsConnection = Connection & {
-  __typename?: 'AuthorsConnection';
-  pageInfo?: Maybe<PageInfo>;
-  totalCount: Scalars['Int'];
-  edges?: Maybe<Array<Maybe<AuthorsConnectionEdges>>>;
 };
 
 export type PagesBlocksFeatureImage = {
@@ -625,9 +531,7 @@ export type Mutation = {
   __typename?: 'Mutation';
   addPendingDocument: DocumentNode;
   updateDocument: DocumentNode;
-  updatePostsDocument: PostsDocument;
   updateGlobalDocument: GlobalDocument;
-  updateAuthorsDocument: AuthorsDocument;
   updatePagesDocument: PagesDocument;
 };
 
@@ -646,21 +550,9 @@ export type MutationUpdateDocumentArgs = {
 };
 
 
-export type MutationUpdatePostsDocumentArgs = {
-  relativePath: Scalars['String'];
-  params: PostsMutation;
-};
-
-
 export type MutationUpdateGlobalDocumentArgs = {
   relativePath: Scalars['String'];
   params: GlobalMutation;
-};
-
-
-export type MutationUpdateAuthorsDocumentArgs = {
-  relativePath: Scalars['String'];
-  params: AuthorsMutation;
 };
 
 
@@ -670,19 +562,8 @@ export type MutationUpdatePagesDocumentArgs = {
 };
 
 export type DocumentMutation = {
-  posts?: Maybe<PostsMutation>;
   global?: Maybe<GlobalMutation>;
-  authors?: Maybe<AuthorsMutation>;
   pages?: Maybe<PagesMutation>;
-};
-
-export type PostsMutation = {
-  title?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
-  date?: Maybe<Scalars['String']>;
-  featureImg?: Maybe<Scalars['String']>;
-  excerpt?: Maybe<Scalars['String']>;
-  body?: Maybe<Scalars['String']>;
 };
 
 export type GlobalHeaderIconMutation = {
@@ -732,11 +613,6 @@ export type GlobalMutation = {
   gtmId?: Maybe<Scalars['String']>;
   redirects?: Maybe<Array<Maybe<GlobalRedirectsMutation>>>;
   theme?: Maybe<GlobalThemeMutation>;
-};
-
-export type AuthorsMutation = {
-  name?: Maybe<Scalars['String']>;
-  avatar?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksFeatureImageMutation = {

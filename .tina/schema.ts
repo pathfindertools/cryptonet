@@ -1,5 +1,4 @@
 import { defineSchema } from "@tinacms/cli";
-import type { TinaTemplate } from "@tinacms/cli";
 
 import { iconSchema } from "./icon";
 import { featureBlockSchema } from "./feature";
@@ -8,87 +7,8 @@ import { textCardsBlockSchema } from "./text-cards";
 import { bannerBlockSchema } from "./banner";
 import { colorOptions } from "./shared/options"
 
-const contentBlockSchema: TinaTemplate = {
-  name: "content",
-  label: "Content",
-  ui: {
-    defaultItem: {
-      body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
-    },
-  },
-  fields: [
-    {
-      type: "string",
-      ui: {
-        component: "markdown",
-      },
-      label: "Body",
-      name: "body",
-    },
-    {
-      type: "string",
-      label: "Color",
-      name: "color",
-      options: [
-        { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
-      ],
-    },
-  ],
-};
-
 export default defineSchema({
   collections: [
-    {
-      label: "Blog Posts",
-      name: "posts",
-      path: "content/posts",
-      fields: [
-        {
-          type: "string",
-          label: "Title",
-          name: "title",
-        },
-        {
-          type: "reference",
-          label: "Author",
-          name: "author",
-          collections: ["authors"],
-        },
-        {
-          type: "datetime",
-          label: "Posted Date",
-          name: "date",
-          ui: {
-            dateFormat: "MMMM DD YYYY",
-            timeFormat: "hh:mm A",
-          },
-        },
-        {
-          type: "image",
-          name: "featureImg",
-          label: "Feature Image",
-        },
-        {
-          type: "string",
-          label: "Excerpt",
-          ui: {
-            component: "textarea",
-          },
-          name: "excerpt",
-        },
-        {
-          type: "string",
-          label: "Body",
-          ui: {
-            component: "markdown",
-          },
-          name: "body",
-          isBody: true,
-        },
-      ],
-    },
     {
       label: "Global",
       name: "global",
@@ -299,23 +219,6 @@ export default defineSchema({
               ],
             },
           ],
-        },
-      ],
-    },
-    {
-      label: "Authors",
-      name: "authors",
-      path: "content/authors",
-      fields: [
-        {
-          type: "string",
-          label: "Name",
-          name: "name",
-        },
-        {
-          type: "string",
-          label: "Avatar",
-          name: "avatar",
         },
       ],
     },
