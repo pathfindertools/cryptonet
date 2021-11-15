@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Container } from "../components/container";
 import { Section } from "../components/section";
 import { Layout } from "../components/layout";
 import { useEditState } from "tinacms/dist/edit-state";
@@ -15,9 +14,7 @@ const GoToEditPage: React.FC = () => {
   return (
     <Layout>
       <Section className="flex-1">
-        <Container size="large prose prose-xl">
-          <h2>Exiting edit mode...</h2>
-        </Container>
+        <h2>Exiting edit mode...</h2>
       </Section>
     </Layout>
   );

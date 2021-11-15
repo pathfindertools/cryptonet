@@ -58,12 +58,17 @@
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
                     "flipLayout": false,
-                    "textColor": "white",
-                    "backgroundColor": "black",
-                    "contentOrder": "labelHeadingsContent",
                     "imageStyle": "natural",
+                    "textColor": "black",
+                    "textSize": "base",
+                    "headlineColor": "black",
+                    "headlineSize": "3xl",
+                    "subheadColor": "black",
+                    "subheadSize": "3xl",
+                    "backgroundColor": "white",
+                    "textAlignment": "left",
                     "contentAlignment": "center",
-                    "textAlignment": "left"
+                    "contentOrder": "labelHeadingsContent"
                   }
                 }
               },
@@ -762,10 +767,15 @@
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
                     "columns": "3",
-                    "textColor": "white",
-                    "backgroundColor": "black",
-                    "contentOrder": "labelHeadingsContent",
-                    "textAlignment": "left"
+                    "textColor": "black",
+                    "textSize": "base",
+                    "headlineColor": "black",
+                    "headlineSize": "3xl",
+                    "subheadColor": "black",
+                    "subheadSize": "3xl",
+                    "backgroundColor": "white",
+                    "textAlignment": "left",
+                    "contentOrder": "labelHeadingsContent"
                   },
                   "cardStyle": {
                     "type": "solid",
@@ -2014,19 +2024,24 @@
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
                     "columns": "3",
-                    "textColor": "white",
-                    "backgroundColor": "black",
-                    "contentOrder": "labelHeadingsContent",
-                    "textAlignment": "left"
+                    "textColor": "black",
+                    "textSize": "base",
+                    "headlineColor": "black",
+                    "headlineSize": "3xl",
+                    "subheadColor": "black",
+                    "subheadSize": "3xl",
+                    "backgroundColor": "white",
+                    "textAlignment": "left",
+                    "contentOrder": "labelHeadingsContent"
                   },
                   "cardStyle": {
                     "type": "solid",
                     "buttonType": "solid",
-                    "textColor": "white",
+                    "textColor": "black",
                     "textSize": "base",
-                    "headlineColor": "white",
+                    "headlineColor": "black",
                     "headlineSize": "2xl",
-                    "subheadColor": "white",
+                    "subheadColor": "black",
                     "subheadSize": "lg",
                     "accentColor": "primary",
                     "backgroundColor": "gray"
@@ -3290,13 +3305,13 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
-                    "textColor": "white",
-                    "headlineColor": "white",
-                    "subheadColor": "white",
-                    "backgroundColor": "black",
+                    "textColor": "black",
                     "textSize": "base",
+                    "headlineColor": "black",
                     "headlineSize": "3xl",
-                    "subheadSize": "lg",
+                    "subheadColor": "black",
+                    "subheadSize": "3xl",
+                    "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
                     "width": "normal"
@@ -3546,6 +3561,64 @@
                       ]
                     },
                     {
+                      "label": "Text Size",
+                      "name": "textSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Headline Color",
                       "name": "headlineColor",
                       "ui": {
@@ -3592,6 +3665,64 @@
                       ]
                     },
                     {
+                      "label": "Headline Size",
+                      "name": "headlineSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
+                        }
+                      ]
+                    },
+                    {
                       "label": "Subhead Color",
                       "name": "subheadColor",
                       "type": "string",
@@ -3634,6 +3765,64 @@
                         {
                           "label": "Black",
                           "value": "black"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Subhead Size",
+                      "name": "subheadSize",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "XS",
+                          "value": "xs"
+                        },
+                        {
+                          "label": "Small",
+                          "value": "sm"
+                        },
+                        {
+                          "label": "Regular",
+                          "value": "base"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "lg"
+                        },
+                        {
+                          "label": "XL",
+                          "value": "xl"
+                        },
+                        {
+                          "label": "2XL",
+                          "value": "2xl"
+                        },
+                        {
+                          "label": "3XL",
+                          "value": "3xl"
+                        },
+                        {
+                          "label": "4XL",
+                          "value": "4xl"
+                        },
+                        {
+                          "label": "5XL",
+                          "value": "5xl"
+                        },
+                        {
+                          "label": "6XL",
+                          "value": "6xl"
+                        },
+                        {
+                          "label": "7XL",
+                          "value": "7xl"
+                        },
+                        {
+                          "label": "8XL",
+                          "value": "8xl"
                         }
                       ]
                     },
@@ -3697,180 +3886,6 @@
                           "name": "alt",
                           "label": "Alt Text",
                           "type": "string"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
                         }
                       ]
                     },

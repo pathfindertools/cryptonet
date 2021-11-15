@@ -406,13 +406,13 @@ export type PagesBlocksBannerStyleBackgroundImage = {
 export type PagesBlocksBannerStyle = {
   __typename?: 'PagesBlocksBannerStyle';
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
   headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
   subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImage>;
-  textSize?: Maybe<Scalars['String']>;
-  headlineSize?: Maybe<Scalars['String']>;
-  subheadSize?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
   contentOrder?: Maybe<Scalars['String']>;
   width?: Maybe<Scalars['String']>;
@@ -725,13 +725,13 @@ export type PagesBlocksBannerStyleBackgroundImageMutation = {
 
 export type PagesBlocksBannerStyleMutation = {
   textColor?: Maybe<Scalars['String']>;
+  textSize?: Maybe<Scalars['String']>;
   headlineColor?: Maybe<Scalars['String']>;
+  headlineSize?: Maybe<Scalars['String']>;
   subheadColor?: Maybe<Scalars['String']>;
+  subheadSize?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   backgroundImage?: Maybe<PagesBlocksBannerStyleBackgroundImageMutation>;
-  textSize?: Maybe<Scalars['String']>;
-  headlineSize?: Maybe<Scalars['String']>;
-  subheadSize?: Maybe<Scalars['String']>;
   textAlignment?: Maybe<Scalars['String']>;
   contentOrder?: Maybe<Scalars['String']>;
   width?: Maybe<Scalars['String']>;

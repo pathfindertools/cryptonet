@@ -300,13 +300,13 @@ type PagesBlocksBannerStyleBackgroundImage {
 
 type PagesBlocksBannerStyle {
   textColor: String
+  textSize: String
   headlineColor: String
+  headlineSize: String
   subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
-  textSize: String
-  headlineSize: String
-  subheadSize: String
   textAlignment: String
   contentOrder: String
   width: String
@@ -585,13 +585,13 @@ input PagesBlocksBannerStyleBackgroundImageMutation {
 
 input PagesBlocksBannerStyleMutation {
   textColor: String
+  textSize: String
   headlineColor: String
+  headlineSize: String
   subheadColor: String
+  subheadSize: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
-  textSize: String
-  headlineSize: String
-  subheadSize: String
   textAlignment: String
   contentOrder: String
   width: String
