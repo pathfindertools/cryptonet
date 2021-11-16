@@ -5,7 +5,7 @@ blocks:
       src: >-
         http://res.cloudinary.com/tombustout/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
-    headline: Connect. Build. Grow.
+    headline: Connect. Build. Grow. Test.
     subhead: ''
     body: >-
       With Filecoin and IPFS, we empower developers and entrepreneurs to solve
@@ -26,12 +26,12 @@ blocks:
         backgroundColor: primary
     style:
       textColor: white
-      headlineColor: primary
-      subheadColor: grayLight
-      backgroundColor: black
       textSize: lg
+      headlineColor: primary
       headlineSize: 4xl
+      subheadColor: grayLight
       subheadSize: 2xl
+      backgroundColor: black
       textAlignment: center
       contentOrder: labelHeadingsContent
       width: narrow
@@ -393,12 +393,12 @@ blocks:
         backgroundColor: primary
     style:
       textColor: white
-      headlineColor: primary
-      subheadColor: primary
-      backgroundColor: black
       textSize: lg
+      headlineColor: primary
       headlineSize: 4xl
+      subheadColor: primary
       subheadSize: 2xl
+      backgroundColor: black
       textAlignment: right
       contentOrder: labelHeadingsContent
       width: normal
