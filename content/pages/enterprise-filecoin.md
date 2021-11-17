@@ -23,11 +23,11 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: This is the main headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: >-
+      Filecoin is an open, decentralized-storage network offering commoditized
+      pricing for verifiable, durable, and available storage.
+    subhead: ''
+    body: ''
     style:
       flipLayout: false
       imageStyle: natural
@@ -43,12 +43,22 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: ''
+    headline: >-
+      Filecoin has a vast ecosystem and an established community of developers,
+      storage providers, and clients.
     subhead: ''
-    body: ''
+    body: >-
+      * 7,000+ Developers & Contributors building applications backed by
+      Filecoin
+
+      * 10 EiB+ Total storage capacity on the Filecoin network
+
+      * \~3,000 Globally distributed storage providers across geographies
+
+      * 400+ Applications, projects, and funded startups
     style:
       columns: '4'
-      textColor: white
+      textColor: grayDark
       headlineColor: black
       headlineSize: xl
       subheadColor: black
@@ -64,7 +74,7 @@ blocks:
       headlineSize: 2xl
       subheadColor: black
       subheadSize: lg
-      backgroundColor: white
+      backgroundColor: gray
       accentColor: primary
     _template: textCards
 siteTitle: Filecoin for nonprofits
