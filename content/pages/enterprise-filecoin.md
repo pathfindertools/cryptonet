@@ -4,7 +4,10 @@ blocks:
   - label: ''
     headline: Filecoin for nonprofits
     subhead: Decentralized storage at scale
-    body: ''
+    body: >-
+      Introduction to answer questions such as "Who is this page meant to
+      serve?" "What does this page have to offer me?" "How is this related to
+      filecoin.io?"
     style:
       flipLayout: false
       imageStyle: natural
@@ -67,7 +70,7 @@ blocks:
       backgroundColor: white
       accentColor: primary
     _template: textCards
-siteTitle: Enterprise Filecoin
+siteTitle: Filecoin for nonprofits
 siteDescription: >-
   With Filecoin and IPFS, we empower developers and entrepreneurs to solve
   significant problems and ship innovative applications. Join our hackathons and
