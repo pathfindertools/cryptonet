@@ -24,8 +24,8 @@ blocks:
     _template: feature
   - label: ''
     headline: >-
-      Filecoin has a vast ecosystem and an established community of developers,
-      storage providers and clients
+      Filecoin is an open, decentralized-storage network offering commoditized
+      pricing for verifiable, durable, and available storage.
     subhead: ''
     body: ''
     style:
