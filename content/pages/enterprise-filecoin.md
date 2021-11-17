@@ -23,9 +23,27 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: >-
-      Filecoin is an open, decentralized-storage network offering commoditized
-      pricing for verifiable, durable, and available storage.
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      flipLayout: false
+      imageStyle: natural
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentAlignment: center
+      contentOrder: labelHeadingsContent
+    _template: feature
+  - label: ''
+    headline: ''
     subhead: ''
     body: ''
     style:
