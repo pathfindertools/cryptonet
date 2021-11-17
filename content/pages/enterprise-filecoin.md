@@ -23,32 +23,11 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: ''
-    subhead: >-
+    headline: >-
       Filecoin has a vast ecosystem and an established community of developers,
       storage providers and clients
+    subhead: ''
     body: ''
-    items:
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
     style:
       columns: '4'
       textColor: white
