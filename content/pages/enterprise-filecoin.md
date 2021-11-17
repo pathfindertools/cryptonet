@@ -2,8 +2,8 @@
 draft: true
 blocks:
   - label: ''
-    headline: Filecoin for large datasets
-    subhead: Download Storage at Scale
+    headline: Filecoin for nonprofits
+    subhead: Decentralized storage at scale
     body: ''
     style:
       flipLayout: false
