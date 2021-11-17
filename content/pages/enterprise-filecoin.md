@@ -77,6 +77,10 @@ siteDescription: >-
   shape the future of the web to make it more decentralized, robust, and secure!
 siteImageSrc: >-
   http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+navItems:
+  - label: Solutions
+  - {}
+  - {}
 style:
   primary: '#FF007A'
   accent1: '#0E4465'
