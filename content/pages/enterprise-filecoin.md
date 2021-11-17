@@ -87,6 +87,6 @@ style:
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
   navTextColor: white
-  navBackgroundColor: black
+  navBackgroundColor: grayDark
 ---
 
