@@ -28,22 +28,6 @@ blocks:
       pricing for verifiable, durable, and available storage
     subhead: ''
     body: (image)
-    items:
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
     style:
       columns: '3'
       textColor: black
@@ -72,20 +56,16 @@ blocks:
       Filecoin has a vast ecosystem and an established community of developers,
       storage providers, and clients.
     subhead: ''
-    body: >-
-      * 7,000+ Developers & Contributors building applications backed by
-      Filecoin
-
-      * 10 EiB+ Total storage capacity on the Filecoin network
-
-      * \~3,000 Globally distributed storage providers across geographies
-
-      * 400+ Applications, projects, and funded startups
+    body: ''
+    items:
+      - headline: '7,000+'
+        subhead: ''
+        text: Developers & Contributors building applications backed by Filecoin
     style:
       columns: '4'
       textColor: grayDark
       headlineColor: black
-      headlineSize: xl
+      headlineSize: 3xl
       subheadColor: black
       backgroundColor: grayLight
       textAlignment: left
