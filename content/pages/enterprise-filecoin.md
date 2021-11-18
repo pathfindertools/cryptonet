@@ -60,13 +60,16 @@ blocks:
     items:
       - headline: '7,000+'
         subhead: ''
-        text: Developers & Contributors building applications backed by Filecoin
+        text: 'Developers & Contributors building applications backed by Filecoin '
       - headline: 10 EiB+
         subhead: ''
         text: Total storage capacity on the Filecoin network
       - headline: '~3,000'
         subhead: ''
         text: Globally distributed storage providers across geographies
+      - headline: 400+
+        subhead: ''
+        text: 'Applications, projects, and funded startups'
     style:
       columns: '4'
       textColor: grayDark
