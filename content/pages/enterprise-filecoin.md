@@ -281,7 +281,7 @@ blocks:
       headlineSize: 3xl
       subheadColor: black
       subheadSize: 3xl
-      backgroundColor: white
+      backgroundColor: grayLight
       textAlignment: left
       contentOrder: labelHeadingsContent
     cardStyle:
@@ -295,6 +295,96 @@ blocks:
       subheadSize: lg
       backgroundColor: gray
       accentColor: white
+    _template: textCards
+  - label: ''
+    headline: Pricing
+    subhead: A brief intro to this table might be helpful.
+    body: >-
+      |  | Price to store 1 TiB / year |  |
+
+      | --- | --- | --- |
+
+      | **Filecoin Plus** (verified deals) | $0 | Apply to [verify your
+      data](http://url.asdfasd) and get access to special storage pricing |
+
+      | **Filecoin** | <$1* |  |
+
+      | **Public cloud** | $24** |  |
+
+
+      \*Average pricing shown from the last 30 days, rates will vary
+      ([source](link.lkajsdflkjasdf))
+
+
+      \**Cloud pricing compared to [S3 Glacier Deep
+      Archive](https://aws.amazon.com/s3/pricing/)
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
+  - label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
     _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
