@@ -137,9 +137,23 @@ blocks:
           * Data lock-in makes price renegotiation hard
       - headline: Filecoin
         subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+        text: |-
+          **Decentralized**
+          * No single point of failure
+          * Multi-mode access: no proprietary protocol, no vendor lock-in
+          * Designed for innovation on all levels
+          * Storage agnostic at storage provider level
+
+          **Robust**
+          * Daily Bit cryptographic data proofing
+          * Always available data via verified replication
+          * Providers are incentivized to stay **online 24/7,** or lose pledge
+
+          **Efficient**
+          * Open spot market for storage
+          * Incentive structures enabling cheap prices*
+          * Store 6 copies easily
+          * Data stored closer of publicly consumable data
     style:
       columns: '2'
       textColor: black
