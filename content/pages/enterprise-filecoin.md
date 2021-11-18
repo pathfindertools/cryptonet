@@ -64,6 +64,9 @@ blocks:
       - headline: 10 EiB+
         subhead: ''
         text: Total storage capacity on the Filecoin network
+      - headline: '~3,000'
+        subhead: ''
+        text: Globally distributed storage providers across geographies
     style:
       columns: '4'
       textColor: grayDark
