@@ -92,7 +92,7 @@ blocks:
       accentColor: primary
     _template: textCards
   - label: ''
-    headline: ''
+    headline: Filecoin solves many problems associated with traditional storage.
     subhead: ''
     body: ''
     items:
@@ -109,8 +109,14 @@ blocks:
 
           * Dominant cloud interfaces prevent lower level protocol innovation
           (peer to peer)
-
-
+      - headline: Filecoin
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: ''
+        subhead: ''
+        text: >-
           #### Fragile
 
 
@@ -121,17 +127,6 @@ blocks:
 
           * Public cloud providers have various backup methodologies, not all
           will suit enterprise needs
-
-
-          #### Costly
-
-
-          * Organizations are locked into specific architectures with high
-          egress and data migration costs
-
-          * Non-predictive cost structure
-
-          * Data lock-in makes price renegotiation hard
       - headline: Here's Another Card
         subhead: ''
         text: >-
