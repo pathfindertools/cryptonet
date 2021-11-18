@@ -87,7 +87,7 @@ blocks:
       headlineColor: black
       headlineSize: xl
       subheadColor: black
-      backgroundColor: white
+      backgroundColor: grayLight
       textAlignment: left
       contentOrder: labelHeadingsContent
     cardStyle:
