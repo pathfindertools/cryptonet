@@ -342,27 +342,18 @@ blocks:
       accentColor: primary
     _template: textCards
   - label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
+    headline: GigaOm's Sonar Report on decentralized storage
+    subhead: ''
     body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+      A short description of the report, and how it supports Filecoin. A short
+      description of the report, and how it supports Filecoin. 
     items:
-      - headline: Here's Another Card
+      - headline: ''
         subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+        text: ''
+        link: >-
+          https://www.storj.io/blog/gigaom-sonar-for-decentralized-storage-an-emerging-technology-insight-report
+        buttonLabel: Download the report
     style:
       columns: '3'
       textColor: black
@@ -371,21 +362,21 @@ blocks:
       headlineSize: 3xl
       subheadColor: black
       subheadSize: 3xl
-      backgroundColor: white
+      backgroundColor: grayLight
       textAlignment: left
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       buttonType: solid
-      textColor: black
+      textColor: white
       textSize: base
-      headlineColor: black
+      headlineColor: white
       headlineSize: 2xl
-      subheadColor: black
+      subheadColor: white
       subheadSize: lg
       backgroundColor: gray
       accentColor: primary
-    _template: textCards
+    _template: photoCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
   Introduction to answer questions such as "Who is this page meant to serve?"
@@ -397,7 +388,7 @@ navItems:
   - {}
   - {}
 style:
-  primary: '#00A8FF'
+  primary: '#FFFFFF'
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
