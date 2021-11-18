@@ -8,14 +8,20 @@ blocks:
       Introduction to answer questions such as "Who is this page meant to
       serve?" "What does this page have to offer me?" "How is this related to
       filecoin.io?"
+    buttons:
+      - label: Learn more
+        link: /
+        type: solid
+        textColor: black
+        backgroundColor: white
     style:
-      textColor: black
+      textColor: grayLight
       textSize: base
-      headlineColor: black
+      headlineColor: white
       headlineSize: 5xl
-      subheadColor: black
+      subheadColor: gray
       subheadSize: 3xl
-      backgroundColor: white
+      backgroundColor: grayDark
       textAlignment: left
       contentOrder: labelHeadingsContent
       width: normal
@@ -97,25 +103,20 @@ blocks:
       - headline: Traditional storage
         subhead: ''
         text: >-
-          #### Centralized
+          #### **Centralized**
 
 
-          * A handful of companies have become the dominant platforms for the
+          A handful of companies have become the dominant platforms for the
           internet, leading to limited offerings in the cloud storage space
+
 
           * Limited set of locations and regions available
 
           * Dominant cloud interfaces prevent lower level protocol innovation
           (peer to peer)
-      - headline: Filecoin
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: ''
-        subhead: ''
-        text: >-
-          #### Fragile
+
+
+          #### **Fragile**
 
 
           * Dominant cloud interfaces prevent lower level protocol innovation
@@ -125,6 +126,14 @@ blocks:
 
           * Public cloud providers have various backup methodologies, not all
           will suit enterprise needs
+      - headline: Filecoin
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: ''
+        subhead: ''
+        text: ''
       - headline: Here's Another Card
         subhead: ''
         text: >-
