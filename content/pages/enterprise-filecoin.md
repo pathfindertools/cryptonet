@@ -91,6 +91,75 @@ blocks:
       backgroundColor: gray
       accentColor: primary
     _template: textCards
+  - label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - headline: Traditional storage
+        subhead: ''
+        text: >-
+          #### Centralized
+
+
+          * A handful of companies have become the dominant platforms for the
+          internet, leading to limited offerings in the cloud storage space
+
+          * Limited set of locations and regions available
+
+          * Dominant cloud interfaces prevent lower level protocol innovation
+          (peer to peer)
+
+
+          #### Fragile
+
+
+          * Dominant cloud interfaces prevent lower level protocol innovation
+          (peer to peer)
+
+          * Vendor lock-in concentrates risk with one provider
+
+          * Public cloud providers have various backup methodologies, not all
+          will suit enterprise needs
+
+
+          #### Costly
+
+
+          * Organizations are locked into specific architectures with high
+          egress and data migration costs
+
+          * Non-predictive cost structure
+
+          * Data lock-in makes price renegotiation hard
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    style:
+      columns: '2'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: white
+      accentColor: primary
+    _template: textCards
 siteTitle: Filecoin for Large Datasets
 siteDescription: >-
   Introduction to answer questions such as "Who is this page meant to serve?"
