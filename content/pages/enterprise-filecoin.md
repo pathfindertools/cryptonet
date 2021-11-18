@@ -31,7 +31,7 @@ blocks:
       Filecoin is an open, decentralized-storage network offering commoditized
       pricing for verifiable, durable, and available storage
     subhead: ''
-    body: (image)
+    body: '\[ image \]'
     style:
       columns: '3'
       textColor: black
@@ -226,8 +226,37 @@ blocks:
       - label: Download decentralized storage report
         link: /
         type: solid
-        textColor: black
-        backgroundColor: primary
+        textColor: white
+        backgroundColor: grayDark
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
+  - label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
     items:
       - headline: Here's Another Card
         subhead: ''
