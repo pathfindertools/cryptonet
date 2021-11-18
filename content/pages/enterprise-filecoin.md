@@ -2,7 +2,7 @@
 draft: true
 blocks:
   - label: ''
-    headline: Filecoin for nonprofits
+    headline: Filecoin for Large Datasets
     subhead: Decentralized storage at scale
     body: >-
       Introduction to answer questions such as "Who is this page meant to
@@ -23,14 +23,29 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: >-
-      Filecoin is an open, decentralized-storage network offering commoditized
-      pricing for verifiable, durable, and available storage.
-    subhead: ''
-    body: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
     style:
-      flipLayout: false
-      imageStyle: natural
+      columns: '3'
       textColor: black
       textSize: base
       headlineColor: black
@@ -39,9 +54,19 @@ blocks:
       subheadSize: 3xl
       backgroundColor: white
       textAlignment: left
-      contentAlignment: center
       contentOrder: labelHeadingsContent
-    _template: feature
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
   - label: ''
     headline: >-
       Filecoin has a vast ecosystem and an established community of developers,
