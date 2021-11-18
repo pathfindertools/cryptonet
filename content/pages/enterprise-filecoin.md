@@ -181,6 +181,9 @@ blocks:
     headline: ''
     subhead: ''
     body: >-
+      \[ photo \]
+
+
       **"Unlike other solutions in this space, most of the storage providers in
       the Filecoin network have committed to offering datacenter resources, and
       have made an important initial investment in both hardware and collateral,
