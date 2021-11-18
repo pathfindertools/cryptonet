@@ -73,10 +73,10 @@ blocks:
     cardStyle:
       type: solid
       buttonType: solid
-      textColor: black
+      textColor: grayLight
       textSize: base
-      headlineColor: black
-      headlineSize: 2xl
+      headlineColor: white
+      headlineSize: 4xl
       subheadColor: black
       subheadSize: lg
       backgroundColor: gray
