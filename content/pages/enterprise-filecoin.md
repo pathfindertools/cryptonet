@@ -2,12 +2,9 @@
 draft: true
 blocks:
   - label: ''
-    headline: Filecoin for Really Big Datasets
+    headline: Filecoin for Really Large
     subhead: Decentralized storage at scale
     body: >-
-      something
-
-
       Introduction to answer questions such as "Who is this page meant to
       serve?" "What does this page have to offer me?" "How is this related to
       filecoin.io?"
