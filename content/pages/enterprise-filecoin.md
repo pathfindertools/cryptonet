@@ -177,6 +177,44 @@ blocks:
       backgroundColor: white
       accentColor: primary
     _template: textCards
+  - label: ''
+    headline: ''
+    subhead: ''
+    body: >-
+      **"Unlike other solutions in this space, most of the storage providers in
+      the Filecoin network have committed to offering datacenter resources, and
+      have made an important initial investment in both hardware and collateral,
+      to ensure the quality of the service, data availability, and long-term
+      reliability."**
+
+
+      _Enrico Signoretti_
+
+
+      GigaOm
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: grayLight
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
   Introduction to answer questions such as "Who is this page meant to serve?"
