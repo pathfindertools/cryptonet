@@ -2,11 +2,12 @@
 draft: true
 blocks:
   - label: ''
-    headline: This is the main headline
-    subhead: Here is a subhead
+    headline: Filecoin for Large Datasets
+    subhead: Decentralized storage at scale
     body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+      Introduction to answer questions such as "Who is this page meant to
+      serve?" "What does this page have to offer me?" "How is this related to
+      filecoin.io?"
     style:
       textColor: black
       textSize: base
@@ -19,27 +20,6 @@ blocks:
       contentOrder: labelHeadingsContent
       width: normal
     _template: banner
-  - label: ''
-    headline: Filecoin for Really Big Datasets
-    subhead: Decentralized storage at scale
-    body: >-
-      Introduction to answer questions such as "Who is this page meant to
-      serve?" "What does this page have to offer me?" "How is this related to
-      filecoin.io?"
-    style:
-      flipLayout: false
-      imageStyle: natural
-      textColor: black
-      textSize: base
-      headlineColor: black
-      headlineSize: 5xl
-      subheadColor: black
-      subheadSize: base
-      backgroundColor: grayLight
-      textAlignment: left
-      contentAlignment: center
-      contentOrder: labelHeadingsContent
-    _template: feature
   - label: ''
     headline: >-
       Filecoin is an open, decentralized-storage network offering commoditized
