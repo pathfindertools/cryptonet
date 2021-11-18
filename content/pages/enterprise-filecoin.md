@@ -23,11 +23,11 @@ blocks:
       contentOrder: labelHeadingsContent
     _template: feature
   - label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: >-
+      Filecoin is an open, decentralized-storage network offering commoditized
+      pricing for verifiable, durable, and available storage
+    subhead: ''
+    body: (image)
     items:
       - headline: Here's Another Card
         subhead: ''
