@@ -103,12 +103,11 @@ blocks:
       - headline: Traditional storage
         subhead: ''
         text: >-
-          #### **Centralized**
+          **Centralized**
 
 
-          A handful of companies have become the dominant platforms for the
+          * A handful of companies have become the dominant platforms for the
           internet, leading to limited offerings in the cloud storage space
-
 
           * Limited set of locations and regions available
 
@@ -116,25 +115,27 @@ blocks:
           (peer to peer)
 
 
-          #### **Fragile**
+          **Fragile**
 
-
-          * Dominant cloud interfaces prevent lower level protocol innovation
-          (peer to peer)
+          * Lack of network stability in the infrastructure leads to data
+          accessibility issues
 
           * Vendor lock-in concentrates risk with one provider
 
           * Public cloud providers have various backup methodologies, not all
           will suit enterprise needs
+
+
+          **Costly**
+
+
+          * Organizations are locked into specific architectures with high
+          egress and data migration costs
+
+          * Non-predictive cost structure
+
+          * Data lock-in makes price renegotiation hard
       - headline: Filecoin
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: ''
-        subhead: ''
-        text: ''
-      - headline: Here's Another Card
         subhead: ''
         text: >-
           This is where you might talk about the card, if this wasn't just
