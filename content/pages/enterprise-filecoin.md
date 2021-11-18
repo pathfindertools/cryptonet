@@ -2,6 +2,24 @@
 draft: true
 blocks:
   - label: ''
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 5xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+      width: normal
+    _template: banner
+  - label: ''
     headline: Filecoin for Really Big Datasets
     subhead: Decentralized storage at scale
     body: >-
@@ -166,7 +184,7 @@ navItems:
   - {}
   - {}
 style:
-  primary: '#FF007A'
+  primary: '#00A8FF'
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
