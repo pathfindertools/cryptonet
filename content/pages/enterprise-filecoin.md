@@ -252,27 +252,27 @@ blocks:
       accentColor: primary
     _template: textCards
   - label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: Multiple tools help you onboard data to Filecoin
+    subhead: ''
+    body: ''
     items:
-      - headline: Here's Another Card
+      - headline: ARG Solutions
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
+          **Estuary** is open-source software allowing simple sending of public
+          data to the Filecoin network to be retrieved from anywhere
+        link: Learn more
+        buttonLabel: Learn more
+        accentColor: white
+      - headline: Textile
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          **Textile’s Filecoin Auctions** are an open deal marketplace where
+          storage providers bid on storage requests in real-time - helping
+          clients get better prices and more engaged providers (leading to
+          better deal success!)
+        link: Learn more
+        buttonLabel: Learn more
     style:
       columns: '3'
       textColor: black
@@ -287,14 +287,14 @@ blocks:
     cardStyle:
       type: solid
       buttonType: solid
-      textColor: black
+      textColor: grayLight
       textSize: base
-      headlineColor: black
+      headlineColor: white
       headlineSize: 2xl
       subheadColor: black
       subheadSize: lg
       backgroundColor: gray
-      accentColor: primary
+      accentColor: white
     _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
