@@ -390,16 +390,23 @@ blocks:
           6000 TiB)
         link: asdfsd.aaidl
         buttonLabel: Learn more
-      - headline: Here's Another Card
+      - headline: Internet Archive
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
+          The Internet Archive is leveraging IPFS/Filecoin to begin storing a
+          decentralized copy of their archive - starting with their End of Term
+          crawl (total dataset 1000TiB)
+        link: fdsfgdsr.nkoi
+        buttonLabel: Learn more
+      - headline: Slingshot
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Slingshot is a community competition with the mission to preserve
+          real, valuable, and usable public datasets on the Filecoin network
+          (30PiB+ open datasets stored through Slingshot)
+        link: sikljko.vol
+        buttonLabel: Learn more
+        accentColor: white
     style:
       columns: '3'
       textColor: black
