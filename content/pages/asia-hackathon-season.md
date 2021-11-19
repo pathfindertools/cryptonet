@@ -199,12 +199,13 @@ meta:
     distinct hackathon events.
   siteImageSrc: >-
     http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+nav:
+  navTextColor: white
+  navBackgroundColor: black
 style:
   primary: '#FFDE30'
   accent1: '#FF388B'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
-  navTextColor: white
-  navBackgroundColor: black
 ---
 

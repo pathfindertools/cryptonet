@@ -411,12 +411,13 @@ meta:
     shape the future of the web to make it more decentralized, robust, and secure!
   siteImageSrc: >-
     http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+nav:
+  navTextColor: white
+  navBackgroundColor: black
 style:
   primary: '#FF007A'
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
-  navTextColor: white
-  navBackgroundColor: black
 ---
 

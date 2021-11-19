@@ -31,7 +31,7 @@ blocks:
       Filecoin is an open, decentralized-storage network offering commoditized
       pricing for verifiable, durable, and available storage
     subhead: ''
-    body: (image)
+    body: '\[ image \]'
     style:
       columns: '3'
       textColor: black
@@ -181,6 +181,9 @@ blocks:
     headline: ''
     subhead: ''
     body: >-
+      \[ photo \]
+
+
       **"Unlike other solutions in this space, most of the storage providers in
       the Filecoin network have committed to offering datacenter resources, and
       have made an important initial investment in both hardware and collateral,
@@ -215,6 +218,165 @@ blocks:
       backgroundColor: gray
       accentColor: primary
     _template: textCards
+  - label: ''
+    headline: ''
+    subhead: ''
+    body: '\[ decentralized storage report graphic \]'
+    buttons:
+      - label: Download decentralized storage report
+        link: /
+        type: solid
+        textColor: white
+        backgroundColor: grayDark
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
+  - label: ''
+    headline: Multiple tools help you onboard data to Filecoin
+    subhead: ''
+    body: ''
+    items:
+      - headline: ARG Solutions
+        subhead: ''
+        text: >-
+          **Estuary** is open-source software allowing simple sending of public
+          data to the Filecoin network to be retrieved from anywhere
+        link: Learn more
+        buttonLabel: Learn more
+        accentColor: white
+      - headline: Textile
+        subhead: ''
+        text: >-
+          **Textile’s Filecoin Auctions** are an open deal marketplace where
+          storage providers bid on storage requests in real-time - helping
+          clients get better prices and more engaged providers (leading to
+          better deal success!)
+        link: Learn more
+        buttonLabel: Learn more
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: grayLight
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: grayLight
+      textSize: base
+      headlineColor: white
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: white
+    _template: textCards
+  - label: ''
+    headline: Pricing
+    subhead: A brief intro to this table might be helpful.
+    body: >-
+      |  | Price to store 1 TiB / year |  |
+
+      | --- | --- | --- |
+
+      | **Filecoin Plus** (verified deals) | $0 | Apply to [verify your
+      data](http://url.asdfasd) and get access to special storage pricing |
+
+      | **Filecoin** | <$1* |  |
+
+      | **Public cloud** | $24** |  |
+
+
+      \*Average pricing shown from the last 30 days, rates will vary
+      ([source](link.lkajsdflkjasdf))
+
+
+      \**Cloud pricing compared to [S3 Glacier Deep
+      Archive](https://aws.amazon.com/s3/pricing/)
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
+  - label: ''
+    headline: GigaOm's Sonar Report on decentralized storage
+    subhead: ''
+    body: >-
+      A short description of the report, and how it supports Filecoin. A short
+      description of the report, and how it supports Filecoin. 
+    items:
+      - headline: ''
+        subhead: ''
+        text: ''
+        link: >-
+          https://www.storj.io/blog/gigaom-sonar-for-decentralized-storage-an-emerging-technology-insight-report
+        buttonLabel: Download the report
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: grayLight
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: white
+      textSize: base
+      headlineColor: white
+      headlineSize: 2xl
+      subheadColor: white
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: photoCards
 meta:
   siteTitle: Filecoin for Large Datasets test
   siteDescription: >-
@@ -222,16 +384,17 @@ meta:
     "What does this page have to offer me?" "How is this related to filecoin.io?"
   siteImageSrc: >-
     http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
-navItems:
-  - label: Solutions
-  - {}
-  - {}
+nav:
+  navItems:
+    - label: Solutions
+    - {}
+    - {}
+  navTextColor: grayDark
+  navBackgroundColor: white
 style:
-  primary: '#00A8FF'
+  primary: '#FFFFFF'
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
-  navTextColor: grayDark
-  navBackgroundColor: white
 ---
 
