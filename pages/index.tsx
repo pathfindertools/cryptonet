@@ -200,21 +200,25 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
             }
+            meta {
+              siteTitle
+              siteDescription
+              siteImageSrc
+            }
+            nav {
+              navItems {
+                link
+                label
+              }
+              navTextColor
+              navBackgroundColor
+            }
             style {
               primary
               accent1
               accent2
               accent3
-              navTextColor
-              navBackgroundColor
-            } 
-            siteTitle
-            navItems {
-              link
-              label
             }
-            siteDescription
-            siteImageSrc
           }
         }
       }

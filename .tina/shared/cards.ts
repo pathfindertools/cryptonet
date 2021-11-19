@@ -25,60 +25,6 @@ export const cardsSchema: TinaField = {
       ],
     },
     {
-      label: "Text Color",
-      name: "textColor",
-      ui: {
-        component: "select",
-      },
-      type: "string",
-      options: colorOptions,
-    },
-    {
-      label: "Text Size",
-      name: "textSize",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: textSizeOptions,
-    },
-    {
-      label: "Headline Color",
-      name: "headlineColor",
-      ui: {
-        component: "select",
-      },
-      type: "string",
-      options: colorOptions,
-    },
-    {
-      label: "Headline Size",
-      name: "headlineSize",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: textSizeOptions,
-    },
-    {
-      label: "Subhead Color",
-      name: "subheadColor",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: colorOptions,
-    },
-    {
-      label: "Subhead Size",
-      name: "subheadSize",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: textSizeOptions,
-    },
-    {
       label: "Background Color",
       name: "backgroundColor",
       type: "string",
@@ -121,6 +67,60 @@ export const cardsSchema: TinaField = {
         component: "select",
       },
       options: contentOrderOptions,
+    },
+    {
+      label: "Headline Color",
+      name: "headlineColor",
+      ui: {
+        component: "select",
+      },
+      type: "string",
+      options: colorOptions,
+    },
+    {
+      label: "Headline Size",
+      name: "headlineSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
+    },
+    {
+      label: "Subhead Color",
+      name: "subheadColor",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: colorOptions,
+    },
+    {
+      label: "Subhead Size",
+      name: "subheadSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
+    },
+    {
+      label: "Text Color",
+      name: "textColor",
+      ui: {
+        component: "select",
+      },
+      type: "string",
+      options: colorOptions,
+    },
+    {
+      label: "Text Size",
+      name: "textSize",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: textSizeOptions,
     },
   ],
 };

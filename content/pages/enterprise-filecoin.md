@@ -215,12 +215,13 @@ blocks:
       backgroundColor: gray
       accentColor: primary
     _template: textCards
-siteTitle: Filecoin for Large Datasets test
-siteDescription: >-
-  Introduction to answer questions such as "Who is this page meant to serve?"
-  "What does this page have to offer me?" "How is this related to filecoin.io?"
-siteImageSrc: >-
-  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+meta:
+  siteTitle: Filecoin for Large Datasets test
+  siteDescription: >-
+    Introduction to answer questions such as "Who is this page meant to serve?"
+    "What does this page have to offer me?" "How is this related to filecoin.io?"
+  siteImageSrc: >-
+    http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 navItems:
   - label: Solutions
   - {}

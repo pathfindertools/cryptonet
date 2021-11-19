@@ -61,35 +61,74 @@ export default defineSchema({
           ],
         },
         {
-          type: "string",
-          label: "Site Title",
-          name: "siteTitle",
-        },
-        {
-          type: "string",
-          label: "Site Description",
-          name: "siteDescription",
-        },
-        {
-          type: "image",
-          label: "Site Image",
-          name: "siteImageSrc",
-        },
-        {
-          label: "Navigation",
-          description: "Additional links in the header",
-          name: "navItems",
-          list: true,
           type: "object",
-          fields: [{
-            label: "Label",
-            name: "label",
-            type: "string"
-          }, {
-            label: "Link",
-            name: "link",
-            type: "string",
-          }]
+          label: "Meta",
+          name: "meta",
+          description: "Site title, description, social sharing image",
+          ui: {
+            component: "group",
+          },
+          fields: [
+            {
+              type: "string",
+              label: "Site Title",
+              name: "siteTitle",
+            },
+            {
+              type: "string",
+              label: "Site Description",
+              name: "siteDescription",
+            },
+            {
+              type: "image",
+              label: "Social Sharing Image",
+              name: "siteImageSrc",
+            },
+          ]
+        },
+        {
+          type: "object",
+          label: "Navigation",
+          name: "nav",
+          ui: {
+            component: "group",
+          },
+          fields: [
+            {
+              label: "Navigation",
+              description: "Additional links in the header",
+              name: "navItems",
+              list: true,
+              type: "object",
+              fields: [{
+                label: "Label",
+                name: "label",
+                type: "string"
+              }, {
+                label: "Link",
+                name: "link",
+                type: "string",
+              }]
+            },
+            {
+              label: "Navigation Text Color",
+              name: "navTextColor",
+              ui: {
+                component: "select",
+              },
+              type: "string",
+              options: colorOptions,
+            },
+            {
+              label: "Navigation Background Color",
+              name: "navBackgroundColor",
+              type: "string",
+              ui: {
+                component: "select",
+              },
+              options: colorOptions,
+            }
+          ]
         },
         {
           type: "object",
@@ -130,24 +169,6 @@ export default defineSchema({
               ui: {
                 component: "color",
               },
-            },
-            {
-              label: "Navigation Text Color",
-              name: "navTextColor",
-              ui: {
-                component: "select",
-              },
-              type: "string",
-              options: colorOptions,
-            },
-            {
-              label: "Navigation Background Color",
-              name: "navBackgroundColor",
-              type: "string",
-              ui: {
-                component: "select",
-              },
-              options: colorOptions,
             },
           ]
         },

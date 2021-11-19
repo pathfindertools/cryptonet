@@ -403,13 +403,14 @@ blocks:
       contentOrder: labelHeadingsContent
       width: normal
     _template: banner
-siteTitle: Hackathons
-siteDescription: >-
-  With Filecoin and IPFS, we empower developers and entrepreneurs to solve
-  significant problems and ship innovative applications. Join our hackathons and
-  shape the future of the web to make it more decentralized, robust, and secure!
-siteImageSrc: >-
-  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+meta:
+  siteTitle: Hackathons
+  siteDescription: >-
+    With Filecoin and IPFS, we empower developers and entrepreneurs to solve
+    significant problems and ship innovative applications. Join our hackathons and
+    shape the future of the web to make it more decentralized, robust, and secure!
+  siteImageSrc: >-
+    http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 style:
   primary: '#FF007A'
   accent1: '#0E4465'

@@ -79,7 +79,17 @@ const App = ({ Component, pageProps }) => {
                 return createGlobalForm(formConfig);
               }
 
-              return createForm(formConfig);
+              return createForm({
+                ...formConfig,
+                fields: formConfig.fields.map(field => {
+                  console.log(JSON.stringify(field))
+                  if (field.name === 'siteTitle') {
+                    // replace `text` with `textarea`
+                    field.component = 'textarea'
+                  }
+                  return field
+                }),
+              });
             }}
             {...pageProps}
           >

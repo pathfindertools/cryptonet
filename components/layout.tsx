@@ -12,23 +12,25 @@ export const Layout = ({
       accent2: "",
       accent3: "",
     },
-    siteTitle: "Filecoin Hackathon",
-    siteDescription: "Filecoin Hackathon Event",
-    siteImageSrc: ""
+    meta: {
+      siteTitle: "Filecoin Hackathon",
+      siteDescription: "Filecoin Hackathon Event",
+      siteImageSrc: ""
+    }
   },
   children,
 }) => {
   return (
     <>
       <Head>
-        <title>{themeData.siteTitle}</title>
+        <title>{themeData.meta.siteTitle}</title>
         <meta name="author" content="Protocol Labs"></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:site_name" content="hackathons.filecoin.io" />
-        <meta property="og:title" content={themeData.siteTitle} />
-        <meta property="og:description" content={themeData.siteDescription} />
-        <meta property="og:image" content={themeData.siteImageSrc} />        
+        <meta property="og:title" content={themeData.meta.siteTitle} />
+        <meta property="og:description" content={themeData.meta.siteDescription} />
+        <meta property="og:image" content={themeData.meta.siteImageSrc} />        
         <style
           id="customProperties"
           dangerouslySetInnerHTML={{

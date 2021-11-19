@@ -192,12 +192,13 @@ blocks:
       contentOrder: labelHeadingsContent
       width: normal
     _template: banner
-siteTitle: Asia Hackathon Season
-siteDescription: >-
-  Join us on a journey across the universe of Filecoin and IPFS across four
-  distinct hackathon events.
-siteImageSrc: >-
-  http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+meta:
+  siteTitle: Asia Hackathon Season
+  siteDescription: >-
+    Join us on a journey across the universe of Filecoin and IPFS across four
+    distinct hackathon events.
+  siteImageSrc: >-
+    http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 style:
   primary: '#FFDE30'
   accent1: '#FF388B'
