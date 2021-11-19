@@ -430,6 +430,143 @@ blocks:
       backgroundColor: gray
       accentColor: white
     _template: textCards
+  - label: ''
+    headline: Referral program
+    subhead: >-
+      Today, Protocol Labs is announcing a temporary referral fee program to
+      community members who bring large datasets onto the Filecoin network.
+      Invite your customers and help create the data gravity pull!
+    body: ''
+    items:
+      - headline: Data gravity is real
+        subhead: ''
+        text: >-
+          Earth’s acceleration of gravity is \~9.81m/s^2, or in other words, an
+          object falling freely will accelerate by about 9.81 meters per second
+          every single second. In a similar way, the larger the datasets, the
+          faster other and smaller data sets will gravitate towards it, also
+          referred to as data gravity. So help us make data gravity work and
+          bring your customer’s large datasets to the Filecoin network and get a
+          referral fee paid!
+      - headline: 10EiB in ten months
+        subhead: ''
+        text: >-
+          The Filecoin network reached 10EiB in August, which no other useful
+          distributed storage stack has ever accomplished in such a short time.
+          The combination of a clear vision, a solid technology stack, and
+          thoughtfully-aligned incentive programs have helped raise Filecoin to
+          the top. There are currently more than 3,000 Filecoin systems and
+          storage providers in more than 44 countries serving capacity to a vast
+          ecosystem of 400+ applications and thousands of developers.
+      - headline: The program
+        subhead: ''
+        text: >-
+          This is a limited time referral promo that incentivizes any community
+          member to bring forward a prospective client of a certain size. The
+          referral fee is awarded to an individual or organization that
+          registers and ensures a customer commitment to start a Filecoin POC
+          (Proof of Concept).
+
+
+          This program is active now and has a registration referral deadline of
+          December 1st 2021.
+      - headline: Award amounts
+        subhead: ''
+        text: >-
+          * Earn 100FIL for a 100TiB+ dataset
+
+          * Earn 500FIL for a 1PiB+ dataset
+
+
+          \*The prices of blockchain assets can be volatile. The value of the
+          award will be affected by the price of FIL at the time of the FIL
+          transfer. You can refer to the current price of FIL.
+      - headline: Who can participate?
+        subhead: ''
+        text: >-
+          Anyone who wants to participate can bring a customer to the table and
+          register a deal through the lead registration form. Only registered
+          deals will be taken into account.
+      - headline: What kind of datasets are we looking for?
+        subhead: ''
+        text: >-
+          * To be eligible, the minimum POC capacity is a 100TiB
+
+          * Data should be static and infrequently accessed
+
+          * Data should not require encryption
+
+          * Dataset needs to have “public good” characteristics — have social
+          justice, life sciences, environmental or cultural heritage value
+          (e.g., climate change, scientific research datasets, museum or art
+          collection archives)
+      - headline: What are the award conditions?
+        subhead: ''
+        text: >-
+          * The referrer needs to submit the proposed organization through the
+          registration form
+
+          * The customer or use case should be net new to the community
+
+          * The customer agrees to be showcased as a Filecoin user and
+          collaborate on marketing and PR efforts
+
+          * POC is officially initiated when the first sector is sealed
+
+          * POC needs to be initiated before Dec 1, 2021 and a clear POC plan
+          needs to be defined
+
+          * A referrer can be eligible for multiple rewards (one reward per
+          client referred)
+      - headline: What is the referrer responsible for?
+        subhead: ''
+        text: >-
+          * Submitting this registration form (following form submission, the
+          Filecoin team will reach out to the referrer)
+
+          * Making an introduction and setting up the initial meetings to
+          connect the Filecoin working group organization with the prospective
+          customer
+
+          * Supporting the relationship and conversations between the Filecoin
+          working group and the prospective customer until the POC agreement is
+          reached and the program is kicked off
+
+          * Once a mutual agreement has been reached and a POC is initiated, the
+          referrer is eligible for the referral bonus
+      - headline: Other
+        subhead: ''
+        text: >-
+          Nonprofit organizations that decide to onboard data onto Filecoin are
+          also eligible for the referral bonus in the form of a grant.
+
+
+          Protocol Labs reserves the right to adjust or cancel this program at
+          any time, and disclaims any duty or responsibility other than the
+          payment of referral fees as set forth in this program description.
+    style:
+      columns: '1'
+      textColor: black
+      textSize: base
+      headlineColor: white
+      headlineSize: 3xl
+      subheadColor: grayLight
+      subheadSize: lg
+      backgroundColor: black
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: grayLight
+      textSize: base
+      headlineColor: white
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: black
+      accentColor: primary
+    _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
   Introduction to answer questions such as "Who is this page meant to serve?"
