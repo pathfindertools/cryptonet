@@ -378,17 +378,18 @@ blocks:
       accentColor: primary
     _template: photoCards
   - label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: Many organizations and projects use Filecoin
+    subhead: ''
+    body: ''
     items:
-      - headline: Here's Another Card
+      - headline: Shoah Foundation
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Starling Labs and the Shoah Foundation is building an immutable
+          archive of genocide survivor testimonials on Filecoin (total dataset
+          6000 TiB)
+        link: asdfsd.aaidl
+        buttonLabel: Learn more
       - headline: Here's Another Card
         subhead: ''
         text: >-
@@ -413,14 +414,14 @@ blocks:
     cardStyle:
       type: solid
       buttonType: solid
-      textColor: black
+      textColor: grayLight
       textSize: base
-      headlineColor: black
+      headlineColor: white
       headlineSize: 2xl
       subheadColor: black
       subheadSize: lg
       backgroundColor: gray
-      accentColor: primary
+      accentColor: white
     _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
