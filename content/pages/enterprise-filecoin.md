@@ -96,7 +96,7 @@ blocks:
       accentColor: primary
     _template: textCards
   - label: ''
-    headline: Filecoin solves many problems associated with traditional storage.
+    headline: Filecoin solves many problems associated with storage
     subhead: ''
     body: ''
     items:
@@ -377,6 +377,51 @@ blocks:
       backgroundColor: gray
       accentColor: primary
     _template: photoCards
+  - label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    style:
+      columns: '3'
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      backgroundColor: white
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      buttonType: solid
+      textColor: black
+      textSize: base
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      backgroundColor: gray
+      accentColor: primary
+    _template: textCards
 siteTitle: Filecoin for Large Datasets test
 siteDescription: >-
   Introduction to answer questions such as "Who is this page meant to serve?"
