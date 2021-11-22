@@ -213,7 +213,7 @@ export const getStaticProps = async ({ params }) => {
               navTextColor
               navBackgroundColor
             }
-            style {
+            colors {
               primary
               accent1
               accent2

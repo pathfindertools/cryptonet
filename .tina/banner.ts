@@ -71,12 +71,68 @@ export const bannerBlockSchema: TinaTemplate = {
     navigationLabelSchema,
     {
       type: "object",
-      label: "Style",
+      label: "Section Style",
       name: "style",
       ui: {
         component: "group",
       },
       fields: [
+        {
+          label: "Text Alignment",
+          name: "textAlignment",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: hAlignOptions,
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: contentOrderOptions,
+        },
+        {
+          label: "Width",
+          name: "width",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Normal", value: "normal" },
+            { label: "Narrow", value: "narrow" },
+          ],
+        },
+        {
+          label: "Background Color",
+          name: "backgroundColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Background Image",
+          name: "backgroundImage",
+          type: "object",
+          fields: [
+            {
+              label: "Image Source",
+              name: "src",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
         {
           label: "Headline Color",
           name: "headlineColor",
@@ -130,62 +186,6 @@ export const bannerBlockSchema: TinaTemplate = {
             component: "select",
           },
           options: textSizeOptions,
-        },
-        {
-          label: "Background Color",
-          name: "backgroundColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-        {
-          label: "Background Image",
-          name: "backgroundImage",
-          type: "object",
-          fields: [
-            {
-              label: "Image Source",
-              name: "src",
-              type: "image",
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string",
-            },
-          ],
-        },
-        {
-          label: "Text Alignment",
-          name: "textAlignment",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: hAlignOptions,
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions,
-        },
-        {
-          label: "Width",
-          name: "width",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Normal", value: "normal" },
-            { label: "Narrow", value: "narrow" },
-          ],
         },
       ],
     },

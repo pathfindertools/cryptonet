@@ -70,9 +70,10 @@ export const featureBlockSchema: TinaTemplate = {
       },
     },
     buttonsSchema,
+    navigationLabelSchema,
     {
       type: "object",
-      label: "Style",
+      label: "Section Style",
       name: "style",
       ui: {
         component: "group",
@@ -95,6 +96,59 @@ export const featureBlockSchema: TinaTemplate = {
             { label: "Fit in Half", value: "fitHalf" },
             { label: "Fill Half", value: "fillHalf" },
             { label: "Fill Overlap", value: "overlap" },
+          ],
+        },
+        {
+          label: "Text Alignment",
+          name: "textAlignment",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: hAlignOptions,
+        },
+        {
+          label: "Vertical Alignment",
+          name: "contentAlignment",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: vAlignOptions,
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: contentOrderOptions
+        },
+        {
+          label: "Background Color",
+          name: "backgroundColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Background Image",
+          name: "backgroundImage",
+          type: "object",
+          fields: [
+            {
+              label: "Image Source",
+              name: "src",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
           ],
         },
         {
@@ -151,61 +205,7 @@ export const featureBlockSchema: TinaTemplate = {
           },
           options: textSizeOptions,
         },
-        {
-          label: "Background Color",
-          name: "backgroundColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-        {
-          label: "Background Image",
-          name: "backgroundImage",
-          type: "object",
-          fields: [
-            {
-              label: "Image Source",
-              name: "src",
-              type: "image",
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string",
-            },
-          ],
-        },
-        {
-          label: "Text Alignment",
-          name: "textAlignment",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: hAlignOptions,
-        },
-        {
-          label: "Content Alignment",
-          name: "contentAlignment",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: vAlignOptions,
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions
-        },
       ],
     },
-    navigationLabelSchema
   ],
 };

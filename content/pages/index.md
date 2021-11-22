@@ -414,7 +414,7 @@ meta:
 nav:
   navTextColor: white
   navBackgroundColor: black
-style:
+colors:
   primary: '#FF007A'
   accent1: '#0E4465'
   accent2: '#2DDB87'

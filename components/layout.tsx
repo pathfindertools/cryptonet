@@ -6,7 +6,7 @@ import layoutData from "../content/global/index.json";
 export const Layout = ({
   data = layoutData,
   themeData = {
-    style: {
+    colors: {
       primary: "",
       accent1: "",
       accent2: "",
@@ -39,10 +39,10 @@ export const Layout = ({
               scroll-behavior: smooth;
             }
             :root {
-              --primary-color: ${themeData?.style?.primary};
-              --accent1-color: ${themeData?.style?.accent1};
-              --accent2-color: ${themeData?.style?.accent2};
-              --accent3-color: ${themeData?.style?.accent3};
+              --primary-color: ${themeData?.colors?.primary};
+              --accent1-color: ${themeData?.colors?.accent1};
+              --accent2-color: ${themeData?.colors?.accent2};
+              --accent3-color: ${themeData?.colors?.accent3};
             }
             .markdown ul {
               list-style: disc inside;

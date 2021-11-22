@@ -127,17 +127,17 @@ type PagesBlocksFeatureStyleBackgroundImage {
 type PagesBlocksFeatureStyle {
   flipLayout: Boolean
   imageStyle: String
+  textAlignment: String
+  contentAlignment: String
+  contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksFeatureStyleBackgroundImage
   headlineColor: String
   headlineSize: String
   subheadColor: String
   subheadSize: String
   textColor: String
   textSize: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksFeatureStyleBackgroundImage
-  textAlignment: String
-  contentAlignment: String
-  contentOrder: String
 }
 
 type PagesBlocksFeature {
@@ -147,8 +147,8 @@ type PagesBlocksFeature {
   subhead: String
   body: String
   buttons: [PagesBlocksFeatureButtons]
-  style: PagesBlocksFeatureStyle
   navigationLabel: String
+  style: PagesBlocksFeatureStyle
 }
 
 type PagesBlocksPhotoCardsButtons {
@@ -180,10 +180,10 @@ type PagesBlocksPhotoCardsStyleBackgroundImage {
 
 type PagesBlocksPhotoCardsStyle {
   columns: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
   textAlignment: String
   contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
   headlineColor: String
   headlineSize: String
   subheadColor: String
@@ -242,10 +242,10 @@ type PagesBlocksTextCardsStyleBackgroundImage {
 
 type PagesBlocksTextCardsStyle {
   columns: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
   textAlignment: String
   contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
   headlineColor: String
   headlineSize: String
   subheadColor: String
@@ -299,17 +299,17 @@ type PagesBlocksBannerStyleBackgroundImage {
 }
 
 type PagesBlocksBannerStyle {
+  textAlignment: String
+  contentOrder: String
+  width: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksBannerStyleBackgroundImage
   headlineColor: String
   headlineSize: String
   subheadColor: String
   subheadSize: String
   textColor: String
   textSize: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksBannerStyleBackgroundImage
-  textAlignment: String
-  contentOrder: String
-  width: String
 }
 
 type PagesBlocksBanner {
@@ -342,7 +342,7 @@ type PagesNav {
   navBackgroundColor: String
 }
 
-type PagesStyle {
+type PagesColors {
   primary: String
   accent1: String
   accent2: String
@@ -354,7 +354,7 @@ type Pages {
   blocks: [PagesBlocks]
   meta: PagesMeta
   nav: PagesNav
-  style: PagesStyle
+  colors: PagesColors
 }
 
 type PagesDocument implements Node & Document {
@@ -420,17 +420,17 @@ input PagesBlocksFeatureStyleBackgroundImageMutation {
 input PagesBlocksFeatureStyleMutation {
   flipLayout: Boolean
   imageStyle: String
+  textAlignment: String
+  contentAlignment: String
+  contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
   headlineColor: String
   headlineSize: String
   subheadColor: String
   subheadSize: String
   textColor: String
   textSize: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
-  textAlignment: String
-  contentAlignment: String
-  contentOrder: String
 }
 
 input PagesBlocksFeatureMutation {
@@ -440,8 +440,8 @@ input PagesBlocksFeatureMutation {
   subhead: String
   body: String
   buttons: [PagesBlocksFeatureButtonsMutation]
-  style: PagesBlocksFeatureStyleMutation
   navigationLabel: String
+  style: PagesBlocksFeatureStyleMutation
 }
 
 input PagesBlocksPhotoCardsButtonsMutation {
@@ -473,10 +473,10 @@ input PagesBlocksPhotoCardsStyleBackgroundImageMutation {
 
 input PagesBlocksPhotoCardsStyleMutation {
   columns: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
   textAlignment: String
   contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
   headlineColor: String
   headlineSize: String
   subheadColor: String
@@ -535,10 +535,10 @@ input PagesBlocksTextCardsStyleBackgroundImageMutation {
 
 input PagesBlocksTextCardsStyleMutation {
   columns: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
   textAlignment: String
   contentOrder: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
   headlineColor: String
   headlineSize: String
   subheadColor: String
@@ -592,17 +592,17 @@ input PagesBlocksBannerStyleBackgroundImageMutation {
 }
 
 input PagesBlocksBannerStyleMutation {
+  textAlignment: String
+  contentOrder: String
+  width: String
+  backgroundColor: String
+  backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
   headlineColor: String
   headlineSize: String
   subheadColor: String
   subheadSize: String
   textColor: String
   textSize: String
-  backgroundColor: String
-  backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
-  textAlignment: String
-  contentOrder: String
-  width: String
 }
 
 input PagesBlocksBannerMutation {
@@ -640,7 +640,7 @@ input PagesNavMutation {
   navBackgroundColor: String
 }
 
-input PagesStyleMutation {
+input PagesColorsMutation {
   primary: String
   accent1: String
   accent2: String
@@ -652,7 +652,7 @@ input PagesMutation {
   blocks: [PagesBlocksMutation]
   meta: PagesMetaMutation
   nav: PagesNavMutation
-  style: PagesStyleMutation
+  colors: PagesColorsMutation
 }
 
 schema {

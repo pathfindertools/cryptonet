@@ -132,8 +132,8 @@ export default defineSchema({
         },
         {
           type: "object",
-          label: "Style",
-          name: "style",
+          label: "Colors",
+          name: "colors",
           ui: {
             component: "group",
           },

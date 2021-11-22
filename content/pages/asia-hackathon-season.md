@@ -202,7 +202,7 @@ meta:
 nav:
   navTextColor: white
   navBackgroundColor: black
-style:
+colors:
   primary: '#FFDE30'
   accent1: '#FF388B'
   accent2: '#2DDB87'

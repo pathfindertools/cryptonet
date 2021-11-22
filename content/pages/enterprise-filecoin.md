@@ -391,7 +391,7 @@ nav:
     - {}
   navTextColor: grayDark
   navBackgroundColor: white
-style:
+colors:
   primary: '#FFFFFF'
   accent1: '#0E4465'
   accent2: '#2DDB87'

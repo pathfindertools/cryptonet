@@ -4,7 +4,7 @@ import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } fro
 
 export const cardsSchema: TinaField = {
   type: "object",
-  label: "Style",
+  label: "Section Style",
   name: "style",
   ui: {
     component: "group",
@@ -23,6 +23,24 @@ export const cardsSchema: TinaField = {
         { label: "3", value: "3" },
         { label: "4", value: "4" },
       ],
+    },
+    {
+      label: "Text Alignment",
+      name: "textAlignment",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: hAlignOptions,
+    },
+    {
+      label: "Content Order",
+      name: "contentOrder",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: contentOrderOptions,
     },
     {
       label: "Background Color",
@@ -49,24 +67,6 @@ export const cardsSchema: TinaField = {
           type: "string",
         },
       ],
-    },
-    {
-      label: "Text Alignment",
-      name: "textAlignment",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: hAlignOptions,
-    },
-    {
-      label: "Content Order",
-      name: "contentOrder",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: contentOrderOptions,
     },
     {
       label: "Headline Color",
