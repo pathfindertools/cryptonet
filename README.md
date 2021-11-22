@@ -41,13 +41,6 @@ TinaCMS backend is in public beta, you might face issues, to provide feedback or
 -   [Search or open an issue](https://github.com/tinacms/tinacms/issues) if something is not working.
 -   Reach out on Twitter at [@tina_cms](https://twitter.com/tina_cms).
 
-## Development tips
+## Releases
 
-### Visual Studio Code GraphQL extension
-
-[Install the GraphQL extension](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql) to benefit from type auto-completion.
-
-### Typescript
-
-A good way to ensure your components match the shape of your data is to leverage the auto-generated TypeScript types.
-These are rebuilt when your `.tina` config changes.
+See [release notes](RELEASE_NOTES.md)
