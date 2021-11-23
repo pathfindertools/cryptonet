@@ -33,10 +33,10 @@ yarn dev
 
 Set the following variables:
 
-NEXT_PUBLIC_TINA_CLIENT_ID= Get this from your Tina Cloud App instance
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME= Get this from your Cloudinary account
-NEXT_PUBLIC_CLOUDINARY_API_KEY= Get this from your Cloudinary account
-CLOUDINARY_API_SECRET= Get this from your Cloudinary account
+- NEXT_PUBLIC_TINA_CLIENT_ID= Get this from your Tina Cloud App instance
+- NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME= Get this from your Cloudinary account
+- NEXT_PUBLIC_CLOUDINARY_API_KEY= Get this from your Cloudinary account
+- CLOUDINARY_API_SECRET= Get this from your Cloudinary account
 
 ## Getting Help
 
