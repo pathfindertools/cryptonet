@@ -29,6 +29,15 @@ yarn dev
 - http://localhost:3000/exit-admin : log out of Tina Cloud
 - http://localhost:4001/altair/ : GraphQL playground to test queries and browse the API documentation
 
+## Fleek Deployment
+
+Set the following variables:
+
+- NEXT_PUBLIC_TINA_CLIENT_ID= Get this from your Tina Cloud App instance
+- NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME= Get this from your Cloudinary account
+- NEXT_PUBLIC_CLOUDINARY_API_KEY= Get this from your Cloudinary account
+- CLOUDINARY_API_SECRET= Get this from your Cloudinary account
+
 ## Getting Help
 
 TinaCMS backend is in public beta, you might face issues, to provide feedback or get help with any challenges you may have:
