@@ -51,7 +51,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/fall-hackathon_tmjffc.png
+            http://res.cloudinary.com/protocolai/image/upload/v1637777332/Home/fall-hackathon_tmjffc_qkqq7g.png
         headline: Chainlink Hackathon
         subhead: 'Oct 22 - Nov 28, 2021'
         text: >-
@@ -138,7 +138,7 @@ blocks:
     _template: photoCards
   - image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1635876018/Home/hackathon-hex_rmmejj.svg
+        http://res.cloudinary.com/protocolai/image/upload/v1637777563/Home/hackathon-hex_gmb1ze_blzjir.svg
     label: ''
     headline: Start Building
     subhead: ''
@@ -162,7 +162,7 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: >-
-          http://res.cloudinary.com/protocolai/image/upload/v1635876087/Home/hackathon-slant_udwu14.svg
+          http://res.cloudinary.com/protocolai/image/upload/v1637777417/Home/hackathon-slant-bg_ofvckc_iemr5o.svg
       headlineColor: white
       headlineSize: 3xl
       subheadColor: grayLight
@@ -184,7 +184,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/asia-season_l26qti.png
+            http://res.cloudinary.com/protocolai/image/upload/v1637777239/Home/asia-season_l26qti_raiuiu.png
         headline: Asia Hackathon Season
         subhead: August - November 2021
         text: >-
@@ -422,3 +422,4 @@ colors:
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
 ---
+
