@@ -40,7 +40,7 @@ blocks:
     items:
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1638221444/buidl-it_dlaop4_gulw3j.png
+            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/web3-jam_uhwlcl.png
         headline: Web3 Jam
         subhead: 'Nov 12 - 24, 2021'
         text: >-
