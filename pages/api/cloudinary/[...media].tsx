@@ -16,10 +16,13 @@ export default createMediaHandler({
       return true;
     }
     try {
+      console.log('trying...', req)
       const user = await isAuthorized(req);
+      console.log('user: ', user)
       return user && user.verified;
     } catch (e) {
-      console.error(e);
+      console.log('error: ', e)
+      // console.error(e);
       return false;
     }
   },
