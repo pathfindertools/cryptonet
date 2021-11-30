@@ -3,7 +3,7 @@ draft: true
 blocks:
   - image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
+        https://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
     headline: Connect. Build. Grow. Test.
     subhead: ''
@@ -14,7 +14,7 @@ blocks:
       secure!
     buttons:
       - label: Subscribe to our mailing list
-        link: 'http://eepurl.com/hJDA3P'
+        link: 'https://eepurl.com/hJDA3P'
         type: outline
         textColor: white
         backgroundColor: primary
@@ -40,7 +40,7 @@ blocks:
     items:
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/web3-jam_uhwlcl.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/web3-jam_uhwlcl.png
         headline: Web3 Jam
         subhead: 'Nov 12 - 24, 2021'
         text: >-
@@ -51,7 +51,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637777332/Home/fall-hackathon_tmjffc_qkqq7g.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637777332/Home/fall-hackathon_tmjffc_qkqq7g.png
         headline: Chainlink Hackathon
         subhead: 'Oct 22 - Nov 28, 2021'
         text: >-
@@ -62,7 +62,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637616584/Home/buidl-it_dlaop4_z8mnis.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637616584/Home/buidl-it_dlaop4_z8mnis.png
         headline: 'Filecoin @Polygon BUIDL IT '
         subhead: 'Nov 19 - Dec 12, 2021'
         text: >-
@@ -72,7 +72,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/babylon_zxlho5.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/babylon_zxlho5.png
         headline: Babylon 2.0
         subhead: 'Oct 29 - Nov 20, 2021'
         text: >-
@@ -83,7 +83,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873560/Home/holon_gdu7up.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873560/Home/holon_gdu7up.png
         headline: Holon Innovate '21
         subhead: 'Nov 9-25, 2021'
         text: >-
@@ -94,7 +94,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618242/Home/nft-hack_hgtmay_rwonbm.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618242/Home/nft-hack_hgtmay_rwonbm.png
         headline: NFT Hack with Filecoin
         subhead: 'Oct 5 - Nov 28, 2021'
         text: >-
@@ -104,7 +104,7 @@ blocks:
         buttonLabel: Learn more and register
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/polygon_a6vyg3.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/polygon_a6vyg3.png
         headline: Polygon Grants Hackathon
         subhead: 'Aug 30 - Oct 29, 2021'
         text: >-
@@ -138,7 +138,7 @@ blocks:
     _template: photoCards
   - image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1637777563/Home/hackathon-hex_gmb1ze_blzjir.svg
+        https://res.cloudinary.com/protocolai/image/upload/v1637777563/Home/hackathon-hex_gmb1ze_blzjir.svg
     label: ''
     headline: Start Building
     subhead: ''
@@ -162,7 +162,7 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: >-
-          http://res.cloudinary.com/protocolai/image/upload/v1637777417/Home/hackathon-slant-bg_ofvckc_iemr5o.svg
+          https://res.cloudinary.com/protocolai/image/upload/v1637777417/Home/hackathon-slant-bg_ofvckc_iemr5o.svg
       headlineColor: white
       headlineSize: 3xl
       subheadColor: grayLight
@@ -174,7 +174,7 @@ blocks:
     items:
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/cal-hacks_yjemlx.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/cal-hacks_yjemlx.png
         headline: Cal Hacks 8.0
         subhead: 'Oct 22-24, 2021'
         text: >-
@@ -184,7 +184,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637777239/Home/asia-season_l26qti_raiuiu.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637777239/Home/asia-season_l26qti_raiuiu.png
         headline: Asia Hackathon Season
         subhead: August - November 2021
         text: >-
@@ -194,7 +194,7 @@ blocks:
         buttonLabel: View Event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873560/Home/saturn_yqmuc2.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873560/Home/saturn_yqmuc2.png
         headline: Saturn Hackathon
         subhead: 'Aug 4 - Oct 24, 2021 '
         text: >-
@@ -204,7 +204,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618449/Home/jupiter_jaufi9_sexthe.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618449/Home/jupiter_jaufi9_sexthe.png
         headline: Jupiter Hackathon
         subhead: 'Aug 25 - Oct 23, 2021'
         text: >-
@@ -214,7 +214,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618010/Home/mars_q1nng1_tqi6p1.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618010/Home/mars_q1nng1_tqi6p1.png
         headline: Mars Hackathon
         subhead: Sept 7 - Nov 6
         text: >-
@@ -224,7 +224,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618025/Home/mercury_s1rufj_kamtuy.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618025/Home/mercury_s1rufj_kamtuy.png
         headline: Mercury Hackathon
         subhead: 'Sept 20 – Nov 8, 2021'
         text: >-
@@ -235,7 +235,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/eth-online_kyyrez.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/eth-online_kyyrez.png
         headline: ETHOnline
         subhead: 17 September - 15 October
         text: >-
@@ -245,7 +245,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618583/Home/pennapps_ezsubz_jehzfp.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618583/Home/pennapps_ezsubz_jehzfp.png
         headline: PennApps
         subhead: September 2021
         text: >-
@@ -255,7 +255,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/filecoin-educate_dbkggj.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873561/Home/filecoin-educate_dbkggj.png
         headline: 'Encode Filecoin Club: Educate'
         subhead: July-Sept 2021
         text: >-
@@ -265,7 +265,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873562/Home/filecoin-flag_glbetk.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873562/Home/filecoin-flag_glbetk.png
         headline: HackFS
         subhead: July-August 2021
         text: >-
@@ -275,7 +275,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637618887/Home/nft-vision_brbnuv_irjteh.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637618887/Home/nft-vision_brbnuv_irjteh.png
         headline: NFT Vision Hack
         subhead: July-Aug 2021
         text: >-
@@ -285,7 +285,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1637619110/Home/browsers3000_s3w9ps_dn3can.png
+            https://res.cloudinary.com/protocolai/image/upload/v1637619110/Home/browsers3000_s3w9ps_dn3can.png
         headline: Browsers 3000
         subhead: July-August 2021
         text: >-
@@ -295,7 +295,7 @@ blocks:
         buttonLabel: View event
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1635873562/Home/dora-hacks_tnfawd.png
+            https://res.cloudinary.com/protocolai/image/upload/v1635873562/Home/dora-hacks_tnfawd.png
         headline: Dora Hacks
         subhead: May-July 2021
         text: >-
@@ -352,7 +352,7 @@ blocks:
           concept
         text: >-
 
-          * [Tachyon web3 Accelerator](http://tachyon.xyz/)
+          * [Tachyon web3 Accelerator](https://tachyon.xyz/)
 
           * [Filecoin Techstars
           Accelerator](https://www.techstars.com/accelerators/filecoin)
@@ -412,7 +412,7 @@ meta:
     and shape the future of the web to make it more decentralized, robust, and
     secure!
   siteImageSrc: >-
-    http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+    https://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 nav:
   navTextColor: white
   navBackgroundColor: black
