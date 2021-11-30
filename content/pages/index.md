@@ -5,7 +5,7 @@ blocks:
       src: >-
         https://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
-    headline: Connect. Build. Grow. Test.
+    headline: Connect. Build. Grow.
     subhead: ''
     body: >-
       With Filecoin and IPFS, we empower developers and entrepreneurs to solve
@@ -346,7 +346,10 @@ blocks:
 
           * $5,000-$50,000 [Open
           Grants](https://github.com/filecoin-project/devgrants#open-grant)
-      - headline: Accelerators
+      - image:
+          src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1638225769/Home/tree_b1dvkl.jpg
+        headline: Accelerators
         subhead: >-
           Apply to an accelerator and turn your project into a pitch-ready
           concept
