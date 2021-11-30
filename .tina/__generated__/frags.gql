@@ -1,0 +1,232 @@
+fragment GlobalParts on Global {
+  gtmId
+  redirects {
+    __typename
+    from
+    to
+  }
+}
+
+fragment PagesParts on Pages {
+  draft
+  blocks {
+    __typename
+    ... on PagesBlocksFeature {
+      image {
+        __typename
+        src
+        alt
+      }
+      label
+      headline
+      subhead
+      body
+      buttons {
+        __typename
+        label
+        link
+        type
+        textColor
+        backgroundColor
+      }
+      navigationLabel
+      style {
+        __typename
+        flipLayout
+        imageStyle
+        textAlignment
+        contentAlignment
+        contentOrder
+        backgroundColor
+        backgroundImage {
+          __typename
+          src
+          alt
+        }
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+    }
+    ... on PagesBlocksPhotoCards {
+      label
+      headline
+      subhead
+      body
+      buttons {
+        __typename
+        label
+        link
+        type
+        textColor
+        backgroundColor
+      }
+      items {
+        __typename
+        image {
+          __typename
+          src
+          alt
+        }
+        headline
+        subhead
+        text
+        link
+        buttonLabel
+      }
+      navigationLabel
+      style {
+        __typename
+        columns
+        textAlignment
+        contentOrder
+        backgroundColor
+        backgroundImage {
+          __typename
+          src
+          alt
+        }
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+      cardStyle {
+        __typename
+        type
+        backgroundColor
+        accentColor
+        buttonType
+        buttonTextColor
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+    }
+    ... on PagesBlocksTextCards {
+      label
+      headline
+      subhead
+      body
+      buttons {
+        __typename
+        label
+        link
+        type
+        textColor
+        backgroundColor
+      }
+      items {
+        __typename
+        headline
+        subhead
+        text
+        link
+        buttonLabel
+        accentColor
+      }
+      navigationLabel
+      style {
+        __typename
+        columns
+        textAlignment
+        contentOrder
+        backgroundColor
+        backgroundImage {
+          __typename
+          src
+          alt
+        }
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+      cardStyle {
+        __typename
+        type
+        backgroundColor
+        accentColor
+        buttonType
+        buttonTextColor
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+    }
+    ... on PagesBlocksBanner {
+      image {
+        __typename
+        src
+        alt
+      }
+      label
+      headline
+      subhead
+      body
+      buttons {
+        __typename
+        label
+        link
+        type
+        textColor
+        backgroundColor
+      }
+      navigationLabel
+      style {
+        __typename
+        textAlignment
+        contentOrder
+        width
+        backgroundColor
+        backgroundImage {
+          __typename
+          src
+          alt
+        }
+        headlineColor
+        headlineSize
+        subheadColor
+        subheadSize
+        textColor
+        textSize
+      }
+    }
+  }
+  meta {
+    __typename
+    siteTitle
+    siteDescription
+    siteImageSrc
+  }
+  nav {
+    __typename
+    navItems {
+      __typename
+      label
+      link
+    }
+    navTextColor
+    navBackgroundColor
+  }
+  colors {
+    __typename
+    primary
+    accent1
+    accent2
+    accent3
+  }
+}
