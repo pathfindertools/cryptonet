@@ -5,7 +5,7 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
-    headline: Connect. Build. Grow.
+    headline: Connect. Build. Grow..
     subhead: ''
     body: >-
       With Filecoin and IPFS, we empower developers and entrepreneurs to solve
