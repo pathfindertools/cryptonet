@@ -17,8 +17,8 @@ export default createMediaHandler({
     }
     try {
       const user = await isAuthorized(req);
-      return true
-      // return user && user.verified;
+      // return true
+      return user && user.verified;
     } catch (e) {
       console.log('error: ', e)
       // console.error(e);
