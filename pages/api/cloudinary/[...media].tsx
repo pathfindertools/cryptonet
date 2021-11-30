@@ -16,9 +16,9 @@ export default createMediaHandler({
       return true;
     }
     try {
-      console.log('trying...', req)
+      console.log('trying...', JSON.stringify(req))
       const user = await isAuthorized(req);
-      console.log('user: ', user)
+      console.log('user: ', JSON.stringify(user))
       return user && user.verified;
     } catch (e) {
       console.log('error: ', e)
