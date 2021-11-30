@@ -3,7 +3,7 @@ draft: true
 blocks:
   - image:
       src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
+        http://res.cloudinary.com/protocolai/image/upload/v1635875985/Home/hackathons-hero_sovbdf.svg
     label: ''
     headline: Connect. Build. Grow.
     subhead: ''
