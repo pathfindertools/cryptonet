@@ -1,5 +1,6 @@
 # Development
 
+Microgen is a Next.js project using Tina CMS.
 
 ## Run the project locally
 Install the project's dependencies

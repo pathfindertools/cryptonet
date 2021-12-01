@@ -1,7 +1,9 @@
 
 # Release Notes
 
-**Version 0.1.0**  
-Released 12/1/21
+**Version 0.1.0**  | Released 12/1/21
 
-First release.
+Features
+- First release.
+- Banner, Feature, Text Cards and Photo Cards
+- Basic Navigation
