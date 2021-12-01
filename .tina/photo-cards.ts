@@ -91,6 +91,9 @@ export const photoCardsBlockSchema: TinaTemplate = {
               label: "Image Source",
               name: "src",
               type: "image",
+              ui: {
+                clearable: true,
+              }
             },
             {
               name: "alt",

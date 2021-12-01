@@ -81,7 +81,10 @@
                     {
                       "label": "Image Source",
                       "name": "src",
-                      "type": "image"
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      }
                     },
                     {
                       "name": "alt",
@@ -431,7 +434,10 @@
                         {
                           "label": "Image Source",
                           "name": "src",
-                          "type": "image"
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          }
                         },
                         {
                           "name": "alt",
@@ -994,7 +1000,10 @@
                         {
                           "label": "Image Source",
                           "name": "src",
-                          "type": "image"
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          }
                         },
                         {
                           "name": "alt",
@@ -1184,7 +1193,10 @@
                         {
                           "label": "Image Source",
                           "name": "src",
-                          "type": "image"
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          }
                         },
                         {
                           "name": "alt",
@@ -2470,7 +2482,10 @@
                         {
                           "label": "Image Source",
                           "name": "src",
-                          "type": "image"
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          }
                         },
                         {
                           "name": "alt",
@@ -3327,7 +3342,10 @@
                     {
                       "label": "Image Source",
                       "name": "src",
-                      "type": "image"
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      }
                     },
                     {
                       "name": "alt",
@@ -3642,7 +3660,10 @@
                         {
                           "label": "Image Source",
                           "name": "src",
-                          "type": "image"
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          }
                         },
                         {
                           "name": "alt",
@@ -3991,7 +4012,10 @@
             {
               "type": "image",
               "label": "Social Sharing Image",
-              "name": "siteImageSrc"
+              "name": "siteImageSrc",
+              "ui": {
+                "clearable": true
+              }
             }
           ]
         },

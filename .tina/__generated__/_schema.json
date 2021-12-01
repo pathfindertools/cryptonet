@@ -107,6 +107,9 @@
                       "label": "Image Source",
                       "name": "src",
                       "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
@@ -590,6 +593,9 @@
                           "label": "Image Source",
                           "name": "src",
                           "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
                           "namespace": [
                             "pages",
                             "blocks",
@@ -1294,6 +1300,9 @@
                           "label": "Image Source",
                           "name": "src",
                           "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
                           "namespace": [
                             "pages",
                             "blocks",
@@ -1582,6 +1591,9 @@
                           "label": "Image Source",
                           "name": "src",
                           "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
                           "namespace": [
                             "pages",
                             "blocks",
@@ -3174,6 +3186,9 @@
                           "label": "Image Source",
                           "name": "src",
                           "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
                           "namespace": [
                             "pages",
                             "blocks",
@@ -4190,6 +4205,9 @@
                       "label": "Image Source",
                       "name": "src",
                       "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
@@ -4624,6 +4642,9 @@
                           "label": "Image Source",
                           "name": "src",
                           "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
                           "namespace": [
                             "pages",
                             "blocks",
@@ -5063,6 +5084,9 @@
               "type": "image",
               "label": "Social Sharing Image",
               "name": "siteImageSrc",
+              "ui": {
+                "clearable": true
+              },
               "namespace": [
                 "pages",
                 "meta",

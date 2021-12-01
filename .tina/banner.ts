@@ -36,6 +36,9 @@ export const bannerBlockSchema: TinaTemplate = {
           label: "Image Source",
           name: "src",
           type: "image",
+          ui: {
+            clearable: true,
+          }
         },
         {
           name: "alt",
@@ -125,6 +128,9 @@ export const bannerBlockSchema: TinaTemplate = {
               label: "Image Source",
               name: "src",
               type: "image",
+              ui: {
+                clearable: true,
+              }
             },
             {
               name: "alt",

@@ -83,6 +83,9 @@ export default defineSchema({
               type: "image",
               label: "Social Sharing Image",
               name: "siteImageSrc",
+              ui: {
+                clearable: true,
+              }
             },
           ]
         },
