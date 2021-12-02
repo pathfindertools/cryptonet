@@ -28,11 +28,9 @@ blocks:
       textSize: base
     _template: feature
   - label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: Features
+    subhead: ''
+    body: ''
     items:
       - headline: Here's Another Card
         subhead: ''
