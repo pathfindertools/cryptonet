@@ -28,24 +28,6 @@ blocks:
       textSize: base
     _template: feature
   - label: ''
-    headline: This is the main headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
-    style:
-      textAlignment: center
-      contentOrder: labelHeadingsContent
-      width: narrow
-      backgroundColor: white
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: xl
-      textColor: black
-      textSize: base
-    _template: banner
-  - label: ''
     headline: Features
     subhead: ''
     body: ''
@@ -65,11 +47,16 @@ blocks:
         text: >-
           This is where you might talk about the card, if this wasn't just
           filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
     style:
-      columns: '3'
+      columns: '4'
       textAlignment: left
       contentOrder: labelHeadingsContent
-      backgroundColor: white
+      backgroundColor: grayLight
       headlineColor: black
       headlineSize: 3xl
       subheadColor: black
@@ -78,16 +65,38 @@ blocks:
       textSize: base
     cardStyle:
       type: solid
-      backgroundColor: grayLight
+      backgroundColor: white
       accentColor: primary
       buttonType: solid
       headlineColor: grayDark
-      headlineSize: 2xl
+      headlineSize: lg
       subheadColor: black
       subheadSize: lg
       textColor: black
       textSize: base
     _template: textCards
+  - label: ''
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: ''
+    buttons:
+      - label: Button Label
+        link: /
+        type: solid
+        textColor: white
+        backgroundColor: primary
+    style:
+      textAlignment: center
+      contentOrder: labelHeadingsContent
+      width: narrow
+      backgroundColor: white
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: xl
+      textColor: black
+      textSize: base
+    _template: banner
   - label: ''
     headline: Built with Microgen
     subhead: ''
