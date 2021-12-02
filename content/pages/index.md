@@ -83,7 +83,7 @@ blocks:
       - label: Button Label
         link: /
         type: outline
-        textColor: primary
+        textColor: white
         backgroundColor: primary
     style:
       textAlignment: center
