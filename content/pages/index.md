@@ -35,8 +35,8 @@ blocks:
       - headline: Up in an hour
         subhead: ''
         text: >-
-          Get a website complete with a visual CMS deployed less than an hour on
-          any static host.
+          Get a website complete with a visual CMS deployed in less than an hour
+          on your choice of static host.
       - headline: Modern Features
         subhead: ''
         text: >-
