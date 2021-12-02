@@ -81,13 +81,13 @@ blocks:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
         type: solid
-        textColor: primary
+        textColor: gray
         backgroundColor: white
     style:
       textAlignment: center
       contentOrder: labelHeadingsContent
       width: narrow
-      backgroundColor: primary
+      backgroundColor: gray
       headlineColor: white
       headlineSize: 3xl
       subheadColor: white
@@ -127,7 +127,7 @@ blocks:
       textSize: base
     cardStyle:
       type: solid
-      backgroundColor: primary
+      backgroundColor: gray
       accentColor: white
       buttonType: outline
       buttonTextColor: white
