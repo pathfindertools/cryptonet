@@ -117,7 +117,7 @@ blocks:
         link: 'https://hackathons.filecoin.io/asia-hackathon-season/'
         buttonLabel: Visit Site
     style:
-      columns: '2'
+      columns: '3'
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
