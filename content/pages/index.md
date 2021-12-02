@@ -32,7 +32,7 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: Up in under an hour
+      - headline: Up in an hour
         subhead: ''
         text: >-
           Get a website complete with a visual CMS deployed less than an hour on
