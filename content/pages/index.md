@@ -118,14 +118,15 @@ blocks:
       textSize: base
     cardStyle:
       type: solid
-      backgroundColor: gray
-      accentColor: primary
-      buttonType: solid
+      backgroundColor: primary
+      accentColor: white
+      buttonType: outline
+      buttonTextColor: white
       headlineColor: white
       headlineSize: 2xl
       subheadColor: white
       subheadSize: lg
-      textColor: white
+      textColor: grayLight
       textSize: base
     _template: photoCards
 meta:
