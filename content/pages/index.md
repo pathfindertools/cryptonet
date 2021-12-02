@@ -98,11 +98,13 @@ blocks:
         text: >-
           This is where you might talk about the card, if this wasn't just
           filler text.
-      - headline: Here's Another Card
+      - headline: Asia Hackathon Season
         subhead: ''
         text: >-
           This is where you might talk about the card, if this wasn't just
           filler text.
+        link: 'https://hackathons.filecoin.io/asia-hackathon-season/'
+        buttonLabel: Visit Site
     style:
       columns: '2'
       textAlignment: left
