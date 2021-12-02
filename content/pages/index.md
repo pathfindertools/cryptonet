@@ -28,6 +28,51 @@ blocks:
       textSize: base
     _template: feature
   - label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    style:
+      columns: '3'
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+      backgroundColor: white
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      textColor: black
+      textSize: base
+    cardStyle:
+      type: solid
+      backgroundColor: grayLight
+      accentColor: primary
+      buttonType: solid
+      headlineColor: black
+      headlineSize: 2xl
+      subheadColor: black
+      subheadSize: lg
+      textColor: black
+      textSize: base
+    _template: textCards
+  - label: ''
     headline: This is the main headline
     subhead: Here is a subhead
     body: >-
