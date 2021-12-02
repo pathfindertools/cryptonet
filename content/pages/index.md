@@ -93,7 +93,7 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: Here's Another Card
+      - headline: Hackathons
         subhead: ''
         text: >-
           This is where you might talk about the card, if this wasn't just
