@@ -65,7 +65,7 @@ blocks:
       backgroundColor: grayLight
       accentColor: primary
       buttonType: solid
-      headlineColor: black
+      headlineColor: grayDark
       headlineSize: 2xl
       subheadColor: black
       subheadSize: lg
