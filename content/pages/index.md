@@ -47,11 +47,9 @@ blocks:
         text: >-
           Customize the look and feel of your site through the Tina CMS visual
           editor without writing a single line of code.
-      - headline: Here's Another Card
+      - headline: Git Based
         subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+        text: Version controlled content and design.
     style:
       columns: '2'
       textAlignment: left
