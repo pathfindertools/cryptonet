@@ -34,14 +34,14 @@ blocks:
       Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
       libero, nec molestie urna dui a leo.
     style:
-      textAlignment: left
+      textAlignment: center
       contentOrder: labelHeadingsContent
-      width: normal
+      width: narrow
       backgroundColor: white
       headlineColor: black
       headlineSize: 3xl
       subheadColor: black
-      subheadSize: 3xl
+      subheadSize: xl
       textColor: black
       textSize: base
     _template: banner
