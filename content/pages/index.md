@@ -12,7 +12,7 @@ blocks:
         link: 'https://github.com/filecoin-project/microgen'
         type: solid
         textColor: white
-        backgroundColor: primary
+        backgroundColor: gray
     style:
       flipLayout: false
       imageStyle: overlap
