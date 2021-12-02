@@ -28,6 +28,24 @@ blocks:
       textSize: base
     _template: feature
   - label: ''
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      textAlignment: center
+      contentOrder: labelHeadingsContent
+      width: narrow
+      backgroundColor: white
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: xl
+      textColor: black
+      textSize: base
+    _template: banner
+  - label: ''
     headline: Features
     subhead: ''
     body: ''
@@ -71,23 +89,43 @@ blocks:
       textSize: base
     _template: textCards
   - label: ''
-    headline: This is the main headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: Built with Microgen
+    subhead: ''
+    body: ''
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
     style:
-      textAlignment: center
+      columns: '2'
+      textAlignment: left
       contentOrder: labelHeadingsContent
-      width: narrow
       backgroundColor: white
       headlineColor: black
       headlineSize: 3xl
       subheadColor: black
-      subheadSize: xl
+      subheadSize: 3xl
       textColor: black
       textSize: base
-    _template: banner
+    cardStyle:
+      type: solid
+      backgroundColor: gray
+      accentColor: primary
+      buttonType: solid
+      headlineColor: white
+      headlineSize: 2xl
+      subheadColor: white
+      subheadSize: lg
+      textColor: white
+      textSize: base
+    _template: photoCards
 meta:
   siteTitle: Hackathons
   siteDescription: >-
