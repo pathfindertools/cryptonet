@@ -42,7 +42,7 @@ blocks:
         text: >-
           Responsive design, open graph social sharing and google analytics on
           every site.
-      - headline: Custom design without custom code
+      - headline: Custom Design
         subhead: ''
         text: >-
           Customize the look and feel of your site through the Tina CMS visual
