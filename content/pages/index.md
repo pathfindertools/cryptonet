@@ -36,7 +36,7 @@ blocks:
         subhead: ''
         text: >-
           Get a website complete with a visual CMS deployed less than an hour on
-          your static host.
+          any static host.
       - headline: Modern Features
         subhead: ''
         text: >-
