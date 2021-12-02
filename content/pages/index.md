@@ -74,7 +74,7 @@ blocks:
       textSize: base
     _template: textCards
   - label: ''
-    headline: Learn More about MicroGen
+    headline: Learn More
     subhead: ''
     body: ''
     buttons:
