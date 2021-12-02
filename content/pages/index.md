@@ -137,7 +137,7 @@ blocks:
       headlineSize: 2xl
       subheadColor: white
       subheadSize: lg
-      textColor: grayLight
+      textColor: white
       textSize: base
     _template: photoCards
 meta:
