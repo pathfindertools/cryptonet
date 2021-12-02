@@ -32,11 +32,11 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: Here's Another Card
+      - headline: Up in under an hour
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Get your site deployed and ready for editing in less than an hour on
+          any static host.
       - headline: Here's Another Card
         subhead: ''
         text: >-
