@@ -45,8 +45,8 @@ blocks:
       - headline: Custom Design
         subhead: ''
         text: >-
-          Customize the look and feel of your site through the Tina CMS visual
-          editor without writing a single line of code.
+          Customize the look and feel of your site with a realtime visual
+          editor, without writing a single line of code.
       - headline: Git Based
         subhead: ''
         text: Version controlled content and design.
