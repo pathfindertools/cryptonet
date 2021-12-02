@@ -58,7 +58,7 @@ nav:
   navTextColor: white
   navBackgroundColor: black
 colors:
-  primary: '#FF007A'
+  primary: '#0090FF'
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
