@@ -2,11 +2,11 @@
 draft: true
 blocks:
   - label: ''
-    headline: Create modern websites with a visual editor
+    headline: Quickly create modern websites with a visual editor
     subhead: ''
     body: >-
-      MicroGen is a starter template for quickly creating sites that can be
-      customized and styled through a visual editor.
+      MicroGen is a Next.js  starter template for quickly creating sites that
+      can be customized and styled with Tina CMS.
     buttons:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
@@ -15,7 +15,7 @@ blocks:
         backgroundColor: primary
     style:
       flipLayout: false
-      imageStyle: natural
+      imageStyle: overlap
       textAlignment: left
       contentAlignment: center
       contentOrder: labelHeadingsContent
