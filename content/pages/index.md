@@ -53,7 +53,7 @@ blocks:
           This is where you might talk about the card, if this wasn't just
           filler text.
     style:
-      columns: '4'
+      columns: '2'
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: grayLight
