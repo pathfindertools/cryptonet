@@ -27,6 +27,24 @@ blocks:
       textColor: black
       textSize: base
     _template: feature
+  - label: ''
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    style:
+      textAlignment: left
+      contentOrder: labelHeadingsContent
+      width: normal
+      backgroundColor: white
+      headlineColor: black
+      headlineSize: 3xl
+      subheadColor: black
+      subheadSize: 3xl
+      textColor: black
+      textSize: base
+    _template: banner
 meta:
   siteTitle: Hackathons
   siteDescription: >-
