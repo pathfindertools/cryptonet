@@ -6,7 +6,7 @@ blocks:
     subhead: ''
     body: >-
       MicroGen is a starter template for quickly creating sites that can be
-      customized and styled through a visual CMS.
+      customized and styled through a visual editor.
     buttons:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
