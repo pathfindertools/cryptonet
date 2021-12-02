@@ -37,11 +37,11 @@ blocks:
         text: >-
           Get your site deployed and ready for editing in less than an hour on
           any static host.
-      - headline: Here's Another Card
+      - headline: Modern Features
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Modern features like responsive design, Open Graph social sharing and
+          automatic image optimization.
       - headline: Here's Another Card
         subhead: ''
         text: >-
