@@ -40,8 +40,8 @@ blocks:
       - headline: Modern Features
         subhead: ''
         text: >-
-          Modern features like responsive design, Open Graph social sharing and
-          automatic image optimization.
+          Responsive design, open graph social sharing and automatic image
+          optimization.
       - headline: Here's Another Card
         subhead: ''
         text: >-
