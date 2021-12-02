@@ -82,8 +82,8 @@ blocks:
     buttons:
       - label: Button Label
         link: /
-        type: solid
-        textColor: white
+        type: outline
+        textColor: primary
         backgroundColor: primary
     style:
       textAlignment: center
