@@ -75,7 +75,7 @@ blocks:
     _template: textCards
   - label: ''
     headline: Learn More about MicroGen
-    subhead: Here is a subhead
+    subhead: ''
     body: ''
     buttons:
       - label: Get Started
