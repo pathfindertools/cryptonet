@@ -42,11 +42,11 @@ blocks:
         text: >-
           Responsive design, open graph social sharing and google analytics on
           every site.
-      - headline: Here's Another Card
+      - headline: Custom design without custom code
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Customize the look and feel of your site through the Tina CMS visual
+          editor without writing a single line of code.
       - headline: Here's Another Card
         subhead: ''
         text: >-
