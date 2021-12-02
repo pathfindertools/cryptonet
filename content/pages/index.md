@@ -98,6 +98,8 @@ blocks:
         text: >-
           This is where you might talk about the card, if this wasn't just
           filler text.
+        link: 'https://hackathons.filecoin.io/'
+        buttonLabel: Visit Site
       - headline: Asia Hackathon Season
         subhead: ''
         text: >-
