@@ -100,14 +100,20 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: Hackathons
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1638476735/hackathons_z7pwah.png
+        headline: Hackathons
         subhead: ''
         text: >-
           This is where you might talk about the card, if this wasn't just
           filler text.
         link: 'https://hackathons.filecoin.io/'
         buttonLabel: Visit Site
-      - headline: Asia Hackathon Season
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1638476723/asia-season_sn2gv8.png
+        headline: Asia Hackathon Season
         subhead: ''
         text: >-
           This is where you might talk about the card, if this wasn't just
