@@ -74,23 +74,23 @@ blocks:
       textSize: base
     _template: textCards
   - label: ''
-    headline: This is the main headline
+    headline: Learn More about MicroGen
     subhead: Here is a subhead
     body: ''
     buttons:
-      - label: Button Label
-        link: /
-        type: outline
-        textColor: white
-        backgroundColor: primary
+      - label: Get Started
+        link: 'https://github.com/filecoin-project/microgen'
+        type: solid
+        textColor: primary
+        backgroundColor: white
     style:
       textAlignment: center
       contentOrder: labelHeadingsContent
       width: narrow
-      backgroundColor: white
-      headlineColor: black
+      backgroundColor: primary
+      headlineColor: white
       headlineSize: 3xl
-      subheadColor: black
+      subheadColor: white
       subheadSize: xl
       textColor: black
       textSize: base
