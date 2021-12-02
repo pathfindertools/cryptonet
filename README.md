@@ -3,10 +3,10 @@
 MicroGen is a starter template for quickly creating sites that can be customized and styled through a visual CMS.
 
 Staging  
-https://microgen-tina.vercel.app
+https://microgen.vercel.app
 
 CMS Login  
-https://microgen-tina.vercel.app/admin/
+https://microgen.vercel.app/admin/
 
 ### Documentation
 
