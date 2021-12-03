@@ -82,6 +82,7 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
+                    "minHeight": "",
                     "flipLayout": false,
                     "imageStyle": "natural",
                     "headlineColor": "black",
@@ -387,6 +388,18 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
                     {
                       "label": "Flip Layout",
                       "name": "flipLayout",
@@ -1426,6 +1439,18 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
                     {
                       "label": "Columns",
                       "name": "columns",
@@ -3022,6 +3047,18 @@
                   },
                   "fields": [
                     {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
                       "label": "Columns",
                       "name": "columns",
                       "ui": {
@@ -4485,6 +4522,18 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
                     {
                       "label": "Text Alignment",
                       "name": "textAlignment",

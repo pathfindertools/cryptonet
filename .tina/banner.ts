@@ -81,6 +81,11 @@ export const bannerBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          label: "Minimum Height",
+          name: "minHeight",
+          type: "string",
+        },
+        {
           label: "Text Alignment",
           name: "textAlignment",
           type: "string",

@@ -4,10 +4,7 @@ blocks:
   - label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
-    body: >-
-      Introduction to answer questions such as "Who is this page meant to
-      serve?" "What does this page have to offer me?" "How is this related to
-      filecoin.io?"
+    body: A powerful and dynamic distributed cloud storage network for your data
     buttons:
       - label: Learn More
         link: /
@@ -15,6 +12,7 @@ blocks:
         textColor: black
         backgroundColor: white
     style:
+      minHeight: '800'
       flipLayout: false
       imageStyle: natural
       textAlignment: left
@@ -29,7 +27,7 @@ blocks:
       subheadColor: primary
       subheadSize: 3xl
       textColor: white
-      textSize: base
+      textSize: xl
     _template: feature
   - image:
       src: >-
@@ -41,6 +39,7 @@ blocks:
     subhead: ''
     body: ''
     style:
+      minHeight: '700'
       flipLayout: false
       imageStyle: overlap
       textAlignment: left
@@ -96,7 +95,7 @@ blocks:
       textSize: base
     _template: textCards
   - label: ''
-    headline: Filecoin solves many problems associated with storage
+    headline: Filecoin solves many problems associated with traditional storage
     subhead: ''
     body: ''
     items:

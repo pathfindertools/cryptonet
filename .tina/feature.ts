@@ -13,6 +13,7 @@ export const featureBlockSchema: TinaTemplate = {
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
+        minHeight: "",
         flipLayout: false,
         imageStyle: "natural",
         headlineColor: "black",
@@ -82,6 +83,11 @@ export const featureBlockSchema: TinaTemplate = {
         component: "group",
       },
       fields: [
+        {
+          label: "Minimum Height",
+          name: "minHeight",
+          type: "string",
+        },
         {
           label: "Flip Layout",
           name: "flipLayout",

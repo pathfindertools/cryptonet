@@ -7,6 +7,7 @@ export const Section = ({
   navigationLabel = "",
   className = "",
   image = "",
+  minHeight= "",
 }) => {
 
   const sectionColorCss = {
@@ -22,11 +23,13 @@ export const Section = ({
   };
 
   const sectionId = navigationLabel ? { id: lowerDash(navigationLabel) } : {}
+  const sectionStyle = { minHeight: minHeight ? `${minHeight}px` : 'auto' }
 
   return (
     <section
       { ...sectionId }
       className="relative"
+      style={sectionStyle}
     >
       <div className={`background absolute inset-0 -z-1 ${sectionColorCss[color]}`}>
         {image && <img className="w-full h-full object-cover" src={image} />}

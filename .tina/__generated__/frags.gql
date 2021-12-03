@@ -32,6 +32,7 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         flipLayout
         imageStyle
         textAlignment
@@ -80,6 +81,7 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         columns
         textAlignment
         contentOrder
@@ -136,6 +138,7 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         columns
         textAlignment
         contentOrder
@@ -188,6 +191,7 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         textAlignment
         contentOrder
         width

@@ -57,6 +57,7 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
+                    "minHeight": "",
                     "flipLayout": false,
                     "imageStyle": "natural",
                     "headlineColor": "black",
@@ -271,6 +272,11 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string"
+                    },
                     {
                       "label": "Flip Layout",
                       "name": "flipLayout",
@@ -1057,6 +1063,11 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string"
+                    },
                     {
                       "label": "Columns",
                       "name": "columns",
@@ -2347,6 +2358,11 @@
                   },
                   "fields": [
                     {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string"
+                    },
+                    {
                       "label": "Columns",
                       "name": "columns",
                       "ui": {
@@ -3532,6 +3548,11 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string"
+                    },
                     {
                       "label": "Text Alignment",
                       "name": "textAlignment",

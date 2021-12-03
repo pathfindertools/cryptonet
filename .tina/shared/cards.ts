@@ -11,6 +11,11 @@ export const cardsSchema: TinaField = {
   },
   fields: [
     {
+      label: "Minimum Height",
+      name: "minHeight",
+      type: "string",
+    },
+    {
       label: "Columns",
       name: "columns",
       ui: {

@@ -52,6 +52,7 @@ export const getStaticProps = async ({ params }) => {
                   buttonLabel
                 }
                 style {
+                  minHeight
                   columns
                   textColor
                   textSize
@@ -101,6 +102,7 @@ export const getStaticProps = async ({ params }) => {
                   accentColor
                 }
                 style {
+                  minHeight
                   columns
                   textColor
                   textSize
@@ -146,6 +148,7 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  minHeight
                   flipLayout
                   imageStyle
                   textColor
@@ -182,6 +185,7 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  minHeight
                   width
                   textColor
                   textSize

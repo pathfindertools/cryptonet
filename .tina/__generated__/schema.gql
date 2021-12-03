@@ -128,6 +128,7 @@ type PagesBlocksFeatureStyleBackgroundImage {
 }
 
 type PagesBlocksFeatureStyle {
+  minHeight: String
   flipLayout: Boolean
   imageStyle: String
   textAlignment: String
@@ -182,6 +183,7 @@ type PagesBlocksPhotoCardsStyleBackgroundImage {
 }
 
 type PagesBlocksPhotoCardsStyle {
+  minHeight: String
   columns: String
   textAlignment: String
   contentOrder: String
@@ -244,6 +246,7 @@ type PagesBlocksTextCardsStyleBackgroundImage {
 }
 
 type PagesBlocksTextCardsStyle {
+  minHeight: String
   columns: String
   textAlignment: String
   contentOrder: String
@@ -302,6 +305,7 @@ type PagesBlocksBannerStyleBackgroundImage {
 }
 
 type PagesBlocksBannerStyle {
+  minHeight: String
   textAlignment: String
   contentOrder: String
   width: String
@@ -429,6 +433,7 @@ input PagesBlocksFeatureStyleBackgroundImageMutation {
 }
 
 input PagesBlocksFeatureStyleMutation {
+  minHeight: String
   flipLayout: Boolean
   imageStyle: String
   textAlignment: String
@@ -483,6 +488,7 @@ input PagesBlocksPhotoCardsStyleBackgroundImageMutation {
 }
 
 input PagesBlocksPhotoCardsStyleMutation {
+  minHeight: String
   columns: String
   textAlignment: String
   contentOrder: String
@@ -545,6 +551,7 @@ input PagesBlocksTextCardsStyleBackgroundImageMutation {
 }
 
 input PagesBlocksTextCardsStyleMutation {
+  minHeight: String
   columns: String
   textAlignment: String
   contentOrder: String
@@ -603,6 +610,7 @@ input PagesBlocksBannerStyleBackgroundImageMutation {
 }
 
 input PagesBlocksBannerStyleMutation {
+  minHeight: String
   textAlignment: String
   contentOrder: String
   width: String
