@@ -218,6 +218,11 @@ export const getStaticProps = async ({ params }) => {
               accent1
               accent2
               accent3
+              white
+              grayLight
+              gray
+              grayDark
+              black
             }
           }
         }

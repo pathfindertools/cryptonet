@@ -5310,6 +5310,71 @@
                 "colors",
                 "accent3"
               ]
+            },
+            {
+              "type": "string",
+              "label": "White",
+              "name": "white",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "white"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Light",
+              "name": "grayLight",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "grayLight"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray",
+              "name": "gray",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "gray"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Dark",
+              "name": "grayDark",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "grayDark"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Black",
+              "name": "black",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "black"
+              ]
             }
           ],
           "namespace": [

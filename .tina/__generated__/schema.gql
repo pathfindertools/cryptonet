@@ -350,6 +350,11 @@ type PagesColors {
   accent1: String
   accent2: String
   accent3: String
+  white: String
+  grayLight: String
+  gray: String
+  grayDark: String
+  black: String
 }
 
 type Pages {
@@ -651,6 +656,11 @@ input PagesColorsMutation {
   accent1: String
   accent2: String
   accent3: String
+  white: String
+  grayLight: String
+  gray: String
+  grayDark: String
+  black: String
 }
 
 input PagesMutation {
