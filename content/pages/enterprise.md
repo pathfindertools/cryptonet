@@ -73,6 +73,7 @@ blocks:
         subhead: ''
         text: 'Applications, projects, and funded startups'
     style:
+      minHeight: '650'
       columns: '4'
       textAlignment: left
       contentOrder: labelHeadingsContent
@@ -397,12 +398,11 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638473289/bg-filecoin-NAS_qo3y6w.png
     label: ''
-    headline: Sales referral program
+    headline: Sales Referral Program
     subhead: ''
     body: >-
-      Today, Protocol Labs is announcing a temporary referral fee program to
-      community members who bring large datasets onto the Filecoin network.
-      Invite your customers and help create the data gravity pull!
+      We reward community members for helping bring new participants to the
+      Filecoin network.
     buttons:
       - label: Learn More
         link: /
@@ -422,7 +422,7 @@ blocks:
       headlineSize: 6xl
       subheadColor: black
       subheadSize: 3xl
-      textColor: grayLight
+      textColor: gray
       textSize: 4xl
     _template: feature
 meta:
