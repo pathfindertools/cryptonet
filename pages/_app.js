@@ -53,6 +53,12 @@ const App = ({ Component, pageProps }) => {
               import("react-tinacms-editor").then(({ MarkdownFieldPlugin }) => {
                 cms.plugins.add(MarkdownFieldPlugin);
               });
+              import('../plugins.tsx').then(({ emailFieldPlugin }) => {
+                cms.plugins.add(emailFieldPlugin)
+              });
+              import('../plugins.tsx').then(({ typeControlFieldPlugin }) => {
+                cms.plugins.add(typeControlFieldPlugin)
+              });
             }}
             documentCreatorCallback={{
               /**

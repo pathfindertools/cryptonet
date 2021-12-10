@@ -31,6 +31,14 @@ export const featureBlockSchema: TinaTemplate = {
   },
   fields: [
     {
+      type: "string",
+      label: "Headline Style",
+      name: "headlineStyles",
+      ui: {
+        component: "typeControl"
+      }
+    },
+    {
       label: "Image",
       name: "image",
       type: "object",

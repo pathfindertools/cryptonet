@@ -100,6 +100,20 @@
               },
               "fields": [
                 {
+                  "type": "string",
+                  "label": "Headline Style",
+                  "name": "headlineStyles",
+                  "ui": {
+                    "component": "typeControl"
+                  },
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "feature",
+                    "headlineStyles"
+                  ]
+                },
+                {
                   "label": "Image",
                   "name": "image",
                   "type": "object",

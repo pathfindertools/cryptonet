@@ -17,10 +17,8 @@ export default function HomePage(
 
 export const getStaticProps = async ({ params }) => {
   const tinaProps = (await getStaticPropsForTina({
-    query: `#graphql
+    query: `
       query ContentQuery($relativePath: String!) {
-        # "index.md" is _relative_ to the "Pages" path property in your schema definition
-        # you can inspect this file at "content/pages/index.md"
         ${layoutQueryFragment}
         getPagesDocument(relativePath: $relativePath) {
           data {
@@ -132,6 +130,7 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksFeature {
+                headlineStyles
                 image {
                   src
                   alt

@@ -1,7 +1,8 @@
 ---
 draft: true
 blocks:
-  - label: ''
+  - headlineStyles: text-black text-lg mb-0.5 font-bold
+    label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
     body: A powerful and dynamic distributed cloud storage network for your data

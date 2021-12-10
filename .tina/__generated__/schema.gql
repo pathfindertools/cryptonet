@@ -145,6 +145,7 @@ type PagesBlocksFeatureStyle {
 }
 
 type PagesBlocksFeature {
+  headlineStyles: String
   image: PagesBlocksFeatureImage
   label: String
   headline: String
@@ -450,6 +451,7 @@ input PagesBlocksFeatureStyleMutation {
 }
 
 input PagesBlocksFeatureMutation {
+  headlineStyles: String
   image: PagesBlocksFeatureImageMutation
   label: String
   headline: String

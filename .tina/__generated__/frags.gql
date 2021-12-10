@@ -12,6 +12,7 @@ fragment PagesParts on Pages {
   blocks {
     __typename
     ... on PagesBlocksFeature {
+      headlineStyles
       image {
         __typename
         src
