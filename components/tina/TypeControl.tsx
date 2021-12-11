@@ -3,18 +3,35 @@ import SelectMenu from './SelectMenu';
 import ToggleButton from './ToggleButton';
 import IconFontSize from './icons/IconFontSize';
 import IconMargin from './icons/IconMargin';
+import ColorPicker from './ColorPicker';
 
 export default function TypeControl({ field, input, meta }) {
   const colors = [
+    { label: "Primary", value: "text-primary"},
+    { label: "Accent 1", value: "text-accent1"},
+    { label: "Accent 2", value: "text-accent2"},
+    { label: "Accent 3", value: "text-accent3"},
+    { label: "Accent 4", value: "text-accent4"},
     { label: "White", value: "text-white"},
-    { label: "Gray", value: "text-gray-400"},
+    { label: "Gray Light", value: "text-gray-light"},
+    { label: "Gray", value: "text-gray"},
+    { label: "Gray Dark", value: "text-gray-dark"},
     { label: "Black", value: "text-black"},
   ]
   const [color, setColor] = useState(getStyleMatch(colors, input.value));
   const sizes = [
+    { label: "XS", value: "text-xs" },
     { label: "SM", value: "text-sm" },
-    { label: "MD", value: "text-md" },
+    { label: "MD", value: "text-base" },
     { label: "LG", value: "text-lg" },
+    { label: "XL", value: "text-xl" },
+    { label: "2XL", value: "text-2xl" },
+    { label: "3XL", value: "text-3xl" },
+    { label: "4XL", value: "text-4xl" },
+    { label: "5XL", value: "text-5xl" },
+    { label: "6XL", value: "text-6xl" },
+    { label: "7XL", value: "text-7xl" },
+    { label: "8XL", value: "text-8xl" },
   ]
   const [size, setSize] = useState(getStyleMatch(sizes, input.value));
   const margins = [
@@ -46,22 +63,17 @@ export default function TypeControl({ field, input, meta }) {
     { label: "B", value: "font-bold" }
   ];
   const [weight, setWeight] = useState(getStyleMatch(weights, input.value));
-  const fontStyles = [
-    { label: "I", value: "italic" }
-  ];
-  const [fontStyle, setFontStyle] = useState(getStyleMatch(weights, input.value));
-
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // Update Hidden Field
     const input = inputRef.current;
     const lastValue = input.value;
-    const newValue = `${color} ${size} ${margin} ${weight} ${fontStyle}`;
+    const newValue = `${color} ${size} ${margin} ${weight}`;
     input.value = newValue;
     (input as any)._valueTracker?.setValue(lastValue);
     input.dispatchEvent(new Event("input", {bubbles: true}));
-  }, [color, size, margin, weight, fontStyle, inputRef.current]);
+  }, [color, size, margin, weight, inputRef.current]);
 
   // See if one of groups arrays styles is present in the fields value
   function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
@@ -83,11 +95,15 @@ export default function TypeControl({ field, input, meta }) {
         }}>{field.label}</label>
       </div>
       <div className="flex mb-6 items-center">
-        <SelectMenu value={color} onChange={setColor} options={colors} className="mr-2" />
-        <IconFontSize className="mr-2 ml-1" />
-        <SelectMenu value={size} onChange={setSize} options={sizes} className="mr-2" />
-        <IconMargin className="mr-2 ml-1" />
-        <SelectMenu value={margin} onChange={setMargin} options={margins} className="mr-2" />
+        <ColorPicker value={color} onClick={setColor} options={colors} className="mr-1" />
+        <div className="w-6 pr-1">
+          <IconFontSize className="float-right" />
+        </div>
+        <SelectMenu value={size} onChange={setSize} options={sizes} className="w-14 mr-1" />
+        <div className="w-6 pr-1">
+          <IconMargin className="float-right" />
+        </div>
+        <SelectMenu value={margin} onChange={setMargin} options={margins} className="w-14 mr-2" />
         <ToggleButton value={weight} onClick={setWeight} options={weights} className="w-9" />
         <input ref={inputRef} type="text" {...input}  className="hidden" />
       </div>

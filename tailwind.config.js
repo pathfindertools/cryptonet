@@ -22,13 +22,12 @@ module.exports = {
       accent1: "var(--accent1-color)",
       accent2: "var(--accent2-color)",
       accent3: "var(--accent3-color)",
+      accent4: "var(--accent4-color)",
       black: "var(--black-color)",
       white: "var(--white-color)",
-      gray: {
-        200: "var(--gray-light-color)",
-        500: "var(--gray-color)",
-        800: "var(--gray-dark-color)",
-      },
+      "gray-light": "var(--gray-light-color)",
+      gray: "var(--gray-color)",
+      "gray-dark": "var(--gray-dark-color)",
     },
     screens: {
       sm: "600px",

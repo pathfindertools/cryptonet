@@ -187,6 +187,7 @@ export const getStaticProps = async ({ params }) => {
                   width
                   textColor
                   textSize
+                  headlineStyles
                   headlineColor
                   headlineSize
                   subheadColor
@@ -220,6 +221,7 @@ export const getStaticProps = async ({ params }) => {
               accent1
               accent2
               accent3
+              accent4
               white
               grayLight
               gray

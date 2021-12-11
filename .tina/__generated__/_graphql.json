@@ -1881,22 +1881,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "arguments": [],
           "type": {
@@ -1978,21 +1963,6 @@
         "value": "PagesBlocksFeature"
       },
       "fields": [
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "headlineStyles"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
         {
           "kind": "FieldDefinition",
           "name": {
@@ -4413,6 +4383,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "accent4"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "white"
           },
           "arguments": [],
@@ -5634,21 +5619,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -5723,20 +5694,6 @@
         "value": "PagesBlocksFeatureMutation"
       },
       "fields": [
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "headlineStyles"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
         {
           "kind": "InputValueDefinition",
           "name": {
@@ -7986,6 +7943,20 @@
           "name": {
             "kind": "Name",
             "value": "accent3"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "accent4"
           },
           "type": {
             "kind": "NamedType",

@@ -136,8 +136,7 @@ type PagesBlocksFeatureStyle {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImage
-  headlineColor: String
-  headlineSize: String
+  headlineStyles: String
   subheadColor: String
   subheadSize: String
   textColor: String
@@ -145,7 +144,6 @@ type PagesBlocksFeatureStyle {
 }
 
 type PagesBlocksFeature {
-  headlineStyles: String
   image: PagesBlocksFeatureImage
   label: String
   headline: String
@@ -355,6 +353,7 @@ type PagesColors {
   accent1: String
   accent2: String
   accent3: String
+  accent4: String
   white: String
   grayLight: String
   gray: String
@@ -442,8 +441,7 @@ input PagesBlocksFeatureStyleMutation {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
-  headlineColor: String
-  headlineSize: String
+  headlineStyles: String
   subheadColor: String
   subheadSize: String
   textColor: String
@@ -451,7 +449,6 @@ input PagesBlocksFeatureStyleMutation {
 }
 
 input PagesBlocksFeatureMutation {
-  headlineStyles: String
   image: PagesBlocksFeatureImageMutation
   label: String
   headline: String
@@ -666,6 +663,7 @@ input PagesColorsMutation {
   accent1: String
   accent2: String
   accent3: String
+  accent4: String
   white: String
   grayLight: String
   gray: String

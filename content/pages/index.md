@@ -161,6 +161,7 @@ colors:
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
+  accent4: '#00D0DB'
   white: '#FFFFFF'
   grayLight: '#cfcfdc'
   gray: '#a3a3a3'

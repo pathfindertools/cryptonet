@@ -130,7 +130,6 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksFeature {
-                headlineStyles
                 image {
                   src
                   alt
@@ -152,8 +151,7 @@ export const getStaticProps = async ({ params }) => {
                   imageStyle
                   textColor
                   textSize
-                  headlineColor
-                  headlineSize
+                  headlineStyles
                   subheadColor
                   subheadSize
                   backgroundColor
@@ -221,6 +219,7 @@ export const getStaticProps = async ({ params }) => {
               accent1
               accent2
               accent3
+              accent4
               white
               grayLight
               gray

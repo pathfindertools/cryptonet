@@ -175,6 +175,14 @@ export default defineSchema({
             },
             {
               type: "string",
+              label: "Accent 4",
+              name: "accent4",
+              ui: {
+                component: "color",
+              },
+            },
+            {
+              type: "string",
               label: "White",
               name: "white",
               ui: {

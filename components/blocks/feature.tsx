@@ -67,18 +67,16 @@ export const Feature = ({ data }) => {
         </div>
         <div className="flex-1 relative">
           <div className={contentContainerCss(data)}>
-            <p className="text-white text-3xl mb-4">{data.headlineStyles}</p>
             <Content
               label = {data.label}
               headline = {data.headline}
               subhead = {data.subhead}
               body = {data.body}
               buttons = {data.buttons}
+              headlineStyles = {data.style?.headlineStyles}
               textColor = {data.style?.textColor}
-              headlineColor = {data.style?.headlineColor}
               subheadColor = {data.style?.subheadColor}
               textSize = {data.style?.textSize}
-              headlineSize = {data.style?.headlineSize}
               subheadSize = {data.style?.subheadSize}
               alignment = {data.style?.textAlignment}
               order = {data.style?.contentOrder}

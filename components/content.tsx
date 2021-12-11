@@ -103,11 +103,10 @@ export const Content = ({
   subhead,
   body,
   buttons,
+  headlineStyles,
   textColor,
-  headlineColor,
   subheadColor,
   textSize,
-  headlineSize,
   subheadSize,
   alignment = "left",
   order = "labelHeadingsContent",
@@ -115,7 +114,7 @@ export const Content = ({
   return (
     <div className={`flex flex-col ${contentAlignment(alignment)}`}>
       {label && <h4 className={`${labelOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>{label}</h4>}
-      {headline && <h2 className={`${headingOrder(order)} ${textColors[headlineColor]} ${textSizes[headlineSize]}`}>{headline}</h2>}
+      {headline && <h2 className={`${headingOrder(order)} ${headlineStyles}`}>{headline}</h2>}
       {subhead && <h3 className={`${subheadOrder(order)} ${textColors[subheadColor]} ${textSizes[subheadSize]}`}>{subhead}</h3>}
       {body && (
         <div className={`markdown leading-10 mt-8 items-center ${bodyOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>

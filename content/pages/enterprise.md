@@ -1,8 +1,7 @@
 ---
 draft: true
 blocks:
-  - headlineStyles: text-black text-lg mb-0.5 font-bold
-    label: ''
+  - label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
     body: A powerful and dynamic distributed cloud storage network for your data
@@ -23,8 +22,7 @@ blocks:
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
-      headlineColor: grayLight
-      headlineSize: 7xl
+      headlineStyles: 'text-gray-light text-7xl mb-11 '
       subheadColor: primary
       subheadSize: 3xl
       textColor: white
@@ -47,8 +45,7 @@ blocks:
       contentAlignment: center
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      headlineColor: gray
-      headlineSize: 4xl
+      headlineStyles: text-gray text-4xl mb-0
       subheadColor: black
       subheadSize: 3xl
       textColor: black
@@ -419,8 +416,7 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: ''
-      headlineColor: white
-      headlineSize: 6xl
+      headlineStyles: text-white text-6xl mb-0 undefined
       subheadColor: black
       subheadSize: 3xl
       textColor: gray
@@ -440,9 +436,10 @@ nav:
   navTextColor: white
 colors:
   primary: '#0090FF'
-  accent1: '#006FEC'
+  accent1: '#D0021B'
   accent2: '#39C1CB'
-  accent3: '#2DD0DB'
+  accent3: '#F5A623'
+  accent4: '#BD10E0'
   white: '#FFFFFF'
   grayLight: '#cfcfdc'
   gray: '#a3a3a3'

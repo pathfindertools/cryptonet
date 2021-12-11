@@ -16,8 +16,7 @@ export const featureBlockSchema: TinaTemplate = {
         minHeight: "",
         flipLayout: false,
         imageStyle: "natural",
-        headlineColor: "black",
-        headlineSize: "3xl",
+        headlineStyles: "text-white text-5xl mb-0",
         subheadColor: "black",
         subheadSize: "3xl",
         textColor: "black",
@@ -30,14 +29,6 @@ export const featureBlockSchema: TinaTemplate = {
     },
   },
   fields: [
-    {
-      type: "string",
-      label: "Headline Style",
-      name: "headlineStyles",
-      ui: {
-        component: "typeControl"
-      }
-    },
     {
       label: "Image",
       name: "image",
@@ -172,22 +163,12 @@ export const featureBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Headline Color",
-          name: "headlineColor",
-          ui: {
-            component: "select",
-          },
           type: "string",
-          options: colorOptions,
-        },
-        {
-          label: "Headline Size",
-          name: "headlineSize",
-          type: "string",
+          label: "Headline Style",
+          name: "headlineStyles",
           ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
+            component: "typeControl"
+          }
         },
         {
           label: "Subhead Color",
