@@ -62,12 +62,11 @@ blocks:
       backgroundColor: white
       accentColor: primary
       buttonType: solid
-      headlineColor: grayDark
-      headlineSize: lg
-      subheadColor: black
-      subheadSize: lg
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-sm mb-0
+      headlineStyles: text-black text-lg mb-0
+      subheadStyles: text-black text-lg mb-0
+      textStyles: text-black text-md mb-0
+
     _template: textCards
   - label: ''
     headline: Learn More
@@ -129,12 +128,10 @@ blocks:
       accentColor: white
       buttonType: outline
       buttonTextColor: white
-      headlineColor: white
-      headlineSize: 2xl
-      subheadColor: white
-      subheadSize: lg
-      textColor: white
-      textSize: base
+      labelStyles: text-white text-sm mb-0
+      headlineStyles: text-white text-2xl mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-md mb-0
     _template: photoCards
 meta:
   siteTitle: Hackathons

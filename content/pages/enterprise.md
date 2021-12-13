@@ -418,4 +418,3 @@ colors:
   grayDark: '#787878'
   black: '#000000'
 ---
-
