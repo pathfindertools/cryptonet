@@ -133,13 +133,13 @@ type PagesBlocksFeatureStyle {
   imageStyle: String
   textAlignment: String
   contentAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 type PagesBlocksFeature {
@@ -184,13 +184,13 @@ type PagesBlocksPhotoCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 type PagesBlocksPhotoCardsCardStyle {
@@ -243,13 +243,13 @@ type PagesBlocksTextCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 type PagesBlocksTextCardsCardStyle {
@@ -297,7 +297,6 @@ type PagesBlocksBannerStyleBackgroundImage {
 type PagesBlocksBannerStyle {
   minHeight: String
   textAlignment: String
-  contentOrder: String
   width: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
@@ -305,6 +304,7 @@ type PagesBlocksBannerStyle {
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 type PagesBlocksBanner {
@@ -427,13 +427,13 @@ input PagesBlocksFeatureStyleMutation {
   imageStyle: String
   textAlignment: String
   contentAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 input PagesBlocksFeatureMutation {
@@ -478,13 +478,13 @@ input PagesBlocksPhotoCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 input PagesBlocksPhotoCardsCardStyleMutation {
@@ -537,13 +537,13 @@ input PagesBlocksTextCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
-  contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 input PagesBlocksTextCardsCardStyleMutation {
@@ -591,7 +591,6 @@ input PagesBlocksBannerStyleBackgroundImageMutation {
 input PagesBlocksBannerStyleMutation {
   minHeight: String
   textAlignment: String
-  contentOrder: String
   width: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
@@ -599,6 +598,7 @@ input PagesBlocksBannerStyleMutation {
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 input PagesBlocksBannerMutation {

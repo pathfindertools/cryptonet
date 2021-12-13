@@ -124,15 +124,6 @@ export const featureBlockSchema: TinaTemplate = {
           options: vAlignOptions,
         },
         {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions
-        },
-        {
           label: "Background Color",
           name: "backgroundColor",
           type: "string",
@@ -192,6 +183,15 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "typeControl"
           }
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: contentOrderOptions
         },
       ],
     },

@@ -1836,21 +1836,6 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "arguments": [],
@@ -1927,6 +1912,21 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "arguments": [],
           "type": {
@@ -2400,21 +2400,6 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "arguments": [],
@@ -2491,6 +2476,21 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "arguments": [],
           "type": {
@@ -3087,21 +3087,6 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "arguments": [],
@@ -3178,6 +3163,21 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "arguments": [],
           "type": {
@@ -3699,21 +3699,6 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
             "value": "width"
           },
           "arguments": [],
@@ -3805,6 +3790,21 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "arguments": [],
           "type": {
@@ -5412,20 +5412,6 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "type": {
@@ -5497,6 +5483,20 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "type": {
             "kind": "NamedType",
@@ -5931,20 +5931,6 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "type": {
@@ -6016,6 +6002,20 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "type": {
             "kind": "NamedType",
@@ -6565,20 +6565,6 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
             "value": "backgroundColor"
           },
           "type": {
@@ -6650,6 +6636,20 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "type": {
             "kind": "NamedType",
@@ -7129,20 +7129,6 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
             "value": "width"
           },
           "type": {
@@ -7228,6 +7214,20 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "type": {
             "kind": "NamedType",

@@ -39,15 +39,6 @@ export const cardsSchema: TinaField = {
       options: hAlignOptions,
     },
     {
-      label: "Content Order",
-      name: "contentOrder",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: contentOrderOptions,
-    },
-    {
       label: "Background Color",
       name: "backgroundColor",
       type: "string",
@@ -107,6 +98,15 @@ export const cardsSchema: TinaField = {
       ui: {
         component: "typeControl"
       }
+    },
+    {
+      label: "Content Order",
+      name: "contentOrder",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: contentOrderOptions,
     },
   ],
 };

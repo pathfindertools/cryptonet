@@ -93,15 +93,6 @@ export const bannerBlockSchema: TinaTemplate = {
           options: hAlignOptions,
         },
         {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions,
-        },
-        {
           label: "Width",
           name: "width",
           type: "string",
@@ -173,6 +164,15 @@ export const bannerBlockSchema: TinaTemplate = {
           ui: {
             component: "typeControl"
           }
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: contentOrderOptions,
         },
       ],
     },

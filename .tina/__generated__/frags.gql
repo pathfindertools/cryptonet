@@ -37,7 +37,6 @@ fragment PagesParts on Pages {
         imageStyle
         textAlignment
         contentAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
@@ -48,6 +47,7 @@ fragment PagesParts on Pages {
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
     }
     ... on PagesBlocksPhotoCards {
@@ -82,7 +82,6 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
@@ -93,6 +92,7 @@ fragment PagesParts on Pages {
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
       cardStyle {
         __typename
@@ -135,7 +135,6 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
@@ -146,6 +145,7 @@ fragment PagesParts on Pages {
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
       cardStyle {
         __typename
@@ -183,7 +183,6 @@ fragment PagesParts on Pages {
         __typename
         minHeight
         textAlignment
-        contentOrder
         width
         backgroundColor
         backgroundImage {
@@ -195,6 +194,7 @@ fragment PagesParts on Pages {
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
     }
   }
