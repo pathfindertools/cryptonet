@@ -20,12 +20,10 @@ blocks:
       contentAlignment: center
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     _template: feature
   - label: ''
     headline: Features
@@ -55,12 +53,10 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: grayLight
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     cardStyle:
       type: solid
       backgroundColor: white
@@ -88,12 +84,10 @@ blocks:
       contentOrder: labelHeadingsContent
       width: narrow
       backgroundColor: gray
-      headlineColor: white
-      headlineSize: 3xl
-      subheadColor: white
-      subheadSize: xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     _template: banner
   - label: ''
     headline: Built with Microgen
@@ -125,12 +119,10 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     cardStyle:
       type: solid
       backgroundColor: gray

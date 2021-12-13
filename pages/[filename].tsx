@@ -52,12 +52,10 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -102,12 +100,10 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -149,11 +145,10 @@ export const getStaticProps = async ({ params }) => {
                   minHeight
                   flipLayout
                   imageStyle
-                  textColor
-                  textSize
+                  labelStyles
                   headlineStyles
-                  subheadColor
-                  subheadSize
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -184,12 +179,10 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   width
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src

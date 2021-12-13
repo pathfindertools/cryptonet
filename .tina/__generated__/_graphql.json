@@ -1881,6 +1881,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "labelStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "headlineStyles"
           },
           "arguments": [],
@@ -1896,7 +1911,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "arguments": [],
           "type": {
@@ -1911,37 +1926,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "arguments": [],
           "type": {
@@ -2460,7 +2445,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "arguments": [],
           "type": {
@@ -2475,7 +2460,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "arguments": [],
           "type": {
@@ -2490,7 +2475,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "arguments": [],
           "type": {
@@ -2505,37 +2490,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "arguments": [],
           "type": {
@@ -3207,7 +3162,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "arguments": [],
           "type": {
@@ -3222,7 +3177,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "arguments": [],
           "type": {
@@ -3237,7 +3192,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "arguments": [],
           "type": {
@@ -3252,37 +3207,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "arguments": [],
           "type": {
@@ -3894,7 +3819,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "arguments": [],
           "type": {
@@ -3909,7 +3834,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "arguments": [],
           "type": {
@@ -3924,7 +3849,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "arguments": [],
           "type": {
@@ -3939,37 +3864,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "arguments": [],
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "FieldDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "arguments": [],
           "type": {
@@ -5619,6 +5514,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "labelStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "headlineStyles"
           },
           "type": {
@@ -5633,7 +5542,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -5647,35 +5556,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6152,7 +6033,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6166,7 +6047,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6180,7 +6061,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6194,35 +6075,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6842,7 +6695,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6856,7 +6709,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6870,7 +6723,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6884,35 +6737,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -7476,7 +7301,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineColor"
+            "value": "labelStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -7490,7 +7315,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "headlineSize"
+            "value": "headlineStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -7504,7 +7329,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadColor"
+            "value": "subheadStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -7518,35 +7343,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "subheadSize"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textColor"
-          },
-          "type": {
-            "kind": "NamedType",
-            "name": {
-              "kind": "Name",
-              "value": "String"
-            }
-          }
-        },
-        {
-          "kind": "InputValueDefinition",
-          "name": {
-            "kind": "Name",
-            "value": "textSize"
+            "value": "textStyles"
           },
           "type": {
             "kind": "NamedType",

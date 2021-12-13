@@ -6,7 +6,7 @@ blocks:
     subhead: Decentralized storage at scale
     body: A powerful and dynamic distributed cloud storage network for your data
     buttons:
-      - label: Learn More
+      - label: Get Started
         link: /
         type: solid
         textColor: black
@@ -22,11 +22,10 @@ blocks:
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
-      headlineStyles: 'text-gray-light text-7xl mb-11 '
-      subheadColor: primary
-      subheadSize: 3xl
-      textColor: white
-      textSize: xl
+      labelStyles: text-white text-xl mb-0 font-bold
+      headlineStyles: text-gray-light text-7xl mb-10 undefined
+      subheadStyles: text-primary text-3xl mb-0 undefined
+      textStyles: text-white text-lg mb-24 undefined
     _template: feature
   - image:
       src: >-
@@ -45,11 +44,10 @@ blocks:
       contentAlignment: center
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      headlineStyles: text-gray text-4xl mb-0
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: 'text-gray text-4xl mb-0 '
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: 'text-black text-xl mb-0 '
     _template: feature
   - label: ''
     headline: >-
@@ -76,11 +74,10 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      headlineColor: white
-      headlineSize: 6xl
-      subheadColor: black
-      textColor: grayDark
-      textSize: lg
+      labelStyles: text-white text-lg mb-0 undefined
+      headlineStyles: text-white text-5xl undefined undefined
+      subheadStyles: text-white text-base mb-0 undefined
+      textStyles: 'text-white text-xl mb-0 '
     cardStyle:
       type: solid
       backgroundColor: accent1
@@ -157,12 +154,9 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: gray
-      headlineSize: 4xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-gray-dark text-3xl mb-0
+      textStyles: text-gray-dark text-lg mb-0
     cardStyle:
       type: solid
       backgroundColor: white
@@ -209,12 +203,9 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      headlineColor: white
-      headlineSize: 3xl
-      subheadColor: gray
-      subheadSize: 3xl
-      textColor: grayLight
-      textSize: base
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-gray text-3xl mb-0
+      textStyles: text-gray-light text-lg mb-0
     cardStyle:
       type: solid
       backgroundColor: black
@@ -265,12 +256,9 @@ blocks:
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-black text-3xl mb-0
+      textStyles: text-black text-lg mb-0
     cardStyle:
       type: transparent
       backgroundColor: black
@@ -309,12 +297,9 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 6xl
-      subheadColor: black
-      subheadSize: 4xl
-      textColor: black
-      textSize: base
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-black text-4xl mb-0
+      textStyles: text-black text-lg mb-0
     cardStyle:
       type: solid
       backgroundColor: accent1
@@ -373,12 +358,9 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 6xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-black text-3xl mb-0
+      textStyles: text-black text-lg mb-0
     cardStyle:
       type: solid
       backgroundColor: ''
@@ -396,11 +378,11 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638473289/bg-filecoin-NAS_qo3y6w.png
     label: ''
-    headline: Sales Referral Program
+    headline: Referral Program
     subhead: ''
     body: >-
-      We reward community members for helping bring new participants to the
-      Filecoin network.
+      Project Gravity reward community members for helping bring new
+      participants to the Filecoin network.
     buttons:
       - label: Learn More
         link: /
@@ -408,6 +390,7 @@ blocks:
         textColor: white
         backgroundColor: primary
     style:
+      minHeight: '700'
       flipLayout: false
       imageStyle: overlap
       textAlignment: left
@@ -416,11 +399,10 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: ''
-      headlineStyles: text-white text-6xl mb-0 undefined
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: gray
-      textSize: 4xl
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: text-white text-6xl mb-11 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-gray text-4xl mb-9 undefined
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test
@@ -436,7 +418,7 @@ nav:
   navTextColor: white
 colors:
   primary: '#0090FF'
-  accent1: '#D0021B'
+  accent1: '#39C1CB'
   accent2: '#39C1CB'
   accent3: '#F5A623'
   accent4: '#BD10E0'

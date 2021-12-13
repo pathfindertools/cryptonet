@@ -26,11 +26,10 @@ export const CardGrid = ({ data, children }) => {
           subhead = {data.subhead}
           body = {data.body}
           buttons = {data.buttons}
-          textColor = {data.style?.textColor}
-          headlineStyles = {data.headlineStyles}
-          subheadColor = {data.style?.subheadColor}
-          textSize = {data.style?.textSize}
-          subheadSize = {data.style?.subheadSize}
+          labelStyles = {data.style?.labelStyles}
+          headlineStyles = {data.style?.headlineStyles}
+          subheadStyles = {data.style?.subheadStyles}
+          textStyles = {data.style?.textStyles}
           alignment = {data.style?.textAlignment}
           order = {data.style?.contentOrder}
         />

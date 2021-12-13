@@ -73,11 +73,10 @@ export const Feature = ({ data }) => {
               subhead = {data.subhead}
               body = {data.body}
               buttons = {data.buttons}
+              labelStyles = {data.style?.labelStyles}
               headlineStyles = {data.style?.headlineStyles}
-              textColor = {data.style?.textColor}
-              subheadColor = {data.style?.subheadColor}
-              textSize = {data.style?.textSize}
-              subheadSize = {data.style?.subheadSize}
+              subheadStyles = {data.style?.subheadStyles}
+              textStyles = {data.style?.textStyles}
               alignment = {data.style?.textAlignment}
               order = {data.style?.contentOrder}
             />

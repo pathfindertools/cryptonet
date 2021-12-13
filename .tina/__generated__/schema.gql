@@ -136,11 +136,10 @@ type PagesBlocksFeatureStyle {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImage
+  labelStyles: String
   headlineStyles: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  subheadStyles: String
+  textStyles: String
 }
 
 type PagesBlocksFeature {
@@ -188,12 +187,10 @@ type PagesBlocksPhotoCardsStyle {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 type PagesBlocksPhotoCardsCardStyle {
@@ -251,12 +248,10 @@ type PagesBlocksTextCardsStyle {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 type PagesBlocksTextCardsCardStyle {
@@ -310,12 +305,10 @@ type PagesBlocksBannerStyle {
   width: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 type PagesBlocksBanner {
@@ -441,11 +434,10 @@ input PagesBlocksFeatureStyleMutation {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
+  labelStyles: String
   headlineStyles: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  subheadStyles: String
+  textStyles: String
 }
 
 input PagesBlocksFeatureMutation {
@@ -493,12 +485,10 @@ input PagesBlocksPhotoCardsStyleMutation {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 input PagesBlocksPhotoCardsCardStyleMutation {
@@ -556,12 +546,10 @@ input PagesBlocksTextCardsStyleMutation {
   contentOrder: String
   backgroundColor: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 input PagesBlocksTextCardsCardStyleMutation {
@@ -615,12 +603,10 @@ input PagesBlocksBannerStyleMutation {
   width: String
   backgroundColor: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
 }
 
 input PagesBlocksBannerMutation {

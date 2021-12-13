@@ -44,11 +44,10 @@ fragment PagesParts on Pages {
           src
           alt
         }
+        labelStyles
         headlineStyles
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        subheadStyles
+        textStyles
       }
     }
     ... on PagesBlocksPhotoCards {
@@ -90,12 +89,10 @@ fragment PagesParts on Pages {
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
       }
       cardStyle {
         __typename
@@ -147,12 +144,10 @@ fragment PagesParts on Pages {
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
       }
       cardStyle {
         __typename
@@ -200,12 +195,10 @@ fragment PagesParts on Pages {
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
       }
     }
   }

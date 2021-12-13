@@ -164,6 +164,14 @@ export const featureBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
+          label: "Label Style",
+          name: "labelStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
           label: "Headline Style",
           name: "headlineStyles",
           ui: {
@@ -171,40 +179,20 @@ export const featureBlockSchema: TinaTemplate = {
           }
         },
         {
-          label: "Subhead Color",
-          name: "subheadColor",
           type: "string",
+          label: "Subhead Style",
+          name: "subheadStyles",
           ui: {
-            component: "select",
-          },
-          options: colorOptions,
+            component: "typeControl"
+          }
         },
         {
-          label: "Subhead Size",
-          name: "subheadSize",
           type: "string",
+          label: "Text Style",
+          name: "textStyles",
           ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
-        },
-        {
-          label: "Text Color",
-          name: "textColor",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: colorOptions,
-        },
-        {
-          label: "Text Size",
-          name: "textSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
+            component: "typeControl"
+          }
         },
       ],
     },
