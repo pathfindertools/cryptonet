@@ -13,10 +13,10 @@ export const bannerBlockSchema: TinaTemplate = {
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
-        labelStyles: "text-black text-xl mb-0",
+        labelStyles: "text-black text-sm mb-0",
         headlineStyles: "text-black text-5xl mb-0",
         subheadStyles: "text-black text-3xl mb-0",
-        textStyles: "text-black text-lg mb-0",
+        textStyles: "text-black text-md mb-0",
         backgroundColor: "white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
