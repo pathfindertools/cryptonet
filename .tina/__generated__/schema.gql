@@ -197,14 +197,12 @@ type PagesBlocksPhotoCardsCardStyle {
   type: String
   backgroundColor: String
   accentColor: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
   buttonType: String
   buttonTextColor: String
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
 }
 
 type PagesBlocksPhotoCards {
@@ -258,14 +256,12 @@ type PagesBlocksTextCardsCardStyle {
   type: String
   backgroundColor: String
   accentColor: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
   buttonType: String
   buttonTextColor: String
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
 }
 
 type PagesBlocksTextCards {
@@ -495,14 +491,12 @@ input PagesBlocksPhotoCardsCardStyleMutation {
   type: String
   backgroundColor: String
   accentColor: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
   buttonType: String
   buttonTextColor: String
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
 }
 
 input PagesBlocksPhotoCardsMutation {
@@ -556,14 +550,12 @@ input PagesBlocksTextCardsCardStyleMutation {
   type: String
   backgroundColor: String
   accentColor: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
   buttonType: String
   buttonTextColor: String
-  headlineColor: String
-  headlineSize: String
-  subheadColor: String
-  subheadSize: String
-  textColor: String
-  textSize: String
 }
 
 input PagesBlocksTextCardsMutation {

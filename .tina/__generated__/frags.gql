@@ -99,14 +99,12 @@ fragment PagesParts on Pages {
         type
         backgroundColor
         accentColor
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
         buttonType
         buttonTextColor
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
       }
     }
     ... on PagesBlocksTextCards {
@@ -154,14 +152,12 @@ fragment PagesParts on Pages {
         type
         backgroundColor
         accentColor
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
         buttonType
         buttonTextColor
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
       }
     }
     ... on PagesBlocksBanner {

@@ -23,9 +23,9 @@ blocks:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
       labelStyles: text-white text-xl mb-0 font-bold
-      headlineStyles: text-gray-light text-7xl mb-10 undefined
-      subheadStyles: text-primary text-3xl mb-0 undefined
-      textStyles: text-white text-lg mb-24 undefined
+      headlineStyles: text-gray-light text-7xl mb-10
+      subheadStyles: text-primary text-3xl mb-0
+      textStyles: text-white text-lg mb-24
     _template: feature
   - image:
       src: >-
@@ -44,9 +44,9 @@ blocks:
       contentAlignment: center
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      labelStyles: text-gray-light text-7xl mb-0 undefined
+      labelStyles: text-gray-light text-7xl mb-0
       headlineStyles: 'text-gray text-4xl mb-0 '
-      subheadStyles: text-black text-3xl mb-0 undefined
+      subheadStyles: text-black text-3xl mb-0
       textStyles: 'text-black text-xl mb-0 '
     _template: feature
   - label: ''
@@ -74,21 +74,19 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: black
-      labelStyles: text-white text-lg mb-0 undefined
-      headlineStyles: text-white text-5xl undefined undefined
-      subheadStyles: text-white text-base mb-0 undefined
-      textStyles: 'text-white text-xl mb-0 '
+      labelStyles: text-white text-lg mb-0
+      headlineStyles: text-white text-5xl mb-0
+      subheadStyles: text-white text-md mb-0
+      textStyles: text-white text-xl mb-0
     cardStyle:
       type: solid
       backgroundColor: accent1
       accentColor: primary
+      labelStyles: text-white undefined mb-0 undefined
+      headlineStyles: text-white text-4xl mb-0 font-bold
+      subheadStyles: text-white text-lg mb-0 undefined
+      textStyles: text-white undefined mb-0 undefined
       buttonType: solid
-      headlineColor: white
-      headlineSize: 5xl
-      subheadColor: black
-      subheadSize: lg
-      textColor: grayLight
-      textSize: base
     _template: textCards
   - label: ''
     headline: Filecoin solves many problems associated with traditional storage
@@ -161,13 +159,11 @@ blocks:
       type: solid
       backgroundColor: white
       accentColor: primary
+      labelStyles: text-black text-md mb-0
+      headlineStyles: text-black text-5xl mb-0
+      subheadStyles: text-black text-lg mb-0
+      textStyles: text-black text-md mb-0
       buttonType: solid
-      headlineColor: black
-      headlineSize: 5xl
-      subheadColor: black
-      subheadSize: lg
-      textColor: black
-      textSize: base
     _template: textCards
   - label: ''
     headline: ''
@@ -210,14 +206,13 @@ blocks:
       type: solid
       backgroundColor: black
       accentColor: primary
+      labelStyles: text-white text-md mb-0
+      headlineStyles: text-white text-5xl mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-xl mb-0
       buttonType: solid
-      headlineColor: white
-      headlineSize: 5xl
-      subheadColor: white
-      subheadSize: lg
-      textColor: white
-      textSize: xl
     _template: textCards
+  
   - label: ''
     headline: ''
     subhead: ''
@@ -264,12 +259,10 @@ blocks:
       backgroundColor: black
       accentColor: primary
       buttonType: solid
-      headlineColor: white
-      headlineSize: 5xl
-      subheadColor: white
-      subheadSize: 4xl
-      textColor: white
-      textSize: lg
+      labelStyles: text-white text-lg mb-0
+      headlineStyles: text-white text-5xl mb-0
+      subheadStyles: text-white text-4xl mb-0
+      textStyles: text-white text-lg mb-0
     _template: photoCards
   - label: ''
     headline: Pricing
@@ -298,19 +291,18 @@ blocks:
       contentOrder: labelHeadingsContent
       backgroundColor: white
       labelStyles: text-gray text-lg mb-0
+      headlineStyles: text-black text-4xl mb-0
       subheadStyles: text-black text-4xl mb-0
       textStyles: text-black text-lg mb-0
     cardStyle:
       type: solid
       backgroundColor: accent1
       accentColor: primary
+      labelStyles: text-white text-lg mb-0
+      headlineStyles: text-white text-lg mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-2xl mb-0
       buttonType: solid
-      headlineColor: white
-      headlineSize: lg
-      subheadColor: white
-      subheadSize: 7xl
-      textColor: white
-      textSize: 2xl
     _template: textCards
   - label: ''
     headline: Many organizations and projects successfully store with Filecoin
@@ -365,14 +357,12 @@ blocks:
       type: solid
       backgroundColor: ''
       accentColor: white
+      labelStyles: text-black text-lg mb-0
+      headlineStyles: text-black text-2xl mb-0
+      subheadStyles: text-black text-lg mb-0
+      textStyles: text-black text-sm mb-0
       buttonType: solid
       buttonTextColor: white
-      headlineColor: white
-      headlineSize: 2xl
-      subheadColor: black
-      subheadSize: lg
-      textColor: black
-      textSize: sm
     _template: textCards
   - image:
       src: >-
@@ -399,10 +389,10 @@ blocks:
       backgroundColor: black
       backgroundImage:
         src: ''
-      labelStyles: text-gray-light text-7xl mb-0 undefined
-      headlineStyles: text-white text-6xl mb-11 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-gray text-4xl mb-9 undefined
+      labelStyles: text-gray-light text-7xl mb-0
+      headlineStyles: text-white text-6xl mb-11
+      subheadStyles: text-black text-3xl mb-0
+      textStyles: text-gray text-4xl mb-9
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test

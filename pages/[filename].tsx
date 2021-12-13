@@ -65,12 +65,10 @@ export const getStaticProps = async ({ params }) => {
                 cardStyle {
                   type
                   buttonType
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   accentColor
                   buttonTextColor
@@ -113,12 +111,10 @@ export const getStaticProps = async ({ params }) => {
                 cardStyle {
                   type
                   buttonType
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   accentColor
                   buttonTextColor

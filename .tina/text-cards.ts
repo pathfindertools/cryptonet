@@ -24,24 +24,20 @@ export const textCardsBlockSchema: TinaTemplate = {
         backgroundColor: "white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
-        headlineColor: "black",
-        headlineSize: "3xl",
-        subheadColor: "black",
-        subheadSize: "3xl",
-        textColor: "black",
-        textSize: "base",
+        labelStyles: "text-black text-xl mb-0",
+        headlineStyles: "text-black text-5xl mb-0",
+        subheadStyles: "text-black text-3xl mb-0",
+        textStyles: "text-black text-lg mb-0",
       },
       cardStyle: {
         type: "solid",
         buttonType: "solid",
         accentColor: "primary",
         backgroundColor: "gray",
-        headlineColor: "black",
-        headlineSize: "2xl",
-        subheadColor: "black",
-        subheadSize: "lg",
-        textColor: "black",
-        textSize: "base",
+        labelStyles: "text-black text-sm mb-0",
+        headlineStyles: "text-black text-2xl mb-0",
+        subheadStyles: "text-black text-lg mb-0",
+        textStyles: "text-black text-lg mb-0",
       },
       items: [defaultCard, defaultCard, defaultCard],
     },
@@ -163,6 +159,38 @@ export const textCardsBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
+          type: "string",
+          label: "Label Style",
+          name: "labelStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Headline Style",
+          name: "headlineStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Subhead Style",
+          name: "subheadStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Text Style",
+          name: "textStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
           label: "Button Type",
           name: "buttonType",
           type: "string",
@@ -183,60 +211,6 @@ export const textCardsBlockSchema: TinaTemplate = {
             component: "select",
           },
           options: colorOptions,
-        },
-        {
-          label: "Headline Color",
-          name: "headlineColor",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: colorOptions,
-        },
-        {
-          label: "Headline Size",
-          name: "headlineSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
-        },
-        {
-          label: "Subhead Color",
-          name: "subheadColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-        {
-          label: "Subhead Size",
-          name: "subheadSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
-        },
-        {
-          label: "Text Color",
-          name: "textColor",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: colorOptions,
-        },
-        {
-          label: "Text Size",
-          name: "textSize",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
         },
       ],
     },
