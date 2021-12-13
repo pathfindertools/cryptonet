@@ -33,6 +33,7 @@ export const Buttons = ({
       accent1: 'border-accent1',
       accent2: 'border-accent2',
       accent3: 'border-accent3',
+      accent4: 'border-accent4',
       white: 'border-white',
       grayLight: 'border-gray-100',
       gray: 'border-gray-400',

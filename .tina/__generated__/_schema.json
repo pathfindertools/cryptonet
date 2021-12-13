@@ -82,14 +82,13 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
+                    "minHeight": "",
                     "flipLayout": false,
                     "imageStyle": "natural",
-                    "headlineColor": "black",
-                    "headlineSize": "3xl",
-                    "subheadColor": "black",
-                    "subheadSize": "3xl",
-                    "textColor": "black",
-                    "textSize": "base",
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-5xl mb-0",
+                    "subheadStyles": "text-black text-3xl mb-0",
+                    "textStyles": "text-black text-md mb-0",
                     "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentAlignment": "center",
@@ -278,6 +277,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -329,6 +332,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -387,6 +394,18 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
                     {
                       "label": "Flip Layout",
                       "name": "flipLayout",
@@ -491,47 +510,6 @@
                       ]
                     },
                     {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "contentOrder"
-                      ]
-                    },
-                    {
                       "label": "Background Color",
                       "name": "backgroundColor",
                       "type": "string",
@@ -554,6 +532,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -628,284 +610,96 @@
                       ]
                     },
                     {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
                       "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "headlineColor"
+                        "labelStyles"
                       ]
                     },
                     {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
                       "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "headlineSize"
+                        "headlineStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
                       "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "subheadColor"
+                        "subheadStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
                       "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "subheadSize"
+                        "textStyles"
                       ]
                     },
                     {
-                      "label": "Text Color",
-                      "name": "textColor",
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
                       "ui": {
                         "component": "select"
                       },
-                      "type": "string",
                       "options": [
                         {
-                          "label": "Primary",
-                          "value": "primary"
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Accent 1",
-                          "value": "accent1"
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Accent 2",
-                          "value": "accent2"
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Accent 3",
-                          "value": "accent3"
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
                         },
                         {
-                          "label": "White",
-                          "value": "white"
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
                         }
                       ],
                       "namespace": [
@@ -913,72 +707,7 @@
                         "blocks",
                         "feature",
                         "style",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "textSize"
+                        "contentOrder"
                       ]
                     }
                   ],
@@ -1010,24 +739,20 @@
                     "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
-                    "headlineColor": "black",
-                    "headlineSize": "3xl",
-                    "subheadColor": "black",
-                    "subheadSize": "3xl",
-                    "textColor": "black",
-                    "textSize": "base"
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-5xl mb-0",
+                    "subheadStyles": "text-black text-3xl mb-0",
+                    "textStyles": "text-black text-md mb-0"
                   },
                   "cardStyle": {
                     "type": "solid",
                     "accentColor": "primary",
                     "backgroundColor": "gray",
                     "buttonType": "solid",
-                    "headlineColor": "white",
-                    "headlineSize": "2xl",
-                    "subheadColor": "white",
-                    "subheadSize": "lg",
-                    "textColor": "white",
-                    "textSize": "base"
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-2xl mb-0",
+                    "subheadStyles": "text-black text-lg mb-0",
+                    "textStyles": "text-black text-sm mb-0"
                   },
                   "items": [
                     {
@@ -1189,6 +914,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -1240,6 +969,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -1427,6 +1160,18 @@
                   },
                   "fields": [
                     {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
                       "label": "Columns",
                       "name": "columns",
                       "ui": {
@@ -1489,47 +1234,6 @@
                       ]
                     },
                     {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "contentOrder"
-                      ]
-                    },
-                    {
                       "label": "Background Color",
                       "name": "backgroundColor",
                       "type": "string",
@@ -1552,6 +1256,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -1626,284 +1334,96 @@
                       ]
                     },
                     {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
                       "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "style",
-                        "headlineColor"
+                        "labelStyles"
                       ]
                     },
                     {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
                       "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "style",
-                        "headlineSize"
+                        "headlineStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
                       "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "style",
-                        "subheadColor"
+                        "subheadStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
                       "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "style",
-                        "subheadSize"
+                        "textStyles"
                       ]
                     },
                     {
-                      "label": "Text Color",
-                      "name": "textColor",
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
                       "ui": {
                         "component": "select"
                       },
-                      "type": "string",
                       "options": [
                         {
-                          "label": "Primary",
-                          "value": "primary"
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Accent 1",
-                          "value": "accent1"
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Accent 2",
-                          "value": "accent2"
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Accent 3",
-                          "value": "accent3"
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
                         },
                         {
-                          "label": "White",
-                          "value": "white"
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
                         }
                       ],
                       "namespace": [
@@ -1911,72 +1431,7 @@
                         "blocks",
                         "photoCards",
                         "style",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "textSize"
+                        "contentOrder"
                       ]
                     }
                   ],
@@ -2049,6 +1504,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -2102,6 +1561,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -2128,6 +1591,66 @@
                         "photoCards",
                         "cardStyle",
                         "accentColor"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "textStyles"
                       ]
                     },
                     {
@@ -2184,6 +1707,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -2210,360 +1737,6 @@
                         "photoCards",
                         "cardStyle",
                         "buttonTextColor"
-                      ]
-                    },
-                    {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "headlineColor"
-                      ]
-                    },
-                    {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "headlineSize"
-                      ]
-                    },
-                    {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "subheadColor"
-                      ]
-                    },
-                    {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "subheadSize"
-                      ]
-                    },
-                    {
-                      "label": "Text Color",
-                      "name": "textColor",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "textSize"
                       ]
                     }
                   ],
@@ -2595,24 +1768,20 @@
                     "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
-                    "headlineColor": "black",
-                    "headlineSize": "3xl",
-                    "subheadColor": "black",
-                    "subheadSize": "3xl",
-                    "textColor": "black",
-                    "textSize": "base"
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-5xl mb-0",
+                    "subheadStyles": "text-black text-3xl mb-0",
+                    "textStyles": "text-black text-md mb-0"
                   },
                   "cardStyle": {
                     "type": "solid",
                     "buttonType": "solid",
                     "accentColor": "primary",
                     "backgroundColor": "gray",
-                    "headlineColor": "black",
-                    "headlineSize": "2xl",
-                    "subheadColor": "black",
-                    "subheadSize": "lg",
-                    "textColor": "black",
-                    "textSize": "base"
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-2xl mb-0",
+                    "subheadStyles": "text-black text-lg mb-0",
+                    "textStyles": "text-black text-sm mb-0"
                   },
                   "items": [
                     {
@@ -2774,6 +1943,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -2825,6 +1998,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -2965,6 +2142,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -3021,6 +2202,18 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
                     {
                       "label": "Columns",
                       "name": "columns",
@@ -3084,47 +2277,6 @@
                       ]
                     },
                     {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "contentOrder"
-                      ]
-                    },
-                    {
                       "label": "Background Color",
                       "name": "backgroundColor",
                       "type": "string",
@@ -3147,6 +2299,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -3221,284 +2377,96 @@
                       ]
                     },
                     {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
                       "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "style",
-                        "headlineColor"
+                        "labelStyles"
                       ]
                     },
                     {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
                       "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "style",
-                        "headlineSize"
+                        "headlineStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
                       "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "style",
-                        "subheadColor"
+                        "subheadStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
                       "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "style",
-                        "subheadSize"
+                        "textStyles"
                       ]
                     },
                     {
-                      "label": "Text Color",
-                      "name": "textColor",
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
                       "ui": {
                         "component": "select"
                       },
-                      "type": "string",
                       "options": [
                         {
-                          "label": "Primary",
-                          "value": "primary"
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Accent 1",
-                          "value": "accent1"
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Accent 2",
-                          "value": "accent2"
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Accent 3",
-                          "value": "accent3"
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
                         },
                         {
-                          "label": "White",
-                          "value": "white"
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
                         }
                       ],
                       "namespace": [
@@ -3506,72 +2474,7 @@
                         "blocks",
                         "textCards",
                         "style",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "textSize"
+                        "contentOrder"
                       ]
                     }
                   ],
@@ -3640,6 +2543,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -3693,6 +2600,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -3719,6 +2630,66 @@
                         "textCards",
                         "cardStyle",
                         "accentColor"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "textStyles"
                       ]
                     },
                     {
@@ -3775,6 +2746,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -3802,360 +2777,6 @@
                         "cardStyle",
                         "buttonTextColor"
                       ]
-                    },
-                    {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "headlineColor"
-                      ]
-                    },
-                    {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "headlineSize"
-                      ]
-                    },
-                    {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "subheadColor"
-                      ]
-                    },
-                    {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "subheadSize"
-                      ]
-                    },
-                    {
-                      "label": "Text Color",
-                      "name": "textColor",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "textSize"
-                      ]
                     }
                   ],
                   "namespace": [
@@ -4182,12 +2803,10 @@
                   "subhead": "Here is a subhead",
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
-                    "headlineColor": "black",
-                    "headlineSize": "3xl",
-                    "subheadColor": "black",
-                    "subheadSize": "3xl",
-                    "textColor": "black",
-                    "textSize": "base",
+                    "labelStyles": "text-black text-sm mb-0",
+                    "headlineStyles": "text-black text-5xl mb-0",
+                    "subheadStyles": "text-black text-3xl mb-0",
+                    "textStyles": "text-black text-md mb-0",
                     "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
@@ -4376,6 +2995,10 @@
                           "value": "accent3"
                         },
                         {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
                           "label": "White",
                           "value": "white"
                         },
@@ -4427,6 +3050,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -4486,6 +3113,18 @@
                   },
                   "fields": [
                     {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
                       "label": "Text Alignment",
                       "name": "textAlignment",
                       "type": "string",
@@ -4512,47 +3151,6 @@
                         "banner",
                         "style",
                         "textAlignment"
-                      ]
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "contentOrder"
                       ]
                     },
                     {
@@ -4603,6 +3201,10 @@
                         {
                           "label": "Accent 3",
                           "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
                         },
                         {
                           "label": "White",
@@ -4677,284 +3279,96 @@
                       ]
                     },
                     {
-                      "label": "Headline Color",
-                      "name": "headlineColor",
-                      "ui": {
-                        "component": "select"
-                      },
                       "type": "string",
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
                       "namespace": [
                         "pages",
                         "blocks",
                         "banner",
                         "style",
-                        "headlineColor"
+                        "labelStyles"
                       ]
                     },
                     {
-                      "label": "Headline Size",
-                      "name": "headlineSize",
                       "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "banner",
                         "style",
-                        "headlineSize"
+                        "headlineStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Color",
-                      "name": "subheadColor",
                       "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "banner",
                         "style",
-                        "subheadColor"
+                        "subheadStyles"
                       ]
                     },
                     {
-                      "label": "Subhead Size",
-                      "name": "subheadSize",
                       "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
                       "ui": {
-                        "component": "select"
+                        "component": "typeControl"
                       },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "banner",
                         "style",
-                        "subheadSize"
+                        "textStyles"
                       ]
                     },
                     {
-                      "label": "Text Color",
-                      "name": "textColor",
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
                       "ui": {
                         "component": "select"
                       },
-                      "type": "string",
                       "options": [
                         {
-                          "label": "Primary",
-                          "value": "primary"
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Accent 1",
-                          "value": "accent1"
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Accent 2",
-                          "value": "accent2"
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Accent 3",
-                          "value": "accent3"
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
                         },
                         {
-                          "label": "White",
-                          "value": "white"
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
                         }
                       ],
                       "namespace": [
@@ -4962,72 +3376,7 @@
                         "blocks",
                         "banner",
                         "style",
-                        "textColor"
-                      ]
-                    },
-                    {
-                      "label": "Text Size",
-                      "name": "textSize",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "XS",
-                          "value": "xs"
-                        },
-                        {
-                          "label": "Small",
-                          "value": "sm"
-                        },
-                        {
-                          "label": "Regular",
-                          "value": "base"
-                        },
-                        {
-                          "label": "Large",
-                          "value": "lg"
-                        },
-                        {
-                          "label": "XL",
-                          "value": "xl"
-                        },
-                        {
-                          "label": "2XL",
-                          "value": "2xl"
-                        },
-                        {
-                          "label": "3XL",
-                          "value": "3xl"
-                        },
-                        {
-                          "label": "4XL",
-                          "value": "4xl"
-                        },
-                        {
-                          "label": "5XL",
-                          "value": "5xl"
-                        },
-                        {
-                          "label": "6XL",
-                          "value": "6xl"
-                        },
-                        {
-                          "label": "7XL",
-                          "value": "7xl"
-                        },
-                        {
-                          "label": "8XL",
-                          "value": "8xl"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "textSize"
+                        "contentOrder"
                       ]
                     }
                   ],
@@ -5168,6 +3517,10 @@
                   "value": "accent3"
                 },
                 {
+                  "label": "Accent 4",
+                  "value": "accent4"
+                },
+                {
                   "label": "White",
                   "value": "white"
                 },
@@ -5217,6 +3570,10 @@
                 {
                   "label": "Accent 3",
                   "value": "accent3"
+                },
+                {
+                  "label": "Accent 4",
+                  "value": "accent4"
                 },
                 {
                   "label": "White",
@@ -5309,6 +3666,84 @@
                 "pages",
                 "colors",
                 "accent3"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Accent 4",
+              "name": "accent4",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "accent4"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "White",
+              "name": "white",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "white"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Light",
+              "name": "grayLight",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "grayLight"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray",
+              "name": "gray",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "gray"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Dark",
+              "name": "grayDark",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "grayDark"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Black",
+              "name": "black",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "pages",
+                "colors",
+                "black"
               ]
             }
           ],

@@ -17,10 +17,8 @@ export default function HomePage(
 
 export const getStaticProps = async ({ params }) => {
   const tinaProps = (await getStaticPropsForTina({
-    query: `#graphql
+    query: `
       query ContentQuery($relativePath: String!) {
-        # "index.md" is _relative_ to the "Pages" path property in your schema definition
-        # you can inspect this file at "content/pages/index.md"
         ${layoutQueryFragment}
         getPagesDocument(relativePath: $relativePath) {
           data {
@@ -52,13 +50,12 @@ export const getStaticProps = async ({ params }) => {
                   buttonLabel
                 }
                 style {
+                  minHeight
                   columns
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -68,12 +65,10 @@ export const getStaticProps = async ({ params }) => {
                 cardStyle {
                   type
                   buttonType
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   accentColor
                   buttonTextColor
@@ -101,13 +96,12 @@ export const getStaticProps = async ({ params }) => {
                   accentColor
                 }
                 style {
+                  minHeight
                   columns
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -117,12 +111,10 @@ export const getStaticProps = async ({ params }) => {
                 cardStyle {
                   type
                   buttonType
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   accentColor
                   buttonTextColor
@@ -146,14 +138,13 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  minHeight
                   flipLayout
                   imageStyle
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -182,13 +173,12 @@ export const getStaticProps = async ({ params }) => {
                   backgroundColor
                 }
                 style {
+                  minHeight
                   width
-                  textColor
-                  textSize
-                  headlineColor
-                  headlineSize
-                  subheadColor
-                  subheadSize
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
                   backgroundColor
                   backgroundImage {
                     src
@@ -218,6 +208,12 @@ export const getStaticProps = async ({ params }) => {
               accent1
               accent2
               accent3
+              accent4
+              white
+              grayLight
+              gray
+              grayDark
+              black
             }
           }
         }

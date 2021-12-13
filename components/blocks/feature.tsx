@@ -13,6 +13,12 @@ const splitCss = (data) => {
   return `sm:flex ${direction} ${contentAlignment}`
 }
 
+const splitStyle = (data) => {
+  return {
+    minHeight: data.style?.minHeight ? `${data.style?.minHeight}px` : 'auto'
+  }
+};
+
 const contentContainerCss = (data) => {
   const margin = data.style?.flipLayout ? "md:mr-auto md:pr-12 md:pl-10 px-6" : "md:ml-auto md:pl-12 md:pr-10 px-6"
   return `md:max-w-screen-lg-half md:py-12 py-0 ${margin}`
@@ -45,8 +51,9 @@ export const Feature = ({ data }) => {
       color={data.style?.backgroundColor}
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
+      minHeight={data.style?.minHeight}
     >
-      <div className={splitCss(data)}>
+      <div className={splitCss(data)} style={splitStyle(data)}>
         <div className="flex-1 relative self-stretch">
           <div className={imageContainerCss(data)}>
             {data.image && (
@@ -66,12 +73,10 @@ export const Feature = ({ data }) => {
               subhead = {data.subhead}
               body = {data.body}
               buttons = {data.buttons}
-              textColor = {data.style?.textColor}
-              headlineColor = {data.style?.headlineColor}
-              subheadColor = {data.style?.subheadColor}
-              textSize = {data.style?.textSize}
-              headlineSize = {data.style?.headlineSize}
-              subheadSize = {data.style?.subheadSize}
+              labelStyles = {data.style?.labelStyles}
+              headlineStyles = {data.style?.headlineStyles}
+              subheadStyles = {data.style?.subheadStyles}
+              textStyles = {data.style?.textStyles}
               alignment = {data.style?.textAlignment}
               order = {data.style?.contentOrder}
             />

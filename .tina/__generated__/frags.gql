@@ -32,23 +32,22 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         flipLayout
         imageStyle
         textAlignment
         contentAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
       }
     }
     ... on PagesBlocksPhotoCards {
@@ -80,35 +79,32 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         columns
         textAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
       }
       cardStyle {
         __typename
         type
         backgroundColor
         accentColor
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
         buttonType
         buttonTextColor
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
       }
     }
     ... on PagesBlocksTextCards {
@@ -136,35 +132,32 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         columns
         textAlignment
-        contentOrder
         backgroundColor
         backgroundImage {
           __typename
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
       }
       cardStyle {
         __typename
         type
         backgroundColor
         accentColor
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
         buttonType
         buttonTextColor
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
       }
     }
     ... on PagesBlocksBanner {
@@ -188,8 +181,8 @@ fragment PagesParts on Pages {
       navigationLabel
       style {
         __typename
+        minHeight
         textAlignment
-        contentOrder
         width
         backgroundColor
         backgroundImage {
@@ -197,12 +190,11 @@ fragment PagesParts on Pages {
           src
           alt
         }
-        headlineColor
-        headlineSize
-        subheadColor
-        subheadSize
-        textColor
-        textSize
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
       }
     }
   }
@@ -228,5 +220,11 @@ fragment PagesParts on Pages {
     accent1
     accent2
     accent3
+    accent4
+    white
+    grayLight
+    gray
+    grayDark
+    black
   }
 }

@@ -14,6 +14,7 @@ export const Burger = ({
     accent1: "bg-accent1",
     accent2: "bg-accent2",
     accent3: "bg-accent3",
+    accent4: "bg-accent4",
   };
 
   const lineClasses = "absolute z-10 left-1 w-6 h-px";

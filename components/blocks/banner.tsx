@@ -8,6 +8,7 @@ export const Banner = ({ data }) => {
       color={data.style?.backgroundColor}
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
+      minHeight={data.style?.minHeight}
     >
       <div className="max-w-screen-lg md:p-12 p-6 mx-auto">
         <div className={`mx-auto ${data.style?.width === "narrow" ? "md:w-2/3" : "w-full"}`}>
@@ -24,12 +25,10 @@ export const Banner = ({ data }) => {
             subhead = {data.subhead}
             body = {data.body}
             buttons = {data.buttons}
-            textColor = {data.style?.textColor}
-            headlineColor = {data.style?.headlineColor}
-            subheadColor = {data.style?.subheadColor}
-            textSize = {data.style?.textSize}
-            headlineSize = {data.style?.headlineSize}
-            subheadSize = {data.style?.subheadSize}
+            labelStyles = {data.style?.labelStyles}
+            headlineStyles = {data.style?.headlineStyles}
+            subheadStyles = {data.style?.subheadStyles}
+            textStyles = {data.style?.textStyles}
             alignment = {data.style?.textAlignment}
             order = {data.style?.contentOrder}
           />

@@ -11,6 +11,12 @@ export const Layout = ({
       accent1: "",
       accent2: "",
       accent3: "",
+      accent4: "",
+      white: "",
+      grayLight: "",
+      gray: "",
+      grayDark: "",
+      black: "",
     },
     meta: {
       siteTitle: "Filecoin Hackathon",
@@ -43,6 +49,12 @@ export const Layout = ({
               --accent1-color: ${themeData?.colors?.accent1};
               --accent2-color: ${themeData?.colors?.accent2};
               --accent3-color: ${themeData?.colors?.accent3};
+              --accent4-color: ${themeData?.colors?.accent4};
+              --white-color: ${themeData?.colors?.white};
+              --black-color: ${themeData?.colors?.black};
+              --gray-light-color: ${themeData?.colors?.grayLight};
+              --gray-color: ${themeData?.colors?.gray};
+              --gray-dark-color: ${themeData?.colors?.grayDark};
             }
             .markdown ul {
               list-style: disc inside;

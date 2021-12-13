@@ -13,12 +13,10 @@ export const bannerBlockSchema: TinaTemplate = {
       subhead: "Here is a subhead",
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
-        headlineColor: "black",
-        headlineSize: "3xl",
-        subheadColor: "black",
-        subheadSize: "3xl",
-        textColor: "black",
-        textSize: "base",
+        labelStyles: "text-black text-sm mb-0",
+        headlineStyles: "text-black text-5xl mb-0",
+        subheadStyles: "text-black text-3xl mb-0",
+        textStyles: "text-black text-md mb-0",
         backgroundColor: "white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
@@ -81,6 +79,11 @@ export const bannerBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          label: "Minimum Height",
+          name: "minHeight",
+          type: "string",
+        },
+        {
           label: "Text Alignment",
           name: "textAlignment",
           type: "string",
@@ -88,15 +91,6 @@ export const bannerBlockSchema: TinaTemplate = {
             component: "select",
           },
           options: hAlignOptions,
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions,
         },
         {
           label: "Width",
@@ -140,58 +134,45 @@ export const bannerBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Headline Color",
-          name: "headlineColor",
-          ui: {
-            component: "select",
-          },
           type: "string",
-          options: colorOptions,
+          label: "Label Style",
+          name: "labelStyles",
+          ui: {
+            component: "typeControl"
+          }
         },
         {
-          label: "Headline Size",
-          name: "headlineSize",
           type: "string",
+          label: "Headline Style",
+          name: "headlineStyles",
           ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
+            component: "typeControl"
+          }
         },
         {
-          label: "Subhead Color",
-          name: "subheadColor",
           type: "string",
+          label: "Subhead Style",
+          name: "subheadStyles",
           ui: {
-            component: "select",
-          },
-          options: colorOptions,
+            component: "typeControl"
+          }
         },
         {
-          label: "Subhead Size",
-          name: "subheadSize",
           type: "string",
+          label: "Text Style",
+          name: "textStyles",
           ui: {
-            component: "select",
-          },
-          options: textSizeOptions,
+            component: "typeControl"
+          }
         },
         {
-          label: "Text Color",
-          name: "textColor",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: colorOptions,
-        },
-        {
-          label: "Text Size",
-          name: "textSize",
+          label: "Content Order",
+          name: "contentOrder",
           type: "string",
           ui: {
             component: "select",
           },
-          options: textSizeOptions,
+          options: contentOrderOptions,
         },
       ],
     },

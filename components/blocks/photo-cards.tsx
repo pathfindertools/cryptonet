@@ -72,19 +72,13 @@ const PhotoCard = ({ data, cardstyle }) => {
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
-          <h3 className={`${textColors[cardstyle?.headlineColor]} ${textSizes[cardstyle?.headlineSize]} font-semibold m-0`}>
-            {data.headline}
-          </h3>
+          <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
         )}
         {data.subhead && (
-          <h4 className={`${textColors[cardstyle?.subheadColor]} ${textSizes[cardstyle?.subheadSize]}`}>
-            {data.subhead}
-          </h4>
+          <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
         )}
         {data.text && (
-          <div className={`markdown ${textColors[cardstyle?.textColor]} ${textSizes[cardstyle?.textSize]} mt-4 first:mt-0`}>
-            <Markdown>{data.text}</Markdown>
-          </div>
+          <div className={cardstyle?.textStyles}><Markdown>{data.text}</Markdown></div>
         )}
         {data.link && data.buttonLabel && (
           <Buttons buttons={[{

@@ -20,12 +20,10 @@ blocks:
       contentAlignment: center
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     _template: feature
   - label: ''
     headline: Features
@@ -55,23 +53,20 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: grayLight
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     cardStyle:
       type: solid
       backgroundColor: white
       accentColor: primary
       buttonType: solid
-      headlineColor: grayDark
-      headlineSize: lg
-      subheadColor: black
-      subheadSize: lg
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-sm mb-0
+      headlineStyles: text-black text-lg mb-0
+      subheadStyles: text-black text-lg mb-0
+      textStyles: text-black text-md mb-0
+
     _template: textCards
   - label: ''
     headline: Learn More
@@ -88,12 +83,10 @@ blocks:
       contentOrder: labelHeadingsContent
       width: narrow
       backgroundColor: gray
-      headlineColor: white
-      headlineSize: 3xl
-      subheadColor: white
-      subheadSize: xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     _template: banner
   - label: ''
     headline: Built with Microgen
@@ -125,24 +118,20 @@ blocks:
       textAlignment: left
       contentOrder: labelHeadingsContent
       backgroundColor: white
-      headlineColor: black
-      headlineSize: 3xl
-      subheadColor: black
-      subheadSize: 3xl
-      textColor: black
-      textSize: base
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
     cardStyle:
       type: solid
       backgroundColor: gray
       accentColor: white
       buttonType: outline
       buttonTextColor: white
-      headlineColor: white
-      headlineSize: 2xl
-      subheadColor: white
-      subheadSize: lg
-      textColor: white
-      textSize: base
+      labelStyles: text-white text-sm mb-0
+      headlineStyles: text-white text-2xl mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-md mb-0
     _template: photoCards
 meta:
   siteTitle: Hackathons
@@ -161,5 +150,11 @@ colors:
   accent1: '#0E4465'
   accent2: '#2DDB87'
   accent3: '#2DD0DB'
+  accent4: '#00D0DB'
+  white: '#FFFFFF'
+  grayLight: '#cfcfdc'
+  gray: '#a3a3a3'
+  grayDark: '#787878'
+  black: '#000000'
 ---
 

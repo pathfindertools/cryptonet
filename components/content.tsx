@@ -2,33 +2,6 @@ import React from "react";
 import Markdown from "react-markdown";
 import { Buttons } from "./buttons";
 
-const textColors = {
-  white: "text-white",
-  grayLight: "text-gray-200",
-  gray: "text-gray-500",
-  grayDark: "text-gray-800",
-  black: "text-black",
-  primary: "text-primary",
-  accent1: "text-accent1",
-  accent2: "text-accent2",
-  accent3: "text-accent3",
-};
-
-const textSizes = {
-  xs: "text-xs",
-  sm: "text-sm",
-  base: "text-base",
-  lg: "text-lg",
-  xl: "text-xl",
-  "2xl": "text-2xl",
-  "3xl": "text-3xl",
-  "4xl": "text-4xl",
-  "5xl": "text-5xl",
-  "6xl": "text-6xl",
-  "7xl": "text-7xl",
-  "8xl": "text-8xl",
-};
-
 const contentAlignment = (alignment) => {
   const textAlignments = {
     left: "",
@@ -103,29 +76,27 @@ export const Content = ({
   subhead,
   body,
   buttons,
-  textColor,
-  headlineColor,
-  subheadColor,
-  textSize,
-  headlineSize,
-  subheadSize,
+  labelStyles,
+  headlineStyles,
+  subheadStyles,
+  textStyles,
   alignment = "left",
   order = "labelHeadingsContent",
 }) => {
   return (
     <div className={`flex flex-col ${contentAlignment(alignment)}`}>
-      {label && <h4 className={`${labelOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>{label}</h4>}
-      {headline && <h2 className={`${headingOrder(order)} ${textColors[headlineColor]} ${textSizes[headlineSize]}`}>{headline}</h2>}
-      {subhead && <h3 className={`${subheadOrder(order)} ${textColors[subheadColor]} ${textSizes[subheadSize]}`}>{subhead}</h3>}
+      {label && <h4 className={`${labelOrder(order)} ${labelStyles}`}>{label}</h4>}
+      {headline && <h2 className={`${headingOrder(order)} ${headlineStyles}`}>{headline}</h2>}
+      {subhead && <h3 className={`${subheadOrder(order)} ${subheadStyles}`}>{subhead}</h3>}
       {body && (
-        <div className={`markdown leading-10 mt-8 items-center ${bodyOrder(order)} ${textColors[textColor]} ${textSizes[textSize]}`}>
+        <div className={`markdown items-center ${bodyOrder(order)} ${textStyles}`}>
           <Markdown>{body}</Markdown>
         </div>
       )}
       {buttons && (
         <Buttons
           buttons={buttons}
-          className={`${buttonAlignment(alignment)} mt-8 order-4`}
+          className={`${buttonAlignment(alignment)} order-4`}
         />
       )}
     </div>

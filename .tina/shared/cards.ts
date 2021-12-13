@@ -11,6 +11,11 @@ export const cardsSchema: TinaField = {
   },
   fields: [
     {
+      label: "Minimum Height",
+      name: "minHeight",
+      type: "string",
+    },
+    {
       label: "Columns",
       name: "columns",
       ui: {
@@ -32,15 +37,6 @@ export const cardsSchema: TinaField = {
         component: "select",
       },
       options: hAlignOptions,
-    },
-    {
-      label: "Content Order",
-      name: "contentOrder",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: contentOrderOptions,
     },
     {
       label: "Background Color",
@@ -72,58 +68,45 @@ export const cardsSchema: TinaField = {
       ],
     },
     {
-      label: "Headline Color",
-      name: "headlineColor",
-      ui: {
-        component: "select",
-      },
       type: "string",
-      options: colorOptions,
+      label: "Label Style",
+      name: "labelStyles",
+      ui: {
+        component: "typeControl"
+      }
     },
     {
-      label: "Headline Size",
-      name: "headlineSize",
       type: "string",
+      label: "Headline Style",
+      name: "headlineStyles",
       ui: {
-        component: "select",
-      },
-      options: textSizeOptions,
+        component: "typeControl"
+      }
     },
     {
-      label: "Subhead Color",
-      name: "subheadColor",
       type: "string",
+      label: "Subhead Style",
+      name: "subheadStyles",
       ui: {
-        component: "select",
-      },
-      options: colorOptions,
+        component: "typeControl"
+      }
     },
     {
-      label: "Subhead Size",
-      name: "subheadSize",
       type: "string",
+      label: "Text Style",
+      name: "textStyles",
       ui: {
-        component: "select",
-      },
-      options: textSizeOptions,
+        component: "typeControl"
+      }
     },
     {
-      label: "Text Color",
-      name: "textColor",
-      ui: {
-        component: "select",
-      },
-      type: "string",
-      options: colorOptions,
-    },
-    {
-      label: "Text Size",
-      name: "textSize",
+      label: "Content Order",
+      name: "contentOrder",
       type: "string",
       ui: {
         component: "select",
       },
-      options: textSizeOptions,
+      options: contentOrderOptions,
     },
   ],
 };
