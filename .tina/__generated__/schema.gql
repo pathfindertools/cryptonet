@@ -133,7 +133,7 @@ type PagesBlocksFeatureStyle {
   imageStyle: String
   textAlignment: String
   contentAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
@@ -184,7 +184,7 @@ type PagesBlocksPhotoCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
@@ -243,7 +243,7 @@ type PagesBlocksTextCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
@@ -298,7 +298,7 @@ type PagesBlocksBannerStyle {
   minHeight: String
   textAlignment: String
   width: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImage
   labelStyles: String
   headlineStyles: String
@@ -427,7 +427,7 @@ input PagesBlocksFeatureStyleMutation {
   imageStyle: String
   textAlignment: String
   contentAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
@@ -478,7 +478,7 @@ input PagesBlocksPhotoCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksPhotoCardsStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
@@ -537,7 +537,7 @@ input PagesBlocksTextCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksTextCardsStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String
@@ -592,7 +592,7 @@ input PagesBlocksBannerStyleMutation {
   minHeight: String
   textAlignment: String
   width: String
-  backgroundColor: String
+  fillStyles: String
   backgroundImage: PagesBlocksBannerStyleBackgroundImageMutation
   labelStyles: String
   headlineStyles: String

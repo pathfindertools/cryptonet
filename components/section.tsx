@@ -3,11 +3,11 @@ import { lowerDash } from "../helpers/utilities"
 
 export const Section = ({
   children,
-  color = "",
   navigationLabel = "",
   className = "",
   image = "",
   minHeight= "",
+  fillStyles="",
 }) => {
 
   const sectionColorCss = {
@@ -28,10 +28,10 @@ export const Section = ({
   return (
     <section
       { ...sectionId }
-      className="relative"
+      className={`relative ${className}`}
       style={sectionStyle}
     >
-      <div className={`background absolute inset-0 -z-1 ${sectionColorCss[color]}`}>
+      <div className={`background absolute inset-0 -z-1 ${fillStyles}`}>
         {image && <img className="w-full h-full object-cover" src={image} />}
       </div>
       {children}

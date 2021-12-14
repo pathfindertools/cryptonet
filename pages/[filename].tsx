@@ -56,7 +56,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   backgroundImage {
                     src
                     alt
@@ -102,7 +102,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   backgroundImage {
                     src
                     alt
@@ -145,7 +145,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   backgroundImage {
                     src
                     alt
@@ -179,7 +179,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   backgroundImage {
                     src
                     alt

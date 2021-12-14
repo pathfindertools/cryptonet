@@ -17,15 +17,15 @@ blocks:
       imageStyle: natural
       textAlignment: left
       contentAlignment: center
-      contentOrder: labelHeadingsContent
-      backgroundColor: black
+      fillStyles: from-black to-black bg-gradient-to-r
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
       labelStyles: text-white text-xl mb-0 font-bold
-      headlineStyles: text-gray-light text-7xl mb-10
-      subheadStyles: text-primary text-3xl mb-0
-      textStyles: text-white text-lg mb-24
+      headlineStyles: text-gray-light text-7xl mb-10 undefined
+      subheadStyles: text-primary text-3xl mb-0 undefined
+      textStyles: text-white text-lg mb-24 undefined
+      contentOrder: labelHeadingsContent
     _template: feature
   - image:
       src: >-
@@ -42,12 +42,12 @@ blocks:
       imageStyle: overlap
       textAlignment: left
       contentAlignment: center
+      fillStyles: from-accent3 to-accent1 bg-gradient-to-r
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: text-white text-4xl mb-0 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: black
-      labelStyles: text-gray-light text-7xl mb-0
-      headlineStyles: 'text-gray text-4xl mb-0 '
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: 'text-black text-xl mb-0 '
     _template: feature
   - label: ''
     headline: >-
@@ -72,12 +72,12 @@ blocks:
       minHeight: '650'
       columns: '4'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: black
       labelStyles: text-white text-lg mb-0
       headlineStyles: text-white text-5xl mb-0
       subheadStyles: text-white text-md mb-0
       textStyles: text-white text-xl mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       backgroundColor: accent1
@@ -150,11 +150,11 @@ blocks:
     style:
       columns: '2'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: white
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-gray-dark text-3xl mb-0
       textStyles: text-gray-dark text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       backgroundColor: white
@@ -197,11 +197,11 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: black
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-gray text-3xl mb-0
       textStyles: text-gray-light text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       backgroundColor: black
@@ -212,7 +212,6 @@ blocks:
       textStyles: text-white text-xl mb-0
       buttonType: solid
     _template: textCards
-  
   - label: ''
     headline: ''
     subhead: ''
@@ -246,7 +245,6 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: black
       backgroundImage:
         src: >-
@@ -254,15 +252,16 @@ blocks:
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-black text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: transparent
       backgroundColor: black
       accentColor: primary
-      buttonType: solid
       labelStyles: text-white text-lg mb-0
       headlineStyles: text-white text-5xl mb-0
       subheadStyles: text-white text-4xl mb-0
       textStyles: text-white text-lg mb-0
+      buttonType: solid
     _template: photoCards
   - label: ''
     headline: Pricing
@@ -288,12 +287,12 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: white
       labelStyles: text-gray text-lg mb-0
       headlineStyles: text-black text-4xl mb-0
       subheadStyles: text-black text-4xl mb-0
       textStyles: text-black text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       backgroundColor: accent1
@@ -348,11 +347,11 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      contentOrder: labelHeadingsContent
       backgroundColor: white
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-black text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       backgroundColor: ''
@@ -385,14 +384,13 @@ blocks:
       imageStyle: overlap
       textAlignment: left
       contentAlignment: center
-      contentOrder: labelHeadingsContent
-      backgroundColor: black
       backgroundImage:
         src: ''
       labelStyles: text-gray-light text-7xl mb-0
       headlineStyles: text-white text-6xl mb-11
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-gray text-4xl mb-9
+      contentOrder: labelHeadingsContent
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test
@@ -418,3 +416,4 @@ colors:
   grayDark: '#787878'
   black: '#000000'
 ---
+

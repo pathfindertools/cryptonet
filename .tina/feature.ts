@@ -124,13 +124,12 @@ export const featureBlockSchema: TinaTemplate = {
           options: vAlignOptions,
         },
         {
-          label: "Background Color",
-          name: "backgroundColor",
           type: "string",
+          label: "Background",
+          name: "fillStyles",
           ui: {
-            component: "select",
-          },
-          options: colorOptions,
+            component: "fillControl"
+          }
         },
         {
           label: "Background Image",

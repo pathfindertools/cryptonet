@@ -39,13 +39,12 @@ export const cardsSchema: TinaField = {
       options: hAlignOptions,
     },
     {
-      label: "Background Color",
-      name: "backgroundColor",
       type: "string",
+      label: "Background",
+      name: "fillStyles",
       ui: {
-        component: "select",
-      },
-      options: colorOptions,
+        component: "fillControl"
+      }
     },
     {
       label: "Background Image",

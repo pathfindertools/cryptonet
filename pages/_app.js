@@ -59,6 +59,9 @@ const App = ({ Component, pageProps }) => {
               import('../plugins.tsx').then(({ typeControlFieldPlugin }) => {
                 cms.plugins.add(typeControlFieldPlugin)
               });
+              import('../plugins.tsx').then(({ fillControlFieldPlugin }) => {
+                cms.plugins.add(fillControlFieldPlugin)
+              });
             }}
             documentCreatorCallback={{
               /**
