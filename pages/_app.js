@@ -62,6 +62,9 @@ const App = ({ Component, pageProps }) => {
               import('../plugins.tsx').then(({ fillControlFieldPlugin }) => {
                 cms.plugins.add(fillControlFieldPlugin)
               });
+              import('../plugins.tsx').then(({ imageControlFieldPlugin }) => {
+                cms.plugins.add(imageControlFieldPlugin)
+              });
             }}
             documentCreatorCallback={{
               /**

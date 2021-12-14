@@ -195,6 +195,7 @@ type PagesBlocksPhotoCardsStyle {
 
 type PagesBlocksPhotoCardsCardStyle {
   type: String
+  imageStyles: String
   fillStyles: String
   accentColor: String
   labelStyles: String
@@ -489,6 +490,7 @@ input PagesBlocksPhotoCardsStyleMutation {
 
 input PagesBlocksPhotoCardsCardStyleMutation {
   type: String
+  imageStyles: String
   fillStyles: String
   accentColor: String
   labelStyles: String

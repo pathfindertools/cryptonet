@@ -97,6 +97,7 @@ fragment PagesParts on Pages {
       cardStyle {
         __typename
         type
+        imageStyles
         fillStyles
         accentColor
         labelStyles

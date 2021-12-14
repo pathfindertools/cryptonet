@@ -65,6 +65,7 @@ export const getStaticProps = async ({ params }) => {
                 cardStyle {
                   type
                   buttonType
+                  imageStyles
                   labelStyles
                   headlineStyles
                   subheadStyles

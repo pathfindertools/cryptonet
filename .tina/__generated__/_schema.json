@@ -1397,6 +1397,21 @@
                     },
                     {
                       "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
+                      "ui": {
+                        "component": "imageControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "imageStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
                       "label": "Background",
                       "name": "fillStyles",
                       "ui": {

@@ -14,10 +14,9 @@ blocks:
     style:
       minHeight: '800'
       flipLayout: false
-      imageStyle: natural
+      imageStyle: overlap
       textAlignment: left
       contentAlignment: center
-      fillStyles: from-black to-black bg-gradient-to-r
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
@@ -159,7 +158,7 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
-      fillStyles: bg-white
+      imageStyles: h-16 object-contain object-left mb-5
       accentColor: white
       labelStyles: text-black text-lg mb-0 undefined
       headlineStyles: text-black text-2xl mb-0 undefined
@@ -297,11 +296,12 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       type: transparent
+      imageStyles: h-28 object-contain object-left mb-3
       accentColor: primary
-      labelStyles: text-white text-lg mb-0
-      headlineStyles: text-white text-5xl mb-0
-      subheadStyles: text-white text-4xl mb-0
-      textStyles: text-white text-lg mb-0
+      labelStyles: text-white text-lg mb-0 undefined
+      headlineStyles: text-white text-5xl mb-0 undefined
+      subheadStyles: text-white text-4xl mb-0 undefined
+      textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
     _template: photoCards
   - label: Filecoin solves many problems associated with traditional storage
@@ -363,6 +363,7 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
+      imageStyles: h-11 object-fill object-center mb-0.5
       accentColor: primary
       labelStyles: text-black text-sm mb-0 undefined
       headlineStyles: text-primary text-2xl mb-0 undefined
