@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, contentOrderOptions, hAlignOptions, vAlignOptions, textSizeOptions } from "./shared/options"
+import { contentOrderOptions, hAlignOptions, vAlignOptions } from "./shared/options"
 
 export const featureBlockSchema: TinaTemplate = {
   name: "feature",
@@ -20,7 +20,7 @@ export const featureBlockSchema: TinaTemplate = {
         headlineStyles: "text-black text-5xl mb-0",
         subheadStyles: "text-black text-3xl mb-0",
         textStyles: "text-black text-md mb-0",
-        backgroundColor: "white",
+        fillStyles: "bg-white",
         textAlignment: "left",
         contentAlignment: "center",
         contentOrder: "labelHeadingsContent",

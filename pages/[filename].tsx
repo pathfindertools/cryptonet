@@ -69,7 +69,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   accentColor
                   buttonTextColor
                 }
@@ -115,7 +115,7 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  backgroundColor
+                  fillStyles
                   accentColor
                   buttonTextColor
                 }

@@ -2,7 +2,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, textSizeOptions } from "./shared/options"
+import { colorOptions } from "./shared/options"
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -21,7 +21,7 @@ export const textCardsBlockSchema: TinaTemplate = {
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
         columns: "3",
-        backgroundColor: "white",
+        fillStyles: "bg-white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
         labelStyles: "text-black text-sm mb-0",
@@ -33,7 +33,7 @@ export const textCardsBlockSchema: TinaTemplate = {
         type: "solid",
         buttonType: "solid",
         accentColor: "primary",
-        backgroundColor: "gray",
+        fillStyles: "bg-gray",
         labelStyles: "text-black text-sm mb-0",
         headlineStyles: "text-black text-2xl mb-0",
         subheadStyles: "text-black text-lg mb-0",
@@ -141,13 +141,12 @@ export const textCardsBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Background Color",
-          name: "backgroundColor",
           type: "string",
+          label: "Background",
+          name: "fillStyles",
           ui: {
-            component: "select",
-          },
-          options: colorOptions,
+            component: "fillControl"
+          }
         },
         {
           label: "Accent Color",

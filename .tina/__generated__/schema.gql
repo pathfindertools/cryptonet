@@ -195,7 +195,7 @@ type PagesBlocksPhotoCardsStyle {
 
 type PagesBlocksPhotoCardsCardStyle {
   type: String
-  backgroundColor: String
+  fillStyles: String
   accentColor: String
   labelStyles: String
   headlineStyles: String
@@ -254,7 +254,7 @@ type PagesBlocksTextCardsStyle {
 
 type PagesBlocksTextCardsCardStyle {
   type: String
-  backgroundColor: String
+  fillStyles: String
   accentColor: String
   labelStyles: String
   headlineStyles: String
@@ -489,7 +489,7 @@ input PagesBlocksPhotoCardsStyleMutation {
 
 input PagesBlocksPhotoCardsCardStyleMutation {
   type: String
-  backgroundColor: String
+  fillStyles: String
   accentColor: String
   labelStyles: String
   headlineStyles: String
@@ -548,7 +548,7 @@ input PagesBlocksTextCardsStyleMutation {
 
 input PagesBlocksTextCardsCardStyleMutation {
   type: String
-  backgroundColor: String
+  fillStyles: String
   accentColor: String
   labelStyles: String
   headlineStyles: String

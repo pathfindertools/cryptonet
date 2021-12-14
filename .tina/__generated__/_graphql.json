@@ -2531,7 +2531,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "backgroundColor"
+            "value": "fillStyles"
           },
           "arguments": [],
           "type": {
@@ -3218,7 +3218,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "backgroundColor"
+            "value": "fillStyles"
           },
           "arguments": [],
           "type": {
@@ -6052,7 +6052,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "backgroundColor"
+            "value": "fillStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6686,7 +6686,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "backgroundColor"
+            "value": "fillStyles"
           },
           "type": {
             "kind": "NamedType",

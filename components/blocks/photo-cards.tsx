@@ -4,57 +4,10 @@ import { CardGrid } from "../card-grid";
 
 const PhotoCard = ({ data, cardstyle }) => {
   const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
-  const textColors = {
-    white: "text-white",
-    grayLight: "text-gray-200",
-    gray: "text-gray-500",
-    grayDark: "text-gray-800",
-    black: "text-black",
-    primary: "text-primary",
-    accent1: "text-accent1",
-    accent2: "text-accent2",
-    accent3: "text-accent3",
-  };
-  const textSizes = {
-    xs: "text-xs",
-    sm: "text-sm",
-    base: "text-base",
-    lg: "text-lg",
-    xl: "text-xl",
-    "2xl": "text-2xl",
-    "3xl": "text-3xl",
-    "4xl": "text-4xl",
-    "5xl": "text-5xl",
-    "6xl": "text-6xl",
-    "7xl": "text-7xl",
-    "8xl": "text-8xl",
-  };
-  const backgroundColors = {
-    white: "bg-white",
-    grayLight: "bg-gray-200",
-    gray: "bg-gray-500",
-    grayDark: "bg-gray-800",
-    black: "bg-black",
-    primary: "bg-primary",
-    accent1: "bg-accent1",
-    accent2: "bg-accent2",
-    accent3: "bg-accent3",
-  };
-  const backgroundGradient = {
-    white: "bg-gradient-to-r from-white to-gray-200",
-    grayLight: "bg-gradient-to-r from-gray-200 to-gray-400",
-    gray: "bg-gradient-to-r from-gray-500 to-gray-700",
-    grayDark: "bg-gradient-to-r from-gray-800 to-gray-900",
-    black: "bg-gradient-to-r from-black to-black",
-    primary: "bg-gradient-to-r from-primary to-black",
-    accent1: "bg-gradient-to-r from-accent1 to-black",
-    accent2: "bg-gradient-to-r from-accent2 to-black",
-    accent3: "bg-gradient-to-r from-accent3 to-black",
-  };
   const backgroundClasses = {
-    solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
-    transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
-    fadeH: `${backgroundGradient[cardstyle?.backgroundColor]}`,
+    solid: `${cardstyle?.fillStyles}`,
+    transparent: `${cardstyle?.fillStyles} opacity-70`,
+    fadeH: `${cardstyle?.fillStyles}`,
   }
 
   return (

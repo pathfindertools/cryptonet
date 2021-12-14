@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } from "./shared/options"
+import { contentOrderOptions, hAlignOptions } from "./shared/options"
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -17,7 +17,7 @@ export const bannerBlockSchema: TinaTemplate = {
         headlineStyles: "text-black text-5xl mb-0",
         subheadStyles: "text-black text-3xl mb-0",
         textStyles: "text-black text-md mb-0",
-        backgroundColor: "white",
+        fillStyles: "bg-white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
         width: "normal"

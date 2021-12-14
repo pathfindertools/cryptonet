@@ -1,6 +1,6 @@
 
 import type { TinaField } from "@tinacms/cli";
-import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } from "./options"
+import { contentOrderOptions, hAlignOptions } from "./options"
 
 export const cardsSchema: TinaField = {
   type: "object",
