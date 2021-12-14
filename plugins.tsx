@@ -1,4 +1,5 @@
 // ./plugins.tsx
+import FillControl from './components/tina/FillControl'
 import TypeControl from './components/tina/TypeControl'
 import { TextField } from 'tinacms'
 
@@ -17,3 +18,9 @@ export const typeControlFieldPlugin = {
     __type: 'field',
     name: 'typeControl',
   }
+
+export const fillControlFieldPlugin = {
+  Component: FillControl, // Extend the built-in text field
+  __type: 'field',
+  name: 'fillControl',
+}

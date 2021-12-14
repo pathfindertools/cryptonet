@@ -1,15 +1,26 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+/*
+Color picker expects the value prop to match one of the colorOptions
+*/
 interface ColorPickerProps {
-  options: {
-    label: string,
-    value: string
-  }[];
   onClick: Function;
   value: string;
   className?: string;
 }
 export default function ColorPicker(props:ColorPickerProps) {
+  const colorOptions = [
+    { label: "Primary", value: "primary"},
+    { label: "Accent 1", value: "accent1"},
+    { label: "Accent 2", value: "accent2"},
+    { label: "Accent 3", value: "accent3"},
+    { label: "Accent 4", value: "accent4"},
+    { label: "White", value: "white"},
+    { label: "Gray Light", value: "gray-light"},
+    { label: "Gray", value: "gray"},
+    { label: "Gray Dark", value: "gray-dark"},
+    { label: "Black", value: "black"},
+  ]
   const [isActive, setIsActive] = useState(false)
   const clickOutsideRef = useRef(null);
 
@@ -40,7 +51,7 @@ export default function ColorPicker(props:ColorPickerProps) {
       borderColor: "var(--tina-color-grey-2)",
   }
 
-  const colorChipClasses = `border-box absolute w-6 h-6 rounded-sm ${props.value?.replace('text-', 'bg-')}`
+  const colorChipClasses = `border-box absolute w-6 h-6 rounded-sm bg-${props.value}`
   const colorChipStyles = {
       border: props.value === "text-white" ? "1px solid var(--tina-color-grey-2)" : "",
       top: "5px",
@@ -54,12 +65,12 @@ export default function ColorPicker(props:ColorPickerProps) {
     backgroundColor: "white",
   }
 
-  const pickerOptions = props.options.map((option) => {
-    const borderStyles = option.value === "text-white" ? {border: "1px solid var(--tina-color-grey-2"} : {}
+  const pickerOptions = colorOptions.map((option) => {
+    const borderStyles = option.value === "white" ? {border: "1px solid var(--tina-color-grey-2"} : {}
     return <div
       onClick={() => handleClick(option.value)}
       style={borderStyles}
-      className={`w-6 h-6 cursor-pointer rounded-sm ${(option.value)?.replace('text-', 'bg-')}`}
+      className={`w-6 h-6 cursor-pointer rounded-sm  bg-${option.value}`}
       key={option.value}
     ></div>
   });

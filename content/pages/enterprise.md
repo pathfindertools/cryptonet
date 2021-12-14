@@ -17,15 +17,15 @@ blocks:
       imageStyle: natural
       textAlignment: left
       contentAlignment: center
-      contentOrder: labelHeadingsContent
-      backgroundColor: black
+      fillStyles: from-black to-black bg-gradient-to-r
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
       labelStyles: text-white text-xl mb-0 font-bold
-      headlineStyles: text-gray-light text-7xl mb-10
-      subheadStyles: text-primary text-3xl mb-0
-      textStyles: text-white text-lg mb-24
+      headlineStyles: text-gray-light text-7xl mb-10 undefined
+      subheadStyles: text-primary text-3xl mb-0 undefined
+      textStyles: text-white text-lg mb-24 undefined
+      contentOrder: labelHeadingsContent
     _template: feature
   - image:
       src: >-
@@ -37,22 +37,22 @@ blocks:
     subhead: ''
     body: ''
     style:
-      minHeight: '700'
+      minHeight: '600'
       flipLayout: false
       imageStyle: overlap
       textAlignment: left
       contentAlignment: center
+      fillStyles: bg-black
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: text-gray-dark text-4xl mb-0 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: black
-      labelStyles: text-gray-light text-7xl mb-0
-      headlineStyles: 'text-gray text-4xl mb-0 '
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: 'text-black text-xl mb-0 '
     _template: feature
   - label: ''
     headline: >-
-      Filecoin has a vast ecosystem and an established community of developers,
-      storage providers, and clients.
+      Filecoin has a vast ecosystem of developers, storage providers, and
+      clients.
     subhead: ''
     body: ''
     items:
@@ -69,100 +69,136 @@ blocks:
         subhead: ''
         text: 'Applications, projects, and funded startups'
     style:
-      minHeight: '650'
+      minHeight: '550'
       columns: '4'
       textAlignment: left
+      fillStyles: bg-black
+      labelStyles: text-white text-lg mb-0 undefined
+      headlineStyles: text-white text-6xl mb-0 undefined
+      subheadStyles: text-white undefined mb-0 undefined
+      textStyles: text-white text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: black
-      labelStyles: text-white text-lg mb-0
-      headlineStyles: text-white text-5xl mb-0
-      subheadStyles: text-white text-md mb-0
-      textStyles: text-white text-xl mb-0
     cardStyle:
       type: solid
-      backgroundColor: accent1
+      fillStyles: from-primary to-accent1 bg-gradient-to-tl
       accentColor: primary
       labelStyles: text-white undefined mb-0 undefined
-      headlineStyles: text-white text-4xl mb-0 font-bold
+      headlineStyles: text-white text-5xl mb-3 undefined
       subheadStyles: text-white text-lg mb-0 undefined
-      textStyles: text-white undefined mb-0 undefined
+      textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
     _template: textCards
   - label: ''
-    headline: Filecoin solves many problems associated with traditional storage
+    headline: Many organizations and projects successfully store with Filecoin
     subhead: ''
     body: ''
     items:
-      - headline: Traditional storage
-        subhead: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1638472801/shoah-foundation-stacked_cunxfd.png
+        headline: ''
+        subhead: >-
+          Starling Labs and the Shoah Foundation is building an immutable
+          archive of genocide survivor testimonials on Filecoin (total dataset
+          6000 TiB).
         text: >-
-          **Centralized**
+          ![](http://res.cloudinary.com/protocolai/image/upload/v1639502956/quote-mark_vtafyp.png)  
 
+          This is easily the most intuitive and also the most powerful use case
+          for decentralized technology... Filecoin provides a continuous record
+          to show that files are secure and have not been tampered with....
+          anyone can view the archive and check its provenance using immutable
+          information, including a timestamp, image storage data, and verified
+          edit history.”
+        link: asdfsd.aaidl
+        buttonLabel: Learn more
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1638473001/logo-internet-archive_hxjwcm.png
+        headline: ''
+        subhead: >-
+          The Internet Archive is leveraging IPFS/Filecoin to begin storing a
+          decentralized copy of their archive - starting with their End of Term
+          crawl (total dataset 1000TiB).
+        text: >-
+          ![](http://res.cloudinary.com/protocolai/image/upload/v1639502956/quote-mark_vtafyp.png)  
 
-          * A handful of companies have become the dominant platforms for the
-          internet, leading to limited offerings in the cloud storage space
+          The idea is to make a robust and private Internet that has a history
+          that will persist over decades and maybe centuries... Filecoin has
+          made a huge step forward by deploying decentralized storage at the
+          exabyte level. That’s very different from AWS (Amazon Web Services).
+          It has many participants, not just one player. And its protocols are
+          open-source ... Decentralized Web is ... starting to come to fruition
+          and Filecoin is a leader in that area.”
+        link: fdsfgdsr.nkoi
+        buttonLabel: Learn more
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1638473069/logo-slingshot_bjeugg.png
+        headline: ''
+        subhead: >-
+          Slingshot is a community competition with the mission to preserve
+          real, valuable, and usable public datasets on the Filecoin network
+          (30PiB+ open datasets stored through Slingshot).
+        text: >-
+          ![](http://res.cloudinary.com/protocolai/image/upload/v1639502956/quote-mark_vtafyp.png)  
 
-          * Limited set of locations and regions available
-
-          * Dominant cloud interfaces prevent lower level protocol innovation
-          (peer to peer)
-
-
-          **Fragile**
-
-          * Lack of network stability in the infrastructure leads to data
-          accessibility issues
-
-          * Vendor lock-in concentrates risk with one provider
-
-          * Public cloud providers have various backup methodologies, not all
-          will suit enterprise needs
-
-
-          **Costly**
-
-
-          * Organizations are locked into specific architectures with high
-          egress and data migration costs
-
-          * Non-predictive cost structure
-
-          * Data lock-in makes price renegotiation hard
-      - headline: Filecoin
-        subhead: ''
-        text: |-
-          **Decentralized**
-          * No single point of failure
-          * Multi-mode access: no proprietary protocol, no vendor lock-in
-          * Designed for innovation on all levels
-          * Storage agnostic at storage provider level
-
-          **Robust**
-          * Daily Bit cryptographic data proofing
-          * Always available data via verified replication
-          * Providers are incentivized to stay **online 24/7,** or lose pledge
-
-          **Efficient**
-          * Open spot market for storage
-          * Incentive structures enabling cheap prices*
-          * Store 6 copies easily
-          * Data stored closer of publicly consumable data
+          Slingshot created a content delivery network for scientific data —
+          with searchable indices, robust documentation and geographic
+          distribution of data.”
+        link: sikljko.vol
+        buttonLabel: Learn more
     style:
-      columns: '2'
+      columns: '3'
       textAlignment: left
+      fillStyles: bg-white
+      labelStyles: text-gray text-xs mb-0 undefined
+      headlineStyles: text-black text-5xl undefined undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: white
-      labelStyles: text-gray text-lg mb-0
-      subheadStyles: text-gray-dark text-3xl mb-0
-      textStyles: text-gray-dark text-lg mb-0
     cardStyle:
       type: solid
-      backgroundColor: white
+      fillStyles: bg-white
+      accentColor: white
+      labelStyles: text-black text-lg mb-0 undefined
+      headlineStyles: text-black text-2xl mb-0 undefined
+      subheadStyles: text-gray-dark text-xl mb-6 undefined
+      textStyles: text-black text-base mb-0 undefined
+      buttonType: solid
+      buttonTextColor: white
+    _template: photoCards
+  - label: ''
+    headline: Pricing
+    subhead: Significantly cheaper than cloud based storage
+    body: ''
+    items:
+      - headline: Filecoin Plus
+        subhead: $0
+        text: Per TiB/Year
+        accentColor: white
+      - headline: Filecoin
+        subhead: <$1*
+        text: Per TiB / year
+      - headline: Public cloud
+        subhead: $24**
+        text: Per TiB / year
+    style:
+      columns: '3'
+      textAlignment: left
+      fillStyles: bg-white
+      labelStyles: text-gray text-lg mb-0 undefined
+      headlineStyles: text-black text-4xl mb-0 undefined
+      subheadStyles: text-black text-2xl mb-0 undefined
+      textStyles: text-black text-lg mb-0 undefined
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
       accentColor: primary
-      labelStyles: text-black text-md mb-0
-      headlineStyles: text-black text-5xl mb-0
-      subheadStyles: text-black text-lg mb-0
-      textStyles: text-black text-md mb-0
+      labelStyles: text-black text-lg mb-0 undefined
+      headlineStyles: text-black text-base mb-3 font-bold
+      subheadStyles: text-primary text-6xl mb-0 undefined
+      textStyles: text-gray-dark text-base mb-0 undefined
       buttonType: solid
     _template: textCards
   - label: ''
@@ -170,49 +206,55 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: A recognized leader in decentralized storage
+      - headline: >-
+          Filecoin is recognized as the leader in the decentralized storage
+          market by industry experts
         subhead: ''
         text: ''
-      - headline: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639504314/e-signoretti-quote_f7ftpt.png
+        headline: ''
         subhead: ''
         text: >-
-          "Unlike other solutions in this space, most of the storage providers
+          **Enrico Signoretti from GigaOm:**
+
+          “Unlike other solutions in this space, most of the storage providers
           in the Filecoin network have committed to offering datacenter
-          resources, and have made an important initial investment in both
-          hardware and collateral, to ensure the quality of the service, data
-          availability, and long-term reliability."
-
-
-          ![](http://res.cloudinary.com/protocolai/image/upload/v1638394999/Enrico-Signoretti_bj2wck.jpg)  
-
-          **Enrico Signoretti**  
-
-          Analyst, GigaOm
-      - headline: ''
+          resrouces and have made an important intial investment in both
+          hardware and collatoral to ensure the quality of service, data
+          availability and long-term reliability.”
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639504406/gigaom-triangle_xz3ssp.png
+        headline: ''
         subhead: ''
         text: >-
-          ![](http://res.cloudinary.com/protocolai/image/upload/v1638394862/triangle-graphic_ygaf5x.png)
+          **The GigaOm Sonar for Decentralized Storage Report**
+
+
+          Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem lorem lorem lorem.
         link: /
         buttonLabel: Download full report
     style:
       columns: '3'
       textAlignment: left
+      fillStyles: bg-black
+      labelStyles: text-gray text-lg mb-0 undefined
+      headlineStyles: undefined undefined undefined undefined
+      subheadStyles: text-gray text-3xl mb-0 undefined
+      textStyles: text-gray-light text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: black
-      labelStyles: text-gray text-lg mb-0
-      subheadStyles: text-gray text-3xl mb-0
-      textStyles: text-gray-light text-lg mb-0
     cardStyle:
       type: solid
-      backgroundColor: black
       accentColor: primary
       labelStyles: text-white text-md mb-0
       headlineStyles: text-white text-5xl mb-0
       subheadStyles: text-white text-lg mb-0
       textStyles: text-white text-xl mb-0
       buttonType: solid
-    _template: textCards
-  
+    _template: photoCards
   - label: ''
     headline: ''
     subhead: ''
@@ -246,124 +288,118 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      contentOrder: labelHeadingsContent
-      backgroundColor: black
       backgroundImage:
         src: >-
           http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-black text-lg mb-0
+      contentOrder: labelHeadingsContent
     cardStyle:
       type: transparent
-      backgroundColor: black
       accentColor: primary
-      buttonType: solid
       labelStyles: text-white text-lg mb-0
       headlineStyles: text-white text-5xl mb-0
       subheadStyles: text-white text-4xl mb-0
       textStyles: text-white text-lg mb-0
+      buttonType: solid
+    _template: photoCards
+  - label: Filecoin solves many problems associated with traditional storage
+    headline: Traditional Storage vs. Filecoin
+    subhead: Traditional
+    body: ' '
+    items:
+      - headline: Fragile
+        subhead: ''
+        text: Vendor lock-in concentrates risk with one provider
+      - headline: Centralized
+        subhead: ''
+        text: >-
+          A handful of companies have become the dominant platforms, offering a
+          constrained set of locations and regions
+      - headline: Costly
+        subhead: ''
+        text: >-
+          Organizations are locked into specific architectures with high egress
+          and data migration costs
+    style:
+      columns: '3'
+      textAlignment: left
+      labelStyles: text-gray text-4xl mb-20 undefined
+      headlineStyles: text-black text-6xl mb-24 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black undefined mb-0 undefined
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      accentColor: primary
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-black text-2xl mb-0 undefined
+      subheadStyles: text-black text-lg mb-0 undefined
+      textStyles: text-black text-sm mb-0 undefined
+      buttonType: solid
     _template: photoCards
   - label: ''
-    headline: Pricing
-    subhead: A brief intro to this table might be helpful.
-    body: >-
-      \*Average pricing shown from the last 30 days, rates will vary
-      ([Source]())
-
-
-      \**Cloud pricing compared to S3 [Glacier Deep
-      Archive](https://aws.amazon.com/s3/pricing/)
-    items:
-      - headline: Filecoin Plus
-        subhead: $0
-        text: Per TiB / year
-        accentColor: white
-      - headline: Filecoin
-        subhead: <$1*
-        text: Per TiB / year
-      - headline: Public cloud
-        subhead: $24**
-        text: Per TiB / year
-    style:
-      columns: '3'
-      textAlignment: left
-      contentOrder: labelHeadingsContent
-      backgroundColor: white
-      labelStyles: text-gray text-lg mb-0
-      headlineStyles: text-black text-4xl mb-0
-      subheadStyles: text-black text-4xl mb-0
-      textStyles: text-black text-lg mb-0
-    cardStyle:
-      type: solid
-      backgroundColor: accent1
-      accentColor: primary
-      labelStyles: text-white text-lg mb-0
-      headlineStyles: text-white text-lg mb-0
-      subheadStyles: text-white text-lg mb-0
-      textStyles: text-white text-2xl mb-0
-      buttonType: solid
-    _template: textCards
-  - label: ''
-    headline: Many organizations and projects successfully store with Filecoin
-    subhead: ''
+    headline: ''
+    subhead: Filecoin
     body: ''
     items:
-      - headline: ''
+      - headline: Decentralized
         subhead: ''
-        text: >-
-          ![](http://res.cloudinary.com/protocolai/image/upload/v1638472801/shoah-foundation-stacked_cunxfd.png)
-
-
-          Starling Labs and the Shoah Foundation is building an immutable
-          archive of genocide survivor testimonials on Filecoin (total dataset
-          6000 TiB)
-        link: asdfsd.aaidl
-        buttonLabel: Learn more
-        accentColor: accent1
-      - headline: ''
+        text: 'No single point of failure, no proprietary protocol, no vendor lock-in'
+      - headline: Robust
         subhead: ''
-        text: >-
-          ![](http://res.cloudinary.com/protocolai/image/upload/v1638473001/logo-internet-archive_hxjwcm.png)
-
-
-          The Internet Archive is leveraging IPFS/Filecoin to begin storing a
-          decentralized copy of their archive - starting with their End of Term
-          crawl (total dataset 1000TiB)
-        link: fdsfgdsr.nkoi
-        buttonLabel: Learn more
-        accentColor: accent1
-      - headline: ''
+        text: Data redundancy and availability through multi-vendor replication
+      - headline: Efficient
         subhead: ''
-        text: >-
-          ![](http://res.cloudinary.com/protocolai/image/upload/v1638473069/logo-slingshot_bjeugg.png)
-
-
-          Slingshot is a community competition with the mission to preserve
-          real, valuable, and usable public datasets on the Filecoin network
-          (30PiB+ open datasets stored through Slingshot)
-        link: sikljko.vol
-        buttonLabel: Learn more
-        accentColor: accent1
+        text: Incentive structures enabling cheap prices
     style:
       columns: '3'
       textAlignment: left
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-black text-5xl mb-0 undefined
+      subheadStyles: text-primary text-3xl mb-0 undefined
+      textStyles: text-black undefined mb-0 undefined
       contentOrder: labelHeadingsContent
-      backgroundColor: white
-      labelStyles: text-gray text-lg mb-0
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-black text-lg mb-0
     cardStyle:
       type: solid
-      backgroundColor: ''
-      accentColor: white
-      labelStyles: text-black text-lg mb-0
-      headlineStyles: text-black text-2xl mb-0
-      subheadStyles: text-black text-lg mb-0
-      textStyles: text-black text-sm mb-0
+      accentColor: primary
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-primary text-2xl mb-0 undefined
+      subheadStyles: text-black text-lg mb-0 undefined
+      textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
-      buttonTextColor: white
-    _template: textCards
+    _template: photoCards
+  - image:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1639503838/filrep-screen-on-ipad_eueozw.png
+    label: ''
+    headline: Storage Providers
+    subhead: ''
+    body: >-
+      There are thousands of storage providers forming a transparent, global
+      marketplace.  
+        
+      Clients can choose providers that fit their specific needs.
+    buttons:
+      - label: Explore Providers
+        link: /
+        type: solid
+        textColor: black
+        backgroundColor: white
+    style:
+      minHeight: ''
+      flipLayout: false
+      imageStyle: natural
+      textAlignment: left
+      contentAlignment: center
+      fillStyles: from-accent1 to-primary bg-gradient-to-br
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-white text-5xl mb-4 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-white text-3xl mb-9 undefined
+      contentOrder: labelHeadingsContent
+    _template: feature
   - image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638473289/bg-filecoin-NAS_qo3y6w.png
@@ -371,7 +407,7 @@ blocks:
     headline: Referral Program
     subhead: ''
     body: >-
-      Project Gravity reward community members for helping bring new
+      Project Gravity rewards community members for helping bring new
       participants to the Filecoin network.
     buttons:
       - label: Learn More
@@ -385,14 +421,14 @@ blocks:
       imageStyle: overlap
       textAlignment: left
       contentAlignment: center
-      contentOrder: labelHeadingsContent
-      backgroundColor: black
+      fillStyles: bg-black
       backgroundImage:
         src: ''
-      labelStyles: text-gray-light text-7xl mb-0
-      headlineStyles: text-white text-6xl mb-11
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-gray text-4xl mb-9
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: text-white text-6xl mb-11 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-gray text-4xl mb-9 undefined
+      contentOrder: labelHeadingsContent
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test
@@ -418,3 +454,4 @@ colors:
   grayDark: '#787878'
   black: '#000000'
 ---
+

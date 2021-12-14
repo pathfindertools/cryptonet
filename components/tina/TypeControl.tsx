@@ -82,6 +82,10 @@ export default function TypeControl({ field, input, meta }) {
     const matches = optionValues.filter(element => currentStyles.includes(element))
     return matches[0];
   }
+
+  function handleSetColor(value: string) {
+    setColor(`text-${value}`)
+  }
   
   return (
     <>
@@ -95,7 +99,7 @@ export default function TypeControl({ field, input, meta }) {
         }}>{field.label}</label>
       </div>
       <div className="flex mb-6 items-center">
-        <ColorPicker value={color} onClick={setColor} options={colors} className="mr-1" />
+        <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="mr-1" />
         <div className="w-6 pr-1">
           <IconFontSize className="float-right" />
         </div>

@@ -14,7 +14,7 @@ export const CardGrid = ({ data, children }) => {
   }
   return (
     <Section
-      color={data.style?.backgroundColor}
+      fillStyles={data.style?.fillStyles}
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}

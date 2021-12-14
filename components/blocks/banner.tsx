@@ -5,7 +5,7 @@ import { Content } from "../content";
 export const Banner = ({ data }) => {
   return (
     <Section
-      color={data.style?.backgroundColor}
+      fillStyles={data.style?.fillStyles}
       image={data.style?.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}

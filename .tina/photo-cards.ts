@@ -21,9 +21,9 @@ export const photoCardsBlockSchema: TinaTemplate = {
       body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
       style: {
         columns: "3",
-        backgroundColor: "white",
         textAlignment: "left",
         contentOrder: "labelHeadingsContent",
+        fillStyles: "bg-white",
         labelStyles: "text-black text-sm mb-0",
         headlineStyles: "text-black text-5xl mb-0",
         subheadStyles: "text-black text-3xl mb-0",
@@ -32,8 +32,8 @@ export const photoCardsBlockSchema: TinaTemplate = {
       cardStyle: {
         type: "solid",
         accentColor: "primary",
-        backgroundColor: "gray",
         buttonType: "solid",
+        fillStyles: "bg-gray",
         labelStyles: "text-black text-sm mb-0",
         headlineStyles: "text-black text-2xl mb-0",
         subheadStyles: "text-black text-lg mb-0",
@@ -153,13 +153,12 @@ export const photoCardsBlockSchema: TinaTemplate = {
           ],
         },
         {
-          label: "Background Color",
-          name: "backgroundColor",
           type: "string",
+          label: "Background",
+          name: "fillStyles",
           ui: {
-            component: "select",
-          },
-          options: colorOptions,
+            component: "fillControl"
+          }
         },
         {
           label: "Accent Color",

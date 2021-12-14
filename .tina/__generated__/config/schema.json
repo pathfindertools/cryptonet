@@ -64,7 +64,7 @@
                     "headlineStyles": "text-black text-5xl mb-0",
                     "subheadStyles": "text-black text-3xl mb-0",
                     "textStyles": "text-black text-md mb-0",
-                    "backgroundColor": "white",
+                    "fillStyles": "bg-white",
                     "textAlignment": "left",
                     "contentAlignment": "center",
                     "contentOrder": "labelHeadingsContent"
@@ -359,54 +359,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Background Image",
@@ -509,9 +467,9 @@
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
                     "columns": "3",
-                    "backgroundColor": "white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
+                    "fillStyles": "bg-white",
                     "labelStyles": "text-black text-sm mb-0",
                     "headlineStyles": "text-black text-5xl mb-0",
                     "subheadStyles": "text-black text-3xl mb-0",
@@ -520,8 +478,8 @@
                   "cardStyle": {
                     "type": "solid",
                     "accentColor": "primary",
-                    "backgroundColor": "gray",
                     "buttonType": "solid",
+                    "fillStyles": "bg-gray",
                     "labelStyles": "text-black text-sm mb-0",
                     "headlineStyles": "text-black text-2xl mb-0",
                     "subheadStyles": "text-black text-lg mb-0",
@@ -851,54 +809,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Background Image",
@@ -1019,54 +935,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Accent Color",
@@ -1237,7 +1111,7 @@
                   "body": "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
                   "style": {
                     "columns": "3",
-                    "backgroundColor": "white",
+                    "fillStyles": "bg-white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
                     "labelStyles": "text-black text-sm mb-0",
@@ -1249,7 +1123,7 @@
                     "type": "solid",
                     "buttonType": "solid",
                     "accentColor": "primary",
-                    "backgroundColor": "gray",
+                    "fillStyles": "bg-gray",
                     "labelStyles": "text-black text-sm mb-0",
                     "headlineStyles": "text-black text-2xl mb-0",
                     "subheadStyles": "text-black text-lg mb-0",
@@ -1609,54 +1483,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Background Image",
@@ -1773,54 +1605,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Accent Color",
@@ -1994,7 +1784,7 @@
                     "headlineStyles": "text-black text-5xl mb-0",
                     "subheadStyles": "text-black text-3xl mb-0",
                     "textStyles": "text-black text-md mb-0",
-                    "backgroundColor": "white",
+                    "fillStyles": "bg-white",
                     "textAlignment": "left",
                     "contentOrder": "labelHeadingsContent",
                     "width": "normal"
@@ -2254,54 +2044,12 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
-                      "name": "backgroundColor",
                       "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ]
+                        "component": "fillControl"
+                      }
                     },
                     {
                       "label": "Background Image",

@@ -1,6 +1,6 @@
 
 import type { TinaField } from "@tinacms/cli";
-import { colorOptions, contentOrderOptions, hAlignOptions, textSizeOptions } from "./options"
+import { contentOrderOptions, hAlignOptions } from "./options"
 
 export const cardsSchema: TinaField = {
   type: "object",
@@ -39,13 +39,12 @@ export const cardsSchema: TinaField = {
       options: hAlignOptions,
     },
     {
-      label: "Background Color",
-      name: "backgroundColor",
       type: "string",
+      label: "Background",
+      name: "fillStyles",
       ui: {
-        component: "select",
-      },
-      options: colorOptions,
+        component: "fillControl"
+      }
     },
     {
       label: "Background Image",

@@ -37,7 +37,7 @@ fragment PagesParts on Pages {
         imageStyle
         textAlignment
         contentAlignment
-        backgroundColor
+        fillStyles
         backgroundImage {
           __typename
           src
@@ -82,7 +82,7 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
-        backgroundColor
+        fillStyles
         backgroundImage {
           __typename
           src
@@ -97,7 +97,7 @@ fragment PagesParts on Pages {
       cardStyle {
         __typename
         type
-        backgroundColor
+        fillStyles
         accentColor
         labelStyles
         headlineStyles
@@ -135,7 +135,7 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
-        backgroundColor
+        fillStyles
         backgroundImage {
           __typename
           src
@@ -150,7 +150,7 @@ fragment PagesParts on Pages {
       cardStyle {
         __typename
         type
-        backgroundColor
+        fillStyles
         accentColor
         labelStyles
         headlineStyles
@@ -184,7 +184,7 @@ fragment PagesParts on Pages {
         minHeight
         textAlignment
         width
-        backgroundColor
+        fillStyles
         backgroundImage {
           __typename
           src

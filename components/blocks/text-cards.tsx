@@ -6,20 +6,9 @@ const TextCard = ({ data, cardstyle }) => {
   const wrapClasses = () => {
     return data.link && data.buttonLabel ? 'pb-24' : ''
   };
-  const backgroundColors = {
-    white: "bg-white",
-    grayLight: "bg-gray-200",
-    gray: "bg-gray-500",
-    grayDark: "bg-gray-800",
-    black: "bg-black",
-    primary: "bg-primary",
-    accent1: "bg-accent1",
-    accent2: "bg-accent2",
-    accent3: "bg-accent3",
-  };
   const backgroundClasses = {
-    solid: `${backgroundColors[cardstyle?.backgroundColor]}`,
-    transparent: `${backgroundColors[cardstyle?.backgroundColor]} opacity-70`,
+    solid: `${cardstyle?.fillStyles}`,
+    transparent: `${cardstyle?.fillStyles} opacity-70`,
   }
 
   return (
