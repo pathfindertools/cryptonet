@@ -19,7 +19,7 @@ blocks:
       textAlignment: left
       contentAlignment: center
       contentOrder: labelHeadingsContent
-      backgroundColor: white
+      fillStyles: bg-white
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
@@ -52,21 +52,20 @@ blocks:
       columns: '2'
       textAlignment: left
       contentOrder: labelHeadingsContent
-      backgroundColor: grayLight
+      fillStyles: bg-gray-light
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
       textStyles: text-black text-lg mb-0 font-bold
     cardStyle:
       type: solid
-      backgroundColor: white
+      fillStyles: bg-white
       accentColor: primary
       buttonType: solid
       labelStyles: text-black text-sm mb-0
       headlineStyles: text-black text-lg mb-0
       subheadStyles: text-black text-lg mb-0
       textStyles: text-black text-md mb-0
-
     _template: textCards
   - label: ''
     headline: Learn More
@@ -82,7 +81,7 @@ blocks:
       textAlignment: center
       contentOrder: labelHeadingsContent
       width: narrow
-      backgroundColor: gray
+      fillStyles: bg-gray
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
@@ -117,7 +116,7 @@ blocks:
       columns: '3'
       textAlignment: left
       contentOrder: labelHeadingsContent
-      backgroundColor: white
+      fillStyles: bg-white
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
