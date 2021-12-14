@@ -2531,6 +2531,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "imageStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "fillStyles"
           },
           "arguments": [],
@@ -6039,6 +6054,20 @@
           "name": {
             "kind": "Name",
             "value": "type"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "imageStyles"
           },
           "type": {
             "kind": "NamedType",

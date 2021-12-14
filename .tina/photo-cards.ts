@@ -2,7 +2,7 @@ import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { colorOptions, textSizeOptions } from "./shared/options"
+import { colorOptions } from "./shared/options"
 
 const defaultCard = {
   headline: "Here's Another Card",
@@ -151,6 +151,14 @@ export const photoCardsBlockSchema: TinaTemplate = {
             { label: "Semi Transparent", value: "transparent" },
             { label: "Horizontal Fade", value: "fadeH" },
           ],
+        },
+        {
+          type: "string",
+          label: "Image",
+          name: "imageStyles",
+          ui: {
+            component: "imageControl"
+          }
         },
         {
           type: "string",

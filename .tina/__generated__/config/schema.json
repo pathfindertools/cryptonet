@@ -936,6 +936,14 @@
                     },
                     {
                       "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
+                      "ui": {
+                        "component": "imageControl"
+                      }
+                    },
+                    {
+                      "type": "string",
                       "label": "Background",
                       "name": "fillStyles",
                       "ui": {

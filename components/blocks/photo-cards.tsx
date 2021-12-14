@@ -17,6 +17,7 @@ const PhotoCard = ({ data, cardstyle }) => {
           <img
             alt={data.image.alt}
             src={data.image.src}
+            className={`w-full ${cardstyle?.imageStyles}`}
           />
         )}
       </div>
