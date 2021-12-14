@@ -6,6 +6,7 @@ export default function FillControl({ field, input, meta }) {
     const fillTypes = [
       { label: "Solid", value: "solid" },
       { label: "Gradient", value: "gradient" },
+      { label: "Transparent", value: "transparent" },
     ]
     const [fillType, setFillType] = useState(getFillType(input.value));
   
@@ -69,10 +70,12 @@ export default function FillControl({ field, input, meta }) {
     // Update Hidden Field
     const input = inputRef.current;
     const lastValue = input.value;
-    const solidFillClasses = `${bgColor}`;
-    const gradientFillClasses = `${fromColor} ${toColor} ${direction}`;
-    const newValue = fillType != 'gradient' ? solidFillClasses : gradientFillClasses;
-    input.value = newValue;
+    const fillClasses = {
+      transparent: "",
+      solid: bgColor,
+      gradient: `${fromColor} ${toColor} ${direction}`,
+    }
+    input.value = fillClasses[fillType];
     (input as any)._valueTracker?.setValue(lastValue);
     input.dispatchEvent(new Event("input", {bubbles: true}));
   }, [bgColor, toColor, fromColor, fillType, direction, inputRef.current]);
@@ -86,7 +89,12 @@ export default function FillControl({ field, input, meta }) {
   }
 
   function getFillType(value: string) {
-    return value.includes("to-") ? "gradient" : "solid"
+    if (value.includes("to-")) {
+      return "gradient";
+    } else if (value.includes(" bg-")) {
+      return "solid";
+    }
+    return "transparent";
   }
   function handleSetBgColor(value: string) {
     setBgColor(`bg-${value}`)
@@ -118,7 +126,7 @@ export default function FillControl({ field, input, meta }) {
         }}>{field.label}</label>
       </div>
       <div className="flex mb-2 items-center">
-        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-24 mr-1" />
+        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-28 mr-1" />
         {fillType === "solid" &&
           <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} className="mr-1" />
         }
