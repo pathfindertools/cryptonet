@@ -73,8 +73,264 @@
               },
               "fields": [
                 {
+                  "type": "object",
+                  "label": "Section Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string"
+                    },
+                    {
+                      "label": "Flip Layout",
+                      "name": "flipLayout",
+                      "type": "boolean"
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "right"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Vertical Alignment",
+                      "name": "contentAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Top",
+                          "value": "top"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Bottom",
+                          "value": "bottom"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      }
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      }
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      }
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      }
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "label": "Image",
                   "name": "image",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "label": "Image Source",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      }
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt Text",
+                      "type": "string"
+                    },
+                    {
+                      "label": "Layout Style",
+                      "name": "imageStyle",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Inside Padding",
+                          "value": "padding"
+                        },
+                        {
+                          "label": "Half",
+                          "value": "half"
+                        },
+                        {
+                          "label": "Half to Edge",
+                          "value": "halfEdge"
+                        },
+                        {
+                          "label": "Overlap",
+                          "value": "overlap"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Fit",
+                      "name": "fit",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Natural",
+                          "value": "none"
+                        },
+                        {
+                          "label": "Scale down only",
+                          "value": "scaleDown"
+                        },
+                        {
+                          "label": "Fit",
+                          "value": "contain"
+                        },
+                        {
+                          "label": "Fill",
+                          "value": "cover"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "Background Image",
+                  "name": "backgroundImage",
                   "type": "object",
                   "fields": [
                     {
@@ -269,190 +525,6 @@
                   "name": "navigationLabel",
                   "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
                   "type": "string"
-                },
-                {
-                  "type": "object",
-                  "label": "Section Style",
-                  "name": "style",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Minimum Height",
-                      "name": "minHeight",
-                      "type": "string"
-                    },
-                    {
-                      "label": "Flip Layout",
-                      "name": "flipLayout",
-                      "type": "boolean"
-                    },
-                    {
-                      "label": "Layout Style",
-                      "name": "imageStyle",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Natural Size",
-                          "value": "natural"
-                        },
-                        {
-                          "label": "Fit in Half",
-                          "value": "fitHalf"
-                        },
-                        {
-                          "label": "Fill Half",
-                          "value": "fillHalf"
-                        },
-                        {
-                          "label": "Fill Overlap",
-                          "value": "overlap"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Vertical Alignment",
-                      "name": "contentAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Top",
-                          "value": "top"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Bottom",
-                          "value": "bottom"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      }
-                    },
-                    {
-                      "label": "Background Image",
-                      "name": "backgroundImage",
-                      "type": "object",
-                      "fields": [
-                        {
-                          "label": "Image Source",
-                          "name": "src",
-                          "type": "image",
-                          "ui": {
-                            "clearable": true
-                          }
-                        },
-                        {
-                          "name": "alt",
-                          "label": "Alt Text",
-                          "type": "string"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label Style",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      }
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline Style",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      }
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead Style",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      }
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text Style",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      }
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             },

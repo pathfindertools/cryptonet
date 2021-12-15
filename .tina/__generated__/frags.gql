@@ -12,7 +12,28 @@ fragment PagesParts on Pages {
   blocks {
     __typename
     ... on PagesBlocksFeature {
+      style {
+        __typename
+        minHeight
+        flipLayout
+        textAlignment
+        contentAlignment
+        fillStyles
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
+      }
       image {
+        __typename
+        src
+        alt
+        imageStyle
+        fit
+        position
+      }
+      backgroundImage {
         __typename
         src
         alt
@@ -30,25 +51,6 @@ fragment PagesParts on Pages {
         backgroundColor
       }
       navigationLabel
-      style {
-        __typename
-        minHeight
-        flipLayout
-        imageStyle
-        textAlignment
-        contentAlignment
-        fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
-        labelStyles
-        headlineStyles
-        subheadStyles
-        textStyles
-        contentOrder
-      }
     }
     ... on PagesBlocksPhotoCards {
       label

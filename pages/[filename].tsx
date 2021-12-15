@@ -126,6 +126,13 @@ export const getStaticProps = async ({ params }) => {
                 image {
                   src
                   alt
+                  imageStyle
+                  fit
+                  position
+                }
+                backgroundImage {
+                  src
+                  alt
                 }
                 label
                 headline
@@ -141,16 +148,11 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   flipLayout
-                  imageStyle
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                   textAlignment
                   contentAlignment
                   contentOrder

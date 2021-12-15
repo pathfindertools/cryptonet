@@ -109,7 +109,28 @@ type GlobalConnection implements Connection {
   edges: [GlobalConnectionEdges]
 }
 
+type PagesBlocksFeatureStyle {
+  minHeight: String
+  flipLayout: Boolean
+  textAlignment: String
+  contentAlignment: String
+  fillStyles: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
 type PagesBlocksFeatureImage {
+  src: String
+  alt: String
+  imageStyle: String
+  fit: String
+  position: String
+}
+
+type PagesBlocksFeatureBackgroundImage {
   src: String
   alt: String
 }
@@ -122,35 +143,16 @@ type PagesBlocksFeatureButtons {
   backgroundColor: String
 }
 
-type PagesBlocksFeatureStyleBackgroundImage {
-  src: String
-  alt: String
-}
-
-type PagesBlocksFeatureStyle {
-  minHeight: String
-  flipLayout: Boolean
-  imageStyle: String
-  textAlignment: String
-  contentAlignment: String
-  fillStyles: String
-  backgroundImage: PagesBlocksFeatureStyleBackgroundImage
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
 type PagesBlocksFeature {
+  style: PagesBlocksFeatureStyle
   image: PagesBlocksFeatureImage
+  backgroundImage: PagesBlocksFeatureBackgroundImage
   label: String
   headline: String
   subhead: String
   body: String
   buttons: [PagesBlocksFeatureButtons]
   navigationLabel: String
-  style: PagesBlocksFeatureStyle
 }
 
 type PagesBlocksPhotoCardsButtons {
@@ -404,7 +406,28 @@ input GlobalMutation {
   redirects: [GlobalRedirectsMutation]
 }
 
+input PagesBlocksFeatureStyleMutation {
+  minHeight: String
+  flipLayout: Boolean
+  textAlignment: String
+  contentAlignment: String
+  fillStyles: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
 input PagesBlocksFeatureImageMutation {
+  src: String
+  alt: String
+  imageStyle: String
+  fit: String
+  position: String
+}
+
+input PagesBlocksFeatureBackgroundImageMutation {
   src: String
   alt: String
 }
@@ -417,35 +440,16 @@ input PagesBlocksFeatureButtonsMutation {
   backgroundColor: String
 }
 
-input PagesBlocksFeatureStyleBackgroundImageMutation {
-  src: String
-  alt: String
-}
-
-input PagesBlocksFeatureStyleMutation {
-  minHeight: String
-  flipLayout: Boolean
-  imageStyle: String
-  textAlignment: String
-  contentAlignment: String
-  fillStyles: String
-  backgroundImage: PagesBlocksFeatureStyleBackgroundImageMutation
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
 input PagesBlocksFeatureMutation {
+  style: PagesBlocksFeatureStyleMutation
   image: PagesBlocksFeatureImageMutation
+  backgroundImage: PagesBlocksFeatureBackgroundImageMutation
   label: String
   headline: String
   subhead: String
   body: String
   buttons: [PagesBlocksFeatureButtonsMutation]
   navigationLabel: String
-  style: PagesBlocksFeatureStyleMutation
 }
 
 input PagesBlocksPhotoCardsButtonsMutation {

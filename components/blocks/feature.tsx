@@ -24,41 +24,69 @@ const contentContainerCss = (data) => {
   return `md:max-w-screen-lg-half md:py-12 py-0 ${margin}`
 }
 
-const imageContainerCss = (data) => {
+const imageColumnCss = (data) => {
+  const getAlignV = () => {
+    if (data.image.position?.includes("top")) {
+      return "self-start"
+    }
+    if (data.image.position?.includes("bottom")) {
+      return "self-end"
+    }
+    return "self-center"
+  }
   const styles = {
-    natural: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6 py-12" : "max-w-screen-lg-half mr-auto pr-12 pl-10 py-12",
-    fitHalf: data.style?.flipLayout ? "max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6" : "max-w-screen-lg-half mr-auto pr-12 pl-10",
-    fillHalf: data.style?.flipLayout ? "md:absolute md:inset-0 md:right-4" : "md:absolute md:inset-0 md:left-4",
-    overlap: data.style?.flipLayout ? "md:absolute md:inset-0 md:-right-24" : "md:absolute md:inset-0 md:-left-24",
+    padding: data.image.fit === "none" ? "" : "self-stretch",
+    half: data.image.fit === "none" ? "" : "self-stretch",
+    halfEdge: "self-stretch",
+    overlap: "self-stretch",
+  }
+  return `${getAlignV()} ${styles[data.image.imageStyle]}`
+}
+const imageContainerCss = (data) => {
+  const heightStyle = data.image.fit === "none" ? "" : "md:h-full"
+  const styles = {
+    padding: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6 py-12` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10 py-12`,
+    half: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10`,
+    halfEdge: data.style?.flipLayout ? `md:absolute md:inset-0 md:right-4` : `md:absolute md:inset-0 md:left-4`,
+    overlap: data.style?.flipLayout ? `md:absolute md:inset-0 md:-right-24` : `md:absolute md:inset-0 md:-left-24`,
   };
-  return styles[data.style?.imageStyle]
+  return styles[data.image.imageStyle]
 }
 
 const imageCss = (data) => {
-  const styles = {
-    natural: "",
-    fitHalf: "",
-    fillHalf: "w-full h-full object-cover object-center",
-    overlap: "w-full h-full object-cover object-center",
-  };
-  return styles[data.style?.imageStyle]
-};
+  const getAlignH = () => {
+    if (data.image.position?.includes("right")) {
+      return "ml-auto"
+    }
+    if (data.image.position?.includes("left")) {
+      return "mr-auto"
+    }
+    return "m-auto"
+  }
 
+  const styles = {
+    none: `${getAlignH()}`,
+    scaleDown: "w-full h-full object-scale-down",
+    contain: "w-full h-full object-contain",
+    cover: "w-full h-full object-cover",
+  };
+  return styles[data.image.fit]
+};
 
 export const Feature = ({ data }) => {
   return (
     <Section
       fillStyles={data.style?.fillStyles}
-      image={data.style?.backgroundImage?.src}
+      image={data.backgroundImage?.src}
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}
     >
       <div className={splitCss(data)} style={splitStyle(data)}>
-        <div className="flex-1 relative self-stretch">
-          <div className={imageContainerCss(data)}>
-            {data.image && (
+        <div className={`flex-1 relative ${imageColumnCss(data)}`}>
+          <div className={`border-2 border-white ${imageContainerCss(data)}`}>
+            {data.image.src && (
               <img
-                className={imageCss(data)}
+                className={`border border-gray-light ${imageCss(data)} ${data.image.position}`}
                 alt={data.image.alt}
                 src={data.image.src}
               />
@@ -66,7 +94,7 @@ export const Feature = ({ data }) => {
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className={contentContainerCss(data)}>
+          <div className={`border-2 border-white ${contentContainerCss(data)}`}>
             <Content
               label = {data.label}
               headline = {data.headline}
