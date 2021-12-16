@@ -139,6 +139,7 @@ type PagesBlocksFeatureButtons {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -179,6 +180,7 @@ type PagesBlocksPhotoCardsCardStyle {
   subheadStyles: String
   textStyles: String
   buttonType: String
+  buttonFillStyles: String
   buttonTextColor: String
 }
 
@@ -191,6 +193,7 @@ type PagesBlocksPhotoCardsButtons {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -258,6 +261,7 @@ type PagesBlocksTextCardsButtons {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -298,6 +302,7 @@ type PagesBlocksBannerButtons {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -442,6 +447,7 @@ input PagesBlocksFeatureButtonsMutation {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -482,6 +488,7 @@ input PagesBlocksPhotoCardsCardStyleMutation {
   subheadStyles: String
   textStyles: String
   buttonType: String
+  buttonFillStyles: String
   buttonTextColor: String
 }
 
@@ -494,6 +501,7 @@ input PagesBlocksPhotoCardsButtonsMutation {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -561,6 +569,7 @@ input PagesBlocksTextCardsButtonsMutation {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }
@@ -601,6 +610,7 @@ input PagesBlocksBannerButtonsMutation {
   label: String
   link: String
   type: String
+  buttonFillStyles: String
   textColor: String
   backgroundColor: String
 }

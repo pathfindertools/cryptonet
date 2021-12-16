@@ -667,6 +667,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "buttons",
+                        "buttonFillStyles"
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -724,7 +739,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -1414,6 +1429,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "buttonFillStyles"
+                      ]
+                    },
+                    {
                       "label": "Button Text Color",
                       "name": "buttonTextColor",
                       "type": "string",
@@ -1675,6 +1705,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "buttons",
+                        "buttonFillStyles"
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -1732,7 +1777,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -2807,6 +2852,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "buttons",
+                        "buttonFillStyles"
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -2864,7 +2924,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -3348,6 +3408,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "buttons",
+                        "buttonFillStyles"
+                      ]
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -3405,7 +3480,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {

@@ -47,6 +47,7 @@ fragment PagesParts on Pages {
         label
         link
         type
+        buttonFillStyles
         textColor
         backgroundColor
       }
@@ -78,6 +79,7 @@ fragment PagesParts on Pages {
         subheadStyles
         textStyles
         buttonType
+        buttonFillStyles
         buttonTextColor
       }
       backgroundImage {
@@ -94,6 +96,7 @@ fragment PagesParts on Pages {
         label
         link
         type
+        buttonFillStyles
         textColor
         backgroundColor
       }
@@ -154,6 +157,7 @@ fragment PagesParts on Pages {
         label
         link
         type
+        buttonFillStyles
         textColor
         backgroundColor
       }
@@ -188,6 +192,7 @@ fragment PagesParts on Pages {
         label
         link
         type
+        buttonFillStyles
         textColor
         backgroundColor
       }

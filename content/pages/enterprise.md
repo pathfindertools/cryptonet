@@ -28,7 +28,8 @@ blocks:
       - label: Get Started
         link: /
         type: solid
-        textColor: black
+        buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
+        textColor: white
         backgroundColor: white
     _template: feature
   - style:
@@ -248,6 +249,7 @@ blocks:
       subheadStyles: text-white text-lg mb-0 undefined
       textStyles: text-white text-xl mb-0 undefined
       buttonType: solid
+      buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
       buttonTextColor: white
     label: ''
     headline: ''
@@ -304,6 +306,7 @@ blocks:
       subheadStyles: text-white text-3xl mb-6 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
+      buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
       buttonTextColor: white
     backgroundImage:
       src: >-
@@ -456,6 +459,7 @@ blocks:
       - label: Explore Providers
         link: /
         type: solid
+        buttonFillStyles: bg-white
         textColor: black
         backgroundColor: white
     navigationLabel: Providers
@@ -487,6 +491,7 @@ blocks:
       - label: Learn More
         link: /
         type: solid
+        buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
         textColor: white
         backgroundColor: primary
     navigationLabel: Referral Program

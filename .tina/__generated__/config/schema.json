@@ -460,6 +460,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -510,7 +518,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -1030,6 +1038,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
                       "label": "Button Text Color",
                       "name": "buttonTextColor",
                       "type": "string",
@@ -1213,6 +1229,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -1263,7 +1287,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -2026,6 +2050,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -2076,7 +2108,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {
@@ -2403,6 +2435,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "buttonFillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      }
+                    },
+                    {
                       "label": "Text Color",
                       "name": "textColor",
                       "type": "string",
@@ -2453,7 +2493,7 @@
                       ]
                     },
                     {
-                      "label": "Background Color",
+                      "label": "Border Color",
                       "name": "backgroundColor",
                       "type": "string",
                       "ui": {

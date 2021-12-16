@@ -1926,6 +1926,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "textColor"
           },
           "arguments": [],
@@ -2427,6 +2442,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "buttonTextColor"
           },
           "arguments": [],
@@ -2525,6 +2555,21 @@
           "name": {
             "kind": "Name",
             "value": "type"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "buttonFillStyles"
           },
           "arguments": [],
           "type": {
@@ -3312,6 +3357,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "textColor"
           },
           "arguments": [],
@@ -3734,6 +3794,21 @@
           "name": {
             "kind": "Name",
             "value": "type"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "buttonFillStyles"
           },
           "arguments": [],
           "type": {
@@ -5631,6 +5706,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "textColor"
           },
           "type": {
@@ -6095,6 +6184,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "buttonTextColor"
           },
           "type": {
@@ -6184,6 +6287,20 @@
           "name": {
             "kind": "Name",
             "value": "type"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "buttonFillStyles"
           },
           "type": {
             "kind": "NamedType",
@@ -6910,6 +7027,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "buttonFillStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "textColor"
           },
           "type": {
@@ -7298,6 +7429,20 @@
           "name": {
             "kind": "Name",
             "value": "type"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "buttonFillStyles"
           },
           "type": {
             "kind": "NamedType",

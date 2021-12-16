@@ -41,6 +41,14 @@ export const buttonsSchema: TinaField = {
       ],
     },
     {
+      type: "string",
+      label: "Background",
+      name: "buttonFillStyles",
+      ui: {
+        component: "fillControl"
+      }
+    },
+    {
       label: "Text Color",
       name: "textColor",
       type: "string",
@@ -50,7 +58,7 @@ export const buttonsSchema: TinaField = {
       options: colorOptions,
     },
     {
-      label: "Background Color",
+      label: "Border Color",
       name: "backgroundColor",
       type: "string",
       ui: {
