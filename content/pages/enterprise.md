@@ -19,7 +19,7 @@ blocks:
     backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
-      position: object-right
+      position: object-center
     label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
@@ -208,6 +208,7 @@ blocks:
       - headline: Public cloud
         subhead: $24**
         text: Per TiB / year
+    navigationLabel: Pricing
     _template: textCards
   - style:
       columns: '3'
@@ -220,11 +221,12 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
+      imageStyles: ' undefined undefined mb-9'
       accentColor: primary
-      labelStyles: text-white text-md mb-0
-      headlineStyles: text-white text-5xl mb-0
-      subheadStyles: text-white text-lg mb-0
-      textStyles: text-white text-xl mb-0
+      labelStyles: text-white undefined mb-0 undefined
+      headlineStyles: text-white text-5xl mb-0 undefined
+      subheadStyles: text-white text-lg mb-0 undefined
+      textStyles: text-white text-xl mb-0 undefined
       buttonType: solid
     label: ''
     headline: ''
@@ -262,6 +264,7 @@ blocks:
           lorem lorem lorem lorem lorem lorem lorem.
         link: /
         buttonLabel: Download full report
+    navigationLabel: Examples
     _template: photoCards
   - style:
       columns: '3'
@@ -272,12 +275,12 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       type: transparent
-      imageStyles: h-28 object-contain object-left mb-3
+      imageStyles: h-32 object-contain object-left mb-9
       accentColor: primary
       padding: p-0
       labelStyles: text-white text-lg mb-0 undefined
       headlineStyles: text-white text-5xl mb-0 undefined
-      subheadStyles: text-white text-4xl mb-0 undefined
+      subheadStyles: text-white text-3xl mb-6 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
     backgroundImage:
@@ -314,6 +317,7 @@ blocks:
           better deal success!
         link: /
         buttonLabel: Learn More
+    navigationLabel: Tools
     _template: photoCards
   - style:
       columns: '3'
@@ -415,6 +419,7 @@ blocks:
         type: solid
         textColor: black
         backgroundColor: white
+    navigationLabel: Providers
     _template: feature
   - style:
       minHeight: '700'
@@ -445,6 +450,7 @@ blocks:
         type: solid
         textColor: white
         backgroundColor: primary
+    navigationLabel: Referral Program
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test
@@ -456,14 +462,19 @@ meta:
     http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 nav:
   navItems:
-    - label: Solutions
-  navTextColor: white
+    - label: Contact Us
+      link: '#'
+    - label: Get Started
+      link: '#'
+  navAlignment: left
+  navTextColor: accent4
+  navBackgroundColor: black
 colors:
   primary: '#0090FF'
   accent1: '#39C1CB'
   accent2: '#39C1CB'
   accent3: '#F5A623'
-  accent4: '#BD10E0'
+  accent4: '#86809C'
   white: '#FFFFFF'
   grayLight: '#cfcfdc'
   gray: '#a3a3a3'

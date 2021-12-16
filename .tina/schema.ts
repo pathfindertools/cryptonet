@@ -114,6 +114,18 @@ export default defineSchema({
               }]
             },
             {
+              label: "Alignment",
+              name: "navAlignment",
+              type: "string",
+              ui: {
+                component: "select",
+              },
+              options: [
+                { label: "Left", value: "left" },
+                { label: "Right", value: "right" },
+              ],
+            },
+            {
               label: "Navigation Text Color",
               name: "navTextColor",
               ui: {

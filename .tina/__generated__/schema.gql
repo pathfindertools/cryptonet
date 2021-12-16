@@ -340,6 +340,7 @@ type PagesNavNavItems {
 
 type PagesNav {
   navItems: [PagesNavNavItems]
+  navAlignment: String
   navTextColor: String
   navBackgroundColor: String
 }
@@ -646,6 +647,7 @@ input PagesNavNavItemsMutation {
 
 input PagesNavMutation {
   navItems: [PagesNavNavItemsMutation]
+  navAlignment: String
   navTextColor: String
   navBackgroundColor: String
 }

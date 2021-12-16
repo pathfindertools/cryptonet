@@ -207,6 +207,7 @@ export const getStaticProps = async ({ params }) => {
                 link
                 label
               }
+              navAlignment
               navTextColor
               navBackgroundColor
             }

@@ -3770,6 +3770,29 @@
               ]
             },
             {
+              "label": "Alignment",
+              "name": "navAlignment",
+              "type": "string",
+              "ui": {
+                "component": "select"
+              },
+              "options": [
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                }
+              ],
+              "namespace": [
+                "pages",
+                "nav",
+                "navAlignment"
+              ]
+            },
+            {
               "label": "Navigation Text Color",
               "name": "navTextColor",
               "ui": {

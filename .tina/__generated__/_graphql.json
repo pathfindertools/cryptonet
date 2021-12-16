@@ -4222,6 +4222,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "navAlignment"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "navTextColor"
           },
           "arguments": [],
@@ -7740,6 +7755,20 @@
                 "kind": "Name",
                 "value": "PagesNavNavItemsMutation"
               }
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "navAlignment"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
             }
           }
         },
