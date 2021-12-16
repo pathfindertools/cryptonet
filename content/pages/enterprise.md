@@ -28,8 +28,8 @@ blocks:
       - label: Get Started
         link: /
         type: solid
-        buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
-        textColor: white
+        buttonFillStyles: bg-white
+        textColor: black
         backgroundColor: white
     _template: feature
   - style:
