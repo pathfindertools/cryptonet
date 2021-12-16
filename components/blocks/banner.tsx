@@ -32,6 +32,7 @@ export const Banner = ({ data }) => {
             textStyles = {data.style?.textStyles}
             alignment = {data.style?.textAlignment}
             order = {data.style?.contentOrder}
+            width = {data.style?.contentWidth}
           />
         </div>
       </div>
