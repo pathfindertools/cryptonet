@@ -331,7 +331,7 @@ blocks:
         text: >-
           **Estuary** is open-source software allowing simple sending of public
           data to the Filecoin network to be retrieved from anywhere
-        link: /
+        link: 'https://estuary.tech/'
         buttonLabel: Learn More
       - image:
           src: >-
