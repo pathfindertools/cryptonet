@@ -53,8 +53,8 @@ blocks:
       position: object-center
     label: ''
     headline: >-
-      Filecoin is an open, decentralized-storage network offering commoditized
-      pricing for verifiable, durable, and available storage
+      Join a vast ecosystem and an established community of developers, storage
+      providers, and clients.
     subhead: ''
     body: ''
     _template: feature
