@@ -265,8 +265,8 @@ blocks:
     body: ''
     items:
       - headline: >-
-          Filecoin is recognized as the leader in the decentralized storage
-          market by industry experts
+          Industry experts recognize Filecoin as the leader in the decentralized
+          storage
         subhead: ''
         text: ''
       - image:
