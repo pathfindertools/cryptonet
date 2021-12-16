@@ -85,6 +85,7 @@ type GlobalRedirects {
 }
 
 type Global {
+  siteUrl: String
   gtmId: String
   redirects: [GlobalRedirects]
 }
@@ -413,6 +414,7 @@ input GlobalRedirectsMutation {
 }
 
 input GlobalMutation {
+  siteUrl: String
   gtmId: String
   redirects: [GlobalRedirectsMutation]
 }

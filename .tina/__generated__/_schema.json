@@ -7,6 +7,15 @@
       "fields": [
         {
           "type": "string",
+          "label": "Site Url",
+          "name": "siteUrl",
+          "namespace": [
+            "global",
+            "siteUrl"
+          ]
+        },
+        {
+          "type": "string",
           "label": "Google Tag Manager ID",
           "name": "gtmId",
           "namespace": [

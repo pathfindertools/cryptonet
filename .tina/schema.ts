@@ -14,6 +14,11 @@ export default defineSchema({
       fields: [
         {
           type: "string",
+          label: "Site Url",
+          name: "siteUrl",
+        },
+        {
+          type: "string",
           label: "Google Tag Manager ID",
           name: "gtmId",
         },

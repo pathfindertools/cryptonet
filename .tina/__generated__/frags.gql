@@ -1,4 +1,5 @@
 fragment GlobalParts on Global {
+  siteUrl
   gtmId
   redirects {
     __typename

@@ -33,7 +33,7 @@ export const Layout = ({
         <meta name="author" content="Protocol Labs"></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:site_name" content="hackathons.filecoin.io" />
+        <meta property="og:site_name" content={data.siteUrl} />
         <meta property="og:title" content={themeData.meta.siteTitle} />
         <meta property="og:description" content={themeData.meta.siteDescription} />
         <meta property="og:image" content={themeData.meta.siteImageSrc} />        
@@ -81,6 +81,7 @@ export const Layout = ({
 export const layoutQueryFragment = `
   getGlobalDocument(relativePath: "index.json") {
     data {
+      siteUrl
       gtmId
       redirects {
         from
