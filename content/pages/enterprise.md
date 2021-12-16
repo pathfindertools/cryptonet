@@ -105,7 +105,7 @@ blocks:
       subheadStyles: text-black text-3xl mb-0 undefined
       textStyles: text-black text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
-      contentWidth: w-6/12
+      contentWidth: w-8/12
     cardStyle:
       type: solid
       imageStyles: h-16 object-contain object-left mb-9
