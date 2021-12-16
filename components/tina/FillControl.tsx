@@ -126,7 +126,7 @@ export default function FillControl({ field, input, meta }) {
         }}>{field.label}</label>
       </div>
       <div className="flex mb-2 items-center">
-        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-28 mr-1" />
+        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-40 mr-1" />
         {fillType === "solid" &&
           <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} className="mr-1" />
         }

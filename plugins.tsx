@@ -2,6 +2,7 @@
 import FillControl from './components/tina/FillControl'
 import TypeControl from './components/tina/TypeControl'
 import ImageControl from './components/tina/ImageControl'
+import BorderControl from './components/tina/BorderControl'
 import { TextField } from 'tinacms'
 
 export const emailFieldPlugin = {
@@ -30,4 +31,9 @@ export const imageControlFieldPlugin = {
   Component: ImageControl, // Extend the built-in text field
   __type: 'field',
   name: 'imageControl',
+}
+export const borderControlFieldPlugin = {
+  Component: BorderControl, // Extend the built-in text field
+  __type: 'field',
+  name: 'borderControl',
 }
