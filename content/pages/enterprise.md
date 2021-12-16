@@ -287,7 +287,8 @@ blocks:
           **The GigaOm Sonar for Decentralized Storage Report**
 
           An Emerging Technology Insight write up assessment.
-        link: /
+        link: >-
+          https://gigaom.com/reprint/gigaom-sonar-for-decentralized-storage-protocol-io/
         buttonLabel: Download full report
     navigationLabel: ''
     _template: photoCards
