@@ -492,8 +492,9 @@ blocks:
     headline: Referral Program
     subhead: ''
     body: >-
-      Project Gravity rewards community members for helping bring new
-      participants to the Filecoin network.
+      Protocol Labs is supporting a temporary referral fee program for community
+      members who bring large datasets onto the Filecoin network. Invite a
+      customer today.
     buttons:
       - label: Learn More
         link: >-
