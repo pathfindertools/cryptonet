@@ -462,7 +462,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       }
@@ -1231,7 +1231,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       }
@@ -2052,7 +2052,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       }
@@ -2437,7 +2437,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       }

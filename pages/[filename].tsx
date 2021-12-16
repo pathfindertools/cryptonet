@@ -41,7 +41,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
-                  fillStyles
+                  buttonFillStyles
                 }
                 items {
                   image {
@@ -95,7 +95,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
-                  fillStyles
+                  buttonFillStyles
                 }
                 items {
                   headline
@@ -152,7 +152,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
-                  fillStyles
+                  buttonFillStyles
                 }
                 style {
                   minHeight
@@ -187,7 +187,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
-                  fillStyles
+                  buttonFillStyles
                 }
                 style {
                   minHeight

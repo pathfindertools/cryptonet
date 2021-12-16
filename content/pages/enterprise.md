@@ -28,8 +28,8 @@ blocks:
       - label: Get Started
         link: /
         type: solid
-        fillStyles: bg-white
-        textColor: black
+        buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
+        textColor: white
         backgroundColor: white
     _template: feature
   - style:
@@ -249,8 +249,8 @@ blocks:
       subheadStyles: text-white text-lg mb-0 undefined
       textStyles: text-white text-xl mb-0 undefined
       buttonType: solid
-      buttonTextColor: white
       buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
+      buttonTextColor: white
     label: ''
     headline: ''
     subhead: ''
@@ -306,8 +306,8 @@ blocks:
       subheadStyles: text-white text-3xl mb-6 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
-      buttonTextColor: white
       buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
+      buttonTextColor: white
     backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
@@ -459,7 +459,7 @@ blocks:
       - label: Explore Providers
         link: /
         type: solid
-        fillStyles: bg-white
+        buttonFillStyles: bg-white
         textColor: black
         backgroundColor: white
     navigationLabel: Providers
@@ -491,7 +491,7 @@ blocks:
       - label: Learn More
         link: /
         type: solid
-        fillStyles: from-primary to-accent1 bg-gradient-to-tl
+        buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
         textColor: white
         backgroundColor: primary
     navigationLabel: Referral Program

@@ -669,7 +669,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       },
@@ -678,7 +678,7 @@
                         "blocks",
                         "feature",
                         "buttons",
-                        "fillStyles"
+                        "buttonFillStyles"
                       ]
                     },
                     {
@@ -1707,7 +1707,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       },
@@ -1716,7 +1716,7 @@
                         "blocks",
                         "photoCards",
                         "buttons",
-                        "fillStyles"
+                        "buttonFillStyles"
                       ]
                     },
                     {
@@ -2854,7 +2854,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       },
@@ -2863,7 +2863,7 @@
                         "blocks",
                         "textCards",
                         "buttons",
-                        "fillStyles"
+                        "buttonFillStyles"
                       ]
                     },
                     {
@@ -3410,7 +3410,7 @@
                     {
                       "type": "string",
                       "label": "Background",
-                      "name": "fillStyles",
+                      "name": "buttonFillStyles",
                       "ui": {
                         "component": "fillControl"
                       },
@@ -3419,7 +3419,7 @@
                         "blocks",
                         "banner",
                         "buttons",
-                        "fillStyles"
+                        "buttonFillStyles"
                       ]
                     },
                     {

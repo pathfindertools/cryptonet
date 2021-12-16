@@ -43,7 +43,7 @@ export const buttonsSchema: TinaField = {
     {
       type: "string",
       label: "Background",
-      name: "fillStyles",
+      name: "buttonFillStyles",
       ui: {
         component: "fillControl"
       }
