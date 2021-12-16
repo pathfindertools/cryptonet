@@ -228,6 +228,7 @@ blocks:
       subheadStyles: text-white text-lg mb-0 undefined
       textStyles: text-white text-xl mb-0 undefined
       buttonType: solid
+      buttonTextColor: white
     label: ''
     headline: ''
     subhead: ''
@@ -283,6 +284,7 @@ blocks:
       subheadStyles: text-white text-3xl mb-6 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
+      buttonTextColor: white
     backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
@@ -297,9 +299,9 @@ blocks:
         text: ''
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1638470861/ARG-symbol_rjrpin.png
+            http://res.cloudinary.com/protocolai/image/upload/v1639633000/estuary_fx3ihf.svg
         headline: ''
-        subhead: ARG Solutions
+        subhead: Estuary
         text: >-
           **Estuary** is open-source software allowing simple sending of public
           data to the Filecoin network to be retrieved from anywhere
@@ -330,9 +332,10 @@ blocks:
       contentWidth: w-8/12
     cardStyle:
       type: solid
+      imageStyles: h-24 object-contain object-left mb-4
       accentColor: primary
       labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-black text-2xl mb-0 undefined
+      headlineStyles: text-black text-2xl mb-2 undefined
       subheadStyles: text-black text-lg mb-0 undefined
       textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
@@ -341,15 +344,24 @@ blocks:
     subhead: Traditional
     body: ' '
     items:
-      - headline: Fragile
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633567/icon-fragile_tgygjq.svg
+        headline: Fragile
         subhead: ''
         text: Vendor lock-in concentrates risk with one provider
-      - headline: Centralized
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633594/icon-centralized_snylwy.svg
+        headline: Centralized
         subhead: ''
         text: >-
           A handful of companies have become the dominant platforms, offering a
           constrained set of locations and regions
-      - headline: Costly
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633620/icon-costly_ua5mwb.svg
+        headline: Costly
         subhead: ''
         text: >-
           Organizations are locked into specific architectures with high egress
@@ -360,15 +372,15 @@ blocks:
       textAlignment: left
       labelStyles: text-black text-sm mb-0 undefined
       headlineStyles: text-black text-5xl mb-0 undefined
-      subheadStyles: text-primary text-3xl mb-0 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
       textStyles: text-black undefined mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
-      imageStyles: h-11 object-fill object-center mb-0.5
+      imageStyles: h-24 object-contain object-left mb-4
       accentColor: primary
       labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-primary text-2xl mb-0 undefined
+      headlineStyles: text-primary text-2xl mb-2 undefined
       subheadStyles: text-black text-lg mb-0 undefined
       textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
@@ -377,13 +389,22 @@ blocks:
     subhead: Filecoin
     body: ''
     items:
-      - headline: Decentralized
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633380/icon-decentralized_vmhm82.svg
+        headline: Decentralized
         subhead: ''
         text: 'No single point of failure, no proprietary protocol, no vendor lock-in'
-      - headline: Robust
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633468/icon-robust_ukbfiz.svg
+        headline: Robust
         subhead: ''
         text: Data redundancy and availability through multi-vendor replication
-      - headline: Efficient
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1639633496/icon-efficient_stp0b4.svg
+        headline: Efficient
         subhead: ''
         text: Incentive structures enabling cheap prices
     _template: photoCards
