@@ -139,7 +139,8 @@ blocks:
           anyone can view the archive and check its provenance using immutable
           information, including a timestamp, image storage data, and verified
           edit history.”
-        link: asdfsd.aaidl
+        link: >-
+          https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/
         buttonLabel: Learn more
       - image:
           src: >-
@@ -159,7 +160,8 @@ blocks:
           It has many participants, not just one player. And its protocols are
           open-source ... Decentralized Web is ... starting to come to fruition
           and Filecoin is a leader in that area.”
-        link: fdsfgdsr.nkoi
+        link: >-
+          https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/
         buttonLabel: Learn more
       - image:
           src: >-
@@ -175,7 +177,7 @@ blocks:
           Slingshot created a content delivery network for scientific data —
           with searchable indices, robust documentation and geographic
           distribution of data.”
-        link: sikljko.vol
+        link: 'https://slingshot.filecoin.io/'
         buttonLabel: Learn more
     navigationLabel: Examples
     _template: photoCards
