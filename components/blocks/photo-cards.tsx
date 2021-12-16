@@ -40,6 +40,7 @@ const PhotoCard = ({ data, cardstyle }) => {
             label: data.buttonLabel,
             textColor: cardstyle?.buttonType === 'link' ? cardstyle?.accentColor : cardstyle?.buttonTextColor,
             backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
+            buttonFillStyles: cardstyle?.buttonFillStyles,
             type: cardstyle?.buttonType
           }]} className="absolute bottom-4" />
         )}

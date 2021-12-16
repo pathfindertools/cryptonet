@@ -166,6 +166,14 @@ export const photoCardsBlockSchema: TinaTemplate = {
           ],
         },
         {
+          type: "string",
+          label: "Background",
+          name: "buttonFillStyles",
+          ui: {
+            component: "fillControl"
+          }
+        },
+        {
           label: "Button Text Color",
           name: "buttonTextColor",
           type: "string",
