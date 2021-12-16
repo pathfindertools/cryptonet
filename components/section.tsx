@@ -6,6 +6,7 @@ export const Section = ({
   navigationLabel = "",
   className = "",
   image = "",
+  imagePosition = "",
   minHeight= "",
   fillStyles="",
 }) => {
@@ -32,7 +33,7 @@ export const Section = ({
       style={sectionStyle}
     >
       <div className={`background absolute inset-0 -z-1 ${fillStyles}`}>
-        {image && <img className="w-full h-full object-cover" src={image} />}
+        {image && <img className={`w-full h-full object-cover ${imagePosition}`} src={image} />}
       </div>
       {children}
     </section>

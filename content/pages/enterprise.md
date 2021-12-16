@@ -20,6 +20,7 @@ blocks:
     backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
+      position: object-right
     label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
@@ -261,7 +262,11 @@ blocks:
       textStyles: text-white text-xl mb-0
       buttonType: solid
     _template: photoCards
-  - label: ''
+  - backgroundImage:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
+      position: object-bottom
+    label: ''
     headline: ''
     subhead: ''
     body: ''
@@ -294,9 +299,6 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      backgroundImage:
-        src: >-
-          http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-black text-lg mb-0

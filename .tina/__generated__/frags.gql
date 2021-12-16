@@ -36,7 +36,7 @@ fragment PagesParts on Pages {
       backgroundImage {
         __typename
         src
-        alt
+        position
       }
       label
       headline
@@ -53,6 +53,11 @@ fragment PagesParts on Pages {
       navigationLabel
     }
     ... on PagesBlocksPhotoCards {
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -85,11 +90,6 @@ fragment PagesParts on Pages {
         columns
         textAlignment
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles
@@ -111,6 +111,11 @@ fragment PagesParts on Pages {
       }
     }
     ... on PagesBlocksTextCards {
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -139,11 +144,6 @@ fragment PagesParts on Pages {
         columns
         textAlignment
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles
@@ -169,6 +169,11 @@ fragment PagesParts on Pages {
         src
         alt
       }
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -188,11 +193,6 @@ fragment PagesParts on Pages {
         textAlignment
         width
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles

@@ -46,6 +46,40 @@ export const bannerBlockSchema: TinaTemplate = {
       ],
     },
     {
+      label: "Background Image",
+      name: "backgroundImage",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+          ui: {
+            clearable: true,
+          }
+        },
+        {
+          label: "Position",
+          name: "position",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Bottom", value: "object-bottom" },
+            { label: "Center", value: "object-center" },
+            { label: "Left", value: "object-left" },
+            { label: "Left Bottom", value: "object-left-bottom" },
+            { label: "Left Top", value: "object-left-top" },
+            { label: "Right", value: "object-right" },
+            { label: "Right Bottom", value: "object-right-bottom" },
+            { label: "Right Top", value: "object-right-top" },
+            { label: "Top", value: "object-top" },
+          ],
+        },
+      ],
+    },
+    {
       label: "Label",
       name: "label",
       type: "string",
@@ -111,26 +145,6 @@ export const bannerBlockSchema: TinaTemplate = {
           ui: {
             component: "fillControl"
           }
-        },
-        {
-          label: "Background Image",
-          name: "backgroundImage",
-          type: "object",
-          fields: [
-            {
-              label: "Image Source",
-              name: "src",
-              type: "image",
-              ui: {
-                clearable: true,
-              }
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string",
-            },
-          ],
         },
         {
           type: "string",

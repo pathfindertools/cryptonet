@@ -196,9 +196,23 @@ export const featureBlockSchema: TinaTemplate = {
           }
         },
         {
-          name: "alt",
-          label: "Alt Text",
+          label: "Position",
+          name: "position",
+          ui: {
+            component: "select",
+          },
           type: "string",
+          options: [
+            { label: "Bottom", value: "object-bottom" },
+            { label: "Center", value: "object-center" },
+            { label: "Left", value: "object-left" },
+            { label: "Left Bottom", value: "object-left-bottom" },
+            { label: "Left Top", value: "object-left-top" },
+            { label: "Right", value: "object-right" },
+            { label: "Right Bottom", value: "object-right-bottom" },
+            { label: "Right Top", value: "object-right-top" },
+            { label: "Top", value: "object-top" },
+          ],
         },
       ],
     },

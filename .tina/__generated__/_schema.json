@@ -491,15 +491,56 @@
                       ]
                     },
                     {
-                      "name": "alt",
-                      "label": "Alt Text",
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
                       "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "backgroundImage",
-                        "alt"
+                        "position"
                       ]
                     }
                   ],
@@ -815,6 +856,87 @@
                 }
               },
               "fields": [
+                {
+                  "label": "Background Image",
+                  "name": "backgroundImage",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "label": "Image Source",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "backgroundImage",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "backgroundImage",
+                        "position"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "photoCards",
+                    "backgroundImage"
+                  ]
+                },
                 {
                   "label": "Label",
                   "name": "label",
@@ -1290,49 +1412,6 @@
                       ]
                     },
                     {
-                      "label": "Background Image",
-                      "name": "backgroundImage",
-                      "type": "object",
-                      "fields": [
-                        {
-                          "label": "Image Source",
-                          "name": "src",
-                          "type": "image",
-                          "ui": {
-                            "clearable": true
-                          },
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "photoCards",
-                            "style",
-                            "backgroundImage",
-                            "src"
-                          ]
-                        },
-                        {
-                          "name": "alt",
-                          "label": "Alt Text",
-                          "type": "string",
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "photoCards",
-                            "style",
-                            "backgroundImage",
-                            "alt"
-                          ]
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "backgroundImage"
-                      ]
-                    },
-                    {
                       "type": "string",
                       "label": "Label Style",
                       "name": "labelStyles",
@@ -1775,6 +1854,87 @@
                 }
               },
               "fields": [
+                {
+                  "label": "Background Image",
+                  "name": "backgroundImage",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "label": "Image Source",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "backgroundImage",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "backgroundImage",
+                        "position"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "textCards",
+                    "backgroundImage"
+                  ]
+                },
                 {
                   "label": "Label",
                   "name": "label",
@@ -2264,49 +2424,6 @@
                       ]
                     },
                     {
-                      "label": "Background Image",
-                      "name": "backgroundImage",
-                      "type": "object",
-                      "fields": [
-                        {
-                          "label": "Image Source",
-                          "name": "src",
-                          "type": "image",
-                          "ui": {
-                            "clearable": true
-                          },
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "textCards",
-                            "style",
-                            "backgroundImage",
-                            "src"
-                          ]
-                        },
-                        {
-                          "name": "alt",
-                          "label": "Alt Text",
-                          "type": "string",
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "textCards",
-                            "style",
-                            "backgroundImage",
-                            "alt"
-                          ]
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "backgroundImage"
-                      ]
-                    },
-                    {
                       "type": "string",
                       "label": "Label Style",
                       "name": "labelStyles",
@@ -2744,6 +2861,87 @@
                   ]
                 },
                 {
+                  "label": "Background Image",
+                  "name": "backgroundImage",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "label": "Image Source",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "backgroundImage",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "backgroundImage",
+                        "position"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "banner",
+                    "backgroundImage"
+                  ]
+                },
+                {
                   "label": "Label",
                   "name": "label",
                   "type": "string",
@@ -3079,49 +3277,6 @@
                         "banner",
                         "style",
                         "fillStyles"
-                      ]
-                    },
-                    {
-                      "label": "Background Image",
-                      "name": "backgroundImage",
-                      "type": "object",
-                      "fields": [
-                        {
-                          "label": "Image Source",
-                          "name": "src",
-                          "type": "image",
-                          "ui": {
-                            "clearable": true
-                          },
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "banner",
-                            "style",
-                            "backgroundImage",
-                            "src"
-                          ]
-                        },
-                        {
-                          "name": "alt",
-                          "label": "Alt Text",
-                          "type": "string",
-                          "namespace": [
-                            "pages",
-                            "blocks",
-                            "banner",
-                            "style",
-                            "backgroundImage",
-                            "alt"
-                          ]
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "backgroundImage"
                       ]
                     },
                     {

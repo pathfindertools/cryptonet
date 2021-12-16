@@ -78,6 +78,7 @@ export const Feature = ({ data }) => {
     <Section
       fillStyles={data.style?.fillStyles}
       image={data.backgroundImage?.src}
+      imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}
     >

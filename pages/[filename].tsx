@@ -27,6 +27,10 @@ export const getStaticProps = async ({ params }) => {
             blocks {
               __typename
               ... on PagesBlocksPhotoCards {
+                backgroundImage {
+                  src
+                  position
+                }
                 label
                 headline
                 subhead
@@ -57,10 +61,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                 }
                 cardStyle {
                   type
@@ -77,6 +77,10 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksTextCards {
+                backgroundImage {
+                  src
+                  position
+                }
                 label
                 headline
                 subhead
@@ -104,10 +108,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                 }
                 cardStyle {
                   type
@@ -132,7 +132,7 @@ export const getStaticProps = async ({ params }) => {
                 }
                 backgroundImage {
                   src
-                  alt
+                  position
                 }
                 label
                 headline
@@ -164,6 +164,10 @@ export const getStaticProps = async ({ params }) => {
                   src
                   alt
                 }
+                backgroundImage {
+                  src
+                  position
+                }
                 label
                 headline
                 subhead
@@ -183,10 +187,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                   textAlignment
                   contentOrder
                 }
