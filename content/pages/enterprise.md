@@ -26,7 +26,7 @@ blocks:
     body: A powerful and dynamic distributed cloud storage network for your data
     buttons:
       - label: Get Started
-        link: /
+        link: 'https://protocollabs.typeform.com/leadgen'
         type: solid
         buttonFillStyles: bg-white
         textColor: black
