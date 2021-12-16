@@ -563,8 +563,6 @@ meta:
     http://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 nav:
   navItems:
-    - label: Contact Us
-      link: '#'
     - label: Get Started
       link: '#'
   navAlignment: left
