@@ -61,6 +61,7 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
+                  contentWidth
                 }
                 cardStyle {
                   type
@@ -109,6 +110,7 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
+                  contentWidth
                 }
                 cardStyle {
                   type

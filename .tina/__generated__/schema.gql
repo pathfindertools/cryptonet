@@ -165,6 +165,7 @@ type PagesBlocksPhotoCardsStyle {
   subheadStyles: String
   textStyles: String
   contentOrder: String
+  contentWidth: String
 }
 
 type PagesBlocksPhotoCardsCardStyle {
@@ -231,6 +232,7 @@ type PagesBlocksTextCardsStyle {
   subheadStyles: String
   textStyles: String
   contentOrder: String
+  contentWidth: String
 }
 
 type PagesBlocksTextCardsCardStyle {
@@ -464,6 +466,7 @@ input PagesBlocksPhotoCardsStyleMutation {
   subheadStyles: String
   textStyles: String
   contentOrder: String
+  contentWidth: String
 }
 
 input PagesBlocksPhotoCardsCardStyleMutation {
@@ -530,6 +533,7 @@ input PagesBlocksTextCardsStyleMutation {
   subheadStyles: String
   textStyles: String
   contentOrder: String
+  contentWidth: String
 }
 
 input PagesBlocksTextCardsCardStyleMutation {
