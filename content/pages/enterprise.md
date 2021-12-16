@@ -289,7 +289,7 @@ blocks:
           lorem lorem lorem lorem lorem lorem lorem.
         link: /
         buttonLabel: Download full report
-    navigationLabel: Examples
+    navigationLabel: ''
     _template: photoCards
   - style:
       columns: '3'
