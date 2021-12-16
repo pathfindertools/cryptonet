@@ -239,6 +239,7 @@ type PagesBlocksTextCardsCardStyle {
   type: String
   fillStyles: String
   accentColor: String
+  borderStyles: String
   padding: String
   labelStyles: String
   headlineStyles: String
@@ -541,6 +542,7 @@ input PagesBlocksTextCardsCardStyleMutation {
   type: String
   fillStyles: String
   accentColor: String
+  borderStyles: String
   padding: String
   labelStyles: String
   headlineStyles: String

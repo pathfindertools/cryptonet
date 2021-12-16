@@ -82,6 +82,14 @@ export const textCardsBlockSchema: TinaTemplate = {
           options: colorOptions,
         },
         {
+          type: "string",
+          label: "Border",
+          name: "borderStyles",
+          ui: {
+            component: "borderControl"
+          }
+        },
+        {
           label: "Padding",
           name: "padding",
           type: "string",
