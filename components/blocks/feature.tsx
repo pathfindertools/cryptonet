@@ -26,39 +26,39 @@ const contentContainerCss = (data) => {
 
 const imageColumnCss = (data) => {
   const getAlignV = () => {
-    if (data.image.position?.includes("top")) {
+    if (data.image?.position?.includes("top")) {
       return "self-start"
     }
-    if (data.image.position?.includes("bottom")) {
+    if (data.image?.position?.includes("bottom")) {
       return "self-end"
     }
     return "self-center"
   }
   const styles = {
-    padding: data.image.fit === "none" ? "" : "self-stretch",
-    half: data.image.fit === "none" ? "" : "self-stretch",
+    padding: data.image?.fit === "none" ? "" : "self-stretch",
+    half: data.image?.fit === "none" ? "" : "self-stretch",
     halfEdge: "self-stretch",
     overlap: "self-stretch",
   }
-  return `${getAlignV()} ${styles[data.image.imageStyle]}`
+  return `${getAlignV()} ${styles[data.image?.imageStyle]}`
 }
 const imageContainerCss = (data) => {
-  const heightStyle = data.image.fit === "none" ? "" : "md:h-full"
+  const heightStyle = data.image?.fit === "none" ? "" : "md:h-full"
   const styles = {
     padding: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6 py-12` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10 py-12`,
     half: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10`,
     halfEdge: data.style?.flipLayout ? `md:absolute md:inset-0 md:right-4` : `md:absolute md:inset-0 md:left-4`,
     overlap: data.style?.flipLayout ? `md:absolute md:inset-0 md:-right-24` : `md:absolute md:inset-0 md:-left-24`,
   };
-  return styles[data.image.imageStyle]
+  return styles[data.image?.imageStyle]
 }
 
 const imageCss = (data) => {
   const getAlignH = () => {
-    if (data.image.position?.includes("right")) {
+    if (data.image?.position?.includes("right")) {
       return "ml-auto"
     }
-    if (data.image.position?.includes("left")) {
+    if (data.image?.position?.includes("left")) {
       return "mr-auto"
     }
     return "m-auto"
@@ -70,7 +70,7 @@ const imageCss = (data) => {
     contain: "w-full h-full object-contain",
     cover: "w-full h-full object-cover",
   };
-  return styles[data.image.fit]
+  return styles[data.image?.fit]
 };
 
 export const Feature = ({ data }) => {
@@ -84,18 +84,18 @@ export const Feature = ({ data }) => {
     >
       <div className={splitCss(data)} style={splitStyle(data)}>
         <div className={`flex-1 relative ${imageColumnCss(data)}`}>
-          <div className={`border-2 border-white ${imageContainerCss(data)}`}>
-            {data.image.src && (
+          <div className={`${imageContainerCss(data)}`}>
+            {data.image?.src && (
               <img
-                className={`border border-gray-light ${imageCss(data)} ${data.image.position}`}
-                alt={data.image.alt}
-                src={data.image.src}
+                className={`${imageCss(data)} ${data.image?.position}`}
+                alt={data.image?.alt}
+                src={data.image?.src}
               />
             )}
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className={`border-2 border-white ${contentContainerCss(data)}`}>
+          <div className={`${contentContainerCss(data)}`}>
             <Content
               label = {data.label}
               headline = {data.headline}
