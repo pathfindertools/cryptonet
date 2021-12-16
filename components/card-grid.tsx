@@ -33,6 +33,7 @@ export const CardGrid = ({ data, children }) => {
           textStyles = {data.style?.textStyles}
           alignment = {data.style?.textAlignment}
           order = {data.style?.contentOrder}
+          width = {data.style?.contentWidth}
         />
         <div className={`md:grid gap-10 md:pt-10 pt-5 ${gridCols[data.style?.columns]}`}>
           {children}

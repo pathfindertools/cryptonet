@@ -82,9 +82,10 @@ export const Content = ({
   textStyles,
   alignment = "left",
   order = "labelHeadingsContent",
+  width,
 }) => {
   return (
-    <div className={`flex flex-col ${contentAlignment(alignment)}`}>
+    <div className={`flex flex-col ${width} ${contentAlignment(alignment)}`}>
       {label && <h4 className={`${labelOrder(order)} ${labelStyles}`}>{label}</h4>}
       {headline && <h2 className={`${headingOrder(order)} ${headlineStyles}`}>{headline}</h2>}
       {subhead && <h3 className={`${subheadOrder(order)} ${subheadStyles}`}>{subhead}</h3>}

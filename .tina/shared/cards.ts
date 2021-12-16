@@ -87,5 +87,21 @@ export const cardsSchema: TinaField = {
       },
       options: contentOrderOptions,
     },
+    {
+      label: "Content Width",
+      name: "contentWidth",
+      type: "string",
+      ui: {
+        component: "select",
+      },
+      options: [
+        { label: "100%", value: "w-full" },
+        { label: "75%", value: "w-9/12" },
+        { label: "66%", value: "w-8/12" },
+        { label: "50%", value: "w-6/12" },
+        { label: "33%", value: "w-4/12" },
+        { label: "25%", value: "w-3/12" },
+      ],
+    },
   ],
 };

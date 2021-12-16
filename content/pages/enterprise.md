@@ -61,10 +61,11 @@ blocks:
       textAlignment: left
       fillStyles: bg-black
       labelStyles: text-white text-lg mb-0 undefined
-      headlineStyles: text-white text-6xl mb-0 undefined
+      headlineStyles: text-white text-5xl mb-0 undefined
       subheadStyles: text-white undefined mb-0 undefined
       textStyles: text-white text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
+      contentWidth: w-8/12
     cardStyle:
       type: solid
       fillStyles: from-primary to-accent1 bg-gradient-to-tl
@@ -77,8 +78,8 @@ blocks:
       buttonType: solid
     label: ''
     headline: >-
-      Filecoin has a vast ecosystem of developers, storage providers, and
-      clients.
+      Filecoin has a vast ecosystem of developers, storage providers, companies,
+      and clients
     subhead: ''
     body: ''
     items:
@@ -103,6 +104,7 @@ blocks:
       subheadStyles: text-black text-3xl mb-0 undefined
       textStyles: text-black text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
+      contentWidth: w-6/12
     cardStyle:
       type: solid
       imageStyles: h-16 object-contain object-left mb-9
@@ -321,6 +323,7 @@ blocks:
       subheadStyles: text-black text-3xl mb-0 undefined
       textStyles: text-black undefined mb-0 undefined
       contentOrder: labelHeadingsContent
+      contentWidth: w-8/12
     cardStyle:
       type: solid
       accentColor: primary

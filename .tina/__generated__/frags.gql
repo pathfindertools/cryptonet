@@ -64,6 +64,7 @@ fragment PagesParts on Pages {
         subheadStyles
         textStyles
         contentOrder
+        contentWidth
       }
       cardStyle {
         __typename
@@ -123,6 +124,7 @@ fragment PagesParts on Pages {
         subheadStyles
         textStyles
         contentOrder
+        contentWidth
       }
       cardStyle {
         __typename
