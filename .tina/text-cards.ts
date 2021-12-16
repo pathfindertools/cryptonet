@@ -43,116 +43,6 @@ export const textCardsBlockSchema: TinaTemplate = {
     },
   },
   fields: [
-    {
-      label: "Background Image",
-      name: "backgroundImage",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-          ui: {
-            clearable: true,
-          }
-        },     
-        {
-          label: "Position",
-          name: "position",
-          ui: {
-            component: "select",
-          },
-          type: "string",
-          options: [
-            { label: "Bottom", value: "object-bottom" },
-            { label: "Center", value: "object-center" },
-            { label: "Left", value: "object-left" },
-            { label: "Left Bottom", value: "object-left-bottom" },
-            { label: "Left Top", value: "object-left-top" },
-            { label: "Right", value: "object-right" },
-            { label: "Right Bottom", value: "object-right-bottom" },
-            { label: "Right Top", value: "object-right-top" },
-            { label: "Top", value: "object-top" },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Label",
-      name: "label",
-      type: "string",
-    },
-    {
-      label: "Headline",
-      name: "headline",
-      type: "string",
-    },
-    {
-      label: "Subhead",
-      name: "subhead",
-      type: "string",
-    },
-    {
-      label: "Body",
-      name: "body",
-      type: "string",
-      ui: {
-        component: "markdown",
-      },
-    },
-    buttonsSchema,
-    {
-      type: "object",
-      label: "Cards",
-      name: "items",
-      list: true,
-      ui: {
-        defaultItem: {
-          ...defaultCard,
-        },
-      },
-      fields: [
-        {
-          type: "string",
-          label: "Title",
-          name: "headline",
-        },
-        {
-          label: "Subhead",
-          name: "subhead",
-          type: "string",
-        },
-        {
-          type: "string",
-          label: "Text",
-          name: "text",
-          ui: {
-            component: "markdown",
-          },
-        },
-        {
-          type: "string",
-          label: "Link",
-          name: "link",
-        },
-        {
-          type: "string",
-          label: "Button Label",
-          name: "buttonLabel",
-          description: "A button will be included if you have a link and button label, with only a link the entire card is linked"
-        },
-        {
-          label: "Accent Color",
-          name: "accentColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-      ],
-    },
-    navigationLabelSchema,
     cardsSchema,
     {
       type: "object",
@@ -277,5 +167,115 @@ export const textCardsBlockSchema: TinaTemplate = {
         },
       ],
     },
+    {
+      label: "Background Image",
+      name: "backgroundImage",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+          ui: {
+            clearable: true,
+          }
+        },     
+        {
+          label: "Position",
+          name: "position",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Bottom", value: "object-bottom" },
+            { label: "Center", value: "object-center" },
+            { label: "Left", value: "object-left" },
+            { label: "Left Bottom", value: "object-left-bottom" },
+            { label: "Left Top", value: "object-left-top" },
+            { label: "Right", value: "object-right" },
+            { label: "Right Bottom", value: "object-right-bottom" },
+            { label: "Right Top", value: "object-right-top" },
+            { label: "Top", value: "object-top" },
+          ],
+        },
+      ],
+    },
+    {
+      label: "Label",
+      name: "label",
+      type: "string",
+    },
+    {
+      label: "Headline",
+      name: "headline",
+      type: "string",
+    },
+    {
+      label: "Subhead",
+      name: "subhead",
+      type: "string",
+    },
+    {
+      label: "Body",
+      name: "body",
+      type: "string",
+      ui: {
+        component: "markdown",
+      },
+    },
+    buttonsSchema,
+    {
+      type: "object",
+      label: "Cards",
+      name: "items",
+      list: true,
+      ui: {
+        defaultItem: {
+          ...defaultCard,
+        },
+      },
+      fields: [
+        {
+          type: "string",
+          label: "Title",
+          name: "headline",
+        },
+        {
+          label: "Subhead",
+          name: "subhead",
+          type: "string",
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text",
+          ui: {
+            component: "markdown",
+          },
+        },
+        {
+          type: "string",
+          label: "Link",
+          name: "link",
+        },
+        {
+          type: "string",
+          label: "Button Label",
+          name: "buttonLabel",
+          description: "A button will be included if you have a link and button label, with only a link the entire card is linked"
+        },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+      ],
+    },
+    navigationLabelSchema,
   ],
 };
