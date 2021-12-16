@@ -115,6 +115,7 @@ blocks:
       subheadStyles: text-gray-dark text-xl mb-6 undefined
       textStyles: text-black text-base mb-0 undefined
       buttonType: solid
+      buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
       buttonTextColor: white
     label: ''
     headline: Many organizations and projects successfully store with Filecoin
