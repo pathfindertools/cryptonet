@@ -341,7 +341,7 @@ blocks:
         text: >-
           **Textile’s Filecoin Auctions** are an open deal marketplace where
           storage providers bid on storage requests in real-time.
-        link: /
+        link: 'https://www.textile.io/'
         buttonLabel: Learn More
     navigationLabel: Tools
     _template: photoCards
