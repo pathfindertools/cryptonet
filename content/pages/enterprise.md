@@ -56,26 +56,7 @@ blocks:
     subhead: ''
     body: ''
     _template: feature
-  - label: ''
-    headline: >-
-      Filecoin has a vast ecosystem of developers, storage providers, and
-      clients.
-    subhead: ''
-    body: ''
-    items:
-      - headline: '7,000+'
-        subhead: ''
-        text: 'Developers & Contributors building applications backed by Filecoin '
-      - headline: 10 EiB+
-        subhead: ''
-        text: Total storage capacity on the Filecoin network
-      - headline: '~3,000'
-        subhead: ''
-        text: Globally distributed storage providers across geographies
-      - headline: 400+
-        subhead: ''
-        text: 'Applications, projects, and funded startups'
-    style:
+  - style:
       minHeight: '550'
       columns: '4'
       textAlignment: left
@@ -95,8 +76,45 @@ blocks:
       subheadStyles: text-white text-lg mb-0 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
+    label: ''
+    headline: >-
+      Filecoin has a vast ecosystem of developers, storage providers, and
+      clients.
+    subhead: ''
+    body: ''
+    items:
+      - headline: '7,000+'
+        subhead: ''
+        text: 'Developers & Contributors building applications backed by Filecoin '
+      - headline: 10 EiB+
+        subhead: ''
+        text: Total storage capacity on the Filecoin network
+      - headline: '~3,000'
+        subhead: ''
+        text: Globally distributed storage providers across geographies
+      - headline: 400+
+        subhead: ''
+        text: 'Applications, projects, and funded startups'
     _template: textCards
-  - label: ''
+  - style:
+      columns: '3'
+      textAlignment: left
+      labelStyles: text-gray text-xs mb-0 undefined
+      headlineStyles: text-black text-5xl mb-7 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black text-lg mb-0 undefined
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      imageStyles: h-16 object-contain object-left mb-9
+      accentColor: white
+      labelStyles: text-black text-lg mb-0 undefined
+      headlineStyles: text-black text-2xl mb-0 undefined
+      subheadStyles: text-gray-dark text-xl mb-6 undefined
+      textStyles: text-black text-base mb-0 undefined
+      buttonType: solid
+      buttonTextColor: white
+    label: ''
     headline: Many organizations and projects successfully store with Filecoin
     subhead: ''
     body: ''
@@ -156,42 +174,8 @@ blocks:
           distribution of data.”
         link: sikljko.vol
         buttonLabel: Learn more
-    style:
-      columns: '3'
-      textAlignment: left
-      fillStyles: bg-white
-      labelStyles: text-gray text-xs mb-0 undefined
-      headlineStyles: text-black text-5xl undefined undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black text-lg mb-0 undefined
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      type: solid
-      imageStyles: h-16 object-contain object-left mb-5
-      accentColor: white
-      labelStyles: text-black text-lg mb-0 undefined
-      headlineStyles: text-black text-2xl mb-0 undefined
-      subheadStyles: text-gray-dark text-xl mb-6 undefined
-      textStyles: text-black text-base mb-0 undefined
-      buttonType: solid
-      buttonTextColor: white
     _template: photoCards
-  - label: ''
-    headline: Pricing
-    subhead: Significantly cheaper than cloud based storage
-    body: ''
-    items:
-      - headline: Filecoin Plus
-        subhead: $0
-        text: Per TiB/Year
-        accentColor: white
-      - headline: Filecoin
-        subhead: <$1*
-        text: Per TiB / year
-      - headline: Public cloud
-        subhead: $24**
-        text: Per TiB / year
-    style:
+  - style:
       columns: '3'
       textAlignment: left
       fillStyles: bg-white
@@ -208,8 +192,40 @@ blocks:
       subheadStyles: text-primary text-6xl mb-0 undefined
       textStyles: text-gray-dark text-base mb-0 undefined
       buttonType: solid
+    label: ''
+    headline: Pricing
+    subhead: Significantly cheaper than cloud based storage
+    body: ''
+    items:
+      - headline: Filecoin Plus
+        subhead: $0
+        text: Per TiB/Year
+        accentColor: white
+      - headline: Filecoin
+        subhead: <$1*
+        text: Per TiB / year
+      - headline: Public cloud
+        subhead: $24**
+        text: Per TiB / year
     _template: textCards
-  - label: ''
+  - style:
+      columns: '3'
+      textAlignment: left
+      fillStyles: bg-black
+      labelStyles: text-gray text-lg mb-0 undefined
+      headlineStyles: undefined undefined undefined undefined
+      subheadStyles: text-gray text-3xl mb-0 undefined
+      textStyles: text-gray-light text-lg mb-0 undefined
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      accentColor: primary
+      labelStyles: text-white text-md mb-0
+      headlineStyles: text-white text-5xl mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-xl mb-0
+      buttonType: solid
+    label: ''
     headline: ''
     subhead: ''
     body: ''
@@ -245,25 +261,25 @@ blocks:
           lorem lorem lorem lorem lorem lorem lorem.
         link: /
         buttonLabel: Download full report
-    style:
+    _template: photoCards
+  - style:
       columns: '3'
       textAlignment: left
-      fillStyles: bg-black
-      labelStyles: text-gray text-lg mb-0 undefined
-      headlineStyles: undefined undefined undefined undefined
-      subheadStyles: text-gray text-3xl mb-0 undefined
-      textStyles: text-gray-light text-lg mb-0 undefined
+      labelStyles: text-gray text-lg mb-0
+      subheadStyles: text-black text-3xl mb-0
+      textStyles: text-black text-lg mb-0
       contentOrder: labelHeadingsContent
     cardStyle:
-      type: solid
+      type: transparent
+      imageStyles: h-28 object-contain object-left mb-3
       accentColor: primary
-      labelStyles: text-white text-md mb-0
-      headlineStyles: text-white text-5xl mb-0
-      subheadStyles: text-white text-lg mb-0
-      textStyles: text-white text-xl mb-0
+      padding: p-0
+      labelStyles: text-white text-lg mb-0 undefined
+      headlineStyles: text-white text-5xl mb-0 undefined
+      subheadStyles: text-white text-4xl mb-0 undefined
+      textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
-    _template: photoCards
-  - backgroundImage:
+    backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
       position: object-bottom
@@ -297,25 +313,24 @@ blocks:
           better deal success!
         link: /
         buttonLabel: Learn More
-    style:
+    _template: photoCards
+  - style:
       columns: '3'
       textAlignment: left
-      labelStyles: text-gray text-lg mb-0
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-black text-lg mb-0
+      labelStyles: text-gray text-4xl mb-20 undefined
+      headlineStyles: text-black text-6xl mb-24 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black undefined mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
-      type: transparent
-      imageStyles: h-28 object-contain object-left mb-3
+      type: solid
       accentColor: primary
-      padding: p-0
-      labelStyles: text-white text-lg mb-0 undefined
-      headlineStyles: text-white text-5xl mb-0 undefined
-      subheadStyles: text-white text-4xl mb-0 undefined
-      textStyles: text-white text-lg mb-0 undefined
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-black text-2xl mb-0 undefined
+      subheadStyles: text-black text-lg mb-0 undefined
+      textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
-    _template: photoCards
-  - label: Filecoin solves many problems associated with traditional storage
+    label: Filecoin solves many problems associated with traditional storage
     headline: Traditional Storage vs. Filecoin
     subhead: Traditional
     body: ' '
@@ -333,38 +348,8 @@ blocks:
         text: >-
           Organizations are locked into specific architectures with high egress
           and data migration costs
-    style:
-      columns: '3'
-      textAlignment: left
-      labelStyles: text-gray text-4xl mb-20 undefined
-      headlineStyles: text-black text-6xl mb-24 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black undefined mb-0 undefined
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      type: solid
-      accentColor: primary
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-black text-2xl mb-0 undefined
-      subheadStyles: text-black text-lg mb-0 undefined
-      textStyles: text-black text-sm mb-0 undefined
-      buttonType: solid
     _template: photoCards
-  - label: ''
-    headline: ''
-    subhead: Filecoin
-    body: ''
-    items:
-      - headline: Decentralized
-        subhead: ''
-        text: 'No single point of failure, no proprietary protocol, no vendor lock-in'
-      - headline: Robust
-        subhead: ''
-        text: Data redundancy and availability through multi-vendor replication
-      - headline: Efficient
-        subhead: ''
-        text: Incentive structures enabling cheap prices
-    style:
+  - style:
       columns: '3'
       textAlignment: left
       labelStyles: text-black text-sm mb-0 undefined
@@ -381,6 +366,20 @@ blocks:
       subheadStyles: text-black text-lg mb-0 undefined
       textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
+    label: ''
+    headline: ''
+    subhead: Filecoin
+    body: ''
+    items:
+      - headline: Decentralized
+        subhead: ''
+        text: 'No single point of failure, no proprietary protocol, no vendor lock-in'
+      - headline: Robust
+        subhead: ''
+        text: Data redundancy and availability through multi-vendor replication
+      - headline: Efficient
+        subhead: ''
+        text: Incentive structures enabling cheap prices
     _template: photoCards
   - style:
       minHeight: ''
