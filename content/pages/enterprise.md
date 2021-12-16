@@ -210,6 +210,24 @@ blocks:
         text: Per TiB / year
     navigationLabel: Pricing
     _template: textCards
+  - label: ''
+    headline: ''
+    subhead: ''
+    body: >-
+      \* Average pricing shown from the last 30 days, rates will vary
+      (Source)   
+
+      \**Cloud pricing compared to S3 Glacier Deep Archive
+    style:
+      textAlignment: left
+      width: normal
+      fillStyles: bg-white
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-black text-5xl mb-0 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-black undefined mb-8 undefined
+      contentOrder: labelHeadingsContent
+    _template: banner
   - style:
       columns: '3'
       textAlignment: left
