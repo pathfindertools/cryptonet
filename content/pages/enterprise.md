@@ -492,7 +492,8 @@ blocks:
       participants to the Filecoin network.
     buttons:
       - label: Learn More
-        link: /
+        link: >-
+          https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/
         type: solid
         buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
         textColor: white
