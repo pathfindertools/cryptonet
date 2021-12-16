@@ -22,7 +22,7 @@ const PhotoCard = ({ data, cardstyle }) => {
         )}
       </div>
       <div
-        className={` ${wrapClasses} relative flex-1 text-left p-4 border-box`}
+        className={` ${wrapClasses} relative flex-1 text-left border-box ${cardstyle?.padding}`}
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (

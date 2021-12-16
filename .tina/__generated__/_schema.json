@@ -857,6 +857,587 @@
               },
               "fields": [
                 {
+                  "type": "object",
+                  "label": "Section Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
+                      "label": "Columns",
+                      "name": "columns",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "1",
+                          "value": "1"
+                        },
+                        {
+                          "label": "2",
+                          "value": "2"
+                        },
+                        {
+                          "label": "3",
+                          "value": "3"
+                        },
+                        {
+                          "label": "4",
+                          "value": "4"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "columns"
+                      ]
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "contentOrder"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "photoCards",
+                    "style"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Card Style",
+                  "name": "cardStyle",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid Background",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Semi Transparent",
+                          "value": "transparent"
+                        },
+                        {
+                          "label": "Horizontal Fade",
+                          "value": "fadeH"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "type"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
+                      "ui": {
+                        "component": "imageControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "imageStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Accent Color",
+                      "name": "accentColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "accentColor"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "0",
+                          "value": "p-0"
+                        },
+                        {
+                          "label": "1",
+                          "value": "p-px"
+                        },
+                        {
+                          "label": "2",
+                          "value": "p-0.5"
+                        },
+                        {
+                          "label": "4",
+                          "value": "p-1"
+                        },
+                        {
+                          "label": "6",
+                          "value": "p-1.5"
+                        },
+                        {
+                          "label": "8",
+                          "value": "p-2"
+                        },
+                        {
+                          "label": "10",
+                          "value": "p-2.5"
+                        },
+                        {
+                          "label": "12",
+                          "value": "p-3"
+                        },
+                        {
+                          "label": "14",
+                          "value": "p-3.5"
+                        },
+                        {
+                          "label": "16",
+                          "value": "p-4"
+                        },
+                        {
+                          "label": "20",
+                          "value": "p-5"
+                        },
+                        {
+                          "label": "24",
+                          "value": "p-6"
+                        },
+                        {
+                          "label": "28",
+                          "value": "p-7"
+                        },
+                        {
+                          "label": "32",
+                          "value": "p-8"
+                        },
+                        {
+                          "label": "36",
+                          "value": "p-9"
+                        },
+                        {
+                          "label": "40",
+                          "value": "p-10"
+                        },
+                        {
+                          "label": "44",
+                          "value": "p-11"
+                        },
+                        {
+                          "label": "48",
+                          "value": "p-12"
+                        },
+                        {
+                          "label": "52",
+                          "value": "p-13"
+                        },
+                        {
+                          "label": "56",
+                          "value": "p-14"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Button Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Outline",
+                          "value": "outline"
+                        },
+                        {
+                          "label": "Link",
+                          "value": "link"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "buttonType"
+                      ]
+                    },
+                    {
+                      "label": "Button Text Color",
+                      "name": "buttonTextColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "buttonTextColor"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "photoCards",
+                    "cardStyle"
+                  ]
+                },
+                {
                   "label": "Background Image",
                   "name": "backgroundImage",
                   "type": "object",
@@ -1313,490 +1894,6 @@
                     "photoCards",
                     "navigationLabel"
                   ]
-                },
-                {
-                  "type": "object",
-                  "label": "Section Style",
-                  "name": "style",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Minimum Height",
-                      "name": "minHeight",
-                      "type": "string",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "minHeight"
-                      ]
-                    },
-                    {
-                      "label": "Columns",
-                      "name": "columns",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "1",
-                          "value": "1"
-                        },
-                        {
-                          "label": "2",
-                          "value": "2"
-                        },
-                        {
-                          "label": "3",
-                          "value": "3"
-                        },
-                        {
-                          "label": "4",
-                          "value": "4"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "columns"
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "fillStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label Style",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "labelStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline Style",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "headlineStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead Style",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "subheadStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text Style",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "contentOrder"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "photoCards",
-                    "style"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "label": "Card Style",
-                  "name": "cardStyle",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Type",
-                      "name": "type",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid Background",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Semi Transparent",
-                          "value": "transparent"
-                        },
-                        {
-                          "label": "Horizontal Fade",
-                          "value": "fadeH"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "type"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Image",
-                      "name": "imageStyles",
-                      "ui": {
-                        "component": "imageControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "imageStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "fillStyles"
-                      ]
-                    },
-                    {
-                      "label": "Accent Color",
-                      "name": "accentColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "accentColor"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label Style",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "labelStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline Style",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "headlineStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead Style",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "subheadStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text Style",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Button Type",
-                      "name": "buttonType",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Outline",
-                          "value": "outline"
-                        },
-                        {
-                          "label": "Link",
-                          "value": "link"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "buttonType"
-                      ]
-                    },
-                    {
-                      "label": "Button Text Color",
-                      "name": "buttonTextColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "buttonTextColor"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "photoCards",
-                    "cardStyle"
-                  ]
                 }
               ],
               "namespace": [
@@ -1854,6 +1951,568 @@
                 }
               },
               "fields": [
+                {
+                  "type": "object",
+                  "label": "Section Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
+                      "label": "Columns",
+                      "name": "columns",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "1",
+                          "value": "1"
+                        },
+                        {
+                          "label": "2",
+                          "value": "2"
+                        },
+                        {
+                          "label": "3",
+                          "value": "3"
+                        },
+                        {
+                          "label": "4",
+                          "value": "4"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "columns"
+                      ]
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "contentOrder"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "textCards",
+                    "style"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Card Style",
+                  "name": "cardStyle",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Type",
+                      "name": "type",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Transparent Background",
+                          "value": "transparent"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "type"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Accent Color",
+                      "name": "accentColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "accentColor"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "0",
+                          "value": "p-0"
+                        },
+                        {
+                          "label": "1",
+                          "value": "p-px"
+                        },
+                        {
+                          "label": "2",
+                          "value": "p-0.5"
+                        },
+                        {
+                          "label": "4",
+                          "value": "p-1"
+                        },
+                        {
+                          "label": "6",
+                          "value": "p-1.5"
+                        },
+                        {
+                          "label": "8",
+                          "value": "p-2"
+                        },
+                        {
+                          "label": "10",
+                          "value": "p-2.5"
+                        },
+                        {
+                          "label": "12",
+                          "value": "p-3"
+                        },
+                        {
+                          "label": "14",
+                          "value": "p-3.5"
+                        },
+                        {
+                          "label": "16",
+                          "value": "p-4"
+                        },
+                        {
+                          "label": "20",
+                          "value": "p-5"
+                        },
+                        {
+                          "label": "24",
+                          "value": "p-6"
+                        },
+                        {
+                          "label": "28",
+                          "value": "p-7"
+                        },
+                        {
+                          "label": "32",
+                          "value": "p-8"
+                        },
+                        {
+                          "label": "36",
+                          "value": "p-9"
+                        },
+                        {
+                          "label": "40",
+                          "value": "p-10"
+                        },
+                        {
+                          "label": "44",
+                          "value": "p-11"
+                        },
+                        {
+                          "label": "48",
+                          "value": "p-12"
+                        },
+                        {
+                          "label": "52",
+                          "value": "p-13"
+                        },
+                        {
+                          "label": "56",
+                          "value": "p-14"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label Style",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline Style",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead Style",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text Style",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Button Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Solid",
+                          "value": "solid"
+                        },
+                        {
+                          "label": "Outline",
+                          "value": "outline"
+                        },
+                        {
+                          "label": "Link",
+                          "value": "link"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "buttonType"
+                      ]
+                    },
+                    {
+                      "label": "Button Text Color",
+                      "name": "buttonTextColor",
+                      "type": "string",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "buttonTextColor"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "textCards",
+                    "cardStyle"
+                  ]
+                },
                 {
                   "label": "Background Image",
                   "name": "backgroundImage",
@@ -2324,471 +2983,6 @@
                     "blocks",
                     "textCards",
                     "navigationLabel"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "label": "Section Style",
-                  "name": "style",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Minimum Height",
-                      "name": "minHeight",
-                      "type": "string",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "minHeight"
-                      ]
-                    },
-                    {
-                      "label": "Columns",
-                      "name": "columns",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "1",
-                          "value": "1"
-                        },
-                        {
-                          "label": "2",
-                          "value": "2"
-                        },
-                        {
-                          "label": "3",
-                          "value": "3"
-                        },
-                        {
-                          "label": "4",
-                          "value": "4"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "columns"
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "fillStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label Style",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "labelStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline Style",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "headlineStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead Style",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "subheadStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text Style",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "contentOrder"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "textCards",
-                    "style"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "label": "Card Style",
-                  "name": "cardStyle",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Type",
-                      "name": "type",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Transparent Background",
-                          "value": "transparent"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "type"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "fillStyles"
-                      ]
-                    },
-                    {
-                      "label": "Accent Color",
-                      "name": "accentColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "accentColor"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label Style",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "labelStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline Style",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "headlineStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead Style",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "subheadStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text Style",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Button Type",
-                      "name": "buttonType",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Solid",
-                          "value": "solid"
-                        },
-                        {
-                          "label": "Outline",
-                          "value": "outline"
-                        },
-                        {
-                          "label": "Link",
-                          "value": "link"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "buttonType"
-                      ]
-                    },
-                    {
-                      "label": "Button Text Color",
-                      "name": "buttonTextColor",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Primary",
-                          "value": "primary"
-                        },
-                        {
-                          "label": "Accent 1",
-                          "value": "accent1"
-                        },
-                        {
-                          "label": "Accent 2",
-                          "value": "accent2"
-                        },
-                        {
-                          "label": "Accent 3",
-                          "value": "accent3"
-                        },
-                        {
-                          "label": "Accent 4",
-                          "value": "accent4"
-                        },
-                        {
-                          "label": "White",
-                          "value": "white"
-                        },
-                        {
-                          "label": "Gray Light",
-                          "value": "grayLight"
-                        },
-                        {
-                          "label": "Gray",
-                          "value": "gray"
-                        },
-                        {
-                          "label": "Gray Dark",
-                          "value": "grayDark"
-                        },
-                        {
-                          "label": "Black",
-                          "value": "black"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "buttonTextColor"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "textCards",
-                    "cardStyle"
                   ]
                 }
               ],

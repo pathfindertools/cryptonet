@@ -43,6 +43,139 @@ export const photoCardsBlockSchema: TinaTemplate = {
     },
   },
   fields: [
+    cardsSchema,
+    {
+      type: "object",
+      label: "Card Style",
+      name: "cardStyle",
+      ui: {
+        component: "group",
+      },
+      fields: [
+        {
+          label: "Type",
+          name: "type",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid Background", value: "solid" },
+            { label: "Semi Transparent", value: "transparent" },
+            { label: "Horizontal Fade", value: "fadeH" },
+          ],
+        },
+        {
+          type: "string",
+          label: "Image",
+          name: "imageStyles",
+          ui: {
+            component: "imageControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Background",
+          name: "fillStyles",
+          ui: {
+            component: "fillControl"
+          }
+        },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Padding",
+          name: "padding",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "0", value: "p-0" },
+            { label: "1", value: "p-px" },
+            { label: "2", value: "p-0.5" },
+            { label: "4", value: "p-1" },
+            { label: "6", value: "p-1.5" },
+            { label: "8", value: "p-2" },
+            { label: "10", value: "p-2.5" },
+            { label: "12", value: "p-3" },
+            { label: "14", value: "p-3.5" },
+            { label: "16", value: "p-4" },
+            { label: "20", value: "p-5" },
+            { label: "24", value: "p-6" },
+            { label: "28", value: "p-7" },
+            { label: "32", value: "p-8" },
+            { label: "36", value: "p-9" },
+            { label: "40", value: "p-10" },
+            { label: "44", value: "p-11" },
+            { label: "48", value: "p-12" },
+            { label: "52", value: "p-13" },
+            { label: "56", value: "p-14" },
+          ],
+        },
+        {
+          type: "string",
+          label: "Label Style",
+          name: "labelStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Headline Style",
+          name: "headlineStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Subhead Style",
+          name: "subheadStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Text Style",
+          name: "textStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          label: "Button Type",
+          name: "buttonType",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Solid", value: "solid" },
+            { label: "Outline", value: "outline" },
+            { label: "Link", value: "link" },
+          ],
+        },
+        {
+          label: "Button Text Color",
+          name: "buttonTextColor",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: colorOptions,
+        },
+      ],
+    },
     {
       label: "Background Image",
       name: "backgroundImage",
@@ -164,108 +297,5 @@ export const photoCardsBlockSchema: TinaTemplate = {
       ],
     },
     navigationLabelSchema,
-    cardsSchema,
-    {
-      type: "object",
-      label: "Card Style",
-      name: "cardStyle",
-      ui: {
-        component: "group",
-      },
-      fields: [
-        {
-          label: "Type",
-          name: "type",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Solid Background", value: "solid" },
-            { label: "Semi Transparent", value: "transparent" },
-            { label: "Horizontal Fade", value: "fadeH" },
-          ],
-        },
-        {
-          type: "string",
-          label: "Image",
-          name: "imageStyles",
-          ui: {
-            component: "imageControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Background",
-          name: "fillStyles",
-          ui: {
-            component: "fillControl"
-          }
-        },
-        {
-          label: "Accent Color",
-          name: "accentColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-        {
-          type: "string",
-          label: "Label Style",
-          name: "labelStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Headline Style",
-          name: "headlineStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Subhead Style",
-          name: "subheadStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Text Style",
-          name: "textStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          label: "Button Type",
-          name: "buttonType",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Solid", value: "solid" },
-            { label: "Outline", value: "outline" },
-            { label: "Link", value: "link" },
-          ],
-        },
-        {
-          label: "Button Text Color",
-          name: "buttonTextColor",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: colorOptions,
-        },
-      ],
-    },
   ],
 };

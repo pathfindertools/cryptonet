@@ -53,6 +53,32 @@ fragment PagesParts on Pages {
       navigationLabel
     }
     ... on PagesBlocksPhotoCards {
+      style {
+        __typename
+        minHeight
+        columns
+        textAlignment
+        fillStyles
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
+      }
+      cardStyle {
+        __typename
+        type
+        imageStyles
+        fillStyles
+        accentColor
+        padding
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        buttonType
+        buttonTextColor
+      }
       backgroundImage {
         __typename
         src
@@ -84,6 +110,8 @@ fragment PagesParts on Pages {
         buttonLabel
       }
       navigationLabel
+    }
+    ... on PagesBlocksTextCards {
       style {
         __typename
         minHeight
@@ -99,9 +127,9 @@ fragment PagesParts on Pages {
       cardStyle {
         __typename
         type
-        imageStyles
         fillStyles
         accentColor
+        padding
         labelStyles
         headlineStyles
         subheadStyles
@@ -109,8 +137,6 @@ fragment PagesParts on Pages {
         buttonType
         buttonTextColor
       }
-    }
-    ... on PagesBlocksTextCards {
       backgroundImage {
         __typename
         src
@@ -138,30 +164,6 @@ fragment PagesParts on Pages {
         accentColor
       }
       navigationLabel
-      style {
-        __typename
-        minHeight
-        columns
-        textAlignment
-        fillStyles
-        labelStyles
-        headlineStyles
-        subheadStyles
-        textStyles
-        contentOrder
-      }
-      cardStyle {
-        __typename
-        type
-        fillStyles
-        accentColor
-        labelStyles
-        headlineStyles
-        subheadStyles
-        textStyles
-        buttonType
-        buttonTextColor
-      }
     }
     ... on PagesBlocksBanner {
       image {
