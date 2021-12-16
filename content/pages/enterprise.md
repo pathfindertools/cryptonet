@@ -177,6 +177,7 @@ blocks:
           distribution of data.”
         link: sikljko.vol
         buttonLabel: Learn more
+    navigationLabel: Examples
     _template: photoCards
   - style:
       columns: '3'
