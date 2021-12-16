@@ -29,51 +29,6 @@ export const featureBlockSchema: TinaTemplate = {
   },
   fields: [
     {
-      label: "Image",
-      name: "image",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-          ui: {
-            clearable: true,
-          }
-        },
-        {
-          name: "alt",
-          label: "Alt Text",
-          type: "string",
-        },
-      ],
-    },
-    {
-      label: "Label",
-      name: "label",
-      type: "string",
-    },
-    {
-      label: "Headline",
-      name: "headline",
-      type: "string",
-    },
-    {
-      label: "Subhead",
-      name: "subhead",
-      type: "string",
-    },
-    {
-      label: "Body",
-      name: "body",
-      type: "string",
-      ui: {
-        component: "markdown",
-      },
-    },
-    buttonsSchema,
-    navigationLabelSchema,
-    {
       type: "object",
       label: "Section Style",
       name: "style",
@@ -90,20 +45,6 @@ export const featureBlockSchema: TinaTemplate = {
           label: "Flip Layout",
           name: "flipLayout",
           type: "boolean",
-        },
-        {
-          label: "Layout Style",
-          name: "imageStyle",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Natural Size", value: "natural" },
-            { label: "Fit in Half", value: "fitHalf" },
-            { label: "Fill Half", value: "fillHalf" },
-            { label: "Fill Overlap", value: "overlap" },
-          ],
         },
         {
           label: "Text Alignment",
@@ -130,26 +71,6 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "fillControl"
           }
-        },
-        {
-          label: "Background Image",
-          name: "backgroundImage",
-          type: "object",
-          fields: [
-            {
-              label: "Image Source",
-              name: "src",
-              type: "image",
-              ui: {
-                clearable: true,
-              }
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string",
-            },
-          ],
         },
         {
           type: "string",
@@ -194,5 +115,131 @@ export const featureBlockSchema: TinaTemplate = {
         },
       ],
     },
+    {
+      label: "Image",
+      name: "image",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+          ui: {
+            clearable: true,
+          }
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string",
+        },
+        {
+          label: "Layout Style",
+          name: "imageStyle",
+          type: "string",
+          ui: {
+            component: "select",
+          },
+          options: [
+            { label: "Inside Padding", value: "padding" },
+            { label: "Half", value: "half" },
+            { label: "Half to Edge", value: "halfEdge" },
+            { label: "Overlap", value: "overlap" },
+          ],
+        },
+        {
+          label: "Fit",
+          name: "fit",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Natural", value: "none" },
+            { label: "Scale down only", value: "scaleDown" },
+            { label: "Fit", value: "contain" },
+            { label: "Fill", value: "cover" },
+          ],
+        },
+        {
+          label: "Position",
+          name: "position",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Bottom", value: "object-bottom" },
+            { label: "Center", value: "object-center" },
+            { label: "Left", value: "object-left" },
+            { label: "Left Bottom", value: "object-left-bottom" },
+            { label: "Left Top", value: "object-left-top" },
+            { label: "Right", value: "object-right" },
+            { label: "Right Bottom", value: "object-right-bottom" },
+            { label: "Right Top", value: "object-right-top" },
+            { label: "Top", value: "object-top" },
+          ],
+        },
+      ],
+    },
+    {
+      label: "Background Image",
+      name: "backgroundImage",
+      type: "object",
+      fields: [
+        {
+          label: "Image Source",
+          name: "src",
+          type: "image",
+          ui: {
+            clearable: true,
+          }
+        },
+        {
+          label: "Position",
+          name: "position",
+          ui: {
+            component: "select",
+          },
+          type: "string",
+          options: [
+            { label: "Bottom", value: "object-bottom" },
+            { label: "Center", value: "object-center" },
+            { label: "Left", value: "object-left" },
+            { label: "Left Bottom", value: "object-left-bottom" },
+            { label: "Left Top", value: "object-left-top" },
+            { label: "Right", value: "object-right" },
+            { label: "Right Bottom", value: "object-right-bottom" },
+            { label: "Right Top", value: "object-right-top" },
+            { label: "Top", value: "object-top" },
+          ],
+        },
+      ],
+    },
+    {
+      label: "Label",
+      name: "label",
+      type: "string",
+    },
+    {
+      label: "Headline",
+      name: "headline",
+      type: "string",
+    },
+    {
+      label: "Subhead",
+      name: "subhead",
+      type: "string",
+    },
+    {
+      label: "Body",
+      name: "body",
+      type: "string",
+      ui: {
+        component: "markdown",
+      },
+    },
+    buttonsSchema,
+    navigationLabelSchema,
   ],
 };

@@ -12,10 +12,31 @@ fragment PagesParts on Pages {
   blocks {
     __typename
     ... on PagesBlocksFeature {
+      style {
+        __typename
+        minHeight
+        flipLayout
+        textAlignment
+        contentAlignment
+        fillStyles
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
+      }
       image {
         __typename
         src
         alt
+        imageStyle
+        fit
+        position
+      }
+      backgroundImage {
+        __typename
+        src
+        position
       }
       label
       headline
@@ -30,27 +51,13 @@ fragment PagesParts on Pages {
         backgroundColor
       }
       navigationLabel
-      style {
-        __typename
-        minHeight
-        flipLayout
-        imageStyle
-        textAlignment
-        contentAlignment
-        fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
-        labelStyles
-        headlineStyles
-        subheadStyles
-        textStyles
-        contentOrder
-      }
     }
     ... on PagesBlocksPhotoCards {
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -83,11 +90,6 @@ fragment PagesParts on Pages {
         columns
         textAlignment
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles
@@ -109,6 +111,11 @@ fragment PagesParts on Pages {
       }
     }
     ... on PagesBlocksTextCards {
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -137,11 +144,6 @@ fragment PagesParts on Pages {
         columns
         textAlignment
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles
@@ -167,6 +169,11 @@ fragment PagesParts on Pages {
         src
         alt
       }
+      backgroundImage {
+        __typename
+        src
+        position
+      }
       label
       headline
       subhead
@@ -186,11 +193,6 @@ fragment PagesParts on Pages {
         textAlignment
         width
         fillStyles
-        backgroundImage {
-          __typename
-          src
-          alt
-        }
         labelStyles
         headlineStyles
         subheadStyles

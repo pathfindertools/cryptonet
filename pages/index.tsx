@@ -18,207 +18,210 @@ export default function IndexPage(
 export const getStaticProps = async ({ params }) => {
   const tinaProps = (await getStaticPropsForTina({
     query: `
-    query ContentQuery($relativePath: String!) {
-      ${layoutQueryFragment}
-      getPagesDocument(relativePath: $relativePath) {
-        data {
-          __typename
-          draft
-          blocks {
+      query ContentQuery($relativePath: String!) {
+        ${layoutQueryFragment}
+        getPagesDocument(relativePath: $relativePath) {
+          data {
             __typename
-            ... on PagesBlocksPhotoCards {
-              label
-              headline
-              subhead
-              body
-              buttons {
+            draft
+            blocks {
+              __typename
+              ... on PagesBlocksPhotoCards {
+                backgroundImage {
+                  src
+                  position
+                }
                 label
-                type
-                link
-                textColor
-                backgroundColor
+                headline
+                subhead
+                body
+                buttons {
+                  label
+                  type
+                  link
+                  textColor
+                  backgroundColor
+                }
+                items {
+                  image {
+                    src
+                    alt
+                  }
+                  headline
+                  subhead
+                  text
+                  link
+                  buttonLabel
+                }
+                style {
+                  minHeight
+                  columns
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                }
+                cardStyle {
+                  type
+                  buttonType
+                  imageStyles
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                  accentColor
+                  buttonTextColor
+                }
+                navigationLabel
               }
-              items {
+              ... on PagesBlocksTextCards {
+                backgroundImage {
+                  src
+                  position
+                }
+                label
+                headline
+                subhead
+                body
+                buttons {
+                  label
+                  type
+                  link
+                  textColor
+                  backgroundColor
+                }
+                items {
+                  headline
+                  subhead
+                  text
+                  link
+                  buttonLabel
+                  accentColor
+                }
+                style {
+                  minHeight
+                  columns
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                }
+                cardStyle {
+                  type
+                  buttonType
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                  accentColor
+                  buttonTextColor
+                }
+                navigationLabel
+              }
+              ... on PagesBlocksFeature {
+                image {
+                  src
+                  alt
+                  imageStyle
+                  fit
+                  position
+                }
+                backgroundImage {
+                  src
+                  position
+                }
+                label
+                headline
+                subhead
+                body
+                buttons {
+                  label
+                  type
+                  link
+                  textColor
+                  backgroundColor
+                }
+                style {
+                  minHeight
+                  flipLayout
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                  textAlignment
+                  contentAlignment
+                  contentOrder
+                }
+                navigationLabel
+              }
+              ... on PagesBlocksBanner {
                 image {
                   src
                   alt
                 }
+                backgroundImage {
+                  src
+                  position
+                }
+                label
                 headline
                 subhead
-                text
-                link
-                buttonLabel
-              }
-              style {
-                minHeight
-                columns
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                backgroundImage {
-                  src
-                  alt
+                body
+                buttons {
+                  label
+                  type
+                  link
+                  textColor
+                  backgroundColor
                 }
+                style {
+                  minHeight
+                  width
+                  labelStyles
+                  headlineStyles
+                  subheadStyles
+                  textStyles
+                  fillStyles
+                  textAlignment
+                  contentOrder
+                }
+                navigationLabel
               }
-              cardStyle {
-                type
-                buttonType
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                accentColor
-                buttonTextColor
-              }
-              navigationLabel
             }
-            ... on PagesBlocksTextCards {
-              label
-              headline
-              subhead
-              body
-              buttons {
+            meta {
+              siteTitle
+              siteDescription
+              siteImageSrc
+            }
+            nav {
+              navItems {
+                link
                 label
-                type
-                link
-                textColor
-                backgroundColor
               }
-              items {
-                headline
-                subhead
-                text
-                link
-                buttonLabel
-                accentColor
-              }
-              style {
-                minHeight
-                columns
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                backgroundImage {
-                  src
-                  alt
-                }
-              }
-              cardStyle {
-                type
-                buttonType
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                accentColor
-                buttonTextColor
-              }
-              navigationLabel
+              navTextColor
+              navBackgroundColor
             }
-            ... on PagesBlocksFeature {
-              image {
-                src
-                alt
-              }
-              label
-              headline
-              subhead
-              body
-              buttons {
-                label
-                type
-                link
-                textColor
-                backgroundColor
-              }
-              style {
-                minHeight
-                flipLayout
-                imageStyle
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                backgroundImage {
-                  src
-                  alt
-                }
-                textAlignment
-                contentAlignment
-                contentOrder
-              }
-              navigationLabel
+            colors {
+              primary
+              accent1
+              accent2
+              accent3
+              accent4
+              white
+              grayLight
+              gray
+              grayDark
+              black
             }
-            ... on PagesBlocksBanner {
-              image {
-                src
-                alt
-              }
-              label
-              headline
-              subhead
-              body
-              buttons {
-                label
-                type
-                link
-                textColor
-                backgroundColor
-              }
-              style {
-                minHeight
-                width
-                labelStyles
-                headlineStyles
-                subheadStyles
-                textStyles
-                fillStyles
-                backgroundImage {
-                  src
-                  alt
-                }
-                textAlignment
-                contentOrder
-              }
-              navigationLabel
-            }
-          }
-          meta {
-            siteTitle
-            siteDescription
-            siteImageSrc
-          }
-          nav {
-            navItems {
-              link
-              label
-            }
-            navTextColor
-            navBackgroundColor
-          }
-          colors {
-            primary
-            accent1
-            accent2
-            accent3
-            accent4
-            white
-            grayLight
-            gray
-            grayDark
-            black
           }
         }
       }
-    }
-`,
+  `,
     variables: { relativePath: `index.md` },
   })) as { data: { getPagesDocument: PagesDocument } };
 

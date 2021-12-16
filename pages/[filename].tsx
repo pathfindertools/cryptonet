@@ -27,6 +27,10 @@ export const getStaticProps = async ({ params }) => {
             blocks {
               __typename
               ... on PagesBlocksPhotoCards {
+                backgroundImage {
+                  src
+                  position
+                }
                 label
                 headline
                 subhead
@@ -57,10 +61,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                 }
                 cardStyle {
                   type
@@ -77,6 +77,10 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksTextCards {
+                backgroundImage {
+                  src
+                  position
+                }
                 label
                 headline
                 subhead
@@ -104,10 +108,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                 }
                 cardStyle {
                   type
@@ -126,6 +126,13 @@ export const getStaticProps = async ({ params }) => {
                 image {
                   src
                   alt
+                  imageStyle
+                  fit
+                  position
+                }
+                backgroundImage {
+                  src
+                  position
                 }
                 label
                 headline
@@ -141,16 +148,11 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   flipLayout
-                  imageStyle
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                   textAlignment
                   contentAlignment
                   contentOrder
@@ -161,6 +163,10 @@ export const getStaticProps = async ({ params }) => {
                 image {
                   src
                   alt
+                }
+                backgroundImage {
+                  src
+                  position
                 }
                 label
                 headline
@@ -181,10 +187,6 @@ export const getStaticProps = async ({ params }) => {
                   subheadStyles
                   textStyles
                   fillStyles
-                  backgroundImage {
-                    src
-                    alt
-                  }
                   textAlignment
                   contentOrder
                 }

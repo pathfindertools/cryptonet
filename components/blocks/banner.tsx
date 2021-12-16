@@ -6,7 +6,8 @@ export const Banner = ({ data }) => {
   return (
     <Section
       fillStyles={data.style?.fillStyles}
-      image={data.style?.backgroundImage?.src}
+      image={data.backgroundImage?.src}
+      imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}
     >

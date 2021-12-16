@@ -1,7 +1,27 @@
 ---
 draft: true
 blocks:
-  - label: ''
+  - style:
+      minHeight: '800'
+      flipLayout: false
+      textAlignment: left
+      contentAlignment: center
+      fillStyles: bg-black
+      labelStyles: text-white text-xl mb-0 font-bold
+      headlineStyles: text-gray-light text-7xl mb-10 undefined
+      subheadStyles: text-primary text-3xl mb-0 undefined
+      textStyles: text-white text-lg mb-24 undefined
+      contentOrder: labelHeadingsContent
+    image:
+      src: ''
+      imageStyle: overlap
+      fit: object-contain
+      position: object-center
+    backgroundImage:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
+      position: object-right
+    label: ''
     headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
     body: A powerful and dynamic distributed cloud storage network for your data
@@ -11,34 +31,10 @@ blocks:
         type: solid
         textColor: black
         backgroundColor: white
-    style:
-      minHeight: '800'
-      flipLayout: false
-      imageStyle: overlap
-      textAlignment: left
-      contentAlignment: center
-      backgroundImage:
-        src: >-
-          http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
-      labelStyles: text-white text-xl mb-0 font-bold
-      headlineStyles: text-gray-light text-7xl mb-10 undefined
-      subheadStyles: text-primary text-3xl mb-0 undefined
-      textStyles: text-white text-lg mb-24 undefined
-      contentOrder: labelHeadingsContent
     _template: feature
-  - image:
-      src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1638393093/iconic-network-graph_e5oqc1.png
-    label: ''
-    headline: >-
-      Filecoin is an open, decentralized-storage network offering commoditized
-      pricing for verifiable, durable, and available storage
-    subhead: ''
-    body: ''
-    style:
+  - style:
       minHeight: '600'
       flipLayout: false
-      imageStyle: overlap
       textAlignment: left
       contentAlignment: center
       fillStyles: bg-black
@@ -47,6 +43,18 @@ blocks:
       subheadStyles: text-black text-3xl mb-0 undefined
       textStyles: text-black text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
+    image:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1638393093/iconic-network-graph_e5oqc1.png
+      imageStyle: overlap
+      fit: object-contain
+      position: object-center
+    label: ''
+    headline: >-
+      Filecoin is an open, decentralized-storage network offering commoditized
+      pricing for verifiable, durable, and available storage
+    subhead: ''
+    body: ''
     _template: feature
   - label: ''
     headline: >-
@@ -254,7 +262,11 @@ blocks:
       textStyles: text-white text-xl mb-0
       buttonType: solid
     _template: photoCards
-  - label: ''
+  - backgroundImage:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
+      position: object-bottom
+    label: ''
     headline: ''
     subhead: ''
     body: ''
@@ -287,9 +299,6 @@ blocks:
     style:
       columns: '3'
       textAlignment: left
-      backgroundImage:
-        src: >-
-          http://res.cloudinary.com/protocolai/image/upload/v1638471648/bg-earth_tpce8l.png
       labelStyles: text-gray text-lg mb-0
       subheadStyles: text-black text-3xl mb-0
       textStyles: text-black text-lg mb-0
@@ -371,9 +380,22 @@ blocks:
       textStyles: text-black text-sm mb-0 undefined
       buttonType: solid
     _template: photoCards
-  - image:
+  - style:
+      minHeight: ''
+      flipLayout: false
+      textAlignment: left
+      contentAlignment: center
+      fillStyles: from-accent1 to-primary bg-gradient-to-br
+      labelStyles: text-black text-sm mb-0 undefined
+      headlineStyles: text-white text-5xl mb-4 undefined
+      subheadStyles: text-black text-3xl mb-0 undefined
+      textStyles: text-white text-3xl mb-9 undefined
+      contentOrder: labelHeadingsContent
+    image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1639503838/filrep-screen-on-ipad_eueozw.png
+        http://res.cloudinary.com/protocolai/image/upload/v1638473001/logo-internet-archive_hxjwcm.png
+      imageStyle: padding
+      fit: none
     label: ''
     headline: Storage Providers
     subhead: ''
@@ -388,22 +410,24 @@ blocks:
         type: solid
         textColor: black
         backgroundColor: white
-    style:
-      minHeight: ''
+    _template: feature
+  - style:
+      minHeight: '700'
       flipLayout: false
-      imageStyle: natural
       textAlignment: left
       contentAlignment: center
-      fillStyles: from-accent1 to-primary bg-gradient-to-br
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-white text-5xl mb-4 undefined
+      fillStyles: bg-black
+      labelStyles: text-gray-light text-7xl mb-0 undefined
+      headlineStyles: text-white text-6xl mb-11 undefined
       subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-white text-3xl mb-9 undefined
+      textStyles: text-gray text-4xl mb-9 undefined
       contentOrder: labelHeadingsContent
-    _template: feature
-  - image:
+    image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638473289/bg-filecoin-NAS_qo3y6w.png
+      imageStyle: overlap
+      fit: object-contain
+      position: object-center
     label: ''
     headline: Referral Program
     subhead: ''
@@ -416,20 +440,6 @@ blocks:
         type: solid
         textColor: white
         backgroundColor: primary
-    style:
-      minHeight: '700'
-      flipLayout: false
-      imageStyle: overlap
-      textAlignment: left
-      contentAlignment: center
-      fillStyles: bg-black
-      backgroundImage:
-        src: ''
-      labelStyles: text-gray-light text-7xl mb-0 undefined
-      headlineStyles: text-white text-6xl mb-11 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-gray text-4xl mb-9 undefined
-      contentOrder: labelHeadingsContent
     _template: feature
 meta:
   siteTitle: Filecoin for Large Datasets test
