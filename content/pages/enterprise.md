@@ -21,9 +21,11 @@ blocks:
         http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
       position: object-center
     label: ''
-    headline: Filecoin for large datasets
+    headline: Filecoin for Large Datasets
     subhead: Decentralized storage at scale
-    body: A powerful and dynamic distributed cloud storage network for your data
+    body: >-
+      [Filecoin]() is an open Web3 alternative to cloud storage, with better
+      interoperability and larger capacity at a lower cost.
     buttons:
       - label: Get Started
         link: 'https://protocollabs.typeform.com/leadgen'
