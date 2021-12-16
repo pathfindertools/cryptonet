@@ -334,9 +334,7 @@ blocks:
         subhead: Textile
         text: >-
           **Textile’s Filecoin Auctions** are an open deal marketplace where
-          storage providers bid on storage requests in real-time - helping
-          clients get better prices and more engaged providers (leading to
-          better deal success!
+          storage providers bid on storage requests in real-time.
         link: /
         buttonLabel: Learn More
     navigationLabel: Tools
@@ -493,6 +491,62 @@ blocks:
         backgroundColor: primary
     navigationLabel: Referral Program
     _template: feature
+  - style:
+      columns: '4'
+      textAlignment: left
+      fillStyles: bg-black
+      labelStyles: text-white text-sm mb-0 undefined
+      headlineStyles: text-white text-5xl mb-0 undefined
+      subheadStyles: text-white text-3xl mb-0 undefined
+      textStyles: text-black undefined mb-0 undefined
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      accentColor: primary
+      padding: p-0
+      labelStyles: text-white text-sm mb-0 undefined
+      headlineStyles: text-white text-xl mb-0 undefined
+      subheadStyles: text-white text-sm mb-0 undefined
+      textStyles: text-gray text-sm mb-0 undefined
+      buttonType: solid
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - headline: >-
+          Filecoin is an open-source cloud storage marketplace, protocol, and
+          incentive layer.
+        subhead: ''
+        text: ''
+      - headline: ''
+        subhead: ''
+        text: ''
+      - headline: ''
+        subhead: Reach Out
+        text: |-
+          [Slack](#)
+
+          [WeChat](#)
+
+          [Twitter](#)
+
+          [Forum](#)
+
+          [Matrix](#)
+      - headline: ''
+        subhead: Resources
+        text: |-
+          [Research](#)
+
+          [Blog](#)
+
+          [Github](#)
+
+          [ProtoSchool](#)  
+
+          [Security](#)
+    _template: textCards
 meta:
   siteTitle: Filecoin for Large Datasets test
   siteDescription: >-
