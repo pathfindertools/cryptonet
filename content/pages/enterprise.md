@@ -24,8 +24,8 @@ blocks:
     headline: Filecoin for Large Datasets
     subhead: Decentralized storage at scale
     body: >-
-      [Filecoin]() is an open Web3 alternative to cloud storage, with better
-      interoperability and larger capacity at a lower cost.
+      [Filecoin](https://filecoin.io/) is an open Web3 alternative to cloud
+      storage, with better interoperability and larger capacity at a lower cost.
     buttons:
       - label: Get Started
         link: 'https://protocollabs.typeform.com/leadgen'
