@@ -1691,6 +1691,14 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Border",
+                      "name": "borderStyles",
+                      "ui": {
+                        "component": "borderControl"
+                      }
+                    },
+                    {
                       "label": "Padding",
                       "name": "padding",
                       "type": "string",

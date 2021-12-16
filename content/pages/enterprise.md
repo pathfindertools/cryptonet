@@ -188,9 +188,11 @@ blocks:
     cardStyle:
       type: solid
       accentColor: primary
+      borderStyles: border-primary border-3
+      padding: p-6
       labelStyles: text-black text-lg mb-0 undefined
-      headlineStyles: text-black text-base mb-3 font-bold
-      subheadStyles: text-primary text-6xl mb-0 undefined
+      headlineStyles: text-black text-lg mb-3 font-bold
+      subheadStyles: text-primary text-6xl mb-0 font-bold
       textStyles: text-gray-dark text-base mb-0 undefined
       buttonType: solid
     label: ''

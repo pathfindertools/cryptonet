@@ -3095,6 +3095,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "borderStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "padding"
           },
           "arguments": [],
@@ -6682,6 +6697,20 @@
           "name": {
             "kind": "Name",
             "value": "accentColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "borderStyles"
           },
           "type": {
             "kind": "NamedType",

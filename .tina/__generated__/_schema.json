@@ -2345,6 +2345,21 @@
                       ]
                     },
                     {
+                      "type": "string",
+                      "label": "Border",
+                      "name": "borderStyles",
+                      "ui": {
+                        "component": "borderControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "borderStyles"
+                      ]
+                    },
+                    {
                       "label": "Padding",
                       "name": "padding",
                       "type": "string",

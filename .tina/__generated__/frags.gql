@@ -131,6 +131,7 @@ fragment PagesParts on Pages {
         type
         fillStyles
         accentColor
+        borderStyles
         padding
         labelStyles
         headlineStyles
