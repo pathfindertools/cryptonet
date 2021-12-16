@@ -6,7 +6,6 @@ blocks:
       flipLayout: false
       textAlignment: left
       contentAlignment: center
-      fillStyles: bg-black
       labelStyles: text-white text-xl mb-0 font-bold
       headlineStyles: text-gray-light text-7xl mb-10 undefined
       subheadStyles: text-primary text-3xl mb-0 undefined
@@ -429,7 +428,7 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638473289/bg-filecoin-NAS_qo3y6w.png
       imageStyle: overlap
-      fit: object-contain
+      fit: contain
       position: object-center
     label: ''
     headline: Referral Program

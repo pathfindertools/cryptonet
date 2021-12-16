@@ -91,7 +91,7 @@ export default function FillControl({ field, input, meta }) {
   function getFillType(value: string) {
     if (value.includes("to-")) {
       return "gradient";
-    } else if (value.includes(" bg-")) {
+    } else if (value.includes("bg-")) {
       return "solid";
     }
     return "transparent";
