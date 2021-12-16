@@ -281,12 +281,10 @@ blocks:
             http://res.cloudinary.com/protocolai/image/upload/v1639504406/gigaom-triangle_xz3ssp.png
         headline: ''
         subhead: ''
-        text: >-
+        text: |-
           **The GigaOm Sonar for Decentralized Storage Report**
 
-
-          Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-          lorem lorem lorem lorem lorem lorem lorem.
+          An Emerging Technology Insight write up assessment.
         link: /
         buttonLabel: Download full report
     navigationLabel: ''
