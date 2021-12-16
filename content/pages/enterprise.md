@@ -204,7 +204,9 @@ blocks:
       buttonType: solid
     label: ''
     headline: Pricing
-    subhead: Significantly cheaper than cloud based storage
+    subhead: >-
+      Decentralized storage costs a fraction of what traditional public clouds
+      charge. Compare the difference.
     body: ''
     items:
       - headline: Filecoin Plus
