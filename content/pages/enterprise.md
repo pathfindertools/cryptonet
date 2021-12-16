@@ -47,7 +47,7 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638393093/iconic-network-graph_e5oqc1.png
       imageStyle: overlap
-      fit: object-contain
+      fit: contain
       position: object-center
     label: ''
     headline: >-
@@ -89,6 +89,7 @@ blocks:
       type: solid
       fillStyles: from-primary to-accent1 bg-gradient-to-tl
       accentColor: primary
+      padding: p-6
       labelStyles: text-white undefined mb-0 undefined
       headlineStyles: text-white text-5xl mb-3 undefined
       subheadStyles: text-white text-lg mb-0 undefined
@@ -307,6 +308,7 @@ blocks:
       type: transparent
       imageStyles: h-28 object-contain object-left mb-3
       accentColor: primary
+      padding: p-0
       labelStyles: text-white text-lg mb-0 undefined
       headlineStyles: text-white text-5xl mb-0 undefined
       subheadStyles: text-white text-4xl mb-0 undefined
@@ -393,16 +395,18 @@ blocks:
       contentOrder: labelHeadingsContent
     image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1638473001/logo-internet-archive_hxjwcm.png
-      imageStyle: padding
-      fit: none
+        http://res.cloudinary.com/protocolai/image/upload/v1639621076/filrep_rslvxi.png
+      imageStyle: half
+      fit: contain
+      position: object-center
     label: ''
     headline: Storage Providers
     subhead: ''
     body: >-
       There are thousands of storage providers forming a transparent, global
-      marketplace.  
-        
+      marketplace.
+
+
       Clients can choose providers that fit their specific needs.
     buttons:
       - label: Explore Providers

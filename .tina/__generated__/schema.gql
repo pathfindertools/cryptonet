@@ -199,6 +199,7 @@ type PagesBlocksPhotoCardsCardStyle {
   imageStyles: String
   fillStyles: String
   accentColor: String
+  padding: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
@@ -258,6 +259,7 @@ type PagesBlocksTextCardsCardStyle {
   type: String
   fillStyles: String
   accentColor: String
+  padding: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
@@ -496,6 +498,7 @@ input PagesBlocksPhotoCardsCardStyleMutation {
   imageStyles: String
   fillStyles: String
   accentColor: String
+  padding: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
@@ -555,6 +558,7 @@ input PagesBlocksTextCardsCardStyleMutation {
   type: String
   fillStyles: String
   accentColor: String
+  padding: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String

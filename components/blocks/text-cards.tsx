@@ -10,9 +10,13 @@ const TextCard = ({ data, cardstyle }) => {
     solid: `${cardstyle?.fillStyles}`,
     transparent: `${cardstyle?.fillStyles} opacity-70`,
   }
+  const borderClasses = {
+    border: `${cardstyle?.fillStyles}`,
+    transparent: `${cardstyle?.fillStyles} opacity-70`,
+  }
 
   return (
-    <div className={`relative text-left p-8 mb-6 md:mb-0 border-box ${wrapClasses()}`}>
+    <div className={`relative text-left mb-6 md:mb-0 border-box ${cardstyle?.padding} ${wrapClasses()}`}>
       <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`}></div>
       {data.headline && (
         <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>

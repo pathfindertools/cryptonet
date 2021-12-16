@@ -102,6 +102,7 @@ fragment PagesParts on Pages {
         imageStyles
         fillStyles
         accentColor
+        padding
         labelStyles
         headlineStyles
         subheadStyles
@@ -155,6 +156,7 @@ fragment PagesParts on Pages {
         type
         fillStyles
         accentColor
+        padding
         labelStyles
         headlineStyles
         subheadStyles

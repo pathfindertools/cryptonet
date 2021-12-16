@@ -2591,6 +2591,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "padding"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "labelStyles"
           },
           "arguments": [],
@@ -3264,6 +3279,21 @@
           "name": {
             "kind": "Name",
             "value": "accentColor"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "padding"
           },
           "arguments": [],
           "type": {
@@ -6153,6 +6183,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "padding"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "labelStyles"
           },
           "type": {
@@ -6774,6 +6818,20 @@
           "name": {
             "kind": "Name",
             "value": "accentColor"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "padding"
           },
           "type": {
             "kind": "NamedType",
