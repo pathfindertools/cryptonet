@@ -496,7 +496,7 @@ blocks:
       members who bring large datasets onto the Filecoin network. Invite a
       customer today.
     buttons:
-      - label: Learn More
+      - label: Learn more
         link: >-
           https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/
         type: solid
