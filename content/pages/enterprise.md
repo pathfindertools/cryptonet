@@ -463,7 +463,7 @@ blocks:
 
       Clients can choose providers that fit their specific needs.
     buttons:
-      - label: Explore Providers
+      - label: Explore providers
         link: 'https://filrep.io/'
         type: solid
         buttonFillStyles: bg-white
