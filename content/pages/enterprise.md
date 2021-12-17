@@ -206,7 +206,7 @@ blocks:
     headline: Pricing
     subhead: >-
       Decentralized storage costs a fraction of what traditional public clouds
-      charge. Compare the difference.
+      charge.
     body: ''
     items:
       - headline: Filecoin Plus
