@@ -27,7 +27,7 @@ blocks:
       [Filecoin](https://filecoin.io/) is an open Web3 alternative to cloud
       storage, with better interoperability and larger capacity at a lower cost.
     buttons:
-      - label: Get Started
+      - label: Get started
         link: 'https://protocollabs.typeform.com/leadgen'
         type: solid
         buttonFillStyles: bg-white
@@ -336,7 +336,7 @@ blocks:
           **Estuary** is open-source software allowing simple sending of public
           data to the Filecoin network to be retrieved from anywhere
         link: 'https://estuary.tech/'
-        buttonLabel: Learn More
+        buttonLabel: Learn more
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1638471099/textile-logo-symbol-unofficial_vuwdqf.png
@@ -346,7 +346,7 @@ blocks:
           **Textile’s Filecoin Auctions** are an open deal marketplace where
           storage providers bid on storage requests in real-time.
         link: 'https://www.textile.io/'
-        buttonLabel: Learn More
+        buttonLabel: Learn more
     navigationLabel: Tools
     _template: photoCards
   - style:
