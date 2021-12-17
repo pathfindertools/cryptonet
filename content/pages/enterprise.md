@@ -553,13 +553,13 @@ blocks:
         text: |-
           [Research](#)
 
-          [Blog](#)
+          [Blog](https://filecoin.io/blog/)
 
-          [Github](#)
+          [Github](https://github.com/filecoin-project)
 
-          [ProtoSchool](#)  
+          [ProtoSchool](https://proto.school/course/filecoin)
 
-          [Security](#)
+          [Security](https://security.filecoin.io/)
     _template: textCards
 meta:
   siteTitle: Filecoin for Large Datasets test
