@@ -539,15 +539,15 @@ blocks:
       - headline: ''
         subhead: Reach Out
         text: |-
-          [Slack](#)
+          [Slack](https://filecoin.io/slack)
 
-          [WeChat](#)
+          [WeChat](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF)
 
-          [Twitter](#)
+          [Twitter](https://twitter.com/Filecoin)
 
-          [Forum](#)
+          [Forum](https://github.com/filecoin-project/community#forums)
 
-          [Matrix](#)
+          [Matrix](https://riot.im/app/#/group/+filecoin:matrix.org)
       - headline: ''
         subhead: Resources
         text: |-
