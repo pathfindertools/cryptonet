@@ -1,31 +1,48 @@
 ---
 draft: true
 blocks:
-  - label: ''
+  - style:
+      flipLayout: false
+      textAlignment: left
+      contentAlignment: center
+      fillStyles: bg-white
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
+      contentOrder: labelHeadingsContent
+    label: ''
     headline: Quickly create modern websites with a visual editor
     subhead: ''
     body: >-
       MicroGen is a Next.js  starter template for quickly creating sites that
-      can be customized and styled with Tina CMS.
+      can be customized and styled with Tina CMS. 'wow.
     buttons:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
         type: solid
         textColor: white
         backgroundColor: gray
-    style:
-      flipLayout: false
-      imageStyle: overlap
+    _template: feature
+  - style:
+      columns: '2'
       textAlignment: left
-      contentAlignment: center
-      contentOrder: labelHeadingsContent
-      fillStyles: bg-white
+      fillStyles: bg-gray-light
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
       textStyles: text-black text-lg mb-0 font-bold
-    _template: feature
-  - label: ''
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      fillStyles: bg-white
+      accentColor: primary
+      labelStyles: text-black text-sm mb-0
+      headlineStyles: text-black text-lg mb-0
+      subheadStyles: text-black text-lg mb-0
+      textStyles: text-black text-md mb-0
+      buttonType: solid
+    label: ''
     headline: Features
     subhead: ''
     body: ''
@@ -48,24 +65,6 @@ blocks:
       - headline: Git Based
         subhead: ''
         text: Version controlled content and design.
-    style:
-      columns: '2'
-      textAlignment: left
-      contentOrder: labelHeadingsContent
-      fillStyles: bg-gray-light
-      labelStyles: text-black text-xl mb-0 font-bold
-      headlineStyles: text-black text-7xl mb-0 font-bold
-      subheadStyles: text-black text-3xl mb-0 font-bold
-      textStyles: text-black text-lg mb-0 font-bold
-    cardStyle:
-      type: solid
-      fillStyles: bg-white
-      accentColor: primary
-      buttonType: solid
-      labelStyles: text-black text-sm mb-0
-      headlineStyles: text-black text-lg mb-0
-      subheadStyles: text-black text-lg mb-0
-      textStyles: text-black text-md mb-0
     _template: textCards
   - label: ''
     headline: Learn More
@@ -79,15 +78,33 @@ blocks:
         backgroundColor: white
     style:
       textAlignment: center
-      contentOrder: labelHeadingsContent
       width: narrow
       fillStyles: bg-gray
       labelStyles: text-black text-xl mb-0 font-bold
       headlineStyles: text-black text-7xl mb-0 font-bold
       subheadStyles: text-black text-3xl mb-0 font-bold
       textStyles: text-black text-lg mb-0 font-bold
+      contentOrder: labelHeadingsContent
     _template: banner
-  - label: ''
+  - style:
+      columns: '3'
+      textAlignment: left
+      fillStyles: bg-white
+      labelStyles: text-black text-xl mb-0 font-bold
+      headlineStyles: text-black text-7xl mb-0 font-bold
+      subheadStyles: text-black text-3xl mb-0 font-bold
+      textStyles: text-black text-lg mb-0 font-bold
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      type: solid
+      accentColor: white
+      labelStyles: text-white text-sm mb-0
+      headlineStyles: text-white text-2xl mb-0
+      subheadStyles: text-white text-lg mb-0
+      textStyles: text-white text-md mb-0
+      buttonType: outline
+      buttonTextColor: white
+    label: ''
     headline: Built with Microgen
     subhead: ''
     body: ''
@@ -112,25 +129,6 @@ blocks:
           filler text.
         link: 'https://hackathons.filecoin.io/asia-hackathon-season/'
         buttonLabel: Visit Site
-    style:
-      columns: '3'
-      textAlignment: left
-      contentOrder: labelHeadingsContent
-      fillStyles: bg-white
-      labelStyles: text-black text-xl mb-0 font-bold
-      headlineStyles: text-black text-7xl mb-0 font-bold
-      subheadStyles: text-black text-3xl mb-0 font-bold
-      textStyles: text-black text-lg mb-0 font-bold
-    cardStyle:
-      type: solid
-      backgroundColor: gray
-      accentColor: white
-      buttonType: outline
-      buttonTextColor: white
-      labelStyles: text-white text-sm mb-0
-      headlineStyles: text-white text-2xl mb-0
-      subheadStyles: text-white text-lg mb-0
-      textStyles: text-white text-md mb-0
     _template: photoCards
 meta:
   siteTitle: Hackathons
