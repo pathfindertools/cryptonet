@@ -557,7 +557,7 @@ blocks:
 
           [ProtoSchool](https://proto.school/course/filecoin)
 
-          [Security](https://security.filecoin.io/)
+          [Security](https://research.protocol.ai/)
     _template: textCards
 meta:
   siteTitle: Filecoin for Large Datasets test
