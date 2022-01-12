@@ -541,8 +541,6 @@ blocks:
         text: |-
           [Slack](https://filecoin.io/slack)
 
-          [WeChat](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF)
-
           [Twitter](https://twitter.com/Filecoin)
 
           [Forum](https://github.com/filecoin-project/community#forums)
