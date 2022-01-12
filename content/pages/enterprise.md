@@ -293,7 +293,7 @@ blocks:
           An Emerging Technology Insight write up assessment.
         link: >-
           https://gigaom.com/reprint/gigaom-sonar-for-decentralized-storage-protocol-io/
-        buttonLabel: Download full report
+        buttonLabel: Read full report
     navigationLabel: ''
     _template: photoCards
   - style:
