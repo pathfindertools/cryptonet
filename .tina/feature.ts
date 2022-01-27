@@ -65,6 +65,14 @@ export const featureBlockSchema: TinaTemplate = {
           options: vAlignOptions,
         },
         {
+          label: "Padding",
+          name: "padding",
+          type: "string",
+          ui: {
+            component: "paddingControl",
+          }
+        },
+        {
           type: "string",
           label: "Background",
           name: "fillStyles",

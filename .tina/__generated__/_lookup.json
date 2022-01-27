@@ -13,16 +13,12 @@
   },
   "DocumentNode": {
     "type": "DocumentNode",
-    "resolveType": "multiCollectionDocument",
-    "createDocument": "create",
-    "updateDocument": "update"
+    "resolveType": "multiCollectionDocument"
   },
   "GlobalDocument": {
     "type": "GlobalDocument",
     "resolveType": "collectionDocument",
-    "collection": "global",
-    "createGlobalDocument": "create",
-    "updateGlobalDocument": "update"
+    "collection": "global"
   },
   "GlobalConnection": {
     "type": "GlobalConnection",
@@ -42,9 +38,7 @@
   "PagesDocument": {
     "type": "PagesDocument",
     "resolveType": "collectionDocument",
-    "collection": "pages",
-    "createPagesDocument": "create",
-    "updatePagesDocument": "update"
+    "collection": "pages"
   },
   "PagesConnection": {
     "type": "PagesConnection",

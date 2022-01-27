@@ -41,11 +41,11 @@ export const Header = (props: Pages) => {
     black: 'bg-black',
   }
 
-  const sectionClasses = navOpen ? "h-screen md:h-auto" : "overflow-hidden";
+  const sectionClasses = navOpen ? "sm:h-screen" : "overflow-hidden";
   const navClasses = navOpen ? "opacity-100 m-0" : "opacity-0 mt-4";
   const backgroundClasses = navOpen ? "opacity-100" : "opacity-0";
   
-  const navAlignmentClasses = props.nav?.navAlignment === "left" ? "md:text-left" : "md:text-right";
+  const navAlignmentClasses = props.nav?.navAlignment === "left" ? "text-left" : "text-right sm:text-left";
   const navStyles = { 
     transition: "opacity .4s, margin .3s",
   }
@@ -63,24 +63,24 @@ export const Header = (props: Pages) => {
   return (
     <section className="relative">
       <div className={`${sectionClasses} absolute z-40 top-0 left-0 right-0`}>
-      <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.nav?.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 md:hidden`}></div>
-      <div className="max-w-screen-lg md:py-0 md:px-12 mx-auto">
-          <div className="absolute top-0 p-4 right-0 md:hidden" onClick={() => setNavOpen(!navOpen)}>
+      <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.nav?.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 hidden sm:block`}></div>
+      <div className="max-w-screen-lg py-0 px-12 sm:mx-auto">
+          <div className="absolute top-0 p-4 right-0 hidden sm:block" onClick={() => setNavOpen(!navOpen)}>
             <Burger color="white" isOpen={navOpen}  />
           </div>
-          <ul style={navStyles} className={`${navClasses} ${textColors[props.nav?.navTextColor]} ${navAlignmentClasses} block list-none mt-6 md:mt-2 md:opacity-100`}>
+          <ul style={navStyles} className={`${navClasses} ${textColors[props.nav?.navTextColor]} ${navAlignmentClasses} block list-none sm:mt-6 mt-2 opacity-100`}>
             {navList(props.blocks)?.map(function (item, index) {
               return (
-                <li className="md:inline-block md:ml-10 first:ml-0" key={index}>
-                  <div className={`${backgroundColors[props.nav?.navTextColor]} h-px opacity-25 md:hidden`} />
+                <li className="inline-block sm:block ml-10 first:ml-0" key={index}>
+                  <div className={`${backgroundColors[props.nav?.navTextColor]} h-px opacity-25 hidden sm:block`} />
                   <a style={linkStyles} className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={() => setNavOpen(!navOpen)}>{item}</a>
                 </li>
               )
             })}
             {props?.nav?.navItems && props.nav.navItems.map(function (item, index) {
               return (
-                <li className="md:inline-block md:ml-10 first:ml-0" key={index}>
-                  <div className={`${backgroundColors[props.nav?.navTextColor]} h-px opacity-25 md:hidden`} />
+                <li className="inline-block sm:block ml-10 first:ml-0 sm:ml-0" key={index}>
+                  <div className={`${backgroundColors[props.nav?.navTextColor]} h-px opacity-25 hidden sm:block`} />
                   <a style={linkStyles} className={"block no-underline"} href={item.link} target={linkTarget(item.link)} onClick={() => setNavOpen(!navOpen)}>{item.label}</a>
                 </li>
               )

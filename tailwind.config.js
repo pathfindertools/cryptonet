@@ -30,12 +30,11 @@ module.exports = {
       "gray-dark": "var(--gray-dark-color)",
     },
     screens: {
-      sm: "600px",
-      md: "900px",
-      lg: "1200px",
-      xl: "1500px",
-      "2xl": "1800px",
-    },
+			xl: { max: "1279px" },
+			lg: { max: "1023px" },
+			md: { max: "767px" },
+			sm: { max: "900px" },
+		},
     fontSize: {
       xs: ['.75rem', { lineHeight: '1.25rem' }], // 12/20
       sm: ['.875rem', { lineHeight: '1.5rem' }], // 14/24

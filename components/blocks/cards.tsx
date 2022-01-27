@@ -2,7 +2,7 @@ import Markdown from "react-markdown";
 import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
-const PhotoCard = ({ data, cardstyle }) => {
+const Card = ({ data, cardstyle }) => {
   const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
   const backgroundClasses = {
     solid: `${cardstyle?.fillStyles}`,
@@ -11,7 +11,7 @@ const PhotoCard = ({ data, cardstyle }) => {
   }
 
   return (
-    <div className="flex flex-col relative mb-6 md:mb-0">
+    <div className="flex flex-col relative sm:mb-6">
       <div>
         {data.image && (
           <img
@@ -26,7 +26,7 @@ const PhotoCard = ({ data, cardstyle }) => {
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
-          <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
+          <h3 className={cardstyle?.headlineStyles}>{data.headline} Photo</h3>
         )}
         {data.subhead && (
           <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
@@ -53,12 +53,12 @@ const PhotoCard = ({ data, cardstyle }) => {
   );
 };
 
-export const PhotoCards = ({ data }) => {
+export const Cards = ({ data }) => {
   return (
     <CardGrid data={data} children={(
       data.items &&
         data.items.map(function (block, i) {
-          return <PhotoCard key={i} data={block} cardstyle={data.cardStyle} />;
+          return <Card key={i} data={block} cardstyle={data.cardStyle} />;
         })
     )}/>
   );

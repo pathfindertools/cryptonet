@@ -41,6 +41,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
+                  buttonFillStyles
                 }
                 items {
                   image {
@@ -56,14 +57,19 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
+                  textAlignment
+                  padding
+                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
+                  contentOrder
+                  contentWidth
                 }
                 cardStyle {
                   type
+                  padding
                   buttonType
                   imageStyles
                   labelStyles
@@ -73,6 +79,7 @@ export const getStaticProps = async ({ params }) => {
                   fillStyles
                   accentColor
                   buttonTextColor
+                  buttonFillStyles
                 }
                 navigationLabel
               }
@@ -91,6 +98,7 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
+                  buttonFillStyles
                 }
                 items {
                   headline
@@ -103,14 +111,20 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
+                  textAlignment
+                  padding
+                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
+                  contentOrder
+                  contentWidth
                 }
                 cardStyle {
                   type
+                  padding
+                  borderStyles
                   buttonType
                   labelStyles
                   headlineStyles
@@ -144,9 +158,11 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
+                  buttonFillStyles
                 }
                 style {
                   minHeight
+                  padding
                   flipLayout
                   labelStyles
                   headlineStyles
@@ -178,10 +194,12 @@ export const getStaticProps = async ({ params }) => {
                   link
                   textColor
                   backgroundColor
+                  buttonFillStyles
                 }
                 style {
                   minHeight
                   width
+                  padding
                   labelStyles
                   headlineStyles
                   subheadStyles
@@ -203,6 +221,7 @@ export const getStaticProps = async ({ params }) => {
                 link
                 label
               }
+              navAlignment
               navTextColor
               navBackgroundColor
             }

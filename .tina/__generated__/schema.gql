@@ -32,8 +32,6 @@ interface Node {
 interface Document {
   sys: SystemInfo
   id: ID!
-  form: JSON!
-  values: JSON!
 }
 
 """A relay-compliant pagination connection"""
@@ -47,7 +45,6 @@ type Query {
   node(id: String): Node!
   getDocument(collection: String, relativePath: String): DocumentNode!
   getDocumentList(before: String, after: String, first: Int, last: Int): DocumentConnection!
-  getDocumentFields: JSON!
   getGlobalDocument(relativePath: String): GlobalDocument!
   getGlobalList(before: String, after: String, first: Int, last: Int): GlobalConnection!
   getPagesDocument(relativePath: String): PagesDocument!
@@ -115,6 +112,7 @@ type PagesBlocksFeatureStyle {
   flipLayout: Boolean
   textAlignment: String
   contentAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -161,6 +159,7 @@ type PagesBlocksPhotoCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -230,6 +229,7 @@ type PagesBlocksTextCardsStyle {
   minHeight: String
   columns: String
   textAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -312,6 +312,7 @@ type PagesBlocksBannerStyle {
   minHeight: String
   textAlignment: String
   width: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -395,12 +396,9 @@ type PagesConnection implements Connection {
 
 type Mutation {
   addPendingDocument(collection: String!, relativePath: String!, template: String): DocumentNode!
-  updateDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
-  createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  updateDocument(collection: String!, relativePath: String!, params: DocumentMutation!): DocumentNode!
   updateGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
-  createGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
   updatePagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
-  createPagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
 }
 
 input DocumentMutation {
@@ -424,6 +422,7 @@ input PagesBlocksFeatureStyleMutation {
   flipLayout: Boolean
   textAlignment: String
   contentAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -470,6 +469,7 @@ input PagesBlocksPhotoCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -539,6 +539,7 @@ input PagesBlocksTextCardsStyleMutation {
   minHeight: String
   columns: String
   textAlignment: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String
@@ -621,6 +622,7 @@ input PagesBlocksBannerStyleMutation {
   minHeight: String
   textAlignment: String
   width: String
+  padding: String
   fillStyles: String
   labelStyles: String
   headlineStyles: String

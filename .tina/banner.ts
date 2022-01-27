@@ -139,6 +139,14 @@ export const bannerBlockSchema: TinaTemplate = {
           ],
         },
         {
+          label: "Padding",
+          name: "padding",
+          type: "string",
+          ui: {
+            component: "paddingControl",
+          }
+        },
+        {
           type: "string",
           label: "Background",
           name: "fillStyles",
