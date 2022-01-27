@@ -22,7 +22,7 @@
   font-weight: 700;
   src: url('/fonts/SuisseIntl-BoldItalic-WebM.woff') format('woff');
 }
-* {
+body {
   font-family: 'Suisse Intl', Helvetica, sans-serif;
 }
 
