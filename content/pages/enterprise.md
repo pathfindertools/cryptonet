@@ -2,19 +2,21 @@
 draft: true
 blocks:
   - style:
-      minHeight: '800'
+      minHeight: '0'
       flipLayout: false
       textAlignment: left
       contentAlignment: center
+      padding: pt-10 pb-10 pr-10 pl-10
       labelStyles: text-white text-xl mb-0 font-bold
       headlineStyles: text-gray-light text-7xl mb-10 undefined
       subheadStyles: text-primary text-3xl mb-0 undefined
       textStyles: text-white text-lg mb-24 undefined
       contentOrder: labelHeadingsContent
     image:
-      src: ''
-      imageStyle: overlap
-      fit: object-contain
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1638393093/iconic-network-graph_e5oqc1.png
+      imageStyle: padding
+      fit: cover
       position: object-center
     backgroundImage:
       src: >-
@@ -35,10 +37,11 @@ blocks:
         backgroundColor: white
     _template: feature
   - style:
-      minHeight: '600'
+      minHeight: ''
       flipLayout: false
       textAlignment: left
       contentAlignment: center
+      padding: pt-0 undefined undefined undefined
       fillStyles: bg-black
       labelStyles: text-gray-light text-7xl mb-0 undefined
       headlineStyles: text-gray-dark text-4xl mb-0 undefined
@@ -62,6 +65,7 @@ blocks:
       minHeight: '550'
       columns: '4'
       textAlignment: left
+      padding: pt-0 undefined undefined undefined
       fillStyles: bg-black
       labelStyles: text-white text-lg mb-0 undefined
       headlineStyles: text-white text-5xl mb-0 undefined
@@ -73,7 +77,8 @@ blocks:
       type: solid
       fillStyles: from-primary to-accent1 bg-gradient-to-tl
       accentColor: primary
-      padding: p-6
+      borderStyles: border-accent3 border-l-4
+      padding: pt-5 pb-36 pr-1.5 pl-7
       labelStyles: text-white undefined mb-0 undefined
       headlineStyles: text-white text-5xl mb-3 undefined
       subheadStyles: text-white text-lg mb-0 undefined
@@ -195,8 +200,8 @@ blocks:
     cardStyle:
       type: solid
       accentColor: primary
-      borderStyles: border-primary border-3
-      padding: p-6
+      borderStyles: border-gray-light undefined6
+      padding: pt-3 pb-px pr-px pl-px
       labelStyles: text-black text-lg mb-0 undefined
       headlineStyles: text-black text-lg mb-3 font-bold
       subheadStyles: text-primary text-6xl mb-0 font-bold

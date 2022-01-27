@@ -11,11 +11,11 @@ export const Banner = ({ data }) => {
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}
     >
-      <div className="max-w-screen-lg md:p-12 p-6 mx-auto">
-        <div className={`mx-auto ${data.style?.width === "narrow" ? "md:w-2/3" : "w-full"}`}>
+      <div className={`max-w-screen-lg mx-auto ${data?.style?.padding}`}>
+        <div className={`mx-auto ${data.style?.width === "narrow" ? "w-2/3 sm:w-full" : "w-full"}`}>
           {data.image && (
             <img
-              className=" md:mt-12 mt-6"
+              className="mt-12 sm:mt-6"
               alt={data.image.alt}
               src={data.image.src}
             />

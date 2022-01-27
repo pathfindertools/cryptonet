@@ -29,14 +29,14 @@ export const Layout = ({
   return (
     <>
       <Head>
-        <title>{themeData.meta.siteTitle}</title>
+        <title>{themeData?.meta?.siteTitle}</title>
         <meta name="author" content="Protocol Labs"></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:site_name" content={data.siteUrl} />
-        <meta property="og:title" content={themeData.meta.siteTitle} />
-        <meta property="og:description" content={themeData.meta.siteDescription} />
-        <meta property="og:image" content={themeData.meta.siteImageSrc} />        
+        <meta property="og:site_name" content={data?.siteUrl} />
+        <meta property="og:title" content={themeData?.meta?.siteTitle} />
+        <meta property="og:description" content={themeData?.meta?.siteDescription} />
+        <meta property="og:image" content={themeData?.meta?.siteImageSrc} />        
         <style
           id="customProperties"
           dangerouslySetInnerHTML={{

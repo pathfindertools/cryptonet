@@ -57,11 +57,14 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
+                  textAlignment
+                  padding
+                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
+                  contentOrder
                   contentWidth
                 }
                 cardStyle {
@@ -108,11 +111,14 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   columns
+                  textAlignment
+                  padding
+                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
+                  contentOrder
                   contentWidth
                 }
                 cardStyle {
@@ -156,6 +162,7 @@ export const getStaticProps = async ({ params }) => {
                 }
                 style {
                   minHeight
+                  padding
                   flipLayout
                   labelStyles
                   headlineStyles
@@ -192,6 +199,7 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   width
+                  padding
                   labelStyles
                   headlineStyles
                   subheadStyles

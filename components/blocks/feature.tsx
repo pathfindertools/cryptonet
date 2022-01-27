@@ -2,6 +2,16 @@ import * as React from "react";
 import { Section } from "../section";
 import { Content } from "../content";
 
+/* Return the string with any word containing the substring removed */
+const removeSubstring = (value: string, substring: string) => {
+  return value.split(" ").filter(item => item.indexOf(substring) === -1).join(" ")
+}
+/* Return a the first word with containing the substring */
+const getSubstring = (value: string, substring: string) => {
+  const match = value.split(" ").find(item => item.includes(substring))
+  return match
+}
+
 const splitCss = (data) => {
   const contentAlignments = {
     top: "",
@@ -9,8 +19,8 @@ const splitCss = (data) => {
     bottom: "items-end",
   };
   const contentAlignment = contentAlignments[data.style?.contentAlignment]
-  const direction = data.style?.flipLayout ? "flex-row" : "flex-row-reverse"
-  return `sm:flex ${direction} ${contentAlignment}`
+  const direction = data.style?.flipLayout ? "flex-row sm:flex-col" : "flex-row-reverse sm:flex-col"
+  return `flex ${direction} ${contentAlignment}`
 }
 
 const splitStyle = (data) => {
@@ -20,8 +30,26 @@ const splitStyle = (data) => {
 };
 
 const contentContainerCss = (data) => {
-  const margin = data.style?.flipLayout ? "md:mr-auto md:pr-12 md:pl-10 px-6" : "md:ml-auto md:pl-12 md:pr-10 px-6"
-  return `md:max-w-screen-lg-half md:py-12 py-0 ${margin}`
+  const margin = data.style?.flipLayout ? "mr-auto" : "ml-auto"
+  const padding = data.style?.padding
+  return `max-w-screen-lg-half sm:w-full ${margin} ${padding}`
+}
+
+const imageContainerCss = (data) => {
+  const isFlipped = data.style?.flipLayout
+  const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"
+  const padding = data.style?.padding || ""
+  const hasMobileClasses = getSubstring(padding, "sm:") ? true : false;
+  const removedEdgeClass = getSubstring(padding, isFlipped ? "pr" : "pl")
+  const mobilePadding = hasMobileClasses ? 'sm:pb-0' : `sm:${removedEdgeClass} sm:pb-0`
+  const imagePadding = removeSubstring(removeSubstring(data.style?.padding || "", removedEdgeClass), "sm:pb");  
+  const styles = {
+    padding: `image-container max-w-screen-lg-half ${heightStyle} ${imagePadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
+    half: `${heightStyle} max-w-screen-lg-half ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
+    halfEdge: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? 'right-4' : 'left-4'}`,
+    overlap: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? '-right-24' : '-left-24'}`,
+  };
+  return styles[data.image?.imageStyle]
 }
 
 const imageColumnCss = (data) => {
@@ -41,16 +69,6 @@ const imageColumnCss = (data) => {
     overlap: "self-stretch",
   }
   return `${getAlignV()} ${styles[data.image?.imageStyle]}`
-}
-const imageContainerCss = (data) => {
-  const heightStyle = data.image?.fit === "none" ? "" : "md:h-full"
-  const styles = {
-    padding: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6 py-12` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10 py-12`,
-    half: data.style?.flipLayout ? `${heightStyle} max-w-screen-lg-half ml-auto md:pl-12 md:pr-10 px-6` : `${heightStyle} max-w-screen-lg-half mr-auto pr-12 pl-10`,
-    halfEdge: data.style?.flipLayout ? `md:absolute md:inset-0 md:right-4` : `md:absolute md:inset-0 md:left-4`,
-    overlap: data.style?.flipLayout ? `md:absolute md:inset-0 md:-right-24` : `md:absolute md:inset-0 md:-left-24`,
-  };
-  return styles[data.image?.imageStyle]
 }
 
 const imageCss = (data) => {

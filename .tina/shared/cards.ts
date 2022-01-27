@@ -39,6 +39,14 @@ export const cardsSchema: TinaField = {
       options: hAlignOptions,
     },
     {
+      label: "Padding",
+      name: "padding",
+      type: "string",
+      ui: {
+        component: "paddingControl",
+      }
+    },
+    {
       type: "string",
       label: "Background",
       name: "fillStyles",
