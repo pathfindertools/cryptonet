@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SelectMenu from './SelectMenu';
 import ToggleButton from './ToggleButton';
-import IconFontSize from './icons/IconFontSize';
 import IconMargin from './icons/IconMargin';
 import ColorPicker from './ColorPicker';
 
@@ -19,6 +18,12 @@ export default function TypeControl({ field, input, meta }) {
     { label: "Black", value: "text-black"},
   ]
   const [color, setColor] = useState(getStyleMatch(colors, input.value));
+  const fonts = [
+    { label: "sans", value: "font-sans" },
+    { label: "serif", value: "font-serif" },
+    { label: "mono", value: "font-mono" },
+  ]
+  const [font, setFont] = useState(getStyleMatch(fonts, input.value));
   const sizes = [
     { label: "XS", value: "text-xs" },
     { label: "SM", value: "text-sm" },
@@ -36,27 +41,27 @@ export default function TypeControl({ field, input, meta }) {
   const [size, setSize] = useState(getStyleMatch(sizes, input.value));
   const margins = [
     { label: "0", value: "mb-0" },
-    { label: "1px", value: "mb-px" },
-    { label: "2px", value: "mb-0.5" },
-    { label: "4px", value: "mb-1" },
-    { label: "6px", value: "mb-1.5" },
-    { label: "8px", value: "mb-2" },
-    { label: "10px", value: "mb-2.5" },
-    { label: "12px", value: "mb-3" },
-    { label: "14px", value: "mb-3.5" },
-    { label: "16px", value: "mb-4" },
-    { label: "20px", value: "mb-5" },
-    { label: "24px", value: "mb-6" },
-    { label: "28px", value: "mb-7" },
-    { label: "32px", value: "mb-8" },
-    { label: "36px", value: "mb-9" },
-    { label: "40px", value: "mb-10" },
-    { label: "44px", value: "mb-11" },
-    { label: "48px", value: "mb-12" },
-    { label: "56px", value: "mb-14" },
-    { label: "64px", value: "mb-16" },
-    { label: "80px", value: "mb-20" },
-    { label: "96px", value: "mb-24" },
+    { label: "1", value: "mb-px" },
+    { label: "2", value: "mb-0.5" },
+    { label: "4", value: "mb-1" },
+    { label: "6", value: "mb-1.5" },
+    { label: "8", value: "mb-2" },
+    { label: "10", value: "mb-2.5" },
+    { label: "12", value: "mb-3" },
+    { label: "14", value: "mb-3.5" },
+    { label: "16", value: "mb-4" },
+    { label: "20", value: "mb-5" },
+    { label: "24", value: "mb-6" },
+    { label: "28", value: "mb-7" },
+    { label: "32", value: "mb-8" },
+    { label: "36", value: "mb-9" },
+    { label: "40", value: "mb-10" },
+    { label: "44", value: "mb-11" },
+    { label: "48", value: "mb-12" },
+    { label: "56", value: "mb-14" },
+    { label: "64", value: "mb-16" },
+    { label: "80", value: "mb-20" },
+    { label: "96", value: "mb-24" },
   ]
   const [margin, setMargin] = useState(getStyleMatch(margins, input.value));
   const weights = [
@@ -69,11 +74,11 @@ export default function TypeControl({ field, input, meta }) {
     // Update Hidden Field
     const input = inputRef.current;
     const lastValue = input.value;
-    const newValue = `${color} ${size} ${margin} ${weight}`;
+    const newValue = `${color} ${font} ${size} ${margin} ${weight}`;
     input.value = newValue;
     (input as any)._valueTracker?.setValue(lastValue);
     input.dispatchEvent(new Event("input", {bubbles: true}));
-  }, [color, size, margin, weight, inputRef.current]);
+  }, [color, font, size, margin, weight, inputRef.current]);
 
   // See if one of groups arrays styles is present in the fields value
   function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
@@ -99,15 +104,13 @@ export default function TypeControl({ field, input, meta }) {
         }}>{field.label}</label>
       </div>
       <div className="flex mb-6 items-center">
-        <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="mr-1" />
-        <div className="w-6 pr-1">
-          <IconFontSize className="float-right" />
-        </div>
-        <SelectMenu value={size} onChange={setSize} options={sizes} className="w-14 mr-1" />
+        <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="mr-2" />
+        <SelectMenu value={font} onChange={setFont} options={fonts} className="flex-grow mr-2" />
+        <SelectMenu value={size} onChange={setSize} options={sizes} className="w-12" />
         <div className="w-6 pr-1">
           <IconMargin className="float-right" />
         </div>
-        <SelectMenu value={margin} onChange={setMargin} options={margins} className="w-14 mr-2" />
+        <SelectMenu value={margin} onChange={setMargin} options={margins} className="w-12 mr-2" />
         <ToggleButton value={weight} onClick={setWeight} options={weights} className="w-9" />
         <input ref={inputRef} type="text" {...input}  className="hidden" />
       </div>
