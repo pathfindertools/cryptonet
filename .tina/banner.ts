@@ -156,7 +156,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
-          label: "Label Style",
+          label: "Label",
           name: "labelStyles",
           ui: {
             component: "typeControl"
@@ -164,7 +164,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
-          label: "Headline Style",
+          label: "Headline",
           name: "headlineStyles",
           ui: {
             component: "typeControl"
@@ -172,7 +172,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
-          label: "Subhead Style",
+          label: "Subhead",
           name: "subheadStyles",
           ui: {
             component: "typeControl"
@@ -180,7 +180,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
-          label: "Text Style",
+          label: "Text",
           name: "textStyles",
           ui: {
             component: "typeControl"
