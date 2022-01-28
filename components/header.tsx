@@ -41,8 +41,8 @@ export const Header = (props: Pages) => {
     black: 'bg-black',
   }
 
-  const sectionClasses = navOpen ? "sm:h-screen" : "overflow-hidden";
-  const navClasses = navOpen ? "opacity-100 m-0" : "opacity-0 mt-4";
+  const sectionClasses = navOpen ? "sm:h-screen" : "sm:h-10 overflow-hidden";
+  const navClasses = navOpen ? "sm:opacity-100 m-0" : "sm:opacity-0 mt-4 sm:pointer-events-none";
   const backgroundClasses = navOpen ? "opacity-100" : "opacity-0";
   
   const navAlignmentClasses = props.nav?.navAlignment === "left" ? "text-left" : "text-right sm:text-left";
@@ -62,16 +62,16 @@ export const Header = (props: Pages) => {
 
   return (
     <section className="relative">
-      <div className={`${sectionClasses} absolute z-40 top-0 left-0 right-0`}>
-      <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.nav?.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 hidden sm:block`}></div>
-      <div className="max-w-screen-lg py-0 px-12 sm:mx-auto">
+      <div className={`${sectionClasses} sm:h-screen absolute z-40 top-0 left-0 right-0`}>
+        <div style={backgroundStyles} className={`${backgroundClasses} ${backgroundColors[props.nav?.navBackgroundColor]} transition duration-400 absolute inset-0 -z-1 hidden sm:block`}></div>
+        <div className="max-w-desktop-full px-12 mx-auto">
           <div className="absolute top-0 p-4 right-0 hidden sm:block" onClick={() => setNavOpen(!navOpen)}>
             <Burger color="white" isOpen={navOpen}  />
           </div>
-          <ul style={navStyles} className={`${navClasses} ${textColors[props.nav?.navTextColor]} ${navAlignmentClasses} block list-none sm:mt-6 mt-2 opacity-100`}>
+          <ul style={navStyles} className={`${navClasses} ${textColors[props.nav?.navTextColor]} ${navAlignmentClasses} block list-none sm:mt-16 mt-2`}>
             {navList(props.blocks)?.map(function (item, index) {
               return (
-                <li className="inline-block sm:block ml-10 first:ml-0" key={index}>
+                <li className="inline-block sm:block ml-10 first:ml-0 sm:ml-0" key={index}>
                   <div className={`${backgroundColors[props.nav?.navTextColor]} h-px opacity-25 hidden sm:block`} />
                   <a style={linkStyles} className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={() => setNavOpen(!navOpen)}>{item}</a>
                 </li>
@@ -86,7 +86,7 @@ export const Header = (props: Pages) => {
               )
             })}
           </ul>
-      </div>
+        </div>
       </div>
     </section>
   );

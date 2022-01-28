@@ -50,7 +50,6 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '5.25rem' }], // 72/84
       '8xl': ['6rem', { lineHeight: '7rem' }], // 96/112
     },
-
     borderWidth: {
       DEFAULT: "1px",
       0: "0",
@@ -68,7 +67,8 @@ module.exports = {
         15: ".15",
       },
       maxWidth: {
-        "screen-lg-half": "600px",
+        "desktop-full": "1200px",
+        "desktop-half": "600px",
       },
       spacing: {
         128: "32rem",

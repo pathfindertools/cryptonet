@@ -32,7 +32,7 @@ const splitStyle = (data) => {
 const contentContainerCss = (data) => {
   const margin = data.style?.flipLayout ? "mr-auto" : "ml-auto"
   const padding = data.style?.padding
-  return `max-w-screen-lg-half sm:w-full ${margin} ${padding}`
+  return `max-w-desktop-half sm:w-full ${margin} ${padding}`
 }
 
 const imageContainerCss = (data) => {
@@ -44,8 +44,8 @@ const imageContainerCss = (data) => {
   const mobilePadding = hasMobileClasses ? 'sm:pb-0' : `sm:${removedEdgeClass} sm:pb-0`
   const imagePadding = removeSubstring(removeSubstring(data.style?.padding || "", removedEdgeClass), "sm:pb");  
   const styles = {
-    padding: `image-container max-w-screen-lg-half ${heightStyle} ${imagePadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
-    half: `${heightStyle} max-w-screen-lg-half ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
+    padding: `image-container max-w-desktop-half ${heightStyle} ${imagePadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
+    half: `${heightStyle} max-w-desktop-half ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
     halfEdge: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? 'right-4' : 'left-4'}`,
     overlap: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? '-right-24' : '-left-24'}`,
   };
