@@ -20,7 +20,7 @@ export const CardGrid = ({ data, children }) => {
       navigationLabel={data.navigationLabel}
       minHeight={data.style?.minHeight}
     >
-      <div className={`max-w-screen-lg mx-auto ${data.style?.padding}`}>
+      <div className={`max-w-desktop-full mx-auto ${data.style?.padding}`}>
         <Content
           label = {data.label}
           headline = {data.headline}
