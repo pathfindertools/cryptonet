@@ -11,7 +11,7 @@ const Card = ({ data, cardstyle }) => {
   }
 
   return (
-    <div className="flex flex-col relative sm:mb-6">
+    <div className={`flex flex-col relative sm:mb-6 ${cardstyle?.borderStyles}`}>
       <div>
         {data.image && (
           <img
@@ -26,7 +26,7 @@ const Card = ({ data, cardstyle }) => {
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
         {data.headline && (
-          <h3 className={cardstyle?.headlineStyles}>{data.headline} Photo</h3>
+          <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
         )}
         {data.subhead && (
           <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
