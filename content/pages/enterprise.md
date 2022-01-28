@@ -6,15 +6,20 @@ blocks:
       flipLayout: false
       textAlignment: left
       contentAlignment: center
-      padding: pt-32 pb-10 pr-10 pl-10
+      padding: 'pt-40 pb-40 pr-10 pl-10 sm:pt-9 sm:pb-36 sm:pr-20 sm:pl-5'
       labelStyles: text-white font-sans text-xl mb-0 font-bold
-      headlineStyles: 'text-gray-light font-sans text-7xl mb-10 '
-      subheadStyles: 'text-primary font-sans text-3xl mb-0 '
-      textStyles: 'text-white font-sans text-lg mb-24 '
+      headlineStyles: >-
+        text-gray-light font-sans text-7xl mb-10 undefined sm:text-gray-light
+        sm:font-sans sm:text-5xl sm:mb-2 sm:
+      subheadStyles: >-
+        text-primary font-sans text-3xl mb-2.5 undefined sm:text-primary
+        sm:font-sans sm:text-xl sm:mb-2.5 sm:
+      textStyles: >-
+        text-white font-sans text-lg mb-24 undefined sm:text-white sm:font-sans
+        sm:text-lg sm:mb-12 sm:
       contentOrder: labelHeadingsContent
     image:
-      src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1638393093/iconic-network-graph_e5oqc1.png
+      src: ''
       imageStyle: padding
       fit: cover
       position: object-center
@@ -23,7 +28,7 @@ blocks:
         http://res.cloudinary.com/protocolai/image/upload/v1638382336/zep9zof4srevtnil1je0.jpg
       position: object-center
     label: ''
-    headline: Filecoin for Large Datasets
+    headline: Filecoin for large datasets
     subhead: Decentralized storage at scale
     body: >-
       [Filecoin](https://filecoin.io/) is an open Web3 alternative to cloud
@@ -41,12 +46,12 @@ blocks:
       flipLayout: false
       textAlignment: left
       contentAlignment: center
-      padding: pt-0 undefined undefined undefined
+      padding: 'pt-48 pb-48 pr-10 pl-10 sm:pt-20 sm:pb-20 sm:pr-5 sm:pl-5'
       fillStyles: bg-black
-      labelStyles: text-gray-light text-7xl mb-0 undefined
-      headlineStyles: text-gray-dark text-4xl mb-0 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black text-xl mb-0 undefined
+      labelStyles: text-gray-light undefined text-7xl mb-0 undefined
+      headlineStyles: text-gray-dark undefined text-4xl mb-0 undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-black undefined text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
     image:
       src: >-
@@ -65,24 +70,24 @@ blocks:
       minHeight: '550'
       columns: '4'
       textAlignment: left
-      padding: pt-0 undefined undefined undefined
+      padding: 'pt-0 pb-24 pr-10 pl-10 sm:pt-0 sm:pb-10 sm:pr-5 sm:pl-5'
       fillStyles: bg-black
-      labelStyles: text-white text-lg mb-0 undefined
-      headlineStyles: text-white text-5xl mb-0 undefined
-      subheadStyles: text-white undefined mb-0 undefined
-      textStyles: text-white text-xl mb-0 undefined
+      labelStyles: text-white undefined text-lg mb-0 undefined
+      headlineStyles: text-white undefined text-5xl mb-16 undefined
+      subheadStyles: text-white undefined undefined mb-0 undefined
+      textStyles: text-white undefined text-xl mb-0 undefined
       contentOrder: labelHeadingsContent
       contentWidth: w-8/12
     cardStyle:
       type: solid
       fillStyles: from-primary to-accent1 bg-gradient-to-tl
       accentColor: primary
-      borderStyles: border-accent3 border-l-4
-      padding: pt-5 pb-36 pr-1.5 pl-7
-      labelStyles: text-white undefined mb-0 undefined
-      headlineStyles: text-white text-5xl mb-3 undefined
-      subheadStyles: text-white text-lg mb-0 undefined
-      textStyles: text-white text-lg mb-0 undefined
+      borderStyles: border-accent3 undefinedundefined
+      padding: pt-5 pb-10 pr-5 pl-5
+      labelStyles: text-white undefined undefined mb-0 undefined
+      headlineStyles: text-white undefined text-5xl mb-3 undefined
+      subheadStyles: text-white undefined text-lg mb-0 undefined
+      textStyles: text-white undefined text-lg mb-0 undefined
       buttonType: solid
     label: ''
     headline: >-
@@ -107,10 +112,11 @@ blocks:
   - style:
       columns: '3'
       textAlignment: left
-      labelStyles: text-gray text-xs mb-0 undefined
-      headlineStyles: text-black text-5xl mb-7 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black text-lg mb-0 undefined
+      padding: 'pt-16 pb-16 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      labelStyles: text-gray undefined text-xs mb-0 undefined
+      headlineStyles: text-black undefined text-5xl mb-16 undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-black undefined text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
       contentWidth: w-8/12
     cardStyle:
@@ -191,21 +197,22 @@ blocks:
   - style:
       columns: '3'
       textAlignment: left
+      padding: 'undefined pb-10 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
       fillStyles: bg-white
-      labelStyles: text-gray text-lg mb-0 undefined
-      headlineStyles: text-black text-4xl mb-0 undefined
-      subheadStyles: text-black text-2xl mb-0 undefined
-      textStyles: text-black text-lg mb-0 undefined
+      labelStyles: text-gray undefined text-lg mb-0 undefined
+      headlineStyles: text-black undefined text-4xl mb-0 undefined
+      subheadStyles: text-black undefined text-2xl mb-10 undefined
+      textStyles: text-black undefined text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       accentColor: primary
-      borderStyles: border-gray-light undefined6
-      padding: pt-3 pb-px pr-px pl-px
-      labelStyles: text-black text-lg mb-0 undefined
-      headlineStyles: text-black text-lg mb-3 font-bold
-      subheadStyles: text-primary text-6xl mb-0 font-bold
-      textStyles: text-gray-dark text-base mb-0 undefined
+      borderStyles: border-primary border-3
+      padding: pt-5 pb-5 pr-5 pl-5
+      labelStyles: text-black undefined text-lg mb-0 undefined
+      headlineStyles: text-black undefined text-xl mb-3 font-bold
+      subheadStyles: text-primary undefined text-6xl mb-0 font-bold
+      textStyles: text-gray-dark undefined text-base mb-0 undefined
       buttonType: solid
     label: ''
     headline: Pricing
@@ -237,21 +244,23 @@ blocks:
     style:
       textAlignment: left
       width: normal
+      padding: 'undefined pb-10 pr-10 pl-10 sm:pt-0 sm:pb-0 sm:pr-5 sm:pl-5'
       fillStyles: bg-white
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-black text-5xl mb-0 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black undefined mb-8 undefined
+      labelStyles: text-black undefined text-sm mb-0 undefined
+      headlineStyles: text-black undefined text-5xl mb-0 undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-black undefined undefined mb-8 undefined
       contentOrder: labelHeadingsContent
     _template: banner
   - style:
       columns: '3'
       textAlignment: left
+      padding: 'pt-32 pb-10 pr-10 pl-10 sm:pt-10 sm:pb-5 sm:pr-5 sm:pl-5'
       fillStyles: bg-black
-      labelStyles: text-gray text-lg mb-0 undefined
-      headlineStyles: undefined undefined undefined undefined
-      subheadStyles: text-gray text-3xl mb-0 undefined
-      textStyles: text-gray-light text-lg mb-0 undefined
+      labelStyles: text-gray undefined text-lg mb-0 undefined
+      headlineStyles: undefined undefined undefined undefined undefined
+      subheadStyles: text-gray undefined text-3xl mb-0 undefined
+      textStyles: text-gray-light undefined text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
@@ -304,9 +313,11 @@ blocks:
   - style:
       columns: '3'
       textAlignment: left
-      labelStyles: text-gray text-lg mb-0
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-black text-lg mb-0
+      padding: 'pt-16 pb-28 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      labelStyles: text-gray undefined text-lg mb-0 undefined
+      headlineStyles: undefined undefined undefined undefined undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-black undefined text-lg mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: transparent
@@ -357,20 +368,26 @@ blocks:
   - style:
       columns: '3'
       textAlignment: left
-      labelStyles: text-gray text-4xl mb-20 undefined
-      headlineStyles: text-black text-6xl mb-24 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black undefined mb-0 undefined
+      padding: 'pt-20 pb-10 pr-10 pl-10 sm:pt-10 sm:pb-5 sm:pr-5 sm:pl-5'
+      labelStyles: >-
+        text-gray undefined text-4xl mb-20 undefined sm:text-gray sm:font-sans
+        sm:text-4xl sm:mb-20 sm:
+      headlineStyles: >-
+        text-black undefined text-6xl mb-24 undefined sm:text-black sm:font-sans
+        sm:text-6xl sm:mb-24 sm:
+      subheadStyles: text-black undefined text-3xl mb-5 undefined
+      textStyles: text-black undefined undefined mb-0 undefined
       contentOrder: labelHeadingsContent
       contentWidth: w-8/12
     cardStyle:
       type: solid
       imageStyles: h-24 object-contain object-left mb-4
       accentColor: primary
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-black text-2xl mb-2 undefined
-      subheadStyles: text-black text-lg mb-0 undefined
-      textStyles: text-black text-sm mb-0 undefined
+      padding: undefined undefined undefined undefined
+      labelStyles: text-black undefined text-sm mb-0 undefined
+      headlineStyles: text-black undefined text-2xl mb-2 undefined
+      subheadStyles: text-black undefined text-lg mb-0 undefined
+      textStyles: text-black undefined text-sm mb-0 undefined
       buttonType: solid
     label: Filecoin solves many problems associated with traditional storage
     headline: Traditional Storage vs. Filecoin
@@ -403,10 +420,11 @@ blocks:
   - style:
       columns: '3'
       textAlignment: left
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-black text-5xl mb-0 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-black undefined mb-0 undefined
+      padding: 'pt-10 pb-24 pr-10 pl-10 sm:pt-5 sm:pb-10 sm:pr-5 sm:pl-5'
+      labelStyles: text-black undefined text-sm mb-0 undefined
+      headlineStyles: text-black undefined text-5xl mb-0 undefined
+      subheadStyles: text-black undefined text-3xl mb-5 undefined
+      textStyles: text-black undefined undefined mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
@@ -446,11 +464,12 @@ blocks:
       flipLayout: false
       textAlignment: left
       contentAlignment: center
+      padding: 'pt-28 pb-32 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
       fillStyles: from-accent1 to-primary bg-gradient-to-br
-      labelStyles: text-black text-sm mb-0 undefined
-      headlineStyles: text-white text-5xl mb-4 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-white text-3xl mb-9 undefined
+      labelStyles: text-black undefined text-sm mb-0 undefined
+      headlineStyles: text-white undefined text-5xl mb-4 undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-white undefined text-3xl mb-9 undefined
       contentOrder: labelHeadingsContent
     image:
       src: >-
@@ -477,15 +496,16 @@ blocks:
     navigationLabel: Providers
     _template: feature
   - style:
-      minHeight: '700'
+      minHeight: '0'
       flipLayout: false
       textAlignment: left
       contentAlignment: center
+      padding: 'pt-32 pb-32 pr-10 pl-10 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5'
       fillStyles: bg-black
-      labelStyles: text-gray-light text-7xl mb-0 undefined
-      headlineStyles: text-white text-6xl mb-11 undefined
-      subheadStyles: text-black text-3xl mb-0 undefined
-      textStyles: text-gray text-4xl mb-9 undefined
+      labelStyles: text-gray-light undefined text-7xl mb-0 undefined
+      headlineStyles: text-white undefined text-6xl mb-11 undefined
+      subheadStyles: text-black undefined text-3xl mb-0 undefined
+      textStyles: text-gray undefined text-4xl mb-9 undefined
       contentOrder: labelHeadingsContent
     image:
       src: >-
@@ -513,20 +533,22 @@ blocks:
   - style:
       columns: '4'
       textAlignment: left
+      padding: 'pt-10 pb-10 pr-10 pl-10 sm:pt-20 sm:pb-10 sm:pr-5 sm:pl-5'
       fillStyles: bg-black
-      labelStyles: text-white text-sm mb-0 undefined
-      headlineStyles: text-white text-5xl mb-0 undefined
-      subheadStyles: text-white text-3xl mb-0 undefined
-      textStyles: text-black undefined mb-0 undefined
+      labelStyles: text-white undefined text-sm mb-0 undefined
+      headlineStyles: text-white undefined text-5xl mb-0 undefined
+      subheadStyles: text-white undefined text-3xl mb-0 undefined
+      textStyles: text-black undefined undefined mb-0 undefined
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
       accentColor: primary
-      padding: p-0
-      labelStyles: text-white text-sm mb-0 undefined
-      headlineStyles: text-white text-xl mb-0 undefined
-      subheadStyles: text-white text-sm mb-0 undefined
-      textStyles: text-gray text-sm mb-0 undefined
+      borderStyles: 'undefined '
+      padding: undefined undefined undefined undefined
+      labelStyles: text-white undefined text-sm mb-0 undefined
+      headlineStyles: text-white undefined text-xl mb-0 undefined
+      subheadStyles: text-white undefined text-sm mb-0 undefined
+      textStyles: text-gray undefined text-sm mb-0 undefined
       buttonType: solid
     label: ''
     headline: ''
