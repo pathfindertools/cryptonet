@@ -6,11 +6,11 @@ blocks:
       flipLayout: false
       textAlignment: left
       contentAlignment: center
-      padding: pt-10 pb-10 pr-10 pl-10
-      labelStyles: text-white text-xl mb-0 font-bold
-      headlineStyles: text-gray-light text-7xl mb-10 undefined
-      subheadStyles: text-primary text-3xl mb-0 undefined
-      textStyles: text-white text-lg mb-24 undefined
+      padding: pt-32 pb-10 pr-10 pl-10
+      labelStyles: text-white font-sans text-xl mb-0 font-bold
+      headlineStyles: 'text-gray-light font-sans text-7xl mb-10 '
+      subheadStyles: 'text-primary font-sans text-3xl mb-0 '
+      textStyles: 'text-white font-sans text-lg mb-24 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
