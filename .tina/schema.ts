@@ -3,6 +3,7 @@ import { featureBlockSchema } from "./feature";
 import { photoCardsBlockSchema } from "./photo-cards";
 import { textCardsBlockSchema } from "./text-cards";
 import { bannerBlockSchema } from "./banner";
+import { embedBlockSchema } from "./embed";
 import { colorOptions } from "./shared/options"
 
 export default defineSchema({
@@ -63,6 +64,7 @@ export default defineSchema({
             photoCardsBlockSchema,
             textCardsBlockSchema,
             bannerBlockSchema,
+            embedBlockSchema,
           ],
         },
         {

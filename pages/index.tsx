@@ -210,6 +210,20 @@ export const getStaticProps = async ({ params }) => {
                 }
                 navigationLabel
               }
+              ... on PagesBlocksEmbed {
+                backgroundImage {
+                  src
+                  position
+                }
+                markup
+                style {
+                  minHeight
+                  fullWidth
+                  padding
+                  fillStyles
+                }
+                navigationLabel
+              }
             }
             meta {
               siteTitle

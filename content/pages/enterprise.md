@@ -2,6 +2,17 @@
 draft: true
 blocks:
   - style:
+      fullWidth: true
+      padding: undefined undefined undefined undefined
+      fillStyles: bg-black
+    markup: >-
+      <iframe
+      src="https://form.typeform.com/to/Dv6FWzlr?typeform-embed-id=267002177245764&amp;typeform-embed=embed-widget&amp;typeform-source=orbitcommunity.filecoin.io&amp;typeform-medium=snippet&amp;typeform-medium-version=next"
+      data-testid="iframe" allow="microphone; camera" title="Orbit - Cadet App"
+      style="border: 0px; transform: translateZ(0px);height: 600px; width:
+      100%;"></iframe>
+    _template: embed
+  - style:
       minHeight: '0'
       flipLayout: false
       textAlignment: left
@@ -10,13 +21,13 @@ blocks:
       labelStyles: text-white font-sans text-xl mb-0 font-bold
       headlineStyles: >-
         text-gray-light font-sans text-7xl mb-10 undefined sm:text-gray-light
-        sm:font-sans sm:text-5xl sm:mb-2 sm:
+        sm:font-sans sm:text-7xl sm:mb-10 undefined
       subheadStyles: >-
         text-primary font-sans text-3xl mb-2.5 undefined sm:text-primary
-        sm:font-sans sm:text-xl sm:mb-2.5 sm:
+        sm:font-sans sm:text-3xl sm:mb-2.5 undefined
       textStyles: >-
         text-white font-sans text-lg mb-24 undefined sm:text-white sm:font-sans
-        sm:text-lg sm:mb-12 sm:
+        sm:text-lg sm:mb-24 undefined
       contentOrder: labelHeadingsContent
     image:
       src: ''
@@ -41,6 +52,20 @@ blocks:
         textColor: black
         backgroundColor: white
     _template: feature
+  - style:
+      minHeight: '0'
+      fullWidth: true
+      padding: pt-0 pb-0 pr-0 pl-0
+      fillStyles: from-primary to-accent1 bg-gradient-to-b
+    markup: >-
+      <iframe 
+
+      class="w-full"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14456.62910932858!2d-93.27477180875673!3d44.980222127779534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329c5fa4677f%3A0xe33b0324dd98448b!2sStone%20Arch%20Bridge!5e0!3m2!1sen!2sus!4v1643688277124!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy"></iframe>
+    navigationLabel: Embed
+    _template: embed
   - style:
       minHeight: ''
       flipLayout: false
