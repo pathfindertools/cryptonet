@@ -440,7 +440,29 @@ export type PagesBlocksBanner = {
   style?: Maybe<PagesBlocksBannerStyle>;
 };
 
-export type PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner;
+export type PagesBlocksEmbedStyle = {
+  __typename?: 'PagesBlocksEmbedStyle';
+  minHeight?: Maybe<Scalars['String']>;
+  fullWidth?: Maybe<Scalars['Boolean']>;
+  padding?: Maybe<Scalars['String']>;
+  fillStyles?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbedBackgroundImage = {
+  __typename?: 'PagesBlocksEmbedBackgroundImage';
+  src?: Maybe<Scalars['String']>;
+  position?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbed = {
+  __typename?: 'PagesBlocksEmbed';
+  style?: Maybe<PagesBlocksEmbedStyle>;
+  backgroundImage?: Maybe<PagesBlocksEmbedBackgroundImage>;
+  markup?: Maybe<Scalars['String']>;
+  navigationLabel?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed;
 
 export type PagesMeta = {
   __typename?: 'PagesMeta';
@@ -785,11 +807,31 @@ export type PagesBlocksBannerMutation = {
   style?: Maybe<PagesBlocksBannerStyleMutation>;
 };
 
+export type PagesBlocksEmbedStyleMutation = {
+  minHeight?: Maybe<Scalars['String']>;
+  fullWidth?: Maybe<Scalars['Boolean']>;
+  padding?: Maybe<Scalars['String']>;
+  fillStyles?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbedBackgroundImageMutation = {
+  src?: Maybe<Scalars['String']>;
+  position?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbedMutation = {
+  style?: Maybe<PagesBlocksEmbedStyleMutation>;
+  backgroundImage?: Maybe<PagesBlocksEmbedBackgroundImageMutation>;
+  markup?: Maybe<Scalars['String']>;
+  navigationLabel?: Maybe<Scalars['String']>;
+};
+
 export type PagesBlocksMutation = {
   feature?: Maybe<PagesBlocksFeatureMutation>;
   photoCards?: Maybe<PagesBlocksPhotoCardsMutation>;
   textCards?: Maybe<PagesBlocksTextCardsMutation>;
   banner?: Maybe<PagesBlocksBannerMutation>;
+  embed?: Maybe<PagesBlocksEmbedMutation>;
 };
 
 export type PagesMetaMutation = {
