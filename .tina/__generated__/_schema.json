@@ -3665,6 +3665,203 @@
                 "blocks",
                 "banner"
               ]
+            },
+            {
+              "name": "embed",
+              "label": "Embed",
+              "ui": {
+                "defaultItem": {
+                  "markup": "",
+                  "style": {
+                    "fillStyles": "bg-white"
+                  }
+                }
+              },
+              "fields": [
+                {
+                  "type": "object",
+                  "label": "Section Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
+                      "label": "Full Width",
+                      "name": "fullWidth",
+                      "type": "boolean",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "style",
+                        "fullWidth"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "style",
+                        "fillStyles"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "embed",
+                    "style"
+                  ]
+                },
+                {
+                  "label": "Background Image",
+                  "name": "backgroundImage",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "label": "Image Source",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "backgroundImage",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "backgroundImage",
+                        "position"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "embed",
+                    "backgroundImage"
+                  ]
+                },
+                {
+                  "label": "Html",
+                  "name": "markup",
+                  "description": "Any valid html, you can also use tailwind.",
+                  "type": "string",
+                  "ui": {
+                    "component": "textarea"
+                  },
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "embed",
+                    "markup"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add an item with this label to the navigation. When clicked we jump to this section.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "embed",
+                    "navigationLabel"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "blocks",
+                "embed"
+              ]
             }
           ],
           "namespace": [

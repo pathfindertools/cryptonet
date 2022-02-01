@@ -32,7 +32,8 @@
       "feature": "PagesBlocksFeature",
       "photoCards": "PagesBlocksPhotoCards",
       "textCards": "PagesBlocksTextCards",
-      "banner": "PagesBlocksBanner"
+      "banner": "PagesBlocksBanner",
+      "embed": "PagesBlocksEmbed"
     }
   },
   "PagesDocument": {

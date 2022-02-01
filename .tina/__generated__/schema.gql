@@ -333,7 +333,26 @@ type PagesBlocksBanner {
   style: PagesBlocksBannerStyle
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner
+type PagesBlocksEmbedStyle {
+  minHeight: String
+  fullWidth: Boolean
+  padding: String
+  fillStyles: String
+}
+
+type PagesBlocksEmbedBackgroundImage {
+  src: String
+  position: String
+}
+
+type PagesBlocksEmbed {
+  style: PagesBlocksEmbedStyle
+  backgroundImage: PagesBlocksEmbedBackgroundImage
+  markup: String
+  navigationLabel: String
+}
+
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed
 
 type PagesMeta {
   siteTitle: String
@@ -643,11 +662,31 @@ input PagesBlocksBannerMutation {
   style: PagesBlocksBannerStyleMutation
 }
 
+input PagesBlocksEmbedStyleMutation {
+  minHeight: String
+  fullWidth: Boolean
+  padding: String
+  fillStyles: String
+}
+
+input PagesBlocksEmbedBackgroundImageMutation {
+  src: String
+  position: String
+}
+
+input PagesBlocksEmbedMutation {
+  style: PagesBlocksEmbedStyleMutation
+  backgroundImage: PagesBlocksEmbedBackgroundImageMutation
+  markup: String
+  navigationLabel: String
+}
+
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
   textCards: PagesBlocksTextCardsMutation
   banner: PagesBlocksBannerMutation
+  embed: PagesBlocksEmbedMutation
 }
 
 input PagesMetaMutation {
