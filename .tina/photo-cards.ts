@@ -226,6 +226,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
       name: "items",
       list: true,
       ui: {
+        component: 'cards',
         defaultItem: {
           ...defaultCard,
         },

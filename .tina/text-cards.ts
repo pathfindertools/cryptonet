@@ -217,6 +217,7 @@ export const textCardsBlockSchema: TinaTemplate = {
       name: "items",
       list: true,
       ui: {
+        component: 'cards',
         defaultItem: {
           ...defaultCard,
         },

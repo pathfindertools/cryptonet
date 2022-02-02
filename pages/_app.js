@@ -53,6 +53,21 @@ const App = ({ Component, pageProps }) => {
               import("react-tinacms-editor").then(({ MarkdownFieldPlugin }) => {
                 cms.plugins.add(MarkdownFieldPlugin);
               });
+              import('tinacms').then(({GroupListFieldPlugin}) => {
+                cms.fields.add({
+                  ...GroupListFieldPlugin,
+                  name: 'cards',
+                  Component: (props) => {
+                    const field = {
+                      ...props.field,
+                      itemProps: (item) => {
+                        return { label: item.headline || item.subhead }
+                      },
+                    }
+                    return <GroupListFieldPlugin.Component {...props} field={field} />
+                  },
+                })
+              }) 
               import('../plugins.tsx').then(({ emailFieldPlugin }) => {
                 cms.plugins.add(emailFieldPlugin)
               });
