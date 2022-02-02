@@ -132,16 +132,16 @@ export default function TypeControl({ field, input, meta }) {
   const [sizeMobile, setSizeMobile] = useState(getStyleMatch(sizeOptionsMobile, input.value));
   const [margin, setMargin] = useState(getStyleMatch(marginOptions, input.value));
   const [marginMobile, setMarginMobile] = useState(getStyleMatch(marginOptionsMobile, input.value));
-  const [weight, setWeight] = useState(getStyleMatch(weightOptions, input.value));
-  const [weightMobile, setWeightMobile] = useState(getStyleMatch(weightOptionsMobile, input.value));
+  const [weight, setWeight] = useState(getStyleMatch(weightOptions, input.value) || "");
+  const [weightMobile, setWeightMobile] = useState(getStyleMatch(weightOptionsMobile, input.value) || "");
 
   let hasMobileStyles = input.value.includes("sm:");
 
   function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
     const optionValues = options.map(option => option.value);
     const currentStyles = styles.split(" ");
-    const matches = optionValues.filter(element => currentStyles.includes(element))
-    return matches[0];
+    const match = optionValues.find(element => currentStyles.includes(element))
+    return match;
   }
 
   function toggleMobile() {
@@ -159,7 +159,9 @@ export default function TypeControl({ field, input, meta }) {
       setFontMobile(`sm:${font || 'font-sans'}`)
       setSizeMobile(`sm:${size || 'text-base'}`)
       setMarginMobile(`sm:${margin || 'mb-0'}`)
-      setWeightMobile(`sm:${weight || ''}`)
+      if (weight !== "") {
+        setWeightMobile(`sm:${weight}`)
+      }
     }
     const newValue = hasMobileStyles ? `${defaultClasses} ${mobileClasses}` : defaultClasses;
     input.value = newValue;
