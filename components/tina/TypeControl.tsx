@@ -113,6 +113,7 @@ function buildWeightOptions(prefix?) {
 
 export default function TypeControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const [hasMobileStyles, setHasMobileStyles] = useState(input.value.includes("sm:"));
 
   const colorOptions = buildColorOptions();
   const colorOptionsMobile = buildColorOptions('sm:');
@@ -136,8 +137,6 @@ export default function TypeControl({ field, input, meta }) {
   const [weight, setWeight] = useState(getStyleMatch(weightOptions, input.value) || "");
   const [weightMobile, setWeightMobile] = useState(getStyleMatch(weightOptionsMobile, input.value) || "");
 
-  let hasMobileStyles = input.value.includes("sm:");
-
   function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
     const optionValues = options.map(option => option.value);
     const currentStyles = styles.split(" ");
@@ -146,8 +145,7 @@ export default function TypeControl({ field, input, meta }) {
   }
 
   function toggleMobile() {
-    hasMobileStyles = !hasMobileStyles
-    updateHiddenField()
+    setHasMobileStyles(!hasMobileStyles)
   }
 
   function updateHiddenField() {
@@ -172,7 +170,7 @@ export default function TypeControl({ field, input, meta }) {
   
   useEffect(() => {
     updateHiddenField()
-  }, [color, font, size, margin, weight, colorMobile, fontMobile, sizeMobile, marginMobile, weightMobile, inputRef.current]);
+  }, [color, font, size, margin, weight, colorMobile, fontMobile, sizeMobile, marginMobile, weightMobile, hasMobileStyles, inputRef.current]);
 
 
   function handleSetColor(value: string) {
