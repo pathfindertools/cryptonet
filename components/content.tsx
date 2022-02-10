@@ -2,24 +2,14 @@ import React from "react";
 import Markdown from "react-markdown";
 import { Buttons } from "./buttons";
 
-const contentAlignment = (alignment) => {
-  const textAlignments = {
-    left: "",
-    center: "text-center",
-    right: "text-right",
-  };
-
-  return textAlignments[alignment];
-};
-
 const buttonAlignment = (alignment) => {
+  const alignmentClass = alignment.split(" ").find(item => item.includes("text-"))
   const textAlignments = {
-    left: "",
-    center: "mx-auto",
-    right: "ml-auto",
+    "text-left": "",
+    "text-center": "mx-auto",
+    "text-right": "ml-auto",
   };
-
-  return textAlignments[alignment];
+  return textAlignments[alignmentClass];
 };
 
 const labelOrder = (order) => {
@@ -91,7 +81,7 @@ export const Content = ({
   width,
 }) => {
   return (
-    <div className={`flex flex-col ${width} ${contentAlignment(alignment)}`}>
+    <div className={`flex flex-col ${width}`}>
       <style>{css}</style>
       {label && <h4 className={`${labelOrder(order)} ${labelStyles}`}>{label}</h4>}
       {headline && <h2 className={`${headingOrder(order)} ${headlineStyles}`}>{headline}</h2>}

@@ -115,85 +115,83 @@
                   },
                   "fields": [
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Alignment",
+                      "name": "alignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "alignmentControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "alignment"
+                      ]
+                    },
+                    {
                       "label": "Minimum Height",
                       "name": "minHeight",
                       "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
                         "minHeight"
-                      ]
-                    },
-                    {
-                      "label": "Flip Layout",
-                      "name": "flipLayout",
-                      "type": "boolean",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "flipLayout"
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "label": "Vertical Alignment",
-                      "name": "contentAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Top",
-                          "value": "top"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Bottom",
-                          "value": "bottom"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "contentAlignment"
                       ]
                     },
                     {
@@ -212,18 +210,44 @@
                       ]
                     },
                     {
+                      "label": "Content Order",
+                      "name": "contentOrder",
                       "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
                       "ui": {
-                        "component": "fillControl"
+                        "component": "selectField"
                       },
+                      "options": [
+                        {
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "fillStyles"
+                        "contentOrder"
                       ]
                     },
                     {
@@ -284,47 +308,6 @@
                         "feature",
                         "style",
                         "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "contentOrder"
                       ]
                     }
                   ],

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import IconMobile from './icons/IconMobile';
-import SelectMenu from './SelectMenu';
+import SelectMenu from './widgets/SelectMenu';
+import FieldLabel from './widgets/FieldLabel';
 
 function buildOptions(prefix) {
   const options = [
@@ -51,6 +52,7 @@ function buildOptions(prefix) {
 
 export default function PaddingControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
+  let hasMobileStyles = input.value.includes("sm:pt");
 
   const topOptions = buildOptions('pt');
   const bottomOptions = buildOptions('pb');
@@ -69,8 +71,6 @@ export default function PaddingControl({ field, input, meta }) {
   const [bottomMobile, setBottomMobile] = useState(getStyleMatch(bottomOptionsMobile, input.value));
   const [rightMobile, setRightMobile] = useState(getStyleMatch(rightOptionsMobile, input.value));
   const [leftMobile, setLeftMobile] = useState(getStyleMatch(leftOptionsMobile, input.value));
-
-  let hasMobileStyles = input.value.includes("sm:pt");
 
   function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
     const optionValues = options.map(option => option.value);
@@ -107,37 +107,25 @@ export default function PaddingControl({ field, input, meta }) {
 
   function SelectGroup(props) {
     return (
-      <div className="relative flex-1 mr-2">
+      <div className="relative flex-1">
         <span className="absolute text-xs font-bold top-2 left-1.5" style={{ color: "var(--tina-color-grey-3" }}>{props.label}</span>
-        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="pl-5 w-full" />
+        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="pl-4 w-full" />
       </div>
     )
   }
 
   return (
     <>
-      <div className="relative">
-        <label className="block mb-2 overflow-hidden" style={{
-          color: "var(--tina-color-grey-8)",
-          fontSize: "var(--tina-font-size-1)",
-          fontWeight: 600,
-          letterSpacing: "0.01em",
-          textOverflow: "ellipsis",
-        }}>{field.label}</label>
-        <div className="absolute right-0 top-0" style={{ color: hasMobileStyles ? "var(--tina-color-primary)" : "var(--tina-color-grey-4)"}}>
-          <input type="checkbox" checked={hasMobileStyles} onChange={toggleMobile} />
-          <IconMobile className="float-right mt-1 ml-2" />
-        </div>
-      </div>
+      <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
       <div className="mb-4">
-        <div className="flex mb-2">
+        <div className="flex gap-2 mb-2">
           <SelectGroup label="T" value={top} onChange={setTop} options={topOptions} />
           <SelectGroup label="B" value={bottom} onChange={setBottom} options={bottomOptions} />
           <SelectGroup label="R" value={right} onChange={setRight} options={rightOptions} />
           <SelectGroup label="L" value={left} onChange={setLeft} options={leftOptions} />
         </div>
         {hasMobileStyles &&
-          <div className="flex mb-2 relative">
+          <div className="flex gap-2 mb-2 relative">
             <div className="absolute -left-4 top-2.5 pl-px" style={{ color: "var(--tina-color-grey-4" }}>
               <IconMobile />
             </div>

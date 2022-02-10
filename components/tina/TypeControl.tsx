@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import SelectMenu from './SelectMenu';
-import ToggleButton from './ToggleButton';
-import ColorPicker from './ColorPicker';
+import SelectMenu from './widgets/SelectMenu';
+import ToggleButton from './widgets/ToggleButton';
+import ColorPicker from './widgets/ColorPicker';
 import IconMobile from './icons/IconMobile';
 import IconMargin from './icons/IconMargin';
+import FieldLabel from './widgets/FieldLabel';
 
 
 function buildColorOptions(prefix?) {
@@ -43,18 +44,18 @@ function buildFontOptions(prefix?) {
 }
 function buildSizeOptions(prefix?) {
   const options = [
-    { label: "XS", value: "text-xs" },
-    { label: "SM", value: "text-sm" },
-    { label: "MD", value: "text-base" },
-    { label: "LG", value: "text-lg" },
-    { label: "XL", value: "text-xl" },
-    { label: "2XL", value: "text-2xl" },
-    { label: "3XL", value: "text-3xl" },
-    { label: "4XL", value: "text-4xl" },
-    { label: "5XL", value: "text-5xl" },
-    { label: "6XL", value: "text-6xl" },
-    { label: "7XL", value: "text-7xl" },
-    { label: "8XL", value: "text-8xl" },
+    { label: "xs", value: "text-xs" },
+    { label: "sm", value: "text-sm" },
+    { label: "md", value: "text-base" },
+    { label: "lg", value: "text-lg" },
+    { label: "xl", value: "text-xl" },
+    { label: "2xl", value: "text-2xl" },
+    { label: "3xl", value: "text-3xl" },
+    { label: "4xl", value: "text-4xl" },
+    { label: "5xl", value: "text-5xl" },
+    { label: "6xl", value: "text-6xl" },
+    { label: "7xl", value: "text-7xl" },
+    { label: "8xl", value: "text-8xl" },
   ]
   const formattedOptions = options.map(option => {
     return {
@@ -183,24 +184,12 @@ export default function TypeControl({ field, input, meta }) {
   
   return (
     <>
-      <div className="relative">
-        <label className="block mb-2 overflow-hidden" style={{
-          color: "var(--tina-color-grey-8)",
-          fontSize: "var(--tina-font-size-1)",
-          fontWeight: 600,
-          letterSpacing: "0.01em",
-          textOverflow: "ellipsis",
-        }}>{field.label}</label>
-        <div className="absolute right-0 top-0" style={{ color: hasMobileStyles ? "var(--tina-color-primary)" : "var(--tina-color-grey-4)"}}>
-          <input type="checkbox" checked={hasMobileStyles} onChange={toggleMobile} />
-          <IconMobile className="float-right mt-1 ml-2" />
-        </div>
-      </div>
+      <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
       <div className="mb-4">
         <div className="flex mb-2 items-center">
           <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="mr-2" />
           <SelectMenu value={font} onChange={setFont} options={fontOptions} className="flex-grow mr-2" />
-          <SelectMenu value={size} onChange={setSize} options={sizeOptions} className="w-12" />
+          <SelectMenu value={size} onChange={setSize} options={sizeOptions} className="w-13" />
           <div className="w-6 pr-1">
             <IconMargin className="float-right" />
           </div>
@@ -209,7 +198,7 @@ export default function TypeControl({ field, input, meta }) {
         </div>
         {hasMobileStyles &&
           <div className="flex mb-2 relative">
-            <div className="absolute -left-4 top-2.5 pl-px" style={{ color: "var(--tina-color-grey-4" }}>
+            <div className="absolute -left-4 top-2.5 pl-px">
               <IconMobile />
             </div>
             <div className="flex items-center w-full">

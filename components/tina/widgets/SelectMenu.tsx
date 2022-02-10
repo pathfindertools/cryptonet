@@ -18,10 +18,9 @@ export default function SelectMenu(props:SelectMenuProps) {
     props.onChange(event.target.value);
   }
 
-  const selectClasses = `${props.className} text-sm pl-1 h-9`;
+  const selectClasses = `${props.className} border border-tina-gray2 text-sm p-1 h-9`;
   const selectStyles = {
     borderRadius: "var(--tina-radius-small)",
-    borderColor: "var(--tina-color-grey-2)",
   }
 
   return (

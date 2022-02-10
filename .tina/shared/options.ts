@@ -32,6 +32,17 @@ export const vAlignOptions: {label: string, value: string}[] = [
   { label: "Bottom", value: "bottom" },
 ];
 
+export const minHeightOptions: {label: string, value: string}[] = [
+  { label: "none", value: "min-h-0" },
+  { label: "400", value: "min-h-100" },
+  { label: "480", value: "min-h-120" },
+  { label: "560", value: "min-h-140" },
+  { label: "640", value: "min-h-160" },
+  { label: "720", value: "min-h-180" },
+  { label: "800", value: "min-h-200" },
+  { label: "Screen", value: "min-h-screen" },
+];
+
 export const textSizeOptions: {label: string, value: string}[] = [
   { label: "XS", value: "xs" },
   { label: "Small", value: "sm" },

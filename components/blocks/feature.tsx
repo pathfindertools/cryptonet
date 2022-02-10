@@ -6,37 +6,21 @@ import { Content } from "../content";
 const removeSubstring = (value: string, substring: string) => {
   return value.split(" ").filter(item => item.indexOf(substring) === -1).join(" ")
 }
-/* Return a the first word with containing the substring */
+/* Return a the first word containing the substring */
 const getSubstring = (value: string, substring: string) => {
   const match = value.split(" ").find(item => item.includes(substring))
   return match
 }
 
-const splitCss = (data) => {
-  const contentAlignments = {
-    top: "",
-    center: "items-center",
-    bottom: "items-end",
-  };
-  const contentAlignment = contentAlignments[data.style?.contentAlignment]
-  const direction = data.style?.flipLayout ? "flex-row sm:flex-col" : "flex-row-reverse sm:flex-col"
-  return `flex ${direction} ${contentAlignment}`
-}
-
-const splitStyle = (data) => {
-  return {
-    minHeight: data.style?.minHeight ? `${data.style?.minHeight}px` : 'auto'
-  }
-};
-
 const contentContainerCss = (data) => {
-  const margin = data.style?.flipLayout ? "mr-auto" : "ml-auto"
+  const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
+  const margin = isFlipped ? "mr-auto" : "ml-auto"
   const padding = data.style?.padding
   return `max-w-desktop-half sm:w-full ${margin} ${padding}`
 }
 
 const imageContainerCss = (data) => {
-  const isFlipped = data.style?.flipLayout
+  const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
   const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"
   const padding = data.style?.padding || ""
   const hasMobileClasses = getSubstring(padding, "sm:") ? true : false;
@@ -98,9 +82,8 @@ export const Feature = ({ data }) => {
       image={data.backgroundImage?.src}
       imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
-      minHeight={data.style?.minHeight}
     >
-      <div className={splitCss(data)} style={splitStyle(data)}>
+      <div className={`flex sm:flex-col ${data.style?.alignment} ${data.style?.minHeight}`}>
         <div className={`flex-1 relative ${imageColumnCss(data)}`}>
           <div className={`${imageContainerCss(data)}`}>
             {data.image?.src && (
@@ -124,7 +107,7 @@ export const Feature = ({ data }) => {
               headlineStyles = {data.style?.headlineStyles}
               subheadStyles = {data.style?.subheadStyles}
               textStyles = {data.style?.textStyles}
-              alignment = {data.style?.textAlignment}
+              alignment = {data.style?.alignment}
               order = {data.style?.contentOrder}
               width = {data.style?.contentWidth}
             />

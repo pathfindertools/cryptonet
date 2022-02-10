@@ -50,10 +50,10 @@ export default function ColorPicker(props:ColorPickerProps) {
       borderRadius: "3px",
       borderColor: "var(--tina-color-grey-2)",
   }
-
+  
   const colorChipClasses = `border-box absolute w-6 h-6 rounded-sm bg-${props.value}`
   const colorChipStyles = {
-      border: props.value === "text-white" ? "1px solid var(--tina-color-grey-2)" : "",
+      border: props.value === "white" ? "1px solid var(--tina-color-grey-2)" : "",
       top: "5px",
       left: "5px",
   }
@@ -66,11 +66,10 @@ export default function ColorPicker(props:ColorPickerProps) {
   }
 
   const pickerOptions = colorOptions.map((option) => {
-    const borderStyles = option.value === "white" ? {border: "1px solid var(--tina-color-grey-2"} : {}
+    const border = option.value === "white" ? "border border-tina-gray2" : ""
     return <div
       onClick={() => handleClick(option.value)}
-      style={borderStyles}
-      className={`w-6 h-6 cursor-pointer rounded-sm  bg-${option.value}`}
+      className={`w-6 h-6 cursor-pointer rounded-sm ${border} bg-${option.value}`}
       key={option.value}
     ></div>
   });
