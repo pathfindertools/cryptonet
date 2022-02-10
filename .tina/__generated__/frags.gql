@@ -15,16 +15,15 @@ fragment PagesParts on Pages {
     ... on PagesBlocksFeature {
       style {
         __typename
-        minHeight
-        flipLayout
-        textAlignment
-        contentAlignment
         fillStyles
+        alignment
+        minHeight
+        padding
+        contentOrder
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
-        contentOrder
       }
       image {
         __typename
@@ -60,6 +59,7 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
+        padding
         fillStyles
         labelStyles
         headlineStyles
@@ -122,6 +122,7 @@ fragment PagesParts on Pages {
         minHeight
         columns
         textAlignment
+        padding
         fillStyles
         labelStyles
         headlineStyles
@@ -203,6 +204,7 @@ fragment PagesParts on Pages {
         minHeight
         textAlignment
         width
+        padding
         fillStyles
         labelStyles
         headlineStyles
@@ -210,6 +212,22 @@ fragment PagesParts on Pages {
         textStyles
         contentOrder
       }
+    }
+    ... on PagesBlocksEmbed {
+      style {
+        __typename
+        minHeight
+        fullWidth
+        padding
+        fillStyles
+      }
+      backgroundImage {
+        __typename
+        src
+        position
+      }
+      markup
+      navigationLabel
     }
   }
   meta {

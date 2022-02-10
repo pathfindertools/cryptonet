@@ -1,13 +1,15 @@
 // ./plugins.tsx
+import AlignmentControl from './components/tina/AlignmentControl'
 import FillControl from './components/tina/FillControl'
 import TypeControl from './components/tina/TypeControl'
 import ImageControl from './components/tina/ImageControl'
 import PaddingControl from './components/tina/PaddingControl'
 import BorderControl from './components/tina/BorderControl'
+import SelectField from './components/tina/SelectField'
 import { TextField } from 'tinacms'
 
 export const emailFieldPlugin = {
-  Component: TextField, // Extend the built-in text field
+  Component: TextField,
   __type: 'field',
   name: 'text-email',
   validate: (email, allValues, meta, field) => {
@@ -16,32 +18,44 @@ export const emailFieldPlugin = {
   },
 }
 
+export const selectFieldPlugin = {
+  Component: SelectField,
+  __type: 'field',
+  name: 'selectField',
+}
+
+export const alignmentControlFieldPlugin = {
+  Component: AlignmentControl,
+  __type: 'field',
+  name: 'alignmentControl',
+}
+
 export const typeControlFieldPlugin = {
-    Component: TypeControl, // Extend the built-in text field
+    Component: TypeControl,
     __type: 'field',
     name: 'typeControl',
   }
 
 export const fillControlFieldPlugin = {
-  Component: FillControl, // Extend the built-in text field
+  Component: FillControl,
   __type: 'field',
   name: 'fillControl',
 }
 
 export const imageControlFieldPlugin = {
-  Component: ImageControl, // Extend the built-in text field
+  Component: ImageControl,
   __type: 'field',
   name: 'imageControl',
 }
 
 export const paddingControlFieldPlugin = {
-  Component: PaddingControl, // Extend the built-in text field
+  Component: PaddingControl,
   __type: 'field',
   name: 'paddingControl',
 }
 
 export const borderControlFieldPlugin = {
-  Component: BorderControl, // Extend the built-in text field
+  Component: BorderControl,
   __type: 'field',
   name: 'borderControl',
 }

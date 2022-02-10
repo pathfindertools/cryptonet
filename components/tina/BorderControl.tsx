@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import SelectMenu from './SelectMenu';
-import ColorPicker from './ColorPicker';
+import SelectMenu from './widgets/SelectMenu';
+import ColorPicker from './widgets/ColorPicker';
+import FieldLabel from './widgets/FieldLabel';
 
 export default function BorderControl({ field, input, meta }) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  
   const colors = [
     { label: "Primary", value: "border-primary"},
     { label: "Accent 1", value: "border-accent1"},
@@ -37,7 +40,6 @@ export default function BorderControl({ field, input, meta }) {
     { label: "Vertical", value: "border-y-" },
   ]
   const [side, setSide] = useState(getStyleMatch(sides, input.value));
-  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // Update Hidden Field
@@ -63,15 +65,7 @@ export default function BorderControl({ field, input, meta }) {
   
   return (
     <>
-      <div>
-        <label className="block mb-2 overflow-hidden" style={{
-          color: "var(--tina-color-grey-8)",
-          fontSize: "var(--tina-font-size-1)",
-          fontWeight: "600",
-          letterSpacing: "0.01em",
-          textOverflow: "ellipsis",
-        }}>{field.label}</label>
-      </div>
+      <FieldLabel label={field.label} />
       <div className="flex mb-6 items-center">
         <ColorPicker value={color?.replace('border-','')} onClick={handleSetColor} className="mr-1" />
         <SelectMenu value={width} onChange={setWidth} options={widths} className="w-14 mr-1" />

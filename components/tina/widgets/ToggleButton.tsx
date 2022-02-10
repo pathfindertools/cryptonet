@@ -19,12 +19,11 @@ export default function ToggleButton(props:ToggleButtonProps) {
     props.onClick(newValue);
   }
 
-  const buttonClasses = `text-sm font-bold border py-1 px-2 h-9 rounded ${props.className} `;
+  const buttonClasses = ` py-1 px-2 h-9 bg-white text-sm font-bold border rounded ${props.className} `;
   const buttonStyles = {
     borderColor: "var(--tina-color-grey-2)",
     boxShadow: isActive ? "inset 0 0 2px var(--tina-color-grey-3)" : "",
     color: isActive ? "var(--tina-color-primary)" : "var(--tina-color-grey-8)",
-    backgroundColor: isActive ? "var(--tina-color-grey-1)" : "white",
   }
 
   return (

@@ -163,6 +163,7 @@ export const getStaticProps = async ({ params }) => {
                 style {
                   minHeight
                   padding
+                  alignment
                   flipLayout
                   labelStyles
                   headlineStyles

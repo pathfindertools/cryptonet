@@ -161,17 +161,15 @@ export const getStaticProps = async ({ params }) => {
                   buttonFillStyles
                 }
                 style {
+                  fillStyles
+                  alignment
                   minHeight
                   padding
-                  flipLayout
+                  contentOrder
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
-                  textAlignment
-                  contentAlignment
-                  contentOrder
                 }
                 navigationLabel
               }

@@ -28,6 +28,23 @@ module.exports = {
       "gray-light": "var(--gray-light-color)",
       gray: "var(--gray-color)",
       "gray-dark": "var(--gray-dark-color)",
+      tina: {
+        primary: "var(--tina-color-primary)",
+        error: "var(--tina-color-error)",
+        warning: "var(--tina-color-warning)",
+        success: "var(--tina-color-success)",
+        gray0: "var(--tina-color-grey-0)",
+        gray1: "var(--tina-color-grey-1)",
+        gray2: "var(--tina-color-grey-2)",
+        gray3: "var(--tina-color-grey-3)",
+        gray4: "var(--tina-color-grey-4)",
+        gray5: "var(--tina-color-grey-5)",
+        gray6: "var(--tina-color-grey-6)",
+        gray7: "var(--tina-color-grey-7)",
+        gray8: "var(--tina-color-grey-8)",
+        gray9: "var(--tina-color-grey-9)",
+        gray10: "var(--tina-color-grey-10)",
+      }
     },
     screens: {
 			xl: { max: "1279px" },
@@ -69,6 +86,14 @@ module.exports = {
       maxWidth: {
         "desktop-full": "1200px",
         "desktop-half": "600px",
+      },
+      minHeight: {
+        "100": "25rem",
+        "120": "30rem",
+        "140": "35rem",
+        "160": "40rem",
+        "180": "45rem",
+        "200": "50rem",
       },
       spacing: {
         128: "32rem",

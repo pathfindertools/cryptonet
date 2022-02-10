@@ -32,6 +32,8 @@ interface Node {
 interface Document {
   sys: SystemInfo
   id: ID!
+  form: JSON!
+  values: JSON!
 }
 
 """A relay-compliant pagination connection"""
@@ -45,6 +47,7 @@ type Query {
   node(id: String): Node!
   getDocument(collection: String, relativePath: String): DocumentNode!
   getDocumentList(before: String, after: String, first: Int, last: Int): DocumentConnection!
+  getDocumentFields: JSON!
   getGlobalDocument(relativePath: String): GlobalDocument!
   getGlobalList(before: String, after: String, first: Int, last: Int): GlobalConnection!
   getPagesDocument(relativePath: String): PagesDocument!
@@ -108,17 +111,15 @@ type GlobalConnection implements Connection {
 }
 
 type PagesBlocksFeatureStyle {
-  minHeight: String
-  flipLayout: Boolean
-  textAlignment: String
-  contentAlignment: String
-  padding: String
   fillStyles: String
+  alignment: String
+  minHeight: String
+  padding: String
+  contentOrder: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
-  contentOrder: String
 }
 
 type PagesBlocksFeatureImage {
@@ -415,9 +416,12 @@ type PagesConnection implements Connection {
 
 type Mutation {
   addPendingDocument(collection: String!, relativePath: String!, template: String): DocumentNode!
-  updateDocument(collection: String!, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  updateDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
   updateGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
+  createGlobalDocument(relativePath: String!, params: GlobalMutation!): GlobalDocument!
   updatePagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
+  createPagesDocument(relativePath: String!, params: PagesMutation!): PagesDocument!
 }
 
 input DocumentMutation {
@@ -437,17 +441,15 @@ input GlobalMutation {
 }
 
 input PagesBlocksFeatureStyleMutation {
-  minHeight: String
-  flipLayout: Boolean
-  textAlignment: String
-  contentAlignment: String
-  padding: String
   fillStyles: String
+  alignment: String
+  minHeight: String
+  padding: String
+  contentOrder: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
-  contentOrder: String
 }
 
 input PagesBlocksFeatureImageMutation {

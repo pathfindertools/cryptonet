@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { contentOrderOptions, hAlignOptions, vAlignOptions } from "./shared/options"
+import { contentOrderOptions, minHeightOptions } from "./shared/options"
 
 export const featureBlockSchema: TinaTemplate = {
   name: "feature",
@@ -37,32 +37,30 @@ export const featureBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          type: "string",
+          label: "Background",
+          name: "fillStyles",
+          ui: {
+            component: "fillControl"
+          }
+        },
+        {
+          label: "Alignment",
+          name: "alignment",
+          type: "string",
+          ui: {
+            component: "alignmentControl",
+          },
+        },
+        {
           label: "Minimum Height",
           name: "minHeight",
           type: "string",
-        },
-        {
-          label: "Flip Layout",
-          name: "flipLayout",
-          type: "boolean",
-        },
-        {
-          label: "Text Alignment",
-          name: "textAlignment",
-          type: "string",
           ui: {
-            component: "select",
+            component: "selectField",
+            mobileMode: true,
           },
-          options: hAlignOptions,
-        },
-        {
-          label: "Vertical Alignment",
-          name: "contentAlignment",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: vAlignOptions,
+          options: minHeightOptions,
         },
         {
           label: "Padding",
@@ -73,12 +71,13 @@ export const featureBlockSchema: TinaTemplate = {
           }
         },
         {
+          label: "Content Order",
+          name: "contentOrder",
           type: "string",
-          label: "Background",
-          name: "fillStyles",
           ui: {
-            component: "fillControl"
-          }
+            component: "selectField",
+          },
+          options: contentOrderOptions,
         },
         {
           type: "string",
@@ -111,15 +110,6 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "typeControl"
           }
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions
         },
       ],
     },

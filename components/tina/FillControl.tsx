@@ -1,15 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
-import SelectMenu from './SelectMenu';
-import ColorPicker from './ColorPicker';
+import SelectMenu from './widgets/SelectMenu';
+import ColorPicker from './widgets/ColorPicker';
+import FieldLabel from './widgets/FieldLabel';
 
 export default function FillControl({ field, input, meta }) {
-    const fillTypes = [
-      { label: "Solid", value: "solid" },
-      { label: "Gradient", value: "gradient" },
-      { label: "Transparent", value: "transparent" },
-    ]
-    const [fillType, setFillType] = useState(getFillType(input.value));
-  
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const fillTypes = [
+    { label: "Solid", value: "solid" },
+    { label: "Gradient", value: "gradient" },
+    { label: "Transparent", value: "transparent" },
+  ]
+  const [fillType, setFillType] = useState(getFillType(input.value));
   const bgColors = [
     { label: "Primary", value: "bg-primary"},
     { label: "Accent 1", value: "bg-accent1"},
@@ -23,7 +25,6 @@ export default function FillControl({ field, input, meta }) {
     { label: "Black", value: "bg-black"},
   ]
   const [bgColor, setBgColor] = useState(getStyleMatch(bgColors, input.value) || "bg-black");
-  
   const fromColors = [
     { label: "Primary", value: "from-primary"},
     { label: "Accent 1", value: "from-accent1"},
@@ -37,7 +38,6 @@ export default function FillControl({ field, input, meta }) {
     { label: "Black", value: "from-black"},
   ]
   const [fromColor, setFromColor] = useState(getStyleMatch(fromColors, input.value) || "from-black");
-
   const toColors = [
     { label: "Primary", value: "to-primary"},
     { label: "Accent 1", value: "to-accent1"},
@@ -51,7 +51,6 @@ export default function FillControl({ field, input, meta }) {
     { label: "Black", value: "to-black"},
   ]
   const [toColor, setToColor] = useState(getStyleMatch(toColors, input.value) || "to-black");
-
   const directions = [
     { label: "↑", value: "bg-gradient-to-t" },
     { label: "↗", value: "bg-gradient-to-tr" },
@@ -63,8 +62,6 @@ export default function FillControl({ field, input, meta }) {
     { label: "↖", value: "bg-gradient-to-tl" },
   ]
   const [direction, setDirection] = useState(getStyleMatch(directions, input.value) || "bg-gradient-to-r");
-
-  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // Update Hidden Field
@@ -116,24 +113,16 @@ export default function FillControl({ field, input, meta }) {
 
   return (
     <>
-      <div>
-        <label className="block mb-2 overflow-hidden" style={{
-          color: "var(--tina-color-grey-8)",
-          fontSize: "var(--tina-font-size-1)",
-          fontWeight: "600",
-          letterSpacing: "0.01em",
-          textOverflow: "ellipsis",
-        }}>{field.label}</label>
-      </div>
-      <div className="flex mb-2 items-center">
-        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-28 mr-1" />
+      <FieldLabel label={field.label} />
+      <div className="flex gap-2 mb-2 items-center">
+        <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-1/2" />
         {fillType === "solid" &&
-          <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} className="mr-1" />
+          <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} />
         }
         {fillType === "gradient" &&
           <>
-            <ColorPicker value={fromColor.replace('from-','')} onClick={handleSetFromColor} className="mr-1" />
-            <ColorPicker value={toColor.replace('to-','')} onClick={handleSetToColor} className="mr-1" />
+            <ColorPicker value={fromColor.replace('from-','')} onClick={handleSetFromColor} />
+            <ColorPicker value={toColor.replace('to-','')} onClick={handleSetToColor} />
             <SelectMenu value={direction} onChange={setDirection} options={directions} className="w-12" />
           </>
         }

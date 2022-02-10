@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import SelectMenu from './SelectMenu';
+import SelectMenu from './widgets/SelectMenu';
 import IconMargin from './icons/IconMargin';
+import FieldLabel from './widgets/FieldLabel';
 
 export default function ImageControl({ field, input, meta }) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  
   const heights = [
     { label: "auto", value: "" },
     { label: "16", value: "h-4" },
@@ -72,7 +75,14 @@ export default function ImageControl({ field, input, meta }) {
     { label: "96", value: "mb-24" },
   ]
   const [margin, setMargin] = useState(getStyleMatch(margins, input.value));
-  const inputRef = useRef<HTMLInputElement>(null);
+
+  // See if one of groups arrays styles is present in the fields value
+  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
+    const optionValues = options.map(option => option.value);
+    const currentStyles = styles.split(" ");
+    const matches = optionValues.filter(element => currentStyles.includes(element))
+    return matches[0];
+  }
 
   useEffect(() => {
     // Update Hidden Field
@@ -84,25 +94,9 @@ export default function ImageControl({ field, input, meta }) {
     input.dispatchEvent(new Event("input", {bubbles: true}));
   }, [height, fit, position, margin, inputRef.current]);
 
-  // See if one of groups arrays styles is present in the fields value
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const matches = optionValues.filter(element => currentStyles.includes(element))
-    return matches[0];
-  }
-
   return (
     <>
-      <div>
-        <label className="block mb-2 overflow-hidden" style={{
-          color: "var(--tina-color-grey-8)",
-          fontSize: "var(--tina-font-size-1)",
-          fontWeight: "600",
-          letterSpacing: "0.01em",
-          textOverflow: "ellipsis",
-        }}>{field.label}</label>
-      </div>
+      <FieldLabel label={field.label} />
       <div className="flex mb-2 items-center">
         <label className="text-xs text-gray w-18 mr-2">Max Height</label>
         <SelectMenu value={height} onChange={setHeight} options={heights} className="w-24" />

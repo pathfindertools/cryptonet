@@ -77,6 +77,9 @@ const App = ({ Component, pageProps }) => {
               import('../plugins.tsx').then(({ fillControlFieldPlugin }) => {
                 cms.plugins.add(fillControlFieldPlugin)
               });
+              import('../plugins.tsx').then(({ alignmentControlFieldPlugin }) => {
+                cms.plugins.add(alignmentControlFieldPlugin)
+              });
               import('../plugins.tsx').then(({ imageControlFieldPlugin }) => {
                 cms.plugins.add(imageControlFieldPlugin)
               });
@@ -85,6 +88,9 @@ const App = ({ Component, pageProps }) => {
               });
               import('../plugins.tsx').then(({ borderControlFieldPlugin }) => {
                 cms.plugins.add(borderControlFieldPlugin)
+              });
+              import('../plugins.tsx').then(({ selectFieldPlugin }) => {
+                cms.plugins.add(selectFieldPlugin)
               });
             }}
             documentCreatorCallback={{
