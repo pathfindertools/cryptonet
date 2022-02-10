@@ -63,7 +63,7 @@ export const featureBlockSchema: TinaTemplate = {
           options: minHeightOptions,
         },
         {
-          label: "Padding",
+          label: "Content Padding",
           name: "padding",
           type: "string",
           ui: {

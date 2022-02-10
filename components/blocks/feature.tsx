@@ -21,14 +21,13 @@ const contentContainerCss = (data) => {
 
 const imageContainerCss = (data) => {
   const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
-  const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"
-  const padding = data.style?.padding || ""
-  const hasMobileClasses = getSubstring(padding, "sm:") ? true : false;
-  const removedEdgeClass = getSubstring(padding, isFlipped ? "pr" : "pl")
-  const mobilePadding = hasMobileClasses ? 'sm:pb-0' : `sm:${removedEdgeClass} sm:pb-0`
-  const imagePadding = removeSubstring(removeSubstring(data.style?.padding || "", removedEdgeClass), "sm:pb");  
+  const hasMobileClasses = getSubstring(data.style?.padding, "sm:") ? true : false;
+  const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"  
+  const opposingEdgePadding = getSubstring(data.style?.padding, isFlipped ? "pr" : "pl").replace(isFlipped ? "pr-" : "pl-", "")
+  const desktopPadding = isFlipped ? `pl-${opposingEdgePadding}` : `pr-${opposingEdgePadding}`
+  const mobilePadding = "sm:p-0"
   const styles = {
-    padding: `image-container max-w-desktop-half ${heightStyle} ${imagePadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
+    padding: `image-container max-w-desktop-half ${heightStyle} ${desktopPadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
     half: `${heightStyle} max-w-desktop-half ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
     halfEdge: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? 'right-4' : 'left-4'}`,
     overlap: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? '-right-24' : '-left-24'}`,

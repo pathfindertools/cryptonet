@@ -145,7 +145,7 @@
                       ]
                     },
                     {
-                      "label": "Padding",
+                      "label": "Content Padding",
                       "name": "padding",
                       "type": "string",
                       "ui": {
@@ -201,27 +201,27 @@
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ]
@@ -762,27 +762,27 @@
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ]
@@ -1522,27 +1522,27 @@
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ]
@@ -2532,27 +2532,27 @@
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ]

@@ -5,7 +5,7 @@ blocks:
       fillStyles: bg-accent1
       alignment: 'flex-row-reverse text-left items-start '
       minHeight: min-h-0
-      padding: pt-12 pb-20 pr-0 pl-20
+      padding: pt-12 pb-20 pr-5 pl-10
       labelStyles: 'text-accent1 undefined text-xl mb-0 '
       headlineStyles: text-primary undefined text-6xl mb-5 font-bold
       subheadStyles: 'text-gray undefined text-3xl mb-0 '
@@ -14,6 +14,7 @@ blocks:
     image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638476723/asia-season_sn2gv8.png
+      imageStyle: padding
       fit: none
     label: ''
     headline: Quickly create
