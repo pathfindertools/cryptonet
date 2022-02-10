@@ -1668,7 +1668,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
+            "value": "typographyTitle"
           },
           "arguments": [],
           "type": {
@@ -1729,6 +1729,21 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "arguments": [],
           "type": {
@@ -5704,7 +5719,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "contentOrder"
+            "value": "typographyTitle"
           },
           "type": {
             "kind": "NamedType",
@@ -5761,6 +5776,20 @@
           "name": {
             "kind": "Name",
             "value": "textStyles"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "contentOrder"
           },
           "type": {
             "kind": "NamedType",

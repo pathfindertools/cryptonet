@@ -6,6 +6,7 @@ import ImageControl from './components/tina/ImageControl'
 import PaddingControl from './components/tina/PaddingControl'
 import BorderControl from './components/tina/BorderControl'
 import SelectField from './components/tina/SelectField'
+import RuledTitle from './components/tina/RuledTitle'
 import { TextField } from 'tinacms'
 
 export const emailFieldPlugin = {
@@ -58,4 +59,10 @@ export const borderControlFieldPlugin = {
   Component: BorderControl,
   __type: 'field',
   name: 'borderControl',
+}
+
+export const ruledTitlePlugin = {
+  Component: RuledTitle,
+  __type: 'field',
+  name: 'ruledTitle',
 }

@@ -115,11 +115,12 @@ type PagesBlocksFeatureStyle {
   alignment: String
   minHeight: String
   padding: String
-  contentOrder: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 type PagesBlocksFeatureImage {
@@ -445,11 +446,12 @@ input PagesBlocksFeatureStyleMutation {
   alignment: String
   minHeight: String
   padding: String
-  contentOrder: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  contentOrder: String
 }
 
 input PagesBlocksFeatureImageMutation {

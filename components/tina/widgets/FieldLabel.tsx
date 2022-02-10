@@ -14,7 +14,7 @@ export default function FieldLabel(props:FieldLabelProps) {
 
   return (
     <div className="relative">
-      <label className="block mb-2 overflow-hidden font-bold text-tina-gray8" style={{
+      <label className="block mb-1 overflow-hidden font-bold text-tina-gray8" style={{
         fontSize: "var(--tina-font-size-1)",
         letterSpacing: "0.01em",
         textOverflow: "ellipsis",

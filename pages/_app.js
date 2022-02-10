@@ -92,6 +92,9 @@ const App = ({ Component, pageProps }) => {
               import('../plugins.tsx').then(({ selectFieldPlugin }) => {
                 cms.plugins.add(selectFieldPlugin)
               });
+              import('../plugins.tsx').then(({ ruledTitlePlugin }) => {
+                cms.plugins.add(ruledTitlePlugin)
+              });
             }}
             documentCreatorCallback={{
               /**

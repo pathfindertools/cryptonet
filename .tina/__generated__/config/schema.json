@@ -153,38 +153,12 @@
                       }
                     },
                     {
-                      "label": "Content Order",
-                      "name": "contentOrder",
+                      "label": "Typography",
+                      "name": "typographyTitle",
                       "type": "string",
                       "ui": {
-                        "component": "selectField"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ]
+                        "component": "ruledTitle"
+                      }
                     },
                     {
                       "type": "string",
@@ -217,6 +191,40 @@
                       "ui": {
                         "component": "typeControl"
                       }
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headings Content",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Content Headings",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headings Label Content",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headings Content Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Content Label Headings",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Content Headings Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ]
                     }
                   ]
                 },

@@ -19,11 +19,12 @@ fragment PagesParts on Pages {
         alignment
         minHeight
         padding
-        contentOrder
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
       image {
         __typename

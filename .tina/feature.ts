@@ -71,13 +71,12 @@ export const featureBlockSchema: TinaTemplate = {
           }
         },
         {
-          label: "Content Order",
-          name: "contentOrder",
+          label: "Typography",
+          name: "typographyTitle",
           type: "string",
           ui: {
-            component: "selectField",
+            component: "ruledTitle",
           },
-          options: contentOrderOptions,
         },
         {
           type: "string",
@@ -110,6 +109,15 @@ export const featureBlockSchema: TinaTemplate = {
           ui: {
             component: "typeControl"
           }
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: contentOrderOptions,
         },
       ],
     },
