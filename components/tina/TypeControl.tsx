@@ -186,15 +186,15 @@ export default function TypeControl({ field, input, meta }) {
     <>
       <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
       <div className="mb-4">
-        <div className="flex mb-2 items-center">
-          <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="mr-2" />
-          <SelectMenu value={font} onChange={setFont} options={fontOptions} className="flex-grow mr-2" />
+        <div className="flex mb-2 items-center gap-1.5">
+          <ColorPicker value={color?.replace('text-','')} onClick={handleSetColor} className="w-9" />
+          <SelectMenu value={font} onChange={setFont} options={fontOptions} className="w-12 flex-1" />
           <SelectMenu value={size} onChange={setSize} options={sizeOptions} className="w-13" />
-          <div className="w-6 pr-1">
+          <div className="w-3.5 pr-.5">
             <IconMargin className="float-right" />
           </div>
-          <SelectMenu value={margin} onChange={setMargin} options={marginOptions} className="w-12 mr-2" />
-          <ToggleButton value={weight} onClick={setWeight} options={weightOptions} className="w-9" />
+          <SelectMenu value={margin} onChange={setMargin} options={marginOptions} className="w-12 " />
+          <ToggleButton value={weight} onClick={setWeight} options={weightOptions} className="w-9 shrink-0" />
         </div>
         {hasMobileStyles &&
           <div className="flex mb-2 relative">

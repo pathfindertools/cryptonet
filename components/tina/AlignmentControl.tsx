@@ -66,7 +66,7 @@ export default function AlignmentControl({ field, input, meta }) {
   return (
     <div className="mb-4">
       <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
-      <div className="flex gap-2">
+      <div className="flex gap-1.5">
         <SelectMenu value={layout} onChange={setLayout} options={layoutOptions} className="w-1/2 shrink-0" />
         <IconPicker value={textAlign} onClick={handleSetTextAlign} options={textAlignOptions} menuPosition="right" className="flex-1" />
         <IconPicker value={contentAlign} onClick={handleSetContentAlign} options={contentAlignOptions} menuPosition="right" className="flex-1" />
