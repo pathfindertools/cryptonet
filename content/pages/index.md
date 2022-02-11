@@ -2,50 +2,49 @@
 draft: true
 blocks:
   - style:
-      fillStyles: bg-accent1
+      fillStyles: from-accent1 to-black bg-gradient-to-br
       alignment: 'flex-row-reverse text-left items-start '
       minHeight: min-h-0
-      padding: pt-12 pb-20 pr-5 pl-10
-      labelStyles: 'text-accent1 undefined text-xl mb-0 '
-      headlineStyles: text-primary undefined text-6xl mb-5 font-bold
-      subheadStyles: 'text-gray undefined text-3xl mb-0 '
-      textStyles: 'text-white undefined text-lg mb-16 '
+      padding: pt-40 pb-16 pr-7 pl-20
+      labelStyles: text-gray-light undefined text-xl mb-0 font-bold
+      headlineStyles: text-primary undefined text-6xl mb-0 font-bold
+      subheadStyles: text-gray undefined text-2xl mb-7 font-bold
+      textStyles: 'text-white undefined text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1638476723/asia-season_sn2gv8.png
-      imageStyle: padding
-      fit: none
+      imageStyle: half
+      fit: cover
+      position: object-center
     label: ''
-    headline: Quickly create
-    subhead: ''
-    body: >-
-      MicroGen is a Next.js  starter template for quickly creating sites that
-      can be customized and styled with Tina CMS.
+    headline: MicroGen
+    subhead: A site builder for Web 3.0
+    body: Make modern web 3.0 ready websites with a real-time visual editor.
     buttons:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
         type: solid
-        buttonFillStyles: bg-accent2
+        buttonFillStyles: bg-primary
         textColor: white
         backgroundColor: black
     _template: feature
   - style:
-      columns: '2'
+      fillStyles: from-gray-light to-gray-light bg-gradient-to-t
       textAlignment: left
       padding: pt-20 pb-20 pr-20 pl-20
-      fillStyles: from-gray-light to-gray-light bg-gradient-to-t
+      columns: '2'
       labelStyles: text-black font-sans text-xl mb-0 font-bold
       headlineStyles: text-black undefined text-5xl mb-11 font-bold
       subheadStyles: text-black undefined text-3xl mb-0 font-bold
       textStyles: text-black undefined text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
     cardStyle:
-      type: solid
       fillStyles: bg-white
-      accentColor: ''
+      padding: pt-4 pb-4 pr-5 pl-7
+      type: solid
+      accentColor: primary
       borderStyles: border-primary border-l-4
-      padding: pt-4 pb-4 pr-5 pl-8
       labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: text-primary undefined text-xl mb-2 font-bold
       subheadStyles: 'text-black undefined text-lg mb-0 '
@@ -75,8 +74,20 @@ blocks:
       - headline: Git Based
         subhead: ''
         text: Version controlled content and design.
+    navigationLabel: Features
     _template: textCards
-  - label: ''
+  - style:
+      fillStyles: bg-primary
+      textAlignment: text-center
+      minHeight: min-h-0
+      padding: pt-7 pb-10 pr-0 undefined
+      width: normal
+      labelStyles: text-black undefined text-xl mb-0 font-bold
+      headlineStyles: text-white undefined text-6xl mb-3 font-bold
+      subheadStyles: text-black undefined text-3xl mb-0 font-bold
+      textStyles: text-black undefined text-lg mb-0 font-bold
+      contentOrder: labelHeadingsContent
+    label: ''
     headline: Learn More
     subhead: ''
     body: ''
@@ -84,35 +95,36 @@ blocks:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
         type: solid
-        textColor: gray
+        buttonFillStyles: bg-white
+        textColor: primary
         backgroundColor: white
-    style:
-      textAlignment: center
-      width: narrow
-      padding: pt-5 pb-5 undefined undefined
-      fillStyles: bg-primary
-      labelStyles: text-black undefined text-xl mb-0 font-bold
-      headlineStyles: text-white undefined text-6xl mb-0 font-bold
-      subheadStyles: text-black undefined text-3xl mb-0 font-bold
-      textStyles: text-black undefined text-lg mb-0 font-bold
-      contentOrder: labelHeadingsContent
     _template: banner
   - style:
-      columns: '2'
-      textAlignment: left
-      padding: pt-20 pb-20 pr-20 pl-20
+      minHeight: min-h-0
+      fullWidth: false
+      padding: pt-10 pb-10 pr-20 pl-20
+      fillStyles: bg-black
+    markup: <p class="text-white">I am an embed</p>
+    navigationLabel: Embed
+    _template: embed
+  - style:
       fillStyles: bg-accent1
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-14 pb-20 pr-20 pl-20
+      contentWidth: w-full
+      columns: '2'
       labelStyles: text-black undefined text-xl mb-0 font-bold
       headlineStyles: text-white undefined text-6xl mb-10 font-bold
       subheadStyles: text-black undefined text-3xl mb-0 font-bold
       textStyles: text-black undefined text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
     cardStyle:
-      type: solid
-      imageStyles: ' undefined undefined undefined'
       fillStyles: bg-primary
-      accentColor: white
       padding: pt-5 pb-5 pr-5 pl-5
+      type: solid
+      accentColor: white
+      imageStyles: ' undefined undefined undefined'
       labelStyles: 'text-white undefined text-sm mb-0 '
       headlineStyles: 'text-white undefined text-2xl mb-0 '
       subheadStyles: 'text-white undefined text-lg mb-0 '
@@ -120,7 +132,7 @@ blocks:
       buttonType: outline
       buttonTextColor: white
     label: ''
-    headline: Built with Microgen
+    headline: Made with Microgen
     subhead: ''
     body: ''
     items:
@@ -144,6 +156,7 @@ blocks:
           filler text.
         link: 'https://hackathons.filecoin.io/asia-hackathon-season/'
         buttonLabel: Visit Site
+    navigationLabel: Made with Microgen
     _template: photoCards
 meta:
   siteTitle: Hackathons
@@ -155,8 +168,9 @@ meta:
   siteImageSrc: >-
     https://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 nav:
+  navAlignment: right
   navTextColor: white
-  navBackgroundColor: black
+  navBackgroundColor: accent4
 colors:
   primary: '#0090FF'
   accent1: '#0E4465'

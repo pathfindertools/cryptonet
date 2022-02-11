@@ -11,9 +11,8 @@ export const Embed = ({ data }) => {
       image={data.backgroundImage?.src}
       imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
-      minHeight={data.style?.minHeight}
     >
-      <div className={`${width} ${padding}`}>
+      <div className={`${width} ${padding} ${data.style?.minHeight}`}>
         <div dangerouslySetInnerHTML={{ __html: data.markup }}></div>
       </div>
     </Section>

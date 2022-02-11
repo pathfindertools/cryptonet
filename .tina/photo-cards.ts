@@ -53,17 +53,42 @@ export const photoCardsBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          type: "string",
+          label: "Background",
+          name: "fillStyles",
+          ui: {
+            component: "fillControl"
+          }
+        },
+        {
+          label: "Padding",
+          name: "padding",
+          type: "string",
+          ui: {
+            component: "paddingControl",
+          }
+        },
+        {
           label: "Type",
           name: "type",
           type: "string",
           ui: {
-            component: "select",
+            component: "selectField",
           },
           options: [
             { label: "Solid Background", value: "solid" },
             { label: "Semi Transparent", value: "transparent" },
             { label: "Horizontal Fade", value: "fadeH" },
           ],
+        },
+        {
+          label: "Accent Color",
+          name: "accentColor",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: colorOptions,
         },
         {
           type: "string",
@@ -74,29 +99,12 @@ export const photoCardsBlockSchema: TinaTemplate = {
           }
         },
         {
-          type: "string",
-          label: "Background",
-          name: "fillStyles",
-          ui: {
-            component: "fillControl"
-          }
-        },
-        {
-          label: "Accent Color",
-          name: "accentColor",
+          label: "Typography",
+          name: "typographyTitle",
           type: "string",
           ui: {
-            component: "select",
+            component: "ruledTitle",
           },
-          options: colorOptions,
-        },
-        {
-          label: "Padding",
-          name: "padding",
-          type: "string",
-          ui: {
-            component: "paddingControl",
-          }
         },
         {
           type: "string",
@@ -131,11 +139,19 @@ export const photoCardsBlockSchema: TinaTemplate = {
           }
         },
         {
-          label: "Button Type",
+          label: "Button",
+          name: "buttonTitle",
+          type: "string",
+          ui: {
+            component: "ruledTitle",
+          },
+        },
+        {
+          label: "Type",
           name: "buttonType",
           type: "string",
           ui: {
-            component: "select",
+            component: "selectField",
           },
           options: [
             { label: "Solid", value: "solid" },
@@ -156,7 +172,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
           name: "buttonTextColor",
           type: "string",
           ui: {
-            component: "select",
+            component: "selectField",
           },
           options: colorOptions,
         },
@@ -179,7 +195,7 @@ export const photoCardsBlockSchema: TinaTemplate = {
           label: "Position",
           name: "position",
           ui: {
-            component: "select",
+            component: "selectField",
           },
           type: "string",
           options: [

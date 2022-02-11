@@ -36,8 +36,6 @@ export default function BorderControl({ field, input, meta }) {
     { label: "Right", value: "border-r-" },
     { label: "Bottom", value: "border-b-" },
     { label: "Left", value: "border-l-" },
-    { label: "Horizontal", value: "border-x-" },
-    { label: "Vertical", value: "border-y-" },
   ]
   const [side, setSide] = useState(getStyleMatch(sides, input.value));
 

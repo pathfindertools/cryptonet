@@ -1,7 +1,7 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
-import { contentOrderOptions, hAlignOptions } from "./shared/options"
+import { contentOrderOptions, hAlignOptions, minHeightOptions } from "./shared/options"
 
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
@@ -25,6 +25,112 @@ export const bannerBlockSchema: TinaTemplate = {
     },
   },
   fields: [
+    {
+      type: "object",
+      label: "Section Style",
+      name: "style",
+      ui: {
+        component: "group",
+      },
+      fields: [
+        {
+          type: "string",
+          label: "Background",
+          name: "fillStyles",
+          ui: {
+            component: "fillControl"
+          }
+        },
+        {
+          label: "Text Alignment",
+          name: "textAlignment",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: hAlignOptions,
+        },
+        {
+          label: "Minimum Height",
+          name: "minHeight",
+          type: "string",
+          ui: {
+            component: "selectField",
+            mobileMode: true,
+          },
+          options: minHeightOptions,
+        },
+        {
+          label: "Padding",
+          name: "padding",
+          type: "string",
+          ui: {
+            component: "paddingControl",
+          }
+        },
+        {
+          label: "Content Width",
+          name: "width",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: [
+            { label: "Normal", value: "normal" },
+            { label: "Narrow", value: "narrow" },
+          ],
+        },
+        {
+          label: "Typography",
+          name: "typographyTitle",
+          type: "string",
+          ui: {
+            component: "ruledTitle",
+          },
+        },
+        {
+          type: "string",
+          label: "Label",
+          name: "labelStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Headline",
+          name: "headlineStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Subhead",
+          name: "subheadStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "textStyles",
+          ui: {
+            component: "typeControl"
+          }
+        },
+        {
+          label: "Content Order",
+          name: "contentOrder",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: contentOrderOptions,
+        },
+      ],
+    },
     {
       label: "Image",
       name: "image",
@@ -62,7 +168,7 @@ export const bannerBlockSchema: TinaTemplate = {
           label: "Position",
           name: "position",
           ui: {
-            component: "select",
+            component: "selectField",
           },
           type: "string",
           options: [
@@ -104,98 +210,5 @@ export const bannerBlockSchema: TinaTemplate = {
     },
     buttonsSchema,
     navigationLabelSchema,
-    {
-      type: "object",
-      label: "Section Style",
-      name: "style",
-      ui: {
-        component: "group",
-      },
-      fields: [
-        {
-          label: "Minimum Height",
-          name: "minHeight",
-          type: "string",
-        },
-        {
-          label: "Text Alignment",
-          name: "textAlignment",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: hAlignOptions,
-        },
-        {
-          label: "Width",
-          name: "width",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: [
-            { label: "Normal", value: "normal" },
-            { label: "Narrow", value: "narrow" },
-          ],
-        },
-        {
-          label: "Padding",
-          name: "padding",
-          type: "string",
-          ui: {
-            component: "paddingControl",
-          }
-        },
-        {
-          type: "string",
-          label: "Background",
-          name: "fillStyles",
-          ui: {
-            component: "fillControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Label",
-          name: "labelStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Headline",
-          name: "headlineStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Subhead",
-          name: "subheadStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          type: "string",
-          label: "Text",
-          name: "textStyles",
-          ui: {
-            component: "typeControl"
-          }
-        },
-        {
-          label: "Content Order",
-          name: "contentOrder",
-          type: "string",
-          ui: {
-            component: "select",
-          },
-          options: contentOrderOptions,
-        },
-      ],
-    },
   ],
 };

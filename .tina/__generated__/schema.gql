@@ -158,29 +158,32 @@ type PagesBlocksFeature {
 }
 
 type PagesBlocksPhotoCardsStyle {
-  minHeight: String
-  columns: String
-  textAlignment: String
-  padding: String
   fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  contentWidth: String
+  columns: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
   contentOrder: String
-  contentWidth: String
 }
 
 type PagesBlocksPhotoCardsCardStyle {
-  type: String
-  imageStyles: String
   fillStyles: String
-  accentColor: String
   padding: String
+  type: String
+  accentColor: String
+  imageStyles: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  buttonTitle: String
   buttonType: String
   buttonFillStyles: String
   buttonTextColor: String
@@ -228,29 +231,32 @@ type PagesBlocksPhotoCards {
 }
 
 type PagesBlocksTextCardsStyle {
-  minHeight: String
-  columns: String
-  textAlignment: String
-  padding: String
   fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  contentWidth: String
+  columns: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
   contentOrder: String
-  contentWidth: String
 }
 
 type PagesBlocksTextCardsCardStyle {
-  type: String
   fillStyles: String
+  padding: String
+  type: String
   accentColor: String
   borderStyles: String
-  padding: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  buttonTitle: String
   buttonType: String
   buttonTextColor: String
 }
@@ -291,6 +297,20 @@ type PagesBlocksTextCards {
   navigationLabel: String
 }
 
+type PagesBlocksBannerStyle {
+  fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  width: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
 type PagesBlocksBannerImage {
   src: String
   alt: String
@@ -310,20 +330,8 @@ type PagesBlocksBannerButtons {
   backgroundColor: String
 }
 
-type PagesBlocksBannerStyle {
-  minHeight: String
-  textAlignment: String
-  width: String
-  padding: String
-  fillStyles: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
 type PagesBlocksBanner {
+  style: PagesBlocksBannerStyle
   image: PagesBlocksBannerImage
   backgroundImage: PagesBlocksBannerBackgroundImage
   label: String
@@ -332,7 +340,6 @@ type PagesBlocksBanner {
   body: String
   buttons: [PagesBlocksBannerButtons]
   navigationLabel: String
-  style: PagesBlocksBannerStyle
 }
 
 type PagesBlocksEmbedStyle {
@@ -489,29 +496,32 @@ input PagesBlocksFeatureMutation {
 }
 
 input PagesBlocksPhotoCardsStyleMutation {
-  minHeight: String
-  columns: String
-  textAlignment: String
-  padding: String
   fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  contentWidth: String
+  columns: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
   contentOrder: String
-  contentWidth: String
 }
 
 input PagesBlocksPhotoCardsCardStyleMutation {
-  type: String
-  imageStyles: String
   fillStyles: String
-  accentColor: String
   padding: String
+  type: String
+  accentColor: String
+  imageStyles: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  buttonTitle: String
   buttonType: String
   buttonFillStyles: String
   buttonTextColor: String
@@ -559,29 +569,32 @@ input PagesBlocksPhotoCardsMutation {
 }
 
 input PagesBlocksTextCardsStyleMutation {
-  minHeight: String
-  columns: String
-  textAlignment: String
-  padding: String
   fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  contentWidth: String
+  columns: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
   contentOrder: String
-  contentWidth: String
 }
 
 input PagesBlocksTextCardsCardStyleMutation {
-  type: String
   fillStyles: String
+  padding: String
+  type: String
   accentColor: String
   borderStyles: String
-  padding: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
   textStyles: String
+  buttonTitle: String
   buttonType: String
   buttonTextColor: String
 }
@@ -622,6 +635,20 @@ input PagesBlocksTextCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksBannerStyleMutation {
+  fillStyles: String
+  textAlignment: String
+  minHeight: String
+  padding: String
+  width: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  contentOrder: String
+}
+
 input PagesBlocksBannerImageMutation {
   src: String
   alt: String
@@ -641,20 +668,8 @@ input PagesBlocksBannerButtonsMutation {
   backgroundColor: String
 }
 
-input PagesBlocksBannerStyleMutation {
-  minHeight: String
-  textAlignment: String
-  width: String
-  padding: String
-  fillStyles: String
-  labelStyles: String
-  headlineStyles: String
-  subheadStyles: String
-  textStyles: String
-  contentOrder: String
-}
-
 input PagesBlocksBannerMutation {
+  style: PagesBlocksBannerStyleMutation
   image: PagesBlocksBannerImageMutation
   backgroundImage: PagesBlocksBannerBackgroundImageMutation
   label: String
@@ -663,7 +678,6 @@ input PagesBlocksBannerMutation {
   body: String
   buttons: [PagesBlocksBannerButtonsMutation]
   navigationLabel: String
-  style: PagesBlocksBannerStyleMutation
 }
 
 input PagesBlocksEmbedStyleMutation {

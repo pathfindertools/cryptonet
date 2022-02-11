@@ -21,9 +21,9 @@ export const contentOrderOptions: {label: string, value: string}[] = [
 ];
 
 export const hAlignOptions: {label: string, value: string}[] = [
-  { label: "Left", value: "left" },
-  { label: "Center", value: "center" },
-  { label: "Right", value: "right" },
+  { label: "Left", value: "text-left" },
+  { label: "Center", value: "text-center" },
+  { label: "Right", value: "text-right" },
 ];
 
 export const vAlignOptions: {label: string, value: string}[] = [

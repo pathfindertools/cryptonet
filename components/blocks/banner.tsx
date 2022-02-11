@@ -9,9 +9,8 @@ export const Banner = ({ data }) => {
       image={data.backgroundImage?.src}
       imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
-      minHeight={data.style?.minHeight}
     >
-      <div className={`max-w-desktop-full mx-auto ${data?.style?.padding}`}>
+      <div className={`max-w-desktop-full mx-auto ${data?.style?.padding} ${data.style?.minHeight} ${data.style?.textAlignment}`}>
         <div className={`mx-auto ${data.style?.width === "narrow" ? "w-2/3 sm:w-full" : "w-full"}`}>
           {data.image && (
             <img

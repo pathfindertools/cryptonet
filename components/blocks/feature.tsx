@@ -24,7 +24,10 @@ const imageContainerCss = (data) => {
   const hasMobileClasses = getSubstring(data.style?.padding, "sm:") ? true : false;
   const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"  
   const opposingEdgePadding = getSubstring(data.style?.padding, isFlipped ? "pr" : "pl").replace(isFlipped ? "pr-" : "pl-", "")
-  const desktopPadding = isFlipped ? `pl-${opposingEdgePadding}` : `pr-${opposingEdgePadding}`
+  const desktopPaddingTop = data.style?.padding?.split(" ").find(item => item.includes("pt"))
+  const desktopPaddingBottom = data.style?.padding?.split(" ").find(item => item.includes("pb"))
+  const desktopPaddingEdge = isFlipped ? `pl-${opposingEdgePadding}` : `pr-${opposingEdgePadding}`
+  const desktopPadding = `${desktopPaddingTop} ${desktopPaddingBottom} ${desktopPaddingEdge}`
   const mobilePadding = "sm:p-0"
   const styles = {
     padding: `image-container max-w-desktop-half ${heightStyle} ${desktopPadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
