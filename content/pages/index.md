@@ -12,9 +12,8 @@ blocks:
       textStyles: 'text-white undefined text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
-      src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1638476723/asia-season_sn2gv8.png
-      imageStyle: half
+      src: ''
+      imageStyle: padding
       fit: cover
       position: object-center
     label: ''
