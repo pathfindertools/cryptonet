@@ -3,9 +3,9 @@ draft: true
 blocks:
   - style:
       fillStyles: from-accent1 to-black bg-gradient-to-br
-      alignment: 'flex-row-reverse text-left items-start '
-      minHeight: min-h-0
-      padding: pt-40 pb-16 pr-7 pl-20
+      alignment: 'flex-row-reverse text-left items-center '
+      minHeight: min-h-160
+      padding: pt-0 pb-0 pr-8 pl-20
       labelStyles: text-gray-light undefined text-xl mb-0 font-bold
       headlineStyles: text-primary undefined text-6xl mb-0 font-bold
       subheadStyles: text-gray undefined text-2xl mb-7 font-bold
@@ -15,10 +15,10 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1644622917/3d_illustration_tamzhz.png
       imageStyle: padding
-      fit: cover
+      fit: contain
       position: object-center
     label: ''
-    headline: MicroGen Demo
+    headline: MicroGen
     subhead: A site builder for Web 3.0
     body: Make modern web 3.0 ready websites with a real-time visual editor.
     buttons:
