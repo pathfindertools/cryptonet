@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import { Buttons } from "./buttons";
 
 const buttonAlignment = (alignment) => {
-  const alignmentClass = alignment.split(" ").find(item => item.includes("text-"))
+  const alignmentClass = alignment?.split(" ").find(item => item.includes("text-")) || ""
   const textAlignments = {
     "text-left": "",
     "text-center": "mx-auto",

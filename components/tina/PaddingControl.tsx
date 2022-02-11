@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import IconMobile from './icons/IconMobile';
 import SelectMenu from './widgets/SelectMenu';
 import FieldLabel from './widgets/FieldLabel';
+import { getStyleMatch } from './widgets/helpers'
 
 function buildOptions(prefix) {
   const options = [
@@ -71,13 +72,6 @@ export default function PaddingControl({ field, input, meta }) {
   const [bottomMobile, setBottomMobile] = useState(getStyleMatch(bottomOptionsMobile, input.value));
   const [rightMobile, setRightMobile] = useState(getStyleMatch(rightOptionsMobile, input.value));
   const [leftMobile, setLeftMobile] = useState(getStyleMatch(leftOptionsMobile, input.value));
-
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const match = optionValues.find(element => currentStyles.includes(element))
-    return match;
-  }
 
   function toggleMobile() {
     if (!hasMobileStyles && topMobile === undefined) {

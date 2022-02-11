@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import IconMobile from './icons/IconMobile';
 import SelectMenu from './widgets/SelectMenu';
 import FieldLabel from './widgets/FieldLabel';
+import { getStyleMatch } from './widgets/helpers'
 
 export default function SelectField({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -14,13 +15,6 @@ export default function SelectField({ field, input, meta }) {
   const [desktopStyle, setDesktopStyle] = useState(getStyleMatch(desktopOptions, input.value) || desktopOptions[0].value);
   const [mobileStyle, setMobileStyle] = useState(getStyleMatch(mobileOptions, input.value));
   const [hasMobileStyles, setHasMobileStyles] = useState(input.value.includes("sm:"));
-
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const match = optionValues.find(element => currentStyles.includes(element))
-    return match;
-  }
 
   function toggleMobile() {
     if (!hasMobileStyles && !mobileStyle) {

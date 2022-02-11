@@ -16,7 +16,7 @@ const SERVER_ENV = process.env.SERVER_ENV || "staging";
 
 function getMaybeRedirect(redirects) {
   if (!redirects) return;
-  const currentPath = window.location.href.replace(window.location.origin, "");
+  const currentPath = window.location?.href?.replace(window.location.origin, "");
 
   return redirects.find((redirect) => {
     return redirect.from === currentPath;

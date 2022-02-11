@@ -5,7 +5,7 @@ import ColorPicker from './widgets/ColorPicker';
 import IconMobile from './icons/IconMobile';
 import IconMargin from './icons/IconMargin';
 import FieldLabel from './widgets/FieldLabel';
-
+import { getStyleMatch } from './widgets/helpers'
 
 function buildColorOptions(prefix?) {
   const options = [
@@ -136,13 +136,6 @@ export default function TypeControl({ field, input, meta }) {
   const [marginMobile, setMarginMobile] = useState(getStyleMatch(marginOptionsMobile, input.value));
   const [weight, setWeight] = useState(getStyleMatch(weightOptions, input.value) || "");
   const [weightMobile, setWeightMobile] = useState(getStyleMatch(weightOptionsMobile, input.value) || "");
-
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const match = optionValues.find(element => currentStyles.includes(element))
-    return match;
-  }
 
   function toggleMobile() {
     setHasMobileStyles(!hasMobileStyles)

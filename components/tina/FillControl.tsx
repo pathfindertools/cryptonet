@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import SelectMenu from './widgets/SelectMenu';
 import ColorPicker from './widgets/ColorPicker';
 import FieldLabel from './widgets/FieldLabel';
+import { getStyleMatch } from './widgets/helpers'
 
 export default function FillControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -77,14 +78,6 @@ export default function FillControl({ field, input, meta }) {
     input.dispatchEvent(new Event("input", {bubbles: true}));
   }, [bgColor, toColor, fromColor, fillType, direction, inputRef.current]);
 
-  // See if one of groups arrays styles is present in the fields value
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const matches = optionValues.filter(element => currentStyles.includes(element))
-    return matches[0];
-  }
-
   function getFillType(value: string) {
     if (value.includes("to-")) {
       return "gradient";
@@ -104,9 +97,9 @@ export default function FillControl({ field, input, meta }) {
   }
   function handleSetFillType(value: string) {
     if (value === "solid") {
-      setBgColor(fromColor.replace("from-", "bg-"))
+      setBgColor(fromColor?.replace("from-", "bg-"))
     } else {
-      setFromColor(bgColor.replace("bg-", "from-"))
+      setFromColor(bgColor?.replace("bg-", "from-"))
     }
     setFillType(`${value}`)
   }
@@ -117,12 +110,12 @@ export default function FillControl({ field, input, meta }) {
       <div className="flex gap-1.5 mb-4 items-center">
         <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-1/2" />
         {fillType === "solid" &&
-          <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} />
+          <ColorPicker value={bgColor?.replace('bg-','')} onClick={handleSetBgColor} />
         }
         {fillType === "gradient" &&
           <>
-            <ColorPicker value={fromColor.replace('from-','')} onClick={handleSetFromColor} />
-            <ColorPicker value={toColor.replace('to-','')} onClick={handleSetToColor} />
+            <ColorPicker value={fromColor?.replace('from-','')} onClick={handleSetFromColor} />
+            <ColorPicker value={toColor?.replace('to-','')} onClick={handleSetToColor} />
             <SelectMenu value={direction} onChange={setDirection} options={directions} className="w-12" />
           </>
         }

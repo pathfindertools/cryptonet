@@ -4,11 +4,11 @@ import { Content } from "../content";
 
 /* Return the string with any word containing the substring removed */
 const removeSubstring = (value: string, substring: string) => {
-  return value.split(" ").filter(item => item.indexOf(substring) === -1).join(" ")
+  return value?.split(" ").filter(item => item.indexOf(substring) === -1).join(" ") || ""
 }
 /* Return a the first word containing the substring */
 const getSubstring = (value: string, substring: string) => {
-  const match = value.split(" ").find(item => item.includes(substring))
+  const match = value?.split(" ").find(item => item.includes(substring))
   return match
 }
 
@@ -23,7 +23,7 @@ const imageContainerCss = (data) => {
   const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
   const hasMobileClasses = getSubstring(data.style?.padding, "sm:") ? true : false;
   const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"  
-  const opposingEdgePadding = getSubstring(data.style?.padding, isFlipped ? "pr" : "pl").replace(isFlipped ? "pr-" : "pl-", "")
+  const opposingEdgePadding = getSubstring(data.style?.padding, isFlipped ? "pr" : "pl")?.replace(isFlipped ? "pr-" : "pl-", "")
   const desktopPaddingTop = data.style?.padding?.split(" ").find(item => item.includes("pt"))
   const desktopPaddingBottom = data.style?.padding?.split(" ").find(item => item.includes("pb"))
   const desktopPaddingEdge = isFlipped ? `pl-${opposingEdgePadding}` : `pr-${opposingEdgePadding}`

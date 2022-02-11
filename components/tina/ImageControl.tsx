@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import SelectMenu from './widgets/SelectMenu';
 import IconMargin from './icons/IconMargin';
 import FieldLabel from './widgets/FieldLabel';
+import { getStyleMatch } from './widgets/helpers'
 
 export default function ImageControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -75,14 +76,6 @@ export default function ImageControl({ field, input, meta }) {
     { label: "96", value: "mb-24" },
   ]
   const [margin, setMargin] = useState(getStyleMatch(margins, input.value));
-
-  // See if one of groups arrays styles is present in the fields value
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const matches = optionValues.filter(element => currentStyles.includes(element))
-    return matches[0];
-  }
 
   useEffect(() => {
     // Update Hidden Field

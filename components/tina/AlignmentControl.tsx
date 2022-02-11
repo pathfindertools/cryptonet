@@ -3,6 +3,7 @@ import IconMobile from './icons/IconMobile';
 import FieldLabel from './widgets/FieldLabel';
 import IconPicker from './widgets/IconPicker';
 import SelectMenu from './widgets/SelectMenu';
+import { getStyleMatch } from './widgets/helpers'
 
 export default function AlignmentControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -30,14 +31,6 @@ export default function AlignmentControl({ field, input, meta }) {
     { label: "bottom image", value: "sm:flex-col-reverse"},
   ]
   const [layoutMobile, setLayoutMobile] = useState(getStyleMatch(layoutOptionsMobile, input.value) || "sm:flex-col");
-
-  // See if one of groups arrays styles is present in the fields value
-  function getStyleMatch(options: {label: string, value: string}[], styles: string): string {
-    const optionValues = options.map(option => option.value);
-    const currentStyles = styles.split(" ");
-    const matches = optionValues.filter(element => currentStyles.includes(element))
-    return matches[0];
-  }
 
   function toggleMobile() {
     if (!hasMobileStyles && !layoutMobile) {
