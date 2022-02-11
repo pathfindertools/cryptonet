@@ -4,16 +4,15 @@ blocks:
   - style:
       fillStyles: from-accent1 to-black bg-gradient-to-br
       alignment: 'flex-row-reverse text-left items-center '
-      minHeight: min-h-160
-      padding: pt-0 pb-0 pr-8 pl-20
+      minHeight: min-h-0
+      padding: pt-32 pb-20 pr-8 pl-20
       labelStyles: text-gray-light undefined text-xl mb-0 font-bold
       headlineStyles: text-primary undefined text-6xl mb-0 font-bold
       subheadStyles: text-gray undefined text-2xl mb-7 font-bold
       textStyles: 'text-white undefined text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
-      src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1644622917/3d_illustration_tamzhz.png
+      src: ''
       imageStyle: padding
       fit: contain
       position: object-center
