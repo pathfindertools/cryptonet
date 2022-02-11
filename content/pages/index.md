@@ -12,7 +12,8 @@ blocks:
       textStyles: 'text-white undefined text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
-      src: ''
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1644622917/3d_illustration_tamzhz.png
       imageStyle: padding
       fit: cover
       position: object-center
