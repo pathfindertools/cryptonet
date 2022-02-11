@@ -17,7 +17,7 @@ blocks:
       fit: cover
       position: object-center
     label: ''
-    headline: MicroGen
+    headline: MicroGen Demo
     subhead: A site builder for Web 3.0
     body: Make modern web 3.0 ready websites with a real-time visual editor.
     buttons:
