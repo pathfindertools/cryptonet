@@ -12,18 +12,18 @@ export const colorOptions: {label: string, value: string}[] = [
 ];
 
 export const contentOrderOptions: {label: string, value: string}[] = [
-  { label: "Label Headings Content", value: "labelHeadingsContent" },
-  { label: "Label Content Headings", value: "labelContentHeadings" },
-  { label: "Headings Label Content", value: "headingsLabelContent" },
-  { label: "Headings Content Label", value: "headingsContentLabel" },
-  { label: "Content Label Headings", value: "contentLabelHeadings" },
-  { label: "Content Headings Label", value: "contentHeadingsLabel" },
+  { label: "Label Headline Text", value: "labelHeadingsContent" },
+  { label: "Label Text Headline", value: "labelContentHeadings" },
+  { label: "Headline Label Text", value: "headingsLabelContent" },
+  { label: "Headline Text Label", value: "headingsContentLabel" },
+  { label: "Text Label Headline", value: "contentLabelHeadings" },
+  { label: "Text Headline Label", value: "contentHeadingsLabel" },
 ];
 
 export const hAlignOptions: {label: string, value: string}[] = [
-  { label: "Left", value: "left" },
-  { label: "Center", value: "center" },
-  { label: "Right", value: "right" },
+  { label: "Left", value: "text-left" },
+  { label: "Center", value: "text-center" },
+  { label: "Right", value: "text-right" },
 ];
 
 export const vAlignOptions: {label: string, value: string}[] = [

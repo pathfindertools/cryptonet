@@ -19,11 +19,12 @@ fragment PagesParts on Pages {
         alignment
         minHeight
         padding
-        contentOrder
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
+        contentOrder
       }
       image {
         __typename
@@ -56,29 +57,32 @@ fragment PagesParts on Pages {
     ... on PagesBlocksPhotoCards {
       style {
         __typename
-        minHeight
-        columns
-        textAlignment
-        padding
         fillStyles
+        textAlignment
+        minHeight
+        padding
+        contentWidth
+        columns
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
         contentOrder
-        contentWidth
       }
       cardStyle {
         __typename
-        type
-        imageStyles
         fillStyles
-        accentColor
         padding
+        type
+        accentColor
+        imageStyles
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
+        buttonTitle
         buttonType
         buttonFillStyles
         buttonTextColor
@@ -119,29 +123,32 @@ fragment PagesParts on Pages {
     ... on PagesBlocksTextCards {
       style {
         __typename
-        minHeight
-        columns
-        textAlignment
-        padding
         fillStyles
+        textAlignment
+        minHeight
+        padding
+        contentWidth
+        columns
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
         contentOrder
-        contentWidth
       }
       cardStyle {
         __typename
-        type
         fillStyles
+        padding
+        type
         accentColor
         borderStyles
-        padding
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles
         textStyles
+        buttonTitle
         buttonType
         buttonTextColor
       }
@@ -175,6 +182,20 @@ fragment PagesParts on Pages {
       navigationLabel
     }
     ... on PagesBlocksBanner {
+      style {
+        __typename
+        fillStyles
+        textAlignment
+        minHeight
+        padding
+        width
+        typographyTitle
+        labelStyles
+        headlineStyles
+        subheadStyles
+        textStyles
+        contentOrder
+      }
       image {
         __typename
         src
@@ -199,19 +220,6 @@ fragment PagesParts on Pages {
         backgroundColor
       }
       navigationLabel
-      style {
-        __typename
-        minHeight
-        textAlignment
-        width
-        padding
-        fillStyles
-        labelStyles
-        headlineStyles
-        subheadStyles
-        textStyles
-        contentOrder
-      }
     }
     ... on PagesBlocksEmbed {
       style {

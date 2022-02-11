@@ -195,7 +195,7 @@
                       ]
                     },
                     {
-                      "label": "Padding",
+                      "label": "Content Padding",
                       "name": "padding",
                       "type": "string",
                       "ui": {
@@ -210,44 +210,18 @@
                       ]
                     },
                     {
-                      "label": "Content Order",
-                      "name": "contentOrder",
+                      "label": "Typography",
+                      "name": "typographyTitle",
                       "type": "string",
                       "ui": {
-                        "component": "selectField"
+                        "component": "ruledTitle"
                       },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "contentOrder"
+                        "typographyTitle"
                       ]
                     },
                     {
@@ -308,6 +282,47 @@
                         "feature",
                         "style",
                         "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headline Text",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Text Headline",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headline Label Text",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headline Text Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Text Label Headline",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Text Headline Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "contentOrder"
                       ]
                     }
                   ],
@@ -880,16 +895,98 @@
               "fields": [
                 {
                   "type": "object",
-                  "label": "Section Style",
+                  "label": "Section Styles",
                   "name": "style",
                   "ui": {
                     "component": "group"
                   },
                   "fields": [
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "text-left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "text-center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "text-right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
                       "label": "Minimum Height",
                       "name": "minHeight",
                       "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
@@ -899,10 +996,66 @@
                       ]
                     },
                     {
+                      "label": "Content Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Content Width",
+                      "name": "contentWidth",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "100%",
+                          "value": "w-full"
+                        },
+                        {
+                          "label": "75%",
+                          "value": "w-9/12"
+                        },
+                        {
+                          "label": "66%",
+                          "value": "w-8/12"
+                        },
+                        {
+                          "label": "50%",
+                          "value": "w-6/12"
+                        },
+                        {
+                          "label": "33%",
+                          "value": "w-4/12"
+                        },
+                        {
+                          "label": "25%",
+                          "value": "w-3/12"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "style",
+                        "contentWidth"
+                      ]
+                    },
+                    {
                       "label": "Columns",
                       "name": "columns",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "type": "string",
                       "options": [
@@ -932,62 +1085,18 @@
                       ]
                     },
                     {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
+                      "label": "Typography",
+                      "name": "typographyTitle",
                       "type": "string",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "label": "Padding",
-                      "name": "padding",
-                      "type": "string",
-                      "ui": {
-                        "component": "paddingControl"
+                        "component": "ruledTitle"
                       },
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "style",
-                        "padding"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "fillStyles"
+                        "typographyTitle"
                       ]
                     },
                     {
@@ -1055,31 +1164,31 @@
                       "name": "contentOrder",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ],
@@ -1089,47 +1198,6 @@
                         "photoCards",
                         "style",
                         "contentOrder"
-                      ]
-                    },
-                    {
-                      "label": "Content Width",
-                      "name": "contentWidth",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "100%",
-                          "value": "w-full"
-                        },
-                        {
-                          "label": "75%",
-                          "value": "w-9/12"
-                        },
-                        {
-                          "label": "66%",
-                          "value": "w-8/12"
-                        },
-                        {
-                          "label": "50%",
-                          "value": "w-6/12"
-                        },
-                        {
-                          "label": "33%",
-                          "value": "w-4/12"
-                        },
-                        {
-                          "label": "25%",
-                          "value": "w-3/12"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "style",
-                        "contentWidth"
                       ]
                     }
                   ],
@@ -1149,11 +1217,41 @@
                   },
                   "fields": [
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
                       "label": "Type",
                       "name": "type",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -1178,41 +1276,11 @@
                       ]
                     },
                     {
-                      "type": "string",
-                      "label": "Image",
-                      "name": "imageStyles",
-                      "ui": {
-                        "component": "imageControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "imageStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "photoCards",
-                        "cardStyle",
-                        "fillStyles"
-                      ]
-                    },
-                    {
                       "label": "Accent Color",
                       "name": "accentColor",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -1265,18 +1333,33 @@
                       ]
                     },
                     {
-                      "label": "Padding",
-                      "name": "padding",
                       "type": "string",
+                      "label": "Image",
+                      "name": "imageStyles",
                       "ui": {
-                        "component": "paddingControl"
+                        "component": "imageControl"
                       },
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
                         "cardStyle",
-                        "padding"
+                        "imageStyles"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "typographyTitle"
                       ]
                     },
                     {
@@ -1340,11 +1423,26 @@
                       ]
                     },
                     {
-                      "label": "Button Type",
+                      "label": "Button",
+                      "name": "buttonTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "cardStyle",
+                        "buttonTitle"
+                      ]
+                    },
+                    {
+                      "label": "Type",
                       "name": "buttonType",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -1388,7 +1486,7 @@
                       "name": "buttonTextColor",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -1472,7 +1570,7 @@
                       "label": "Position",
                       "name": "position",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "type": "string",
                       "options": [
@@ -1980,16 +2078,98 @@
               "fields": [
                 {
                   "type": "object",
-                  "label": "Section Style",
+                  "label": "Section Styles",
                   "name": "style",
                   "ui": {
                     "component": "group"
                   },
                   "fields": [
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "text-left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "text-center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "text-right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
                       "label": "Minimum Height",
                       "name": "minHeight",
                       "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",
@@ -1999,10 +2179,66 @@
                       ]
                     },
                     {
+                      "label": "Content Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Content Width",
+                      "name": "contentWidth",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "100%",
+                          "value": "w-full"
+                        },
+                        {
+                          "label": "75%",
+                          "value": "w-9/12"
+                        },
+                        {
+                          "label": "66%",
+                          "value": "w-8/12"
+                        },
+                        {
+                          "label": "50%",
+                          "value": "w-6/12"
+                        },
+                        {
+                          "label": "33%",
+                          "value": "w-4/12"
+                        },
+                        {
+                          "label": "25%",
+                          "value": "w-3/12"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "style",
+                        "contentWidth"
+                      ]
+                    },
+                    {
                       "label": "Columns",
                       "name": "columns",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "type": "string",
                       "options": [
@@ -2032,62 +2268,18 @@
                       ]
                     },
                     {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
+                      "label": "Typography",
+                      "name": "typographyTitle",
                       "type": "string",
                       "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "label": "Padding",
-                      "name": "padding",
-                      "type": "string",
-                      "ui": {
-                        "component": "paddingControl"
+                        "component": "ruledTitle"
                       },
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "style",
-                        "padding"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "fillStyles"
+                        "typographyTitle"
                       ]
                     },
                     {
@@ -2155,31 +2347,31 @@
                       "name": "contentOrder",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
-                          "label": "Label Headings Content",
+                          "label": "Label Headline Text",
                           "value": "labelHeadingsContent"
                         },
                         {
-                          "label": "Label Content Headings",
+                          "label": "Label Text Headline",
                           "value": "labelContentHeadings"
                         },
                         {
-                          "label": "Headings Label Content",
+                          "label": "Headline Label Text",
                           "value": "headingsLabelContent"
                         },
                         {
-                          "label": "Headings Content Label",
+                          "label": "Headline Text Label",
                           "value": "headingsContentLabel"
                         },
                         {
-                          "label": "Content Label Headings",
+                          "label": "Text Label Headline",
                           "value": "contentLabelHeadings"
                         },
                         {
-                          "label": "Content Headings Label",
+                          "label": "Text Headline Label",
                           "value": "contentHeadingsLabel"
                         }
                       ],
@@ -2189,47 +2381,6 @@
                         "textCards",
                         "style",
                         "contentOrder"
-                      ]
-                    },
-                    {
-                      "label": "Content Width",
-                      "name": "contentWidth",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "100%",
-                          "value": "w-full"
-                        },
-                        {
-                          "label": "75%",
-                          "value": "w-9/12"
-                        },
-                        {
-                          "label": "66%",
-                          "value": "w-8/12"
-                        },
-                        {
-                          "label": "50%",
-                          "value": "w-6/12"
-                        },
-                        {
-                          "label": "33%",
-                          "value": "w-4/12"
-                        },
-                        {
-                          "label": "25%",
-                          "value": "w-3/12"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "style",
-                        "contentWidth"
                       ]
                     }
                   ],
@@ -2249,11 +2400,41 @@
                   },
                   "fields": [
                     {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
                       "label": "Type",
                       "name": "type",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -2274,26 +2455,11 @@
                       ]
                     },
                     {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "textCards",
-                        "cardStyle",
-                        "fillStyles"
-                      ]
-                    },
-                    {
                       "label": "Accent Color",
                       "name": "accentColor",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -2361,18 +2527,18 @@
                       ]
                     },
                     {
-                      "label": "Padding",
-                      "name": "padding",
+                      "label": "Typography",
+                      "name": "typographyTitle",
                       "type": "string",
                       "ui": {
-                        "component": "paddingControl"
+                        "component": "ruledTitle"
                       },
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
                         "cardStyle",
-                        "padding"
+                        "typographyTitle"
                       ]
                     },
                     {
@@ -2436,11 +2602,26 @@
                       ]
                     },
                     {
+                      "label": "Button",
+                      "name": "buttonTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "cardStyle",
+                        "buttonTitle"
+                      ]
+                    },
+                    {
                       "label": "Button Type",
                       "name": "buttonType",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -2469,7 +2650,7 @@
                       "name": "buttonTextColor",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -2553,7 +2734,7 @@
                       "label": "Position",
                       "name": "position",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "type": "string",
                       "options": [
@@ -2945,7 +3126,7 @@
                       "name": "accentColor",
                       "type": "string",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "options": [
                         {
@@ -3047,6 +3228,272 @@
               },
               "fields": [
                 {
+                  "type": "object",
+                  "label": "Section Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Text Alignment",
+                      "name": "textAlignment",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Left",
+                          "value": "text-left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "text-center"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "text-right"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "textAlignment"
+                      ]
+                    },
+                    {
+                      "label": "Minimum Height",
+                      "name": "minHeight",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "minHeight"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "label": "Content Width",
+                      "name": "width",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Normal",
+                          "value": "normal"
+                        },
+                        {
+                          "label": "Narrow",
+                          "value": "narrow"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "width"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Content Order",
+                      "name": "contentOrder",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Label Headline Text",
+                          "value": "labelHeadingsContent"
+                        },
+                        {
+                          "label": "Label Text Headline",
+                          "value": "labelContentHeadings"
+                        },
+                        {
+                          "label": "Headline Label Text",
+                          "value": "headingsLabelContent"
+                        },
+                        {
+                          "label": "Headline Text Label",
+                          "value": "headingsContentLabel"
+                        },
+                        {
+                          "label": "Text Label Headline",
+                          "value": "contentLabelHeadings"
+                        },
+                        {
+                          "label": "Text Headline Label",
+                          "value": "contentHeadingsLabel"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "style",
+                        "contentOrder"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "banner",
+                    "style"
+                  ]
+                },
+                {
                   "label": "Image",
                   "name": "image",
                   "type": "object",
@@ -3110,7 +3557,7 @@
                       "label": "Position",
                       "name": "position",
                       "ui": {
-                        "component": "select"
+                        "component": "selectField"
                       },
                       "type": "string",
                       "options": [
@@ -3430,219 +3877,6 @@
                     "banner",
                     "navigationLabel"
                   ]
-                },
-                {
-                  "type": "object",
-                  "label": "Section Style",
-                  "name": "style",
-                  "ui": {
-                    "component": "group"
-                  },
-                  "fields": [
-                    {
-                      "label": "Minimum Height",
-                      "name": "minHeight",
-                      "type": "string",
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "minHeight"
-                      ]
-                    },
-                    {
-                      "label": "Text Alignment",
-                      "name": "textAlignment",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Left",
-                          "value": "left"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "center"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "right"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "textAlignment"
-                      ]
-                    },
-                    {
-                      "label": "Width",
-                      "name": "width",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Normal",
-                          "value": "normal"
-                        },
-                        {
-                          "label": "Narrow",
-                          "value": "narrow"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "width"
-                      ]
-                    },
-                    {
-                      "label": "Padding",
-                      "name": "padding",
-                      "type": "string",
-                      "ui": {
-                        "component": "paddingControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "padding"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "fillStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Label",
-                      "name": "labelStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "labelStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Headline",
-                      "name": "headlineStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "headlineStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Subhead",
-                      "name": "subheadStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "subheadStyles"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "label": "Text",
-                      "name": "textStyles",
-                      "ui": {
-                        "component": "typeControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "textStyles"
-                      ]
-                    },
-                    {
-                      "label": "Content Order",
-                      "name": "contentOrder",
-                      "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Label Headings Content",
-                          "value": "labelHeadingsContent"
-                        },
-                        {
-                          "label": "Label Content Headings",
-                          "value": "labelContentHeadings"
-                        },
-                        {
-                          "label": "Headings Label Content",
-                          "value": "headingsLabelContent"
-                        },
-                        {
-                          "label": "Headings Content Label",
-                          "value": "headingsContentLabel"
-                        },
-                        {
-                          "label": "Content Label Headings",
-                          "value": "contentLabelHeadings"
-                        },
-                        {
-                          "label": "Content Headings Label",
-                          "value": "contentHeadingsLabel"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "banner",
-                        "style",
-                        "contentOrder"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "banner",
-                    "style"
-                  ]
                 }
               ],
               "namespace": [
@@ -3675,6 +3909,44 @@
                       "label": "Minimum Height",
                       "name": "minHeight",
                       "type": "string",
+                      "ui": {
+                        "component": "selectField",
+                        "mobileMode": true
+                      },
+                      "options": [
+                        {
+                          "label": "none",
+                          "value": "min-h-0"
+                        },
+                        {
+                          "label": "400",
+                          "value": "min-h-100"
+                        },
+                        {
+                          "label": "480",
+                          "value": "min-h-120"
+                        },
+                        {
+                          "label": "560",
+                          "value": "min-h-140"
+                        },
+                        {
+                          "label": "640",
+                          "value": "min-h-160"
+                        },
+                        {
+                          "label": "720",
+                          "value": "min-h-180"
+                        },
+                        {
+                          "label": "800",
+                          "value": "min-h-200"
+                        },
+                        {
+                          "label": "Screen",
+                          "value": "min-h-screen"
+                        }
+                      ],
                       "namespace": [
                         "pages",
                         "blocks",

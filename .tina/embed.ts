@@ -1,5 +1,6 @@
 import type { TinaTemplate } from "@tinacms/cli";
 import { navigationLabelSchema } from "./shared/navigation-label";
+import { minHeightOptions } from "./shared/options"
 
 export const embedBlockSchema: TinaTemplate = {
   name: "embed",
@@ -25,6 +26,11 @@ export const embedBlockSchema: TinaTemplate = {
           label: "Minimum Height",
           name: "minHeight",
           type: "string",
+          ui: {
+            component: "selectField",
+            mobileMode: true,
+          },
+          options: minHeightOptions,
         },
         {
           label: "Full Width",

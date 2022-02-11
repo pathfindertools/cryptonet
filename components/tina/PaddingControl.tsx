@@ -52,7 +52,7 @@ function buildOptions(prefix) {
 
 export default function PaddingControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
-  let hasMobileStyles = input.value.includes("sm:pt");
+  const [hasMobileStyles, setHasMobileStyles] = useState(input.value.includes("sm:"));
 
   const topOptions = buildOptions('pt');
   const bottomOptions = buildOptions('pb');
@@ -86,8 +86,7 @@ export default function PaddingControl({ field, input, meta }) {
       setRightMobile("sm:pr-0")
       setLeftMobile("sm:pl-0")
     }
-    hasMobileStyles = !hasMobileStyles
-    updateHiddenField()
+    setHasMobileStyles(!hasMobileStyles)
   }
 
   function updateHiddenField() {
@@ -103,7 +102,7 @@ export default function PaddingControl({ field, input, meta }) {
 
   useEffect(() => {
     updateHiddenField()
-  }, [top, bottom, right, left, topMobile, bottomMobile, rightMobile, leftMobile, inputRef.current]);
+  }, [top, bottom, right, left, topMobile, bottomMobile, rightMobile, leftMobile, hasMobileStyles, inputRef.current]);
 
   function SelectGroup(props) {
     return (
@@ -118,7 +117,7 @@ export default function PaddingControl({ field, input, meta }) {
     <>
       <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
       <div className="mb-4">
-        <div className="flex gap-2 mb-2">
+        <div className="flex gap-1.5 mb-2">
           <SelectGroup label="T" value={top} onChange={setTop} options={topOptions} />
           <SelectGroup label="B" value={bottom} onChange={setBottom} options={bottomOptions} />
           <SelectGroup label="R" value={right} onChange={setRight} options={rightOptions} />

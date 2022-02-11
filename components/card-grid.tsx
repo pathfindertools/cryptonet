@@ -18,9 +18,8 @@ export const CardGrid = ({ data, children }) => {
       image={data.backgroundImage?.src}
       imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
-      minHeight={data.style?.minHeight}
     >
-      <div className={`max-w-desktop-full mx-auto ${data.style?.padding}`}>
+      <div className={`max-w-desktop-full mx-auto ${data.style?.padding} ${data.style?.textAlignment} ${data.style?.minHeight}`}>
         <Content
           label = {data.label}
           headline = {data.headline}
@@ -31,7 +30,6 @@ export const CardGrid = ({ data, children }) => {
           headlineStyles = {data.style?.headlineStyles}
           subheadStyles = {data.style?.subheadStyles}
           textStyles = {data.style?.textStyles}
-          alignment = {data.style?.textAlignment}
           order = {data.style?.contentOrder}
           width = {data.style?.contentWidth}
         />

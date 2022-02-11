@@ -1,25 +1,71 @@
 
 import type { TinaField } from "@tinacms/cli";
-import { contentOrderOptions, hAlignOptions } from "./options"
+import { contentOrderOptions, hAlignOptions, minHeightOptions } from "./options"
 
 export const cardsSchema: TinaField = {
   type: "object",
-  label: "Section Style",
+  label: "Section Styles",
   name: "style",
   ui: {
     component: "group",
   },
   fields: [
     {
+      type: "string",
+      label: "Background",
+      name: "fillStyles",
+      ui: {
+        component: "fillControl"
+      }
+    },
+    {
+      label: "Text Alignment",
+      name: "textAlignment",
+      type: "string",
+      ui: {
+        component: "selectField",
+      },
+      options: hAlignOptions,
+    },
+    {
       label: "Minimum Height",
       name: "minHeight",
       type: "string",
+      ui: {
+        component: "selectField",
+        mobileMode: true,
+      },
+      options: minHeightOptions,
+    },
+    {
+      label: "Content Padding",
+      name: "padding",
+      type: "string",
+      ui: {
+        component: "paddingControl",
+      }
+    },
+    {
+      label: "Content Width",
+      name: "contentWidth",
+      type: "string",
+      ui: {
+        component: "selectField",
+      },
+      options: [
+        { label: "100%", value: "w-full" },
+        { label: "75%", value: "w-9/12" },
+        { label: "66%", value: "w-8/12" },
+        { label: "50%", value: "w-6/12" },
+        { label: "33%", value: "w-4/12" },
+        { label: "25%", value: "w-3/12" },
+      ],
     },
     {
       label: "Columns",
       name: "columns",
       ui: {
-        component: "select",
+        component: "selectField",
       },
       type: "string",
       options: [
@@ -30,29 +76,12 @@ export const cardsSchema: TinaField = {
       ],
     },
     {
-      label: "Text Alignment",
-      name: "textAlignment",
+      label: "Typography",
+      name: "typographyTitle",
       type: "string",
       ui: {
-        component: "select",
+        component: "ruledTitle",
       },
-      options: hAlignOptions,
-    },
-    {
-      label: "Padding",
-      name: "padding",
-      type: "string",
-      ui: {
-        component: "paddingControl",
-      }
-    },
-    {
-      type: "string",
-      label: "Background",
-      name: "fillStyles",
-      ui: {
-        component: "fillControl"
-      }
     },
     {
       type: "string",
@@ -91,25 +120,9 @@ export const cardsSchema: TinaField = {
       name: "contentOrder",
       type: "string",
       ui: {
-        component: "select",
+        component: "selectField",
       },
       options: contentOrderOptions,
-    },
-    {
-      label: "Content Width",
-      name: "contentWidth",
-      type: "string",
-      ui: {
-        component: "select",
-      },
-      options: [
-        { label: "100%", value: "w-full" },
-        { label: "75%", value: "w-9/12" },
-        { label: "66%", value: "w-8/12" },
-        { label: "50%", value: "w-6/12" },
-        { label: "33%", value: "w-4/12" },
-        { label: "25%", value: "w-3/12" },
-      ],
     },
   ],
 };

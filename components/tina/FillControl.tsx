@@ -114,7 +114,7 @@ export default function FillControl({ field, input, meta }) {
   return (
     <>
       <FieldLabel label={field.label} />
-      <div className="flex gap-2 mb-2 items-center">
+      <div className="flex gap-1.5 mb-4 items-center">
         <SelectMenu value={fillType} onChange={handleSetFillType} options={fillTypes} className="w-1/2" />
         {fillType === "solid" &&
           <ColorPicker value={bgColor.replace('bg-','')} onClick={handleSetBgColor} />
