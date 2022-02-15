@@ -53,18 +53,48 @@ export const featureBlockSchema: TinaTemplate = {
           },
         },
         {
-          label: "Minimum Height",
-          name: "minHeight",
+          label: "Content",
+          name: "contentTitle",
           type: "string",
           ui: {
-            component: "selectField",
-            mobileMode: true,
+            component: "ruledTitle",
           },
-          options: minHeightOptions,
+        },
+        {
+          label: "",
+          name: "featureContent",
+          type: "string",
+          ui: {
+            component: "featureContentField",
+          }
         },
         {
           label: "Content Padding",
           name: "padding",
+          type: "string",
+          ui: {
+            component: "paddingControl",
+          }
+        },
+        {
+          label: "Image",
+          name: "imageTitle",
+          type: "string",
+          ui: {
+            component: "ruledTitle",
+          },
+        },
+        {
+          label: "",
+          name: "featureImage",
+          type: "string",
+          ui: {
+            component: "featureImageField",
+          }
+        },
+        {
+          label: "Image Padding",
+          name: "imagePadding",
           type: "string",
           ui: {
             component: "paddingControl",

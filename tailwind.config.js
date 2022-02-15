@@ -47,9 +47,9 @@ module.exports = {
       }
     },
     screens: {
-			xl: { max: "1279px" },
-			lg: { max: "1023px" },
-			md: { max: "767px" },
+			xl: { max: "1280px" },
+			lg: { max: "1024px" },
+			md: { max: "768px" },
 			sm: { max: "900px" },
 		},
     fontSize: {
@@ -83,9 +83,25 @@ module.exports = {
         7: ".075",
         15: ".15",
       },
+      width: {
+        "edge-20": "calc(((100% - 1024px)/2) + 204px)",
+        "edge-25": "calc(((100% - 1024px)/2) + 256px)",
+        "edge-33": "calc(((100% - 1024px)/2) + 341px)",
+        "edge-50": "calc(((100% - 1024px)/2) + 512px)",
+        "edge-66": "calc(((100% - 1024px)/2) + 682px)",
+        "edge-75": "calc(((100% - 1024px)/2) + 768px)",
+        "edge-80": "calc(((100% - 1024px)/2) + 819px)",
+      },
       maxWidth: {
-        "desktop-full": "1200px",
-        "desktop-half": "600px",
+        "desktop-full": "1024px",
+        "desktop-half": "512px",
+        "lg-20": "204px",
+        "lg-25": "256px",
+        "lg-33": "340px",
+        "lg-50": "512px",
+        "lg-66": "676px",
+        "lg-75": "768px",
+        "lg-80": "818px",
       },
       minHeight: {
         "100": "25rem",

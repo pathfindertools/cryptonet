@@ -92,6 +92,12 @@ const App = ({ Component, pageProps }) => {
               import('../plugins.tsx').then(({ selectFieldPlugin }) => {
                 cms.plugins.add(selectFieldPlugin)
               });
+              import('../plugins.tsx').then(({ featureContentFieldPlugin }) => {
+                cms.plugins.add(featureContentFieldPlugin)
+              });
+              import('../plugins.tsx').then(({ featureImageFieldPlugin }) => {
+                cms.plugins.add(featureImageFieldPlugin)
+              });
               import('../plugins.tsx').then(({ ruledTitlePlugin }) => {
                 cms.plugins.add(ruledTitlePlugin)
               });
