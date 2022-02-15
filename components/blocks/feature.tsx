@@ -6,7 +6,7 @@ import { Content } from "../content";
 const removeSubstring = (value: string, substring: string) => {
   return value?.split(" ").filter(item => item.indexOf(substring) === -1).join(" ") || ""
 }
-/* Return a the first word containing the substring */
+/* Return the first word containing the substring */
 const getSubstring = (value: string, substring: string) => {
   const match = value?.split(" ").find(item => item.includes(substring))
   return match
