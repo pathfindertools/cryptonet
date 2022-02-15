@@ -16,9 +16,6 @@ blocks:
     image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1643128562/Hall_of_Fame_grccee.png
-      imageStyle: half
-      fit: cover
-      position: object-center
     label: ''
     headline: MicroGen
     subhead: A site builder for Web 3.0

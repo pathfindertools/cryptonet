@@ -34,9 +34,6 @@ fragment PagesParts on Pages {
         __typename
         src
         alt
-        imageStyle
-        fit
-        position
       }
       backgroundImage {
         __typename

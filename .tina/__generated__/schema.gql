@@ -130,9 +130,6 @@ type PagesBlocksFeatureStyle {
 type PagesBlocksFeatureImage {
   src: String
   alt: String
-  imageStyle: String
-  fit: String
-  position: String
 }
 
 type PagesBlocksFeatureBackgroundImage {
@@ -472,9 +469,6 @@ input PagesBlocksFeatureStyleMutation {
 input PagesBlocksFeatureImageMutation {
   src: String
   alt: String
-  imageStyle: String
-  fit: String
-  position: String
 }
 
 input PagesBlocksFeatureBackgroundImageMutation {
