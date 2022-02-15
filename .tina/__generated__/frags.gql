@@ -17,8 +17,12 @@ fragment PagesParts on Pages {
         __typename
         fillStyles
         alignment
-        minHeight
+        contentTitle
+        featureContent
         padding
+        imageTitle
+        featureImage
+        imagePadding
         typographyTitle
         labelStyles
         headlineStyles

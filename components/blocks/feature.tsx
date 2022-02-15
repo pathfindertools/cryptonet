@@ -14,70 +14,83 @@ const getSubstring = (value: string, substring: string) => {
 
 const contentContainerCss = (data) => {
   const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
+  const toEdge = data.style?.featureContent?.split(" ").find(item => item === "to-edge")
   const margin = isFlipped ? "mr-auto" : "ml-auto"
   const padding = data.style?.padding
-  return `max-w-desktop-half sm:w-full ${margin} ${padding}`
+  const width = data.style?.featureContent?.split(" ").find(item => item.includes("w-"))
+  const edgeWidths = {
+    "w-1/5": "w-edge-20 lg:w-1/5",
+    "w-1/4": "w-edge-25 lg:w-1/4",
+    "w-1/3": "w-edge-33 lg:w-1/3",
+    "w-1/2": "w-edge-50 lg:w-1/2",
+    "w-2/3": "w-edge-66 lg:w-2/3",
+    "w-3/4": "w-edge-75 lg:w-3/4",
+    "w-4/5": "w-edge-80 lg:w-4/5",
+  }
+  const maxWidths = {
+    "w-1/5": "max-w-lg-20",
+    "w-1/4": "max-w-lg-25",
+    "w-1/3": "max-w-lg-33",
+    "w-1/2": "max-w-lg-50",
+    "w-2/3": "max-w-lg-66",
+    "w-3/4": "max-w-lg-75",
+    "w-4/5": "max-w-lg-80",
+  }
+  const classes = toEdge ? `${padding} ${edgeWidths[width]}` : `${padding} ${width} ${maxWidths[width]} ${margin}`
+  return `sm:w-full ${classes}`
 }
 
 const imageContainerCss = (data) => {
-  const isFlipped = data.style?.alignment?.split(' ').includes('flex-row')
-  const hasMobileClasses = getSubstring(data.style?.padding, "sm:") ? true : false;
-  const heightStyle = data.image?.fit === "none" ? "" : "h-full sm:h-auto"  
-  const opposingEdgePadding = getSubstring(data.style?.padding, isFlipped ? "pr" : "pl")?.replace(isFlipped ? "pr-" : "pl-", "")
-  const desktopPaddingTop = data.style?.padding?.split(" ").find(item => item.includes("pt"))
-  const desktopPaddingBottom = data.style?.padding?.split(" ").find(item => item.includes("pb"))
-  const desktopPaddingEdge = isFlipped ? `pl-${opposingEdgePadding}` : `pr-${opposingEdgePadding}`
-  const desktopPadding = `${desktopPaddingTop} ${desktopPaddingBottom} ${desktopPaddingEdge}`
-  const mobilePadding = "sm:p-0"
-  const styles = {
-    padding: `image-container max-w-desktop-half ${heightStyle} ${desktopPadding} ${mobilePadding} ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
-    half: `${heightStyle} max-w-desktop-half ${isFlipped ? 'ml-auto' : 'mr-auto'}`,
-    halfEdge: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? 'right-4' : 'left-4'}`,
-    overlap: `absolute inset-0 sm:inset-auto sm:relative ${isFlipped ? '-right-24' : '-left-24'}`,
-  };
-  return styles[data.image?.imageStyle]
-}
-
-const imageColumnCss = (data) => {
-  const getAlignV = () => {
-    if (data.image?.position?.includes("top")) {
-      return "self-start"
-    }
-    if (data.image?.position?.includes("bottom")) {
-      return "self-end"
-    }
-    return "self-center"
+  const isFlipped = data.style?.alignment?.split(' ')?.includes('flex-row')
+  const toEdge = data.style?.featureImage?.split(" ").find(item => item === "to-edge")
+  const margin = isFlipped ? "ml-auto" : "mr-auto"
+  const padding = data.style?.imagePadding
+  const contentWidth = data.style?.featureContent?.split(" ").find(item => item.includes("w-"))
+  const imageWidths = {
+    "w-1/5": "w-4/5",
+    "w-1/4": "w-3/4",
+    "w-1/3": "w-2/3",
+    "w-1/2": "w-1/2",
+    "w-2/3": "w-1/3",
+    "w-3/4": "w-1/4",
+    "w-4/5": "w-1/5",
   }
-  const styles = {
-    padding: data.image?.fit === "none" ? "" : "self-stretch",
-    half: data.image?.fit === "none" ? "" : "self-stretch",
-    halfEdge: "self-stretch",
-    overlap: "self-stretch",
+  const edgeWidths = {
+    "w-1/5": "w-edge-80 lg:w-4/5",
+    "w-1/4": "w-edge-75 lg:w-3/4",
+    "w-1/3": "w-edge-66 lg:w-2/3",
+    "w-1/2": "w-edge-50 lg:w-1/2",
+    "w-2/3": "w-edge-33 lg:w-1/3",
+    "w-3/4": "w-edge-25 lg:w-3/4",
+    "w-4/5": "w-edge-20 lg:w-1/5",
   }
-  return `${getAlignV()} ${styles[data.image?.imageStyle]}`
+  const maxWidths = {
+    "w-1/5": "max-w-lg-80",
+    "w-1/4": "max-w-lg-75",
+    "w-1/3": "max-w-lg-66",
+    "w-1/2": "max-w-lg-50",
+    "w-2/3": "max-w-lg-33",
+    "w-3/4": "max-w-lg-25",
+    "w-4/5": "max-w-lg-20",
+  }
+  const stretchStates = ["object-cover", "object-contain"]
+  const shouldStretch = stretchStates.some(item => data.style?.featureImage?.includes(item));
+  const height = shouldStretch ? "self-stretch" : ""
+  const widthClasses = toEdge ? `${edgeWidths[contentWidth]}` : `${imageWidths[contentWidth]} ${maxWidths[contentWidth]} ${margin}`
+  return `sm:w-full relative ${height} ${padding} ${widthClasses}`
 }
 
 const imageCss = (data) => {
-  const getAlignH = () => {
-    if (data.image?.position?.includes("right")) {
-      return "ml-auto"
-    }
-    if (data.image?.position?.includes("left")) {
-      return "mr-auto"
-    }
-    return "m-auto"
-  }
-
-  const styles = {
-    none: `${getAlignH()}`,
-    scaleDown: "w-full h-full object-scale-down",
-    contain: "w-full h-full object-contain",
-    cover: "w-full h-full object-cover",
-  };
-  return styles[data.image?.fit]
+  const padding = data.style?.imagePadding
+  const stretchStates = ["object-cover", "object-contain"]
+  const shouldStretch = stretchStates.some(item => data.style?.featureImage?.includes(item));
+  const height = shouldStretch ? "absolute inset-0 h-full" : ""
+  const imageClasses = removeSubstring(data.style.featureImage, "to-edge")
+  return `w-full ${height} ${padding} ${imageClasses}`;
 };
 
 export const Feature = ({ data }) => {
+  const minHeight = data.style?.featureContent?.split(" ").find(item => item.includes("min-h-"))
   return (
     <Section
       fillStyles={data.style?.fillStyles}
@@ -85,35 +98,31 @@ export const Feature = ({ data }) => {
       imagePosition={data.backgroundImage?.position}
       navigationLabel={data.navigationLabel}
     >
-      <div className={`flex sm:flex-col ${data.style?.alignment} ${data.style?.minHeight}`}>
-        <div className={`flex-1 relative ${imageColumnCss(data)}`}>
-          <div className={`${imageContainerCss(data)}`}>
-            {data.image?.src && (
-              <img
-                className={`${imageCss(data)} ${data.image?.position}`}
-                alt={data.image?.alt}
-                src={data.image?.src}
-              />
-            )}
-          </div>
-        </div>
-        <div className="flex-1 relative">
-          <div className={`${contentContainerCss(data)}`}>
-            <Content
-              label = {data.label}
-              headline = {data.headline}
-              subhead = {data.subhead}
-              body = {data.body}
-              buttons = {data.buttons}
-              labelStyles = {data.style?.labelStyles}
-              headlineStyles = {data.style?.headlineStyles}
-              subheadStyles = {data.style?.subheadStyles}
-              textStyles = {data.style?.textStyles}
-              alignment = {data.style?.alignment}
-              order = {data.style?.contentOrder}
-              width = {data.style?.contentWidth}
+      <div className={`flex sm:flex-col ${data.style?.alignment} ${minHeight}`}>
+        <div className={imageContainerCss(data)}>
+          {data.image?.src && (
+            <img
+              className={`${imageCss(data)}`}
+              alt={data.image?.alt}
+              src={data.image?.src}
             />
-          </div>
+          )}
+        </div>
+        <div className={contentContainerCss(data)}>
+          <Content
+            label = {data.label}
+            headline = {data.headline}
+            subhead = {data.subhead}
+            body = {data.body}
+            buttons = {data.buttons}
+            labelStyles = {data.style?.labelStyles}
+            headlineStyles = {data.style?.headlineStyles}
+            subheadStyles = {data.style?.subheadStyles}
+            textStyles = {data.style?.textStyles}
+            alignment = {data.style?.alignment}
+            order = {data.style?.contentOrder}
+            width = "w-full"
+          />
         </div>
       </div>
     </Section>

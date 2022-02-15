@@ -113,8 +113,12 @@ type GlobalConnection implements Connection {
 type PagesBlocksFeatureStyle {
   fillStyles: String
   alignment: String
-  minHeight: String
+  contentTitle: String
+  featureContent: String
   padding: String
+  imageTitle: String
+  featureImage: String
+  imagePadding: String
   typographyTitle: String
   labelStyles: String
   headlineStyles: String
@@ -451,8 +455,12 @@ input GlobalMutation {
 input PagesBlocksFeatureStyleMutation {
   fillStyles: String
   alignment: String
-  minHeight: String
+  contentTitle: String
+  featureContent: String
   padding: String
+  imageTitle: String
+  featureImage: String
+  imagePadding: String
   typographyTitle: String
   labelStyles: String
   headlineStyles: String

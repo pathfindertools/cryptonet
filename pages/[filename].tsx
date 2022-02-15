@@ -140,9 +140,6 @@ export const getStaticProps = async ({ params }) => {
                 image {
                   src
                   alt
-                  imageStyle
-                  fit
-                  position
                 }
                 backgroundImage {
                   src
@@ -161,18 +158,17 @@ export const getStaticProps = async ({ params }) => {
                   buttonFillStyles
                 }
                 style {
-                  minHeight
-                  padding
+                  fillStyles
                   alignment
-                  flipLayout
+                  featureContent
+                  featureImage
+                  imagePadding
+                  padding
+                  contentOrder
                   labelStyles
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
-                  textAlignment
-                  contentAlignment
-                  contentOrder
                 }
                 navigationLabel
               }
@@ -255,7 +251,7 @@ export const getStaticProps = async ({ params }) => {
           }
         }
       }
-  `,
+    `,
     variables: { relativePath: `${params.filename}.md` },
   })) as { data: { getPagesDocument: PagesDocument } };
 

@@ -145,53 +145,33 @@
                       ]
                     },
                     {
-                      "label": "Minimum Height",
-                      "name": "minHeight",
+                      "label": "Content",
+                      "name": "contentTitle",
                       "type": "string",
                       "ui": {
-                        "component": "selectField",
-                        "mobileMode": true
+                        "component": "ruledTitle"
                       },
-                      "options": [
-                        {
-                          "label": "none",
-                          "value": "min-h-0"
-                        },
-                        {
-                          "label": "400",
-                          "value": "min-h-100"
-                        },
-                        {
-                          "label": "480",
-                          "value": "min-h-120"
-                        },
-                        {
-                          "label": "560",
-                          "value": "min-h-140"
-                        },
-                        {
-                          "label": "640",
-                          "value": "min-h-160"
-                        },
-                        {
-                          "label": "720",
-                          "value": "min-h-180"
-                        },
-                        {
-                          "label": "800",
-                          "value": "min-h-200"
-                        },
-                        {
-                          "label": "Screen",
-                          "value": "min-h-screen"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "feature",
                         "style",
-                        "minHeight"
+                        "contentTitle"
+                      ]
+                    },
+                    {
+                      "label": "",
+                      "name": "featureContent",
+                      "type": "string",
+                      "ui": {
+                        "component": "featureContentField"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "featureContent"
                       ]
                     },
                     {
@@ -207,6 +187,51 @@
                         "feature",
                         "style",
                         "padding"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "imageTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "imageTitle"
+                      ]
+                    },
+                    {
+                      "label": "",
+                      "name": "featureImage",
+                      "type": "string",
+                      "ui": {
+                        "component": "featureImageField"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "featureImage"
+                      ]
+                    },
+                    {
+                      "label": "Image Padding",
+                      "name": "imagePadding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "imagePadding"
                       ]
                     },
                     {

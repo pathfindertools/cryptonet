@@ -6,6 +6,8 @@ import ImageControl from './components/tina/ImageControl'
 import PaddingControl from './components/tina/PaddingControl'
 import BorderControl from './components/tina/BorderControl'
 import SelectField from './components/tina/SelectField'
+import FeatureContentField from './components/tina/FeatureContentField'
+import FeatureImageField from './components/tina/FeatureImageField'
 import RuledTitle from './components/tina/RuledTitle'
 import { TextField } from 'tinacms'
 
@@ -59,6 +61,18 @@ export const borderControlFieldPlugin = {
   Component: BorderControl,
   __type: 'field',
   name: 'borderControl',
+}
+
+export const featureContentFieldPlugin = {
+  Component: FeatureContentField,
+  __type: 'field',
+  name: 'featureContentField',
+}
+
+export const featureImageFieldPlugin = {
+  Component: FeatureImageField,
+  __type: 'field',
+  name: 'featureImageField',
 }
 
 export const ruledTitlePlugin = {

@@ -4,17 +4,20 @@ blocks:
   - style:
       fillStyles: from-accent1 to-black bg-gradient-to-br
       alignment: 'flex-row-reverse text-left items-center '
-      minHeight: min-h-0
-      padding: pt-32 pb-20 pr-8 pl-20
-      labelStyles: text-gray-light undefined text-xl mb-0 font-bold
-      headlineStyles: text-primary undefined text-6xl mb-0 font-bold
-      subheadStyles: text-gray undefined text-2xl mb-7 font-bold
-      textStyles: 'text-white undefined text-lg mb-11 '
+      featureContent: 'w-1/2 min-h-0 '
+      padding: pt-40 pb-16 pr-7 pl-20
+      featureImage: 'object-right-bottom object-scale-down '
+      imagePadding: pt-12 pb-4 pr-0 pl-0
+      labelStyles: text-gray-light  text-xl mb-0 font-bold
+      headlineStyles: text-primary  text-6xl mb-0 font-bold
+      subheadStyles: text-gray  text-2xl mb-7 font-bold
+      textStyles: 'text-white  text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
-      src: ''
-      imageStyle: padding
-      fit: contain
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1643128562/Hall_of_Fame_grccee.png
+      imageStyle: half
+      fit: cover
       position: object-center
     label: ''
     headline: MicroGen
@@ -34,9 +37,9 @@ blocks:
       padding: pt-20 pb-20 pr-20 pl-20
       columns: '2'
       labelStyles: text-black font-sans text-xl mb-0 font-bold
-      headlineStyles: text-black undefined text-5xl mb-11 font-bold
-      subheadStyles: text-black undefined text-3xl mb-0 font-bold
-      textStyles: text-black undefined text-lg mb-0 font-bold
+      headlineStyles: text-black  text-5xl mb-11 font-bold
+      subheadStyles: text-black  text-3xl mb-0 font-bold
+      textStyles: text-black  text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
@@ -44,10 +47,10 @@ blocks:
       type: solid
       accentColor: primary
       borderStyles: border-primary border-l-4
-      labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: text-primary undefined text-xl mb-2 font-bold
-      subheadStyles: 'text-black undefined text-lg mb-0 '
-      textStyles: 'text-black undefined undefined mb-0 '
+      labelStyles: 'text-black  text-sm mb-0 '
+      headlineStyles: text-primary  text-xl mb-2 font-bold
+      subheadStyles: 'text-black  text-lg mb-0 '
+      textStyles: 'text-black   mb-0 '
       buttonType: outline
       buttonTextColor: accent4
     label: ''
@@ -79,12 +82,12 @@ blocks:
       fillStyles: bg-primary
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-7 pb-10 pr-0 undefined
+      padding: pt-7 pb-10 pr-0 
       width: normal
-      labelStyles: text-black undefined text-xl mb-0 font-bold
-      headlineStyles: text-white undefined text-6xl mb-3 font-bold
-      subheadStyles: text-black undefined text-3xl mb-0 font-bold
-      textStyles: text-black undefined text-lg mb-0 font-bold
+      labelStyles: text-black  text-xl mb-0 font-bold
+      headlineStyles: text-white  text-6xl mb-3 font-bold
+      subheadStyles: text-black  text-3xl mb-0 font-bold
+      textStyles: text-black  text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
     label: ''
     headline: Learn More
@@ -113,21 +116,21 @@ blocks:
       padding: pt-14 pb-20 pr-20 pl-20
       contentWidth: w-full
       columns: '2'
-      labelStyles: text-black undefined text-xl mb-0 font-bold
-      headlineStyles: text-white undefined text-6xl mb-10 font-bold
-      subheadStyles: text-black undefined text-3xl mb-0 font-bold
-      textStyles: text-black undefined text-lg mb-0 font-bold
+      labelStyles: text-black  text-xl mb-0 font-bold
+      headlineStyles: text-white  text-6xl mb-10 font-bold
+      subheadStyles: text-black  text-3xl mb-0 font-bold
+      textStyles: text-black  text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-primary
       padding: pt-5 pb-5 pr-5 pl-5
       type: solid
       accentColor: white
-      imageStyles: ' undefined undefined undefined'
-      labelStyles: 'text-white undefined text-sm mb-0 '
-      headlineStyles: 'text-white undefined text-2xl mb-0 '
-      subheadStyles: 'text-white undefined text-lg mb-0 '
-      textStyles: 'text-white undefined undefined mb-0 '
+      imageStyles: '   '
+      labelStyles: 'text-white  text-sm mb-0 '
+      headlineStyles: 'text-white  text-2xl mb-0 '
+      subheadStyles: 'text-white  text-lg mb-0 '
+      textStyles: 'text-white   mb-0 '
       buttonType: outline
       buttonTextColor: white
     label: ''
