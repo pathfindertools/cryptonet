@@ -5,12 +5,12 @@ blocks:
       fillStyles: bg-gray-light
       textAlignment: text-center
       minHeight: min-h-0
-      padding: undefined undefined undefined undefined
+      padding: pt-32 pb-16 pr-10 pl-10
       width: normal
-      labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: text-black undefined text-5xl mb-0 font-bold
+      labelStyles: 'text-gray-dark undefined text-3xl mb-0 '
+      headlineStyles: text-black undefined text-6xl mb-8 font-bold
       subheadStyles: 'text-black undefined text-3xl mb-0 '
-      textStyles: 'text-gray-dark undefined undefined mb-0 '
+      textStyles: 'text-gray-dark undefined text-3xl mb-8 '
       contentOrder: labelHeadingsContent
     label: Protocol Labs Research invites you to
     headline: Vector Commitment Research Day
