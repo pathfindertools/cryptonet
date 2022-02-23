@@ -141,7 +141,10 @@ blocks:
         text: |-
           Info lorem ipsum dolor amet, opcit alector.  
           [Twitter](/)
-      - headline: Name
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645578168/cryptonet/white-placeholder-md_wdmspr.png
+        headline: Name
         subhead: ''
         text: |-
           Info lorem ipsum dolor amet, opcit alector.  
