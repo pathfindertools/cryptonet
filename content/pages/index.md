@@ -176,6 +176,22 @@ blocks:
         textColor: white
         backgroundColor: primary
     _template: banner
+  - style:
+      fillStyles: bg-black
+      textAlignment: text-center
+      minHeight: min-h-0
+      padding: pt-7 pb-7 undefined undefined
+      width: normal
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: 'text-black undefined text-5xl mb-0 '
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-white undefined undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: ''
+    subhead: ''
+    body: '\[ PL Research logo? link to PL Research? github? other? \]'
+    _template: banner
 meta:
   siteTitle: Hackathons
   siteDescription: >-
