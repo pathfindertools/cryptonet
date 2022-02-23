@@ -100,6 +100,52 @@ blocks:
           ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales
           ligula turpis ac dui.
     _template: photoCards
+  - style:
+      fillStyles: bg-white
+      textAlignment: left
+      columns: '3'
+      labelStyles: text-black text-sm mb-0
+      headlineStyles: text-black text-5xl mb-0
+      subheadStyles: text-black text-3xl mb-0
+      textStyles: text-black text-md mb-0
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      padding: undefined undefined undefined undefined
+      type: solid
+      accentColor: primary
+      imageStyles: ' object-none undefined mb-5'
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: 'text-black undefined text-2xl mb-0 '
+      subheadStyles: 'text-black undefined text-lg mb-0 '
+      textStyles: 'text-black undefined text-sm mb-0 '
+      buttonType: solid
+      buttonTextColor: primary
+    label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >-
+      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
+      libero, nec molestie urna dui a leo.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          The top minds in lorem ipsum will engage us in dolor amet opcit
+          alector lobortis lasionteramo.
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645578168/cryptonet/white-placeholder-md_wdmspr.png
+        headline: Name
+        subhead: ''
+        text: |-
+          Info lorem ipsum dolor amet, opcit alector.  
+          [Twitter](/)
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+    _template: photoCards
 meta:
   siteTitle: Hackathons
   siteDescription: >-
