@@ -104,7 +104,7 @@ blocks:
       fillStyles: bg-gray-light
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-20 undefined undefined
+      padding: pt-20 pb-20 pr-6 pl-16
       contentWidth: w-full
       columns: '3'
       labelStyles: 'text-black undefined text-sm mb-0 '
