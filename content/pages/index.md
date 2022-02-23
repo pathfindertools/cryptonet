@@ -202,8 +202,11 @@ meta:
   siteImageSrc: >-
     https://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
 nav:
+  navItems:
+    - label: Join Us
+      link: /
   navAlignment: right
-  navTextColor: white
+  navTextColor: grayDark
   navBackgroundColor: accent4
 colors:
   primary: '#0090FF'
