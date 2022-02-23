@@ -22,6 +22,18 @@ blocks:
       presentation of recent breakthrough results and discussions about the
       important open problems, and how they are motivated by practical
       applications.
+    buttons:
+      - label: Register
+        link: /
+        type: solid
+        buttonFillStyles: bg-black
+        textColor: white
+        backgroundColor: primary
+      - label: Learn More
+        link: /
+        type: solid
+        textColor: grayDark
+        backgroundColor: primary
     _template: banner
   - style:
       fillStyles: from-accent1 to-black bg-gradient-to-br
