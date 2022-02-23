@@ -2,6 +2,28 @@
 draft: true
 blocks:
   - style:
+      fillStyles: bg-gray-light
+      textAlignment: text-center
+      minHeight: min-h-0
+      padding: undefined undefined undefined undefined
+      width: normal
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-black undefined text-5xl mb-0 font-bold
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-gray-dark undefined undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    label: Protocol Labs Research invites you to
+    headline: Vector Commitment Research Day
+    subhead: ''
+    body: >-
+      [**Vector commitments**]() are powerful primitives that find applications
+      in many blockchains protocols. The goal of this workshop is to survey the
+      state of the art in research in Vector Commitments with survey talks, the
+      presentation of recent breakthrough results and discussions about the
+      important open problems, and how they are motivated by practical
+      applications.
+    _template: banner
+  - style:
       fillStyles: from-accent1 to-black bg-gradient-to-br
       alignment: 'flex-row-reverse text-left items-center '
       featureContent: 'w-1/2 min-h-0 '
@@ -79,7 +101,7 @@ blocks:
       fillStyles: bg-primary
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-7 pb-10 pr-0 
+      padding: pt-7 pb-10 pr-0
       width: normal
       labelStyles: text-black  text-xl mb-0 font-bold
       headlineStyles: text-white  text-6xl mb-3 font-bold
