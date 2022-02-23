@@ -104,23 +104,23 @@ blocks:
       fillStyles: bg-gray-light
       textAlignment: text-left
       minHeight: min-h-0
-      padding: undefined undefined undefined undefined
+      padding: pt-20 pb-20 undefined undefined
       contentWidth: w-full
       columns: '3'
       labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: 'text-black undefined text-5xl mb-0 '
+      headlineStyles: 'text-gray-dark undefined text-5xl mb-0 '
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-black undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      padding: undefined undefined undefined undefined
+      padding: pt-0 undefined pr-10 undefined
       type: solid
       accentColor: primary
-      imageStyles: ' object-none undefined mb-5'
+      imageStyles: ' object-scale-down object-left mb-5'
       labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: 'text-black undefined text-2xl mb-0 '
-      subheadStyles: 'text-black undefined text-lg mb-0 '
-      textStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-gray-dark undefined text-3xl mb-0 font-bold
+      subheadStyles: 'text-gray-dark undefined text-2xl mb-0 '
+      textStyles: 'text-gray-dark undefined text-2xl mb-0 '
       buttonType: solid
       buttonTextColor: primary
     label: ''
