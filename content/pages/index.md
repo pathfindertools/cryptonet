@@ -141,11 +141,11 @@ blocks:
         text: |-
           Info lorem ipsum dolor amet, opcit alector.  
           [Twitter](/)
-      - headline: Here's Another Card
+      - headline: Name
         subhead: ''
-        text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+        text: |-
+          Info lorem ipsum dolor amet, opcit alector.  
+          [Twitter](/)
     _template: photoCards
 meta:
   siteTitle: Hackathons
