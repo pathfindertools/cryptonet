@@ -150,6 +150,32 @@ blocks:
           Info lorem ipsum dolor amet, opcit alector.  
           [Twitter](/)
     _template: photoCards
+  - style:
+      fillStyles: bg-white
+      textAlignment: text-center
+      minHeight: min-h-0
+      padding: pt-20 pb-20 pr-10 pl-10
+      width: narrow
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: 'text-black undefined text-6xl mb-5 '
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-gray-dark undefined text-2xl mb-10 '
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: '[ registration CTA ]'
+    subhead: ''
+    body: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
+      ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales ligula
+      turpis ac dui.
+    buttons:
+      - label: Register
+        link: /
+        type: solid
+        buttonFillStyles: bg-black
+        textColor: white
+        backgroundColor: primary
+    _template: banner
 meta:
   siteTitle: Hackathons
   siteDescription: >-
