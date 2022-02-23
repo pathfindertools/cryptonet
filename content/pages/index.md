@@ -101,13 +101,16 @@ blocks:
           ligula turpis ac dui.
     _template: photoCards
   - style:
-      fillStyles: bg-white
-      textAlignment: left
+      fillStyles: bg-gray-light
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: undefined undefined undefined undefined
+      contentWidth: w-full
       columns: '3'
-      labelStyles: text-black text-sm mb-0
-      headlineStyles: text-black text-5xl mb-0
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-black text-md mb-0
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: 'text-black undefined text-5xl mb-0 '
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-black undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
       padding: undefined undefined undefined undefined
@@ -121,17 +124,15 @@ blocks:
       buttonType: solid
       buttonTextColor: primary
     label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan
-      libero, nec molestie urna dui a leo.
+    headline: Presenters
+    subhead: ''
+    body: ''
     items:
-      - headline: Here's Another Card
-        subhead: ''
-        text: >-
+      - headline: ''
+        subhead: >-
           The top minds in lorem ipsum will engage us in dolor amet opcit
           alector lobortis lasionteramo.
+        text: ''
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645578168/cryptonet/white-placeholder-md_wdmspr.png
