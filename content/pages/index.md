@@ -31,9 +31,9 @@ blocks:
         backgroundColor: primary
       - label: Learn More
         link: /
-        type: solid
-        textColor: grayDark
-        backgroundColor: primary
+        type: link
+        textColor: gray
+        backgroundColor: ''
     _template: banner
   - style:
       fillStyles: bg-white
