@@ -39,7 +39,7 @@ blocks:
       fillStyles: bg-white
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-28 pb-28 pr-16 pl-16
+      padding: pt-28 pb-28 pr-0 pl-16
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-black undefined text-sm mb-0 '
@@ -49,14 +49,14 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
-      padding: undefined pb-10 pr-10 pl-10
+      padding: undefined pb-10 pr-16 pl-0
       type: solid
       accentColor: primary
-      imageStyles: ' undefined undefined undefined'
+      imageStyles: h-40 object-scale-down object-left mb-7
       labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: 'text-gray-dark undefined text-3xl mb-2.5 '
+      headlineStyles: 'text-gray-dark undefined text-3xl mb-5 '
       subheadStyles: 'text-gray-dark undefined text-3xl mb-0 '
-      textStyles: 'text-gray undefined text-lg mb-0 '
+      textStyles: 'text-gray undefined text-2xl mb-0 '
       buttonType: solid
       buttonTextColor: primary
     label: ''
@@ -72,19 +72,28 @@ blocks:
           X-hour event will include a number of sessions that explore this
           [adjective] topic.
         text: ''
-      - headline: Session title session title session title
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
+        headline: Session title session title session title
         subhead: ''
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
           ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales
           ligula turpis ac dui.
-      - headline: Session title session title session title
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
+        headline: Session title session title session title
         subhead: ''
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
           ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales
           ligula turpis ac dui.
-      - headline: Session title session title session title
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
+        headline: Session title session title session title
         subhead: ''
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
