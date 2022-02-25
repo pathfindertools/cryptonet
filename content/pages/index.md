@@ -46,7 +46,7 @@ blocks:
       fillStyles: bg-white
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-28 pb-28 pr-0 pl-16
+      padding: pt-28 pb-28 pr-14 pl-14
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-black undefined text-sm mb-0 '
@@ -56,14 +56,14 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
-      padding: undefined pb-10 pr-16 pl-0
+      padding: undefined pb-10 pr-10 pl-0
       type: solid
       accentColor: primary
-      imageStyles: h-40 object-scale-down object-left mb-7
+      imageStyles: h-72 object-scale-down object-left mb-7
       labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: 'text-gray-dark undefined text-3xl mb-5 '
+      headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-gray-dark undefined text-3xl mb-0 '
-      textStyles: 'text-gray undefined text-2xl mb-0 '
+      textStyles: 'text-accent3 undefined text-base mb-0 '
       buttonType: solid
       buttonTextColor: primary
     label: ''
@@ -81,7 +81,7 @@ blocks:
         text: ''
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
+            http://res.cloudinary.com/protocolai/image/upload/v1645822769/cryptonet/bio-dario-fiore_avonun.jpg
         headline: A journey in vector commitments
         subhead: 'Talk 1:'
         text: >-
