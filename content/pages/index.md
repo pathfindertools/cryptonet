@@ -198,7 +198,7 @@ blocks:
         backgroundColor: primary
     _template: banner
   - style:
-      fillStyles: bg-black
+      fillStyles: bg-accent1
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-7 pb-7 undefined undefined
@@ -208,6 +208,8 @@ blocks:
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-white undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
+    backgroundImage:
+      position: object-bottom
     label: ''
     headline: ''
     subhead: ''
