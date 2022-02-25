@@ -209,15 +209,15 @@ nav:
   navTextColor: grayDark
   navBackgroundColor: accent4
 colors:
-  primary: '#0090FF'
-  accent1: '#0E4465'
-  accent2: '#2DDB87'
-  accent3: '#2DD0DB'
-  accent4: '#00D0DB'
+  primary: '#F67575'
+  accent1: '#3373F1'
+  accent2: '#9CC2DC'
+  accent3: '#253464'
+  accent4: '#558CEA'
   white: '#FFFFFF'
-  grayLight: '#E8E8EF'
-  gray: '#B0B0BF'
-  grayDark: '#7B7A80'
+  grayLight: '#F4F5FA'
+  gray: '#D9DFEE'
+  grayDark: '#7F8494'
   black: '#000000'
 ---
 
