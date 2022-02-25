@@ -16,9 +16,9 @@ blocks:
     headline: Vector Commitment Research Day
     subhead: ''
     body: >-
-      [**Vector commitments**]() are powerful primitives that find applications
-      in many blockchains protocols. The goal of this workshop is to survey the
-      state of the art in research in Vector Commitments with survey talks, the
+      Vector commitments are powerful primitives that find applications in many
+      blockchains protocols. The goal of this workshop is to survey the state of
+      the art in research in Vector Commitments with survey talks, the
       presentation of recent breakthrough results and discussions about the
       important open problems, and how they are motivated by practical
       applications.
