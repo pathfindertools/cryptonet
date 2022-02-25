@@ -2,16 +2,23 @@
 draft: true
 blocks:
   - style:
-      fillStyles: bg-gray-light
+      fillStyles: from-accent3 to-accent1 bg-gradient-to-tr
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-32 pb-16 pr-10 pl-10
+      padding: pt-0 pb-24 pr-10 pl-10
       width: normal
-      labelStyles: 'text-gray-dark undefined text-3xl mb-0 '
-      headlineStyles: text-black undefined text-6xl mb-8 font-bold
+      labelStyles: 'text-white undefined text-xl mb-0 '
+      headlineStyles: 'text-white undefined text-6xl mb-8 '
       subheadStyles: 'text-black undefined text-3xl mb-0 '
-      textStyles: 'text-gray-dark undefined text-2xl mb-8 '
+      textStyles: 'text-white undefined text-xl mb-8 '
       contentOrder: labelHeadingsContent
+    image:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/hero-image_bbybtb.svg
+    backgroundImage:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1645824008/cryptonet/hero-bg_lrgsrl.svg
+      position: object-top
     label: Protocol Labs Research invites you to
     headline: Vector Commitment Research Day
     subhead: ''
