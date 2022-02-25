@@ -94,9 +94,16 @@ blocks:
         headline: Session title session title session title
         subhead: ''
         text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
-          ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales
-          ligula turpis ac dui.
+          Vector commitments allow a party to commit to a vector and then to
+          open the commitment at selected positions. The crucial feature of this
+          primitive is that the size of both commitments and openings does not
+          depend on the length of the vector.
+
+
+          In this talk I will present the notion of vector commitments, give an
+          overview of the state of the art in this area, and cover some of the
+          recent efficient constructions. I will also discuss applications and
+          open problems.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
