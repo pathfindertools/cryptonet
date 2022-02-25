@@ -33,13 +33,13 @@ blocks:
       - label: Register
         link: /
         type: solid
-        buttonFillStyles: bg-black
+        buttonFillStyles: bg-primary
         textColor: white
         backgroundColor: primary
       - label: Learn More
         link: /
         type: link
-        textColor: gray
+        textColor: white
         backgroundColor: ''
     _template: banner
   - style:
