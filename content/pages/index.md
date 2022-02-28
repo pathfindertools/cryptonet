@@ -211,7 +211,8 @@ blocks:
       padding: pt-20 pb-20 pr-16 pl-16
       fillStyles: bg-gray-light
     markup: |-
-      <h1 class="text-6xl text-accent3 mb-16">Event Schedule</h1>
+      <h1 class="text-accent3 text-6xl">Event Schedule</h1>
+      <p class="text-gray-dark mb-16">Central European Time</p>
       <dl class="flex flex-wrap">
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           11:00 am
@@ -290,12 +291,11 @@ blocks:
       textStyles: 'text-accent3 undefined text-2xl mb-10 '
       contentOrder: labelHeadingsContent
     label: ''
-    headline: '[ registration CTA ]'
+    headline: Protocol Labs Invites You
     subhead: ''
     body: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
-      ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales ligula
-      turpis ac dui.
+      We have a very exciting speaker lineup to survey the research area,
+      present new technical breakthroughs and discuss important open problems.
     buttons:
       - label: Register
         link: 'https://protocollabs.typeform.com/to/dVCvrol0'
@@ -320,7 +320,7 @@ blocks:
     label: ''
     headline: ''
     subhead: ''
-    body: '\[ PL Research logo? link to PL Research? github? other? \]'
+    body: 'Made with love by [Protocol Labs]().'
     _template: banner
 meta:
   siteTitle: "Vector Commitment \LResearch Day"
