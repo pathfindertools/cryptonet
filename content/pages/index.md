@@ -113,16 +113,32 @@ blocks:
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
         text: "A succinct non-interactive argument of knowledge (SNARK) allows a prover to produce a short proof that certifies the veracity of a certain NP-statement. In the last decade, a large body of work has studied candidate constructions that are secure against quantum attackers. Unfortunately, no known candidate matches the efficiency and desirable features of (pre-quantum) constructions based on bilinear pairings.\LIn this work, we make progress ... Read more>"
-      - headline: Here's Another Card
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alexandrox-zacharakis_oq4xsa.jpg
+        headline: "Techniques and tradeoffs for VC in the dlog setting\L"
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
+          In this work we present techniques for opening/proving knowledge of
+          subvectors of algebraic vector commitments. First, we present
+          combinatorial techniques for proving opening of an algebraic
+          commitment generalizing previous results (Hyperproofs). The techniques
+          are generic and can be instantiated using any proof of knowledge of
+          opening of a commitment. We consider (1) a transparent instantiation
+          based... Read more>
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-weije-wang_nidj8y.jpg
+        headline: A Compiler for Efficient Vector Commitments
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          We present a new compiler for efficient vector commitments. By taking
+          as input any vector commitment that is updatable, aggregatable, and
+          has O(nlogn) time to open all proofs, our compiler can produce another
+          vector commitment that balances, with the help of bookkeeping, the
+          time complexity between UpdateAllProofs() and Aggregate(). More
+          specifically, the produced vector commitment requires O(√nlogn)
+          time... Read more>
       - headline: Here's Another Card
         subhead: ''
         text: >-
