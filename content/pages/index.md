@@ -138,7 +138,9 @@ blocks:
           vector commitment that balances, with the help of bookkeeping, the
           time complexity between UpdateAllProofs() and Aggregate(). More
           specifically, the produced vector commitment requires O(√nlogn)
-          time... Read more>
+          time...  
+
+          [Read more>](/)
       - headline: Here's Another Card
         subhead: ''
         text: >-
