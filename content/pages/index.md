@@ -136,10 +136,10 @@ blocks:
       padding: pt-0 undefined pr-0 pl-0
       type: solid
       accentColor: primary
-      imageStyles: ' object-scale-down object-left mb-5'
+      imageStyles: h-44 object-scale-down object-left mb-5
       labelStyles: 'text-accent3 undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
-      subheadStyles: 'text-accent3 undefined text-2xl mb-0 '
+      subheadStyles: 'text-accent3 undefined text-xl mb-0 '
       textStyles: 'text-accent3 undefined text-xl mb-0 '
       buttonType: solid
       buttonTextColor: primary
