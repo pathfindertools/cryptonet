@@ -96,29 +96,23 @@ blocks:
           open problems.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
-        headline: Session title session title session title
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-victoria-arantxa_cqpcg7.jpg
+        headline: On the efficiency and flexibility of Linear-map vector commitments.
         subhead: ''
         text: >-
-          Vector commitments allow a party to commit to a vector and then to
-          open the commitment at selected positions. The crucial feature of this
-          primitive is that the size of both commitments and openings does not
-          depend on the length of the vector.
-
-
-          In this talk I will present the notion of vector commitments, give an
-          overview of the state of the art in this area, and cover some of the
-          recent efficient constructions. I will also discuss applications and
-          open problems.
+          In this talk we will present some theoretical and practical
+          contributions to algebraic vector commitments. From a theorical point
+          of view, we propose a framework adopting Linear Vector Commitments
+          (LVC) \[LaiMal19\] as a starting point for defining SVC with
+          updatability and aggregation properties. In particular we show how LVC
+          with minimal properties can be boostrapped to obtain stronger ones...
+          Read more>
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645578173/cryptonet/gray-placeholder-sm_cusbl6.png
-        headline: Session title session title session title
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-russell-lai_goujsq.jpg
+        headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
-          ultrices lobortis laoreet, ex tellus dapibus sapien, nec sodales
-          ligula turpis ac dui.
+        text: "A succinct non-interactive argument of knowledge (SNARK) allows a prover to produce a short proof that certifies the veracity of a certain NP-statement. In the last decade, a large body of work has studied candidate constructions that are secure against quantum attackers. Unfortunately, no known candidate matches the efficiency and desirable features of (pre-quantum) constructions based on bilinear pairings.\LIn this work, we make progress ... Read more>"
     _template: photoCards
   - style:
       fillStyles: from-accent2 to-accent4 bg-gradient-to-br
