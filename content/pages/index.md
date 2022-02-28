@@ -157,7 +157,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alin-tomescu_czcx5l.svg
-        headline: "Are Merkle trees \La panacea?"
+        headline: Fantastic trees and how to hash them
         subhead: ''
         text: >-
           Are Merkle trees a panacea? In this talk, I argue they are not and
