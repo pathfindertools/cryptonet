@@ -80,7 +80,7 @@ blocks:
         text: ''
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645822769/cryptonet/bio-dario-fiore_avonun.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1645830390/cryptonet/bio-dario-fiore_l5h9no.svg
         headline: A journey in vector commitments
         subhead: ''
         text: >-
