@@ -36,7 +36,7 @@ blocks:
         textColor: white
         backgroundColor: primary
       - label: Learn More
-        link: /
+        link: /#join-us
         type: link
         textColor: white
         backgroundColor: ''
@@ -335,9 +335,6 @@ meta:
   siteImageSrc: >-
     http://res.cloudinary.com/protocolai/image/upload/v1646068909/cryptonet/CyptoNet_Twitter_ubqqvm.png
 nav:
-  navItems:
-    - label: Join Us
-      link: /
   navAlignment: right
   navTextColor: white
   navBackgroundColor: accent4
