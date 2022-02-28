@@ -55,10 +55,10 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
-      padding: undefined pb-10 pr-10 pl-0
+      padding: undefined pb-10 pr-0 pl-0
       type: solid
       accentColor: primary
-      imageStyles: h-72 object-scale-down object-left mb-7
+      imageStyles: h-52 object-scale-down object-left mb-7
       labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-gray-dark undefined text-3xl mb-0 '
@@ -113,6 +113,26 @@ blocks:
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
         text: "A succinct non-interactive argument of knowledge (SNARK) allows a prover to produce a short proof that certifies the veracity of a certain NP-statement. In the last decade, a large body of work has studied candidate constructions that are secure against quantum attackers. Unfortunately, no known candidate matches the efficiency and desirable features of (pre-quantum) constructions based on bilinear pairings.\LIn this work, we make progress ... Read more>"
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
+      - headline: Here's Another Card
+        subhead: ''
+        text: >-
+          This is where you might talk about the card, if this wasn't just
+          filler text.
     _template: photoCards
   - style:
       fillStyles: from-accent2 to-accent4 bg-gradient-to-br
