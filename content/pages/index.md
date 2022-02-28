@@ -36,7 +36,7 @@ blocks:
         textColor: white
         backgroundColor: primary
       - label: Learn More
-        link: /#join-us
+        link: '#join-us'
         type: link
         textColor: white
         backgroundColor: ''
