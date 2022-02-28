@@ -5,7 +5,7 @@ blocks:
       fillStyles: from-accent3 to-accent1 bg-gradient-to-tr
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-0 pb-24 pr-10 pl-10
+      padding: pt-28 pb-24 pr-10 pl-10
       width: normal
       labelStyles: 'text-white undefined text-xl mb-0 '
       headlineStyles: 'text-white undefined text-6xl mb-8 '
@@ -13,8 +13,7 @@ blocks:
       textStyles: 'text-white undefined text-xl mb-8 '
       contentOrder: labelHeadingsContent
     image:
-      src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/hero-image_bbybtb.svg
+      src: ''
     backgroundImage:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1645824008/cryptonet/hero-bg_lrgsrl.svg
@@ -83,7 +82,7 @@ blocks:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822769/cryptonet/bio-dario-fiore_avonun.jpg
         headline: A journey in vector commitments
-        subhead: 'Talk 1:'
+        subhead: ''
         text: >-
           Vector commitments allow a party to commit to a vector and then to
           open the commitment at selected positions. The crucial feature of this
@@ -122,7 +121,7 @@ blocks:
           ligula turpis ac dui.
     _template: photoCards
   - style:
-      fillStyles: bg-gray-light
+      fillStyles: from-accent2 to-accent1 bg-gradient-to-br
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-16 pl-16
@@ -134,22 +133,22 @@ blocks:
       textStyles: 'text-black undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      padding: pt-0 undefined pr-10 pl-0
+      padding: pt-0 undefined pr-0 pl-0
       type: solid
       accentColor: primary
       imageStyles: ' object-scale-down object-left mb-5'
-      labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: text-gray-dark undefined text-2xl mb-0 font-bold
-      subheadStyles: 'text-gray-dark undefined text-2xl mb-0 '
-      textStyles: 'text-gray-dark undefined text-xl mb-0 '
+      labelStyles: 'text-accent3 undefined text-sm mb-0 '
+      headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
+      subheadStyles: 'text-accent3 undefined text-2xl mb-0 '
+      textStyles: 'text-accent3 undefined text-xl mb-0 '
       buttonType: solid
       buttonTextColor: primary
     label: ''
-    headline: Presenters
+    headline: ''
     subhead: ''
     body: ''
     items:
-      - headline: ''
+      - headline: Sponsors
         subhead: >-
           The top minds in lorem ipsum will engage us in dolor amet opcit
           alector lobortis lasionteramo.
@@ -229,7 +228,7 @@ nav:
     - label: Join Us
       link: /
   navAlignment: right
-  navTextColor: grayDark
+  navTextColor: white
   navBackgroundColor: accent4
 colors:
   primary: '#F67575'
