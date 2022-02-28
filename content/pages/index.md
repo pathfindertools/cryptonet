@@ -185,7 +185,7 @@ blocks:
       textStyles: 'text-accent3 undefined text-xl mb-0 '
       buttonType: solid
       buttonFillStyles: bg-white
-      buttonTextColor: primary
+      buttonTextColor: accent3
     label: ''
     headline: ''
     subhead: ''
