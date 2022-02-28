@@ -16,7 +16,7 @@ blocks:
       src: ''
     backgroundImage:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1645824008/cryptonet/hero-bg_lrgsrl.svg
+        http://res.cloudinary.com/protocolai/image/upload/v1646069116/cryptonet/hero-bg-tetris_dyykdw.svg
       position: object-top
     label: Protocol Labs Research invites you to
     headline: Vector Commitment Research Day
