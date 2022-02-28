@@ -219,6 +219,32 @@ blocks:
           [Twitter](/)
     _template: photoCards
   - style:
+      minHeight: min-h-0
+      padding: pt-20 pb-20 pr-16 pl-16
+      fillStyles: bg-gray-light
+    markup: |-
+      <h1 class="text-4xl">Event schedule</h1>
+
+      <dl class="text-accent3">
+        <dt>11:00 am  
+        <dd>“A journey in vector commitments” - Dario Fiore</dd>
+        <dt>12:15 - 1:00pm
+        <dd>“On the efficiency and flexibility of Linear-map vector commitments.” - Arantxa Zapico</dd>
+        <dt>1:00-2:00pm
+        <dd>Lunch Break</dd>
+        <dt>2:15-3:00pm 
+        <dd>“Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable” - Russel Lai</dd>
+        <dt>3:15-4:00pm 
+        <dd>“Techniques and tradeoffs for VC in the dlog setting” - Alexandros Zacharakis</dd>
+        <dt>4:15-5:00pm
+        <dd>“A Compiler for Efficient Vector Commitments” - Weijie Wang</dd>
+        <dt>5:15-6:00pm
+        <dd>“ Vector and Functional Commitments from Lattices” - Chris Peikert</dd>
+        <dt>6:15-7:00pm
+        <dd>“Are Merkle trees a panacea?” - Alin Tomescu</dd>
+      </dl>
+    _template: embed
+  - style:
       fillStyles: bg-white
       textAlignment: text-center
       minHeight: min-h-0
