@@ -160,6 +160,7 @@ blocks:
           and lattices. Unlike Merkle trees, these constructions have a
           combination of smaller proof sizes, useful homomorphisms and more
           efficient proof aggregation... Read more>
+    navigationLabel: Join Us
     _template: photoCards
   - style:
       fillStyles: from-accent2 to-accent4 bg-gradient-to-br
