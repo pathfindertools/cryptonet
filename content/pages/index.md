@@ -270,7 +270,7 @@ meta:
     and shape the future of the web to make it more decentralized, robust, and
     secure!
   siteImageSrc: >-
-    https://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
+    http://res.cloudinary.com/protocolai/image/upload/v1646068909/cryptonet/CyptoNet_Twitter_ubqqvm.png
 nav:
   navItems:
     - label: Join Us
