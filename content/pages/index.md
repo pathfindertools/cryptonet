@@ -121,7 +121,7 @@ blocks:
           ligula turpis ac dui.
     _template: photoCards
   - style:
-      fillStyles: from-accent2 to-accent1 bg-gradient-to-br
+      fillStyles: from-accent2 to-accent4 bg-gradient-to-br
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-16 pl-16
@@ -233,7 +233,7 @@ nav:
 colors:
   primary: '#F67575'
   accent1: '#3373F1'
-  accent2: '#9CC2DC'
+  accent2: '#B7D8EB'
   accent3: '#253464'
   accent4: '#558CEA'
   white: '#FFFFFF'
