@@ -61,7 +61,7 @@ blocks:
       imageStyles: h-52 object-scale-down object-left mb-7
       labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
-      subheadStyles: 'text-gray-dark undefined text-3xl mb-0 '
+      subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-base mb-0 '
       buttonType: solid
       buttonTextColor: primary
