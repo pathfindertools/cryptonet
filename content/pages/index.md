@@ -223,7 +223,7 @@ blocks:
       padding: pt-20 pb-20 pr-16 pl-16
       fillStyles: bg-gray-light
     markup: |-
-      <h1 class="text-4xl">Event schedule</h1>
+      <h1 class="text-6xl text-accent3 mb-4">Event Schedule</h1>
 
       <dl class="text-accent3">
         <dt>11:00 am  
