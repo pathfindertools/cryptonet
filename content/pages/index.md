@@ -223,25 +223,72 @@ blocks:
       padding: pt-20 pb-20 pr-16 pl-16
       fillStyles: bg-gray-light
     markup: |-
-      <h1 class="text-5xl text-accent3 mb-4">Event Schedule</h1>
-
-      <dl class="text-accent3">
-        <dt>11:00 am  
-        <dd>“A journey in vector commitments” - Dario Fiore</dd>
-        <dt>12:15 - 1:00pm
-        <dd>“On the efficiency and flexibility of Linear-map vector commitments.” - Arantxa Zapico</dd>
-        <dt>1:00-2:00pm
-        <dd>Lunch Break</dd>
-        <dt>2:15-3:00pm 
-        <dd>“Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable” - Russel Lai</dd>
-        <dt>3:15-4:00pm 
-        <dd>“Techniques and tradeoffs for VC in the dlog setting” - Alexandros Zacharakis</dd>
-        <dt>4:15-5:00pm
-        <dd>“A Compiler for Efficient Vector Commitments” - Weijie Wang</dd>
-        <dt>5:15-6:00pm
-        <dd>“ Vector and Functional Commitments from Lattices” - Chris Peikert</dd>
-        <dt>6:15-7:00pm
-        <dd>“Are Merkle trees a panacea?” - Alin Tomescu</dd>
+      <h1 class="text-6xl text-accent3 mb-16">Event Schedule</h1>
+      <dl class="flex flex-wrap">
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          11:00 am
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“A journey in vector commitments” - Dario Fiore</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          12:15 - 1:00pm
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“On the efficiency and flexibility of Linear-map vector commitments.” - Arantxa Zapico</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          1:00-2:00pm
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">Lunch Break</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          2:15-3:00pm 
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“Lattice-Based Preprocessing SNARKs” - Russel Lai</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          3:15-4:00pm 
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“Techniques and tradeoffs for VC in the dlog setting” - Alexandros Zacharakis</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          4:15-5:00pm
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“A Compiler for Efficient Vector Commitments” - Weijie Wang</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          5:15-6:00pm
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“ Vector and Functional Commitments from Lattices” - Chris Peikert</dd>
+        <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative overflow-hidden">
+          6:15-7:00pm
+          <svg class="absolute top-0 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.2663" cy="8.72162" r="6.58807" stroke="#7986AD" stroke-width="3"/>
+            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
+          </svg>
+        </dt>
+        <dd class="w-10/12 pl-8">“Are Merkle trees a panacea?” - Alin Tomescu</dd>
       </dl>
     _template: embed
   - style:
