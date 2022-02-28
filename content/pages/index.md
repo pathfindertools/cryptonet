@@ -193,8 +193,8 @@ blocks:
     items:
       - headline: Sponsors
         subhead: >-
-          The top minds in lorem ipsum will engage us in dolor amet opcit
-          alector lobortis lasionteramo.
+          Thanks to our sponsors for bringing us the top minds in vector
+          commitments research.
         text: ''
       - image:
           src: >-
