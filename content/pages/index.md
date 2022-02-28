@@ -141,16 +141,32 @@ blocks:
           time...  
 
           [Read more>](/)
-      - headline: Here's Another Card
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-chris-peikert_i5webd.jpg
+        headline: Vector and Functional Commitments from Lattices
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
-      - headline: Here's Another Card
+          Vector commitments (VCs) allow one to commit concisely to an ordered
+          sequence of values, so that the values at desired positions can later
+          be concisely and verifiably revealed. In addition, a VC can be
+          statelessly updatable, meaning that commitments and proofs can be
+          updated to reflect changes to individual entries, using knowledge of
+          just those changes (and not the entire vector). To date, there have
+          been relatively few post-quantum constructions... Read more>
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alin-tomescu_czcx5l.svg
+        headline: "Are Merkle trees \La panacea?"
         subhead: ''
         text: >-
-          This is where you might talk about the card, if this wasn't just
-          filler text.
+          Are Merkle trees a panacea? In this talk, I argue they are not and
+          present several tree-based vector commitments that offer interesting
+          trade-offs when compared to Merkle’s classic construction. First, I
+          will cover previous work on tree-based VCs from polynomial commitments
+          and lattices. Unlike Merkle trees, these constructions have a
+          combination of smaller proof sizes, useful homomorphisms and more
+          efficient proof aggregation... Read more>
     _template: photoCards
   - style:
       fillStyles: from-accent2 to-accent4 bg-gradient-to-br
