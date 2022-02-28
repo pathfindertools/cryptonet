@@ -174,7 +174,7 @@ blocks:
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-16 pl-16
       contentWidth: w-full
-      columns: '3'
+      columns: '2'
       labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: text-gray-dark undefined text-4xl mb-0 font-bold
       subheadStyles: 'text-black undefined text-3xl mb-0 '
@@ -184,12 +184,13 @@ blocks:
       padding: pt-0 undefined pr-0 pl-0
       type: solid
       accentColor: primary
-      imageStyles: h-44 object-scale-down object-left mb-5
+      imageStyles: h-28 object-contain object-left mb-5
       labelStyles: 'text-accent3 undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
       subheadStyles: 'text-accent3 undefined text-xl mb-0 '
       textStyles: 'text-accent3 undefined text-xl mb-0 '
       buttonType: solid
+      buttonFillStyles: bg-white
       buttonTextColor: primary
     label: ''
     headline: ''
@@ -203,20 +204,14 @@ blocks:
         text: ''
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645578168/cryptonet/white-placeholder-md_wdmspr.png
-        headline: Name
+            http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png
+        headline: Protocol Labs
         subhead: ''
-        text: |-
-          Info lorem ipsum dolor amet, opcit alector.  
-          [Twitter](/)
-      - image:
-          src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645578168/cryptonet/white-placeholder-md_wdmspr.png
-        headline: Name
-        subhead: ''
-        text: |-
-          Info lorem ipsum dolor amet, opcit alector.  
-          [Twitter](/)
+        text: >-
+          An open-source R&D lab. We build protocols, tools, and services to
+          radically improve the internet.
+        link: 'https://protocol.ai/'
+        buttonLabel: Learn More
     _template: photoCards
   - style:
       minHeight: min-h-0
