@@ -30,7 +30,7 @@ blocks:
       applications.
     buttons:
       - label: Register
-        link: /
+        link: 'https://protocollabs.typeform.com/to/dVCvrol0'
         type: solid
         buttonFillStyles: bg-primary
         textColor: white
@@ -298,7 +298,7 @@ blocks:
       turpis ac dui.
     buttons:
       - label: Register
-        link: /
+        link: 'https://protocollabs.typeform.com/to/dVCvrol0'
         type: solid
         buttonFillStyles: bg-primary
         textColor: white
