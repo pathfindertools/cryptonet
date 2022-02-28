@@ -263,12 +263,14 @@ blocks:
     body: '\[ PL Research logo? link to PL Research? github? other? \]'
     _template: banner
 meta:
-  siteTitle: Hackathons
+  siteTitle: "Vector Commitment \LResearch Day"
   siteDescription: >-
-    With Filecoin and IPFS, we empower developers and entrepreneurs to solve
-    significant problems and ship innovative applications. Join our hackathons
-    and shape the future of the web to make it more decentralized, robust, and
-    secure!
+    Vector commitments ⓘ are powerful primitives that find applications in many
+    blockchains protocols. The goal of this workshop is to survey the state of
+    the art in research in Vector Commitments with survey talks, the
+    presentation of recent breakthrough results and discussions about the
+    important open problems, and how they are motivated by practical
+    applications.
   siteImageSrc: >-
     http://res.cloudinary.com/protocolai/image/upload/v1646068909/cryptonet/CyptoNet_Twitter_ubqqvm.png
 nav:
