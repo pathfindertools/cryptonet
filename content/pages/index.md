@@ -22,8 +22,11 @@ blocks:
     headline: Vector Commitment
     subhead: Research Day
     body: >-
-      ![](http://res.cloudinary.com/protocolai/image/upload/v1646068750/cryptonet/hero-rule_stzu3r.png)Vector
-      commitments are powerful primitives that find applications in many
+      ![](http://res.cloudinary.com/protocolai/image/upload/v1646068750/cryptonet/hero-rule_stzu3r.png)**VIRTUAL
+      EVENT - March 25th 2022, 11am-7pm CET**
+
+
+      Vector commitments are powerful primitives that find applications in many
       blockchains protocols. The goal of this workshop is to survey the state of
       the art in research in Vector Commitments with survey talks, the
       presentation of recent breakthrough results and discussions about the
