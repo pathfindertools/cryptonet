@@ -27,9 +27,18 @@ export const getStaticProps = async ({ params }) => {
             blocks {
               __typename
               ... on PagesBlocksPhotoCards {
-                backgroundImage {
+                background {
+                  fillStyles
                   src
                   position
+                  ornaments {
+                    src
+                    alignment
+                    width
+                    height
+                    xOffset
+                    yOffset
+                  }
                 }
                 label
                 headline
@@ -60,7 +69,6 @@ export const getStaticProps = async ({ params }) => {
                   columns
                   textAlignment
                   padding
-                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
@@ -85,9 +93,18 @@ export const getStaticProps = async ({ params }) => {
                 navigationLabel
               }
               ... on PagesBlocksTextCards {
-                backgroundImage {
+                background {
+                  fillStyles
                   src
                   position
+                  ornaments {
+                    src
+                    alignment
+                    width
+                    height
+                    xOffset
+                    yOffset
+                  }
                 }
                 label
                 headline
@@ -114,7 +131,6 @@ export const getStaticProps = async ({ params }) => {
                   columns
                   textAlignment
                   padding
-                  fillStyles
                   labelStyles
                   headlineStyles
                   subheadStyles
@@ -142,9 +158,18 @@ export const getStaticProps = async ({ params }) => {
                   src
                   alt
                 }
-                backgroundImage {
+                background {
+                  fillStyles
                   src
                   position
+                  ornaments {
+                    src
+                    alignment
+                    width
+                    height
+                    xOffset
+                    yOffset
+                  }
                 }
                 label
                 headline
@@ -159,7 +184,6 @@ export const getStaticProps = async ({ params }) => {
                   buttonFillStyles
                 }
                 style {
-                  fillStyles
                   alignment
                   featureContent
                   featureImage
@@ -178,9 +202,18 @@ export const getStaticProps = async ({ params }) => {
                   src
                   alt
                 }
-                backgroundImage {
+                background {
+                  fillStyles
                   src
                   position
+                  ornaments {
+                    src
+                    alignment
+                    width
+                    height
+                    xOffset
+                    yOffset
+                  }
                 }
                 label
                 headline
@@ -202,23 +235,30 @@ export const getStaticProps = async ({ params }) => {
                   headlineStyles
                   subheadStyles
                   textStyles
-                  fillStyles
                   textAlignment
                   contentOrder
                 }
                 navigationLabel
               }
               ... on PagesBlocksEmbed {
-                backgroundImage {
+                background {
+                  fillStyles
                   src
                   position
+                  ornaments {
+                    src
+                    alignment
+                    width
+                    height
+                    xOffset
+                    yOffset
+                  }
                 }
                 markup
                 style {
                   minHeight
                   fullWidth
                   padding
-                  fillStyles
                 }
                 navigationLabel
               }

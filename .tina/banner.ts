@@ -1,4 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
+import { backgroundSchema } from "./shared/background";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
 import { contentOrderOptions, hAlignOptions, minHeightOptions } from "./shared/options"
@@ -151,40 +152,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
       ],
     },
-    {
-      label: "Background Image",
-      name: "backgroundImage",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-          ui: {
-            clearable: true,
-          }
-        },
-        {
-          label: "Position",
-          name: "position",
-          ui: {
-            component: "selectField",
-          },
-          type: "string",
-          options: [
-            { label: "Bottom", value: "object-bottom" },
-            { label: "Center", value: "object-center" },
-            { label: "Left", value: "object-left" },
-            { label: "Left Bottom", value: "object-left-bottom" },
-            { label: "Left Top", value: "object-left-top" },
-            { label: "Right", value: "object-right" },
-            { label: "Right Bottom", value: "object-right-bottom" },
-            { label: "Right Top", value: "object-right-top" },
-            { label: "Top", value: "object-top" },
-          ],
-        },
-      ],
-    },
+    backgroundSchema,
     {
       label: "Label",
       name: "label",

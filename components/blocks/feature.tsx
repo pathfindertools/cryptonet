@@ -93,9 +93,7 @@ export const Feature = ({ data }) => {
   const minHeight = data.style?.featureContent?.split(" ").find(item => item.includes("min-h-"))
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`flex sm:flex-col ${data.style?.alignment} ${minHeight}`}>

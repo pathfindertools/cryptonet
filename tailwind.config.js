@@ -115,6 +115,7 @@ module.exports = {
         128: "32rem",
       },
       zIndex: {
+        "-2": "-2",
         "-1": "-1",
       },
       fontFamily: {

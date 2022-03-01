@@ -1,20 +1,7 @@
 {
-  "siteUrl": "microgen.vercel.app",
+  "siteUrl": "cryptonet.vercel.app",
   "gtmId": "G-KWYRFX7W2D",
-  "redirects": [
-    {
-      "from": "/ahs",
-      "to": "/asia-hackathon-season"
-    },
-    {
-      "from": "/asia-hackathon-site",
-      "to": "/asia-hackathon-season"
-    },
-    {
-      "from": "/dora-hacks",
-      "to": "/dora-hacks-site"
-    }
-  ],
+  "redirects": [],
   "colors": {
     "primary": "#f67575",
     "accent1": "#3373f1",
@@ -28,9 +15,9 @@
     "black": "#000000"
   },
   "nav": {
-    "navItems": [],
     "navAlignment": "right",
     "navTextColor": "white",
-    "navBackgroundColor": "accent2"
+    "navBackgroundColor": "accent2",
+    "navItems": []
   }
 }

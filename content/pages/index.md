@@ -2,22 +2,29 @@
 draft: true
 blocks:
   - style:
-      fillStyles: from-accent3 to-accent1 bg-gradient-to-tr
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-28 pb-24 pr-10 pl-10
+      padding: pt-36 pb-24 pr-10 pl-10
       width: normal
       labelStyles: 'text-white undefined text-xl mb-0 '
       headlineStyles: 'text-white undefined text-6xl mb-0 '
-      subheadStyles: 'text-white undefined text-6xl mb-7 '
+      subheadStyles: 'text-white undefined text-6xl mb-5 '
       textStyles: 'text-white undefined text-xl mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: ''
-    backgroundImage:
+    background:
+      fillStyles: from-accent3 to-accent1 bg-gradient-to-tr
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1646069116/cryptonet/hero-bg-tetris_dyykdw.svg
+        http://res.cloudinary.com/protocolai/image/upload/v1645824008/cryptonet/hero-bg_lrgsrl.svg
       position: object-top
+      ornaments:
+        - src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/hero-image_bbybtb.svg
+          alignment: top
+          width: '600'
+          xOffset: '230'
+          yOffset: '-10'
     label: Protocol Labs Research invites you to
     headline: Vector Commitment
     subhead: Research Day
@@ -34,7 +41,7 @@ blocks:
       applications.
     buttons:
       - label: Register
-        link: 'https://protocollabs.typeform.com/to/dVCvrol0'
+        link: 'https://cryptonet.vercel.app/'
         type: solid
         buttonFillStyles: bg-primary
         textColor: white
@@ -46,7 +53,6 @@ blocks:
         backgroundColor: ''
     _template: banner
   - style:
-      fillStyles: bg-white
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-28 pb-28 pr-14 pl-14
@@ -63,12 +69,14 @@ blocks:
       type: solid
       accentColor: primary
       imageStyles: h-52 object-scale-down object-left mb-7
-      labelStyles: 'text-accent3 undefined text-sm mb-0 '
+      labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-base mb-0 '
       buttonType: solid
       buttonTextColor: primary
+    background:
+      fillStyles: bg-white
     label: ''
     headline: ''
     subhead: ''
@@ -88,7 +96,7 @@ blocks:
         headline: A journey in vector commitments
         subhead: ''
         text: >-
-          In this talk we present the notion of vector commitments, give an
+          In this talk I will present the notion of vector commitments, give an
           overview of the state of the art in this area, and cover some of the
           recent efficient constructions. I will also discuss applications and
           open problems.
@@ -104,15 +112,21 @@ blocks:
           of view, we propose a framework adopting Linear Vector Commitments
           (LVC) \[LaiMal19\] as a starting point for defining SVC with
           updatability and aggregation properties. In particular we show how LVC
-          with minimal properties can be boostrapped to obtain stronger ones...
-          Read more>
+          with minimal properties can be boostrapped to obtain stronger ones.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-russell-lai_goujsq.jpg
         label: 'Talk 3:'
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
-        text: "A succinct non-interactive argument of knowledge (SNARK) allows a prover to produce a short proof that certifies the veracity of a certain NP-statement. In the last decade, a large body of work has studied candidate constructions that are secure against quantum attackers. Unfortunately, no known candidate matches the efficiency and desirable features of (pre-quantum) constructions based on bilinear pairings.\LIn this work, we make progress ... Read more>"
+        text: >-
+          A succinct non-interactive argument of knowledge (SNARK) allows a
+          prover to produce a short proof that certifies the veracity of a
+          certain NP-statement. In the last decade, a large body of work has
+          studied candidate constructions that are secure against quantum
+          attackers. Unfortunately, no known candidate matches the efficiency
+          and desirable features of (pre-quantum) constructions based on
+          bilinear pairings. In this work, we make progress.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alexandrox-zacharakis_oq4xsa.jpg
@@ -126,7 +140,7 @@ blocks:
           commitment generalizing previous results (Hyperproofs). The techniques
           are generic and can be instantiated using any proof of knowledge of
           opening of a commitment. We consider (1) a transparent instantiation
-          based... Read more>
+          based.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-weije-wang_nidj8y.jpg
@@ -139,10 +153,7 @@ blocks:
           has O(nlogn) time to open all proofs, our compiler can produce another
           vector commitment that balances, with the help of bookkeeping, the
           time complexity between UpdateAllProofs() and Aggregate(). More
-          specifically, the produced vector commitment requires O(√nlogn)
-          time...  
-
-          [Read more>](/)
+          specifically, the produced vector commitment requires O(√nlogn) time.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-chris-peikert_i5webd.jpg
@@ -156,7 +167,7 @@ blocks:
           statelessly updatable, meaning that commitments and proofs can be
           updated to reflect changes to individual entries, using knowledge of
           just those changes (and not the entire vector). To date, there have
-          been relatively few post-quantum constructions... Read more>
+          been relatively few post-quantum constructions.
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alin-tomescu_czcx5l.svg
@@ -170,60 +181,23 @@ blocks:
           will cover previous work on tree-based VCs from polynomial commitments
           and lattices. Unlike Merkle trees, these constructions have a
           combination of smaller proof sizes, useful homomorphisms and more
-          efficient proof aggregation... Read more>
+          efficient proof aggregation.
     navigationLabel: Join Us
     _template: photoCards
   - style:
-      fillStyles: from-accent2 to-accent4 bg-gradient-to-br
-      textAlignment: text-left
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-16 pl-16
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: text-gray-dark undefined text-4xl mb-0 font-bold
-      subheadStyles: 'text-black undefined text-3xl mb-0 '
-      textStyles: 'text-black undefined undefined mb-0 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      padding: pt-0 undefined pr-0 pl-0
-      type: solid
-      accentColor: primary
-      imageStyles: h-28 object-contain object-left mb-5
-      labelStyles: 'text-accent3 undefined text-sm mb-0 '
-      headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
-      subheadStyles: 'text-accent3 undefined text-xl mb-0 '
-      textStyles: 'text-accent3 undefined text-xl mb-0 '
-      buttonType: solid
-      buttonFillStyles: bg-white
-      buttonTextColor: accent3
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - headline: Sponsors
-        subhead: >-
-          Thanks to our sponsors for bringing us the top minds in vector
-          commitments research.
-        text: ''
-      - image:
-          src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png
-        headline: Protocol Labs
-        subhead: ''
-        text: >-
-          An open-source R&D lab. We build protocols, tools, and services to
-          radically improve the internet.
-        link: 'https://protocol.ai/'
-        buttonLabel: Learn More
-    _template: photoCards
-  - style:
-      minHeight: min-h-0
-      padding: pt-20 pb-20 pr-16 pl-16
+    background:
       fillStyles: bg-gray-light
+      ornaments:
+        - src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1646164301/cryptonet/ornament-schedule_vqtiue.svg
+          alignment: top
+          width: '450'
+          xOffset: '350'
+          yOffset: '-130'
     markup: |-
-      <h1 class="text-accent3 text-6xl">Event Schedule</h1>
+      <h1 class="text-6xl text-accent3">Event Schedule</h1>
       <p class="text-gray-dark mb-16">Central European Time</p>
       <dl class="flex flex-wrap">
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
@@ -292,16 +266,70 @@ blocks:
       </dl>
     _template: embed
   - style:
-      fillStyles: bg-white
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-20 pb-20 pr-16 pl-16
+      contentWidth: w-full
+      columns: '2'
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-gray-dark undefined text-4xl mb-0 font-bold
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-black undefined undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      padding: pt-0 undefined pr-0 pl-0
+      type: solid
+      accentColor: primary
+      imageStyles: h-32 object-scale-down object-left mb-5
+      labelStyles: 'text-accent3 undefined text-sm mb-0 '
+      headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
+      subheadStyles: 'text-accent3 undefined text-xl mb-0 '
+      textStyles: 'text-accent3 undefined text-xl mb-0 '
+      buttonType: solid
+      buttonFillStyles: bg-white
+      buttonTextColor: accent4
+    background:
+      fillStyles: from-accent2 to-accent4 bg-gradient-to-br
+      ornaments:
+        - src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1646166535/cryptonet/ornament-sponsors_sziwi2.svg
+          alignment: bottom
+          width: '500'
+          xOffset: '-400'
+          yOffset: '100'
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - headline: Sponsors
+        subhead: >-
+          Thanks to our sponsors for bringing us the top minds in vector
+          commitments research.
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png
+        headline: Protocol Labs
+        subhead: ''
+        text: >-
+          An open-source R&D lab. We build protocols, tools, and services to
+          radically improve the internet.
+        link: 'https://protocol.ai/'
+        buttonLabel: Learn More
+    _template: photoCards
+  - style:
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-20 pb-20 pr-10 pl-10
+      padding: pt-32 pb-20 pr-10 pl-10
       width: narrow
       labelStyles: 'text-black undefined text-sm mb-0 '
       headlineStyles: 'text-accent3 undefined text-6xl mb-5 '
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-2xl mb-10 '
       contentOrder: labelHeadingsContent
+    background:
+      fillStyles: bg-white
     label: ''
     headline: Protocol Labs Invites You
     subhead: ''
@@ -317,7 +345,6 @@ blocks:
         backgroundColor: primary
     _template: banner
   - style:
-      fillStyles: bg-accent1
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-7 pb-7 undefined undefined
@@ -327,12 +354,13 @@ blocks:
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-white undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
-    backgroundImage:
+    background:
+      fillStyles: bg-accent1
       position: object-bottom
     label: ''
     headline: ''
     subhead: ''
-    body: 'Made with love by [Protocol Labs]().'
+    body: 'Made with love by [Protocol Labs](https://cryptonet.vercel.app/)'
     _template: banner
 meta:
   siteImageSrc: >-

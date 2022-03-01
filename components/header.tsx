@@ -56,7 +56,7 @@ export const Header = ({
   }
   const navTextColor = data.nav?.navTextColor
   const navBackgroundColor = data.nav?.navBackgroundColor
-  const navItems = data.nav?.navItems
+  const navItems = data.nav?.navItems || []
   const navAlignmentClasses = data.nav?.navAlignment === "left" ? "text-left" : "text-right sm:text-left";
   const sectionClasses = navOpen ? "sm:h-screen" : "sm:h-10 overflow-hidden";
   const navClasses = navOpen ? "sm:opacity-100 m-0" : "sm:opacity-0 mt-4 sm:pointer-events-none";

@@ -5,9 +5,7 @@ import { Content } from "../content";
 export const Banner = ({ data }) => {
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`max-w-desktop-full mx-auto ${data?.style?.padding} ${data.style?.minHeight} ${data.style?.textAlignment}`}>

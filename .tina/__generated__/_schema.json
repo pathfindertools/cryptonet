@@ -681,6 +681,239 @@
                   ]
                 },
                 {
+                  "label": "Background",
+                  "name": "background",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "background",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Image Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "background",
+                        "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "feature",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "background",
+                        "ornaments"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "feature",
+                    "background"
+                  ]
+                },
+                {
                   "label": "Image",
                   "name": "image",
                   "type": "object",
@@ -718,87 +951,6 @@
                     "blocks",
                     "feature",
                     "image"
-                  ]
-                },
-                {
-                  "label": "Background Image",
-                  "name": "backgroundImage",
-                  "type": "object",
-                  "fields": [
-                    {
-                      "label": "Image Source",
-                      "name": "src",
-                      "type": "image",
-                      "ui": {
-                        "clearable": true
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "backgroundImage",
-                        "src"
-                      ]
-                    },
-                    {
-                      "label": "Position",
-                      "name": "position",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "type": "string",
-                      "options": [
-                        {
-                          "label": "Bottom",
-                          "value": "object-bottom"
-                        },
-                        {
-                          "label": "Center",
-                          "value": "object-center"
-                        },
-                        {
-                          "label": "Left",
-                          "value": "object-left"
-                        },
-                        {
-                          "label": "Left Bottom",
-                          "value": "object-left-bottom"
-                        },
-                        {
-                          "label": "Left Top",
-                          "value": "object-left-top"
-                        },
-                        {
-                          "label": "Right",
-                          "value": "object-right"
-                        },
-                        {
-                          "label": "Right Bottom",
-                          "value": "object-right-bottom"
-                        },
-                        {
-                          "label": "Right Top",
-                          "value": "object-right-top"
-                        },
-                        {
-                          "label": "Top",
-                          "value": "object-top"
-                        }
-                      ],
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "backgroundImage",
-                        "position"
-                      ]
-                    }
-                  ],
-                  "namespace": [
-                    "pages",
-                    "blocks",
-                    "feature",
-                    "backgroundImage"
                   ]
                 },
                 {
@@ -1775,12 +1927,27 @@
                   ]
                 },
                 {
-                  "label": "Background Image",
-                  "name": "backgroundImage",
+                  "label": "Background",
+                  "name": "background",
                   "type": "object",
                   "fields": [
                     {
-                      "label": "Image Source",
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
                       "name": "src",
                       "type": "image",
                       "ui": {
@@ -1790,37 +1957,29 @@
                         "pages",
                         "blocks",
                         "photoCards",
-                        "backgroundImage",
+                        "background",
                         "src"
                       ]
                     },
                     {
-                      "label": "Position",
+                      "label": "Image Position",
                       "name": "position",
                       "ui": {
-                        "component": "selectField"
+                        "component": "select"
                       },
                       "type": "string",
                       "options": [
-                        {
-                          "label": "Bottom",
-                          "value": "object-bottom"
-                        },
                         {
                           "label": "Center",
                           "value": "object-center"
                         },
                         {
-                          "label": "Left",
-                          "value": "object-left"
+                          "label": "Top",
+                          "value": "object-top"
                         },
                         {
-                          "label": "Left Bottom",
-                          "value": "object-left-bottom"
-                        },
-                        {
-                          "label": "Left Top",
-                          "value": "object-left-top"
+                          "label": "Right Top",
+                          "value": "object-right-top"
                         },
                         {
                           "label": "Right",
@@ -1831,20 +1990,165 @@
                           "value": "object-right-bottom"
                         },
                         {
-                          "label": "Right Top",
-                          "value": "object-right-top"
+                          "label": "Bottom",
+                          "value": "object-bottom"
                         },
                         {
-                          "label": "Top",
-                          "value": "object-top"
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
                         }
                       ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "photoCards",
-                        "backgroundImage",
+                        "background",
                         "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "photoCards",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "background",
+                        "ornaments"
                       ]
                     }
                   ],
@@ -1852,7 +2156,7 @@
                     "pages",
                     "blocks",
                     "photoCards",
-                    "backgroundImage"
+                    "background"
                   ]
                 },
                 {
@@ -2951,12 +3255,27 @@
                   ]
                 },
                 {
-                  "label": "Background Image",
-                  "name": "backgroundImage",
+                  "label": "Background",
+                  "name": "background",
                   "type": "object",
                   "fields": [
                     {
-                      "label": "Image Source",
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
                       "name": "src",
                       "type": "image",
                       "ui": {
@@ -2966,37 +3285,29 @@
                         "pages",
                         "blocks",
                         "textCards",
-                        "backgroundImage",
+                        "background",
                         "src"
                       ]
                     },
                     {
-                      "label": "Position",
+                      "label": "Image Position",
                       "name": "position",
                       "ui": {
-                        "component": "selectField"
+                        "component": "select"
                       },
                       "type": "string",
                       "options": [
-                        {
-                          "label": "Bottom",
-                          "value": "object-bottom"
-                        },
                         {
                           "label": "Center",
                           "value": "object-center"
                         },
                         {
-                          "label": "Left",
-                          "value": "object-left"
+                          "label": "Top",
+                          "value": "object-top"
                         },
                         {
-                          "label": "Left Bottom",
-                          "value": "object-left-bottom"
-                        },
-                        {
-                          "label": "Left Top",
-                          "value": "object-left-top"
+                          "label": "Right Top",
+                          "value": "object-right-top"
                         },
                         {
                           "label": "Right",
@@ -3007,20 +3318,165 @@
                           "value": "object-right-bottom"
                         },
                         {
-                          "label": "Right Top",
-                          "value": "object-right-top"
+                          "label": "Bottom",
+                          "value": "object-bottom"
                         },
                         {
-                          "label": "Top",
-                          "value": "object-top"
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
                         }
                       ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "textCards",
-                        "backgroundImage",
+                        "background",
                         "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "textCards",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "background",
+                        "ornaments"
                       ]
                     }
                   ],
@@ -3028,7 +3484,7 @@
                     "pages",
                     "blocks",
                     "textCards",
-                    "backgroundImage"
+                    "background"
                   ]
                 },
                 {
@@ -3774,12 +4230,27 @@
                   ]
                 },
                 {
-                  "label": "Background Image",
-                  "name": "backgroundImage",
+                  "label": "Background",
+                  "name": "background",
                   "type": "object",
                   "fields": [
                     {
-                      "label": "Image Source",
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
                       "name": "src",
                       "type": "image",
                       "ui": {
@@ -3789,37 +4260,29 @@
                         "pages",
                         "blocks",
                         "banner",
-                        "backgroundImage",
+                        "background",
                         "src"
                       ]
                     },
                     {
-                      "label": "Position",
+                      "label": "Image Position",
                       "name": "position",
                       "ui": {
-                        "component": "selectField"
+                        "component": "select"
                       },
                       "type": "string",
                       "options": [
-                        {
-                          "label": "Bottom",
-                          "value": "object-bottom"
-                        },
                         {
                           "label": "Center",
                           "value": "object-center"
                         },
                         {
-                          "label": "Left",
-                          "value": "object-left"
+                          "label": "Top",
+                          "value": "object-top"
                         },
                         {
-                          "label": "Left Bottom",
-                          "value": "object-left-bottom"
-                        },
-                        {
-                          "label": "Left Top",
-                          "value": "object-left-top"
+                          "label": "Right Top",
+                          "value": "object-right-top"
                         },
                         {
                           "label": "Right",
@@ -3830,20 +4293,165 @@
                           "value": "object-right-bottom"
                         },
                         {
-                          "label": "Right Top",
-                          "value": "object-right-top"
+                          "label": "Bottom",
+                          "value": "object-bottom"
                         },
                         {
-                          "label": "Top",
-                          "value": "object-top"
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
                         }
                       ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "banner",
-                        "backgroundImage",
+                        "background",
                         "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "banner",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "banner",
+                        "background",
+                        "ornaments"
                       ]
                     }
                   ],
@@ -3851,7 +4459,7 @@
                     "pages",
                     "blocks",
                     "banner",
-                    "backgroundImage"
+                    "background"
                   ]
                 },
                 {
@@ -4246,12 +4854,27 @@
                   ]
                 },
                 {
-                  "label": "Background Image",
-                  "name": "backgroundImage",
+                  "label": "Background",
+                  "name": "background",
                   "type": "object",
                   "fields": [
                     {
-                      "label": "Image Source",
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
                       "name": "src",
                       "type": "image",
                       "ui": {
@@ -4261,12 +4884,12 @@
                         "pages",
                         "blocks",
                         "embed",
-                        "backgroundImage",
+                        "background",
                         "src"
                       ]
                     },
                     {
-                      "label": "Position",
+                      "label": "Image Position",
                       "name": "position",
                       "ui": {
                         "component": "select"
@@ -4274,24 +4897,16 @@
                       "type": "string",
                       "options": [
                         {
-                          "label": "Bottom",
-                          "value": "object-bottom"
-                        },
-                        {
                           "label": "Center",
                           "value": "object-center"
                         },
                         {
-                          "label": "Left",
-                          "value": "object-left"
+                          "label": "Top",
+                          "value": "object-top"
                         },
                         {
-                          "label": "Left Bottom",
-                          "value": "object-left-bottom"
-                        },
-                        {
-                          "label": "Left Top",
-                          "value": "object-left-top"
+                          "label": "Right Top",
+                          "value": "object-right-top"
                         },
                         {
                           "label": "Right",
@@ -4302,20 +4917,165 @@
                           "value": "object-right-bottom"
                         },
                         {
-                          "label": "Right Top",
-                          "value": "object-right-top"
+                          "label": "Bottom",
+                          "value": "object-bottom"
                         },
                         {
-                          "label": "Top",
-                          "value": "object-top"
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
                         }
                       ],
                       "namespace": [
                         "pages",
                         "blocks",
                         "embed",
-                        "backgroundImage",
+                        "background",
                         "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "embed",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "embed",
+                        "background",
+                        "ornaments"
                       ]
                     }
                   ],
@@ -4323,7 +5083,7 @@
                     "pages",
                     "blocks",
                     "embed",
-                    "backgroundImage"
+                    "background"
                   ]
                 },
                 {

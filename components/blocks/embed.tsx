@@ -7,9 +7,7 @@ export const Embed = ({ data }) => {
 
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`${width} ${padding} ${data.style?.minHeight}`}>

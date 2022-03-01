@@ -243,16 +243,28 @@ export type PagesBlocksFeatureStyle = {
   contentOrder?: Maybe<Scalars['String']>;
 };
 
+export type PagesBlocksFeatureBackgroundOrnaments = {
+  __typename?: 'PagesBlocksFeatureBackgroundOrnaments';
+  src?: Maybe<Scalars['String']>;
+  alignment?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
+  height?: Maybe<Scalars['String']>;
+  xOffset?: Maybe<Scalars['String']>;
+  yOffset?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksFeatureBackground = {
+  __typename?: 'PagesBlocksFeatureBackground';
+  fillStyles?: Maybe<Scalars['String']>;
+  src?: Maybe<Scalars['String']>;
+  position?: Maybe<Scalars['String']>;
+  ornaments?: Maybe<Array<Maybe<PagesBlocksFeatureBackgroundOrnaments>>>;
+};
+
 export type PagesBlocksFeatureImage = {
   __typename?: 'PagesBlocksFeatureImage';
   src?: Maybe<Scalars['String']>;
   alt?: Maybe<Scalars['String']>;
-};
-
-export type PagesBlocksFeatureBackgroundImage = {
-  __typename?: 'PagesBlocksFeatureBackgroundImage';
-  src?: Maybe<Scalars['String']>;
-  position?: Maybe<Scalars['String']>;
 };
 
 export type PagesBlocksFeatureButtons = {
@@ -268,8 +280,8 @@ export type PagesBlocksFeatureButtons = {
 export type PagesBlocksFeature = {
   __typename?: 'PagesBlocksFeature';
   style?: Maybe<PagesBlocksFeatureStyle>;
+  background?: Maybe<PagesBlocksFeatureBackground>;
   image?: Maybe<PagesBlocksFeatureImage>;
-  backgroundImage?: Maybe<PagesBlocksFeatureBackgroundImage>;
   label?: Maybe<Scalars['String']>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
@@ -312,10 +324,22 @@ export type PagesBlocksPhotoCardsCardStyle = {
   buttonTextColor?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksPhotoCardsBackgroundImage = {
-  __typename?: 'PagesBlocksPhotoCardsBackgroundImage';
+export type PagesBlocksPhotoCardsBackgroundOrnaments = {
+  __typename?: 'PagesBlocksPhotoCardsBackgroundOrnaments';
+  src?: Maybe<Scalars['String']>;
+  alignment?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
+  height?: Maybe<Scalars['String']>;
+  xOffset?: Maybe<Scalars['String']>;
+  yOffset?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksPhotoCardsBackground = {
+  __typename?: 'PagesBlocksPhotoCardsBackground';
+  fillStyles?: Maybe<Scalars['String']>;
   src?: Maybe<Scalars['String']>;
   position?: Maybe<Scalars['String']>;
+  ornaments?: Maybe<Array<Maybe<PagesBlocksPhotoCardsBackgroundOrnaments>>>;
 };
 
 export type PagesBlocksPhotoCardsButtons = {
@@ -349,7 +373,7 @@ export type PagesBlocksPhotoCards = {
   __typename?: 'PagesBlocksPhotoCards';
   style?: Maybe<PagesBlocksPhotoCardsStyle>;
   cardStyle?: Maybe<PagesBlocksPhotoCardsCardStyle>;
-  backgroundImage?: Maybe<PagesBlocksPhotoCardsBackgroundImage>;
+  background?: Maybe<PagesBlocksPhotoCardsBackground>;
   label?: Maybe<Scalars['String']>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
@@ -392,10 +416,22 @@ export type PagesBlocksTextCardsCardStyle = {
   buttonTextColor?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksTextCardsBackgroundImage = {
-  __typename?: 'PagesBlocksTextCardsBackgroundImage';
+export type PagesBlocksTextCardsBackgroundOrnaments = {
+  __typename?: 'PagesBlocksTextCardsBackgroundOrnaments';
+  src?: Maybe<Scalars['String']>;
+  alignment?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
+  height?: Maybe<Scalars['String']>;
+  xOffset?: Maybe<Scalars['String']>;
+  yOffset?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksTextCardsBackground = {
+  __typename?: 'PagesBlocksTextCardsBackground';
+  fillStyles?: Maybe<Scalars['String']>;
   src?: Maybe<Scalars['String']>;
   position?: Maybe<Scalars['String']>;
+  ornaments?: Maybe<Array<Maybe<PagesBlocksTextCardsBackgroundOrnaments>>>;
 };
 
 export type PagesBlocksTextCardsButtons = {
@@ -422,7 +458,7 @@ export type PagesBlocksTextCards = {
   __typename?: 'PagesBlocksTextCards';
   style?: Maybe<PagesBlocksTextCardsStyle>;
   cardStyle?: Maybe<PagesBlocksTextCardsCardStyle>;
-  backgroundImage?: Maybe<PagesBlocksTextCardsBackgroundImage>;
+  background?: Maybe<PagesBlocksTextCardsBackground>;
   label?: Maybe<Scalars['String']>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
@@ -453,10 +489,22 @@ export type PagesBlocksBannerImage = {
   alt?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerBackgroundImage = {
-  __typename?: 'PagesBlocksBannerBackgroundImage';
+export type PagesBlocksBannerBackgroundOrnaments = {
+  __typename?: 'PagesBlocksBannerBackgroundOrnaments';
+  src?: Maybe<Scalars['String']>;
+  alignment?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
+  height?: Maybe<Scalars['String']>;
+  xOffset?: Maybe<Scalars['String']>;
+  yOffset?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksBannerBackground = {
+  __typename?: 'PagesBlocksBannerBackground';
+  fillStyles?: Maybe<Scalars['String']>;
   src?: Maybe<Scalars['String']>;
   position?: Maybe<Scalars['String']>;
+  ornaments?: Maybe<Array<Maybe<PagesBlocksBannerBackgroundOrnaments>>>;
 };
 
 export type PagesBlocksBannerButtons = {
@@ -473,7 +521,7 @@ export type PagesBlocksBanner = {
   __typename?: 'PagesBlocksBanner';
   style?: Maybe<PagesBlocksBannerStyle>;
   image?: Maybe<PagesBlocksBannerImage>;
-  backgroundImage?: Maybe<PagesBlocksBannerBackgroundImage>;
+  background?: Maybe<PagesBlocksBannerBackground>;
   label?: Maybe<Scalars['String']>;
   headline?: Maybe<Scalars['String']>;
   subhead?: Maybe<Scalars['String']>;
@@ -490,16 +538,28 @@ export type PagesBlocksEmbedStyle = {
   fillStyles?: Maybe<Scalars['String']>;
 };
 
-export type PagesBlocksEmbedBackgroundImage = {
-  __typename?: 'PagesBlocksEmbedBackgroundImage';
+export type PagesBlocksEmbedBackgroundOrnaments = {
+  __typename?: 'PagesBlocksEmbedBackgroundOrnaments';
+  src?: Maybe<Scalars['String']>;
+  alignment?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['String']>;
+  height?: Maybe<Scalars['String']>;
+  xOffset?: Maybe<Scalars['String']>;
+  yOffset?: Maybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbedBackground = {
+  __typename?: 'PagesBlocksEmbedBackground';
+  fillStyles?: Maybe<Scalars['String']>;
   src?: Maybe<Scalars['String']>;
   position?: Maybe<Scalars['String']>;
+  ornaments?: Maybe<Array<Maybe<PagesBlocksEmbedBackgroundOrnaments>>>;
 };
 
 export type PagesBlocksEmbed = {
   __typename?: 'PagesBlocksEmbed';
   style?: Maybe<PagesBlocksEmbedStyle>;
-  backgroundImage?: Maybe<PagesBlocksEmbedBackgroundImage>;
+  background?: Maybe<PagesBlocksEmbedBackground>;
   markup?: Maybe<Scalars['String']>;
   navigationLabel?: Maybe<Scalars['String']>;
 };
@@ -659,14 +719,25 @@ export type PagesBlocksFeatureStyleMutation = {
   contentOrder?: InputMaybe<Scalars['String']>;
 };
 
+export type PagesBlocksFeatureBackgroundOrnamentsMutation = {
+  src?: InputMaybe<Scalars['String']>;
+  alignment?: InputMaybe<Scalars['String']>;
+  width?: InputMaybe<Scalars['String']>;
+  height?: InputMaybe<Scalars['String']>;
+  xOffset?: InputMaybe<Scalars['String']>;
+  yOffset?: InputMaybe<Scalars['String']>;
+};
+
+export type PagesBlocksFeatureBackgroundMutation = {
+  fillStyles?: InputMaybe<Scalars['String']>;
+  src?: InputMaybe<Scalars['String']>;
+  position?: InputMaybe<Scalars['String']>;
+  ornaments?: InputMaybe<Array<InputMaybe<PagesBlocksFeatureBackgroundOrnamentsMutation>>>;
+};
+
 export type PagesBlocksFeatureImageMutation = {
   src?: InputMaybe<Scalars['String']>;
   alt?: InputMaybe<Scalars['String']>;
-};
-
-export type PagesBlocksFeatureBackgroundImageMutation = {
-  src?: InputMaybe<Scalars['String']>;
-  position?: InputMaybe<Scalars['String']>;
 };
 
 export type PagesBlocksFeatureButtonsMutation = {
@@ -680,8 +751,8 @@ export type PagesBlocksFeatureButtonsMutation = {
 
 export type PagesBlocksFeatureMutation = {
   style?: InputMaybe<PagesBlocksFeatureStyleMutation>;
+  background?: InputMaybe<PagesBlocksFeatureBackgroundMutation>;
   image?: InputMaybe<PagesBlocksFeatureImageMutation>;
-  backgroundImage?: InputMaybe<PagesBlocksFeatureBackgroundImageMutation>;
   label?: InputMaybe<Scalars['String']>;
   headline?: InputMaybe<Scalars['String']>;
   subhead?: InputMaybe<Scalars['String']>;
@@ -722,9 +793,20 @@ export type PagesBlocksPhotoCardsCardStyleMutation = {
   buttonTextColor?: InputMaybe<Scalars['String']>;
 };
 
-export type PagesBlocksPhotoCardsBackgroundImageMutation = {
+export type PagesBlocksPhotoCardsBackgroundOrnamentsMutation = {
+  src?: InputMaybe<Scalars['String']>;
+  alignment?: InputMaybe<Scalars['String']>;
+  width?: InputMaybe<Scalars['String']>;
+  height?: InputMaybe<Scalars['String']>;
+  xOffset?: InputMaybe<Scalars['String']>;
+  yOffset?: InputMaybe<Scalars['String']>;
+};
+
+export type PagesBlocksPhotoCardsBackgroundMutation = {
+  fillStyles?: InputMaybe<Scalars['String']>;
   src?: InputMaybe<Scalars['String']>;
   position?: InputMaybe<Scalars['String']>;
+  ornaments?: InputMaybe<Array<InputMaybe<PagesBlocksPhotoCardsBackgroundOrnamentsMutation>>>;
 };
 
 export type PagesBlocksPhotoCardsButtonsMutation = {
@@ -754,7 +836,7 @@ export type PagesBlocksPhotoCardsItemsMutation = {
 export type PagesBlocksPhotoCardsMutation = {
   style?: InputMaybe<PagesBlocksPhotoCardsStyleMutation>;
   cardStyle?: InputMaybe<PagesBlocksPhotoCardsCardStyleMutation>;
-  backgroundImage?: InputMaybe<PagesBlocksPhotoCardsBackgroundImageMutation>;
+  background?: InputMaybe<PagesBlocksPhotoCardsBackgroundMutation>;
   label?: InputMaybe<Scalars['String']>;
   headline?: InputMaybe<Scalars['String']>;
   subhead?: InputMaybe<Scalars['String']>;
@@ -795,9 +877,20 @@ export type PagesBlocksTextCardsCardStyleMutation = {
   buttonTextColor?: InputMaybe<Scalars['String']>;
 };
 
-export type PagesBlocksTextCardsBackgroundImageMutation = {
+export type PagesBlocksTextCardsBackgroundOrnamentsMutation = {
+  src?: InputMaybe<Scalars['String']>;
+  alignment?: InputMaybe<Scalars['String']>;
+  width?: InputMaybe<Scalars['String']>;
+  height?: InputMaybe<Scalars['String']>;
+  xOffset?: InputMaybe<Scalars['String']>;
+  yOffset?: InputMaybe<Scalars['String']>;
+};
+
+export type PagesBlocksTextCardsBackgroundMutation = {
+  fillStyles?: InputMaybe<Scalars['String']>;
   src?: InputMaybe<Scalars['String']>;
   position?: InputMaybe<Scalars['String']>;
+  ornaments?: InputMaybe<Array<InputMaybe<PagesBlocksTextCardsBackgroundOrnamentsMutation>>>;
 };
 
 export type PagesBlocksTextCardsButtonsMutation = {
@@ -821,7 +914,7 @@ export type PagesBlocksTextCardsItemsMutation = {
 export type PagesBlocksTextCardsMutation = {
   style?: InputMaybe<PagesBlocksTextCardsStyleMutation>;
   cardStyle?: InputMaybe<PagesBlocksTextCardsCardStyleMutation>;
-  backgroundImage?: InputMaybe<PagesBlocksTextCardsBackgroundImageMutation>;
+  background?: InputMaybe<PagesBlocksTextCardsBackgroundMutation>;
   label?: InputMaybe<Scalars['String']>;
   headline?: InputMaybe<Scalars['String']>;
   subhead?: InputMaybe<Scalars['String']>;
@@ -850,9 +943,20 @@ export type PagesBlocksBannerImageMutation = {
   alt?: InputMaybe<Scalars['String']>;
 };
 
-export type PagesBlocksBannerBackgroundImageMutation = {
+export type PagesBlocksBannerBackgroundOrnamentsMutation = {
+  src?: InputMaybe<Scalars['String']>;
+  alignment?: InputMaybe<Scalars['String']>;
+  width?: InputMaybe<Scalars['String']>;
+  height?: InputMaybe<Scalars['String']>;
+  xOffset?: InputMaybe<Scalars['String']>;
+  yOffset?: InputMaybe<Scalars['String']>;
+};
+
+export type PagesBlocksBannerBackgroundMutation = {
+  fillStyles?: InputMaybe<Scalars['String']>;
   src?: InputMaybe<Scalars['String']>;
   position?: InputMaybe<Scalars['String']>;
+  ornaments?: InputMaybe<Array<InputMaybe<PagesBlocksBannerBackgroundOrnamentsMutation>>>;
 };
 
 export type PagesBlocksBannerButtonsMutation = {
@@ -867,7 +971,7 @@ export type PagesBlocksBannerButtonsMutation = {
 export type PagesBlocksBannerMutation = {
   style?: InputMaybe<PagesBlocksBannerStyleMutation>;
   image?: InputMaybe<PagesBlocksBannerImageMutation>;
-  backgroundImage?: InputMaybe<PagesBlocksBannerBackgroundImageMutation>;
+  background?: InputMaybe<PagesBlocksBannerBackgroundMutation>;
   label?: InputMaybe<Scalars['String']>;
   headline?: InputMaybe<Scalars['String']>;
   subhead?: InputMaybe<Scalars['String']>;
@@ -883,14 +987,25 @@ export type PagesBlocksEmbedStyleMutation = {
   fillStyles?: InputMaybe<Scalars['String']>;
 };
 
-export type PagesBlocksEmbedBackgroundImageMutation = {
+export type PagesBlocksEmbedBackgroundOrnamentsMutation = {
+  src?: InputMaybe<Scalars['String']>;
+  alignment?: InputMaybe<Scalars['String']>;
+  width?: InputMaybe<Scalars['String']>;
+  height?: InputMaybe<Scalars['String']>;
+  xOffset?: InputMaybe<Scalars['String']>;
+  yOffset?: InputMaybe<Scalars['String']>;
+};
+
+export type PagesBlocksEmbedBackgroundMutation = {
+  fillStyles?: InputMaybe<Scalars['String']>;
   src?: InputMaybe<Scalars['String']>;
   position?: InputMaybe<Scalars['String']>;
+  ornaments?: InputMaybe<Array<InputMaybe<PagesBlocksEmbedBackgroundOrnamentsMutation>>>;
 };
 
 export type PagesBlocksEmbedMutation = {
   style?: InputMaybe<PagesBlocksEmbedStyleMutation>;
-  backgroundImage?: InputMaybe<PagesBlocksEmbedBackgroundImageMutation>;
+  background?: InputMaybe<PagesBlocksEmbedBackgroundMutation>;
   markup?: InputMaybe<Scalars['String']>;
   navigationLabel?: InputMaybe<Scalars['String']>;
 };
@@ -917,7 +1032,7 @@ export type PagesMutation = {
 
 export type GlobalPartsFragment = { __typename?: 'Global', siteUrl?: string | null | undefined, gtmId?: string | null | undefined, redirects?: Array<{ __typename: 'GlobalRedirects', from?: string | null | undefined, to?: string | null | undefined } | null | undefined> | null | undefined, colors?: { __typename: 'GlobalColors', primary?: string | null | undefined, accent1?: string | null | undefined, accent2?: string | null | undefined, accent3?: string | null | undefined, accent4?: string | null | undefined, white?: string | null | undefined, grayLight?: string | null | undefined, gray?: string | null | undefined, grayDark?: string | null | undefined, black?: string | null | undefined } | null | undefined, nav?: { __typename: 'GlobalNav', navAlignment?: string | null | undefined, navTextColor?: string | null | undefined, navBackgroundColor?: string | null | undefined, navItems?: Array<{ __typename: 'GlobalNavNavItems', label?: string | null | undefined, link?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined };
 
-export type PagesPartsFragment = { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksFeatureBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksPhotoCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksTextCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksBannerBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksEmbedBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined };
+export type PagesPartsFragment = { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksFeatureBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksFeatureBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksPhotoCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksPhotoCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksTextCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksTextCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksBannerBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksBannerBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksEmbedBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksEmbedBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined };
 
 export type GetGlobalDocumentQueryVariables = Exact<{
   relativePath: Scalars['String'];
@@ -936,12 +1051,12 @@ export type GetPagesDocumentQueryVariables = Exact<{
 }>;
 
 
-export type GetPagesDocumentQuery = { __typename?: 'Query', getPagesDocument: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksFeatureBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksPhotoCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksTextCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksBannerBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksEmbedBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined } } };
+export type GetPagesDocumentQuery = { __typename?: 'Query', getPagesDocument: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksFeatureBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksFeatureBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksPhotoCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksPhotoCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksTextCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksTextCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksBannerBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksBannerBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksEmbedBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksEmbedBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined } } };
 
 export type GetPagesListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetPagesListQuery = { __typename?: 'Query', getPagesList: { __typename?: 'PagesConnection', totalCount: number, edges?: Array<{ __typename?: 'PagesConnectionEdges', node?: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksFeatureBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksPhotoCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksTextCardsBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksBannerBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, backgroundImage?: { __typename: 'PagesBlocksEmbedBackgroundImage', src?: string | null | undefined, position?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined } } | null | undefined } | null | undefined> | null | undefined } };
+export type GetPagesListQuery = { __typename?: 'Query', getPagesList: { __typename?: 'PagesConnection', totalCount: number, edges?: Array<{ __typename?: 'PagesConnectionEdges', node?: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', draft?: boolean | null | undefined, blocks?: Array<{ __typename: 'PagesBlocksFeature', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksFeatureStyle', alignment?: string | null | undefined, fillStyles?: string | null | undefined, contentTitle?: string | null | undefined, featureContent?: string | null | undefined, padding?: string | null | undefined, imageTitle?: string | null | undefined, featureImage?: string | null | undefined, imagePadding?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksFeatureBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksFeatureBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksFeatureImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksFeatureButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksPhotoCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksPhotoCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksPhotoCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, imageStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonFillStyles?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksPhotoCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksPhotoCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksPhotoCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksPhotoCardsItems', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, image?: { __typename: 'PagesBlocksPhotoCardsItemsImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksTextCards', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksTextCardsStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, contentWidth?: string | null | undefined, columns?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, cardStyle?: { __typename: 'PagesBlocksTextCardsCardStyle', fillStyles?: string | null | undefined, padding?: string | null | undefined, type?: string | null | undefined, accentColor?: string | null | undefined, borderStyles?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, buttonTitle?: string | null | undefined, buttonType?: string | null | undefined, buttonTextColor?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksTextCardsBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksTextCardsBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksTextCardsButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined, items?: Array<{ __typename: 'PagesBlocksTextCardsItems', headline?: string | null | undefined, subhead?: string | null | undefined, text?: string | null | undefined, link?: string | null | undefined, buttonLabel?: string | null | undefined, accentColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksBanner', label?: string | null | undefined, headline?: string | null | undefined, subhead?: string | null | undefined, body?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksBannerStyle', fillStyles?: string | null | undefined, textAlignment?: string | null | undefined, minHeight?: string | null | undefined, padding?: string | null | undefined, width?: string | null | undefined, typographyTitle?: string | null | undefined, labelStyles?: string | null | undefined, headlineStyles?: string | null | undefined, subheadStyles?: string | null | undefined, textStyles?: string | null | undefined, contentOrder?: string | null | undefined } | null | undefined, image?: { __typename: 'PagesBlocksBannerImage', src?: string | null | undefined, alt?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksBannerBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksBannerBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined, buttons?: Array<{ __typename: 'PagesBlocksBannerButtons', label?: string | null | undefined, link?: string | null | undefined, type?: string | null | undefined, buttonFillStyles?: string | null | undefined, textColor?: string | null | undefined, backgroundColor?: string | null | undefined } | null | undefined> | null | undefined } | { __typename: 'PagesBlocksEmbed', markup?: string | null | undefined, navigationLabel?: string | null | undefined, style?: { __typename: 'PagesBlocksEmbedStyle', minHeight?: string | null | undefined, fullWidth?: boolean | null | undefined, padding?: string | null | undefined, fillStyles?: string | null | undefined } | null | undefined, background?: { __typename: 'PagesBlocksEmbedBackground', fillStyles?: string | null | undefined, src?: string | null | undefined, position?: string | null | undefined, ornaments?: Array<{ __typename: 'PagesBlocksEmbedBackgroundOrnaments', src?: string | null | undefined, alignment?: string | null | undefined, width?: string | null | undefined, height?: string | null | undefined, xOffset?: string | null | undefined, yOffset?: string | null | undefined } | null | undefined> | null | undefined } | null | undefined } | null | undefined> | null | undefined, meta?: { __typename: 'PagesMeta', pageTitle?: string | null | undefined, pageDescription?: string | null | undefined, siteImageSrc?: string | null | undefined } | null | undefined } } | null | undefined } | null | undefined> | null | undefined } };
 
 export const GlobalPartsFragmentDoc = gql`
     fragment GlobalParts on Global {
@@ -1001,15 +1116,25 @@ export const PagesPartsFragmentDoc = gql`
         textStyles
         contentOrder
       }
+      background {
+        __typename
+        fillStyles
+        src
+        position
+        ornaments {
+          __typename
+          src
+          alignment
+          width
+          height
+          xOffset
+          yOffset
+        }
+      }
       image {
         __typename
         src
         alt
-      }
-      backgroundImage {
-        __typename
-        src
-        position
       }
       label
       headline
@@ -1059,10 +1184,20 @@ export const PagesPartsFragmentDoc = gql`
         buttonFillStyles
         buttonTextColor
       }
-      backgroundImage {
+      background {
         __typename
+        fillStyles
         src
         position
+        ornaments {
+          __typename
+          src
+          alignment
+          width
+          height
+          xOffset
+          yOffset
+        }
       }
       label
       headline
@@ -1125,10 +1260,20 @@ export const PagesPartsFragmentDoc = gql`
         buttonType
         buttonTextColor
       }
-      backgroundImage {
+      background {
         __typename
+        fillStyles
         src
         position
+        ornaments {
+          __typename
+          src
+          alignment
+          width
+          height
+          xOffset
+          yOffset
+        }
       }
       label
       headline
@@ -1174,10 +1319,20 @@ export const PagesPartsFragmentDoc = gql`
         src
         alt
       }
-      backgroundImage {
+      background {
         __typename
+        fillStyles
         src
         position
+        ornaments {
+          __typename
+          src
+          alignment
+          width
+          height
+          xOffset
+          yOffset
+        }
       }
       label
       headline
@@ -1202,10 +1357,20 @@ export const PagesPartsFragmentDoc = gql`
         padding
         fillStyles
       }
-      backgroundImage {
+      background {
         __typename
+        fillStyles
         src
         position
+        ornaments {
+          __typename
+          src
+          alignment
+          width
+          height
+          xOffset
+          yOffset
+        }
       }
       markup
       navigationLabel

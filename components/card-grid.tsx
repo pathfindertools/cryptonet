@@ -14,9 +14,7 @@ export const CardGrid = ({ data, children }) => {
   }
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`max-w-desktop-full mx-auto ${data.style?.padding} ${data.style?.textAlignment} ${data.style?.minHeight}`}>
