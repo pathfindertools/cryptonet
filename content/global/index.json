@@ -14,9 +14,6 @@
     "black": "#000000"
   },
   "nav": {
-    "navItems": [
-      {}
-    ],
     "navAlignment": "right",
     "navTextColor": "white",
     "navBackgroundColor": "accent2"
