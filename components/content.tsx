@@ -60,12 +60,6 @@ const bodyOrder = (order) => {
   return `${bodyOrder[order]}`;
 }
 
-const css = `
-    .markdown p:not(:last-child) {
-        margin-bottom: 1.5rem;
-    }
-  `
-
 export const Content = ({
   label,
   headline,
@@ -82,7 +76,6 @@ export const Content = ({
 }) => {
   return (
     <div className={`flex flex-col ${width}`}>
-      <style>{css}</style>
       {label && <h4 className={`${labelOrder(order)} ${labelStyles}`}>{label}</h4>}
       {headline && <h2 className={`${headingOrder(order)} ${headlineStyles}`}>{headline}</h2>}
       {subhead && <h3 className={`${subheadOrder(order)} ${subheadStyles}`}>{subhead}</h3>}

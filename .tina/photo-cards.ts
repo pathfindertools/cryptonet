@@ -270,6 +270,11 @@ export const photoCardsBlockSchema: TinaTemplate = {
         },
         {
           type: "string",
+          label: "Label",
+          name: "label",
+        },
+        {
+          type: "string",
           label: "Title",
           name: "headline",
         },

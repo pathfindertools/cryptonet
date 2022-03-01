@@ -84,10 +84,37 @@ type GlobalRedirects {
   to: String
 }
 
+type GlobalColors {
+  primary: String
+  accent1: String
+  accent2: String
+  accent3: String
+  accent4: String
+  white: String
+  grayLight: String
+  gray: String
+  grayDark: String
+  black: String
+}
+
+type GlobalNavNavItems {
+  label: String
+  link: String
+}
+
+type GlobalNav {
+  navItems: [GlobalNavNavItems]
+  navAlignment: String
+  navTextColor: String
+  navBackgroundColor: String
+}
+
 type Global {
   siteUrl: String
   gtmId: String
   redirects: [GlobalRedirects]
+  colors: GlobalColors
+  nav: GlobalNav
 }
 
 type GlobalDocument implements Node & Document {
@@ -111,8 +138,8 @@ type GlobalConnection implements Connection {
 }
 
 type PagesBlocksFeatureStyle {
-  fillStyles: String
   alignment: String
+  fillStyles: String
   contentTitle: String
   featureContent: String
   padding: String
@@ -211,6 +238,7 @@ type PagesBlocksPhotoCardsItemsImage {
 
 type PagesBlocksPhotoCardsItems {
   image: PagesBlocksPhotoCardsItemsImage
+  label: String
   headline: String
   subhead: String
   text: String
@@ -365,42 +393,15 @@ type PagesBlocksEmbed {
 union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed
 
 type PagesMeta {
-  siteTitle: String
-  siteDescription: String
+  pageTitle: String
+  pageDescription: String
   siteImageSrc: String
-}
-
-type PagesNavNavItems {
-  label: String
-  link: String
-}
-
-type PagesNav {
-  navItems: [PagesNavNavItems]
-  navAlignment: String
-  navTextColor: String
-  navBackgroundColor: String
-}
-
-type PagesColors {
-  primary: String
-  accent1: String
-  accent2: String
-  accent3: String
-  accent4: String
-  white: String
-  grayLight: String
-  gray: String
-  grayDark: String
-  black: String
 }
 
 type Pages {
   draft: Boolean
   blocks: [PagesBlocks]
   meta: PagesMeta
-  nav: PagesNav
-  colors: PagesColors
 }
 
 type PagesDocument implements Node & Document {
@@ -443,15 +444,42 @@ input GlobalRedirectsMutation {
   to: String
 }
 
+input GlobalColorsMutation {
+  primary: String
+  accent1: String
+  accent2: String
+  accent3: String
+  accent4: String
+  white: String
+  grayLight: String
+  gray: String
+  grayDark: String
+  black: String
+}
+
+input GlobalNavNavItemsMutation {
+  label: String
+  link: String
+}
+
+input GlobalNavMutation {
+  navItems: [GlobalNavNavItemsMutation]
+  navAlignment: String
+  navTextColor: String
+  navBackgroundColor: String
+}
+
 input GlobalMutation {
   siteUrl: String
   gtmId: String
   redirects: [GlobalRedirectsMutation]
+  colors: GlobalColorsMutation
+  nav: GlobalNavMutation
 }
 
 input PagesBlocksFeatureStyleMutation {
-  fillStyles: String
   alignment: String
+  fillStyles: String
   contentTitle: String
   featureContent: String
   padding: String
@@ -550,6 +578,7 @@ input PagesBlocksPhotoCardsItemsImageMutation {
 
 input PagesBlocksPhotoCardsItemsMutation {
   image: PagesBlocksPhotoCardsItemsImageMutation
+  label: String
   headline: String
   subhead: String
   text: String
@@ -710,42 +739,15 @@ input PagesBlocksMutation {
 }
 
 input PagesMetaMutation {
-  siteTitle: String
-  siteDescription: String
+  pageTitle: String
+  pageDescription: String
   siteImageSrc: String
-}
-
-input PagesNavNavItemsMutation {
-  label: String
-  link: String
-}
-
-input PagesNavMutation {
-  navItems: [PagesNavNavItemsMutation]
-  navAlignment: String
-  navTextColor: String
-  navBackgroundColor: String
-}
-
-input PagesColorsMutation {
-  primary: String
-  accent1: String
-  accent2: String
-  accent3: String
-  accent4: String
-  white: String
-  grayLight: String
-  gray: String
-  grayDark: String
-  black: String
 }
 
 input PagesMutation {
   draft: Boolean
   blocks: [PagesBlocksMutation]
   meta: PagesMetaMutation
-  nav: PagesNavMutation
-  colors: PagesColorsMutation
 }
 
 schema {

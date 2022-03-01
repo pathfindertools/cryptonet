@@ -9,7 +9,7 @@ export default function HomePage(
 ) {
   return (
     <>
-      <Header {...props.data.getPagesDocument.data} />
+      <Header blocks={props.data.getPagesDocument.data.blocks} />
       <Blocks {...props.data.getPagesDocument.data} />
     </>
   );
@@ -48,6 +48,7 @@ export const getStaticProps = async ({ params }) => {
                     src
                     alt
                   }
+                  label
                   headline
                   subhead
                   text
@@ -223,30 +224,9 @@ export const getStaticProps = async ({ params }) => {
               }
             }
             meta {
-              siteTitle
-              siteDescription
+              pageTitle
+              pageDescription
               siteImageSrc
-            }
-            nav {
-              navItems {
-                link
-                label
-              }
-              navAlignment
-              navTextColor
-              navBackgroundColor
-            }
-            colors {
-              primary
-              accent1
-              accent2
-              accent3
-              accent4
-              white
-              grayLight
-              gray
-              grayDark
-              black
             }
           }
         }

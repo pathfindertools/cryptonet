@@ -98,9 +98,9 @@ export default function ImageControl({ field, input, meta }) {
         </div>
         <SelectMenu value={margin} onChange={setMargin} options={margins} className="w-18" />
       </div>
-      <div className="flex mb-6 items-center">
-        <SelectMenu value={fit} onChange={setFit} options={fits} className="w-28 mr-2" />
-        <SelectMenu value={position} onChange={setPosition} options={positions} className="w-28 mr-1" />
+      <div className="flex gap-1.5 mb-6 items-center w-full">
+        <SelectMenu value={fit} onChange={setFit} options={fits} className="w-1/2" />
+        <SelectMenu value={position} onChange={setPosition} options={positions} className="w-1/2" />
       </div>
       <input ref={inputRef} type="text" {...input}  className="hidden" />
     </>

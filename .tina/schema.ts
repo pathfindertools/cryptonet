@@ -41,117 +41,6 @@ export default defineSchema({
             },
           ]
         },
-      ],
-    },
-    {
-      label: "Pages",
-      name: "pages",
-      path: "content/pages",
-      fields: [
-        {
-          type: "boolean",
-          label: "Draft",
-          description: "Draft posts are only visible on staging.",
-          name: "draft",
-        },
-        {
-          type: "object",
-          list: true,
-          name: "blocks",
-          label: "Sections",
-          templates: [
-            featureBlockSchema,
-            photoCardsBlockSchema,
-            textCardsBlockSchema,
-            bannerBlockSchema,
-            embedBlockSchema,
-          ],
-        },
-        {
-          type: "object",
-          label: "Meta",
-          name: "meta",
-          description: "Site title, description, social sharing image",
-          ui: {
-            component: "group",
-          },
-          fields: [
-            {
-              type: "string",
-              label: "Site Title",
-              name: "siteTitle",
-            },
-            {
-              type: "string",
-              label: "Site Description",
-              name: "siteDescription",
-            },
-            {
-              type: "image",
-              label: "Social Sharing Image",
-              name: "siteImageSrc",
-              ui: {
-                clearable: true,
-              }
-            },
-          ]
-        },
-        {
-          type: "object",
-          label: "Navigation",
-          name: "nav",
-          ui: {
-            component: "group",
-          },
-          fields: [
-            {
-              label: "Navigation",
-              description: "Additional links in the header",
-              name: "navItems",
-              list: true,
-              type: "object",
-              fields: [{
-                label: "Label",
-                name: "label",
-                type: "string"
-              }, {
-                label: "Link",
-                name: "link",
-                type: "string",
-              }]
-            },
-            {
-              label: "Alignment",
-              name: "navAlignment",
-              type: "string",
-              ui: {
-                component: "select",
-              },
-              options: [
-                { label: "Left", value: "left" },
-                { label: "Right", value: "right" },
-              ],
-            },
-            {
-              label: "Navigation Text Color",
-              name: "navTextColor",
-              ui: {
-                component: "select",
-              },
-              type: "string",
-              options: colorOptions,
-            },
-            {
-              label: "Navigation Background Color",
-              name: "navBackgroundColor",
-              type: "string",
-              ui: {
-                component: "select",
-              },
-              options: colorOptions,
-            }
-          ]
-        },
         {
           type: "object",
           label: "Colors",
@@ -240,7 +129,117 @@ export default defineSchema({
                 component: "color",
               },
             },
-
+          ]
+        },
+        {
+          type: "object",
+          label: "Navigation",
+          name: "nav",
+          ui: {
+            component: "group",
+          },
+          fields: [
+            {
+              label: "Navigation",
+              description: "Additional links in the header",
+              name: "navItems",
+              list: true,
+              type: "object",
+              fields: [{
+                label: "Label",
+                name: "label",
+                type: "string"
+              }, {
+                label: "Link",
+                name: "link",
+                type: "string",
+              }]
+            },
+            {
+              label: "Alignment",
+              name: "navAlignment",
+              type: "string",
+              ui: {
+                component: "select",
+              },
+              options: [
+                { label: "Left", value: "left" },
+                { label: "Right", value: "right" },
+              ],
+            },
+            {
+              label: "Navigation Text Color",
+              name: "navTextColor",
+              ui: {
+                component: "select",
+              },
+              type: "string",
+              options: colorOptions,
+            },
+            {
+              label: "Navigation Background Color",
+              name: "navBackgroundColor",
+              type: "string",
+              ui: {
+                component: "select",
+              },
+              options: colorOptions,
+            }
+          ]
+        },
+      ],
+    },
+    {
+      label: "Pages",
+      name: "pages",
+      path: "content/pages",
+      fields: [
+        {
+          type: "boolean",
+          label: "Draft",
+          description: "Draft posts are only visible on staging.",
+          name: "draft",
+        },
+        {
+          type: "object",
+          list: true,
+          name: "blocks",
+          label: "Sections",
+          templates: [
+            featureBlockSchema,
+            photoCardsBlockSchema,
+            textCardsBlockSchema,
+            bannerBlockSchema,
+            embedBlockSchema,
+          ],
+        },
+        {
+          type: "object",
+          label: "Meta",
+          name: "meta",
+          description: "Page title, description, social sharing image",
+          ui: {
+            component: "group",
+          },
+          fields: [
+            {
+              type: "string",
+              label: "Page Title",
+              name: "pageTitle",
+            },
+            {
+              type: "string",
+              label: "Page Description",
+              name: "pageDescription",
+            },
+            {
+              type: "image",
+              label: "Social Sharing Image",
+              name: "siteImageSrc",
+              ui: {
+                clearable: true,
+              }
+            },
           ]
         },
       ],

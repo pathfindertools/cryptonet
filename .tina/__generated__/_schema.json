@@ -54,6 +54,333 @@
             "global",
             "redirects"
           ]
+        },
+        {
+          "type": "object",
+          "label": "Colors",
+          "name": "colors",
+          "ui": {
+            "component": "group"
+          },
+          "fields": [
+            {
+              "type": "string",
+              "label": "Primary",
+              "name": "primary",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "primary"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Accent 1",
+              "name": "accent1",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "accent1"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Accent 2",
+              "name": "accent2",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "accent2"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Accent 3",
+              "name": "accent3",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "accent3"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Accent 4",
+              "name": "accent4",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "accent4"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "White",
+              "name": "white",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "white"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Light",
+              "name": "grayLight",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "grayLight"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray",
+              "name": "gray",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "gray"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Gray Dark",
+              "name": "grayDark",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "grayDark"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Black",
+              "name": "black",
+              "ui": {
+                "component": "color"
+              },
+              "namespace": [
+                "global",
+                "colors",
+                "black"
+              ]
+            }
+          ],
+          "namespace": [
+            "global",
+            "colors"
+          ]
+        },
+        {
+          "type": "object",
+          "label": "Navigation",
+          "name": "nav",
+          "ui": {
+            "component": "group"
+          },
+          "fields": [
+            {
+              "label": "Navigation",
+              "description": "Additional links in the header",
+              "name": "navItems",
+              "list": true,
+              "type": "object",
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "type": "string",
+                  "namespace": [
+                    "global",
+                    "nav",
+                    "navItems",
+                    "label"
+                  ]
+                },
+                {
+                  "label": "Link",
+                  "name": "link",
+                  "type": "string",
+                  "namespace": [
+                    "global",
+                    "nav",
+                    "navItems",
+                    "link"
+                  ]
+                }
+              ],
+              "namespace": [
+                "global",
+                "nav",
+                "navItems"
+              ]
+            },
+            {
+              "label": "Alignment",
+              "name": "navAlignment",
+              "type": "string",
+              "ui": {
+                "component": "select"
+              },
+              "options": [
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                }
+              ],
+              "namespace": [
+                "global",
+                "nav",
+                "navAlignment"
+              ]
+            },
+            {
+              "label": "Navigation Text Color",
+              "name": "navTextColor",
+              "ui": {
+                "component": "select"
+              },
+              "type": "string",
+              "options": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Accent 1",
+                  "value": "accent1"
+                },
+                {
+                  "label": "Accent 2",
+                  "value": "accent2"
+                },
+                {
+                  "label": "Accent 3",
+                  "value": "accent3"
+                },
+                {
+                  "label": "Accent 4",
+                  "value": "accent4"
+                },
+                {
+                  "label": "White",
+                  "value": "white"
+                },
+                {
+                  "label": "Gray Light",
+                  "value": "grayLight"
+                },
+                {
+                  "label": "Gray",
+                  "value": "gray"
+                },
+                {
+                  "label": "Gray Dark",
+                  "value": "grayDark"
+                },
+                {
+                  "label": "Black",
+                  "value": "black"
+                }
+              ],
+              "namespace": [
+                "global",
+                "nav",
+                "navTextColor"
+              ]
+            },
+            {
+              "label": "Navigation Background Color",
+              "name": "navBackgroundColor",
+              "type": "string",
+              "ui": {
+                "component": "select"
+              },
+              "options": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Accent 1",
+                  "value": "accent1"
+                },
+                {
+                  "label": "Accent 2",
+                  "value": "accent2"
+                },
+                {
+                  "label": "Accent 3",
+                  "value": "accent3"
+                },
+                {
+                  "label": "Accent 4",
+                  "value": "accent4"
+                },
+                {
+                  "label": "White",
+                  "value": "white"
+                },
+                {
+                  "label": "Gray Light",
+                  "value": "grayLight"
+                },
+                {
+                  "label": "Gray",
+                  "value": "gray"
+                },
+                {
+                  "label": "Gray Dark",
+                  "value": "grayDark"
+                },
+                {
+                  "label": "Black",
+                  "value": "black"
+                }
+              ],
+              "namespace": [
+                "global",
+                "nav",
+                "navBackgroundColor"
+              ]
+            }
+          ],
+          "namespace": [
+            "global",
+            "nav"
+          ]
         }
       ],
       "namespace": [
@@ -110,21 +437,6 @@
                   },
                   "fields": [
                     {
-                      "type": "string",
-                      "label": "Background",
-                      "name": "fillStyles",
-                      "ui": {
-                        "component": "fillControl"
-                      },
-                      "namespace": [
-                        "pages",
-                        "blocks",
-                        "feature",
-                        "style",
-                        "fillStyles"
-                      ]
-                    },
-                    {
                       "label": "Alignment",
                       "name": "alignment",
                       "type": "string",
@@ -137,6 +449,21 @@
                         "feature",
                         "style",
                         "alignment"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "feature",
+                        "style",
+                        "fillStyles"
                       ]
                     },
                     {
@@ -1835,6 +2162,18 @@
                         "photoCards",
                         "items",
                         "image"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "label",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "photoCards",
+                        "items",
+                        "label"
                       ]
                     },
                     {
@@ -4031,29 +4370,29 @@
           "type": "object",
           "label": "Meta",
           "name": "meta",
-          "description": "Site title, description, social sharing image",
+          "description": "Page title, description, social sharing image",
           "ui": {
             "component": "group"
           },
           "fields": [
             {
               "type": "string",
-              "label": "Site Title",
-              "name": "siteTitle",
+              "label": "Page Title",
+              "name": "pageTitle",
               "namespace": [
                 "pages",
                 "meta",
-                "siteTitle"
+                "pageTitle"
               ]
             },
             {
               "type": "string",
-              "label": "Site Description",
-              "name": "siteDescription",
+              "label": "Page Description",
+              "name": "pageDescription",
               "namespace": [
                 "pages",
                 "meta",
-                "siteDescription"
+                "pageDescription"
               ]
             },
             {
@@ -4073,333 +4412,6 @@
           "namespace": [
             "pages",
             "meta"
-          ]
-        },
-        {
-          "type": "object",
-          "label": "Navigation",
-          "name": "nav",
-          "ui": {
-            "component": "group"
-          },
-          "fields": [
-            {
-              "label": "Navigation",
-              "description": "Additional links in the header",
-              "name": "navItems",
-              "list": true,
-              "type": "object",
-              "fields": [
-                {
-                  "label": "Label",
-                  "name": "label",
-                  "type": "string",
-                  "namespace": [
-                    "pages",
-                    "nav",
-                    "navItems",
-                    "label"
-                  ]
-                },
-                {
-                  "label": "Link",
-                  "name": "link",
-                  "type": "string",
-                  "namespace": [
-                    "pages",
-                    "nav",
-                    "navItems",
-                    "link"
-                  ]
-                }
-              ],
-              "namespace": [
-                "pages",
-                "nav",
-                "navItems"
-              ]
-            },
-            {
-              "label": "Alignment",
-              "name": "navAlignment",
-              "type": "string",
-              "ui": {
-                "component": "select"
-              },
-              "options": [
-                {
-                  "label": "Left",
-                  "value": "left"
-                },
-                {
-                  "label": "Right",
-                  "value": "right"
-                }
-              ],
-              "namespace": [
-                "pages",
-                "nav",
-                "navAlignment"
-              ]
-            },
-            {
-              "label": "Navigation Text Color",
-              "name": "navTextColor",
-              "ui": {
-                "component": "select"
-              },
-              "type": "string",
-              "options": [
-                {
-                  "label": "Primary",
-                  "value": "primary"
-                },
-                {
-                  "label": "Accent 1",
-                  "value": "accent1"
-                },
-                {
-                  "label": "Accent 2",
-                  "value": "accent2"
-                },
-                {
-                  "label": "Accent 3",
-                  "value": "accent3"
-                },
-                {
-                  "label": "Accent 4",
-                  "value": "accent4"
-                },
-                {
-                  "label": "White",
-                  "value": "white"
-                },
-                {
-                  "label": "Gray Light",
-                  "value": "grayLight"
-                },
-                {
-                  "label": "Gray",
-                  "value": "gray"
-                },
-                {
-                  "label": "Gray Dark",
-                  "value": "grayDark"
-                },
-                {
-                  "label": "Black",
-                  "value": "black"
-                }
-              ],
-              "namespace": [
-                "pages",
-                "nav",
-                "navTextColor"
-              ]
-            },
-            {
-              "label": "Navigation Background Color",
-              "name": "navBackgroundColor",
-              "type": "string",
-              "ui": {
-                "component": "select"
-              },
-              "options": [
-                {
-                  "label": "Primary",
-                  "value": "primary"
-                },
-                {
-                  "label": "Accent 1",
-                  "value": "accent1"
-                },
-                {
-                  "label": "Accent 2",
-                  "value": "accent2"
-                },
-                {
-                  "label": "Accent 3",
-                  "value": "accent3"
-                },
-                {
-                  "label": "Accent 4",
-                  "value": "accent4"
-                },
-                {
-                  "label": "White",
-                  "value": "white"
-                },
-                {
-                  "label": "Gray Light",
-                  "value": "grayLight"
-                },
-                {
-                  "label": "Gray",
-                  "value": "gray"
-                },
-                {
-                  "label": "Gray Dark",
-                  "value": "grayDark"
-                },
-                {
-                  "label": "Black",
-                  "value": "black"
-                }
-              ],
-              "namespace": [
-                "pages",
-                "nav",
-                "navBackgroundColor"
-              ]
-            }
-          ],
-          "namespace": [
-            "pages",
-            "nav"
-          ]
-        },
-        {
-          "type": "object",
-          "label": "Colors",
-          "name": "colors",
-          "ui": {
-            "component": "group"
-          },
-          "fields": [
-            {
-              "type": "string",
-              "label": "Primary",
-              "name": "primary",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "primary"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Accent 1",
-              "name": "accent1",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "accent1"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Accent 2",
-              "name": "accent2",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "accent2"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Accent 3",
-              "name": "accent3",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "accent3"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Accent 4",
-              "name": "accent4",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "accent4"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "White",
-              "name": "white",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "white"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Gray Light",
-              "name": "grayLight",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "grayLight"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Gray",
-              "name": "gray",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "gray"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Gray Dark",
-              "name": "grayDark",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "grayDark"
-              ]
-            },
-            {
-              "type": "string",
-              "label": "Black",
-              "name": "black",
-              "ui": {
-                "component": "color"
-              },
-              "namespace": [
-                "pages",
-                "colors",
-                "black"
-              ]
-            }
-          ],
-          "namespace": [
-            "pages",
-            "colors"
           ]
         }
       ],

@@ -25,6 +25,9 @@ const Card = ({ data, cardstyle }) => {
         className={` ${wrapClasses} relative flex-1 text-left border-box ${cardstyle?.padding}`}
       >
         <div className={`${backgroundClasses[cardstyle?.type]} absolute inset-0 -z-1`} />
+        {data.label && (
+          <p className={cardstyle?.labelStyles}>{data.label}</p>
+        )}
         {data.headline && (
           <h3 className={cardstyle?.headlineStyles}>{data.headline}</h3>
         )}
@@ -32,7 +35,9 @@ const Card = ({ data, cardstyle }) => {
           <h4 className={cardstyle?.subheadStyles}>{data.subhead}</h4>
         )}
         {data.text && (
-          <div className={cardstyle?.textStyles}><Markdown>{data.text}</Markdown></div>
+          <div className={`markdown ${cardstyle?.textStyles}`}>
+            <Markdown>{data.text}</Markdown>
+          </div>
         )}
         {data.link && data.buttonLabel && (
           <Buttons buttons={[{

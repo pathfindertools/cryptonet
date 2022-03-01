@@ -1,6 +1,6 @@
 {
-  "siteUrl": "large-data.filecoin.io",
-  "gtmId": "GTM-MS25MX2",
+  "siteUrl": "microgen.vercel.app",
+  "gtmId": "G-KWYRFX7W2D",
   "redirects": [
     {
       "from": "/ahs",
@@ -14,5 +14,22 @@
       "from": "/dora-hacks",
       "to": "/dora-hacks-site"
     }
-  ]
+  ],
+  "colors": {
+    "primary": "#f67575",
+    "accent1": "#3373f1",
+    "accent2": "#b7d8eb",
+    "accent3": "#253464",
+    "accent4": "#558cea",
+    "white": "#FFFFFF",
+    "grayLight": "#f4f5fa",
+    "gray": "#d9dfee",
+    "grayDark": "#7f8494",
+    "black": "#000000"
+  },
+  "nav": {
+    "navAlignment": "right",
+    "navTextColor": "white",
+    "navBackgroundColor": "accent2"
+  }
 }

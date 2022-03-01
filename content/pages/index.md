@@ -22,7 +22,8 @@ blocks:
     headline: Vector Commitment
     subhead: Research Day
     body: >-
-      Vector commitments are powerful primitives that find applications in many
+      ![](http://res.cloudinary.com/protocolai/image/upload/v1646068750/cryptonet/hero-rule_stzu3r.png)Vector
+      commitments are powerful primitives that find applications in many
       blockchains protocols. The goal of this workshop is to survey the state of
       the art in research in Vector Commitments with survey talks, the
       presentation of recent breakthrough results and discussions about the
@@ -59,7 +60,7 @@ blocks:
       type: solid
       accentColor: primary
       imageStyles: h-52 object-scale-down object-left mb-7
-      labelStyles: 'text-black undefined text-sm mb-0 '
+      labelStyles: 'text-accent3 undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-base mb-0 '
@@ -80,6 +81,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645830390/cryptonet/bio-dario-fiore_l5h9no.svg
+        label: 'Talk 1:'
         headline: A journey in vector commitments
         subhead: ''
         text: >-
@@ -90,6 +92,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-victoria-arantxa_cqpcg7.jpg
+        label: 'Talk 2:'
         headline: On the efficiency and flexibility of Linear-map vector commitments.
         subhead: ''
         text: >-
@@ -103,12 +106,14 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-russell-lai_goujsq.jpg
+        label: 'Talk 3:'
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
         text: "A succinct non-interactive argument of knowledge (SNARK) allows a prover to produce a short proof that certifies the veracity of a certain NP-statement. In the last decade, a large body of work has studied candidate constructions that are secure against quantum attackers. Unfortunately, no known candidate matches the efficiency and desirable features of (pre-quantum) constructions based on bilinear pairings.\LIn this work, we make progress ... Read more>"
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alexandrox-zacharakis_oq4xsa.jpg
+        label: 'Talk 4:'
         headline: "Techniques and tradeoffs for VC in the dlog setting\L"
         subhead: ''
         text: >-
@@ -122,6 +127,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-weije-wang_nidj8y.jpg
+        label: 'Talk 5:'
         headline: A Compiler for Efficient Vector Commitments
         subhead: ''
         text: >-
@@ -137,6 +143,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-chris-peikert_i5webd.jpg
+        label: 'Talk 6:'
         headline: Vector and Functional Commitments from Lattices
         subhead: ''
         text: >-
@@ -150,6 +157,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alin-tomescu_czcx5l.svg
+        label: 'Talk 7:'
         headline: Fantastic trees and how to hash them
         subhead: ''
         text: >-
@@ -324,30 +332,7 @@ blocks:
     body: 'Made with love by [Protocol Labs]().'
     _template: banner
 meta:
-  siteTitle: "Vector Commitment \LResearch Day"
-  siteDescription: >-
-    Vector commitments ⓘ are powerful primitives that find applications in many
-    blockchains protocols. The goal of this workshop is to survey the state of
-    the art in research in Vector Commitments with survey talks, the
-    presentation of recent breakthrough results and discussions about the
-    important open problems, and how they are motivated by practical
-    applications.
   siteImageSrc: >-
     http://res.cloudinary.com/protocolai/image/upload/v1646068909/cryptonet/CyptoNet_Twitter_ubqqvm.png
-nav:
-  navAlignment: right
-  navTextColor: white
-  navBackgroundColor: accent4
-colors:
-  primary: '#F67575'
-  accent1: '#3373F1'
-  accent2: '#B7D8EB'
-  accent3: '#253464'
-  accent4: '#558CEA'
-  white: '#FFFFFF'
-  grayLight: '#F4F5FA'
-  gray: '#D9DFEE'
-  grayDark: '#7F8494'
-  black: '#000000'
 ---
 

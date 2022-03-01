@@ -6,6 +6,30 @@ fragment GlobalParts on Global {
     from
     to
   }
+  colors {
+    __typename
+    primary
+    accent1
+    accent2
+    accent3
+    accent4
+    white
+    grayLight
+    gray
+    grayDark
+    black
+  }
+  nav {
+    __typename
+    navItems {
+      __typename
+      label
+      link
+    }
+    navAlignment
+    navTextColor
+    navBackgroundColor
+  }
 }
 
 fragment PagesParts on Pages {
@@ -15,8 +39,8 @@ fragment PagesParts on Pages {
     ... on PagesBlocksFeature {
       style {
         __typename
-        fillStyles
         alignment
+        fillStyles
         contentTitle
         featureContent
         padding
@@ -113,6 +137,7 @@ fragment PagesParts on Pages {
           src
           alt
         }
+        label
         headline
         subhead
         text
@@ -241,32 +266,8 @@ fragment PagesParts on Pages {
   }
   meta {
     __typename
-    siteTitle
-    siteDescription
+    pageTitle
+    pageDescription
     siteImageSrc
-  }
-  nav {
-    __typename
-    navItems {
-      __typename
-      label
-      link
-    }
-    navAlignment
-    navTextColor
-    navBackgroundColor
-  }
-  colors {
-    __typename
-    primary
-    accent1
-    accent2
-    accent3
-    accent4
-    white
-    grayLight
-    gray
-    grayDark
-    black
   }
 }

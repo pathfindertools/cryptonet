@@ -32,20 +32,20 @@ export const featureBlockSchema: TinaTemplate = {
       },
       fields: [
         {
-          type: "string",
-          label: "Background",
-          name: "fillStyles",
-          ui: {
-            component: "fillControl"
-          }
-        },
-        {
           label: "Alignment",
           name: "alignment",
           type: "string",
           ui: {
             component: "alignmentControl",
           },
+        },
+        {
+          type: "string",
+          label: "Background",
+          name: "fillStyles",
+          ui: {
+            component: "fillControl"
+          }
         },
         {
           label: "Content",
