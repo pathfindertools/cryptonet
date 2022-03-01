@@ -69,7 +69,7 @@ blocks:
       type: solid
       accentColor: primary
       imageStyles: h-52 object-scale-down object-left mb-7
-      labelStyles: 'text-black undefined text-sm mb-0 '
+      labelStyles: 'text-accent3 undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-base mb-0 '
