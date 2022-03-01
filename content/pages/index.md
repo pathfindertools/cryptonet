@@ -288,7 +288,7 @@ blocks:
             <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
           </svg>
         </dt>
-        <dd class="w-10/12 pl-6">“Are Merkle trees a panacea?” - Alin Tomescu</dd>
+        <dd class="w-10/12 pl-6">“Fantastic trees and how to hash them” - Alin Tomescu</dd>
       </dl>
     _template: embed
   - style:
