@@ -14,7 +14,7 @@ blocks:
     image:
       src: ''
     background:
-      fillStyles: from-accent3 to-accent1 bg-gradient-to-tr
+      fillStyles: from-accent3 to-primary bg-gradient-to-tr
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1645824008/cryptonet/hero-bg_lrgsrl.svg
       position: object-top
@@ -22,9 +22,7 @@ blocks:
         - src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/hero-image_bbybtb.svg
           alignment: top
-          width: '600'
           xOffset: '230'
-          yOffset: '-10'
     label: Protocol Labs Research invites you to
     headline: Vector Commitment
     subhead: Research Day
@@ -65,10 +63,10 @@ blocks:
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
-      padding: undefined pb-10 pr-0 pl-0
+      padding: pt-6 pb-10 pr-8 pl-0
       type: solid
       accentColor: primary
-      imageStyles: h-52 object-scale-down object-left mb-7
+      imageStyles: h-40 object-scale-down object-left mb-7
       labelStyles: 'text-accent3 undefined text-sm mb-0 '
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
@@ -84,10 +82,10 @@ blocks:
     items:
       - headline: ''
         subhead: >-
-          Vector commitments allow a party to commit to a vector and then to
-          open the commitment at selected positions. The crucial feature of this
-          primitive is that the size of both commitments and openings does not
-          depend on the length of the vector.
+          Intro Vector commitments allow a party to commit to a vector and then
+          to open the commitment at selected positions. The crucial feature of
+          this primitive is that the size of both commitments and openings does
+          not depend on the length of the vector.
         text: ''
       - image:
           src: >-
@@ -116,7 +114,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-russell-lai_goujsq.jpg
-        label: 'Talk 3:'
+        label: 'Talk 2:'
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
         text: >-
@@ -197,7 +195,7 @@ blocks:
           xOffset: '350'
           yOffset: '-130'
     markup: |-
-      <h1 class="text-6xl text-accent3">Event Schedule</h1>
+      <h1 class="text-6xl text-primary">Event Schedule</h1>
       <p class="text-gray-dark mb-16">Central European Time</p>
       <dl class="flex flex-wrap">
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
@@ -266,6 +264,7 @@ blocks:
       </dl>
     _template: embed
   - style:
+      fillStyles: bg-black
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-16 pl-16
