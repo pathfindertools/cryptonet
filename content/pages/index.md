@@ -208,65 +208,42 @@ blocks:
       <dl class="flex flex-wrap">
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           11:00 am
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“A journey in vector commitments” - Dario Fiore</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           12:15 - 1:00pm
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“On the efficiency and flexibility of Linear-map vector commitments.” - Arantxa Zapico</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           1:00-2:00pm
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">Lunch Break</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           2:15-3:00pm 
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“Lattice-Based Preprocessing SNARKs” - Russel Lai</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           3:15-4:00pm 
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“Techniques and tradeoffs for VC in the dlog setting” - Alexandros Zacharakis</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           4:15-5:00pm
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“A Compiler for Efficient Vector Commitments” - Weijie Wang</dd>
         <dt class="w-2/12 h-10 pr-8 text-right text-accent3 relative">
           5:15-6:00pm
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-            <path d="M8.2663 15.2195L8.2663 47.2593" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“ Vector and Functional Commitments from Lattices” - Chris Peikert</dd>
         <dt class="w-2/12 pr-8 text-right text-accent3 relative">
           6:15-7:00pm
-          <svg class="absolute top-1 right-0" width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8.2663" cy="8.72162" r="6.58807" fill="#f4f5fa" stroke="#7986AD" stroke-width="3"/>
-          </svg>
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot-last_xqc9oz.svg" />
         </dt>
         <dd class="w-10/12 pl-6">“Fantastic trees and how to hash them” - Alin Tomescu</dd>
       </dl>
