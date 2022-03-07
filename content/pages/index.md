@@ -330,11 +330,11 @@ blocks:
       alignment: 'flex-row text-left items-center '
       fillStyles: from-accent2 to-accent1 bg-gradient-to-br
       featureContent: 'w-1/2 min-h-0 '
-      padding: pt-20 pb-20 undefined undefined
-      featureImage: 'object-center object-scale-down '
-      imagePadding: undefined pb-0 pr-10 pl-10
+      padding: pt-20 pb-20 undefined pl-10
+      featureImage: 'object-center object-contain '
+      imagePadding: undefined pb-0 pr-0 pl-0
       labelStyles: 'text-black undefined text-sm mb-0 '
-      headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
+      headlineStyles: text-accent3 undefined text-2xl mb-1.5 font-bold
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-xl mb-5 '
       contentOrder: labelHeadingsContent
