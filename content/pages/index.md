@@ -338,6 +338,8 @@ blocks:
       subheadStyles: 'text-black undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-xl mb-5 '
       contentOrder: labelHeadingsContent
+    background:
+      fillStyles: from-accent2 to-accent1 bg-gradient-to-br
     image:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1646166535/cryptonet/ornament-sponsors_sziwi2.svg
