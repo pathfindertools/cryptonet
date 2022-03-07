@@ -131,7 +131,8 @@ blocks:
           bilinear pairings. In this work, we make progress.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alexandrox-zacharakis_oq4xsa.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-alexandrox-zacharakis_c8qnya.svg
+          alt: Alexandros Zacharakis - Universitat Pompeu Fabra
         label: 'Talk 4:'
         headline: "Techniques and tradeoffs for VC in the dlog setting\L"
         subhead: ''
@@ -158,7 +159,8 @@ blocks:
           specifically, the produced vector commitment requires O(√nlogn) time.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-chris-peikert_i5webd.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646679712/cryptonet/bio-chris-peikert_hwwose.svg
+          alt: Chris Peikert - Algorand and U. of Michigan
         label: 'Talk 6:'
         headline: Vector and Functional Commitments from Lattices
         subhead: ''
