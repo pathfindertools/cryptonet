@@ -302,19 +302,19 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - headline: Sponsors
-        subhead: >-
-          Thanks to our sponsors for bringing us the top minds in vector
-          commitments research.
+      - headline: ''
+        subhead: ''
         text: ''
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png
-        headline: Protocol Labs
+        headline: Sponsored by Protocol Labs
         subhead: ''
         text: >-
-          An open-source R&D lab. We build protocols, tools, and services to
-          radically improve the internet.
+          A special thanks to our sponsor Protocol Labs for bringing us the top
+          minds in vector commitments research. Protocol Labs is an open-source
+          R&D lab building protocols, tools, and services to radically improve
+          the internet.
         link: 'https://protocol.ai/'
         buttonLabel: Learn More
     _template: photoCards
