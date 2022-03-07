@@ -360,7 +360,7 @@ blocks:
     label: ''
     headline: ''
     subhead: ''
-    body: 'Made with love by [Protocol Labs](https://cryptonet.vercel.app/)'
+    body: 'Made with love by [Protocol Labs](https://protocol.ai/)'
     _template: banner
 meta:
   siteImageSrc: >-
