@@ -176,6 +176,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-alin-tomescu_czcx5l.svg
+          alt: Alin Tomescu - VMWare
         label: 'Talk 7:'
         headline: Fantastic trees and how to hash them
         subhead: ''
