@@ -297,13 +297,14 @@ blocks:
       buttonTextColor: accent4
     background:
       fillStyles: from-accent2 to-accent4 bg-gradient-to-br
+      src: ''
       ornaments:
         - src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646166535/cryptonet/ornament-sponsors_sziwi2.svg
-          alignment: bottom
+          alignment: center
           width: '500'
-          xOffset: '-400'
-          yOffset: '100'
+          xOffset: '-300'
+          yOffset: '0'
     label: ''
     headline: ''
     subhead: ''
