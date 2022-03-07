@@ -101,7 +101,7 @@ blocks:
           open problems.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-victoria-arantxa_cqpcg7.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-victoria-arantxa_i0lizd.svg
         label: 'Talk 2:'
         headline: On the efficiency and flexibility of Linear-map vector commitments.
         subhead: ''
@@ -114,7 +114,8 @@ blocks:
           with minimal properties can be boostrapped to obtain stronger ones.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1645822768/cryptonet/bio-russell-lai_goujsq.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646679711/cryptonet/bio-russell-lai_xojmec.svg
+          alt: Russel Lai Friedich-Alexander-Universitat
         label: 'Talk 2:'
         headline: "Lattice-Based Preprocessing SNARKs: Publicly Verifiable and Recursively Composable\L"
         subhead: ''
