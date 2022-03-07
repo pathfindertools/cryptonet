@@ -39,7 +39,8 @@ blocks:
       applications.
     buttons:
       - label: Register
-        link: 'https://cryptonet.vercel.app/'
+        link: >-
+          https://protocollabs.typeform.com/to/dVCvrol0?typeform-source=cryptonet.vercel.app
         type: solid
         buttonFillStyles: bg-primary
         textColor: white
