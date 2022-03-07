@@ -91,6 +91,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1645830390/cryptonet/bio-dario-fiore_l5h9no.svg
+          alt: Dario Fiore - Imdea
         label: 'Talk 1:'
         headline: A journey in vector commitments
         subhead: ''
@@ -102,6 +103,7 @@ blocks:
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-victoria-arantxa_i0lizd.svg
+          alt: Arantxa Zapico
         label: 'Talk 2:'
         headline: On the efficiency and flexibility of Linear-map vector commitments.
         subhead: ''
