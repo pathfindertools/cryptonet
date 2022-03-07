@@ -327,6 +327,37 @@ blocks:
         buttonLabel: Learn More
     _template: photoCards
   - style:
+      alignment: 'flex-row text-left items-center '
+      fillStyles: from-accent2 to-accent1 bg-gradient-to-br
+      featureContent: 'w-1/2 min-h-0 '
+      padding: pt-20 pb-20 undefined undefined
+      featureImage: 'object-center object-scale-down '
+      imagePadding: undefined pb-0 pr-10 pl-10
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-accent3 undefined text-2xl mb-0 font-bold
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-accent3 undefined text-xl mb-5 '
+      contentOrder: labelHeadingsContent
+    image:
+      src: >-
+        http://res.cloudinary.com/protocolai/image/upload/v1646166535/cryptonet/ornament-sponsors_sziwi2.svg
+    label: ''
+    headline: Sponsored by Protocol Labs
+    subhead: ''
+    body: >-
+      A special thanks to our sponsor Protocol Labs for bringing us the top
+      minds in vector commitments research. Protocol Labs is an open-source R&D
+      lab building protocols, tools, and services to radically improve the
+      internet.
+    buttons:
+      - label: Learn More
+        link: 'https://protocol.ai/'
+        type: solid
+        buttonFillStyles: bg-white
+        textColor: accent3
+        backgroundColor: ''
+    _template: feature
+  - style:
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-32 pb-20 pr-10 pl-10
