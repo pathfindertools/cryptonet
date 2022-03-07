@@ -2,20 +2,6 @@
 draft: true
 blocks:
   - style:
-      fillStyles: bg-white
-      labelStyles: text-black text-sm mb-0
-      headlineStyles: text-black text-5xl mb-0
-      subheadStyles: text-black text-3xl mb-0
-      textStyles: text-black text-md mb-0
-      contentOrder: labelHeadingsContent
-    label: ''
-    headline: This is the main headline
-    subhead: Here is a subhead
-    body: >-
-      Phasellus as, liberosdfg euasdf finibus rutrum, sdfg qwqweasdf risus risus
-      sdfg accumsanasdf libero, nec molestie urna dui a leo. H
-    _template: feature
-  - style:
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-36 pb-24 pr-10 pl-10
@@ -116,7 +102,7 @@ blocks:
           open problems.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-victoria-arantxa_i0lizd.svg
+            http://res.cloudinary.com/protocolai/image/upload/v1646681371/cryptonet/bio-victoria-arantxa_ahgo2c.jpg
           alt: Arantxa Zapico
         label: 'Talk 2:'
         headline: On the efficiency and flexibility of Linear-map vector commitments.
@@ -336,7 +322,7 @@ blocks:
           A special thanks to our sponsor Protocol Labs for bringing us the top
           minds in vector commitments research. Protocol Labs is an open-source
           R&D lab building protocols, tools, and services to radically improve
-          the internet
+          the internet.
         link: 'https://protocol.ai/'
         buttonLabel: Learn More
     _template: photoCards
