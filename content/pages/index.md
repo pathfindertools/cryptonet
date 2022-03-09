@@ -175,7 +175,7 @@ blocks:
           been relatively few post-quantum constructions.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1646681449/cryptonet/bio-alin-tomescu_iayi0a.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646832785/cryptonet/bio-alin-tomescu_nhbaob.jpg
           alt: Alin Tomescu - VMWare
         label: 'Talk 7:'
         headline: Fantastic trees and how to hash them
