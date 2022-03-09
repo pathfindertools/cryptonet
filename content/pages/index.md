@@ -102,7 +102,7 @@ blocks:
           open problems.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1646681371/cryptonet/bio-victoria-arantxa_ahgo2c.jpg
+            http://res.cloudinary.com/protocolai/image/upload/v1646832776/cryptonet/bio-victoria-arantxa_bkqjn0.jpg
           alt: Arantxa Zapico
         label: 'Talk 2:'
         headline: On the efficiency and flexibility of Linear-map vector commitments.
