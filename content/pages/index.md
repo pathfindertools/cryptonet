@@ -83,10 +83,10 @@ blocks:
     items:
       - headline: ''
         subhead: >-
-          Intro Vector commitments allow a party to commit to a vector and then
-          to open the commitment at selected positions. The crucial feature of
-          this primitive is that the size of both commitments and openings does
-          not depend on the length of the vector.
+          Vector commitments allow a party to commit to a vector and then to
+          open the commitment at selected positions. The crucial feature of this
+          primitive is that the size of both commitments and openings does not
+          depend on the length of the vector.
         text: ''
       - image:
           src: >-
