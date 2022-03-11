@@ -199,7 +199,7 @@ blocks:
           based.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-weije-wang_pdsbmv.svg
+            http://res.cloudinary.com/protocolai/image/upload/v1647025027/cryptonet/bio-weije-wang_hdmfpy.svg
           alt: Weijie Wang - Yale University
         label: 'Talk 5:'
         headline: A Compiler for Efficient Vector Commitments
