@@ -55,6 +55,59 @@ blocks:
         backgroundColor: ''
     _template: banner
   - style:
+      fillStyles: bg-gray-light
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-20 pb-20 pr-10 pl-10
+      contentWidth: w-full
+      columns: '3'
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: 'text-black undefined text-5xl mb-0 '
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-black undefined undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      padding: undefined undefined undefined undefined
+      type: solid
+      accentColor: primary
+      imageStyles: h-72 object-cover object-center mb-3.5
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-accent3 undefined text-sm mb-0 font-bold
+      subheadStyles: 'text-primary undefined text-6xl mb-0 '
+      textStyles: 'text-black undefined text-sm mb-0 '
+      buttonType: solid
+      buttonTextColor: primary
+    background:
+      fillStyles: bg-gray-light
+      ornaments:
+        - src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1646164301/cryptonet/ornament-schedule_vqtiue.svg
+          alignment: bottom
+          width: '400'
+          xOffset: '-400'
+          yOffset: '90'
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - headline: ''
+        subhead: Organizing Committee
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1647024228/cryptonet/bio-anca-nitulescu_gwjwza.jpg
+        headline: Anca Nitulescu
+        subhead: ''
+        text: ''
+      - image:
+          src: >-
+            http://res.cloudinary.com/protocolai/image/upload/v1647024231/cryptonet/bio-rosaria-gennaro_c6kx7i.jpg
+        headline: Rosario Gennaro
+        subhead: ''
+        text: ''
+    _template: photoCards
+  - style:
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-28 pb-28 pr-14 pl-14
@@ -149,7 +202,7 @@ blocks:
           based.
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1647024275/bio-weije-wang_qbahai.svg
+            http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-weije-wang_pdsbmv.svg
           alt: Weijie Wang - Yale University
         label: 'Talk 5:'
         headline: A Compiler for Efficient Vector Commitments
