@@ -31,9 +31,6 @@ blocks:
       EVENT - March 25th 2022, 11am-7pm CET**
 
 
-      Organizing Committee: Rosario Gennaro & Anca Nitulescu
-
-
       Vector commitments are powerful primitives that find applications in many
       blockchains protocols. The goal of this workshop is to survey the state of
       the art in research in Vector Commitments with survey talks, the
