@@ -96,7 +96,8 @@ blocks:
             http://res.cloudinary.com/protocolai/image/upload/v1647024228/cryptonet/bio-anca-nitulescu_gwjwza.jpg
         headline: Anca Nitulescu
         subhead: ''
-        text: Researcher@CryptoNetLab
+        text: >-
+          Researcher@[CryptoNetLab](https://www.notion.so/pl-strflt/CryptoNetLab-81fd8bb1043643a38472335d73692339)
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1647024231/cryptonet/bio-rosaria-gennaro_c6kx7i.jpg
