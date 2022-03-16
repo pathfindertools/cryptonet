@@ -102,7 +102,7 @@ blocks:
             http://res.cloudinary.com/protocolai/image/upload/v1647024231/cryptonet/bio-rosaria-gennaro_c6kx7i.jpg
         headline: Rosario Gennaro
         subhead: ''
-        text: ''
+        text: Researcher@CryptoNetLab
     _template: photoCards
   - style:
       textAlignment: text-left
