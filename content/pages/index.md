@@ -297,6 +297,11 @@ blocks:
         </dt>
         <dd class="w-10/12 sm:w-full  pl-6">“Techniques and tradeoffs for VC in the dlog setting” - Alexandros Zacharakis</dd>
         <dt class="w-2/12 sm:w-full h-10 pr-8 text-right sm:text-left text-accent3 relative">
+          4:00-4:15pm
+          <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
+        </dt>
+        <dd class="w-10/12 sm:w-full  pl-6">“Stateless Cryptocurrency: A short intro” - Anca Nitulescu</dd>
+        <dt class="w-2/12 sm:w-full h-10 pr-8 text-right sm:text-left text-accent3 relative">
           4:15-5:00pm
           <img class="absolute top-1 right-0 sm:hidden" width="17" height="48" src="https://res.cloudinary.com/protocolai/image/upload/v1646694451/cryptonet/schedule-dot_h4dy0l.svg" />
         </dt>
