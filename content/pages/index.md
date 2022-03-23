@@ -28,7 +28,7 @@ blocks:
     subhead: Research Day
     body: >-
       ![](http://res.cloudinary.com/protocolai/image/upload/v1646068750/cryptonet/hero-rule_stzu3r.png)**VIRTUAL
-      EVENT - March 25th 2022, 11am-7pm CET**
+      EVENT - March 25th 2022, 11am-7pm CET (6am-2pm EST)**
 
 
       Vector commitments are powerful primitives that find applications in many
