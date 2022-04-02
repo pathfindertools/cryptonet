@@ -38,9 +38,8 @@ blocks:
       important open problems, and how they are motivated by practical
       applications.
     buttons:
-      - label: Register
-        link: >-
-          https://protocollabs.typeform.com/to/dVCvrol0?typeform-source=cryptonet.vercel.app
+      - label: WATCH THE RECORDING
+        link: 'https://youtu.be/rWEokuVNbNw'
         type: solid
         buttonFillStyles: bg-primary
         textColor: white
