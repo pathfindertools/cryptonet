@@ -170,7 +170,7 @@ blocks:
           (LVC) \[LaiMal19\] as a starting point for defining SVC with
           updatability and aggregation properties. In particular we show how LVC
           with minimal properties can be boostrapped to obtain stronger ones.
-        link: 'https://youtu.be/DyXTvwhHdkc'
+        link: 'https://youtu.be/BGNGL6JNyP0'
         buttonLabel: Watch Now
       - image:
           src: >-
@@ -187,6 +187,8 @@ blocks:
           attackers. Unfortunately, no known candidate matches the efficiency
           and desirable features of (pre-quantum) constructions based on
           bilinear pairings. In this work, we make progress.
+        link: 'https://youtu.be/xaSeW9S_khI'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646679710/cryptonet/bio-alexandrox-zacharakis_c8qnya.svg
@@ -202,6 +204,8 @@ blocks:
           are generic and can be instantiated using any proof of knowledge of
           opening of a commitment. We consider (1) a transparent instantiation
           based.
+        link: 'https://youtu.be/OMVcIj58c5M'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1647025149/cryptonet/bio-weije-wang_q4jjdz.svg
@@ -216,6 +220,8 @@ blocks:
           vector commitment that balances, with the help of bookkeeping, the
           time complexity between UpdateAllProofs() and Aggregate(). More
           specifically, the produced vector commitment requires O(√nlogn) time.
+        link: 'https://youtu.be/-rZTckp-Urw'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646679712/cryptonet/bio-chris-peikert_hwwose.svg
@@ -231,6 +237,8 @@ blocks:
           updated to reflect changes to individual entries, using knowledge of
           just those changes (and not the entire vector). To date, there have
           been relatively few post-quantum constructions.
+        link: 'https://youtu.be/p4K-fviCFS0'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646832785/cryptonet/bio-alin-tomescu_nhbaob.jpg
@@ -246,6 +254,8 @@ blocks:
           and lattices. Unlike Merkle trees, these constructions have a
           combination of smaller proof sizes, useful homomorphisms and more
           efficient proof aggregation.
+        link: 'https://youtu.be/vQiytAzXGDM'
+        buttonLabel: Watch Now
     navigationLabel: Join Us
     _template: photoCards
   - style:

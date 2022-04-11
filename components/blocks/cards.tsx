@@ -3,7 +3,7 @@ import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
 
 const Card = ({ data, cardstyle }) => {
-  const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
+  const wrapClasses =  data.link && data.buttonLabel ? '' : '';
   const backgroundClasses = {
     solid: `${cardstyle?.fillStyles}`,
     transparent: `${cardstyle?.fillStyles} opacity-70`,
@@ -47,7 +47,7 @@ const Card = ({ data, cardstyle }) => {
             backgroundColor: data.accentColor ? data.accentColor : cardstyle?.accentColor,
             buttonFillStyles: cardstyle?.buttonFillStyles,
             type: cardstyle?.buttonType
-          }]} className="absolute bottom-4" />
+          }]} className="mt-6" />
         )}
 
       </div>
