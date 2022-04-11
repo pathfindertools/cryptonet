@@ -126,7 +126,7 @@ blocks:
       headlineStyles: text-accent3 undefined text-3xl mb-5 font-bold
       subheadStyles: 'text-accent3 undefined text-3xl mb-0 '
       textStyles: 'text-accent3 undefined text-base mb-0 '
-      buttonType: solid
+      buttonType: outline
       buttonTextColor: primary
     background:
       fillStyles: bg-white
@@ -154,6 +154,8 @@ blocks:
           overview of the state of the art in this area, and cover some of the
           recent efficient constructions. I will also discuss applications and
           open problems.
+        link: 'https://youtu.be/Zi3akuyDzMs'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646832776/cryptonet/bio-victoria-arantxa_bkqjn0.jpg
