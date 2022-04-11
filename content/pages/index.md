@@ -170,6 +170,8 @@ blocks:
           (LVC) \[LaiMal19\] as a starting point for defining SVC with
           updatability and aggregation properties. In particular we show how LVC
           with minimal properties can be boostrapped to obtain stronger ones.
+        link: 'https://youtu.be/DyXTvwhHdkc'
+        buttonLabel: Watch Now
       - image:
           src: >-
             http://res.cloudinary.com/protocolai/image/upload/v1646679711/cryptonet/bio-russell-lai_xojmec.svg
