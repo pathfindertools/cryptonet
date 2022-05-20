@@ -1,6 +1,6 @@
 {
   "siteUrl": "cryptonet.vercel.app",
-  "gtmId": "G-KWYRFX7W2D",
+  "gtmId": "G-G16Y1VZQQZ",
   "colors": {
     "primary": "#f67575",
     "accent1": "#3373f1",
@@ -14,7 +14,6 @@
     "black": "#000000"
   },
   "nav": {
-    "navItems": [],
     "navAlignment": "right",
     "navTextColor": "white",
     "navBackgroundColor": "accent2"
